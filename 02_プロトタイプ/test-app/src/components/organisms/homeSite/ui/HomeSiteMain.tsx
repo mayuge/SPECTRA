@@ -15,9 +15,7 @@ const HomeSiteMain: React.FC = () => {
       <TextLabel text="ホームサイト" size="small" bold={true} />
       <TextLabel text="ホームサイト" size="normal" bold={true} />
       <TextLabel text="ホームサイト" size="large" bold={true} />
-      <Link href="/menu">
-        menuページへ移動
-      </Link>
+      <Link href="/menu">menuページへ移動</Link>
       <SearchBar />
       <Button text="登録する" variant="btn-primary" size="normal" onClick={buttonClicked} />
       <Button text="キャンセル" variant="btn-secondary" size="normal" onClick={buttonClicked} />

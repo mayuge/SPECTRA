@@ -2,14 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 /* styles/globals.css */
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
 
 /* 必要に応じて Tailwind CSS の設定やグローバルスタイルも追加 */
 body {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
-
 
 :root {
   --background: #ffffff;

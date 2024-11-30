@@ -2,7 +2,7 @@ import React from "react"
 
 type HeaderProps = {
   text?: string // バーテキスト
-  icon?:string
+  icon?: string
   size: string // small、normal、large のいずれかを指定
   variant: string // バーのスタイル header-primary, header-secondary, header-danger, header-warning, header-success のいずれかを指定
 }
