@@ -11,7 +11,7 @@ const meta: Meta<typeof Button> = {
     text: 'Button', // デフォルトのボタンテキスト
     size: 'normal', // デフォルトのサイズ
     variant: 'btn-primary', // デフォルトのスタイル
-    shape: 'square', // デフォルトの形状
+    shape: undefined, // デフォルトで指定しない状態
   },
   argTypes: {
     text: { control: 'text', description: 'ボタンのテキスト' },
@@ -33,8 +33,11 @@ const meta: Meta<typeof Button> = {
     },
     shape: {
       control: 'select',
-      options: ['square', 'circle'],
+      options: [null, 'square', 'circle'], // 指定しない場合はnull
       description: 'ボタンの形状',
+      mapping: {
+        null: undefined, // null を指定しない場合にマップ
+      },
     },
     icon: { control: 'text', description: '表示するアイコンの名前' },
     onClick: { action: 'clicked', description: 'クリックイベントハンドラ' },
@@ -49,27 +52,25 @@ type Story = StoryObj<typeof Button>;
 // Primary ボタンのストーリー
 export const Primary: Story = {
   args: {
-    text: 'Primary Button',
+    text: '登録する',
     size: 'normal',
     variant: 'btn-primary',
-    shape: 'square',
   },
 };
 
 // Secondary ボタンのストーリー
 export const Secondary: Story = {
   args: {
-    text: 'Secondary Button',
+    text: 'キャンセル',
     size: 'normal',
     variant: 'btn-secondary',
-    shape: 'square',
   },
 };
 
-// Icon付きのストーリー
-export const WithIcon: Story = {
+// Success ボタンのストーリー　四角形
+export const Success: Story = {
   args: {
-    text: 'With Icon',
+    text: '認証',
     icon: 'check_circle', // マテリアルアイコンの名前
     size: 'normal',
     variant: 'btn-success',
@@ -77,22 +78,35 @@ export const WithIcon: Story = {
   },
 };
 
-// Circle 形状のボタン
-export const CircleButton: Story = {
+// Icon付きのストーリー
+export const Danger: Story = {
   args: {
-    text: 'Circle',
-    size: 'normal',
-    variant: 'btn-primary',
+    text: '削除する',
+    icon: 'delete', // マテリアルアイコンの名前
+    size: 'small',
+    variant: 'btn-danger',
+    shape: 'circle',
+  },
+};
+
+// Circle 形状のボタン
+export const Circle: Story = {
+  args: {
+    text:'',
+    icon:'add',
+    size: 'large',
+    variant: 'btn-warning',
     shape: 'circle',
   },
 };
 
 // Miniサイズのボタン
-export const MiniButton: Story = {
+export const Mini: Story = {
   args: {
-    text: 'Mini Button',
+    text: '',
+    icon:'close',
     size: 'mini',
-    variant: 'btn-warning',
+    variant: 'btn-danger',
     shape: 'square',
   },
 };
