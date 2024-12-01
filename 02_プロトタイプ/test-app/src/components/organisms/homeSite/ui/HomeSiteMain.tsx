@@ -11,49 +11,7 @@ const HomeSiteMain: React.FC = () => {
 
   return (
     <div>
-      <TextLabel text="ホームサイト" size="mini" bold={true} />
-      <TextLabel text="ホームサイト" size="small" bold={true} />
-      <TextLabel text="ホームサイト" size="normal" bold={true} />
-      <TextLabel text="ホームサイト" size="large" bold={true} />
-      <Link href="/menu">menuページへ移動</Link>
-      <SearchBar />
-      <Button text="登録する" variant="btn-primary" size="normal" onClick={buttonClicked} />
-      <Button text="キャンセル" variant="btn-secondary" size="normal" onClick={buttonClicked} />
-      <Button
-        text="保存する"
-        icon="save"
-        variant="btn-primary"
-        size="small"
-        onClick={buttonClicked}
-      />
-      <Button
-        icon="add"
-        shape="circle"
-        variant="btn-secondary"
-        size="small"
-        onClick={buttonClicked}
-      />
-      <Button
-        icon="add"
-        shape="circle"
-        variant="btn-primary"
-        size="normal"
-        onClick={buttonClicked}
-      />
-      <Button
-        icon="add"
-        shape="square"
-        variant="btn-primary"
-        size="normal"
-        onClick={buttonClicked}
-      />
-      <Button
-        icon="close"
-        shape="square"
-        variant="btn-danger"
-        size="mini"
-        onClick={buttonClicked}
-      />
+      <Button icon="refresh" variant="btn-primary" size="normal" onClick={buttonClicked} />
     </div>
   )
 }

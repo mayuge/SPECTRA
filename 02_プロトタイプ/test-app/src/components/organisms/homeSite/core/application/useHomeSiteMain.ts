@@ -1,6 +1,8 @@
+import { useReqRailwayDataAdapter } from "@/infrastructure/adapters/httpReqAdapter"
 const useHomeSiteMain = () => {
-  const buttonClicked = () => {
-    alert("button-clicked")
+  const { reqJrEastRealTimeData } = useReqRailwayDataAdapter()
+  const buttonClicked = async () => {
+    await reqJrEastRealTimeData()
   }
   return {
     buttonClicked,
