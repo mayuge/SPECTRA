@@ -3,6 +3,7 @@ import React from "react"
 import Header from "@/components/molecules/header/Header"
 import Button from "@/components/atoms/buttons/Button"
 import TextLabel from "@/components/atoms/labels/TextLabel"
+import Badge from "@/components/atoms/labels/Badge"
 import useHomeSiteMain from "@/components/organisms/homeSite/core/application/useHomeSiteMain"
 
 const HomeSiteMain: React.FC = () => {
@@ -24,8 +25,11 @@ const HomeSiteMain: React.FC = () => {
         variant="header-primary"
         onClick={buttonClicked}
       />
-      <div className="m-4">
-        <div className="flex justify-center items-center gap-4">
+      <div className="flex justify-center">
+        <div>
+        <div className="flex items-center gap-4 my-4">
+          <Badge text="GETリクエスト" variant="badge-warning"/>
+          <Badge text="JSON" variant="badge-danger"/>
           <TextLabel text="JR東日本リアルタイム車両位置データ" size="normal" bold={false} />
           <Button
             text="更新する"
@@ -35,7 +39,9 @@ const HomeSiteMain: React.FC = () => {
             onClick={jrEastRealTimeLocateDataCallback}
           />
         </div>
-        <div className="flex justify-center items-center gap-4 my-4">
+        <div className="flex  items-center gap-4 my-4">
+        <Badge text="GETリクエスト" variant="badge-warning"/>
+        <Badge text="JSON" variant="badge-danger"/>
           <TextLabel text="東京メトロリアルタイム運行状況データ" size="normal" bold={false} />
           <Button
             text="更新する"
@@ -45,7 +51,7 @@ const HomeSiteMain: React.FC = () => {
             onClick={tokyoMetroRealTimeDataCallback}
           />
         </div>
-        <div className="flex justify-center gap-4">
+        <div className="flex  gap-4">
           <TextLabel
             text={`状態管理ツールテスト用カウンター:${getCount()}`}
             size="normal"
@@ -74,6 +80,7 @@ const HomeSiteMain: React.FC = () => {
             shape="circle"
             onClick={navigateToMenuSite}
           />
+        </div>
         </div>
       </div>
     </div>
