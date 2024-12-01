@@ -6,7 +6,7 @@ import TextLabel from "@/components/atoms/labels/TextLabel"
 import useHomeSiteMain from "@/components/organisms/homeSite/core/application/useHomeSiteMain"
 
 const HomeSiteMain: React.FC = () => {
-  const { buttonClicked, navigateToMenuSite, jrEastRealTimeLocateDataCallback } = useHomeSiteMain()
+  const { buttonClicked, navigateToMenuSite, jrEastRealTimeLocateDataCallback,tokyoMetroRealTimeDataCallback} = useHomeSiteMain()
   return (
     <div>
       <Header
@@ -25,6 +25,16 @@ const HomeSiteMain: React.FC = () => {
             variant="btn-primary"
             size="small"
             onClick={jrEastRealTimeLocateDataCallback}
+          />
+        </div>
+        <div className="flex justify-center items-center gap-4 my-4">
+          <TextLabel text="東京メトロリアルタイム運行状況データ" size="normal" bold={false} />
+          <Button
+            text="更新する"
+            icon="refresh"
+            variant="btn-primary"
+            size="small"
+            onClick={tokyoMetroRealTimeDataCallback}
           />
         </div>
         <div className="flex justify-center my-4">

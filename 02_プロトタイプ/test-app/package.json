@@ -12,8 +12,10 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@types/protobufjs": "^6.0.0",
     "axios": "^1.7.8",
     "next": "15.0.3",
+    "protobufjs": "^7.4.0",
     "react": "19.0.0-rc-66855b96-20241106",
     "react-dom": "19.0.0-rc-66855b96-20241106"
   },
