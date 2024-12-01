@@ -6,7 +6,15 @@ import TextLabel from "@/components/atoms/labels/TextLabel"
 import useHomeSiteMain from "@/components/organisms/homeSite/core/application/useHomeSiteMain"
 
 const HomeSiteMain: React.FC = () => {
-  const { buttonClicked, navigateToMenuSite, jrEastRealTimeLocateDataCallback,tokyoMetroRealTimeDataCallback} = useHomeSiteMain()
+  const {
+    buttonClicked,
+    navigateToMenuSite,
+    jrEastRealTimeLocateDataCallback,
+    tokyoMetroRealTimeDataCallback,
+    increment,
+    decrement,
+    getCount,
+  } = useHomeSiteMain()
   return (
     <div>
       <Header
@@ -37,8 +45,28 @@ const HomeSiteMain: React.FC = () => {
             onClick={tokyoMetroRealTimeDataCallback}
           />
         </div>
+        <div className="flex justify-center gap-4">
+          <TextLabel
+            text={`状態管理ツールテスト用カウンター:${getCount()}`}
+            size="normal"
+            bold={false}
+          />
+          <Button
+            icon="remove"
+            variant="btn-danger"
+            size="small"
+            shape="circle"
+            onClick={decrement}
+          />
+          <Button
+            icon="add"
+            variant="btn-success"
+            size="small"
+            shape="circle"
+            onClick={increment}
+          />
+        </div>
         <div className="flex justify-center my-4">
-          {/* メニューページに遷移するボタン */}
           <Button
             text="メニューページに遷移する"
             variant="btn-warning"

@@ -22,8 +22,8 @@ const useReqRailwayData = () => {
     }
   }
   //東京メトロの運行状況リアルタイムデータ
-  const reqTokyoMetroRealTimeData = async() =>{
-    try{
+  const reqTokyoMetroRealTimeData = async () => {
+    try {
       const token = process.env.NEXT_PUBLIC_OPEN_DATA_CHALLENGE_TOKEN_DEFAULT
       const url = process.env.NEXT_PUBLIC_TOKYO_METRO_REALTIME_DATA_URL
       const config = {
@@ -33,7 +33,7 @@ const useReqRailwayData = () => {
       //リクエストを行う
       const res = await http.request(config)
       console.log(res)
-    }catch(e:any){
+    } catch (e: any) {
       console.log(e)
     }
   }

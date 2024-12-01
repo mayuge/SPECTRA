@@ -7,7 +7,7 @@ import Header from "@/components/molecules/header/Header"
 import useMenuSiteMain from "@/components/organisms/menuSite/core/application/useMenuSiteMain"
 
 const MenuSiteMain: React.FC = () => {
-  const { buttonClicked, navigateToHomeSite } = useMenuSiteMain()
+  const { buttonClicked, navigateToHomeSite, getCount } = useMenuSiteMain()
 
   return (
     <div>
@@ -19,8 +19,12 @@ const MenuSiteMain: React.FC = () => {
         onClick={buttonClicked}
       />
       <div className="m-4">
-        <div className="flex justify-center">
-          <TextLabel text="状態管理ツールのテスト" size="normal" bold={false}/>
+        <div>
+          <TextLabel
+            text={`状態管理ツールテスト用カウンター:${getCount()}`}
+            size="normal"
+            bold={false}
+          />
         </div>
         <div className="flex justify-center my-8">
           <Button
