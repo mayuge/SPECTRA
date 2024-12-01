@@ -1,11 +1,12 @@
 import React from "react"
+import type { ButtonVariantType } from "@/domain/types/atomsType"
 
 type ButtonProps = {
   text?: string // ボタンテキスト
   icon?: string // アイコンの名前を文字列で指定
   shape?: string //ボタンの形状を文字列で指定 square circle
   size: string // mini、small、normal、large のいずれかを指定
-  variant: string // ボタンのスタイル btn-primary, btn-secondary, btn-danger, btn-warning, btn-success のいずれかを指定
+  variant: ButtonVariantType // ボタンのスタイル btn-primary, btn-secondary, btn-danger, btn-warning, btn-success のいずれかを指定
   onClick: () => void
 }
 
@@ -32,13 +33,17 @@ const Button: React.FC<ButtonProps> = ({
   let btnVariant = "bg-primary text-white hover:bg-primaryDark"
 
   if (variant === "btn-secondary") {
+    //variantがsecondaryのとき
     btnVariant =
       "bg-white text-primary border-2 border-primary shadow-[inset_0_0_0_2px_var(--primary-color)]" // primary の色を使用、ボーダーの太さも考慮
   } else if (variant === "btn-danger") {
+    //variantがdangerのとき
     btnVariant = "bg-danger text-white"
   } else if (variant === "btn-warning") {
+    //variantがwarningのとき
     btnVariant = "bg-warning text-white"
   } else if (variant === "btn-success") {
+    //variantがsuccessのとき
     btnVariant = "bg-success text-white"
   }
 
