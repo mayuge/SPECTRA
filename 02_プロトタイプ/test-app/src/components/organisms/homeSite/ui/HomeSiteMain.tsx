@@ -4,6 +4,7 @@ import Header from "@/components/molecules/header/Header"
 import Button from "@/components/atoms/buttons/Button"
 import TextLabel from "@/components/atoms/labels/TextLabel"
 import Badge from "@/components/atoms/labels/Badge"
+import MapApp from "@/components/organisms/homeSite/ui/MapApp"
 import useHomeSiteMain from "@/components/organisms/homeSite/core/application/useHomeSiteMain"
 
 const HomeSiteMain: React.FC = () => {
@@ -80,6 +81,9 @@ const HomeSiteMain: React.FC = () => {
             shape="circle"
             onClick={navigateToMenuSite}
           />
+        </div>
+        <div className="flex justify-center my-4">
+        
         </div>
         </div>
       </div>
