@@ -82,10 +82,10 @@ const HomeSiteMain: React.FC = () => {
             onClick={navigateToMenuSite}
           />
         </div>
-        <div className="flex justify-center my-4">
-        
         </div>
-        </div>
+      </div>
+      <div className="w-full my-4">
+        <MapApp/>
       </div>
     </div>
   )
