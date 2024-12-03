@@ -3,7 +3,8 @@ import type { ButtonVariantType } from "@/domain/types/atomsType"
 
 type ButtonProps = {
   text?: string // ボタンテキスト
-  icon?: string // アイコンの名前を文字列で指定
+  iconLeft?: string // アイコンの名前を文字列で指定
+  iconRight?: string // アイコンの名前を文字列で指定
   shape?: string //ボタンの形状を文字列で指定 square circle
   size: string // mini、small、normal、large のいずれかを指定
   variant: ButtonVariantType // ボタンのスタイル btn-primary, btn-secondary, btn-danger, btn-warning, btn-success のいずれかを指定
@@ -15,7 +16,8 @@ const Button: React.FC<ButtonProps> = ({
   size,
   shape,
   variant,
-  icon,
+  iconLeft,
+  iconRight,
   onClick,
 }: ButtonProps) => {
   // サイズの種類　small normal largeから指定 paddingSize を動的に設定
@@ -67,8 +69,9 @@ const Button: React.FC<ButtonProps> = ({
       className={`${paddingSize} ${btnVariant} ${cornerShape} flex items-center gap-1`} // flex と items-center を追加
       onClick={onClick}
     >
-      {icon && <span className="material-icons">{icon}</span>} {/* アイコンを表示*/}
+      {iconLeft && <span className="material-icons">{iconLeft}</span>} {/* アイコンを表示*/}
       {text}
+      {iconRight && <span className="material-icons">{iconLeft}</span>} {/* アイコンを表示*/}
     </button>
   )
 }

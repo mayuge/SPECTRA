@@ -11,7 +11,7 @@ import Map from "@/components/atoms/map/Map"
 const HomeSiteMain: React.FC = () => {
   const {
     buttonClicked,
-    navigateToMenuSite,
+    RouteToMenuSite,
     jrEastRealTimeLocateDataCallback,
     tokyoMetroRealTimeDataCallback,
     increment,
@@ -28,17 +28,17 @@ const HomeSiteMain: React.FC = () => {
 
       <div className="relative z-10 p-4 flex justify-center">
         <div className="max-w-screen-xl w-full mx-auto mx-8">
-        <Header
-          text="NOZAWA OPENDATA PROJECT"
-          icon="menu"
-          size="large"
-          variant="header-light"
-          isCircle={true}
-          onClick={buttonClicked}
-        />
+          <Header
+            text="NOZAWA OPENDATA PROJECT"
+            icon="menu"
+            size="large"
+            variant="header-light"
+            isCircle={true}
+            onClick={buttonClicked}
+          />
         </div>
       </div>
-      
+
       {/* コンテンツを地図の上に表示 */}
       <div className="relative z-10 bg-white bg-opacity-80 p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
         <div className="flex justify-center">
@@ -50,7 +50,7 @@ const HomeSiteMain: React.FC = () => {
               <TextLabel text="JR東日本リアルタイム車両位置データ" size="normal" bold={false} />
               <Button
                 text="更新する"
-                icon="refresh"
+                iconLeft="refresh"
                 variant="btn-primary"
                 size="small"
                 onClick={jrEastRealTimeLocateDataCallback}
@@ -62,7 +62,7 @@ const HomeSiteMain: React.FC = () => {
               <TextLabel text="東京メトロリアルタイム運行状況データ" size="normal" bold={false} />
               <Button
                 text="更新する"
-                icon="refresh"
+                iconLeft="refresh"
                 variant="btn-primary"
                 size="small"
                 onClick={tokyoMetroRealTimeDataCallback}
@@ -75,14 +75,14 @@ const HomeSiteMain: React.FC = () => {
                 bold={false}
               />
               <Button
-                icon="remove"
+                iconLeft="remove"
                 variant="btn-danger"
                 size="small"
                 shape="circle"
                 onClick={decrement}
               />
               <Button
-                icon="add"
+                iconLeft="add"
                 variant="btn-success"
                 size="small"
                 shape="circle"
@@ -95,7 +95,7 @@ const HomeSiteMain: React.FC = () => {
                 variant="btn-warning"
                 size="normal"
                 shape="circle"
-                onClick={navigateToMenuSite}
+                onClick={RouteToMenuSite}
               />
             </div>
           </div>

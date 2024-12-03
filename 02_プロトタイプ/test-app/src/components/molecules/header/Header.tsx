@@ -67,7 +67,7 @@ const Header: React.FC<HeaderProps> = ({
         <Button
           variant={`${buttonVariant}`}
           shape="circle"
-          icon={`${icon}`}
+          iconLeft={`${icon}`}
           size={`${size}`}
           onClick={onClick}
         />

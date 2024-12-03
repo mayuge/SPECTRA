@@ -1,8 +1,12 @@
 import { useReqRailwayDataAdapter } from "@/infrastructure/adapters/httpReqAdapter"
 import { useTestStoreAdapter } from "@/infrastructure/adapters/storeAdapter"
+import { useRouteAdapter } from "@/infrastructure/adapters/routeAdapter"
+import { MENU_SITE_ROOT_NAME } from "@/domain/params/siteRootName"
+
 const useHomeSiteMain = () => {
   const { reqJrEastRealTimeLocateData, reqTokyoMetroRealTimeData } = useReqRailwayDataAdapter()
   const { increment, decrement, getCount } = useTestStoreAdapter()
+  const { routeTo } = useRouteAdapter()
   /**
    * ボタンがクリックされた場合
    **/
@@ -16,16 +20,16 @@ const useHomeSiteMain = () => {
   const tokyoMetroRealTimeDataCallback = async () => {
     await reqTokyoMetroRealTimeData()
   }
-  // メニューページに遷移する関数
-  const navigateToMenuSite = () => {
-    window.location.href = "/menu" // メニューページに遷移する
+  // メニューサイトに遷移する関数
+  const RouteToMenuSite = () => {
+    routeTo(MENU_SITE_ROOT_NAME)
   }
 
   return {
     buttonClicked,
     jrEastRealTimeLocateDataCallback,
     tokyoMetroRealTimeDataCallback,
-    navigateToMenuSite,
+    RouteToMenuSite,
     increment,
     decrement,
     getCount,
