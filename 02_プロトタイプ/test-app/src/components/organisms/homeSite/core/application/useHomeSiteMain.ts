@@ -7,7 +7,7 @@ const useHomeSiteMain = () => {
    * ボタンがクリックされた場合
    **/
   const buttonClicked = async () => {
-    alert("この関数はorganisms/homeSite/core/application/useHomeSiteMain.tsにあるよ！")
+    console.log("この関数はorganisms/homeSite/core/application/useHomeSiteMain.tsにあるよ！")
   }
   const jrEastRealTimeLocateDataCallback = async () => {
     //JR東日本リアルタイム車両位置データを非同期で取得する

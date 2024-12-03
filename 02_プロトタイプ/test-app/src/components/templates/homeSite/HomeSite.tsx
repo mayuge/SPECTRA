@@ -4,7 +4,7 @@ import React from "react"
 import HomeSiteMain from "@/components/organisms/homeSite/ui/HomeSiteMain"
 
 const HomeSite: React.FC = () => {
-  return (<HomeSiteMain />)
+  return <HomeSiteMain />
 }
 
 export default HomeSite

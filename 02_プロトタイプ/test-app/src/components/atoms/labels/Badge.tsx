@@ -7,19 +7,13 @@ type BadgeProps = {
   variant: BadgeVariantType // バッジのスタイル badge-primary, badge-secondary, badge-danger, badge-warning, badge-success のいずれかを指定
 }
 
-const Badge: React.FC<BadgeProps> = ({
-  text,
-  shape,
-  variant,
-}: BadgeProps) => {
-
+const Badge: React.FC<BadgeProps> = ({ text, shape, variant }: BadgeProps) => {
   // バッジのスタイルの種類 デフォルトは primary
   let badgeVariant = "bg-primary text-white hover:bg-primaryDark"
 
   if (variant === "badge-secondary") {
     //variantがsecondaryのとき
-    badgeVariant =
-      "bg-white text-primary shadow-sm  shadow-[0_2px_4px] shadow-primary/50" // primary の色を使用
+    badgeVariant = "bg-white text-primary shadow-sm  shadow-[0_2px_4px] shadow-primary/50" // primary の色を使用
   } else if (variant === "badge-danger") {
     //variantがdangerのとき
     badgeVariant = "bg-danger text-white"

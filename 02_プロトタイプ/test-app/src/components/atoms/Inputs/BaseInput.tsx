@@ -7,7 +7,7 @@ type InputProps = {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void
 }
 
-const baseInput: React.FC<InputProps> = ({ placeholder, value, onChange }) => {
+const BaseInput: React.FC<InputProps> = ({ placeholder, value, onChange }) => {
   return (
     <input
       type="text"
@@ -19,4 +19,4 @@ const baseInput: React.FC<InputProps> = ({ placeholder, value, onChange }) => {
   )
 }
 
-export default baseInput
+export default BaseInput

@@ -1,14 +1,14 @@
-"use client"; // クライアントサイドでのみ実行
+"use client" // クライアントサイドでのみ実行
 
-import React, { useRef, useEffect } from "react";
-import maplibregl from "maplibre-gl";
-import "maplibre-gl/dist/maplibre-gl.css";
+import React, { useRef, useEffect } from "react"
+import maplibregl from "maplibre-gl"
+import "maplibre-gl/dist/maplibre-gl.css"
 
 export default function Simple3DMap() {
-  const mapContainer = useRef<HTMLDivElement>(null);
+  const mapContainer = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    if (!mapContainer.current) return;
+    if (!mapContainer.current) return
 
     const map = new maplibregl.Map({
       container: mapContainer.current,
@@ -24,10 +24,11 @@ export default function Simple3DMap() {
             type: "raster",
             tiles: ["https://tile.openstreetmap.jp/styles/osm-bright-ja/{z}/{x}/{y}.png"],
             tileSize: 256,
-            attribution: "<a href='https://www.openstreetmap.org/copyright' target='_blank'>© OpenStreetMap contributors</a>",
+            attribution:
+              "<a href='https://www.openstreetmap.org/copyright' target='_blank'>© OpenStreetMap contributors</a>",
           },
           // 地形データ（DEM: Digital Elevation Model）
-          "terrain": {
+          terrain: {
             type: "raster-dem",
             tiles: ["https://cyberjapandata.gsi.go.jp/xyz/dem/{z}/{x}/{y}.txt"],
             tileSize: 256,
@@ -40,7 +41,8 @@ export default function Simple3DMap() {
             tiles: ["https://indigo-lab.github.io/plateau-lod2-mvt/{z}/{x}/{y}.pbf"],
             minzoom: 10,
             maxzoom: 16,
-            attribution: "<a href='https://github.com/indigo-lab/plateau-lod2-mvt'>plateau-lod2-mvt by indigo-lab</a>",
+            attribution:
+              "<a href='https://github.com/indigo-lab/plateau-lod2-mvt'>plateau-lod2-mvt by indigo-lab</a>",
           },
         },
         layers: [
@@ -51,11 +53,11 @@ export default function Simple3DMap() {
           },
         ],
       },
-    });
+    })
 
     map.on("load", () => {
       // 地形データの適用
-      map.setTerrain({ source: "terrain", exaggeration: 1.5 });
+      map.setTerrain({ source: "terrain", exaggeration: 1.5 })
 
       // 3D建物データレイヤを追加
       map.addLayer({
@@ -69,16 +71,16 @@ export default function Simple3DMap() {
           "fill-extrusion-color": "#797979",
           "fill-extrusion-opacity": 0.8,
         },
-      });
+      })
 
       // ズームコントロールを追加
-      map.addControl(new maplibregl.NavigationControl(), "top-right");
-    });
+      map.addControl(new maplibregl.NavigationControl(), "top-right")
+    })
 
     return () => {
-      map.remove(); // コンポーネントのアンマウント時にマップを削除
-    };
-  }, []);
+      map.remove() // コンポーネントのアンマウント時にマップを削除
+    }
+  }, [])
 
-  return <div ref={mapContainer} style={{ width: "100%", height: "100vh" }} />;
+  return <div ref={mapContainer} style={{ width: "100%", height: "100vh" }} />
 }

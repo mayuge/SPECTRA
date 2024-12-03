@@ -18,9 +18,9 @@ export type ButtonVariantType =
   | typeof BUTTON_DANGER
   | typeof BUTTON_SUCCESS
 
-export type BadgeVariantType = 
-| typeof BADGE_PRIMARY
-| typeof BADGE_SECONDARY
-| typeof BADGE_WARNING
-| typeof BADGE_DANGER
-| typeof BADGE_SUCCESS
+export type BadgeVariantType =
+  | typeof BADGE_PRIMARY
+  | typeof BADGE_SECONDARY
+  | typeof BADGE_WARNING
+  | typeof BADGE_DANGER
+  | typeof BADGE_SUCCESS

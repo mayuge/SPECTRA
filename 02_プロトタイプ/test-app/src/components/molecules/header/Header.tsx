@@ -8,10 +8,18 @@ type HeaderProps = {
   icon: string // アイコンの名前を文字列で指定
   size: string // mini、small、normal、large のいずれかを指定
   variant: HeaderVariantType // ヘッダーのスタイル header-primary, header-secondary, header-danger, header-warning, header-success のいずれかを指定
+  isCircle?: boolean //ヘッダーを角丸にする
   onClick: () => void
 }
 
-const Header: React.FC<HeaderProps> = ({ text, size, variant, icon, onClick }: HeaderProps) => {
+const Header: React.FC<HeaderProps> = ({
+  text,
+  size,
+  variant,
+  icon,
+  isCircle,
+  onClick,
+}: HeaderProps) => {
   // ヘッダーのスタイルの種類 デフォルトは primary
   let headerVariant = "bg-primary text-white"
   let buttonVariant: ButtonVariantType = "btn-primary"
@@ -34,14 +42,21 @@ const Header: React.FC<HeaderProps> = ({ text, size, variant, icon, onClick }: H
     buttonVariant = "btn-success"
   }
 
-  return (
-    <header className={`${headerVariant}w-full flex items-center justify-between`}>
-      <div className={`${headerVariant} ml-4`}>{text}</div>
+  //形の種類
+  let circleShape = ""
+  let buttonShape = "square"
+  if (isCircle === true) {
+    circleShape = "rounded-full"
+    buttonShape = "circle"
+  }
 
+  return (
+    <header className={`${headerVariant} ${circleShape} w-full flex items-center justify-between shadow-md shadow-black`}>
+      <div className={`${headerVariant} ml-8`}>{text}</div>
       <div>
         <Button
           variant={`${buttonVariant}`}
-          shape="square"
+          shape="circle"
           icon={`${icon}`}
           size={`${size}`}
           onClick={onClick}

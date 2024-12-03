@@ -15,13 +15,19 @@ const meta: Meta<typeof Badge> = {
     },
     shape: {
       control: { type: "select" },
-      options: ["square", "circle",null],
+      options: ["square", "circle", null],
       description: "バッジの形状を指定します (square または circle)",
       defaultValue: "square",
     },
     variant: {
       control: { type: "select" },
-      options: ["badge-primary", "badge-secondary", "badge-danger", "badge-warning", "badge-success"],
+      options: [
+        "badge-primary",
+        "badge-secondary",
+        "badge-danger",
+        "badge-warning",
+        "badge-success",
+      ],
       description: "バッジのスタイルを指定します",
       defaultValue: "badge-primary",
     },
