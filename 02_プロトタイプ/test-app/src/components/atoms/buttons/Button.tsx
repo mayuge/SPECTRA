@@ -71,7 +71,8 @@ const Button: React.FC<ButtonProps> = ({
     >
       {iconLeft && <span className="material-icons">{iconLeft}</span>} {/* アイコンを表示*/}
       {text}
-      {iconRight && <span className="material-icons">{iconRight}</span>} {/* アイコンを右寄せで表示*/}
+      {iconRight && <span className="material-icons">{iconRight}</span>}{" "}
+      {/* アイコンを右寄せで表示*/}
     </button>
   )
 }
