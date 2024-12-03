@@ -40,6 +40,14 @@ const Header: React.FC<HeaderProps> = ({
     //variantがsuccessのとき
     headerVariant = "bg-success text-white"
     buttonVariant = "btn-success"
+  } else if (variant === "header-dark") {
+    //variantがdarkのとき
+    headerVariant = "bg-gray-20 text-white"
+    buttonVariant = "btn-dark"
+  } else if (variant === "header-light") {
+    //variantがlightのとき
+    headerVariant = "bg-white text-gray-20"
+    buttonVariant = "btn-light"
   }
 
   //形の種類
@@ -51,7 +59,9 @@ const Header: React.FC<HeaderProps> = ({
   }
 
   return (
-    <header className={`${headerVariant} ${circleShape} w-full flex items-center justify-between shadow-md shadow-black`}>
+    <header
+      className={`${headerVariant} ${circleShape} w-full flex items-center justify-between shadow-md shadow-black text-2xl font-bold`}
+    >
       <div className={`${headerVariant} ml-8`}>{text}</div>
       <div>
         <Button

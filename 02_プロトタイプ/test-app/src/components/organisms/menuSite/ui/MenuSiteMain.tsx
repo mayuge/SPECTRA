@@ -11,13 +11,19 @@ const MenuSiteMain: React.FC = () => {
 
   return (
     <div>
-      <Header
-        text="遷移後メニュー"
-        icon="menu"
-        size="normal"
-        variant="header-primary"
-        onClick={buttonClicked}
-      />
+      <div className="relative z-10 p-4 flex justify-center">
+        <div className="max-w-screen-xl w-full mx-auto mx-8">
+          <Header
+            text="NOZAWA OPENDATA PROJECT"
+            icon="menu"
+            size="large"
+            variant="header-light"
+            isCircle={true}
+            onClick={buttonClicked}
+          />
+        </div>
+      </div>
+
       <div className="m-4">
         <div>
           <TextLabel

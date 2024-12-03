@@ -45,6 +45,12 @@ const Button: React.FC<ButtonProps> = ({
   } else if (variant === "btn-success") {
     //variantがsuccessのとき
     btnVariant = "bg-success text-white"
+  } else if (variant === "btn-dark") {
+    //variantがdarkのとき
+    btnVariant = "bg-gray-20 text-white"
+  } else if (variant === "btn-light") {
+    //variantがlightのとき
+    btnVariant = "bg-white text-gray-20"
   }
 
   //ボタンの形状の種類　circle square

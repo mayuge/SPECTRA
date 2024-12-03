@@ -29,20 +29,18 @@ const HomeSiteMain: React.FC = () => {
       <div className="relative z-10 p-4 flex justify-center">
         <div className="max-w-screen-xl w-full mx-auto mx-8">
         <Header
-          text="API取得テストホームページ"
+          text="NOZAWA OPENDATA PROJECT"
           icon="menu"
           size="large"
-          variant="header-primary"
+          variant="header-light"
           isCircle={true}
           onClick={buttonClicked}
         />
         </div>
-      
       </div>
+      
       {/* コンテンツを地図の上に表示 */}
       <div className="relative z-10 bg-white bg-opacity-80 p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
-
-
         <div className="flex justify-center">
           <div>
             <div className="flex items-center gap-4 my-4">

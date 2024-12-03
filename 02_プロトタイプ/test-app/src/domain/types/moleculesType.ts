@@ -5,6 +5,8 @@ import type {
   HEADER_WARNING,
   HEADER_DANGER,
   HEADER_SUCCESS,
+  HEADER_DARK,
+  HEADER_LIGHT,
 } from "@/domain/params/molecules"
 
 //ヘッダーのバリアントの型
@@ -14,3 +16,5 @@ export type HeaderVariantType =
   | typeof HEADER_WARNING
   | typeof HEADER_DANGER
   | typeof HEADER_SUCCESS
+  | typeof HEADER_DARK
+  | typeof HEADER_LIGHT

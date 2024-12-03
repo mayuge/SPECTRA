@@ -5,6 +5,8 @@ import type {
   BUTTON_WARNING,
   BUTTON_DANGER,
   BUTTON_SUCCESS,
+  BUTTON_DARK,
+  BUTTON_LIGHT,
   BADGE_PRIMARY,
   BADGE_SECONDARY,
   BADGE_WARNING,
@@ -17,6 +19,8 @@ export type ButtonVariantType =
   | typeof BUTTON_WARNING
   | typeof BUTTON_DANGER
   | typeof BUTTON_SUCCESS
+  | typeof BUTTON_DARK
+  | typeof BUTTON_LIGHT
 
 export type BadgeVariantType =
   | typeof BADGE_PRIMARY
