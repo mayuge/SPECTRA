@@ -4,13 +4,13 @@ type TextLabelProps = {
   text: string // テキスト
   size: string // mini、small、normal、large,xlarge のいずれかを指定
   bold: boolean // 文字の太さ
-  isBlack?:boolean//文字色
+  isBlack?: boolean //文字色
 }
 
-const TextLabel: React.FC<TextLabelProps> = ({ text, size, bold,isBlack }: TextLabelProps) => {
+const TextLabel: React.FC<TextLabelProps> = ({ text, size, bold, isBlack }: TextLabelProps) => {
   let textColor = ""
-  if(!isBlack){
-    textColor="text-white"
+  if (!isBlack) {
+    textColor = "text-white"
   }
 
   // サイズの種類　small normal largeから指定 fontSize を設定
