@@ -12,6 +12,7 @@ import type {
   BADGE_WARNING,
   BADGE_DANGER,
   BADGE_SUCCESS,
+  BADGE_DARK,
 } from "@/domain/params/atoms"
 
 import type {
@@ -43,6 +44,7 @@ export type BadgeVariantType =
   | typeof BADGE_WARNING
   | typeof BADGE_DANGER
   | typeof BADGE_SUCCESS
+  | typeof BADGE_DARK
 
   export type TextLabelSizeType =
   | typeof MINI_SIZE
