@@ -1,12 +1,12 @@
 import React from "react"
 import Button from "@/components/atoms/buttons/Button"
 import type { ButtonVariantType } from "@/domain/types/atomsType"
-import type { HeaderVariantType } from "@/domain/types/moleculesType"
+import type { HeaderVariantType, HeaderSizeType } from "@/domain/types/moleculesType"
 
 type HeaderProps = {
   text?: string // ヘッダーテキスト
   icon: string // アイコンの名前を文字列で指定
-  size: string // mini、small、normal、large のいずれかを指定
+  size: HeaderSizeType // mini、small、normal、large のいずれかを指定
   variant: HeaderVariantType // ヘッダーのスタイル header-primary, header-secondary, header-danger, header-warning, header-success のいずれかを指定
   isCircle?: boolean //ヘッダーを角丸にする
   onClick: () => void

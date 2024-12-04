@@ -57,7 +57,7 @@ const MenuSiteMain: React.FC = () => {
       <div className="h-[50vh] bg-gray-20 justify-center p-8">
         <div className="max-w-screen-xl w-full mx-auto m-8 ">
           <div className="my-10">
-            <TextLabel text={`カテゴリ別に都市を見る`} size="large" bold={true} />
+            <TextLabel text={`カテゴリ別に都市を見る`} size="large" bold={true} isBlack={false} />
           </div>
           <div className="flex w-full gap-10">
             <Button
@@ -94,16 +94,31 @@ const MenuSiteMain: React.FC = () => {
             />
           </div>
           <div className="mt-16 mb-8">
-            <TextLabel text={`リリースノート`} size="large" bold={true} />
+            <TextLabel text={`リリースノート`} size="large" bold={true} isBlack={false}/>
           </div>
           <div className="my-4">
-            <TextLabel text={`2025年1月13日　本システムの公式Youtubeアカウントが公開されました`} size="normal" bold={true} />
+            <TextLabel
+              text={`2025年1月13日　本システムの公式Youtubeアカウントが公開されました`}
+              size="normal"
+              bold={false}
+              isBlack={false}
+            />
           </div>
           <div className="my-4">
-            <TextLabel text={`2025年1月14日　本システムの公式Youtube動画が公開されました`} size="normal" bold={true} />
+            <TextLabel
+              text={`2025年1月14日　本システムの公式Youtube動画が公開されました`}
+              size="normal"
+              bold={false}
+              isBlack={false}
+            />
           </div>
           <div className="my-4">
-            <TextLabel text={`2025年1月15日　本システムが公式リリースしました`} size="normal" bold={true} />
+            <TextLabel
+              text={`2025年1月15日　本システムが公式リリースしました`}
+              size="normal"
+              bold={false}
+              isBlack={false}
+            />
           </div>
         </div>
       </div>

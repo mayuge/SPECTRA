@@ -1,12 +1,12 @@
 import React from "react"
-import type { ButtonVariantType } from "@/domain/types/atomsType"
+import type { ButtonVariantType, ButtonSizeType } from "@/domain/types/atomsType"
 
 type ButtonProps = {
   text?: string // ボタンテキスト
   iconLeft?: string // アイコンの名前を文字列で指定
   iconRight?: string // アイコンの名前を文字列で指定
   shape?: string //ボタンの形状を文字列で指定 square circle
-  size: string // mini、small、normal、large のいずれかを指定
+  size: ButtonSizeType // mini、small、normal、large のいずれかを指定
   variant: ButtonVariantType // ボタンのスタイル btn-primary, btn-secondary, btn-danger, btn-warning, btn-success のいずれかを指定
   onClick: () => void
 }

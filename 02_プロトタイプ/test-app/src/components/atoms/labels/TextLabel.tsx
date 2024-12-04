@@ -1,5 +1,6 @@
 import React from "react"
 
+
 type TextLabelProps = {
   text: string // テキスト
   size: string // mini、small、normal、large,xlarge のいずれかを指定
@@ -9,7 +10,7 @@ type TextLabelProps = {
 
 const TextLabel: React.FC<TextLabelProps> = ({ text, size, bold, isBlack }: TextLabelProps) => {
   let textColor = ""
-  if (!isBlack) {
+  if (isBlack === false) {
     textColor = "text-white"
   }
 
