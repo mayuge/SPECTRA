@@ -94,7 +94,7 @@ const MenuSiteMain: React.FC = () => {
             />
           </div>
           <div className="mt-16 mb-8">
-            <TextLabel text={`リリースノート`} size="large" bold={true} isBlack={false}/>
+            <TextLabel text={`リリースノート`} size="large" bold={true} isBlack={false} />
           </div>
           <div className="my-4">
             <TextLabel

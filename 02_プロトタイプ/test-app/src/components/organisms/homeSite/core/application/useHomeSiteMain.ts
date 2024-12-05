@@ -10,7 +10,7 @@ const useHomeSiteMain = () => {
   /**
    * ボタンがクリックされた場合
    **/
-  const buttonClicked = async () => {
+  const buttonClicked = () => {
     console.log("この関数はorganisms/homeSite/core/application/useHomeSiteMain.tsにあるよ！")
   }
   const jrEastRealTimeLocateDataCallback = async () => {

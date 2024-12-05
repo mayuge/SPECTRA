@@ -1,7 +1,7 @@
 import { create } from "zustand"
 import { persist, createJSONStorage } from "zustand/middleware"
 
-interface TestStoreState {
+interface DialogStateState {
   count: number
   increment: () => void
   decrement: () => void
@@ -9,7 +9,7 @@ interface TestStoreState {
 }
 
 // Zustandストアの作成
-const useDialogStateStore = create<TestStoreState>()(
+const useDialogStateStore = create<DialogStateState>()(
   persist(
     (set, get) => ({
       count: 0,

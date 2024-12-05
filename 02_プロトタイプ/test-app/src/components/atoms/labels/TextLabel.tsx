@@ -1,6 +1,5 @@
 import React from "react"
 
-
 type TextLabelProps = {
   text: string // テキスト
   size: string // mini、small、normal、large,xlarge のいずれかを指定

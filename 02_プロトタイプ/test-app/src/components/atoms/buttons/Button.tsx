@@ -8,7 +8,7 @@ type ButtonProps = {
   shape?: string //ボタンの形状を文字列で指定 square circle
   size: ButtonSizeType // mini、small、normal、large のいずれかを指定
   variant: ButtonVariantType // ボタンのスタイル btn-primary, btn-secondary, btn-danger, btn-warning, btn-success のいずれかを指定
-  onClick: () => void
+  onClick?: () => void
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -53,6 +53,15 @@ const Button: React.FC<ButtonProps> = ({
   } else if (variant === "btn-light") {
     //variantがlightのとき
     btnVariant = "bg-white text-gray-20"
+  } else if (variant === "btn-text-black") {
+    //variantがtext-blackのとき
+    btnVariant = "text-gray-20"
+  } else if (variant === "btn-text-gray") {
+    //variantがtext-grayのとき
+    btnVariant = "text-gray-50"
+  } else if (variant === "btn-text-white") {
+    //variantがtext-whiteのとき
+    btnVariant = "text-white"
   }
 
   //ボタンの形状の種類　circle square

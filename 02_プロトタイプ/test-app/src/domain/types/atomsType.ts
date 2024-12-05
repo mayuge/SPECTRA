@@ -7,6 +7,9 @@ import type {
   BUTTON_SUCCESS,
   BUTTON_DARK,
   BUTTON_LIGHT,
+  BUTTON_TEXT_BLACK,
+  BUTTON_TEXT_GRAY,
+  BUTTON_TEXT_WHITE,
   BADGE_PRIMARY,
   BADGE_SECONDARY,
   BADGE_WARNING,
@@ -31,6 +34,9 @@ export type ButtonVariantType =
   | typeof BUTTON_SUCCESS
   | typeof BUTTON_DARK
   | typeof BUTTON_LIGHT
+  | typeof BUTTON_TEXT_BLACK
+  | typeof BUTTON_TEXT_GRAY
+  | typeof BUTTON_TEXT_WHITE
 
 export type ButtonSizeType =
   | typeof MINI_SIZE
@@ -46,12 +52,9 @@ export type BadgeVariantType =
   | typeof BADGE_SUCCESS
   | typeof BADGE_DARK
 
-  export type TextLabelSizeType =
+export type TextLabelSizeType =
   | typeof MINI_SIZE
   | typeof SMALL_SIZE
   | typeof NORMAL_SIZE
   | typeof LARGE_SIZE
   | typeof XLARGE_SIZE
-
-
-

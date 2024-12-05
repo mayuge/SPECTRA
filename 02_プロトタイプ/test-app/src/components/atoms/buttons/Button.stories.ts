@@ -22,7 +22,7 @@ const meta: Meta<typeof Button> = {
     },
     variant: {
       control: "select",
-      options: ["btn-primary", "btn-secondary", "btn-danger", "btn-warning", "btn-success"],
+      options: ["btn-primary", "btn-secondary", "btn-danger", "btn-warning", "btn-success", "btn-dark","btn-light","btn-text-black","btn-text-gray","btn-text-white"],
       description: "ボタンのスタイル",
     },
     shape: {
@@ -33,7 +33,8 @@ const meta: Meta<typeof Button> = {
         null: undefined, // null を指定しない場合にマップ
       },
     },
-    icon: { control: "text", description: "表示するアイコンの名前" },
+    iconLeft: { control: "text", description: "表示するアイコンの名前" },
+    iconRight: { control: "text", description: "表示するアイコンの名前" },
     onClick: { action: "clicked", description: "クリックイベントハンドラ" },
   },
 }
@@ -65,7 +66,7 @@ export const Secondary: Story = {
 export const Success: Story = {
   args: {
     text: "認証",
-    icon: "check_circle", // マテリアルアイコンの名前
+    iconRight: "check_circle", // マテリアルアイコンの名前
     size: "normal",
     variant: "btn-success",
     shape: "square",
@@ -76,18 +77,28 @@ export const Success: Story = {
 export const Danger: Story = {
   args: {
     text: "削除する",
-    icon: "delete", // マテリアルアイコンの名前
+    iconLeft: "delete", // マテリアルアイコンの名前
     size: "small",
     variant: "btn-danger",
     shape: "circle",
   },
 }
+export const Dark: Story = {
+  args: {
+    text: "トップへ戻る",
+    iconRight: "arrow_forward", // マテリアルアイコンの名前
+    size: "normal",
+    variant: "btn-dark",
+    shape: "circle",
+  },
+}
+
 
 // Circle 形状のボタン
 export const Circle: Story = {
   args: {
     text: "",
-    icon: "add",
+    iconLeft: "add",
     size: "large",
     variant: "btn-warning",
     shape: "circle",
@@ -98,9 +109,29 @@ export const Circle: Story = {
 export const Mini: Story = {
   args: {
     text: "",
-    icon: "close",
+    iconLeft: "close",
     size: "mini",
     variant: "btn-danger",
+    shape: "square",
+  },
+}
+
+// アイコンボタン
+export const TextIconButton: Story = {
+  args: {
+    text: "",
+    iconLeft: "close",
+    size: "mini",
+    variant: "btn-text-gray",
+    shape: "square",
+  },
+  }
+    // テキストボタン
+export const TextButton: Story = {
+  args: {
+    text: "このテキストは押すことができます",
+    size: "mini",
+    variant: "btn-text-black",
     shape: "square",
   },
 }

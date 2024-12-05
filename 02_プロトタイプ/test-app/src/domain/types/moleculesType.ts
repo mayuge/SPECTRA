@@ -9,12 +9,7 @@ import type {
   HEADER_LIGHT,
 } from "@/domain/params/molecules"
 
-import type {
-  MINI_SIZE,
-  SMALL_SIZE,
-  NORMAL_SIZE,
-  LARGE_SIZE,
-} from "@/domain/params/components"
+import type { MINI_SIZE, SMALL_SIZE, NORMAL_SIZE, LARGE_SIZE } from "@/domain/params/components"
 
 //ヘッダーのバリアントの型
 export type HeaderVariantType =
@@ -26,7 +21,7 @@ export type HeaderVariantType =
   | typeof HEADER_DARK
   | typeof HEADER_LIGHT
 
-  export type HeaderSizeType =
+export type HeaderSizeType =
   | typeof MINI_SIZE
   | typeof SMALL_SIZE
   | typeof NORMAL_SIZE

@@ -40,11 +40,17 @@ const HomeSiteMain: React.FC = () => {
       </div>
 
       {/* コンテンツを地図の上に表示 */}
-      <div className="relative z-10 bg-white bg-opacity-80 p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
+      <div className="relative z-10 bg-white p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
         <div className="flex justify-center">
           <div>
             <div className="flex items-center gap-4 my-4">
               <CheckBox value={true} onChange={buttonClicked} />
+              <Button
+                iconLeft="visibility"
+                variant="btn-text-gray"
+                size="mini"
+                onClick={buttonClicked}
+              />
               <Badge text="GETリクエスト" variant="badge-warning" />
               <Badge text="JSON" variant="badge-danger" />
               <TextLabel text="JR東日本リアルタイム車両位置データ" size="normal" bold={false} />
@@ -57,6 +63,12 @@ const HomeSiteMain: React.FC = () => {
               />
             </div>
             <div className="flex items-center gap-4 my-4">
+              <Button
+                iconLeft="visibility_off"
+                variant="btn-text-gray"
+                size="mini"
+                onClick={buttonClicked}
+              />
               <Badge text="GETリクエスト" variant="badge-warning" />
               <Badge text="JSON" variant="badge-danger" />
               <TextLabel text="東京メトロリアルタイム運行状況データ" size="normal" bold={false} />
