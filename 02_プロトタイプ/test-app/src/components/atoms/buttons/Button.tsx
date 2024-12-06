@@ -5,9 +5,11 @@ type ButtonProps = {
   text?: string // ボタンテキスト
   iconLeft?: string // アイコンの名前を文字列で指定
   iconRight?: string // アイコンの名前を文字列で指定
+  isShadow?: boolean //影をつけるかつけないか
   shape?: string //ボタンの形状を文字列で指定 square circle
   size: ButtonSizeType // mini、small、normal、large のいずれかを指定
   variant: ButtonVariantType // ボタンのスタイル btn-primary, btn-secondary, btn-danger, btn-warning, btn-success のいずれかを指定
+
   onClick?: () => void
 }
 
@@ -18,6 +20,7 @@ const Button: React.FC<ButtonProps> = ({
   variant,
   iconLeft,
   iconRight,
+  isShadow,
   onClick,
 }: ButtonProps) => {
   // サイズの種類　small normal largeから指定 paddingSize を動的に設定
@@ -73,9 +76,14 @@ const Button: React.FC<ButtonProps> = ({
     cornerShape = "rounded-full" //円形の場合は角丸をfullにする
   }
 
+  let buttonShadow = ""
+  if (isShadow === true) {
+    buttonShadow = "shadow-md shadow-black"
+  }
+
   return (
     <button
-      className={`${paddingSize} ${btnVariant} ${cornerShape} flex items-center gap-1`} // flex と items-center を追加
+      className={`${paddingSize} ${btnVariant} ${cornerShape} ${buttonShadow} flex items-center gap-1`} // flex と items-center を追加
       onClick={onClick}
     >
       {iconLeft && <span className="material-icons">{iconLeft}</span>} {/* アイコンを表示*/}

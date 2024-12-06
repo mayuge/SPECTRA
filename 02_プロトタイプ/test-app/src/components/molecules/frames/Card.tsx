@@ -1,6 +1,5 @@
 import React from "react"
 
-
 type CardProps = {
   text: string // バッジテキスト
   shape?: string //バッジの形状を文字列で指定 square(四角形) round（角丸）
@@ -9,7 +8,7 @@ type CardProps = {
 const Card: React.FC<CardProps> = ({ text, shape }: CardProps) => {
   // バッジのスタイルの種類 デフォルトは primary
   let badgeVariant = "bg-primary text-white hover:bg-primaryDark"
-  
+
   //バッジの形状の種類　circle square
   let cornerShape = "rounded"
 

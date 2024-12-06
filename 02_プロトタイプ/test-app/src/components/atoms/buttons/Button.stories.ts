@@ -22,7 +22,18 @@ const meta: Meta<typeof Button> = {
     },
     variant: {
       control: "select",
-      options: ["btn-primary", "btn-secondary", "btn-danger", "btn-warning", "btn-success", "btn-dark","btn-light","btn-text-black","btn-text-gray","btn-text-white"],
+      options: [
+        "btn-primary",
+        "btn-secondary",
+        "btn-danger",
+        "btn-warning",
+        "btn-success",
+        "btn-dark",
+        "btn-light",
+        "btn-text-black",
+        "btn-text-gray",
+        "btn-text-white",
+      ],
       description: "ボタンのスタイル",
     },
     shape: {
@@ -92,7 +103,16 @@ export const Dark: Story = {
     shape: "circle",
   },
 }
-
+export const Light: Story = {
+  args: {
+    text: "トップへ戻る",
+    iconRight: "arrow_forward", // マテリアルアイコンの名前
+    size: "normal",
+    variant: "btn-light",
+    isShadow: true,
+    shape: "circle",
+  },
+}
 
 // Circle 形状のボタン
 export const Circle: Story = {
@@ -125,8 +145,8 @@ export const TextIconButton: Story = {
     variant: "btn-text-gray",
     shape: "square",
   },
-  }
-    // テキストボタン
+}
+// テキストボタン
 export const TextButton: Story = {
   args: {
     text: "このテキストは押すことができます",

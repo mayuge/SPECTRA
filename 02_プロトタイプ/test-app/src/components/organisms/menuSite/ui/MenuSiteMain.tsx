@@ -36,7 +36,7 @@ const MenuSiteMain: React.FC = () => {
           </div>
           <div className="my-12">
             <TextLabel
-              text={`交通・不動産・犯罪・災害等さまざまなオープンデータを\nかけ合わせることで新たな気づきが生まれる`}
+              text={`交通・不動産・地理・災害等さまざまなオープンデータを\nかけ合わせることで新たな気づきが生まれる`}
               size="large"
               bold={true}
               isBlack={true}
@@ -49,6 +49,7 @@ const MenuSiteMain: React.FC = () => {
               variant="btn-dark"
               size="normal"
               shape="circle"
+              isShadow={true}
               onClick={navigateToHomeSite}
             />
           </div>
@@ -61,35 +62,39 @@ const MenuSiteMain: React.FC = () => {
           </div>
           <div className="flex w-full gap-10">
             <Button
-              text="交通から都市を見る"
+              text="人口×交通で都市を見る"
               iconLeft="layers"
               variant="btn-light"
               size="normal"
               shape="circle"
+              isShadow={true}
               onClick={navigateToHomeSite}
             />
             <Button
-              text="不動産から都市を見る"
+              text="不動産×交通から都市を見る"
               iconLeft="layers"
               variant="btn-light"
               size="normal"
               shape="circle"
+              isShadow={true}
               onClick={navigateToHomeSite}
             />
             <Button
-              text="犯罪から都市を見る"
+              text="地理×交通から都市を見る"
               iconLeft="layers"
               variant="btn-light"
               size="normal"
               shape="circle"
+              isShadow={true}
               onClick={navigateToHomeSite}
             />
             <Button
-              text="災害から都市を見る"
+              text="災害×交通から都市を見る"
               iconLeft="layers"
               variant="btn-light"
               size="normal"
               shape="circle"
+              isShadow={true}
               onClick={navigateToHomeSite}
             />
           </div>
