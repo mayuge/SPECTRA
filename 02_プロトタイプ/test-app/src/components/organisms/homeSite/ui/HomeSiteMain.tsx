@@ -6,7 +6,7 @@ import TextLabel from "@/components/atoms/labels/TextLabel"
 import Badge from "@/components/atoms/labels/Badge"
 import useHomeSiteMain from "@/components/organisms/homeSite/core/application/useHomeSiteMain"
 import CheckBox from "@/components/atoms/Inputs/CheckBox"
-import Map from "@/components/atoms/map/Map"
+import Map from "@/components/organisms/homeSite/ui/Map"
 
 const HomeSiteMain: React.FC = () => {
   const {
