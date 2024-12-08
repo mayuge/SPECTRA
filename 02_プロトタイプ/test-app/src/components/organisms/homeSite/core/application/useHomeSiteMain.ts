@@ -1,9 +1,9 @@
 import { useTestStoreAdapter } from "@/infrastructure/adapters/storeAdapter"
-import { useRouteAdapter } from "@/infrastructure/adapters/routeAdapter"
+import { useSiteRouteAdapter } from "@/infrastructure/adapters/routeAdapter"
 import { VIEW_SITE_ROOT_NAME } from "@/domain/params/siteRootName"
 const useHomeSiteMain = () => {
   const { getCount } = useTestStoreAdapter()
-  const { routeTo } = useRouteAdapter()
+  const { routeTo } = useSiteRouteAdapter()
   //ボタンが押されたとき
   const buttonClicked = () => {
     alert("organisms/menuSite/core/application/useHomeSiteMainにある関数です。")

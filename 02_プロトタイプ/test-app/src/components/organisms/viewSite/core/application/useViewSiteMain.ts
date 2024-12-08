@@ -1,12 +1,12 @@
 import { useReqRailwayDataAdapter } from "@/infrastructure/adapters/httpReqAdapter"
 import { useTestStoreAdapter } from "@/infrastructure/adapters/storeAdapter"
-import { useRouteAdapter } from "@/infrastructure/adapters/routeAdapter"
+import { useSiteRouteAdapter } from "@/infrastructure/adapters/routeAdapter"
 import { HOME_SITE_ROOT_NAME } from "@/domain/params/siteRootName"
 
 const useViewSiteMain = () => {
   const { reqJrEastRealTimeLocateData, reqTokyoMetroRealTimeData } = useReqRailwayDataAdapter()
   const { increment, decrement, getCount } = useTestStoreAdapter()
-  const { routeTo } = useRouteAdapter()
+  const { routeTo } = useSiteRouteAdapter()
   /**
    * ボタンがクリックされた場合
    **/

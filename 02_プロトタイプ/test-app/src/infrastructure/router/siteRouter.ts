@@ -1,6 +1,7 @@
 import type { SiteRootNameType } from "@/domain/types/siteRootNameType"
+import type { ISiteRouter } from "@/domain/interfaces/ISiteRouter"
 
-const useRouter = () => {
+const useSiteRouter = ():ISiteRouter => {
   const routeTo = (siteRootName: SiteRootNameType) => {
     window.location.href = siteRootName // メニューページに遷移する
   }
@@ -8,4 +9,4 @@ const useRouter = () => {
     routeTo,
   }
 }
-export default useRouter
+export default useSiteRouter
