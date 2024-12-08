@@ -7,7 +7,7 @@ import Header from "@/components/molecules/header/Header"
 import useHomeSiteMain from "@/components/organisms/homeSite/core/application/useHomeSiteMain"
 
 const HomeSiteMain: React.FC = () => {
-  const { buttonClicked, navigateToViewSite, getCount } = useHomeSiteMain()
+  const { buttonClicked, navigateToViewSite } = useHomeSiteMain()
 
   return (
     <div className="relative">

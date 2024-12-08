@@ -16,7 +16,9 @@ const useReqRailwayData = () => {
       }
       //リクエストを行う
       const res = await httpLimited.request(config)
-      console.log(res)
+      if (res.statusText === "OK") {
+        return res.data
+      }
     } catch (e: any) {
       console.log(e)
     }
@@ -32,7 +34,9 @@ const useReqRailwayData = () => {
       }
       //リクエストを行う
       const res = await http.request(config)
-      console.log(res)
+      if (res.statusText === "OK") {
+        return res.data
+      }
     } catch (e: any) {
       console.log(e)
     }

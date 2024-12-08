@@ -15,10 +15,12 @@ const useViewSiteMain = () => {
   }
   const jrEastRealTimeLocateDataCallback = async () => {
     //JR東日本リアルタイム車両位置データを非同期で取得する
-    await reqJrEastRealTimeLocateData()
+    const res = await reqJrEastRealTimeLocateData()
+    console.log(res)
   }
   const tokyoMetroRealTimeDataCallback = async () => {
-    await reqTokyoMetroRealTimeData()
+    const res = await reqTokyoMetroRealTimeData()
+    console.log(res)
   }
   // ホームサイトに遷移する関数
   const RouteToHomeSite = () => {

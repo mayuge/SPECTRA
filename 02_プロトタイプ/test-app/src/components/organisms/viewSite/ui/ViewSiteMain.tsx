@@ -6,7 +6,7 @@ import TextLabel from "@/components/atoms/labels/TextLabel"
 import Badge from "@/components/atoms/labels/Badge"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
 import CheckBox from "@/components/atoms/Inputs/CheckBox"
-import Map from "@/components/organisms/viewSite/ui/MapApp"
+import MapApp from "@/components/organisms/viewSite/ui/MapApp"
 import Card from "@/components/molecules/frames/Card"
 
 const ViewSiteMain: React.FC = () => {
@@ -24,7 +24,7 @@ const ViewSiteMain: React.FC = () => {
     <div className="relative w-full h-screen">
       {/* 地図を全画面に表示 */}
       <div className="absolute inset-0 z-0">
-        <Map />
+        <MapApp />
       </div>
 
       <div className="relative z-10 p-4 flex justify-center">
@@ -35,7 +35,7 @@ const ViewSiteMain: React.FC = () => {
             size="large"
             variant="header-light"
             isCircle={true}
-            onClick={buttonClicked}
+            onClick={RouteToHomeSite}
           />
         </div>
       </div>
@@ -44,7 +44,7 @@ const ViewSiteMain: React.FC = () => {
       <div className="relative z-10 bg-white p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
         <div className="flex justify-center">
           <div>
-            <Card text="JR東日本リアルタイム車両位置データ" isShadow={true}/>
+            <Card text="JR東日本リアルタイム車両位置データ" isShadow={true} shape="square" />
             <div className="flex items-center gap-4 my-4">
               <CheckBox value={true} onChange={buttonClicked} />
               <Button
