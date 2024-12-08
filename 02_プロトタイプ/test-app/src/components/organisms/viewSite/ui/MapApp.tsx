@@ -3,7 +3,7 @@
 import React, { useRef } from "react"
 import maplibregl from "maplibre-gl"
 import "maplibre-gl/dist/maplibre-gl.css"
-import { mapConfig } from "@/components/organisms/homeSite/core/params/params"
+import { mapConfig } from "@/components/organisms/viewSite/core/params/params"
 
 const Simple3DMap: React.FC = () => {
   const mapContainer = useRef<HTMLDivElement>(null)

@@ -1,33 +1,22 @@
 "use client"
+
 import React from "react"
-import Header from "@/components/molecules/header/Header"
 import Button from "@/components/atoms/buttons/Button"
 import TextLabel from "@/components/atoms/labels/TextLabel"
-import Badge from "@/components/atoms/labels/Badge"
+import Header from "@/components/molecules/header/Header"
 import useHomeSiteMain from "@/components/organisms/homeSite/core/application/useHomeSiteMain"
-import CheckBox from "@/components/atoms/Inputs/CheckBox"
-import Map from "@/components/organisms/homeSite/ui/Map"
-import Card from "@/components/molecules/frames/Card"
 
 const HomeSiteMain: React.FC = () => {
-  const {
-    buttonClicked,
-    RouteToMenuSite,
-    jrEastRealTimeLocateDataCallback,
-    tokyoMetroRealTimeDataCallback,
-    increment,
-    decrement,
-    getCount,
-  } = useHomeSiteMain()
+  const { buttonClicked, navigateToViewSite, getCount } = useHomeSiteMain()
 
   return (
-    <div className="relative w-full h-screen">
-      {/* 地図を全画面に表示 */}
-      <div className="absolute inset-0 z-0">
-        <Map />
-      </div>
+    <div className="relative">
+      <img
+        src="/assets/platou_test_4.png"
+        className="absolute inset-0 w-full h-full object-cover z-[-1]"
+      />
 
-      <div className="relative z-10 p-4 flex justify-center">
+      <div className="relative p-4 justify-center">
         <div className="max-w-screen-xl w-full mx-auto mx-8">
           <Header
             text="NOZAWA OPENDATA PROJECT"
@@ -37,90 +26,104 @@ const HomeSiteMain: React.FC = () => {
             isCircle={true}
             onClick={buttonClicked}
           />
+          <div className="my-12">
+            <TextLabel
+              text={`都市の本当の価値を\n可視化する`}
+              size="xlarge"
+              bold={true}
+              isBlack={true}
+            />
+          </div>
+          <div className="my-12">
+            <TextLabel
+              text={`交通・不動産・地理・災害等さまざまなオープンデータを\nかけ合わせることで新たな気づきが生まれる`}
+              size="large"
+              bold={true}
+              isBlack={true}
+            />
+          </div>
+          <div className="mt-8 mb-16">
+            <Button
+              text="オープンデータを見る"
+              iconRight="arrow_forward"
+              variant="btn-dark"
+              size="normal"
+              shape="circle"
+              isShadow={true}
+              onClick={navigateToViewSite}
+            />
+          </div>
         </div>
       </div>
-
-      {/* コンテンツを地図の上に表示 */}
-      <div className="relative z-10 bg-white p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
-        <div className="flex justify-center">
-          <div>
-            <Card text="カードテキスト" />
-            <div className="flex items-center gap-4 my-4">
-              <CheckBox value={true} onChange={buttonClicked} />
-              <Button
-                iconLeft="visibility"
-                variant="btn-text-gray"
-                size="mini"
-                onClick={buttonClicked}
-              />
-              <Badge text="GETリクエスト" variant="badge-warning" />
-              <Badge text="JSON" variant="badge-danger" />
-              <TextLabel text="JR東日本リアルタイム車両位置データ" size="normal" bold={false} />
-              <Button
-                text="更新する"
-                iconLeft="refresh"
-                variant="btn-primary"
-                size="small"
-                onClick={jrEastRealTimeLocateDataCallback}
-              />
-              <Button
-                iconLeft="check"
-                iconRight=""
-                onClick={() => {}}
-                shape="circle"
-                size="normal"
-                text=""
-                variant="btn-primary"
-              />
-            </div>
-            <div className="flex items-center gap-4 my-4">
-              <Button
-                iconLeft="visibility_off"
-                variant="btn-text-gray"
-                size="mini"
-                onClick={buttonClicked}
-              />
-              <Badge text="GETリクエスト" variant="badge-warning" />
-              <Badge text="JSON" variant="badge-danger" />
-              <TextLabel text="東京メトロリアルタイム運行状況データ" size="normal" bold={false} />
-              <Button
-                text="更新する"
-                iconLeft="refresh"
-                variant="btn-primary"
-                size="small"
-                onClick={tokyoMetroRealTimeDataCallback}
-              />
-            </div>
-            <div className="flex gap-4">
-              <TextLabel
-                text={`状態管理ツールテスト用カウンター: ${getCount()}`}
-                size="normal"
-                bold={false}
-              />
-              <Button
-                iconLeft="remove"
-                variant="btn-danger"
-                size="small"
-                shape="circle"
-                onClick={decrement}
-              />
-              <Button
-                iconLeft="add"
-                variant="btn-success"
-                size="small"
-                shape="circle"
-                onClick={increment}
-              />
-            </div>
-            <div className="flex justify-center my-4">
-              <Button
-                text="メニューページに遷移する"
-                variant="btn-warning"
-                size="normal"
-                shape="circle"
-                onClick={RouteToMenuSite}
-              />
-            </div>
+      <div className="h-[50vh] bg-gray-20 justify-center p-8">
+        <div className="max-w-screen-xl w-full mx-auto m-8 ">
+          <div className="my-10">
+            <TextLabel text={`カテゴリ別に都市を見る`} size="large" bold={true} isBlack={false} />
+          </div>
+          <div className="flex w-full gap-10">
+            <Button
+              text="人口×交通で都市を見る"
+              iconLeft="layers"
+              variant="btn-light"
+              size="normal"
+              shape="circle"
+              isShadow={true}
+              onClick={navigateToViewSite}
+            />
+            <Button
+              text="不動産×交通から都市を見る"
+              iconLeft="layers"
+              variant="btn-light"
+              size="normal"
+              shape="circle"
+              isShadow={true}
+              onClick={navigateToViewSite}
+            />
+            <Button
+              text="地理×交通から都市を見る"
+              iconLeft="layers"
+              variant="btn-light"
+              size="normal"
+              shape="circle"
+              isShadow={true}
+              onClick={navigateToViewSite}
+            />
+            <Button
+              text="災害×交通から都市を見る"
+              iconLeft="layers"
+              variant="btn-light"
+              size="normal"
+              shape="circle"
+              isShadow={true}
+              onClick={navigateToViewSite}
+            />
+          </div>
+          <div className="mt-16 mb-8">
+            <TextLabel text={`リリースノート`} size="large" bold={true} isBlack={false} />
+          </div>
+          <div className="my-4">
+            <TextLabel
+              text={`2025年1月13日　本システムの公式Youtubeアカウントが公開されました`}
+              size="normal"
+              bold={false}
+              isBlack={false}
+            />
+          </div>
+          <div className="my-4">
+            <TextLabel
+              text={`2025年1月14日　本システムの公式Youtube動画が公開されました`}
+              size="normal"
+              bold={false}
+              isBlack={false}
+            />
+          </div>
+          <div className="my-4">
+            <TextLabel
+              text={`2025年1月15日　本システムが公式リリースしました`}
+              size="normal"
+              bold={false}
+              isBlack={false}
+            />
           </div>
         </div>
       </div>

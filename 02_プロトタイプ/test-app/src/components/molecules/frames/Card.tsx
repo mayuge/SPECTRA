@@ -4,11 +4,11 @@ import Button from "@/components/atoms/buttons/Button"
 
 type CardProps = {
   text: string // カードテキスト
-  shape?: string //カードの形状を文字列で指定 square(四角形) round（角丸）
+  shape?: string //カードの形状を文字列で指定 square(四角形) circle（丸）デフォルトで角丸
   isShadow: boolean
 }
 
-const Card: React.FC<CardProps> = ({ text, shape }: CardProps) => {
+const Card: React.FC<CardProps> = ({ text, shape,isShadow }: CardProps) => {
   // カードのスタイルの種類 デフォルトは primary
   let cardVariant = "bg-white"
 
@@ -18,8 +18,14 @@ const Card: React.FC<CardProps> = ({ text, shape }: CardProps) => {
   if (shape === "square") {
     cornerShape = "" //四角形の場合は角丸を指定しない
   } else if (shape === "round") {
-    cornerShape = "rounded-lg" //角丸
+    cornerShape = "rounded-full" //円形の角
   }
+
+  let buttonShadow = ""
+  if (isShadow === true) {
+    buttonShadow = "shadow-md shadow-black"
+  }
+
 
   return (
     <div className={`${cardVariant} ${cornerShape} `}>

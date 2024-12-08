@@ -1,6 +1,6 @@
 import React from "react"
-import HomeSite from "@/components/templates/homeSite/HomeSite"
 
+import HomeSite from "@/components/templates/homeSite/HomeSite"
 type MainLayoutProps = {
   children: React.ReactNode
 }
