@@ -7,6 +7,7 @@ import Badge from "@/components/atoms/labels/Badge"
 import useHomeSiteMain from "@/components/organisms/homeSite/core/application/useHomeSiteMain"
 import CheckBox from "@/components/atoms/Inputs/CheckBox"
 import Map from "@/components/organisms/homeSite/ui/Map"
+import Card from "@/components/molecules/frames/Card"
 
 const HomeSiteMain: React.FC = () => {
   const {
@@ -43,6 +44,7 @@ const HomeSiteMain: React.FC = () => {
       <div className="relative z-10 bg-white p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
         <div className="flex justify-center">
           <div>
+            <Card text="カードテキスト" />
             <div className="flex items-center gap-4 my-4">
               <CheckBox value={true} onChange={buttonClicked} />
               <Button
@@ -60,6 +62,15 @@ const HomeSiteMain: React.FC = () => {
                 variant="btn-primary"
                 size="small"
                 onClick={jrEastRealTimeLocateDataCallback}
+              />
+              <Button
+                iconLeft="check"
+                iconRight=""
+                onClick={() => {}}
+                shape="circle"
+                size="normal"
+                text=""
+                variant="btn-primary"
               />
             </div>
             <div className="flex items-center gap-4 my-4">

@@ -1,13 +1,13 @@
-"use client"; // クライアントサイドでのみ実行
+"use client" // クライアントサイドでのみ実行
 
-import React, { useRef } from "react";
-import maplibregl from "maplibre-gl";
-import "maplibre-gl/dist/maplibre-gl.css";
-import { mapConfig } from "@/components/organisms/homeSite/core/params/params";
+import React, { useRef } from "react"
+import maplibregl from "maplibre-gl"
+import "maplibre-gl/dist/maplibre-gl.css"
+import { mapConfig } from "@/components/organisms/homeSite/core/params/params"
 
 const Simple3DMap: React.FC = () => {
-  const mapContainer = useRef<HTMLDivElement>(null);
-  const mapInstance = useRef<maplibregl.Map | null>(null);
+  const mapContainer = useRef<HTMLDivElement>(null)
+  const mapInstance = useRef<maplibregl.Map | null>(null)
 
   // マップの初期化
   if (mapContainer.current && !mapInstance.current) {
@@ -32,7 +32,7 @@ const Simple3DMap: React.FC = () => {
             type: "raster-dem",
             tiles: [mapConfig.styleUrls.demUrl],
             tileSize: 512,
-            minzoom:10,
+            minzoom: 10,
             maxzoom: 16,
             attribution: mapConfig.attributions.dem,
           },
@@ -52,7 +52,7 @@ const Simple3DMap: React.FC = () => {
           },
         ],
       },
-    });
+    })
 
     map.on("load", () => {
       //map.setTerrain({ source: "terrain", exaggeration: 3 });
@@ -68,15 +68,15 @@ const Simple3DMap: React.FC = () => {
           "fill-extrusion-color": "#797979",
           "fill-extrusion-opacity": 0.8,
         },
-      });
+      })
 
-      map.addControl(new maplibregl.NavigationControl(), "top-right");
-    });
+      map.addControl(new maplibregl.NavigationControl(), "top-right")
+    })
 
-    mapInstance.current = map;
+    mapInstance.current = map
   }
 
-  return <div ref={mapContainer} style={{ width: "100%", height: "100vh" }} />;
-};
+  return <div ref={mapContainer} style={{ width: "100%", height: "100vh" }} />
+}
 
-export default Simple3DMap;
+export default Simple3DMap

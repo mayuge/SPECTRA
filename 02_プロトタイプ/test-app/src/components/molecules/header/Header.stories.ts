@@ -1,18 +1,29 @@
-import type { Meta, StoryObj } from "@storybook/react"
-import Header from "./Header"
-import type { HeaderVariantType } from "@/domain/types/moleculesType"
+import { Meta, StoryObj } from "@storybook/react"
+import Header from "./Header" // パスはプロジェクト構成に応じて調整してください
 
-// メタ情報の設定
 const meta: Meta<typeof Header> = {
-  title: "Molecules/Header", // カテゴリ
+  title: "Molecules/Header",
   component: Header,
-  tags: ["autodocs"], // 自動ドキュメント化
+  args: {
+    text: "Sample Header", // デフォルトのテキスト
+    icon: "menu", // アイコン名のデフォルト値
+    size: "normal", // デフォルトのサイズ
+    variant: "header-primary", // デフォルトのバリアント
+    isCircle: false, // デフォルトで角丸なし
+  },
   argTypes: {
-    text: { control: "text" },
-    icon: { control: "text" },
+    text: {
+      control: "text",
+      description: "ヘッダーテキスト",
+    },
+    icon: {
+      control: "text",
+      description: "アイコンの名前を指定",
+    },
     size: {
       control: { type: "select" },
-      options: ["mini", "small", "normal", "large"],
+      options: ["mini", "small", "normal", "large"], // ユーザーが選べる値
+      description: "ヘッダーのサイズ",
     },
     variant: {
       control: { type: "select" },
@@ -22,61 +33,20 @@ const meta: Meta<typeof Header> = {
         "header-danger",
         "header-warning",
         "header-success",
-      ],
+        "header-dark",
+        "header-light",
+      ], // バリアント選択肢
+      description: "ヘッダーのスタイル",
     },
-    onClick: { action: "clicked" }, // アクションロガー
+    isCircle: {
+      control: "boolean",
+      description: "ヘッダーを角丸にするかどうか",
+    },
+    onClick: { action: "clicked", description: "クリックイベント" },
   },
 }
 
 export default meta
 type Story = StoryObj<typeof Header>
 
-// Primary バージョン
-export const Primary: Story = {
-  args: {
-    text: "Primary Header",
-    icon: "menu",
-    size: "normal",
-    variant: "header-primary",
-  },
-}
-
-// Secondary バージョン
-export const Secondary: Story = {
-  args: {
-    text: "Secondary Header",
-    icon: "settings",
-    size: "normal",
-    variant: "header-secondary",
-  },
-}
-
-// Danger バージョン
-export const Danger: Story = {
-  args: {
-    text: "Danger Header",
-    icon: "warning",
-    size: "normal",
-    variant: "header-danger",
-  },
-}
-
-// Warning バージョン
-export const Warning: Story = {
-  args: {
-    text: "Warning Header",
-    icon: "exclamation",
-    size: "normal",
-    variant: "header-warning",
-  },
-}
-
-// Success バージョン
-export const Success: Story = {
-  args: {
-    text: "Success Header",
-    icon: "check",
-    size: "normal",
-    variant: "header-success",
-  },
-}
+export const Default: Story = {}
