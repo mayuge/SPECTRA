@@ -35,51 +35,51 @@ export const Mini: Story = {
   },
 }
 export const Small: Story = {
-    args: {
-      text: "サンプルテキスト",
-      size: "mini",
-      bold: false,
-      isBlack: true,
-    },
-  }
-  export const Normal: Story = {
-    args: {
-      text: "サンプルテキスト",
-      size: "mini",
-      bold: false,
-      isBlack: true,
-    },
-  }
-  export const White: Story = {
-    args: {
-      text: "サンプルテキスト",
-      size: "normal",
-      bold: false,
-      isBlack: false,
-    },
-  }
-  export const Bold: Story = {
-    args: {
-      text: "サンプルテキスト",
-      size: "normal",
-      bold: true,
-      isBlack: true,
-    },
-  }
+  args: {
+    text: "サンプルテキスト",
+    size: "mini",
+    bold: false,
+    isBlack: true,
+  },
+}
+export const Normal: Story = {
+  args: {
+    text: "サンプルテキスト",
+    size: "mini",
+    bold: false,
+    isBlack: true,
+  },
+}
+export const White: Story = {
+  args: {
+    text: "サンプルテキスト",
+    size: "normal",
+    bold: false,
+    isBlack: false,
+  },
+}
+export const Bold: Story = {
+  args: {
+    text: "サンプルテキスト",
+    size: "normal",
+    bold: true,
+    isBlack: true,
+  },
+}
 
-  export const Large: Story = {
-    args: {
-      text: "サンプルテキスト",
-      size: "large",
-      bold: false,
-      isBlack: true,
-    },
-  }
-  export const XLarge: Story = {
-    args: {
-      text: "サンプルテキスト",
-      size: "xlarge",
-      bold: false,
-      isBlack: true,
-    },
-  }
+export const Large: Story = {
+  args: {
+    text: "サンプルテキスト",
+    size: "large",
+    bold: false,
+    isBlack: true,
+  },
+}
+export const XLarge: Story = {
+  args: {
+    text: "サンプルテキスト",
+    size: "xlarge",
+    bold: false,
+    isBlack: true,
+  },
+}

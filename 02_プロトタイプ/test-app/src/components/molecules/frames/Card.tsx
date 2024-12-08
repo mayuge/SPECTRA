@@ -4,8 +4,11 @@ import Button from "@/components/atoms/buttons/Button"
 
 type CardProps = {
   text: string // カードテキスト
+  isShadow: boolean //影の有無
   shape?: string //カードの形状を文字列で指定 square(四角形) circle（丸）デフォルトで角丸
-  isShadow: boolean
+  displayButtonClick: () => void
+  refreshButtonClick: () => void
+  isDisplayLayer: boolean
   dangerBadge?: string
   warningBadge?: string
   successBadge?: string
@@ -22,6 +25,9 @@ const Card: React.FC<CardProps> = ({
   successBadge,
   primaryBadge,
   darkBadge,
+  isDisplayLayer,
+  displayButtonClick,
+  refreshButtonClick,
 }: CardProps) => {
   // カードのスタイルの種類 デフォルトは primary
   let cardVariant = "bg-white"
@@ -40,20 +46,43 @@ const Card: React.FC<CardProps> = ({
     buttonShadow = "shadow-md shadow-black"
   }
 
+  //目のアイコンで表示・非表示を示す
+  let displayIcon = ""
+  if (isDisplayLayer === true) {
+    displayIcon = "visibility"
+  } else if (isDisplayLayer === false) {
+    displayIcon = "visibility_off"
+  }
+
   return (
     <div className={`${cardVariant} ${cornerShape} ${buttonShadow} p-2`}>
       <div className="flex items-center gap-1">
-        <Badge variant="badge-danger" text={dangerBadge} />
-        <Badge variant="badge-warning" text={warningBadge} />
-        <Badge variant="badge-success" text={successBadge} />
-        <Badge variant="badge-primary" text={primaryBadge} />
-        <Badge variant="badge-dark" text={darkBadge} />
+        {dangerBadge && <Badge variant="badge-danger" text={dangerBadge} />}
+        {warningBadge && <Badge variant="badge-warning" text={warningBadge} />}
+        {successBadge && <Badge variant="badge-success" text={successBadge} />}
+        {primaryBadge && <Badge variant="badge-primary" text={primaryBadge} />}
+        {darkBadge && <Badge variant="badge-dark" text={darkBadge} />}
       </div>
-      <div className="pt-2 flex items-center gap-1">
-        <Button variant="btn-primary" size="mini" iconLeft="refresh" />
-        <Button variant="btn-text-gray" size="mini" iconLeft="visibility" />
-        {text}
+      <div className="pb-2 flex justify-between">
+        <div className=" inline-flex items-center gap-2">
+          <Button
+            variant="btn-text-gray"
+            size="mini"
+            iconLeft={`${displayIcon}`}
+            onClick={displayButtonClick}
+          />
+          {text}
+        </div>
+        <div>
+          <Button
+            variant="btn-primary"
+            size="small"
+            iconLeft="refresh"
+            onClick={refreshButtonClick}
+          />
+        </div>
       </div>
+      <hr></hr>
     </div>
   )
 }

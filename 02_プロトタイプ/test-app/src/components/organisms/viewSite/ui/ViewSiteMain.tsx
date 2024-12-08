@@ -5,7 +5,6 @@ import Button from "@/components/atoms/buttons/Button"
 import TextLabel from "@/components/atoms/labels/TextLabel"
 import Badge from "@/components/atoms/labels/Badge"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
-import CheckBox from "@/components/atoms/Inputs/CheckBox"
 import MapApp from "@/components/organisms/viewSite/ui/MapApp"
 import Card from "@/components/molecules/frames/Card"
 
@@ -26,7 +25,7 @@ const ViewSiteMain: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <MapApp />
       </div>
-
+      {/* ヘッダーを表示 */}
       <div className="relative z-10 p-4 flex justify-center">
         <div className="max-w-screen-xl w-full mx-auto mx-8">
           <Header
@@ -40,89 +39,110 @@ const ViewSiteMain: React.FC = () => {
         </div>
       </div>
 
-      {/* コンテンツを地図の上に表示 */}
-      <div className="relative z-10 bg-white p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
-        <div className="flex justify-center">
-          <div>
-            <Card text="JR東日本リアルタイム車両位置データ" isShadow={true} shape="square" />
-            <div className="flex items-center gap-4 my-4">
-              <CheckBox value={true} onChange={buttonClicked} />
-              <Button
-                iconLeft="visibility"
-                variant="btn-text-gray"
-                size="mini"
-                onClick={buttonClicked}
-              />
-              <Badge text="GETリクエスト" variant="badge-warning" />
-              <Badge text="JSON" variant="badge-danger" />
-              <TextLabel text="JR東日本リアルタイム車両位置データ" size="normal" bold={false} />
-              <Button
-                text="更新する"
-                iconLeft="refresh"
-                variant="btn-primary"
-                size="small"
-                onClick={jrEastRealTimeLocateDataCallback}
-              />
-              <Button
-                iconLeft="check"
-                iconRight=""
-                onClick={() => {}}
-                shape="circle"
-                size="normal"
-                text=""
-                variant="btn-primary"
-              />
-            </div>
-            <div className="flex items-center gap-4 my-4">
-              <Button
-                iconLeft="visibility_off"
-                variant="btn-text-gray"
-                size="mini"
-                onClick={buttonClicked}
-              />
-              <Badge text="GETリクエスト" variant="badge-warning" />
-              <Badge text="JSON" variant="badge-danger" />
-              <TextLabel text="東京メトロリアルタイム運行状況データ" size="normal" bold={false} />
-              <Button
-                text="更新する"
-                iconLeft="refresh"
-                variant="btn-primary"
-                size="small"
-                onClick={tokyoMetroRealTimeDataCallback}
-              />
-            </div>
-            <div className="flex gap-4">
-              <TextLabel
-                text={`状態管理ツールテスト用カウンター: ${getCount()}`}
-                size="normal"
-                bold={false}
-              />
-              <Button
-                iconLeft="remove"
-                variant="btn-danger"
-                size="small"
-                shape="circle"
-                onClick={decrement}
-              />
-              <Button
-                iconLeft="add"
-                variant="btn-success"
-                size="small"
-                shape="circle"
-                onClick={increment}
-              />
-            </div>
-            <div className="flex justify-center my-4">
-              <Button
-                text="メニューページに遷移する"
-                variant="btn-warning"
-                size="normal"
-                shape="circle"
-                onClick={RouteToHomeSite}
-              />
-            </div>
-          </div>
-        </div>
+      <div className="relative z-10 bg-white p-2 m-4 rounded-lg shadow-lg max-w-md shadow-md shadow-black">
+        <Card
+          text="JR東日本リアルタイム車両位置データ"
+          dangerBadge="交通データ"
+          warningBadge="鉄道"
+          successBadge="リアルタイム"
+          primaryBadge="ポイントデータ"
+          darkBadge="2024オープンデータチャレンジ限定"
+          isShadow={false}
+          shape="square"
+          isDisplayLayer={true}
+          refreshButtonClick={jrEastRealTimeLocateDataCallback}
+          displayButtonClick={buttonClicked}
+        />
+        <Card
+          text="東京メトロリアルタイム運行状況データ"
+          dangerBadge="交通データ"
+          warningBadge="鉄道"
+          successBadge="リアルタイム"
+          primaryBadge="ラインデータ"
+          isShadow={false}
+          shape="square"
+          isDisplayLayer={false}
+          refreshButtonClick={tokyoMetroRealTimeDataCallback}
+          displayButtonClick={buttonClicked}
+        />
+         <Card
+          text="2020年度国勢調査メッシュ"
+          dangerBadge="人口データ"
+          warningBadge="国勢調査"
+          primaryBadge="メッシュデータ"
+          isShadow={false}
+          shape="square"
+          isDisplayLayer={false}
+          refreshButtonClick={tokyoMetroRealTimeDataCallback}
+          displayButtonClick={buttonClicked}
+        />
+        <Card
+          text="2020年度国勢調査メッシュ"
+          dangerBadge="人口データ"
+          warningBadge="国勢調査"
+          primaryBadge="メッシュデータ"
+          isShadow={false}
+          shape="square"
+          isDisplayLayer={false}
+          refreshButtonClick={tokyoMetroRealTimeDataCallback}
+          displayButtonClick={buttonClicked}
+        />
+        <Card
+          text="2020年度国勢調査メッシュ"
+          dangerBadge="人口データ"
+          warningBadge="国勢調査"
+          primaryBadge="メッシュデータ"
+          isShadow={false}
+          shape="square"
+          isDisplayLayer={false}
+          refreshButtonClick={tokyoMetroRealTimeDataCallback}
+          displayButtonClick={buttonClicked}
+        />
+        <Card
+          text="2020年度国勢調査メッシュ"
+          dangerBadge="人口データ"
+          warningBadge="国勢調査"
+          primaryBadge="メッシュデータ"
+          isShadow={false}
+          shape="square"
+          isDisplayLayer={false}
+          refreshButtonClick={tokyoMetroRealTimeDataCallback}
+          displayButtonClick={buttonClicked}
+        />
+        <Card
+          text="2020年度国勢調査メッシュ"
+          dangerBadge="人口データ"
+          warningBadge="国勢調査"
+          primaryBadge="メッシュデータ"
+          isShadow={false}
+          shape="square"
+          isDisplayLayer={false}
+          refreshButtonClick={tokyoMetroRealTimeDataCallback}
+          displayButtonClick={buttonClicked}
+        />
+        <Card
+          text="2020年度国勢調査メッシュ"
+          dangerBadge="人口データ"
+          warningBadge="国勢調査"
+          primaryBadge="メッシュデータ"
+          isShadow={false}
+          shape="square"
+          isDisplayLayer={false}
+          refreshButtonClick={tokyoMetroRealTimeDataCallback}
+          displayButtonClick={buttonClicked}
+        />
+        <Card
+          text="2020年度国勢調査メッシュ"
+          dangerBadge="人口データ"
+          warningBadge="国勢調査"
+          primaryBadge="メッシュデータ"
+          isShadow={false}
+          shape="square"
+          isDisplayLayer={false}
+          refreshButtonClick={tokyoMetroRealTimeDataCallback}
+          displayButtonClick={buttonClicked}
+        />
+        
       </div>
     </div>
   )

@@ -25,7 +25,7 @@ const Badge: React.FC<BadgeProps> = ({ text, shape, variant }: BadgeProps) => {
     badgeVariant = "bg-success text-white"
   } else if (variant === "badge-dark") {
     //variantがsuccessのとき
-    badgeVariant = "bg-gray-20 text-white"
+    badgeVariant = "bg-gray-30 text-white"
   }
 
   //バッジの形状の種類　circle square
