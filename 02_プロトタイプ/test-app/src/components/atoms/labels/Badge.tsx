@@ -39,7 +39,7 @@ const Badge: React.FC<BadgeProps> = ({ text, shape, variant }: BadgeProps) => {
 
   return (
     <div
-      className={`${badgeVariant} ${cornerShape} flex items-center gap-1 text-[8px] p-[3px]`} // flex と items-center を追加
+      className={`${badgeVariant} ${cornerShape} inline-flex items-center gap-1 text-[8px] p-[3px]`} // flex と items-center を追加
     >
       {text}
     </div>

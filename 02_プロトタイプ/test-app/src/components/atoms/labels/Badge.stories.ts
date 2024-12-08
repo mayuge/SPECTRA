@@ -1,7 +1,6 @@
 // src/components/atoms/Badge.stories.tsx
 import { Meta, StoryObj } from "@storybook/react"
 import Badge from "./Badge"
-import type { BadgeVariantType } from "@/domain/types/atomsType"
 
 const meta: Meta<typeof Badge> = {
   title: "Atoms/Badge",
@@ -27,6 +26,7 @@ const meta: Meta<typeof Badge> = {
         "badge-danger",
         "badge-warning",
         "badge-success",
+        "badge-dark",
       ],
       description: "バッジのスタイルを指定します",
       defaultValue: "badge-primary",
@@ -72,6 +72,14 @@ export const Success: Story = {
   args: {
     text: "認証済み",
     variant: "badge-success",
+    shape: "circle",
+  },
+}
+
+export const Pointer: Story = {
+  args: {
+    text: "",
+    variant: "badge-danger",
     shape: "circle",
   },
 }
