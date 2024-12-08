@@ -1,2 +1,3 @@
 import useTestStore from "@/infrastructure/stores/testStore"
-export const useTestStoreAdapter = () => useTestStore()
+import type { ITestStoreState } from "@/domain/interfaces/ITestStore"
+export const useTestStoreAdapter = (): ITestStoreState => useTestStore()

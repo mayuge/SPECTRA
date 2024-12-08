@@ -1,15 +1,9 @@
 import { create } from "zustand"
 import { persist, createJSONStorage } from "zustand/middleware"
-
-interface TestStoreState {
-  count: number
-  increment: () => void
-  decrement: () => void
-  getCount: () => number
-}
+import type { ITestStoreState } from "@/domain/interfaces/ITestStore"
 
 // Zustandストアの作成
-const useTestStore = create<TestStoreState>()(
+const useTestStore = create<ITestStoreState>()(
   persist(
     (set, get) => ({
       count: 0,
