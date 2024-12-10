@@ -1,12 +1,14 @@
 "use client"
 import React from "react"
 import Header from "@/components/molecules/header/Header"
+import DialogHeader from "@/components/molecules/header/DialogHeader"
 import Button from "@/components/atoms/buttons/Button"
 import TextLabel from "@/components/atoms/labels/TextLabel"
 import Badge from "@/components/atoms/labels/Badge"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
 import MapApp from "@/components/organisms/viewSite/ui/MapApp"
 import Card from "@/components/molecules/frames/Card"
+import LayerListApp from "./LayerListApp"
 
 const ViewSiteMain: React.FC = () => {
   const {
@@ -27,7 +29,7 @@ const ViewSiteMain: React.FC = () => {
       </div>
       {/* ヘッダーを表示 */}
       <div className="relative z-10 p-4 flex justify-center">
-        <div className="max-w-screen-xl w-full mx-auto mx-8">
+        <div className="max-w-screen-xl w-full mx-8">
           <Header
             text="NOZAWA OPENDATA PROJECT"
             icon="menu"
@@ -38,111 +40,22 @@ const ViewSiteMain: React.FC = () => {
           />
         </div>
       </div>
-
-      <div className="relative z-10 bg-white p-2 m-4 rounded-lg shadow-lg max-w-md shadow-md shadow-black">
-        <Card
-          text="JR東日本リアルタイム車両位置データ"
-          dangerBadge="交通データ"
-          warningBadge="鉄道"
-          successBadge="リアルタイム"
-          primaryBadge="ポイントデータ"
-          darkBadge="2024オープンデータチャレンジ限定"
-          isShadow={false}
-          shape="square"
-          isDisplayLayer={true}
-          refreshButtonClick={jrEastRealTimeLocateDataCallback}
-          displayButtonClick={buttonClicked}
-        />
-        <Card
-          text="東京メトロリアルタイム運行状況データ"
-          dangerBadge="交通データ"
-          warningBadge="鉄道"
-          successBadge="リアルタイム"
-          primaryBadge="ラインデータ"
-          isShadow={false}
-          shape="square"
-          isDisplayLayer={false}
-          refreshButtonClick={tokyoMetroRealTimeDataCallback}
-          displayButtonClick={buttonClicked}
-        />
-         <Card
-          text="2020年度国勢調査メッシュ"
-          dangerBadge="人口データ"
-          warningBadge="国勢調査"
-          primaryBadge="メッシュデータ"
-          isShadow={false}
-          shape="square"
-          isDisplayLayer={false}
-          refreshButtonClick={tokyoMetroRealTimeDataCallback}
-          displayButtonClick={buttonClicked}
-        />
-        <Card
-          text="2020年度国勢調査メッシュ"
-          dangerBadge="人口データ"
-          warningBadge="国勢調査"
-          primaryBadge="メッシュデータ"
-          isShadow={false}
-          shape="square"
-          isDisplayLayer={false}
-          refreshButtonClick={tokyoMetroRealTimeDataCallback}
-          displayButtonClick={buttonClicked}
-        />
-        <Card
-          text="2020年度国勢調査メッシュ"
-          dangerBadge="人口データ"
-          warningBadge="国勢調査"
-          primaryBadge="メッシュデータ"
-          isShadow={false}
-          shape="square"
-          isDisplayLayer={false}
-          refreshButtonClick={tokyoMetroRealTimeDataCallback}
-          displayButtonClick={buttonClicked}
-        />
-        <Card
-          text="2020年度国勢調査メッシュ"
-          dangerBadge="人口データ"
-          warningBadge="国勢調査"
-          primaryBadge="メッシュデータ"
-          isShadow={false}
-          shape="square"
-          isDisplayLayer={false}
-          refreshButtonClick={tokyoMetroRealTimeDataCallback}
-          displayButtonClick={buttonClicked}
-        />
-        <Card
-          text="2020年度国勢調査メッシュ"
-          dangerBadge="人口データ"
-          warningBadge="国勢調査"
-          primaryBadge="メッシュデータ"
-          isShadow={false}
-          shape="square"
-          isDisplayLayer={false}
-          refreshButtonClick={tokyoMetroRealTimeDataCallback}
-          displayButtonClick={buttonClicked}
-        />
-        <Card
-          text="2020年度国勢調査メッシュ"
-          dangerBadge="人口データ"
-          warningBadge="国勢調査"
-          primaryBadge="メッシュデータ"
-          isShadow={false}
-          shape="square"
-          isDisplayLayer={false}
-          refreshButtonClick={tokyoMetroRealTimeDataCallback}
-          displayButtonClick={buttonClicked}
-        />
-        <Card
-          text="2020年度国勢調査メッシュ"
-          dangerBadge="人口データ"
-          warningBadge="国勢調査"
-          primaryBadge="メッシュデータ"
-          isShadow={false}
-          shape="square"
-          isDisplayLayer={false}
-          refreshButtonClick={tokyoMetroRealTimeDataCallback}
-          displayButtonClick={buttonClicked}
-        />
-        
+      <LayerListApp/>
+      <div className="absolute top-[100px] right-0 p-4 z-10 ">
+        <div className="relative max-w-md">
+          <DialogHeader
+            text="詳細説明ダイアログ"
+            icon="close"
+            variant="header-dark"
+            size="normal"
+            onClick={buttonClicked}
+            isShadow={false}
+          />
+          <div className="max-h-[200px] max-w-[400px] min-h-[150px] min-w-[150px] bg-white rounded-b-lg shadow-md shadow-black">
+            {/* サンプルテキストを追加 */}
+            <p className="p-4 text-black">ここに内容を追加してください。</p>
+          </div>
+        </div>
       </div>
     </div>
   )

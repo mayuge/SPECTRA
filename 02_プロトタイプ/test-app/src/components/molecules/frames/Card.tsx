@@ -75,9 +75,9 @@ const Card: React.FC<CardProps> = ({
         </div>
         <div>
           <Button
-            variant="btn-primary"
+            variant="btn-text-gray"
             size="small"
-            iconLeft="refresh"
+            iconLeft="info"
             onClick={refreshButtonClick}
           />
         </div>
