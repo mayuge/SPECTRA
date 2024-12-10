@@ -53,7 +53,22 @@ const ViewSiteMain: React.FC = () => {
           />
           <div className="max-h-[200px] max-w-[400px] min-h-[150px] min-w-[150px] bg-white rounded-b-lg shadow-md shadow-black">
             {/* サンプルテキストを追加 */}
-            <p className="p-4 text-black">ここに内容を追加してください。</p>
+            <p className="p-4 text-black">ここに内容を追加してください。ここにレイヤーの色やプロパティを調整できるものをおいてもいいかも</p>
+          </div>
+        </div>
+      </div>
+      <div className="absolute top-[400px] right-0 p-4 z-10 ">
+        <div className="relative max-w-md">
+          <DialogHeader
+            text="動画リンクダイアログ"
+            icon="close"
+            variant="header-dark"
+            size="normal"
+            onClick={buttonClicked}
+            isShadow={false}
+          />
+          <div className="max-h-[225px] max-w-[400px] min-h-[150px] min-w-[150px] bg-white rounded-b-lg shadow-md shadow-black">
+          <iframe width="400" height="225" src="https://www.youtube.com/embed/JZkaLakE4Nw?si=UB9h2A6fXkvxpEm6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
       </div>
