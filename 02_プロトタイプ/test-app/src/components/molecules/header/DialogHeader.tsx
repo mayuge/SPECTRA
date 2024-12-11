@@ -71,7 +71,7 @@ const DialogHeader: React.FC<DialogHeaderProps> = ({
     <div
       className={`${headerVariant} ${headerShape} ${headerShadow} w-full flex items-center justify-between text-base font-bold`}
     >
-      <div className={`${headerVariant} ml-8`}>{text}</div>
+      <div className={`${headerVariant} ml-4`}>{text}</div>
       <div>
         <Button
           variant={`${buttonVariant}`}

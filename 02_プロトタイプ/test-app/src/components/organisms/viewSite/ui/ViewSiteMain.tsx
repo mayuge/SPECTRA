@@ -40,7 +40,7 @@ const ViewSiteMain: React.FC = () => {
           />
         </div>
       </div>
-      <LayerListApp/>
+      <LayerListApp />
       <div className="absolute top-[100px] right-0 p-4 z-10 ">
         <div className="relative max-w-md">
           <DialogHeader
@@ -53,7 +53,9 @@ const ViewSiteMain: React.FC = () => {
           />
           <div className="max-h-[200px] max-w-[400px] min-h-[150px] min-w-[150px] bg-white rounded-b-lg shadow-md shadow-black">
             {/* サンプルテキストを追加 */}
-            <p className="p-4 text-black">ここに内容を追加してください。ここにレイヤーの色やプロパティを調整できるものをおいてもいいかも</p>
+            <p className="p-4 text-black">
+              ここに内容を追加してください。ここにレイヤーの色やプロパティを調整できるものをおいてもいいかも
+            </p>
           </div>
         </div>
       </div>
@@ -68,7 +70,16 @@ const ViewSiteMain: React.FC = () => {
             isShadow={false}
           />
           <div className="max-h-[225px] max-w-[400px] min-h-[150px] min-w-[150px] bg-white rounded-b-lg shadow-md shadow-black">
-          <iframe width="400" height="225" src="https://www.youtube.com/embed/JZkaLakE4Nw?si=UB9h2A6fXkvxpEm6" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <iframe
+              width="400"
+              height="225"
+              src="https://www.youtube.com/embed/JZkaLakE4Nw?si=UB9h2A6fXkvxpEm6"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </div>

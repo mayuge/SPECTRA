@@ -12,8 +12,16 @@ const LayerListApp: React.FC = () => {
     useViewSiteMain()
 
   return (
-
-      <div className="relative z-10 bg-white p-2 m-4 rounded-lg max-w-md shadow-md shadow-black">
+    <div className="relative z-10 max-w-md mx-4">
+      <DialogHeader
+        text="レイヤーダイアログ"
+        icon="close"
+        variant="header-dark"
+        size="normal"
+        onClick={buttonClicked}
+        isShadow={false}
+      />
+      <div className="relative z-10 bg-white p-2 rounded-b-lg max-w-md shadow-md shadow-black">
         <Card
           text="JR東日本リアルタイム車両位置データ"
           dangerBadge="交通データ"
@@ -117,7 +125,7 @@ const LayerListApp: React.FC = () => {
           displayButtonClick={buttonClicked}
         />
       </div>
-
+    </div>
   )
 }
 

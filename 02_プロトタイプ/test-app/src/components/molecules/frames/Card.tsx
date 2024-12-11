@@ -1,6 +1,8 @@
 import React from "react"
 import Badge from "@/components/atoms/labels/Badge"
 import Button from "@/components/atoms/buttons/Button"
+import BaseColorInput from "@/components/atoms/Inputs/ColorInput"
+import BaseSliderInput from "@/components/atoms/Inputs/SliderInput"
 
 type CardProps = {
   text: string // カードテキスト
@@ -55,7 +57,7 @@ const Card: React.FC<CardProps> = ({
   }
 
   return (
-    <div className={`${cardVariant} ${cornerShape} ${buttonShadow} p-2`}>
+    <div className={`${cardVariant} ${cornerShape} ${buttonShadow} pt-1`}>
       <div className="flex items-center gap-1">
         {dangerBadge && <Badge variant="badge-danger" text={dangerBadge} />}
         {warningBadge && <Badge variant="badge-warning" text={warningBadge} />}
@@ -63,26 +65,50 @@ const Card: React.FC<CardProps> = ({
         {primaryBadge && <Badge variant="badge-primary" text={primaryBadge} />}
         {darkBadge && <Badge variant="badge-dark" text={darkBadge} />}
       </div>
-      <div className="pb-2 flex justify-between">
-        <div className=" inline-flex items-center gap-2">
+      <div className="flex items-center w-full gap-2">
+        <div className="flex items-center gap-1">
           <Button
             variant="btn-text-gray"
             size="mini"
             iconLeft={`${displayIcon}`}
             onClick={displayButtonClick}
           />
-          {text}
+          <hr className="w-[1px] h-[35px] bg-gray-60" />
         </div>
-        <div>
-          <Button
-            variant="btn-text-gray"
-            size="small"
-            iconLeft="info"
-            onClick={refreshButtonClick}
-          />
+        <div className="w-full">
+          <div className="pb-1 flex justify-between">
+            <div className=" inline-flex items-center gap-2">
+              
+              <img src="/assets/logos/jreast.webp" className="w-5 h-5" />
+              {text}
+            </div>
+            <div>
+              <Button
+                variant="btn-text-gray"
+                size="mini"
+                iconLeft="info"
+                onClick={refreshButtonClick}
+              />
+            </div>
+          </div>
+          <div className="pb-1 flex justify-between">
+            <div className=" inline-flex items-center gap-2">
+              <BaseColorInput onChange={refreshButtonClick} />
+              <BaseSliderInput onChange={refreshButtonClick}  min={0} max={1.0} step={0.1}/>
+            </div>
+            <div>
+              <Button
+                variant="btn-text-gray"
+                size="mini"
+                iconLeft="swap_vert"
+                onClick={refreshButtonClick}
+              />
+            </div>
+          </div>
         </div>
       </div>
-      <hr></hr>
+
+      <hr className="border-gray-70" />
     </div>
   )
 }

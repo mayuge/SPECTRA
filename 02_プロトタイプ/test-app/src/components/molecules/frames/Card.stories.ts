@@ -1,6 +1,6 @@
-import React from "react";
-import Card from "@/components/molecules/frames/Card";
-import type { Meta, StoryObj } from "@storybook/react";
+import React from "react"
+import Card from "@/components/molecules/frames/Card"
+import type { Meta, StoryObj } from "@storybook/react"
 
 // Meta オブジェクトを作成します
 const meta: Meta<typeof Card> = {
@@ -38,12 +38,12 @@ const meta: Meta<typeof Card> = {
     displayButtonClick: { action: "displayButtonClick", description: "表示ボタンクリック" },
     refreshButtonClick: { action: "refreshButtonClick", description: "更新ボタンクリック" },
   },
-};
+}
 
-export default meta;
+export default meta
 
 // Story を定義します
-type Story = StoryObj<typeof Card>;
+type Story = StoryObj<typeof Card>
 
 // デフォルトのカード
 export const Default: Story = {
@@ -57,7 +57,7 @@ export const Default: Story = {
     isShadow: false,
     shape: "rounded",
   },
-};
+}
 
 // シャドウ付きカード
 export const ShadowedCard: Story = {
@@ -68,7 +68,7 @@ export const ShadowedCard: Story = {
     isShadow: true,
     shape: "square",
   },
-};
+}
 
 // 丸いカード
 export const CircularCard: Story = {
@@ -78,7 +78,7 @@ export const CircularCard: Story = {
     isShadow: true,
     shape: "circle",
   },
-};
+}
 
 // 表示切り替えアイコン付きカード
 export const DisplayToggleCard: Story = {
@@ -89,7 +89,7 @@ export const DisplayToggleCard: Story = {
     isShadow: true,
     shape: "rounded",
   },
-};
+}
 
 // バッジなしカード
 export const NoBadgesCard: Story = {
@@ -98,4 +98,4 @@ export const NoBadgesCard: Story = {
     isShadow: false,
     shape: "rounded",
   },
-};
+}

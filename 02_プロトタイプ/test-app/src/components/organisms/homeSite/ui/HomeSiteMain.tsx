@@ -17,7 +17,7 @@ const HomeSiteMain: React.FC = () => {
       />
 
       <div className="relative p-4 justify-center">
-        <div className="max-w-screen-xl w-full mx-auto mx-8">
+        <div className="max-w-screen-xl w-full mx-auto">
           <Header
             text="NOZAWA OPENDATA PROJECT"
             icon="menu"
