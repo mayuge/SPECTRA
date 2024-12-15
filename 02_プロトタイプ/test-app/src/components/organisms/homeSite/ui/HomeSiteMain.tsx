@@ -28,7 +28,7 @@ const HomeSiteMain: React.FC = () => {
           />
           <div className="my-12">
             <TextLabel
-              text={`都市の本当の価値を\n可視化する`}
+              text={`都市の新たな価値を\n可視化する`}
               size="xlarge"
               bold={true}
               isBlack={true}
