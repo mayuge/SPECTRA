@@ -2,25 +2,45 @@ import { create } from "zustand"
 import { persist, createJSONStorage } from "zustand/middleware"
 
 interface DialogStateState {
-  count: number
-  increment: () => void
-  decrement: () => void
-  getCount: () => number
+  isDetailInfoDialogOpen: boolean
+  isMovieDialogOpen: boolean
+  isLayerBarOpen: boolean
+  setDetailInfoDialogOpen: (isOpen: boolean) => void
+  setMovieDialogOpen: (isOpen: boolean) => void
+  setLayerBarOpen: (isOpen: boolean) => void
+  getDetailInfoDialogOpen: () => boolean
+  getMovieDialogOpen: () => boolean
+  getLayerBarOpen: () => boolean
 }
 
-// Zustandストアの作成
+// ダイアログの開閉状態を管理するストア
+// セッターの引数にtrueを入れると開いている状態、falseを入れると閉じている状態にできる
+// ゲッターで状態を取得する
 const useDialogStateStore = create<DialogStateState>()(
   persist(
     (set, get) => ({
-      count: 0,
-      increment: () => set((state) => ({ count: state.count + 1 })),
-      decrement: () => set((state) => ({ count: state.count - 1 })),
-      getCount: () => get().count,
+      //詳細情報ダイアログの開閉状態
+      isDetailInfoDialogOpen: false,
+      //動画ダイアログの開閉状態
+      isMovieDialogOpen: false,
+      //レイヤーダイアログの開閉状態
+      isLayerBarOpen: true,
+      //詳細情報ダイアログのセッター
+      setDetailInfoDialogOpen: (isOpen: boolean) => set(() => ({ isDetailInfoDialogOpen: isOpen })),
+      //動画ダイアログのセッター
+      setMovieDialogOpen: (isOpen: boolean) => set(() => ({ isMovieDialogOpen: isOpen })),
+      //レイヤーダイアログのセッター
+      setLayerBarOpen: (isOpen: boolean) => set(() => ({ isLayerBarOpen: isOpen })),
+      //詳細情報ダイアログのセッター
+      getDetailInfoDialogOpen: () => get().isDetailInfoDialogOpen,
+      //動画ダイアログのセッター
+      getMovieDialogOpen: () => get().isMovieDialogOpen,
+      //レイヤーダイアログのセッター
+      getLayerBarOpen: () => get().isLayerBarOpen,
     }),
     {
       name: "dialog-state-store", // ローカルストレージのキー
-      // 永続化に使用するストレージ
-      storage: createJSONStorage(() => sessionStorage),
+      storage: createJSONStorage(() => sessionStorage), // 永続化に使用するストレージ
     }
   )
 )

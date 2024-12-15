@@ -78,7 +78,6 @@ const Card: React.FC<CardProps> = ({
         <div className="w-full">
           <div className="pb-1 flex justify-between">
             <div className=" inline-flex items-center gap-2">
-              
               <img src="/assets/logos/jreast.webp" className="w-5 h-5" />
               {text}
             </div>
@@ -94,7 +93,7 @@ const Card: React.FC<CardProps> = ({
           <div className="pb-1 flex justify-between">
             <div className=" inline-flex items-center gap-2">
               <BaseColorInput onChange={refreshButtonClick} />
-              <BaseSliderInput onChange={refreshButtonClick}  min={0} max={1.0} step={0.1}/>
+              <BaseSliderInput onChange={refreshButtonClick} min={0} max={1.0} step={0.1} />
             </div>
             <div>
               <Button
