@@ -56,16 +56,16 @@ const Simple3DMap: React.FC = () => {
         },
         layers: [
           {
-            id: "konjyaku-map-layer",
+            id: "osm-bright-ja",
             type: "raster",
-            source: "konjyaku-map",
-            minzoom: 0,
-            maxzoom: 18,
+            source: "osm-bright-ja",
           },
           // {
-          //   id: "osm-bright-ja",
+          //   id: "konjyaku-map-layer",
           //   type: "raster",
-          //   source: "osm-bright-ja",
+          //   source: "konjyaku-map",
+          //   minzoom: 0,
+          //   maxzoom: 18,
           // },
         ],
       },
@@ -152,7 +152,7 @@ const Simple3DMap: React.FC = () => {
           "fill-extrusion-height": ["*", ["get", "z"], 1],
           "fill-extrusion-base": 0,
           "fill-extrusion-color": "#797979",
-          "fill-extrusion-opacity": 0.5,
+          "fill-extrusion-opacity": 0.8,
         },
       })
 

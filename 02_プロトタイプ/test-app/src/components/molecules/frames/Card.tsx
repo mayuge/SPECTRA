@@ -57,7 +57,7 @@ const Card: React.FC<CardProps> = ({
   }
 
   return (
-    <div className={`${cardVariant} ${cornerShape} ${buttonShadow} pt-1`}>
+    <div className={`${cardVariant} ${cornerShape} ${buttonShadow} pt-1 hover:bg-gray-90`}>
       <div className="flex items-center gap-1">
         {dangerBadge && <Badge variant="badge-danger" text={dangerBadge} />}
         {warningBadge && <Badge variant="badge-warning" text={warningBadge} />}

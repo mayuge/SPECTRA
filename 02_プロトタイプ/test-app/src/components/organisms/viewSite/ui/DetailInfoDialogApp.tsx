@@ -12,10 +12,10 @@ const DetailInfoDialogApp: React.FC = () => {
     useViewSiteMain()
 
   return (
-    <div className="absolute top-[100px] right-0 p-4 z-10 ">
+    <div className="absolute top-[150px] right-0 p-4 z-10 ">
       <div className="relative max-w-md">
         <DialogHeader
-          text="詳細説明ダイアログ"
+          text="詳細情報"
           icon="close"
           variant="header-dark"
           size="normal"

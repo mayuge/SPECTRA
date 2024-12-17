@@ -15,7 +15,7 @@ const MovieDialogApp: React.FC = () => {
     <div className="absolute top-[400px] right-0 p-4 z-10 ">
       <div className="relative max-w-md">
         <DialogHeader
-          text="動画リンクダイアログ"
+          text="関連動画"
           icon="close"
           variant="header-dark"
           size="normal"

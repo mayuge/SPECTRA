@@ -8,3 +8,9 @@ export const XLARGE_SIZE = "xlarge"
 export const SQUARE_SHAPE = "square"
 export const CIRCLE_SHAPE = "circle"
 export const ROUND_SHAPE = "round" //角丸
+
+export const POSITION_TOP = "top"
+export const POSITION_BOTTOM = "bottom"
+export const POSITION_RIGHT = "right"
+export const POSITION_LEFT = "left"
+export const POSITION_CENTER = "center"
