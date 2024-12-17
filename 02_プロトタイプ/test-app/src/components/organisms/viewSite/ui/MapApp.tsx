@@ -31,9 +31,9 @@ const Simple3DMap: React.FC = () => {
           },
           "konjyaku-map": {
             type: "raster",
-            tiles: ["https://ktgis.net/kjmapw/kjtilemap/tokyo50/03/{z}/{x}/{y}.png"], 
+            tiles: ["https://ktgis.net/kjmapw/kjtilemap/tokyo50/03/{z}/{x}/{y}.png"],
             tileSize: 256,
-            scheme: 'tms',
+            scheme: "tms",
             minzoom: 10,
             maxzoom: 16,
             attribution: "国土地理院 今昔マップ",
@@ -99,17 +99,21 @@ const Simple3DMap: React.FC = () => {
           // Capacity_面積 の値に応じた色分け
           "fill-color": [
             "interpolate", // 値に基づいて色を補間
-            ["linear"],    // 線形補間を使用
+            ["linear"], // 線形補間を使用
             ["get", "Capacity_面積"], // GeoJSONの "Capacity_面積" プロパティを取得
-            0, "#f2f0f7",   // 最小値の色 (薄い)
-            10, "#cbc9e2",  // 中間値の色
-            20, "#9e9ac8",  // より濃い色
-            50, "#6a51a3"   // 最大値の色 (濃い)
+            0,
+            "#f2f0f7", // 最小値の色 (薄い)
+            10,
+            "#cbc9e2", // 中間値の色
+            20,
+            "#9e9ac8", // より濃い色
+            50,
+            "#6a51a3", // 最大値の色 (濃い)
           ],
-          "fill-opacity": 0.7, // ポリゴンの透明度
+          "fill-opacity": 0.5, // ポリゴンの透明度
         },
       })
-      
+
       // ラインの背景色を設定します
       map.addLayer({
         id: "line",
@@ -148,16 +152,16 @@ const Simple3DMap: React.FC = () => {
           "fill-extrusion-height": ["*", ["get", "z"], 1],
           "fill-extrusion-base": 0,
           "fill-extrusion-color": "#797979",
-          "fill-extrusion-opacity": 0.8,
+          "fill-extrusion-opacity": 0.5,
         },
       })
 
       map.addControl(new maplibregl.NavigationControl(), "bottom-right")
     })
     map.on("click", "polygon", (e) => {
-      if (!e.features || e.features.length === 0) return;
-    
-      const properties = e.features[0].properties; // プロパティを取得
+      if (!e.features || e.features.length === 0) return
+
+      const properties = e.features[0].properties // プロパティを取得
       const popupContent = `
         <div>
           <strong>地区名:</strong> ${properties.NAME || "不明"}<br>
@@ -170,27 +174,30 @@ const Simple3DMap: React.FC = () => {
           <strong>形状の長さ:</strong> ${properties.Shape_Length ? properties.Shape_Length.toFixed(3) : "データなし"} km<br>
           <strong>形状の面積:</strong> ${properties.Shape_Area ? properties.Shape_Area.toExponential(3) : "データなし"} 平方m<br>
         </div>
-      `;
-    
+      `
+
       new maplibregl.Popup()
         .setLngLat(e.lngLat) // クリック位置にポップアップを表示
         .setHTML(popupContent) // ポップアップのHTMLコンテンツを設定
-        .addTo(map);
-    });
-    
+        .addTo(map)
+    })
+
     // マウスオーバー時のカーソル変更
     map.on("mouseenter", "polygon", () => {
-      map.getCanvas().style.cursor = "pointer"; // ポインターに変更
-    });
+      map.getCanvas().style.cursor = "pointer" // ポインターに変更
+    })
     map.on("mouseleave", "polygon", () => {
-      map.getCanvas().style.cursor = ""; // デフォルトに戻す
-    });
-    
+      map.getCanvas().style.cursor = "" // デフォルトに戻す
+    })
 
     mapInstance.current = map
   }, [])
 
-  return <div ref={mapContainer} style={{ width: "100%", height: "100vh" }} />
+  return (
+    <div className="absolute inset-0 z-0">
+      <div ref={mapContainer} style={{ width: "100%", height: "100vh" }} />
+    </div>
+  )
 }
 
 export default Simple3DMap
