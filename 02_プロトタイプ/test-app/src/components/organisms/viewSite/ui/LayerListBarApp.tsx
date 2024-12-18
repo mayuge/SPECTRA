@@ -153,7 +153,7 @@ const LayerListBarApp: React.FC = () => {
         />
       </div>
     </div>
-    <PullTab position="left" size="mini" variant="pullTab-light" icon="arrow_left"/>
+    <PullTab position="left" size="mini" variant="pullTab-light" icon="arrow_left" isShadow={true}/>
     </div>
     
   )

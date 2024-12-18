@@ -1,5 +1,5 @@
 import { useReqRailwayDataAdapter } from "@/infrastructure/adapters/httpReqAdapter"
-import { useDialogDialogStoreAdapter } from "@/infrastructure/adapters/storeAdapter"
+import { useDialogStoreAdapter } from "@/infrastructure/adapters/storeAdapter"
 import { useSiteRouteAdapter } from "@/infrastructure/adapters/routeAdapter"
 import { HOME_SITE_ROOT_NAME } from "@/domain/params/siteRootName"
 
@@ -13,7 +13,7 @@ const useViewSiteMain = () => {
     setLayerBarOpen,
     setDetailInfoDialogOpen,
     setMovieDialogOpen,
-  } = useDialogDialogStoreAdapter()
+  } = useDialogStoreAdapter()
   /**
    * ボタンがクリックされた場合
    **/
@@ -42,6 +42,9 @@ const useViewSiteMain = () => {
     getLayerBarOpen,
     getDetailInfoDialogOpen,
     getMovieDialogOpen,
+    setMovieDialogOpen,
+    setLayerBarOpen,
+    setDetailInfoDialogOpen,
   }
 }
 export default useViewSiteMain

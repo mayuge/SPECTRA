@@ -22,7 +22,7 @@ const useDialogStateStore = create<DialogStateState>()(
       //詳細情報ダイアログの開閉状態
       isDetailInfoDialogOpen: false,
       //動画ダイアログの開閉状態
-      isMovieDialogOpen: false,
+      isMovieDialogOpen: true,
       //レイヤーダイアログの開閉状態
       isLayerBarOpen: true,
       //詳細情報ダイアログのセッター
