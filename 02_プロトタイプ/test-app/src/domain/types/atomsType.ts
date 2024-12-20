@@ -76,7 +76,7 @@ export type PullTabPositionType =
   | typeof POSITION_RIGHT
   | typeof POSITION_LEFT
 
-  export type PullTabVariantType =
+export type PullTabVariantType =
   | typeof PULLTAB_PRIMARY
   | typeof PULLTAB_SECONDARY
   | typeof PULLTAB_WARNING
@@ -84,7 +84,6 @@ export type PullTabPositionType =
   | typeof PULLTAB_SUCCESS
   | typeof PULLTAB_DARK
   | typeof PULLTAB_LIGHT
-
 
 export type PullTabSizeType =
   | typeof MINI_SIZE

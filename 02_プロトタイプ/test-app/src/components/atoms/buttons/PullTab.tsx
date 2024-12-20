@@ -16,12 +16,12 @@ type PullTabProps = {
 }
 
 const PullTab: React.FC<PullTabProps> = ({
-    position,
-    size,
-    variant,
-    icon,
-    isShadow,
-    onClick,
+  position,
+  size,
+  variant,
+  icon,
+  isShadow,
+  onClick,
 }: PullTabProps) => {
   // サイズの種類　small normal largeから指定 paddingSize を動的に設定
   let paddingSize = "p-4" // デフォルトの padding
@@ -56,18 +56,18 @@ const PullTab: React.FC<PullTabProps> = ({
   } else if (variant === "pullTab-light") {
     //variantがlightのとき
     pullTabVariant = "bg-white text-gray-20"
-  } 
+  }
   //ボタンの場所の種類
   let cornerShape = ""
 
   if (position === "left") {
-    cornerShape="rounded-r-lg py-2"
+    cornerShape = "rounded-r-lg py-2"
   } else if (position === "right") {
-    cornerShape="rounded-l-lg py-2"
-  }else if (position === "top") {
-    cornerShape="rounded-b-lg px-2"
-  }else if (position === "bottom") {
-    cornerShape="rounded-t-lg px-2"
+    cornerShape = "rounded-l-lg py-2"
+  } else if (position === "top") {
+    cornerShape = "rounded-b-lg px-2"
+  } else if (position === "bottom") {
+    cornerShape = "rounded-t-lg px-2"
   }
 
   let buttonShadow = ""
@@ -80,7 +80,7 @@ const PullTab: React.FC<PullTabProps> = ({
       className={`${paddingSize} ${pullTabVariant} ${cornerShape} ${buttonShadow} flex items-center`} // flex と items-center を追加
       onClick={onClick}
     >
-      {icon&& <span className="material-icons">{icon}</span>} {/* アイコンを表示*/}
+      {icon && <span className="material-icons">{icon}</span>} {/* アイコンを表示*/}
     </button>
   )
 }

@@ -4,10 +4,10 @@ import React from "react"
 import Button from "@/components/atoms/buttons/Button"
 import TextLabel from "@/components/atoms/labels/TextLabel"
 import Header from "@/components/molecules/header/Header"
-import useHomeSiteMain from "@/components/organisms/homeSite/core/application/useHomeSiteMain"
+import useSourceSiteMain from "@/components/organisms/sourceSite/core/application/useSourceSiteMain"
 
-const HomeSiteMain: React.FC = () => {
-  const { buttonClicked, navigateToViewSite,navigateToSourceSite } = useHomeSiteMain()
+const SourceSiteMain: React.FC = () => {
+  const { buttonClicked, navigateToViewSite } = useSourceSiteMain()
 
   return (
     <div className="relative">
@@ -28,7 +28,7 @@ const HomeSiteMain: React.FC = () => {
           />
           <div className="my-12">
             <TextLabel
-              text={`都市の新たな価値を\n可視化する`}
+              text={`参考資料`}
               size="xlarge"
               bold={true}
               isBlack={true}
@@ -36,7 +36,7 @@ const HomeSiteMain: React.FC = () => {
           </div>
           <div className="my-12">
             <TextLabel
-              text={`交通・不動産・地理・災害等さまざまなオープンデータを\nかけ合わせることで新たな気づきが生まれる`}
+              text={`当アプリケーションの開発にあたって、利用した資料を掲載いたします`}
               size="large"
               bold={true}
               isBlack={true}
@@ -98,7 +98,7 @@ const HomeSiteMain: React.FC = () => {
               onClick={navigateToViewSite}
             />
           </div>
-          <div className="mt-16 mb-8">
+          <div className="mt-8">
             <TextLabel text={`リリースノート`} size="large" bold={true} isBlack={false} />
           </div>
           <div className="my-4">
@@ -124,18 +124,6 @@ const HomeSiteMain: React.FC = () => {
               bold={false}
               isBlack={false}
             />
-            <div className="my-8">
-              <Button
-                text="参考資料を見る"
-                iconLeft="text_snippet"
-                iconRight="arrow_forward"
-                variant="btn-light"
-                size="normal"
-                shape="circle"
-                isShadow={true}
-                onClick={navigateToSourceSite}
-              />
-            </div>
           </div>
         </div>
       </div>
@@ -143,4 +131,4 @@ const HomeSiteMain: React.FC = () => {
   )
 }
 
-export default HomeSiteMain
+export default SourceSiteMain
