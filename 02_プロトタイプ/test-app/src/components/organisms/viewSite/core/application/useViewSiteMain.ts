@@ -33,6 +33,13 @@ const useViewSiteMain = () => {
   const RouteToHomeSite = () => {
     routeTo(HOME_SITE_ROOT_NAME)
   }
+  const openAllDialogs = () => {
+    console.log("openAllDialogs")
+    setLayerBarOpen(true)
+    setDetailInfoDialogOpen(true)
+    setMovieDialogOpen(true)
+  }
+
 
   return {
     buttonClicked,
@@ -45,6 +52,7 @@ const useViewSiteMain = () => {
     setMovieDialogOpen,
     setLayerBarOpen,
     setDetailInfoDialogOpen,
+    openAllDialogs,
   }
 }
 export default useViewSiteMain

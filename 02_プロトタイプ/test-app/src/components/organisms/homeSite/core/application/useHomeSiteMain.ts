@@ -1,5 +1,5 @@
 import { useSiteRouteAdapter } from "@/infrastructure/adapters/routeAdapter"
-import { VIEW_SITE_ROOT_NAME,SOURCE_SITE_ROOT_NAME } from "@/domain/params/siteRootName"
+import { VIEW_SITE_ROOT_NAME, SOURCE_SITE_ROOT_NAME } from "@/domain/params/siteRootName"
 const useHomeSiteMain = () => {
   const { routeTo } = useSiteRouteAdapter()
   //ボタンが押されたとき
@@ -14,7 +14,7 @@ const useHomeSiteMain = () => {
   const navigateToSourceSite = () => {
     routeTo(SOURCE_SITE_ROOT_NAME)
   }
-  
+
   return {
     buttonClicked,
     navigateToViewSite,

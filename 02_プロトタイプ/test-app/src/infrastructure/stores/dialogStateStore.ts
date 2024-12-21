@@ -1,5 +1,4 @@
 import { create } from "zustand"
-import { persist, createJSONStorage } from "zustand/middleware"
 
 interface DialogStateState {
   isDetailInfoDialogOpen: boolean
@@ -17,12 +16,11 @@ interface DialogStateState {
 // セッターの引数にtrueを入れると開いている状態、falseを入れると閉じている状態にできる
 // ゲッターで状態を取得する
 const useDialogStateStore = create<DialogStateState>()(
-  persist(
     (set, get) => ({
       //詳細情報ダイアログの開閉状態
       isDetailInfoDialogOpen: false,
       //動画ダイアログの開閉状態
-      isMovieDialogOpen: true,
+      isMovieDialogOpen: false,
       //レイヤーダイアログの開閉状態
       isLayerBarOpen: true,
       //詳細情報ダイアログのセッター
@@ -38,11 +36,6 @@ const useDialogStateStore = create<DialogStateState>()(
       //レイヤーダイアログのセッター
       getLayerBarOpen: () => get().isLayerBarOpen,
     }),
-    {
-      name: "dialog-state-store", // ローカルストレージのキー
-      storage: createJSONStorage(() => sessionStorage), // 永続化に使用するストレージ
-    }
-  )
 )
 
 export default useDialogStateStore

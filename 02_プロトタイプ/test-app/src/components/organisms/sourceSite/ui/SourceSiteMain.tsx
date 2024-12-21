@@ -27,12 +27,7 @@ const SourceSiteMain: React.FC = () => {
             onClick={buttonClicked}
           />
           <div className="my-12">
-            <TextLabel
-              text={`参考資料`}
-              size="xlarge"
-              bold={true}
-              isBlack={true}
-            />
+            <TextLabel text={`参考資料`} size="xlarge" bold={true} isBlack={true} />
           </div>
           <div className="my-12">
             <TextLabel

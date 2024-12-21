@@ -1,16 +1,33 @@
 "use client"
-import React from "react"
-import DialogHeader from "@/components/molecules/header/DialogHeader"
-import Button from "@/components/atoms/buttons/Button"
-import TextLabel from "@/components/atoms/labels/TextLabel"
-import Badge from "@/components/atoms/labels/Badge"
+import React, { useState, useEffect } from "react"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
 import Card from "@/components/molecules/frames/Card"
 import PullTab from "@/components/atoms/buttons/PullTab"
 
 const LayerListBarApp: React.FC = () => {
-  const { buttonClicked, jrEastRealTimeLocateDataCallback, tokyoMetroRealTimeDataCallback } =
-    useViewSiteMain()
+  const {
+    jrEastRealTimeLocateDataCallback,
+    tokyoMetroRealTimeDataCallback,
+    setLayerBarOpen,
+    getLayerBarOpen,
+    openAllDialogs,
+    buttonClicked,
+  } = useViewSiteMain()
+
+
+  if (!getLayerBarOpen())
+    return (
+        <div className="relative z-10 w-min h-[calc(100vh-120px)] overflow-y-auto no-scrollbar flex items-center">
+          <PullTab
+            position="left"
+            size="mini"
+            variant="pullTab-light"
+            icon="arrow_right"
+            isShadow={true}
+            onClick={()=>{setLayerBarOpen(true)}}
+          />
+        </div>
+    ) // 完全に非表示になった後にDOMを削除
 
   return (
     <div className="relative z-10 flex items-center max-w-md">
@@ -26,7 +43,7 @@ const LayerListBarApp: React.FC = () => {
             isShadow={false}
             shape="square"
             isDisplayLayer={true}
-            refreshButtonClick={jrEastRealTimeLocateDataCallback}
+            infoButtonClick={jrEastRealTimeLocateDataCallback}
             displayButtonClick={buttonClicked}
           />
           <Card
@@ -38,7 +55,7 @@ const LayerListBarApp: React.FC = () => {
             isShadow={false}
             shape="square"
             isDisplayLayer={false}
-            refreshButtonClick={tokyoMetroRealTimeDataCallback}
+            infoButtonClick={openAllDialogs}
             displayButtonClick={buttonClicked}
           />
           <Card
@@ -49,7 +66,7 @@ const LayerListBarApp: React.FC = () => {
             isShadow={false}
             shape="square"
             isDisplayLayer={false}
-            refreshButtonClick={tokyoMetroRealTimeDataCallback}
+            infoButtonClick={openAllDialogs}
             displayButtonClick={buttonClicked}
           />
           <Card
@@ -60,7 +77,7 @@ const LayerListBarApp: React.FC = () => {
             isShadow={false}
             shape="square"
             isDisplayLayer={false}
-            refreshButtonClick={tokyoMetroRealTimeDataCallback}
+            infoButtonClick={openAllDialogs}
             displayButtonClick={buttonClicked}
           />
           <Card
@@ -71,7 +88,7 @@ const LayerListBarApp: React.FC = () => {
             isShadow={false}
             shape="square"
             isDisplayLayer={false}
-            refreshButtonClick={tokyoMetroRealTimeDataCallback}
+            infoButtonClick={openAllDialogs}
             displayButtonClick={buttonClicked}
           />
           <Card
@@ -82,7 +99,7 @@ const LayerListBarApp: React.FC = () => {
             isShadow={false}
             shape="square"
             isDisplayLayer={false}
-            refreshButtonClick={tokyoMetroRealTimeDataCallback}
+            infoButtonClick={openAllDialogs}
             displayButtonClick={buttonClicked}
           />
           <Card
@@ -93,7 +110,7 @@ const LayerListBarApp: React.FC = () => {
             isShadow={false}
             shape="square"
             isDisplayLayer={false}
-            refreshButtonClick={tokyoMetroRealTimeDataCallback}
+            infoButtonClick={openAllDialogs}
             displayButtonClick={buttonClicked}
           />
           <Card
@@ -104,7 +121,7 @@ const LayerListBarApp: React.FC = () => {
             isShadow={false}
             shape="square"
             isDisplayLayer={false}
-            refreshButtonClick={tokyoMetroRealTimeDataCallback}
+            infoButtonClick={openAllDialogs}
             displayButtonClick={buttonClicked}
           />
           <Card
@@ -115,7 +132,7 @@ const LayerListBarApp: React.FC = () => {
             isShadow={false}
             shape="square"
             isDisplayLayer={false}
-            refreshButtonClick={tokyoMetroRealTimeDataCallback}
+            infoButtonClick={openAllDialogs}
             displayButtonClick={buttonClicked}
           />
           <Card
@@ -126,7 +143,7 @@ const LayerListBarApp: React.FC = () => {
             isShadow={false}
             shape="square"
             isDisplayLayer={false}
-            refreshButtonClick={tokyoMetroRealTimeDataCallback}
+            infoButtonClick={openAllDialogs}
             displayButtonClick={buttonClicked}
           />
           <Card
@@ -137,7 +154,7 @@ const LayerListBarApp: React.FC = () => {
             isShadow={false}
             shape="square"
             isDisplayLayer={false}
-            refreshButtonClick={tokyoMetroRealTimeDataCallback}
+            infoButtonClick={openAllDialogs}
             displayButtonClick={buttonClicked}
           />
           <Card
@@ -148,7 +165,7 @@ const LayerListBarApp: React.FC = () => {
             isShadow={false}
             shape="square"
             isDisplayLayer={false}
-            refreshButtonClick={tokyoMetroRealTimeDataCallback}
+            infoButtonClick={openAllDialogs}
             displayButtonClick={buttonClicked}
           />
         </div>
@@ -159,6 +176,7 @@ const LayerListBarApp: React.FC = () => {
         variant="pullTab-light"
         icon="arrow_left"
         isShadow={true}
+        onClick={()=>{setLayerBarOpen(false)}}
       />
     </div>
   )

@@ -9,7 +9,7 @@ type CardProps = {
   isShadow: boolean //影の有無
   shape?: string //カードの形状を文字列で指定 square(四角形) circle（丸）デフォルトで角丸
   displayButtonClick: () => void
-  refreshButtonClick: () => void
+  infoButtonClick: () => void
   isDisplayLayer: boolean
   dangerBadge?: string
   warningBadge?: string
@@ -29,7 +29,7 @@ const Card: React.FC<CardProps> = ({
   darkBadge,
   isDisplayLayer,
   displayButtonClick,
-  refreshButtonClick,
+  infoButtonClick,
 }: CardProps) => {
   // カードのスタイルの種類 デフォルトは primary
   let cardVariant = "bg-white"
@@ -86,21 +86,21 @@ const Card: React.FC<CardProps> = ({
                 variant="btn-text-gray"
                 size="mini"
                 iconLeft="info"
-                onClick={refreshButtonClick}
+                onClick={infoButtonClick}
               />
             </div>
           </div>
           <div className="pb-1 flex justify-between">
             <div className=" inline-flex items-center gap-2">
-              <BaseColorInput onChange={refreshButtonClick} />
-              <BaseSliderInput onChange={refreshButtonClick} min={0} max={1.0} step={0.1} />
+              <BaseColorInput onChange={infoButtonClick} />
+              <BaseSliderInput onChange={infoButtonClick} min={0} max={1.0} step={0.1} />
             </div>
             <div>
               <Button
                 variant="btn-text-gray"
                 size="mini"
                 iconLeft="swap_vert"
-                onClick={refreshButtonClick}
+                onClick={infoButtonClick}
               />
             </div>
           </div>
