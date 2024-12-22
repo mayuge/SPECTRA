@@ -66,7 +66,7 @@ const Card: React.FC<CardProps> = ({
 
   //ロゴ画像のパス
   let logoImgPath = "/assets/logos/default.webp"
-  if (logoImg!=="") {
+  if (logoImg !== "") {
     logoImgPath = logoImg
   }
 

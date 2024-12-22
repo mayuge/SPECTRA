@@ -20,9 +20,8 @@ const ViewSiteMain: React.FC = () => {
       <LayerListBarApp />
       <DetailInfoDialogApp />
       <MovieDialogApp />
-    
-        <MapApp />
-      
+
+      <MapApp />
     </div>
   )
 }
