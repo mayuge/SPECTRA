@@ -1,17 +1,34 @@
+"use client"
+
 import React, { useRef, useEffect } from "react"
-import maplibregl, { RasterSourceSpecification, GeoJSONSourceSpecification } from "maplibre-gl"
+import maplibregl, { RasterSourceSpecification, GeoJSONSourceSpecification, PropertyValueSpecification, LayerSpecification } from "maplibre-gl"
 import "maplibre-gl/dist/maplibre-gl.css"
+import { mapConfig } from "@/components/organisms/viewSite/core/params/params"
+
+// レイヤーの型定義
+type Layer = {
+  id: string
+  type: "raster" | "fill" | "line"
+  sourceId: string
+  source: RasterSourceSpecification | GeoJSONSourceSpecification
+  layout?: {
+    visibility?: "visible" | "none"
+    "line-join"?: PropertyValueSpecification<"round" | "bevel" | "miter">
+    "line-cap"?: PropertyValueSpecification<"butt" | "round" | "square">
+  }
+  paint: any
+}
 
 const MapApp: React.FC = () => {
   const mapContainer = useRef<HTMLDivElement>(null)
   const mapInstance = useRef<maplibregl.Map | null>(null)
 
   // レイヤー定義オブジェクト（複数レイヤに対応）
-  const layers = [
-
+  const layers: Layer[] = [
     {
       id: "konjakumap",
-      type: "raster" as "raster",
+      type: "raster",
+      sourceId: "konjakumap",
       source: {
         type: "raster",
         tiles: ["https://ktgis.net/kjmapw/kjtilemap/tokyo50/03/{z}/{x}/{y}.png"],
@@ -21,29 +38,41 @@ const MapApp: React.FC = () => {
         minzoom: 8,
         attribution: "今昔マップ",
       } as RasterSourceSpecification,
+      layout: {
+        visibility: "visible",
+      },
       paint: {
         "raster-opacity": 0.5,
       },
-    },    {
+    },
+    {
       id: "osm-map",
-      type: "raster" as "raster",
+      type: "raster",
+      sourceId: "osm-map",
       source: {
         type: "raster",
         tiles: ["https://tile.openstreetmap.jp/styles/osm-bright-ja/{z}/{x}/{y}.png"],
         tileSize: 512,
         attribution: "OpenStreetMap",
       } as RasterSourceSpecification,
+      layout: {
+        visibility: "visible",
+      },
       paint: {
         "raster-opacity": 0.5,
       },
     },
     {
       id: "polygon",
-      type: "fill" as "fill",
+      type: "fill",
+      sourceId: "BaseCityBlocks",
       source: {
         type: "geojson",
         data: "/geojson/Block_Tokyo_FeaturesToJSON.geojson",
       } as GeoJSONSourceSpecification,
+      layout: {
+        visibility: "visible",
+      },
       paint: {
         "fill-color": [
           "interpolate",
@@ -59,22 +88,26 @@ const MapApp: React.FC = () => {
     },
     {
       id: "line",
-      type: "line" as "line",
+      type: "line",
+      sourceId: "LineToeiBus",
       source: {
         type: "geojson",
         data: "/geojson/LineToeiBus.geojson",
       } as GeoJSONSourceSpecification,
-
+      layout: {
+        "line-join": "round",
+        "line-cap": "round",
+        visibility: "visible",
+      },
       paint: {
         "line-color": "#00FF00",
         "line-width": 3,
         "line-opacity": 0.8,
       },
     },
-   
   ]
 
-  //displayMap内は空の箱のようにしておき、url等もあとから中身を追加する
+  // displayMap関数内は空の箱のようにしておき、url等もあとから中身を追加する
   const displayMap = () => {
     if (mapContainer.current && !mapInstance.current) {
       mapInstance.current = new maplibregl.Map({
@@ -94,15 +127,16 @@ const MapApp: React.FC = () => {
       mapInstance.current.on("load", () => {
         layers.forEach((layer) => {
           // ソースを追加
-          mapInstance.current?.addSource(layer.id, layer.source)
+          mapInstance.current?.addSource(layer.sourceId, layer.source)
 
           // レイヤーを追加
           mapInstance.current?.addLayer({
             id: layer.id,
             type: layer.type,
-            source: layer.id,
+            source: layer.sourceId,
             paint: layer.paint,
-          })
+            layout: layer.layout || {}, // layoutが存在しない場合は空のオブジェクトを使用
+          } as LayerSpecification)
         })
 
         mapInstance.current?.addControl(new maplibregl.NavigationControl(), "bottom-right")
