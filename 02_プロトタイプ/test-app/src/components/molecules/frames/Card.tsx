@@ -6,10 +6,14 @@ import BaseSliderInput from "@/components/atoms/Inputs/SliderInput"
 
 type CardProps = {
   text: string // カードテキスト
+  logoImg: string //ロゴ画像のパス
   isShadow: boolean //影の有無
   shape?: string //カードの形状を文字列で指定 square(四角形) circle（丸）デフォルトで角丸
   displayButtonClick: () => void
   infoButtonClick: () => void
+  colorPickerClick: () => void
+  sliderClick: () => void
+  orderButtonClick: () => void
   isDisplayLayer: boolean
   dangerBadge?: string
   warningBadge?: string
@@ -20,6 +24,7 @@ type CardProps = {
 
 const Card: React.FC<CardProps> = ({
   text,
+  logoImg,
   shape,
   isShadow,
   dangerBadge,
@@ -30,6 +35,9 @@ const Card: React.FC<CardProps> = ({
   isDisplayLayer,
   displayButtonClick,
   infoButtonClick,
+  colorPickerClick,
+  sliderClick,
+  orderButtonClick,
 }: CardProps) => {
   // カードのスタイルの種類 デフォルトは primary
   let cardVariant = "bg-white"
@@ -56,6 +64,12 @@ const Card: React.FC<CardProps> = ({
     displayIcon = "visibility_off"
   }
 
+  //ロゴ画像のパス
+  let logoImgPath = "/assets/logos/default.webp"
+  if (logoImg!=="") {
+    logoImgPath = logoImg
+  }
+
   return (
     <div className={`${cardVariant} ${cornerShape} ${buttonShadow} pt-1 hover:bg-gray-90`}>
       <div className="flex items-center gap-1">
@@ -78,7 +92,7 @@ const Card: React.FC<CardProps> = ({
         <div className="w-full">
           <div className="pb-1 flex justify-between">
             <div className=" inline-flex items-center gap-2">
-              <img src="/assets/logos/jreast.webp" className="w-5 h-5" />
+              <img src={logoImgPath} className="w-5 h-5" />
               {text}
             </div>
             <div>
@@ -92,15 +106,15 @@ const Card: React.FC<CardProps> = ({
           </div>
           <div className="pb-1 flex justify-between">
             <div className=" inline-flex items-center gap-2">
-              <BaseColorInput onChange={infoButtonClick} />
-              <BaseSliderInput onChange={infoButtonClick} min={0} max={1.0} step={0.1} />
+              <BaseColorInput onChange={colorPickerClick} />
+              <BaseSliderInput onChange={sliderClick} min={0} max={1.0} step={0.1} />
             </div>
             <div>
               <Button
                 variant="btn-text-gray"
                 size="mini"
                 iconLeft="swap_vert"
-                onClick={infoButtonClick}
+                onClick={orderButtonClick}
               />
             </div>
           </div>

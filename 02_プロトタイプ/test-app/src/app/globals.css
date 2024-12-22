@@ -12,6 +12,9 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+  .h-calc-100vh-120px {
+    height: calc(100vh - 120px);
+  }
 }
 /* styles/globals.css */
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
