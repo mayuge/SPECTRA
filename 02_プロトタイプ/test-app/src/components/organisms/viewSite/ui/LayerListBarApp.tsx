@@ -14,19 +14,20 @@ const LayerListBarApp: React.FC = () => {
     buttonClicked,
   } = useViewSiteMain()
 
-
   if (!getLayerBarOpen())
     return (
-        <div className="relative z-10 w-min h-[calc(100vh-120px)] overflow-y-auto no-scrollbar flex items-center">
-          <PullTab
-            position="left"
-            size="mini"
-            variant="pullTab-light"
-            icon="arrow_right"
-            isShadow={true}
-            onClick={()=>{setLayerBarOpen(true)}}
-          />
-        </div>
+      <div className="relative z-10 w-min h-[calc(100vh-120px)] overflow-y-auto no-scrollbar flex items-center">
+        <PullTab
+          position="left"
+          size="mini"
+          variant="pullTab-light"
+          icon="arrow_right"
+          isShadow={true}
+          onClick={() => {
+            setLayerBarOpen(true)
+          }}
+        />
+      </div>
     ) // 完全に非表示になった後にDOMを削除
 
   return (
@@ -176,7 +177,9 @@ const LayerListBarApp: React.FC = () => {
         variant="pullTab-light"
         icon="arrow_left"
         isShadow={true}
-        onClick={()=>{setLayerBarOpen(false)}}
+        onClick={() => {
+          setLayerBarOpen(false)
+        }}
       />
     </div>
   )

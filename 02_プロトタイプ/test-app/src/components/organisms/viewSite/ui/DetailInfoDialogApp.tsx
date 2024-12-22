@@ -5,7 +5,7 @@ import useViewSiteMain from "@/components/organisms/viewSite/core/application/us
 
 const DetailInfoDialogApp: React.FC = () => {
   const { setDetailInfoDialogOpen, getDetailInfoDialogOpen } = useViewSiteMain()
-  
+
   if (!getDetailInfoDialogOpen()) return null // 完全に非表示になった後にDOMを削除
 
   return (
@@ -16,7 +16,9 @@ const DetailInfoDialogApp: React.FC = () => {
           icon="close"
           variant="header-dark"
           size="normal"
-          onClick={()=>{setDetailInfoDialogOpen(false)}} 
+          onClick={() => {
+            setDetailInfoDialogOpen(false)
+          }}
           isShadow={false}
         />
         <div className="max-h-[200px] max-w-[400px] min-h-[150px] min-w-[150px] bg-white rounded-b-lg shadow-md shadow-black">

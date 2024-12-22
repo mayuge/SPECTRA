@@ -5,7 +5,7 @@ import useViewSiteMain from "@/components/organisms/viewSite/core/application/us
 
 const MovieDialogApp: React.FC = () => {
   const { setMovieDialogOpen, getMovieDialogOpen } = useViewSiteMain()
-  
+
   if (!getMovieDialogOpen()) return null // 完全に非表示になった後にDOMを削除
 
   return (
@@ -16,7 +16,9 @@ const MovieDialogApp: React.FC = () => {
           icon="close"
           variant="header-dark"
           size="normal"
-          onClick={()=>{setMovieDialogOpen(false)}} // 閉じる処理
+          onClick={() => {
+            setMovieDialogOpen(false)
+          }} // 閉じる処理
           isShadow={false}
         />
         <div className="max-h-[225px] max-w-[400px] min-h-[150px] min-w-[150px] bg-white rounded-b-lg shadow-md shadow-black">

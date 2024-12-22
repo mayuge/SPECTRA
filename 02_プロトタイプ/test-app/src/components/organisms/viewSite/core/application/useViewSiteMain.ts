@@ -40,7 +40,6 @@ const useViewSiteMain = () => {
     setMovieDialogOpen(true)
   }
 
-
   return {
     buttonClicked,
     jrEastRealTimeLocateDataCallback,

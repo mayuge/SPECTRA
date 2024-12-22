@@ -17,10 +17,12 @@ const ViewSiteMain: React.FC = () => {
   return (
     <div className="relative w-full h-screen">
       <HeaderApp />
-      <MapApp />
       <LayerListBarApp />
       <DetailInfoDialogApp />
       <MovieDialogApp />
+    
+        <MapApp />
+      
     </div>
   )
 }

@@ -1,10 +1,10 @@
-import React, { useRef, useEffect } from "react";
-import maplibregl from "maplibre-gl";
-import "maplibre-gl/dist/maplibre-gl.css";
+import React, { useRef, useEffect } from "react"
+import maplibregl from "maplibre-gl"
+import "maplibre-gl/dist/maplibre-gl.css"
 
 const MapApp: React.FC = () => {
-  const mapContainer = useRef<HTMLDivElement>(null);
-  const mapInstance = useRef<maplibregl.Map | null>(null);
+  const mapContainer = useRef<HTMLDivElement>(null)
+  const mapInstance = useRef<maplibregl.Map | null>(null)
 
   // レイヤー定義オブジェクト（複数レイヤに対応）
   const layers = [
@@ -18,7 +18,7 @@ const MapApp: React.FC = () => {
         attribution: "OpenStreetMap",
       } as maplibregl.RasterSourceSpecification, // 型キャストを追加
     },
-  ];
+  ]
 
   // 地図の初期化
   const initializeMap = () => {
@@ -34,37 +34,39 @@ const MapApp: React.FC = () => {
         zoom: 16,
         pitch: 60,
         bearing: 40,
-      });
+      })
 
       // 地図が読み込まれた後にソースとレイヤーを追加
       mapInstance.current.on("load", () => {
-        layers.forEach(layer => {
+        layers.forEach((layer) => {
           // ソースを追加
-          mapInstance.current?.addSource(layer.id, layer.source);
+          mapInstance.current?.addSource(layer.id, layer.source)
 
           // レイヤーを追加
           mapInstance.current?.addLayer({
             id: layer.id,
             type: layer.type,
             source: layer.id,
-          });
-        });
-      });
+          })
+        })
+      })
     }
-  };
+  }
 
   useEffect(() => {
-    initializeMap();
+    initializeMap()
 
     return () => {
       if (mapInstance.current) {
-        mapInstance.current.remove();
-        mapInstance.current = null;
+        mapInstance.current.remove()
+        mapInstance.current = null
       }
-    };
-  }, []);
+    }
+  }, [])
 
-  return <div ref={mapContainer} className="absolute inset-0 w-full h-full" />;
-};
+  return (<div className="absolute inset-0 z-0" >
+    <div ref={mapContainer} className="w-full h-full"></div>
+    </div>)
+}
 
-export default MapApp;
+export default MapApp
