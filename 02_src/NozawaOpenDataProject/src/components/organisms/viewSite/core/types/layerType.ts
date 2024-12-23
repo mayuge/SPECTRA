@@ -1,4 +1,4 @@
-import maplibregl, { RasterSourceSpecification, GeoJSONSourceSpecification, PropertyValueSpecification, LayerSpecification } from "maplibre-gl"
+import { RasterSourceSpecification, GeoJSONSourceSpecification, PropertyValueSpecification} from "maplibre-gl"
 // レイヤーの型定義
 export type LayerType = {
     id: string

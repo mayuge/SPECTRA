@@ -1,15 +1,13 @@
-import { CardListType } from "@/domain/types/cardListType"
-import { LayerType } from "@/domain/types/layerType"
+import { CardListType } from "@/components/organisms/viewSite/core/types/cardListType"
+import { LayerType } from "@/components/organisms/viewSite/core/types/layerType"
 import  { RasterSourceSpecification, GeoJSONSourceSpecification } from "maplibre-gl"
 export const cardList: CardListType[] = [
   {
-    logoImg: "/assets/logos/jreast.webp",
-    text: "JR東日本リアルタイム車両位置データ",
-    dangerBadge: "交通データ",
-    warningBadge: "鉄道",
-    successBadge: "リアルタイム",
-    primaryBadge: "ポイントデータ",
-    darkBadge: "2024オープンデータチャレンジ限定",
+    logoImg: "",
+    text: "今昔マップ",
+    dangerBadge: "歴史",
+    warningBadge: "マップ",
+    primaryBadge: "ベースマップ",
     isShadow: false,
     shape: "square",
     isDisplayLayer: true,
@@ -20,12 +18,12 @@ export const cardList: CardListType[] = [
     orderButtonClick: "buttonClicked",
   },
   {
-    logoImg: "/assets/logos/tokyometro.webp",
-    text: "東京メトロリアルタイム運行状況データ",
-    dangerBadge: "交通データ",
-    warningBadge: "鉄道",
-    successBadge: "リアルタイム",
+    logoImg: "/assets/logos/tokyoLogo.webp",
+    text: "都営バスルート",
+    dangerBadge: "交通",
+    warningBadge: "バス",
     primaryBadge: "ラインデータ",
+    darkBadge:"オープンデータチャレンジ",
     isShadow: false,
     shape: "square",
     isDisplayLayer: false,
@@ -36,11 +34,12 @@ export const cardList: CardListType[] = [
     orderButtonClick: "buttonClicked",
   },
   {
-    logoImg: "/assets/logos/soumusyou.webp",
-    text: "2020年度国勢調査メッシュ",
-    dangerBadge: "人口データ",
-    warningBadge: "国勢調査",
-    primaryBadge: "メッシュデータ",
+    logoImg: "/assets/logos/default.webp",
+    text: "町丁目人口あたりのハローサイクルポート数",
+    dangerBadge: "交通",
+    warningBadge: "シェアサイクル",
+    primaryBadge: "ポリゴンデータ",
+    darkBadge:"オープンデータチャレンジ",
     isShadow: false,
     shape: "square",
     isDisplayLayer: false,
