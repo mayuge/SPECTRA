@@ -2,22 +2,11 @@
 import React, { useRef, useEffect } from "react"
 import maplibregl, { RasterSourceSpecification, GeoJSONSourceSpecification, PropertyValueSpecification, LayerSpecification } from "maplibre-gl"
 import "maplibre-gl/dist/maplibre-gl.css"
+import { LayerType } from "@/domain/types/layerType"
 
-// レイヤーの型定義
-type Layer = {
-  id: string
-  type: "raster" | "fill" | "line"
-  sourceId: string
-  source: RasterSourceSpecification | GeoJSONSourceSpecification
-  layout?: {
-    visibility?: "visible" | "none"
-    "line-join"?: PropertyValueSpecification<"round" | "bevel" | "miter">
-    "line-cap"?: PropertyValueSpecification<"butt" | "round" | "square">
-  }
-  paint: any
-}
+
 // レイヤー定義オブジェクト（複数レイヤに対応）
-const layers: Layer[] = [
+const layerObjects:  LayerType[] = [
   {
     id: "konjakumap",
     type: "raster",
@@ -35,7 +24,7 @@ const layers: Layer[] = [
       visibility: "visible",
     },
     paint: {
-      "raster-opacity": 0.5,
+      "raster-opacity": 1,
     },
   },
   {
@@ -52,7 +41,7 @@ const layers: Layer[] = [
       visibility: "visible",
     },
     paint: {
-      "raster-opacity": 0.5,
+      "raster-opacity": 1,
     },
   },
   {
@@ -122,7 +111,7 @@ const MapApp: React.FC = () => {
 
       // 地図が読み込まれた後にソースとレイヤーを追加
       mapInstance.current.on("load", () => {
-        layers.forEach((layer) => {
+        layerObjects.forEach((layer) => {
           // ソースを追加
           mapInstance.current?.addSource(layer.sourceId, layer.source)
 
