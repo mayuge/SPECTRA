@@ -79,25 +79,25 @@ const layers: Layer[] = [
       "fill-opacity": 0.7,
     },
   },
-  {
-    id: "line",
-    type: "line",
-    sourceId: "LineToeiBus",
-    source: {
-      type: "geojson",
-      data: "/geojson/LineToeiBus.geojson",
-    } as GeoJSONSourceSpecification,
-    layout: {
-      "line-join": "round",
-      "line-cap": "round",
-      visibility: "visible",
-    },
-    paint: {
-      "line-color": "#00FF00",
-      "line-width": 3,
-      "line-opacity": 0.8,
-    },
-  },
+  // {
+  //   id: "line",
+  //   type: "line",
+  //   sourceId: "LineToeiBus",
+  //   source: {
+  //     type: "geojson",
+  //     data: "/geojson/LineToeiBus.geojson",
+  //   } as GeoJSONSourceSpecification,
+  //   layout: {
+  //     "line-join": "round",
+  //     "line-cap": "round",
+  //     visibility: "visible",
+  //   },
+  //   paint: {
+  //     "line-color": "#00FF00",
+  //     "line-width": 3,
+  //     "line-opacity": 0.8,
+  //   },
+  // },
 ]
 
 const MapApp: React.FC = () => {
