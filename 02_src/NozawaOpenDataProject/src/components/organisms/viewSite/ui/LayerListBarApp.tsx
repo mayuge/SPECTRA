@@ -3,7 +3,6 @@ import React from "react"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
 import Card from "@/components/molecules/frames/Card"
 import PullTab from "@/components/atoms/buttons/PullTab"
-import { cardList } from "@/components/organisms/viewSite/core/params/layers"
 
 const LayerListBarApp: React.FC = () => {
   const {
@@ -13,24 +12,30 @@ const LayerListBarApp: React.FC = () => {
     buttonClicked,
     jrEastRealTimeLocateDataCallback,
     tokyoMetroRealTimeDataCallback,
+    getCardList, 
+    changeLayerOrder, 
   } = useViewSiteMain()
 
-    // 関数マッピング
-    const functionMap: { [key: string]: () => void } = {
-      buttonClicked,
-      openAllDialogs,
-      jrEastRealTimeLocateDataCallback,
-      tokyoMetroRealTimeDataCallback,
-    }
-     // cardList にコールバック関数を設定
-  const displayCardList = cardList.map(card => ({
+
+
+  // 関数マッピング
+  const functionMap: { [key: string]: () => void } = {
+    buttonClicked,
+    openAllDialogs,
+    jrEastRealTimeLocateDataCallback,
+    tokyoMetroRealTimeDataCallback,
+  }
+
+  // cardList にコールバック関数を設定
+  const displayCardList = getCardList().map((card, index) => ({
     ...card,
     colorPickerClick: functionMap[card.colorPickerClick],
     sliderClick: functionMap[card.sliderClick],
     infoButtonClick: functionMap[card.infoButtonClick],
     displayButtonClick: functionMap[card.displayButtonClick],
-    orderButtonClick: functionMap[card.orderButtonClick],
+    orderButtonClick: () => changeLayerOrder(index),
   }))
+
   if (!getLayerBarOpen())
     return (
       <div className="relative z-10 w-min h-calc-100vh-120px overflow-y-auto no-scrollbar flex items-center">
@@ -49,8 +54,8 @@ const LayerListBarApp: React.FC = () => {
 
   return (
     <div className="relative z-10 flex items-center max-w-md">
-      <div className="h-calc-100vh-120px bg-white p-2  shadow-lg shadow-black overflow-y-auto no-scrollbar">
-        {displayCardList .map((card, index) => (
+      <div className="h-calc-100vh-120px bg-white p-2 shadow-lg shadow-black overflow-y-auto no-scrollbar">
+        {displayCardList.map((card, index) => (
           <Card key={index} {...card} />
         ))}
       </div>

@@ -1,7 +1,6 @@
 import { CardListType } from "@/components/organisms/viewSite/core/types/cardListType"
-import { LayerType } from "@/components/organisms/viewSite/core/types/layerType"
-import  { RasterSourceSpecification, GeoJSONSourceSpecification } from "maplibre-gl"
-export const cardList: CardListType[] = [
+import { RasterSourceSpecification, GeoJSONSourceSpecification } from "maplibre-gl"
+export const cardLayerList: CardListType[] = [
   {
     logoImg: "",
     text: "今昔マップ",
@@ -15,7 +14,59 @@ export const cardList: CardListType[] = [
     sliderClick: "buttonClicked",
     infoButtonClick: "jrEastRealTimeLocateDataCallback",
     displayButtonClick: "buttonClicked",
-    orderButtonClick: "buttonClicked",
+    orderButtonClick: "changeLayerOrder",
+    layer: {
+      id: "konjakumap",
+      type: "raster",
+      sourceId: "konjakumap",
+      source: {
+        type: "raster",
+        tiles: ["https://ktgis.net/kjmapw/kjtilemap/tokyo50/03/{z}/{x}/{y}.png"],
+        tileSize: 512,
+        scheme: "tms",
+        maxzoom: 16,
+        minzoom: 8,
+        attribution: "今昔マップ",
+      } as RasterSourceSpecification,
+      layout: {
+        visibility: "visible",
+      },
+      paint: {
+        "raster-opacity": 1,
+      },
+    },
+  },
+  {
+    logoImg: "",
+    text: "オープンストリートマップ",
+    dangerBadge: "通常地図",
+    warningBadge: "マップ",
+    primaryBadge: "ベースマップ",
+    isShadow: false,
+    shape: "square",
+    isDisplayLayer: true,
+    colorPickerClick: "buttonClicked",
+    sliderClick: "buttonClicked",
+    infoButtonClick: "buttonClicked",
+    displayButtonClick: "buttonClicked",
+    orderButtonClick: "changeLayerOrder",
+    layer: {
+      id: "osm-map",
+      type: "raster",
+      sourceId: "osm-map",
+      source: {
+        type: "raster",
+        tiles: ["https://tile.openstreetmap.jp/styles/osm-bright-ja/{z}/{x}/{y}.png"],
+        tileSize: 512,
+        attribution: "OpenStreetMap",
+      } as RasterSourceSpecification,
+      layout: {
+        visibility: "visible",
+      },
+      paint: {
+        "raster-opacity": 1,
+      },
+    },
   },
   {
     logoImg: "/assets/logos/tokyoLogo.webp",
@@ -23,7 +74,7 @@ export const cardList: CardListType[] = [
     dangerBadge: "交通",
     warningBadge: "バス",
     primaryBadge: "ラインデータ",
-    darkBadge:"オープンデータチャレンジ",
+    darkBadge: "オープンデータチャレンジ",
     isShadow: false,
     shape: "square",
     isDisplayLayer: false,
@@ -32,6 +83,25 @@ export const cardList: CardListType[] = [
     infoButtonClick: "tokyoMetroRealTimeDataCallback",
     displayButtonClick: "buttonClicked",
     orderButtonClick: "buttonClicked",
+    layer: {
+      id: "line",
+      type: "line",
+      sourceId: "LineToeiBus",
+      source: {
+        type: "geojson",
+        data: "/geojson/LineToeiBus.geojson",
+      } as GeoJSONSourceSpecification,
+      layout: {
+        "line-join": "round",
+        "line-cap": "round",
+        visibility: "visible",
+      },
+      paint: {
+        "line-color": "#00FF00",
+        "line-width": 3,
+        "line-opacity": 1,
+      },
+    },
   },
   {
     logoImg: "/assets/logos/default.webp",
@@ -39,7 +109,7 @@ export const cardList: CardListType[] = [
     dangerBadge: "交通",
     warningBadge: "シェアサイクル",
     primaryBadge: "ポリゴンデータ",
-    darkBadge:"オープンデータチャレンジ",
+    darkBadge: "オープンデータチャレンジ",
     isShadow: false,
     shape: "square",
     isDisplayLayer: false,
@@ -47,89 +117,34 @@ export const cardList: CardListType[] = [
     sliderClick: "buttonClicked",
     infoButtonClick: "openAllDialogs",
     displayButtonClick: "buttonClicked",
-    orderButtonClick: "buttonClicked",
-  },
-]
-// レイヤー定義オブジェクト（複数レイヤに対応）
-export const layerObjects:  LayerType[] = [
-  {
-    id: "konjakumap",
-    type: "raster",
-    sourceId: "konjakumap",
-    source: {
-      type: "raster",
-      tiles: ["https://ktgis.net/kjmapw/kjtilemap/tokyo50/03/{z}/{x}/{y}.png"],
-      tileSize: 512,
-      scheme: "tms",
-      maxzoom: 16,
-      minzoom: 8,
-      attribution: "今昔マップ",
-    } as RasterSourceSpecification,
-    layout: {
-      visibility: "visible",
-    },
-    paint: {
-      "raster-opacity": 1,
-    },
-  },
-  {
-    id: "osm-map",
-    type: "raster",
-    sourceId: "osm-map",
-    source: {
-      type: "raster",
-      tiles: ["https://tile.openstreetmap.jp/styles/osm-bright-ja/{z}/{x}/{y}.png"],
-      tileSize: 512,
-      attribution: "OpenStreetMap",
-    } as RasterSourceSpecification,
-    layout: {
-      visibility: "visible",
-    },
-    paint: {
-      "raster-opacity": 1,
-    },
-  },
-  {
-    id: "polygon",
-    type: "fill",
-    sourceId: "BaseCityBlocks",
-    source: {
-      type: "geojson",
-      data: "/geojson/Block_Tokyo_FeaturesToJSON.geojson",
-    } as GeoJSONSourceSpecification,
-    layout: {
-      visibility: "visible",
-    },
-    paint: {
-      "fill-color": [
-        "interpolate",
-        ["linear"],
-        ["get", "Capacity_面積"],
-        0, "#f2f0f7",
-        10, "#cbc9e2",
-        20, "#9e9ac8",
-        50, "#6a51a3"
-      ],
-      "fill-opacity": 0.7,
-    },
-  },
-  {
-    id: "line",
-    type: "line",
-    sourceId: "LineToeiBus",
-    source: {
-      type: "geojson",
-      data: "/geojson/LineToeiBus.geojson",
-    } as GeoJSONSourceSpecification,
-    layout: {
-      "line-join": "round",
-      "line-cap": "round",
-      visibility: "visible",
-    },
-    paint: {
-      "line-color": "#00FF00",
-      "line-width": 3,
-      "line-opacity": 0.8,
+    orderButtonClick: "changeLayerOrder",
+    layer: {
+      id: "polygon",
+      type: "fill",
+      sourceId: "BaseCityBlocks",
+      source: {
+        type: "geojson",
+        data: "/geojson/Block_Tokyo_FeaturesToJSON.geojson",
+      } as GeoJSONSourceSpecification,
+      layout: {
+        visibility: "visible",
+      },
+      paint: {
+        "fill-color": [
+          "interpolate",
+          ["linear"],
+          ["get", "Capacity_面積"],
+          0,
+          "#f2f0f7",
+          10,
+          "#cbc9e2",
+          20,
+          "#9e9ac8",
+          50,
+          "#6a51a3",
+        ],
+        "fill-opacity": 1,
+      },
     },
   },
 ]

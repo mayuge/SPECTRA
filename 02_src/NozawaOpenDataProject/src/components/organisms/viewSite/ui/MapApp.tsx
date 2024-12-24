@@ -1,16 +1,18 @@
 "use client"
-import React, { useRef, useEffect } from "react"
-import maplibregl, { RasterSourceSpecification, GeoJSONSourceSpecification, PropertyValueSpecification, LayerSpecification } from "maplibre-gl"
-import "maplibre-gl/dist/maplibre-gl.css"
-import { layerObjects } from "@/components/organisms/viewSite/core/params/layers"
 
+import React, { useRef, useEffect } from "react"
+import maplibregl, { LayerSpecification } from "maplibre-gl"
+import "maplibre-gl/dist/maplibre-gl.css"
+
+import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
 
 const MapApp: React.FC = () => {
   const mapContainer = useRef<HTMLDivElement>(null)
   const mapInstance = useRef<maplibregl.Map | null>(null)
-  
-  // displayMap関数内は空の箱のようにしておき、url等もあとから中身を追加する
+  const { getLayers } = useViewSiteMain()
+
   const displayMap = () => {
+    const layers = getLayers()
     if (mapContainer.current && !mapInstance.current) {
       mapInstance.current = new maplibregl.Map({
         container: mapContainer.current,
@@ -27,7 +29,8 @@ const MapApp: React.FC = () => {
 
       // 地図が読み込まれた後にソースとレイヤーを追加
       mapInstance.current.on("load", () => {
-        layerObjects.forEach((layer) => {
+        
+        layers.forEach((layer) => {
           // ソースを追加
           mapInstance.current?.addSource(layer.sourceId, layer.source)
 

@@ -1,7 +1,11 @@
 import { useReqRailwayDataAdapter } from "@/infrastructure/adapters/httpReqAdapter"
-import { useDialogStoreAdapter } from "@/infrastructure/adapters/storeAdapter"
+import {
+  useDialogStoreAdapter,
+  useManageLayerAdapter,
+} from "@/infrastructure/adapters/storeAdapter"
 import { useSiteRouteAdapter } from "@/infrastructure/adapters/routeAdapter"
 import { HOME_SITE_ROOT_NAME } from "@/domain/params/siteRootName"
+import { get } from "http"
 
 const useViewSiteMain = () => {
   const { routeTo } = useSiteRouteAdapter()
@@ -14,11 +18,12 @@ const useViewSiteMain = () => {
     setDetailInfoDialogOpen,
     setMovieDialogOpen,
   } = useDialogStoreAdapter()
+  const { changeLayerOrder, getLayers,getCardList } = useManageLayerAdapter()
   /**
    * ボタンがクリックされた場合
    **/
   const buttonClicked = () => {
-    console.log("この関数はorganisms/homeSite/core/application/useViewSiteMain.tsにあるよ！")
+    console.log(getLayers())
   }
   const jrEastRealTimeLocateDataCallback = async () => {
     //JR東日本リアルタイム車両位置データを非同期で取得する
@@ -52,6 +57,9 @@ const useViewSiteMain = () => {
     setLayerBarOpen,
     setDetailInfoDialogOpen,
     openAllDialogs,
+    changeLayerOrder,
+    getLayers,
+    getCardList,
   }
 }
 export default useViewSiteMain
