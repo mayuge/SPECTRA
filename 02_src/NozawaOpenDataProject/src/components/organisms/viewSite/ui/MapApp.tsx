@@ -5,7 +5,6 @@ import maplibregl, { LayerSpecification } from "maplibre-gl"
 import "maplibre-gl/dist/maplibre-gl.css"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
 
-
 const MapApp: React.FC = () => {
   const mapContainer = useRef<HTMLDivElement>(null)
   const mapInstance = useRef<maplibregl.Map | null>(null)
@@ -33,24 +32,22 @@ const MapApp: React.FC = () => {
       const map = mapInstance.current
 
       if (map?.isStyleLoaded()) {
-        // 既存のレイヤーをクリア
-        const currentStyle = map.getStyle()
-        currentStyle.layers.forEach(layer => {
-          map.removeLayer(layer.id)
-        })
-
-        // 新しいレイヤーを追加
+        // 既存のレイヤーをクリアせずに順序を変更
         layers.forEach(layer => {
           if (!map.getSource(layer.sourceId)) {
             map.addSource(layer.sourceId, layer.source)
           }
-          map.addLayer({
-            id: layer.id,
-            type: layer.type,
-            source: layer.sourceId,
-            paint: layer.paint,
-            layout: layer.layout || {},
-          } as LayerSpecification)
+          if (!map.getLayer(layer.id)) {
+            map.addLayer({
+              id: layer.id,
+              type: layer.type,
+              source: layer.sourceId,
+              paint: layer.paint,
+              layout: layer.layout || {},
+            } as LayerSpecification)
+          } else {
+            map.moveLayer(layer.id)
+          }
         })
       }
     }
@@ -75,4 +72,5 @@ const MapApp: React.FC = () => {
     </div>
   )
 }
+
 export default MapApp
