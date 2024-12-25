@@ -5,7 +5,7 @@ import {
 } from "@/infrastructure/adapters/storeAdapter"
 import { useSiteRouteAdapter } from "@/infrastructure/adapters/routeAdapter"
 import { HOME_SITE_ROOT_NAME } from "@/domain/params/siteRootName"
-import { get } from "http"
+
 
 const useViewSiteMain = () => {
   const { routeTo } = useSiteRouteAdapter()

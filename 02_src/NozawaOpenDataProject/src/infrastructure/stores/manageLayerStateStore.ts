@@ -3,6 +3,8 @@ import { cardLayerList } from "@/components/organisms/viewSite/core/params/layer
 import { CardListType } from "@/components/organisms/viewSite/core/types/cardListType"
 import { LayerType } from "@/components/organisms/viewSite/core/types/layerType"
 
+import { persist, createJSONStorage } from "zustand/middleware"
+
 interface ManageLayerState {
   layerList: CardListType[]
   getLayers: () => LayerType[]
@@ -11,7 +13,8 @@ interface ManageLayerState {
 }
 
 // Zustandストアの作成
-const useManageLayerStateStore = create<ManageLayerState>()((set, get) => ({
+const useManageLayerStateStore = create<ManageLayerState>()(
+  (set, get) => ({
   layerList: cardLayerList,
   getLayers: () => get().layerList.map((card) => card.layer).reverse(),
   getCardList: () => get().layerList,
@@ -26,6 +29,8 @@ const useManageLayerStateStore = create<ManageLayerState>()((set, get) => ({
       return { layerList: newLayerList }
     })
   },
-}))
+}),
+    
+)
 
 export default useManageLayerStateStore
