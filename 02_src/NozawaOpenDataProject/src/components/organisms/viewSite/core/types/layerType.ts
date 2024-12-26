@@ -2,18 +2,16 @@ import {
   RasterSourceSpecification,
   GeoJSONSourceSpecification,
   RasterDEMSourceSpecification,
-  PropertyValueSpecification,
+  FillExtrusionLayerSpecification,
+  VectorSourceSpecification,
 } from "maplibre-gl"
-// レイヤーの型定義
+
 export type LayerType = {
   id: string
-  type: "raster" |"raster-dem"| "fill" | "line"|"hillshade"
+  type: string
   sourceId: string
-  source: RasterSourceSpecification | GeoJSONSourceSpecification | RasterDEMSourceSpecification
-  layout?: {
-    visibility?: "visible" | "none"
-    "line-join"?: PropertyValueSpecification<"round" | "bevel" | "miter">
-    "line-cap"?: PropertyValueSpecification<"butt" | "round" | "square">
-  }
-  paint: any
+  source: RasterSourceSpecification | GeoJSONSourceSpecification | RasterDEMSourceSpecification | VectorSourceSpecification,
+  "source-layer"?: string,
+  layout?: object
+  paint?: object
 }

@@ -13,10 +13,12 @@ interface ManageLayerState {
 }
 
 // Zustandストアの作成
-const useManageLayerStateStore = create<ManageLayerState>()(
-  (set, get) => ({
+const useManageLayerStateStore = create<ManageLayerState>()((set, get) => ({
   layerList: cardLayerList,
-  getLayers: () => get().layerList.map((card) => card.layer).reverse(),
+  getLayers: () =>
+    get()
+      .layerList.map((card) => card.layer)
+      .reverse(),
   getCardList: () => get().layerList,
   changeLayerOrder: (index: number) => {
     set((state) => {
@@ -29,8 +31,6 @@ const useManageLayerStateStore = create<ManageLayerState>()(
       return { layerList: newLayerList }
     })
   },
-}),
-    
-)
+}))
 
 export default useManageLayerStateStore

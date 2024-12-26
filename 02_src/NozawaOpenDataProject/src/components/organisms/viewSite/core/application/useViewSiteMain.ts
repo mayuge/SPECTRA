@@ -6,7 +6,6 @@ import {
 import { useSiteRouteAdapter } from "@/infrastructure/adapters/routeAdapter"
 import { HOME_SITE_ROOT_NAME } from "@/domain/params/siteRootName"
 
-
 const useViewSiteMain = () => {
   const { routeTo } = useSiteRouteAdapter()
   const { reqJrEastRealTimeLocateData, reqTokyoMetroRealTimeData } = useReqRailwayDataAdapter()
@@ -18,7 +17,7 @@ const useViewSiteMain = () => {
     setDetailInfoDialogOpen,
     setMovieDialogOpen,
   } = useDialogStoreAdapter()
-  const { changeLayerOrder, getLayers,getCardList } = useManageLayerAdapter()
+  const { changeLayerOrder, getLayers, getCardList } = useManageLayerAdapter()
   /**
    * ボタンがクリックされた場合
    **/

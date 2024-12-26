@@ -12,11 +12,9 @@ const LayerListBarApp: React.FC = () => {
     buttonClicked,
     jrEastRealTimeLocateDataCallback,
     tokyoMetroRealTimeDataCallback,
-    getCardList, 
-    changeLayerOrder, 
+    getCardList,
+    changeLayerOrder,
   } = useViewSiteMain()
-
-
 
   // 関数マッピング
   const functionMap: { [key: string]: () => void } = {
