@@ -14,6 +14,8 @@ const LayerListBarApp: React.FC = () => {
     tokyoMetroRealTimeDataCallback,
     getCardList,
     changeLayerOrder,
+    getIsDisplayLayer,
+    setIsDisplayLayer,
   } = useViewSiteMain()
 
   // 関数マッピング
@@ -27,10 +29,11 @@ const LayerListBarApp: React.FC = () => {
   // cardList にコールバック関数を設定
   const displayCardList = getCardList().map((card, index) => ({
     ...card,
+    isDisplayLayer:getIsDisplayLayer(index),
     colorPickerClick: functionMap[card.colorPickerClick],
     sliderClick: functionMap[card.sliderClick],
     infoButtonClick: functionMap[card.infoButtonClick],
-    displayButtonClick: functionMap[card.displayButtonClick],
+    displayButtonClick: ()=>setIsDisplayLayer(index),
     orderButtonClick: () => changeLayerOrder(index),
   }))
 

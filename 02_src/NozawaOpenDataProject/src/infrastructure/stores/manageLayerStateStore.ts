@@ -10,6 +10,8 @@ interface ManageLayerState {
   getLayers: () => LayerType[]
   getCardList: () => CardListType[]
   changeLayerOrder: (index: number) => void
+  getIsDisplayLayer: (index: number) => boolean
+  setIsDisplayLayer: (index: number) => void
 }
 
 // Zustandストアの作成
@@ -23,11 +25,23 @@ const useManageLayerStateStore = create<ManageLayerState>()((set, get) => ({
   changeLayerOrder: (index: number) => {
     set((state) => {
       const newLayerList = [...state.layerList]
+      //最後の配列でなければ、配列を入れ替える
       if (index < newLayerList.length - 1) {
         const temp = newLayerList[index]
         newLayerList[index] = newLayerList[index + 1]
         newLayerList[index + 1] = temp
       }
+      return { layerList: newLayerList }
+    })
+  },
+  getIsDisplayLayer: (index: number) => get().layerList[index].isDisplayLayer,
+  setIsDisplayLayer: (index: number) => {
+    set((state) => {
+      //isDisplayLayerを反転させる
+      const newLayerList = [...state.layerList]
+      newLayerList[index].isDisplayLayer = !newLayerList[index].isDisplayLayer
+      //layerのvisibilityを変更する
+      newLayerList[index].layer.layout!.visibility = newLayerList[index].isDisplayLayer ? "visible" : "none"
       return { layerList: newLayerList }
     })
   },

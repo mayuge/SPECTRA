@@ -17,7 +17,7 @@ const useViewSiteMain = () => {
     setDetailInfoDialogOpen,
     setMovieDialogOpen,
   } = useDialogStoreAdapter()
-  const { changeLayerOrder, getLayers, getCardList } = useManageLayerAdapter()
+  const { changeLayerOrder, getLayers, getCardList, getIsDisplayLayer,setIsDisplayLayer } = useManageLayerAdapter()
   /**
    * ボタンがクリックされた場合
    **/
@@ -59,6 +59,8 @@ const useViewSiteMain = () => {
     changeLayerOrder,
     getLayers,
     getCardList,
+    getIsDisplayLayer, 
+    setIsDisplayLayer,
   }
 }
 export default useViewSiteMain
