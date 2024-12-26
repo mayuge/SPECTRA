@@ -71,15 +71,15 @@ const Card: React.FC<CardProps> = ({
   }
 
   return (
-    <div className={`${cardVariant} ${cornerShape} ${buttonShadow} pt-1 hover:bg-gray-90`}>
-      <div className="flex items-center gap-1">
+    <div className={`${cardVariant} ${cornerShape} ${buttonShadow} p-2 hover:bg-gray-90`}>
+      <div className="flex items-center gap-1 pb-1">
         {dangerBadge && <Badge variant="badge-danger" text={dangerBadge} />}
         {warningBadge && <Badge variant="badge-warning" text={warningBadge} />}
         {successBadge && <Badge variant="badge-success" text={successBadge} />}
         {primaryBadge && <Badge variant="badge-primary" text={primaryBadge} />}
         {darkBadge && <Badge variant="badge-dark" text={darkBadge} />}
       </div>
-      <div className="flex items-center w-full gap-2">
+      <div className="flex items-center w-full gap-1">
         <div className="flex items-center gap-1">
           <Button
             variant="btn-text-gray"
@@ -87,11 +87,11 @@ const Card: React.FC<CardProps> = ({
             iconLeft={`${displayIcon}`}
             onClick={displayButtonClick}
           />
-          <hr className="w-[1px] h-[35px] bg-gray-60" />
+          <hr className="w-[1px] h-10 bg-gray-60" />
         </div>
         <div className="w-full">
-          <div className="pb-1 flex justify-between">
-            <div className=" inline-flex items-center gap-2">
+          <div className="pb-1 flex justify-between gap-2">
+            <div className=" inline-flex items-center gap-1">
               <img src={logoImgPath} className="w-5 h-5" />
               {text}
             </div>
