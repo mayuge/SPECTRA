@@ -29,11 +29,11 @@ const LayerListBarApp: React.FC = () => {
   // cardList にコールバック関数を設定
   const displayCardList = getCardList().map((card, index) => ({
     ...card,
-    isDisplayLayer:getIsDisplayLayer(index),
+    isDisplayLayer: getIsDisplayLayer(index),
     colorPickerClick: functionMap[card.colorPickerClick],
     sliderClick: functionMap[card.sliderClick],
     infoButtonClick: functionMap[card.infoButtonClick],
-    displayButtonClick: ()=>setIsDisplayLayer(index),
+    displayButtonClick: () => setIsDisplayLayer(index),
     orderButtonClick: () => changeLayerOrder(index),
   }))
 

@@ -41,7 +41,9 @@ const useManageLayerStateStore = create<ManageLayerState>()((set, get) => ({
       const newLayerList = [...state.layerList]
       newLayerList[index].isDisplayLayer = !newLayerList[index].isDisplayLayer
       //layerのvisibilityを変更する
-      newLayerList[index].layer.layout!.visibility = newLayerList[index].isDisplayLayer ? "visible" : "none"
+      newLayerList[index].layer.layout!.visibility = newLayerList[index].isDisplayLayer
+        ? "visible"
+        : "none"
       return { layerList: newLayerList }
     })
   },

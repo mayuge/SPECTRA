@@ -13,7 +13,6 @@ const useReqRailwayData = () => {
       const config = {
         method: "GET",
         url: `${url}${token}`,
-       
       }
       //リクエストを行う
       const res = await httpLimited.request(config)
@@ -32,7 +31,6 @@ const useReqRailwayData = () => {
       const config = {
         method: "GET",
         url: `${url}${token}`,
-        
       }
       //リクエストを行う
       const res = await http.request(config)

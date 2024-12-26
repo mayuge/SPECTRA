@@ -15,7 +15,7 @@ const MapApp: React.FC = () => {
       mapInstance.current = new maplibregl.Map({
         container: mapContainer.current,
         style: {
-          version: 8,
+          version: 8 as const,
           sources: {},
           layers: [],
           sky: {
@@ -47,28 +47,30 @@ const MapApp: React.FC = () => {
             map.addSource(layer.sourceId, layer.source as SourceSpecification)
           }
           if (!map.getLayer(layer.id)) {
-            if(layer["source-layer"] === undefined) {
+            if (layer["source-layer"] === undefined) {
               map.addLayer({
                 id: layer.id,
                 type: layer.type,
                 source: layer.sourceId,
-                  paint: layer.paint,
-                layout: layer.layout || {},
+                paint: layer.paint,
+                layout: layer.layout
               } as LayerSpecification)
-            }else{
+            } else {
               map.addLayer({
                 id: layer.id,
                 type: layer.type,
                 source: layer.sourceId,
                 "source-layer": layer["source-layer"],
                 paint: layer.paint,
-                layout: layer.layout || {},
+                layout: layer.layout
               } as LayerSpecification)
             }
-
-            
           } else {
             map.moveLayer(layer.id)
+            // レイヤーのvisibilityを更新
+            if (layer.layout && layer.layout.visibility) {
+              map.setLayoutProperty(layer.id, 'visibility', layer.layout.visibility)
+            }
           }
         })
       }
@@ -77,6 +79,7 @@ const MapApp: React.FC = () => {
     // 初期読み込み時のコントロール追加
     mapInstance.current?.on("load", () => {
       mapInstance.current?.addControl(new maplibregl.NavigationControl(), "bottom-right")
+      updateLayers()
     })
 
     // レイヤーの変更を監視
@@ -85,7 +88,7 @@ const MapApp: React.FC = () => {
     return () => {
       clearInterval(timer)
     }
-  }, [])
+  }, [getLayers])
 
   return (
     <div className="absolute inset-0 z-0">

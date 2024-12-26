@@ -7,9 +7,22 @@ import {
 
 export type LayerType = {
   id: string
-  type: "symbol" | "fill" | "line" | "circle" | "heatmap" | "fill-extrusion" | "raster" | "hillshade" | "background"
+  type:
+    | "symbol"
+    | "fill"
+    | "line"
+    | "circle"
+    | "heatmap"
+    | "fill-extrusion"
+    | "raster"
+    | "hillshade"
+    | "background"
   sourceId: string
-  source: RasterSourceSpecification | GeoJSONSourceSpecification | RasterDEMSourceSpecification | VectorSourceSpecification
+  source:
+    | RasterSourceSpecification
+    | GeoJSONSourceSpecification
+    | RasterDEMSourceSpecification
+    | VectorSourceSpecification
   "source-layer"?: string
   layout: {
     "line-join"?: "bevel" | "round" | "miter"
