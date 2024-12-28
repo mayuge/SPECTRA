@@ -1,9 +1,7 @@
 import { create } from "zustand"
-import { cardLayerList } from "@/components/organisms/viewSite/core/params/layers"
+import { cardLayerList } from "@/components/organisms/viewSite/core/params/useLayersMain"
 import { CardListType } from "@/components/organisms/viewSite/core/types/cardListType"
 import { LayerType } from "@/components/organisms/viewSite/core/types/layerType"
-
-import { persist, createJSONStorage } from "zustand/middleware"
 
 interface ManageLayerState {
   layerList: CardListType[]

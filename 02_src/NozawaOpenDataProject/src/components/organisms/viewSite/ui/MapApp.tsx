@@ -53,7 +53,7 @@ const MapApp: React.FC = () => {
                 type: layer.type,
                 source: layer.sourceId,
                 paint: layer.paint,
-                layout: layer.layout
+                layout: layer.layout,
               } as LayerSpecification)
             } else {
               map.addLayer({
@@ -62,14 +62,14 @@ const MapApp: React.FC = () => {
                 source: layer.sourceId,
                 "source-layer": layer["source-layer"],
                 paint: layer.paint,
-                layout: layer.layout
+                layout: layer.layout,
               } as LayerSpecification)
             }
           } else {
             map.moveLayer(layer.id)
             // レイヤーのvisibilityを更新
             if (layer.layout && layer.layout.visibility) {
-              map.setLayoutProperty(layer.id, 'visibility', layer.layout.visibility)
+              map.setLayoutProperty(layer.id, "visibility", layer.layout.visibility)
             }
           }
         })
