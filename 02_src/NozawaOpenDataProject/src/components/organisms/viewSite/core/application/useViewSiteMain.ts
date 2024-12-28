@@ -8,7 +8,7 @@ import { HOME_SITE_ROOT_NAME } from "@/domain/params/siteRootName"
 
 const useViewSiteMain = () => {
   const { routeTo } = useSiteRouteAdapter()
-  const { reqJrEastRealTimeLocateData, reqTokyoMetroRealTimeData } = useReqRailwayDataAdapter()
+  const { reqJrEastRealTimeLocateData, reqTokyoMetroRealTimeInfo,reqJrEastRealTimeInfo} = useReqRailwayDataAdapter()
   const {
     getLayerBarOpen,
     getDetailInfoDialogOpen,
@@ -25,13 +25,27 @@ const useViewSiteMain = () => {
   const buttonClicked = () => {
     console.log(getLayers())
   }
+  /**
+   * JR東日本リアルタイム車両位置データ
+   */
   const jrEastRealTimeLocateDataCallback = async () => {
     //JR東日本リアルタイム車両位置データを非同期で取得する
     const res = await reqJrEastRealTimeLocateData()
     console.log(res)
   }
-  const tokyoMetroRealTimeDataCallback = async () => {
-    const res = await reqTokyoMetroRealTimeData()
+  /**
+   * JR東日本リアルタイム運行情報
+   */
+  const jrEastRealTimeInfoCallback = async () => {
+    console.log('called')
+    const res = await reqJrEastRealTimeInfo()
+    console.log(res)
+  }
+  /**
+   * 東京メトロリアルタイム運行情報
+   */
+  const tokyoMetroRealTimeInfoCallback = async () => {
+    const res = await reqTokyoMetroRealTimeInfo()
     console.log(res)
   }
   // ホームサイトに遷移する関数
@@ -48,7 +62,8 @@ const useViewSiteMain = () => {
   return {
     buttonClicked,
     jrEastRealTimeLocateDataCallback,
-    tokyoMetroRealTimeDataCallback,
+    jrEastRealTimeInfoCallback,
+    tokyoMetroRealTimeInfoCallback,
     RouteToHomeSite,
     getLayerBarOpen,
     getDetailInfoDialogOpen,

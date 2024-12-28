@@ -9,7 +9,7 @@ import useViewSiteMain from "@/components/organisms/viewSite/core/application/us
 import Card from "@/components/molecules/frames/Card"
 
 const HeaderApp: React.FC = () => {
-  const { RouteToHomeSite } = useViewSiteMain()
+  const { RouteToHomeSite, jrEastRealTimeInfoCallback } = useViewSiteMain()
 
   return (
     <div className="relative z-10 p-6 flex justify-start items-center bg-gray-20 shadow-md shadow-black">
@@ -36,7 +36,7 @@ const HeaderApp: React.FC = () => {
         <Button
           iconLeft="autorenew"
           isShadow={true}
-          onClick={() => {}}
+          onClick={jrEastRealTimeInfoCallback}
           shape="circle"
           size="large"
           text=""

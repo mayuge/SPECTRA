@@ -11,7 +11,7 @@ const ViewSiteMain: React.FC = () => {
     buttonClicked,
     RouteToHomeSite,
     jrEastRealTimeLocateDataCallback,
-    tokyoMetroRealTimeDataCallback,
+    tokyoMetroRealTimeInfoCallback,
   } = useViewSiteMain()
 
   return (

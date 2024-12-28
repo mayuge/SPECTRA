@@ -5,7 +5,7 @@ import { HOME_SITE_ROOT_NAME } from "@/domain/params/siteRootName"
 
 const useViewSiteMain = () => {
   const { routeTo } = useSiteRouteAdapter()
-  const { reqJrEastRealTimeLocateData, reqTokyoMetroRealTimeData } = useReqRailwayDataAdapter()
+  const { reqJrEastRealTimeLocateData, reqTokyoMetroRealTimeInfo } = useReqRailwayDataAdapter()
   const {
     getLayerBarOpen,
     getDetailInfoDialogOpen,
@@ -25,8 +25,8 @@ const useViewSiteMain = () => {
     const res = await reqJrEastRealTimeLocateData()
     console.log(res)
   }
-  const tokyoMetroRealTimeDataCallback = async () => {
-    const res = await reqTokyoMetroRealTimeData()
+  const tokyoMetroRealTimeInfoCallback = async () => {
+    const res = await reqTokyoMetroRealTimeInfo()
     console.log(res)
   }
   // ホームサイトに遷移する関数
@@ -43,7 +43,7 @@ const useViewSiteMain = () => {
   return {
     buttonClicked,
     jrEastRealTimeLocateDataCallback,
-    tokyoMetroRealTimeDataCallback,
+    tokyoMetroRealTimeInfoCallback,
     RouteToHomeSite,
     getLayerBarOpen,
     getDetailInfoDialogOpen,

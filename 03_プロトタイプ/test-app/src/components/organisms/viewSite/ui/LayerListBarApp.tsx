@@ -7,7 +7,7 @@ import PullTab from "@/components/atoms/buttons/PullTab"
 const LayerListBarApp: React.FC = () => {
   const {
     jrEastRealTimeLocateDataCallback,
-    tokyoMetroRealTimeDataCallback,
+    tokyoMetroRealTimeInfoCallback,
     setLayerBarOpen,
     getLayerBarOpen,
     openAllDialogs,

@@ -6,7 +6,13 @@ import { terrainCard } from "@/components/organisms/viewSite/core/params/terrain
 import { osmCard } from "@/components/organisms/viewSite/core/params/osmLayer"
 import { konjakuCard } from "@/components/organisms/viewSite/core/params/konjakuLayer"
 
-
-export const cardLayerList: CardListType[] = [toeiBusCard, plateauCard, cycleBlockCard, terrainCard, osmCard, konjakuCard ]
+export const cardLayerList: CardListType[] = [
+  toeiBusCard,
+  plateauCard,
+  cycleBlockCard,
+  terrainCard,
+  osmCard,
+  konjakuCard,
+]
 
 export default cardLayerList
