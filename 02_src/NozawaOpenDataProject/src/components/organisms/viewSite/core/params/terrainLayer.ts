@@ -17,7 +17,9 @@ const terrainLayer: LayerType = {
   layout: {
     visibility: "visible",
   },
-  paint: {},
+  paint: {
+    "hillshade-exaggeration": 0.5,
+  },
 }
 
 export const terrainCard: CardListType = {

@@ -18,7 +18,7 @@ const addLayerToMap = (map: maplibregl.Map, layer: any) => {
       layout: layer.layout,
     } as LayerSpecification)
   } else {
-    //プラトーを表示させるためのコード
+    // プラトーを表示させるためのコード
     map.addLayer({
       id: layer.id,
       type: layer.type,
@@ -28,20 +28,34 @@ const addLayerToMap = (map: maplibregl.Map, layer: any) => {
       layout: layer.layout,
     } as LayerSpecification)
   }
+
+  // ポップアップの設定
+  if (layer.popup) {
+    map.on("click", layer.id, (e) => {
+      const feature = e.features ? e.features[0] : null
+      if (!feature) return
+
+      const properties = feature.properties
+      const popupContent = layer.popup.template(properties) // template関数を使用してHTMLコンテンツ生成
+
+      const popup = new maplibregl.Popup()
+        .setLngLat(e.lngLat)
+        .setDOMContent(popupContent) // HTML要素を設定
+        .addTo(map)
+    })
+  }
 }
 
 /**
  * 既存のレイヤに変更があった場合
  */
 const updateExistingLayer = (map: maplibregl.Map, layer: any) => {
-  //レイヤー表示順の切り替え
   map.moveLayer(layer.id)
-  //レイヤー表示の切り替え
+
   if (layer.layout?.visibility) {
     map.setLayoutProperty(layer.id, "visibility", layer.layout.visibility)
   }
 
-  //opacityの切り替え
   if (layer.paint) {
     const paint = layer.paint
     if (layer.type === "fill" && "fill-opacity" in paint) {
@@ -58,7 +72,11 @@ const updateExistingLayer = (map: maplibregl.Map, layer: any) => {
   }
 }
 
-const initializeMap = (mapContainer: React.RefObject<HTMLDivElement>, mapInstance: React.MutableRefObject<maplibregl.Map | null>, updateLayers: () => void) => {
+const initializeMap = (
+  mapContainer: React.RefObject<HTMLDivElement>,
+  mapInstance: React.MutableRefObject<maplibregl.Map | null>,
+  updateLayers: () => void
+) => {
   if (mapContainer.current && !mapInstance.current) {
     mapInstance.current = new maplibregl.Map({
       container: mapContainer.current,
@@ -113,7 +131,7 @@ const MapApp: React.FC = () => {
       })
     }
   }
-  
+
   useEffect(() => {
     initializeMap(mapContainer, mapInstance, updateLayers)
 
@@ -122,7 +140,7 @@ const MapApp: React.FC = () => {
     return () => {
       clearInterval(timer)
     }
-  }, [getLayers()])
+  }, [getLayers])
 
   return (
     <div className="absolute inset-0 z-0">

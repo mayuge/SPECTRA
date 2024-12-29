@@ -5,6 +5,13 @@ import {
   VectorSourceSpecification,
 } from "maplibre-gl"
 
+export type PopupContent = {
+  template: (properties: any) => HTMLElement // HTMLElementを返すように変更
+  options?: {
+    maxWidth?: string // 最大幅などのオプションも追加可能
+  }
+}
+
 export type LayerType = {
   id: string
   type:
@@ -30,4 +37,5 @@ export type LayerType = {
     visibility: "visible" | "none"
   }
   paint?: object
+  popup?: PopupContent // ポップアップの構造を具体的に定義
 }

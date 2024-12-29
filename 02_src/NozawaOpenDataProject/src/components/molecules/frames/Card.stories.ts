@@ -1,6 +1,6 @@
-import React from "react";
-import Card from "@/components/molecules/frames/Card";
-import type { Meta, StoryObj } from "@storybook/react";
+import React from "react"
+import Card from "@/components/molecules/frames/Card"
+import type { Meta, StoryObj } from "@storybook/react"
 
 const meta: Meta<typeof Card> = {
   title: "Molecules/Card",
@@ -31,11 +31,11 @@ const meta: Meta<typeof Card> = {
     sliderClick: { action: "sliderClick", description: "スライダー値変更" },
     orderButtonClick: { action: "orderButtonClick", description: "順序ボタンクリック" },
   },
-};
+}
 
-export default meta;
+export default meta
 
-type Story = StoryObj<typeof Card>;
+type Story = StoryObj<typeof Card>
 
 export const Default: Story = {
   args: {
@@ -53,7 +53,7 @@ export const Default: Story = {
     sliderClick: (value) => alert(`Slider value: ${value}`),
     orderButtonClick: () => alert("Order button clicked"),
   },
-};
+}
 
 export const ShadowedCard: Story = {
   args: {
@@ -63,7 +63,7 @@ export const ShadowedCard: Story = {
     isShadow: true,
     shape: "square",
   },
-};
+}
 
 export const CircularCard: Story = {
   args: {
@@ -72,7 +72,7 @@ export const CircularCard: Story = {
     isShadow: true,
     shape: "circle",
   },
-};
+}
 
 export const DisplayToggleCard: Story = {
   args: {
@@ -82,7 +82,7 @@ export const DisplayToggleCard: Story = {
     isShadow: true,
     shape: "rounded",
   },
-};
+}
 
 export const NoBadgesCard: Story = {
   args: {
@@ -90,4 +90,4 @@ export const NoBadgesCard: Story = {
     isShadow: false,
     shape: "rounded",
   },
-};
+}
