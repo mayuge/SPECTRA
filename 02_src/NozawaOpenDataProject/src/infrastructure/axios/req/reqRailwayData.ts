@@ -28,26 +28,7 @@ const useReqRailwayData = () => {
   //JR東日本の運行状況リアルタイムデータ
   // JR東日本の運行状況リアルタイムデータ
 const reqJrEastRealTimeInfo = async () => {
-  try {
-    const token = process.env.NEXT_PUBLIC_OPEN_DATA_CHALLENGE_TOKEN_LIMITED;
-    const url = process.env.NEXT_PUBLIC_JR_EAST_REALTIME_INFO_URL;
-    const config: AxiosRequestConfig = {
-      method: "GET",
-      url: `${url}${token}`,
-      responseType: "arraybuffer" as ResponseType, // 明示的に 'arraybuffer' 型を指定
-    };
-    
-    // リクエストを行う
-    const res = await httpLimited.request(config);
-    if (res.statusText === "OK") {
-      console.log(res.data)
-      const root = await protobuf.load(res.data);
-
-     
-    }
-  } catch (e: any) {
-    console.log(e);
-  }
+  
 };
 
   //東京メトロの運行状況リアルタイムデータ

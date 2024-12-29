@@ -1,8 +1,8 @@
-"use client"
-import React from "react"
-import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
-import Card from "@/components/molecules/frames/Card"
-import PullTab from "@/components/atoms/buttons/PullTab"
+"use client";
+import React from "react";
+import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain";
+import Card from "@/components/molecules/frames/Card";
+import PullTab from "@/components/atoms/buttons/PullTab";
 
 const LayerListBarApp: React.FC = () => {
   const {
@@ -16,28 +16,29 @@ const LayerListBarApp: React.FC = () => {
     changeLayerOrder,
     getIsDisplayLayer,
     setIsDisplayLayer,
-  } = useViewSiteMain()
+    setOpacity,
+  } = useViewSiteMain();
 
   // 関数マッピング
-  const functionMap: { [key: string]: () => void } = {
+  const functionMap: { [key: string]: (() => void) | undefined } = {
     buttonClicked,
     openAllDialogs,
     jrEastRealTimeLocateDataCallback,
     tokyoMetroRealTimeInfoCallback,
-  }
+  };
 
   // cardList にコールバック関数を設定
   const displayCardList = getCardList().map((card, index) => ({
     ...card,
     isDisplayLayer: getIsDisplayLayer(index),
-    colorPickerClick: functionMap[card.colorPickerClick],
-    sliderClick: functionMap[card.sliderClick],
-    infoButtonClick: functionMap[card.infoButtonClick],
+    colorPickerClick: functionMap[card.colorPickerClick] || (() => {}), // 存在しない場合のフォールバック
+    sliderClick: (value: number) => setOpacity(index, value), // スライダー変更時のハンドラー
+    infoButtonClick: functionMap[card.infoButtonClick] || (() => {}),
     displayButtonClick: () => setIsDisplayLayer(index),
     orderButtonClick: () => changeLayerOrder(index),
-  }))
+  }));
 
-  if (!getLayerBarOpen())
+  if (!getLayerBarOpen()) {
     return (
       <div className="relative z-10 w-min h-calc-100vh-120px overflow-y-auto no-scrollbar flex items-center">
         <PullTab
@@ -47,11 +48,12 @@ const LayerListBarApp: React.FC = () => {
           icon="arrow_right"
           isShadow={true}
           onClick={() => {
-            setLayerBarOpen(true)
+            setLayerBarOpen(true);
           }}
         />
       </div>
-    ) // 完全に非表示になった後にDOMを削除
+    );
+  }
 
   return (
     <div className="relative z-10 flex items-center max-w-md">
@@ -67,11 +69,11 @@ const LayerListBarApp: React.FC = () => {
         icon="arrow_left"
         isShadow={true}
         onClick={() => {
-          setLayerBarOpen(false)
+          setLayerBarOpen(false);
         }}
       />
     </div>
-  )
-}
+  );
+};
 
-export default LayerListBarApp
+export default LayerListBarApp;

@@ -59,6 +59,9 @@ const useViewSiteMain = () => {
     setMovieDialogOpen(true)
   }
 
+  const setOpacity = (index:number,value:number)=>{
+    console.log(index,value)
+  }
   return {
     buttonClicked,
     jrEastRealTimeLocateDataCallback,
@@ -77,6 +80,7 @@ const useViewSiteMain = () => {
     getCardList,
     getIsDisplayLayer,
     setIsDisplayLayer,
+    setOpacity,
   }
 }
 export default useViewSiteMain
