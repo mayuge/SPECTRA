@@ -29,7 +29,6 @@ export const osmCard: CardListType = {
   isShadow: false,
   shape: "square",
   isDisplayLayer: true,
-  colorPickerClick: "buttonClicked",
   infoButtonClick: "buttonClicked",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "changeLayerOrder",

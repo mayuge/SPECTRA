@@ -29,7 +29,6 @@ export const terrainCard: CardListType = {
   isShadow: false,
   shape: "square",
   isDisplayLayer: true,
-  colorPickerClick: "buttonClicked",
   infoButtonClick: "jrEastRealTimeLocateDataCallback",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "changeLayerOrder",

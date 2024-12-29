@@ -1,20 +1,11 @@
-import React from "react"
-import Card from "@/components/molecules/frames/Card"
-import type { Meta, StoryObj } from "@storybook/react"
+import React from "react";
+import Card from "@/components/molecules/frames/Card";
+import type { Meta, StoryObj } from "@storybook/react";
 
-// Meta オブジェクトを作成します
 const meta: Meta<typeof Card> = {
-  title: "Molecules/Card", // Storybook のナビゲーションに表示されるタイトル
+  title: "Molecules/Card",
   component: Card,
   tags: ["autodocs"],
-  args: {
-    text: "カードテキスト",
-    isShadow: false,
-    shape: "rounded", // デフォルトでは角丸
-    isDisplayLayer: false,
-    displayButtonClick: () => {},
-    refreshButtonClick: () => {},
-  },
   argTypes: {
     text: { control: "text", description: "カードのテキスト" },
     isShadow: {
@@ -36,16 +27,16 @@ const meta: Meta<typeof Card> = {
     primaryBadge: { control: "text", description: "主要バッジのテキスト" },
     darkBadge: { control: "text", description: "ダークバッジのテキスト" },
     displayButtonClick: { action: "displayButtonClick", description: "表示ボタンクリック" },
-    refreshButtonClick: { action: "refreshButtonClick", description: "更新ボタンクリック" },
+    infoButtonClick: { action: "infoButtonClick", description: "情報ボタンクリック" },
+    sliderClick: { action: "sliderClick", description: "スライダー値変更" },
+    orderButtonClick: { action: "orderButtonClick", description: "順序ボタンクリック" },
   },
-}
+};
 
-export default meta
+export default meta;
 
-// Story を定義します
-type Story = StoryObj<typeof Card>
+type Story = StoryObj<typeof Card>;
 
-// デフォルトのカード
 export const Default: Story = {
   args: {
     text: "デフォルトのカード",
@@ -56,10 +47,14 @@ export const Default: Story = {
     darkBadge: "ダーク",
     isShadow: false,
     shape: "rounded",
+    isDisplayLayer: false,
+    displayButtonClick: () => alert("Display button clicked"),
+    infoButtonClick: () => alert("Info button clicked"),
+    sliderClick: (value) => alert(`Slider value: ${value}`),
+    orderButtonClick: () => alert("Order button clicked"),
   },
-}
+};
 
-// シャドウ付きカード
 export const ShadowedCard: Story = {
   args: {
     text: "影付きのカード",
@@ -68,9 +63,8 @@ export const ShadowedCard: Story = {
     isShadow: true,
     shape: "square",
   },
-}
+};
 
-// 丸いカード
 export const CircularCard: Story = {
   args: {
     text: "丸いカード",
@@ -78,9 +72,8 @@ export const CircularCard: Story = {
     isShadow: true,
     shape: "circle",
   },
-}
+};
 
-// 表示切り替えアイコン付きカード
 export const DisplayToggleCard: Story = {
   args: {
     text: "表示切り替え可能なカード",
@@ -89,13 +82,12 @@ export const DisplayToggleCard: Story = {
     isShadow: true,
     shape: "rounded",
   },
-}
+};
 
-// バッジなしカード
 export const NoBadgesCard: Story = {
   args: {
     text: "バッジなしカード",
     isShadow: false,
     shape: "rounded",
   },
-}
+};

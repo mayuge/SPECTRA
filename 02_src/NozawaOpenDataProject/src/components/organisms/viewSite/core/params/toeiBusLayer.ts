@@ -32,7 +32,6 @@ export const toeiBusCard: CardListType = {
   isShadow: false,
   shape: "square",
   isDisplayLayer: true,
-  colorPickerClick: "buttonClicked",
   infoButtonClick: "tokyoMetroRealTimeInfoCallback",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "buttonClicked",
