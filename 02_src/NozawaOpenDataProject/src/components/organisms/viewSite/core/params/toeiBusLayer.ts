@@ -1,4 +1,4 @@
-import type { GeoJSONSourceSpecification } from "maplibre-gl"
+import type { GeoJSONSourceSpecification, LineLayerSpecification } from "maplibre-gl"
 import { CardListType } from "@/components/organisms/viewSite/core/types/cardListType"
 import { LayerType } from "@/components/organisms/viewSite/core/types/layerType"
 
@@ -20,7 +20,7 @@ const toeiBusLayer: LayerType = {
     "line-width": 3,
     "line-opacity": 1,
   },
-} as LayerType
+}
 
 export const toeiBusCard: CardListType = {
   logoImg: "/assets/logos/tokyoLogo.webp",
@@ -33,7 +33,6 @@ export const toeiBusCard: CardListType = {
   shape: "square",
   isDisplayLayer: true,
   colorPickerClick: "buttonClicked",
-  sliderClick: "buttonClicked",
   infoButtonClick: "tokyoMetroRealTimeInfoCallback",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "buttonClicked",

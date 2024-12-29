@@ -1,6 +1,5 @@
-import {AxiosRequestConfig,ResponseType} from "axios"
+import { AxiosRequestConfig, ResponseType } from "axios"
 import { getInstance, getInstanceLimited } from "@/infrastructure/axios/api"
-
 
 //apiからリクエスト用のインスタンスを持ってくる
 const http = getInstance()
@@ -27,9 +26,7 @@ const useReqRailwayData = () => {
   }
   //JR東日本の運行状況リアルタイムデータ
   // JR東日本の運行状況リアルタイムデータ
-const reqJrEastRealTimeInfo = async () => {
-  
-};
+  const reqJrEastRealTimeInfo = async () => {}
 
   //東京メトロの運行状況リアルタイムデータ
   const reqTokyoMetroRealTimeInfo = async () => {

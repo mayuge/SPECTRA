@@ -1,26 +1,26 @@
-import React from "react";
-import Badge from "@/components/atoms/labels/Badge";
-import Button from "@/components/atoms/buttons/Button";
-import BaseColorInput from "@/components/atoms/Inputs/ColorInput";
-import BaseSliderInput from "@/components/atoms/Inputs/SliderInput";
+import React from "react"
+import Badge from "@/components/atoms/labels/Badge"
+import Button from "@/components/atoms/buttons/Button"
+import BaseColorInput from "@/components/atoms/Inputs/ColorInput"
+import BaseSliderInput from "@/components/atoms/Inputs/SliderInput"
 
 type CardProps = {
-  text: string; // カードテキスト
-  logoImg: string; // ロゴ画像のパス
-  isShadow: boolean; // 影の有無
-  shape?: string; // カードの形状を文字列で指定 square(四角形) circle（丸）デフォルトで角丸
-  displayButtonClick: () => void;
-  infoButtonClick: () => void;
-  colorPickerClick: (color: string) => void;
-  sliderClick: (value: number) => void;
-  orderButtonClick: () => void;
-  isDisplayLayer: boolean;
-  dangerBadge?: string;
-  warningBadge?: string;
-  successBadge?: string;
-  primaryBadge?: string;
-  darkBadge?: string;
-};
+  text: string // カードテキスト
+  logoImg: string // ロゴ画像のパス
+  isShadow: boolean // 影の有無
+  shape?: string // カードの形状を文字列で指定 square(四角形) circle（丸）デフォルトで角丸
+  displayButtonClick: () => void
+  infoButtonClick: () => void
+  colorPickerClick: (color: string) => void
+  sliderClick: (value: number) => void
+  orderButtonClick: () => void
+  isDisplayLayer: boolean
+  dangerBadge?: string
+  warningBadge?: string
+  successBadge?: string
+  primaryBadge?: string
+  darkBadge?: string
+}
 
 const Card: React.FC<CardProps> = ({
   text,
@@ -40,29 +40,29 @@ const Card: React.FC<CardProps> = ({
   orderButtonClick,
 }: CardProps) => {
   // カードのスタイルの種類 デフォルトは primary
-  let cardVariant = "bg-white";
+  let cardVariant = "bg-white"
 
   // カードの形状の種類 circle square
-  let cornerShape = "rounded-lg";
+  let cornerShape = "rounded-lg"
 
   if (shape === "square") {
-    cornerShape = ""; // 四角形の場合は角丸を指定しない
+    cornerShape = "" // 四角形の場合は角丸を指定しない
   } else if (shape === "round") {
-    cornerShape = "rounded-full"; // 円形の角
+    cornerShape = "rounded-full" // 円形の角
   }
 
-  let buttonShadow = "";
+  let buttonShadow = ""
   if (isShadow) {
-    buttonShadow = "shadow-md shadow-black";
+    buttonShadow = "shadow-md shadow-black"
   }
 
   // 目のアイコンで表示・非表示を示す
-  let displayIcon = isDisplayLayer ? "visibility" : "visibility_off";
+  let displayIcon = isDisplayLayer ? "visibility" : "visibility_off"
 
   // ロゴ画像のパス
-  let logoImgPath = "/assets/logos/default.webp";
+  let logoImgPath = "/assets/logos/default.webp"
   if (logoImg) {
-    logoImgPath = logoImg;
+    logoImgPath = logoImg
   }
 
   return (
@@ -103,10 +103,6 @@ const Card: React.FC<CardProps> = ({
             <div className="inline-flex items-center gap-2">
               {/* <BaseColorInput onChange={colorPickerClick} /> */}
               <BaseSliderInput
-                value={0.5} // 初期値を設定（外部から渡すなら修正）
-                min={0}
-                max={1.0}
-                step={0.1}
                 onChange={sliderClick} // スライダー値の変更を通知
               />
             </div>
@@ -124,7 +120,7 @@ const Card: React.FC<CardProps> = ({
 
       <hr className="border-gray-70" />
     </div>
-  );
-};
+  )
+}
 
-export default Card;
+export default Card

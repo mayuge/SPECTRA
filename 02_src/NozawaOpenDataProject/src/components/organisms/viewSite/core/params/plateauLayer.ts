@@ -34,7 +34,6 @@ export const plateauCard: CardListType = {
   shape: "square",
   isDisplayLayer: true,
   colorPickerClick: "buttonClicked",
-  sliderClick: "buttonClicked",
   infoButtonClick: "openAllDialogs",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "changeLayerOrder",

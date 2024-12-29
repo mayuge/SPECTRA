@@ -1,8 +1,9 @@
-"use client";
-import React from "react";
-import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain";
-import Card from "@/components/molecules/frames/Card";
-import PullTab from "@/components/atoms/buttons/PullTab";
+"use client"
+import React from "react"
+import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
+import Card from "@/components/molecules/frames/Card"
+import PullTab from "@/components/atoms/buttons/PullTab"
+import { CardListType } from "../core/types/cardListType"
 
 const LayerListBarApp: React.FC = () => {
   const {
@@ -17,7 +18,7 @@ const LayerListBarApp: React.FC = () => {
     getIsDisplayLayer,
     setIsDisplayLayer,
     setOpacity,
-  } = useViewSiteMain();
+  } = useViewSiteMain()
 
   // 関数マッピング
   const functionMap: { [key: string]: (() => void) | undefined } = {
@@ -25,7 +26,7 @@ const LayerListBarApp: React.FC = () => {
     openAllDialogs,
     jrEastRealTimeLocateDataCallback,
     tokyoMetroRealTimeInfoCallback,
-  };
+  }
 
   // cardList にコールバック関数を設定
   const displayCardList = getCardList().map((card, index) => ({
@@ -36,7 +37,7 @@ const LayerListBarApp: React.FC = () => {
     infoButtonClick: functionMap[card.infoButtonClick] || (() => {}),
     displayButtonClick: () => setIsDisplayLayer(index),
     orderButtonClick: () => changeLayerOrder(index),
-  }));
+  }))
 
   if (!getLayerBarOpen()) {
     return (
@@ -48,11 +49,11 @@ const LayerListBarApp: React.FC = () => {
           icon="arrow_right"
           isShadow={true}
           onClick={() => {
-            setLayerBarOpen(true);
+            setLayerBarOpen(true)
           }}
         />
       </div>
-    );
+    )
   }
 
   return (
@@ -69,11 +70,11 @@ const LayerListBarApp: React.FC = () => {
         icon="arrow_left"
         isShadow={true}
         onClick={() => {
-          setLayerBarOpen(false);
+          setLayerBarOpen(false)
         }}
       />
     </div>
-  );
-};
+  )
+}
 
-export default LayerListBarApp;
+export default LayerListBarApp

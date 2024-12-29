@@ -1,12 +1,12 @@
-import React from "react";
+import React from "react"
 
 type SliderInputProps = {
-  value: number; // 外部で管理する現在の値
-  min?: number; // 最小値（デフォルトは0）
-  max?: number; // 最大値（デフォルトは1.0）
-  step?: number; // ステップ値（デフォルトは0.1）
-  onChange: (value: number) => void; // 値変更時のコールバック
-};
+  value?: number // 外部で管理する現在の値
+  min?: number // 最小値（デフォルトは0）
+  max?: number // 最大値（デフォルトは1.0）
+  step?: number // ステップ値（デフォルトは0.1）
+  onChange: (value: number) => void // 値変更時のコールバック
+}
 
 const BaseSliderInput: React.FC<SliderInputProps> = ({
   value,
@@ -16,9 +16,9 @@ const BaseSliderInput: React.FC<SliderInputProps> = ({
   onChange,
 }) => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const newValue = parseFloat(e.target.value);
-    onChange(newValue); // 値を親に通知
-  };
+    const newValue = parseFloat(e.target.value)
+    onChange(newValue) // 値を親に通知
+  }
 
   return (
     <div className="max-w-[400px] min-w-[250px]">
@@ -33,7 +33,7 @@ const BaseSliderInput: React.FC<SliderInputProps> = ({
         aria-label="Slider input"
       />
     </div>
-  );
-};
+  )
+}
 
-export default BaseSliderInput;
+export default BaseSliderInput

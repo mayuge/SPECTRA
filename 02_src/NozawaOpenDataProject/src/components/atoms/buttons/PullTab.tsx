@@ -11,8 +11,7 @@ type PullTabProps = {
   isShadow?: boolean //影をつけるかつけないか
   size: PullTabSizeType // mini、small、normal、large のいずれかを指定
   variant: PullTabVariantType // ボタンのスタイル pullTab-primary, pullTab-secondary, pullTab-danger, pullTab-warning, pullTab-success のいずれかを指定
-
-  onClick?: () => void
+  onClick: () => void
 }
 
 const PullTab: React.FC<PullTabProps> = ({
@@ -72,7 +71,7 @@ const PullTab: React.FC<PullTabProps> = ({
 
   let buttonShadow = ""
   if (isShadow === true) {
-    buttonShadow = "shadow-md shadow-black"
+    buttonShadow = "shadow-sm shadow-black"
   }
 
   return (

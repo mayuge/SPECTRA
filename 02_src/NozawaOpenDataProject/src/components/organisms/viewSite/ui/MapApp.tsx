@@ -71,6 +71,45 @@ const MapApp: React.FC = () => {
             if (layer.layout && layer.layout.visibility) {
               map.setLayoutProperty(layer.id, "visibility", layer.layout.visibility)
             }
+
+            // opacityの更新処理
+            if (layer.paint) {
+              // Fill Layer
+              if (layer.type === "fill" && "fill-opacity" in layer.paint) {
+                const paint = layer.paint
+                if (paint["fill-opacity"] !== undefined) {
+                  map.setPaintProperty(layer.id, "fill-opacity", paint["fill-opacity"])
+                }
+              }
+              // Line Layer
+              else if (layer.type === "line" && "line-opacity" in layer.paint) {
+                const paint = layer.paint
+                if (paint["line-opacity"] !== undefined) {
+                  map.setPaintProperty(layer.id, "line-opacity", paint["line-opacity"])
+                }
+              }
+              // Raster Layer
+              else if (layer.type === "raster" && "raster-opacity" in layer.paint) {
+                const paint = layer.paint
+                if (paint["raster-opacity"] !== undefined) {
+                  map.setPaintProperty(layer.id, "raster-opacity", paint["raster-opacity"])
+                }
+              }
+              // Circle Layer
+              else if (layer.type === "circle" && "circle-opacity" in layer.paint) {
+                const paint = layer.paint
+                if (paint["circle-opacity"] !== undefined) {
+                  map.setPaintProperty(layer.id, "circle-opacity", paint["circle-opacity"])
+                }
+              }
+              // Fill-Extrusion Layer
+              else if (layer.type === "fill-extrusion" && "fill-extrusion-opacity" in layer.paint) {
+                const paint = layer.paint
+                if (paint["fill-extrusion-opacity"] !== undefined) {
+                  map.setPaintProperty(layer.id, "fill-extrusion-opacity", paint["fill-extrusion-opacity"])
+                }
+              }
+            }
           }
         })
       }
@@ -84,7 +123,7 @@ const MapApp: React.FC = () => {
 
     // レイヤーの変更を監視
     const timer = setInterval(updateLayers, 100)
-
+    console.log(getLayers())
     return () => {
       clearInterval(timer)
     }

@@ -26,7 +26,7 @@ const cycleBlockLayer: LayerType = {
       50,
       "#6a51a3",
     ],
-    "fill-opacity": 0.8,
+    "fill-opacity": 1,
   },
 }
 
@@ -41,7 +41,6 @@ export const cycleBlockCard: CardListType = {
   shape: "square",
   isDisplayLayer: true,
   colorPickerClick: "buttonClicked",
-  sliderClick: "buttonClicked",
   infoButtonClick: "openAllDialogs",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "changeLayerOrder",

@@ -34,7 +34,6 @@ export const konjakuCard: CardListType = {
   shape: "square",
   isDisplayLayer: true,
   colorPickerClick: "buttonClicked",
-  sliderClick: "buttonClicked",
   infoButtonClick: "jrEastRealTimeLocateDataCallback",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "changeLayerOrder",
