@@ -12,7 +12,7 @@ export const cardLayerList: CardListType[] = [
   cycleBlockCard,
   terrainCard,
   osmCard,
-  // konjakuCard,
+  konjakuCard,
 ]
 
 export default cardLayerList

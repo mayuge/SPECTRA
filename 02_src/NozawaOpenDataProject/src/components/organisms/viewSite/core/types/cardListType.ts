@@ -11,7 +11,6 @@ export type CardListType = {
   isShadow: boolean
   shape: string
   isDisplayLayer: boolean
-  colorPickerClick: string
   infoButtonClick: string
   displayButtonClick: string
   orderButtonClick: string

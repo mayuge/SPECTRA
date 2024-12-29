@@ -3,7 +3,6 @@ import React from "react"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
 import Card from "@/components/molecules/frames/Card"
 import PullTab from "@/components/atoms/buttons/PullTab"
-import { CardListType } from "../core/types/cardListType"
 
 const LayerListBarApp: React.FC = () => {
   const {
@@ -32,7 +31,6 @@ const LayerListBarApp: React.FC = () => {
   const displayCardList = getCardList().map((card, index) => ({
     ...card,
     isDisplayLayer: getIsDisplayLayer(index),
-    colorPickerClick: functionMap[card.colorPickerClick] || (() => {}), // 存在しない場合のフォールバック
     sliderClick: (value: number) => setOpacity(index, value), // スライダー変更時のハンドラー
     infoButtonClick: functionMap[card.infoButtonClick] || (() => {}),
     displayButtonClick: () => setIsDisplayLayer(index),

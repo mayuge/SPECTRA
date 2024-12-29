@@ -11,7 +11,6 @@ type CardProps = {
   shape?: string // カードの形状を文字列で指定 square(四角形) circle（丸）デフォルトで角丸
   displayButtonClick: () => void
   infoButtonClick: () => void
-  colorPickerClick: (color: string) => void
   sliderClick: (value: number) => void
   orderButtonClick: () => void
   isDisplayLayer: boolean
@@ -35,7 +34,6 @@ const Card: React.FC<CardProps> = ({
   isDisplayLayer,
   displayButtonClick,
   infoButtonClick,
-  colorPickerClick,
   sliderClick,
   orderButtonClick,
 }: CardProps) => {
@@ -101,7 +99,6 @@ const Card: React.FC<CardProps> = ({
           </div>
           <div className="pb-1 flex justify-between">
             <div className="inline-flex items-center gap-2">
-              {/* <BaseColorInput onChange={colorPickerClick} /> */}
               <BaseSliderInput
                 onChange={sliderClick} // スライダー値の変更を通知
               />

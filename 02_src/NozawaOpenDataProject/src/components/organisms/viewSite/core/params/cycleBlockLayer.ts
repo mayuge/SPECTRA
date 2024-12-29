@@ -40,7 +40,6 @@ export const cycleBlockCard: CardListType = {
   isShadow: false,
   shape: "square",
   isDisplayLayer: true,
-  colorPickerClick: "buttonClicked",
   infoButtonClick: "openAllDialogs",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "changeLayerOrder",

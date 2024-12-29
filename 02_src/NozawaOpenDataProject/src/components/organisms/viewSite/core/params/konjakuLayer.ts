@@ -9,11 +9,11 @@ const konjakuLayer: LayerType = {
   sourceId: "konjakumap",
   source: {
     type: "raster",
-    tiles: ["https://ktgis.net/kjmapw/kjtilemap/tokyo50/03/{z}/{x}/{y}.png"],
+    tiles: ["https://ktgis.net/kjmapw/kjtilemap/kanto/03/{z}/{x}/{y}.png"],
     tileSize: 512,
+    maxzoom:15,
+    minzoom:8,
     scheme: "tms",
-    maxzoom: 16,
-    minzoom: 8,
     attribution: "今昔マップ",
   } as RasterSourceSpecification,
   layout: {
@@ -33,7 +33,6 @@ export const konjakuCard: CardListType = {
   isShadow: false,
   shape: "square",
   isDisplayLayer: true,
-  colorPickerClick: "buttonClicked",
   infoButtonClick: "jrEastRealTimeLocateDataCallback",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "changeLayerOrder",

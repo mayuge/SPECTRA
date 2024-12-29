@@ -21,7 +21,7 @@ const BaseSliderInput: React.FC<SliderInputProps> = ({
   }
 
   return (
-    <div className="max-w-[400px] min-w-[250px]">
+    <div className="w-full max-w-[350px] min-w-[300px]">
       <input
         type="range"
         value={value}
