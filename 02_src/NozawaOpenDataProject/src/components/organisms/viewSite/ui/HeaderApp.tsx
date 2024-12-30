@@ -9,7 +9,7 @@ import useViewSiteMain from "@/components/organisms/viewSite/core/application/us
 import Card from "@/components/molecules/frames/Card"
 
 const HeaderApp: React.FC = () => {
-  const { RouteToHomeSite, jrEastRealTimeInfoCallback, jrEastRealTimeLocateDataCallback } = useViewSiteMain()
+  const { routeToHomeSite, useCallback } = useViewSiteMain()
 
   return (
     <div className="relative z-10 p-6 flex justify-start items-center bg-gray-20 shadow-sm shadow-black">
@@ -20,14 +20,14 @@ const HeaderApp: React.FC = () => {
           size="large"
           variant="header-light"
           isCircle={true}
-          onClick={RouteToHomeSite}
+          onClick={routeToHomeSite}
         />
       </div>
       <div className="flex items-center gap-4">
         <Button
           iconLeft="photo_camera"
           isShadow={true}
-          onClick={jrEastRealTimeLocateDataCallback}
+          onClick={useCallback}
           shape="circle"
           size="large"
           text=""
@@ -36,7 +36,7 @@ const HeaderApp: React.FC = () => {
         <Button
           iconLeft="autorenew"
           isShadow={true}
-          onClick={jrEastRealTimeInfoCallback}
+          onClick={useCallback}
           shape="circle"
           size="large"
           text=""

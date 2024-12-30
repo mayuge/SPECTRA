@@ -1,6 +1,7 @@
 import { AxiosRequestConfig} from "axios";
 import { getInstance, getInstanceLimited } from "@/infrastructure/axios/api";
 import GtfsRealtimeBindings from "gtfs-realtime-bindings";
+import JSZip from "jszip"; 
 
 //apiからリクエスト用のインスタンスを持ってくる
 const http = getInstance();
@@ -51,7 +52,7 @@ const useReqRailwayData = () => {
     }
   };
 
-  // 東京メトロの運行状況リアルタイムデータ
+  // 東京メトロの運行状況
 const reqTokyoMetroRealTimeInfo = async () => {
   try {
     const token = process.env.NEXT_PUBLIC_OPEN_DATA_CHALLENGE_TOKEN_DEFAULT
@@ -62,19 +63,54 @@ const reqTokyoMetroRealTimeInfo = async () => {
     }
     //リクエストを行う
     const res = await http.request(config)
-    if (res.statusText === "OK") {
+    if (res.status === 200) {
       return res.data
     }
-  } catch (e: any) {
-    console.log(e)
+  } catch (error) {
+    if (error instanceof Error){
+      throw new Error(error.message)
+    }
   }
 }
+   // 都営地下鉄の運行状況
+   const reqToeiTrainRealTimeInfo = async () => {
+    try {
+      const token = process.env.NEXT_PUBLIC_OPEN_DATA_CHALLENGE_TOKEN_DEFAULT;
+      const url = process.env.NEXT_PUBLIC_TOEI_TRAIN_REALTIME_INFO_URL;
+      const config: AxiosRequestConfig = {
+        method: "GET",
+        url: `${url}${token}`,
+        responseType: "arraybuffer", // ZIPファイルを正しく取得
+      };
 
+      // リクエストを実行
+      const res = await http.request(config);
+      if (res.status === 200) {
+        const zip = new JSZip();
+        const unzipped = await zip.loadAsync(res.data); // ZIPデータを解凍
+        const files = Object.keys(unzipped.files);
+        const extractedData: Record<string, string> = {};
+        for (const fileName of files) {
+          if (unzipped.files[fileName].dir) continue; // ディレクトリをスキップ
+          const fileContent = await unzipped.files[fileName].async("string");
+          extractedData[fileName] = fileContent;
+        }
+        return extractedData; // 各ファイル名と内容を返却
+      } else {
+        throw new Error(`Failed to fetch data: HTTP ${res.status}`);
+      }
+    } catch (error) {
+      if (error instanceof Error) {
+        throw new Error(error.message);
+      }
+    }
+  };
 
   return {
     reqJrEastRealTimeLocateData,
     reqJrEastRealTimeInfo,
     reqTokyoMetroRealTimeInfo,
+    reqToeiTrainRealTimeInfo,
   };
 };
 
