@@ -1,15 +1,26 @@
-import { useReqRailwayDataAdapter } from "@/infrastructure/adapters/httpReqAdapter"
+import {
+  useReqRailwayDataAdapter,
+  useReqCycleDataAdapter,
+} from "@/infrastructure/adapters/httpReqAdapter"
 import {
   useDialogStoreAdapter,
   useManageLayerAdapter,
 } from "@/infrastructure/adapters/storeAdapter"
 import { useSiteRouteAdapter } from "@/infrastructure/adapters/routeAdapter"
+import { useGetTimeDataAdapter } from "@/infrastructure/adapters/getTimeDataAdapter"
 import { HOME_SITE_ROOT_NAME } from "@/domain/params/siteRootName"
 
 const useViewSiteMain = () => {
   const { routeTo } = useSiteRouteAdapter()
-  const { reqJrEastRealTimeLocateData, reqTokyoMetroRealTimeInfo, reqJrEastRealTimeInfo,reqToeiTrainRealTimeInfo } =
-    useReqRailwayDataAdapter()
+  const { getNowTime } = useGetTimeDataAdapter()
+  const { reqHelloCycleStationInfo } = useReqCycleDataAdapter()
+  const {
+    reqJrEastRealTimeLocateData,
+    reqTokyoMetroRealTimeInfo,
+    reqJrEastRealTimeInfo,
+    reqToeiTrainRealTimeInfo,
+    reqTokyoMetroStationInfo,
+  } = useReqRailwayDataAdapter()
   const {
     getLayerBarOpen,
     getDetailInfoDialogOpen,
@@ -30,16 +41,19 @@ const useViewSiteMain = () => {
    * ボタンがクリックされた場合
    **/
   const buttonClicked = () => {
-    console.log(getLayers())
+    console.log("buttonClicked")
   }
   /**
    * コールバック関数をまとめて呼び出す
    */
-  const useCallback =()=> {
+  const useCallback = () => {
     jrEastRealTimeLocateDataCallback()
     jrEastRealTimeInfoCallback()
     tokyoMetroRealTimeInfoCallback()
+    tokyoMetroStationInfoCallback()
     toeiTrainRealTimeInfoCallback()
+    helloCycleStationInfoCallback()
+    console.log(getNowTime())
   }
   /**
    * JR東日本リアルタイム車両位置データ
@@ -47,34 +61,47 @@ const useViewSiteMain = () => {
   const jrEastRealTimeLocateDataCallback = async () => {
     //JR東日本リアルタイム車両位置データを非同期で取得する
     const res = await reqJrEastRealTimeLocateData()
-    console.log('jrEastRealTimeLocateDataCallback',res)
+    console.log("jrEastRealTimeLocateDataCallback", res)
   }
   /**
    * JR東日本リアルタイム運行情報
    */
   const jrEastRealTimeInfoCallback = async () => {
     const res = await reqJrEastRealTimeInfo()
-    console.log('jrEastRealTimeInfoCallback',res)
+    console.log("jrEastRealTimeInfoCallback", res)
   }
   /**
    * 東京メトロリアルタイム運行情報
    */
   const tokyoMetroRealTimeInfoCallback = async () => {
     const res = await reqTokyoMetroRealTimeInfo()
-    console.log('tokyoMetroRealTimeInfoCallback',res)
+    console.log("tokyoMetroRealTimeInfoCallback", res)
+  }
+  /**
+   * 東京メトロ駅情報
+   */
+  const tokyoMetroStationInfoCallback = async () => {
+    const res = await reqTokyoMetroStationInfo()
+    console.log("tokyoMetroStationInfoCallback ", res)
   }
   /**
    * 都営地下鉄リアルタイム運行情報
    */
-  const toeiTrainRealTimeInfoCallback = async () =>{
-    const res = await reqToeiTrainRealTimeInfo() 
-    console.log('reqToeiTrainRealTimeInfoCallback',res)
+  const toeiTrainRealTimeInfoCallback = async () => {
+    const res = await reqToeiTrainRealTimeInfo()
+    console.log("reqToeiTrainRealTimeInfoCallback", res)
+  }
+
+  const helloCycleStationInfoCallback = async () => {
+    const res = await reqHelloCycleStationInfo()
+    console.log("helloCycleStationInfoCallback", res)
   }
 
   // ホームサイトに遷移する関数
   const routeToHomeSite = () => {
     routeTo(HOME_SITE_ROOT_NAME)
   }
+  //すべてのダイアログを開ける
   const openAllDialogs = () => {
     setLayerBarOpen(true)
     setDetailInfoDialogOpen(true)
