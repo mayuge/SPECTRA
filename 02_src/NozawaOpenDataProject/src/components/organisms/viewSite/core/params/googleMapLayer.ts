@@ -26,7 +26,7 @@ export const googleCard: CardListType = {
   logoImg: "",
   text: "Googleマップ",
   dangerBadge: "ベース地図",
-  successBadge:"表示テスト",
+  successBadge: "表示テスト",
   warningBadge: "マップ",
   primaryBadge: "ベースマップ",
   isShadow: false,

@@ -13,7 +13,9 @@ import { HOME_SITE_ROOT_NAME } from "@/domain/params/siteRootName"
 
 const useViewSiteMain = () => {
   const { routeTo } = useSiteRouteAdapter()
+  //現在の時刻を取得する
   const { getNowTime } = useGetTimeDataAdapter()
+  //更新時刻のセッター・ゲッター
   const { setTimeData, getTimeData } = useTimeDataStoreAdapter()
   const { reqHelloCycleStationInfo } = useReqCycleDataAdapter()
   const {

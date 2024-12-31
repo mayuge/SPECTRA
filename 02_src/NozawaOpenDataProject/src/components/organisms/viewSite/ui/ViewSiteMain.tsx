@@ -4,6 +4,7 @@ import MapApp from "@/components/organisms/viewSite/ui/MapApp"
 import LayerListBarApp from "@/components/organisms/viewSite/ui/LayerListBarApp"
 import DetailInfoDialogApp from "@/components/organisms/viewSite/ui/DetailInfoDialogApp"
 import MovieDialogApp from "@/components/organisms/viewSite/ui/MovieDialogApp"
+import DisplayInfoApp from "@/components/organisms/viewSite/ui/DisplayInfoApp"
 import HeaderApp from "@/components/organisms/viewSite/ui/HeaderApp"
 const ViewSiteMain: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const ViewSiteMain: React.FC = () => {
       <LayerListBarApp />
       <DetailInfoDialogApp />
       <MovieDialogApp />
+      <DisplayInfoApp />
       <MapApp />
     </div>
   )
