@@ -9,15 +9,15 @@ const DisplayInfoApp: React.FC = () => {
   return (
     <div className="absolute bottom-[55px] right-12 z-10">
       <div className="my-4">
-      <Button
-        text="鉄道・バス関連情報を見る"
-        iconLeft="commute"
-        variant="btn-dark"
-        size="normal"
-        shape="circle"
-        isShadow={true}
-        onClick={useCallback}
-      />
+        <Button
+          text="鉄道・バス関連情報を見る"
+          iconLeft="commute"
+          variant="btn-dark"
+          size="normal"
+          shape="circle"
+          isShadow={true}
+          onClick={useCallback}
+        />
       </div>
 
       <Button

@@ -8,6 +8,7 @@ import { googleCard } from "@/components/organisms/viewSite/core/params/googleMa
 import { tokyoMetroCard } from "@/components/organisms/viewSite/core/params/tokyoMetroLineLayer"
 import { konjakuCard } from "@/components/organisms/viewSite/core/params/konjakuLayer"
 import { toeiSubwayCard } from "@/components/organisms/viewSite/core/params/toeiSubwayLayer"
+import { sateliteMapCard } from "@/components/organisms/viewSite/core/params/sateliteMapLayer"
 
 export const cardLayerList: CardListType[] = [
   toeiSubwayCard,
@@ -16,6 +17,7 @@ export const cardLayerList: CardListType[] = [
   plateauCard,
   cycleBlockCard,
   terrainCard,
+  sateliteMapCard,
   googleCard,
   osmCard,
   konjakuCard,

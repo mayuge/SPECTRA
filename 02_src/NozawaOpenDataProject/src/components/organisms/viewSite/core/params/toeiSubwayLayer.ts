@@ -1,13 +1,7 @@
 import type { GeoJSONSourceSpecification, LineLayerSpecification } from "maplibre-gl"
 import { CardListType } from "@/components/organisms/viewSite/core/types/cardListType"
 import { LayerType } from "@/components/organisms/viewSite/core/types/layerType"
-
-/**
- * 1,toei,,浅草線,,1,,FF535F,
-2,toei,,三田線,,1,,0067B0,
-3,toei,,新宿線,,1,,9FB01C,
-4,toei,,大江戸線,,1,,CF3366,
- */
+import { toeiSubwayLineParams } from "@/domain/params/toeiSubwayLine"
 
 // GeoJSON ソース
 const toeiSubwaySource: GeoJSONSourceSpecification = {
@@ -15,6 +9,7 @@ const toeiSubwaySource: GeoJSONSourceSpecification = {
   data: "/geojson/LineToeiSubway.geojson",
 }
 
+// レイヤー構造
 const toeiSubwayLayer: LayerType = {
   id: "lineToeiSubway",
   type: "line",
@@ -28,22 +23,28 @@ const toeiSubwayLayer: LayerType = {
   paint: {
     "line-color": [
       "match",
-      ["get", "N05_002"], // N05_002 属性に基づいて色を決定
-      "1号線浅草線",
-      "#FF535F", 
-      "6号線三田線",
-      "#0067B0",
-      "10号線新宿線",
-      "#9FB01C",
-      "12号線大江戸線",
-      "#CF3366",
-      "#808080", // デフォルト色（色が一致しない場合）
+      ["get", "N05_002"],
+      ...Object.entries(toeiSubwayLineParams).flatMap(([line, { color }]) => [line, color]),
+      "#808080", // デフォルト色
     ],
     "line-width": 10,
     "line-opacity": 1,
   },
+  popup: {
+    template: (properties: any) => {
+      const div = document.createElement("div")
+      div.innerHTML = `
+        <h3>${properties.N05_002 || "路線名"}</h3>
+      `
+      return div
+    },
+    options: {
+      maxWidth: "400px",
+    },
+  },
 }
 
+// カード構造
 export const toeiSubwayCard: CardListType = {
   logoImg: "/assets/logos/TokyoLogo.webp",
   text: "都営地下鉄",
