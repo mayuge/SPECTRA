@@ -12,7 +12,7 @@ const HeaderApp: React.FC = () => {
   const { routeToHomeSite, useCallback } = useViewSiteMain()
 
   return (
-    <div className="relative z-10 p-6 flex justify-start items-center bg-gray-20 shadow-sm shadow-black">
+    <div className="relative z-10 pr-6 py-6 flex justify-start items-center bg-gray-20 shadow-sm shadow-black">
       <div className="w-full mx-6">
         <Header
           text="NOZAWA OPENDATA PROJECT"
