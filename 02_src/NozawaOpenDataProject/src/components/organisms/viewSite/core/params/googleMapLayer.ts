@@ -3,7 +3,7 @@ import type { LayerType } from "@/components/organisms/viewSite/core/types/layer
 
 import { RasterSourceSpecification } from "maplibre-gl"
 
-// OSM ダークテーマのレイヤー定義
+// レイヤー定義
 const googleLayer: LayerType = {
   id: "google-map",
   type: "raster",
@@ -23,7 +23,7 @@ const googleLayer: LayerType = {
 }
 
 export const googleCard: CardListType = {
-  logoImg: "",
+  logoImg: "/assets/logos/google.webp",
   text: "Googleマップ",
   dangerBadge: "ベース地図",
   successBadge: "表示テスト",

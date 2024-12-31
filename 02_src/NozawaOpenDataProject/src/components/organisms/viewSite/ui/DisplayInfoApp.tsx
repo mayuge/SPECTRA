@@ -21,7 +21,7 @@ const DisplayInfoApp: React.FC = () => {
       </div>
 
       <Button
-        text={`データの更新時刻 ${getTimeData()}`}
+        text={`データの更新時刻　${getTimeData()}`}
         iconLeft="refresh"
         variant="btn-dark"
         size="normal"

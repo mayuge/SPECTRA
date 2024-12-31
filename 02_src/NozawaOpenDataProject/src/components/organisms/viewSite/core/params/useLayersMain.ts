@@ -7,8 +7,10 @@ import { osmCard } from "@/components/organisms/viewSite/core/params/osmLayer"
 import { googleCard } from "@/components/organisms/viewSite/core/params/googleMapLayer"
 import { tokyoMetroCard } from "@/components/organisms/viewSite/core/params/tokyoMetroLineLayer"
 import { konjakuCard } from "@/components/organisms/viewSite/core/params/konjakuLayer"
+import { toeiSubwayCard } from "@/components/organisms/viewSite/core/params/toeiSubwayLayer"
 
 export const cardLayerList: CardListType[] = [
+  toeiSubwayCard,
   tokyoMetroCard,
   toeiBusCard,
   plateauCard,

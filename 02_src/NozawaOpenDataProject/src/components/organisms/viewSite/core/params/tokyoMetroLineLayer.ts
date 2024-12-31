@@ -44,7 +44,7 @@ const tokyoMetroLayer: LayerType = {
       "#9C5E31", // 副都心線の場合の色
       "#000000", // デフォルト色（色が一致しない場合）
     ],
-    "line-width": 12,
+    "line-width": 10,
     "line-opacity": 1,
   },
 }
