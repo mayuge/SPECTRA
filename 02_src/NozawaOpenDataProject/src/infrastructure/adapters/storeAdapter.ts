@@ -1,8 +1,8 @@
-import useTestStore from "@/infrastructure/stores/testStore"
-import type { ITestStoreState } from "@/domain/interfaces/ITestStore"
+import useTimeDataStore from "@/infrastructure/stores/timeDataStore"
+import type { ITimeDataStore } from "@/domain/interfaces/ITimeDataStore"
 
 import useDialogStateStore from "@/infrastructure/stores/dialogStateStore"
 import useManageLayerStateStore from "@/infrastructure/stores/manageLayerStateStore"
-export const useTestStoreAdapter = (): ITestStoreState => useTestStore()
+export const useTimeDataStoreAdapter = (): ITimeDataStore => useTimeDataStore()
 export const useDialogStoreAdapter = () => useDialogStateStore()
 export const useManageLayerAdapter = () => useManageLayerStateStore()

@@ -5,6 +5,7 @@ import {
 import {
   useDialogStoreAdapter,
   useManageLayerAdapter,
+  useTimeDataStoreAdapter,
 } from "@/infrastructure/adapters/storeAdapter"
 import { useSiteRouteAdapter } from "@/infrastructure/adapters/routeAdapter"
 import { useGetTimeDataAdapter } from "@/infrastructure/adapters/getTimeDataAdapter"
@@ -13,6 +14,7 @@ import { HOME_SITE_ROOT_NAME } from "@/domain/params/siteRootName"
 const useViewSiteMain = () => {
   const { routeTo } = useSiteRouteAdapter()
   const { getNowTime } = useGetTimeDataAdapter()
+  const { setTimeData, getTimeData } = useTimeDataStoreAdapter()
   const { reqHelloCycleStationInfo } = useReqCycleDataAdapter()
   const {
     reqJrEastRealTimeLocateData,
@@ -53,7 +55,8 @@ const useViewSiteMain = () => {
     tokyoMetroStationInfoCallback()
     toeiTrainRealTimeInfoCallback()
     helloCycleStationInfoCallback()
-    console.log(getNowTime())
+    setTimeData(getNowTime())
+    console.log(getTimeData())
   }
   /**
    * JR東日本リアルタイム車両位置データ
@@ -125,6 +128,7 @@ const useViewSiteMain = () => {
     getIsDisplayLayer,
     setIsDisplayLayer,
     setOpacity,
+    getTimeData,
   }
 }
 export default useViewSiteMain
