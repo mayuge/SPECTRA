@@ -34,9 +34,9 @@ export type LayerType = {
   layout: {
     "line-join"?: "bevel" | "round" | "miter"
     "line-cap"?: "butt" | "round" | "square"
-    "icon-image"?: string, 
-    "icon-size"?: number,
-    "icon-allow-overlap"?: boolean,
+    "icon-image"?: string
+    "icon-size"?: number
+    "icon-allow-overlap"?: boolean
     visibility: "visible" | "none"
   }
   paint?: object

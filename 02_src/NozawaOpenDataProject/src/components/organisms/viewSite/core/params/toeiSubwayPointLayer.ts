@@ -23,7 +23,7 @@ const toeiSubwaySymbolLayer: LayerType = {
 
 export const toeiSubwayPointCard: CardListType = {
   logoImg: "/assets/logos/tokyoLogo.webp",
-  text: "東京メトロ駅",
+  text: "都営地下鉄　駅",
   dangerBadge: "交通",
   warningBadge: "地下鉄",
   primaryBadge: "ポイントデータ",
