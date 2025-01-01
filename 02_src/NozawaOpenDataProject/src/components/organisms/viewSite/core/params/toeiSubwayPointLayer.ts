@@ -3,26 +3,26 @@ import { CardListType } from "@/components/organisms/viewSite/core/types/cardLis
 import { LayerType } from "@/components/organisms/viewSite/core/types/layerType"
 
 // GeoJSON ソース
-const tokyoMetroSource: GeoJSONSourceSpecification = {
+const toeiSubwaySource: GeoJSONSourceSpecification = {
   type: "geojson",
-  data: "/geojson/PointTokyoMetro.geojson",
+  data: "/geojson/PointToeiSubway.geojson",
 }
 
-const tokyoMetroSymbolLayer: LayerType = {
-  id: "pointTokyoMetroSymbol",
+const toeiSubwaySymbolLayer: LayerType = {
+  id: "pointToeiSubwaySymbol",
   type: "symbol",
-  sourceId: "pointTokyoMetro",
-  source: tokyoMetroSource,
+  sourceId: "pointToeiSubway",
+  source: toeiSubwaySource,
   layout: {
-    "icon-image": "tokyoMetro",
+    "icon-image": "tokyoLogo",
     "icon-size": 0.12,
     "icon-allow-overlap": true,
     visibility: "visible",
   },
 }
 
-export const tokyoMetroPointCard: CardListType = {
-  logoImg: "/assets/logos/tokyoMetro.webp",
+export const toeiSubwayPointCard: CardListType = {
+  logoImg: "/assets/logos/tokyoLogo.webp",
   text: "東京メトロ駅",
   dangerBadge: "交通",
   warningBadge: "地下鉄",
@@ -34,5 +34,5 @@ export const tokyoMetroPointCard: CardListType = {
   infoButtonClick: "buttonClicked",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "buttonClicked",
-  layer: tokyoMetroSymbolLayer,
+  layer: toeiSubwaySymbolLayer,
 }

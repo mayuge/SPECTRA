@@ -9,9 +9,11 @@ import { tokyoMetroLineCard } from "@/components/organisms/viewSite/core/params/
 import { tokyoMetroPointCard } from "@/components/organisms/viewSite/core/params/tokyoMetroPointLayer"
 import { konjakuCard } from "@/components/organisms/viewSite/core/params/konjakuLayer"
 import { toeiSubwayCard } from "@/components/organisms/viewSite/core/params/toeiSubwayLayer"
+import { toeiSubwayPointCard } from "@/components/organisms/viewSite/core/params/toeiSubwayPointLayer"
 import { sateliteMapCard } from "@/components/organisms/viewSite/core/params/sateliteMapLayer"
 
 export const cardLayerList: CardListType[] = [
+  toeiSubwayPointCard,
   tokyoMetroPointCard,
   toeiSubwayCard,
   tokyoMetroLineCard,
