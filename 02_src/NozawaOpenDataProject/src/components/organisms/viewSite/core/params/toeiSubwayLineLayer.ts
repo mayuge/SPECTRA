@@ -10,7 +10,7 @@ const toeiSubwaySource: GeoJSONSourceSpecification = {
 }
 
 // レイヤー構造
-const toeiSubwayLayer: LayerType = {
+const toeiSubwayLineLayer: LayerType = {
   id: "lineToeiSubway",
   type: "line",
   sourceId: "LineToeiSubway",
@@ -45,7 +45,7 @@ const toeiSubwayLayer: LayerType = {
 }
 
 // カード構造
-export const toeiSubwayCard: CardListType = {
+export const toeiSubwayLineCard: CardListType = {
   logoImg: "/assets/logos/TokyoLogo.webp",
   text: "都営地下鉄",
   dangerBadge: "交通",
@@ -58,5 +58,5 @@ export const toeiSubwayCard: CardListType = {
   infoButtonClick: "ToeiSubwayRealTimeInfoCallback",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "buttonClicked",
-  layer: toeiSubwayLayer,
+  layer: toeiSubwayLineLayer,
 }

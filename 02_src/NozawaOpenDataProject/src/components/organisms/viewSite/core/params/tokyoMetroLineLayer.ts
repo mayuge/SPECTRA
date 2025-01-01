@@ -29,6 +29,18 @@ const tokyoMetroLayer: LayerType = {
     "line-width": 8,
     "line-opacity": 1,
   },
+  popup: {
+    template: (properties: any) => {
+      const div = document.createElement("div")
+      div.innerHTML = `
+        <h3>${properties.N05_002 || "路線名"}</h3>
+      `
+      return div
+    },
+    options: {
+      maxWidth: "400px",
+    },
+  },
 }
 
 export const tokyoMetroLineCard: CardListType = {

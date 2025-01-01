@@ -8,14 +8,14 @@ import { googleCard } from "@/components/organisms/viewSite/core/params/googleMa
 import { tokyoMetroLineCard } from "@/components/organisms/viewSite/core/params/tokyoMetroLineLayer"
 import { tokyoMetroPointCard } from "@/components/organisms/viewSite/core/params/tokyoMetroPointLayer"
 import { konjakuCard } from "@/components/organisms/viewSite/core/params/konjakuLayer"
-import { toeiSubwayCard } from "@/components/organisms/viewSite/core/params/toeiSubwayLayer"
+import { toeiSubwayLineCard } from "@/components/organisms/viewSite/core/params/toeiSubwayLineLayer"
 import { toeiSubwayPointCard } from "@/components/organisms/viewSite/core/params/toeiSubwayPointLayer"
 import { sateliteMapCard } from "@/components/organisms/viewSite/core/params/sateliteMapLayer"
 
 export const cardLayerList: CardListType[] = [
   toeiSubwayPointCard,
   tokyoMetroPointCard,
-  toeiSubwayCard,
+  toeiSubwayLineCard,
   tokyoMetroLineCard,
   toeiBusCard,
   plateauCard,
