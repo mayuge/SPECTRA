@@ -22,6 +22,7 @@ const tokyoMetroPointLayer: LayerType = {
     "circle-opacity": 1,
     "circle-stroke-color": "#000000", // 縁取りの色
     "circle-stroke-width": 2, // 縁取りの幅
+    "circle-stroke-opacity": 1, // 縁取りの透明度
   },
 }
 

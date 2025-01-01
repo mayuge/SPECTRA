@@ -67,6 +67,7 @@ const updateExistingLayer = (map: maplibregl.Map, layer: any) => {
       map.setPaintProperty(layer.id, "raster-opacity", paint["raster-opacity"])
     } else if (layer.type === "circle" && "circle-opacity" in paint) {
       map.setPaintProperty(layer.id, "circle-opacity", paint["circle-opacity"])
+      map.setPaintProperty(layer.id, "circle-stroke-opacity", paint["circle-opacity"])
     } else if (layer.type === "fill-extrusion" && "fill-extrusion-opacity" in paint) {
       map.setPaintProperty(layer.id, "fill-extrusion-opacity", paint["fill-extrusion-opacity"])
     }
