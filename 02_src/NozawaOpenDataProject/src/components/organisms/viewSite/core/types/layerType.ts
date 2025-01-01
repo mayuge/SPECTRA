@@ -36,6 +36,7 @@ export type LayerType = {
     "line-cap"?: "butt" | "round" | "square"
     "icon-image"?: string, 
     "icon-size"?: number,
+    "icon-allow-overlap"?: boolean,
     visibility: "visible" | "none"
   }
   paint?: object

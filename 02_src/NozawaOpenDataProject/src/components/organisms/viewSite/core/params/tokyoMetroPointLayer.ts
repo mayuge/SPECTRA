@@ -1,4 +1,4 @@
-import type { GeoJSONSourceSpecification, CircleLayerSpecification } from "maplibre-gl"
+import type { GeoJSONSourceSpecification, SymbolLayerSpecification } from "maplibre-gl"
 import { CardListType } from "@/components/organisms/viewSite/core/types/cardListType"
 import { LayerType } from "@/components/organisms/viewSite/core/types/layerType"
 
@@ -8,21 +8,16 @@ const tokyoMetroSource: GeoJSONSourceSpecification = {
   data: "/geojson/PointTokyoMetro.geojson",
 }
 
-const tokyoMetroPointLayer: LayerType = {
-  id: "pointTokyoMetro",
-  type: "circle",
+const tokyoMetroSymbolLayer: LayerType = {
+  id: "pointTokyoMetroSymbol",
+  type: "symbol",
   sourceId: "pointTokyoMetro",
   source: tokyoMetroSource,
   layout: {
+    "icon-image": "tokyoMetro",
+    "icon-size": 0.16,
+    "icon-allow-overlap": true,
     visibility: "visible",
-  },
-  paint: {
-    "circle-radius": 4,
-    "circle-color": "#FFFFFF",
-    "circle-opacity": 1,
-    "circle-stroke-color": "#000000", // 縁取りの色
-    "circle-stroke-width": 2, // 縁取りの幅
-    "circle-stroke-opacity": 1, // 縁取りの透明度
   },
 }
 
@@ -39,5 +34,5 @@ export const tokyoMetroPointCard: CardListType = {
   infoButtonClick: "buttonClicked",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "buttonClicked",
-  layer: tokyoMetroPointLayer,
+  layer: tokyoMetroSymbolLayer,
 }

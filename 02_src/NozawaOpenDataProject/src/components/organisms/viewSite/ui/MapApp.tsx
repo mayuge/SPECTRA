@@ -14,7 +14,7 @@ const addLayerToMap = (map: maplibregl.Map, layer: any) => {
       id: layer.id,
       type: layer.type,
       source: layer.sourceId,
-      paint: layer.paint,
+      paint: layer.paint || {}, // paintプロパティが存在しない場合は空のオブジェクトを設定
       layout: layer.layout,
     } as LayerSpecification)
   } else {
@@ -23,12 +23,10 @@ const addLayerToMap = (map: maplibregl.Map, layer: any) => {
       type: layer.type,
       source: layer.sourceId,
       "source-layer": layer["source-layer"],
-      paint: layer.paint,
+      paint: layer.paint || {}, // paintプロパティが存在しない場合は空のオブジェクトを設定
       layout: layer.layout,
     } as LayerSpecification)
   }
-
-
 
   // ポップアップの設定
   if (layer.popup) {
@@ -74,7 +72,7 @@ const updateExistingLayer = (map: maplibregl.Map, layer: any) => {
   }
 }
 
-const initializeMap = (
+const initializeMap = async (
   mapContainer: React.RefObject<HTMLDivElement>,
   mapInstance: React.MutableRefObject<maplibregl.Map | null>,
   updateLayers: () => void
@@ -106,6 +104,20 @@ const initializeMap = (
     mapInstance.current.on("load", () => {
       mapInstance.current?.addControl(new maplibregl.NavigationControl(), "bottom-right")
       updateLayers()
+    })
+
+    // styleimagemissingイベントをリッスンして、画像が見つからない場合に処理する
+    mapInstance.current.on("styleimagemissing", async (e) => {
+      const id = e.id
+      const url = `/assets/logos/${id}.webp`
+      try {
+        const response = await mapInstance.current?.loadImage(url)
+        if (response && !mapInstance.current?.hasImage(id)) {
+          mapInstance.current?.addImage(id, response.data)
+        }
+      } catch (error) {
+        console.error(`Error loading image: ${url}`, error)
+      }
     })
   }
 }
