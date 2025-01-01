@@ -18,7 +18,6 @@ const addLayerToMap = (map: maplibregl.Map, layer: any) => {
       layout: layer.layout,
     } as LayerSpecification)
   } else {
-    // プラトーを表示させるためのコード
     map.addLayer({
       id: layer.id,
       type: layer.type,
@@ -28,6 +27,8 @@ const addLayerToMap = (map: maplibregl.Map, layer: any) => {
       layout: layer.layout,
     } as LayerSpecification)
   }
+
+
 
   // ポップアップの設定
   if (layer.popup) {

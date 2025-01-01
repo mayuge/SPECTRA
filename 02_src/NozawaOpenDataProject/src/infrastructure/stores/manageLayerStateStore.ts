@@ -53,7 +53,6 @@ const useManageLayerStateStore = create<ManageLayerState>()((set, get) => ({
     })
   },
   setOpacity: (index: number, value: number) => {
-    console.log(index, value)
     set((state) => {
       const newLayerList = [...state.layerList]
       const layer = newLayerList[index].layer

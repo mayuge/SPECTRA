@@ -31,7 +31,7 @@ const tokyoMetroLayer: LayerType = {
   },
 }
 
-export const tokyoMetroCard: CardListType = {
+export const tokyoMetroLineCard: CardListType = {
   logoImg: "/assets/logos/tokyoMetro.webp",
   text: "東京メトロ",
   dangerBadge: "交通",

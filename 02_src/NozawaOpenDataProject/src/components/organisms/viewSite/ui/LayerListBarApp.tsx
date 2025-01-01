@@ -10,8 +10,6 @@ const LayerListBarApp: React.FC = () => {
     getLayerBarOpen,
     openAllDialogs,
     buttonClicked,
-    jrEastRealTimeLocateDataCallback,
-    tokyoMetroRealTimeInfoCallback,
     getCardList,
     changeLayerOrder,
     getIsDisplayLayer,
@@ -23,8 +21,6 @@ const LayerListBarApp: React.FC = () => {
   const functionMap: { [key: string]: (() => void) | undefined } = {
     buttonClicked,
     openAllDialogs,
-    jrEastRealTimeLocateDataCallback,
-    tokyoMetroRealTimeInfoCallback,
   }
 
   // cardList にコールバック関数を設定
