@@ -84,7 +84,7 @@ const Card: React.FC<CardProps> = ({
         </div>
         <div className="w-full">
           <div className="pb-1 flex justify-between gap-2">
-            <div className="inline-flex items-center gap-1">
+            <div className="inline-flex items-center gap-1 text-black">
               <img src={logoImgPath} className="w-5 h-5" />
               {text}
             </div>
