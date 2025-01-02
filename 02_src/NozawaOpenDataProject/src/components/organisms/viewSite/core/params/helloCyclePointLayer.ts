@@ -27,6 +27,8 @@ let helloCycleSymbolLayer = {
     "icon-allow-overlap": true,
     visibility: "visible",
   },
+  minzoom: 14,
+ 
 } as LayerType
 
 

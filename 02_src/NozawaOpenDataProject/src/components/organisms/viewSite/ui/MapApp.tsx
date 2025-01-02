@@ -16,6 +16,8 @@ const addLayerToMap = (map: maplibregl.Map, layer: any) => {
       source: layer.sourceId,
       paint: layer.paint || {}, // paintプロパティが存在しない場合は空のオブジェクトを設定
       layout: layer.layout,
+      maxzoom: layer.maxzoom !== undefined ? layer.maxzoom : 22, // maxzoomが存在しない場合のデフォルト値
+    minzoom: layer.minzoom !== undefined ? layer.minzoom : 0,  // minzoomが存在しない場合のデフォルト値
     } as LayerSpecification)
   } else {
     map.addLayer({
@@ -94,9 +96,10 @@ const initializeMap = async (
           "atmosphere-blend": ["interpolate", ["linear"], ["zoom"], 0, 1, 10, 1, 12, 0],
         },
       },
-      zoom: 12,
+      zoom: 13,
+      minZoom: 12,
       maxPitch: 85,
-      center: [139.7024, 35.6598],
+      center: [139.751154, 35.681236], 
       pitch: 60,
       bearing: 20,
     })

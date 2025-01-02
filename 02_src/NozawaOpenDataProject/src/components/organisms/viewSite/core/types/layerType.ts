@@ -40,5 +40,7 @@ export type LayerType = {
     visibility: "visible" | "none"
   }
   paint?: object
+  minzoom?: number // minzoomプロパティを追加
+  maxzoom?: number // maxzoomプロパティを追加
   popup?: PopupContent // ポップアップの構造を具体的に定義
 }
