@@ -36,11 +36,9 @@ const useReqCycleData = () => {
         },
       }))
 
-
-
       return features
-    } catch (error:any) {
-        throw new Error(error.message)
+    } catch (error: any) {
+      throw new Error(error.message)
     }
   }
   return { reqHelloCycleStationInfo }

@@ -17,7 +17,7 @@ const addLayerToMap = (map: maplibregl.Map, layer: any) => {
       paint: layer.paint || {}, // paintプロパティが存在しない場合は空のオブジェクトを設定
       layout: layer.layout,
       maxzoom: layer.maxzoom !== undefined ? layer.maxzoom : 22, // maxzoomが存在しない場合のデフォルト値
-      minzoom: layer.minzoom !== undefined ? layer.minzoom : 0,  // minzoomが存在しない場合のデフォルト値
+      minzoom: layer.minzoom !== undefined ? layer.minzoom : 0, // minzoomが存在しない場合のデフォルト値
     } as LayerSpecification)
   } else {
     map.addLayer({
@@ -28,7 +28,7 @@ const addLayerToMap = (map: maplibregl.Map, layer: any) => {
       paint: layer.paint || {}, // paintプロパティが存在しない場合は空のオブジェクトを設定
       layout: layer.layout,
       maxzoom: layer.maxzoom !== undefined ? layer.maxzoom : 22, // maxzoomが存在しない場合のデフォルト値
-      minzoom: layer.minzoom !== undefined ? layer.minzoom : 0,  // minzoomが存在しない場合のデフォルト値
+      minzoom: layer.minzoom !== undefined ? layer.minzoom : 0, // minzoomが存在しない場合のデフォルト値
     } as LayerSpecification)
   }
 
@@ -101,7 +101,7 @@ const initializeMap = async (
       zoom: 13,
       minZoom: 12,
       maxPitch: 85,
-      center: [139.751154, 35.681236], 
+      center: [139.751154, 35.681236],
       pitch: 60,
       bearing: 20,
     })

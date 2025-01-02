@@ -98,7 +98,7 @@ const useReqRailwayData = () => {
     try {
       const url = process.env.NEXT_PUBLIC_TOEI_TRAIN_REALTIME_INFO_URL
       const token = process.env.NEXT_PUBLIC_OPEN_DATA_CHALLENGE_TOKEN_DEFAULT
-      
+
       const config: AxiosRequestConfig = {
         method: "GET",
         url: `${url}${token}`,

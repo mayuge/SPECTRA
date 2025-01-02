@@ -4,7 +4,6 @@ import { useReqCycleDataAdapter } from "@/infrastructure/adapters/httpReqAdapter
 import type { GeoJSONSourceSpecification } from "maplibre-gl"
 const { reqHelloCycleStationInfo } = useReqCycleDataAdapter()
 
-
 let helloCycleSymbolFeature = await reqHelloCycleStationInfo()
 
 const helloCycleSource: GeoJSONSourceSpecification = {
@@ -14,7 +13,6 @@ const helloCycleSource: GeoJSONSourceSpecification = {
     features: helloCycleSymbolFeature,
   },
 }
-
 
 let helloCycleSymbolLayer = {
   id: "pointHelloCycleSymbol",
@@ -28,9 +26,7 @@ let helloCycleSymbolLayer = {
     visibility: "visible",
   },
   minzoom: 14,
- 
 } as LayerType
-
 
 export const helloCyclePointCard: CardListType = {
   logoImg: "/assets/logos/default.webp",

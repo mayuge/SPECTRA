@@ -1,8 +1,7 @@
-import type { GeoJSONSourceSpecification, SymbolLayerSpecification } from "maplibre-gl"
 import { CardListType } from "@/components/organisms/viewSite/core/types/cardListType"
 import { LayerType } from "@/components/organisms/viewSite/core/types/layerType"
+import type { GeoJSONSourceSpecification } from "maplibre-gl"
 
-// GeoJSON ソース
 const tokyoMetroSource: GeoJSONSourceSpecification = {
   type: "geojson",
   data: "/geojson/PointTokyoMetro.geojson",
@@ -19,7 +18,35 @@ const tokyoMetroSymbolLayer: LayerType = {
     "icon-allow-overlap": true,
     visibility: "visible",
   },
-  minzoom: 13,
+  minzoom: 12,
+  popup: {
+    template: (properties: any) => {
+      const div = document.createElement("div")
+      div.innerHTML = `
+
+        
+        <div class="p-2">
+          <iframe
+            src="https://maps.google.co.jp/maps?output=embed&q=${properties.stop_name}駅"
+            width="100%"
+            height="auto"
+            frameborder="0"
+            style="border:0"
+            allowfullscreen
+          ></iframe>
+          <div class="flex items-center gap-2 mt-2">
+            <img src="/assets/logos/${properties.N05_002}.webp" alt="${properties.N05_002}" class="w-9 h-9">
+            <h3 class="text-lg font-semibold">${properties.stop_name}駅</h3>
+          </div>
+        </div>
+
+      `
+      return div
+    },
+    options: {
+      maxWidth: "400px",
+    },
+  },
 }
 
 export const tokyoMetroPointCard: CardListType = {
