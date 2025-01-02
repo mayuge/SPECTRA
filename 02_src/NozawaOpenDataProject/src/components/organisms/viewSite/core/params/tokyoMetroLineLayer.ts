@@ -33,7 +33,12 @@ const tokyoMetroLayer: LayerType = {
     template: (properties: any) => {
       const div = document.createElement("div")
       div.innerHTML = `
-        <h3>${properties.N05_002 || "路線名"}</h3>
+        <div class="p-2">
+          <div class="flex items-center gap-2">
+            <img src="/assets/logos/${properties.N05_002}.webp" alt="${properties.N05_002}" class="w-9 h-9">
+            <h3 class="text-lg font-semibold">${properties.N05_002}</h3>
+          </div>
+        </div>
       `
       return div
     },

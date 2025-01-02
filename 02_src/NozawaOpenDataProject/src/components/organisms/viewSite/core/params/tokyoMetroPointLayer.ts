@@ -17,8 +17,12 @@ const tokyoMetroSymbolLayer: LayerType = {
     "icon-size": 0.12,
     "icon-allow-overlap": true,
     visibility: "visible",
+    "text-field": ["get", "stop_name"], // テキストフィールドに駅名を設定
+    "text-size": 8, // テキストサイズを設定
+    "text-offset": [0, 1.0], // シンボルの少し上にテキストを配置
+    "text-anchor": "top", // テキストアンカーを上に設定
   },
-  minzoom: 12,
+  minzoom: 11,
   popup: {
     template: (properties: any) => {
       const div = document.createElement("div")

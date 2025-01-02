@@ -37,7 +37,12 @@ export type LayerType = {
     "icon-image"?: string
     "icon-size"?: number
     "icon-allow-overlap"?: boolean
+    "text-field"?: any // テキストフィールドを追加
+    "text-size"?: number // テキストサイズを追加
+    "text-offset"?: [number, number] // テキストオフセットを追加
+    "text-anchor"?: "center" | "left" | "right" | "top" | "bottom" | "top-left" | "top-right" | "bottom-left" | "bottom-right" // テキストアンカーを追加
     visibility: "visible" | "none"
+    
   }
   paint?: object
   minzoom?: number // minzoomプロパティを追加

@@ -4,33 +4,27 @@ import React, { useRef, useEffect } from "react"
 import maplibregl, { LayerSpecification, SourceSpecification } from "maplibre-gl"
 import "maplibre-gl/dist/maplibre-gl.css"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
+import { helloCyclePointCard } from "@/components/organisms/viewSite/core/params/helloCyclePointLayer"
 
 /**
  * レイヤをマップに追加
  */
 const addLayerToMap = (map: maplibregl.Map, layer: any) => {
-  if (layer["source-layer"] === undefined) {
-    map.addLayer({
-      id: layer.id,
-      type: layer.type,
-      source: layer.sourceId,
-      paint: layer.paint || {}, // paintプロパティが存在しない場合は空のオブジェクトを設定
-      layout: layer.layout,
-      maxzoom: layer.maxzoom !== undefined ? layer.maxzoom : 22, // maxzoomが存在しない場合のデフォルト値
-      minzoom: layer.minzoom !== undefined ? layer.minzoom : 0, // minzoomが存在しない場合のデフォルト値
-    } as LayerSpecification)
-  } else {
-    map.addLayer({
-      id: layer.id,
-      type: layer.type,
-      source: layer.sourceId,
-      "source-layer": layer["source-layer"],
-      paint: layer.paint || {}, // paintプロパティが存在しない場合は空のオブジェクトを設定
-      layout: layer.layout,
-      maxzoom: layer.maxzoom !== undefined ? layer.maxzoom : 22, // maxzoomが存在しない場合のデフォルト値
-      minzoom: layer.minzoom !== undefined ? layer.minzoom : 0, // minzoomが存在しない場合のデフォルト値
-    } as LayerSpecification)
+  const layerSpec: LayerSpecification = {
+    id: layer.id,
+    type: layer.type,
+    source: layer.sourceId,
+    paint: layer.paint || {}, // paintプロパティが存在しない場合は空のオブジェクトを設定
+    layout: layer.layout,
+    maxzoom: layer.maxzoom !== undefined ? layer.maxzoom : 22, // maxzoomが存在しない場合のデフォルト値
+    minzoom: layer.minzoom !== undefined ? layer.minzoom : 0,  // minzoomが存在しない場合のデフォルト値
   }
+
+  if (layer["source-layer"] !== undefined) {
+    layerSpec["source-layer"] = layer["source-layer"]
+  }
+
+  map.addLayer(layerSpec)
 
   // ポップアップの設定
   if (layer.popup) {
@@ -88,6 +82,7 @@ const initializeMap = async (
         version: 8 as const,
         sources: {},
         layers: [],
+        glyphs: "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf", // glyphsプロパティを追加
         sky: {
           "sky-color": "#199EF3",
           "sky-horizon-blend": 0.5,
@@ -99,7 +94,7 @@ const initializeMap = async (
         },
       },
       zoom: 13,
-      minZoom: 12,
+      minZoom: 11,
       maxPitch: 85,
       center: [139.751154, 35.681236],
       pitch: 60,
@@ -160,6 +155,14 @@ const MapApp: React.FC = () => {
       clearInterval(timer)
     }
   }, [getLayers])
+
+  useEffect(() => {
+    // helloCyclePointCardのレイヤーを追加
+    const map = mapInstance.current
+    if (map?.isStyleLoaded() && helloCyclePointCard.layer) {
+      addLayerToMap(map, helloCyclePointCard.layer)
+    }
+  }, [mapInstance.current])
 
   return (
     <div className="absolute inset-0 z-0">
