@@ -115,6 +115,7 @@ const useViewSiteMain = () => {
 
   return {
     useCallback,
+    reqHelloCycleStationInfo,
     buttonClicked,
     routeToHomeSite,
     getLayerBarOpen,

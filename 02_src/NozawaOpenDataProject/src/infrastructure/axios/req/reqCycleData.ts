@@ -1,37 +1,54 @@
-import { AxiosRequestConfig } from "axios"
-import { getInstance, getInstanceLimited } from "@/infrastructure/axios/api"
-import GtfsRealtimeBindings from "gtfs-realtime-bindings"
-import JSZip from "jszip"
-
+import axios from "axios"
+import type { GeoJSONSourceSpecification } from "maplibre-gl"
+import { getInstance } from "@/infrastructure/axios/api"
 //apiからリクエスト用のインスタンスを持ってくる
 const http = getInstance()
-const httpLimited = getInstanceLimited()
-
 const useReqCycleData = () => {
-  // ハローサイクリング充電ステーション
-  const reqHelloCycleStationInfo = async () => {
+  const reqHelloCycleStationInfo = async (): Promise<GeoJSONSourceSpecification> => {
     try {
+      const url = process.env.NEXT_PUBLIC_HELLO_CYCLE_STATION_INFO_URL
       const token = process.env.NEXT_PUBLIC_OPEN_DATA_CHALLENGE_TOKEN_DEFAULT
-      const url = process.env.NEXT_PUBLIC_HELLO_CYCLE_STATION_INFO
+      console.log(url)
       const config = {
         method: "GET",
         url: `${url}${token}`,
       }
       //リクエストを行う
       const res = await http.request(config)
-      if (res.status === 200) {
-        return res.data
+      const data = res.data
+      console.log(data)
+      const features = data.data.stations.map((station: any) => ({
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [station.lon, station.lat],
+        },
+        properties: {
+          name: station.name,
+          address: station.address,
+          station_id: station.station_id,
+          rental_uris: station.rental_uris,
+          parking_hoop: station.parking_hoop,
+          parking_type: station.parking_type,
+          contact_phone: station.contact_phone,
+          vehicle_capacity: station.vehicle_capacity,
+          is_charging_station: station.is_charging_station,
+        },
+      }))
+
+      const helloCycleSource: GeoJSONSourceSpecification = {
+        type: "geojson",
+        data: {
+          type: "FeatureCollection",
+          features: features,
+        },
       }
-    } catch (error) {
-      if (error instanceof Error) {
+
+      return helloCycleSource
+    } catch (error:any) {
         throw new Error(error.message)
-      }
     }
   }
-
-  return {
-    reqHelloCycleStationInfo,
-  }
+  return { reqHelloCycleStationInfo }
 }
-
 export default useReqCycleData

@@ -11,8 +11,8 @@ const useReqRailwayData = () => {
   // JR東日本の車両位置リアルタイムデータ
   const reqJrEastRealTimeLocateData = async () => {
     try {
-      const token = process.env.NEXT_PUBLIC_OPEN_DATA_CHALLENGE_TOKEN_LIMITED
       const url = process.env.NEXT_PUBLIC_JR_EAST_REALTIME_LOCATE_DATA_URL
+      const token = process.env.NEXT_PUBLIC_OPEN_DATA_CHALLENGE_TOKEN_LIMITED
       const config: AxiosRequestConfig = {
         method: "GET",
         url: `${url}${token}`,
@@ -33,8 +33,9 @@ const useReqRailwayData = () => {
   // JR東日本の運行状況リアルタイムデータ
   const reqJrEastRealTimeInfo = async () => {
     try {
-      const token = process.env.NEXT_PUBLIC_OPEN_DATA_CHALLENGE_TOKEN_LIMITED
       const url = process.env.NEXT_PUBLIC_JR_EAST_REALTIME_INFO_URL
+      const token = process.env.NEXT_PUBLIC_OPEN_DATA_CHALLENGE_TOKEN_LIMITED
+
       const config: AxiosRequestConfig = {
         method: "GET",
         url: `${url}${token}`,
@@ -55,8 +56,8 @@ const useReqRailwayData = () => {
   // 東京メトロの運行状況
   const reqTokyoMetroRealTimeInfo = async () => {
     try {
+      const url = process.env.NEXT_PUBLIC_JR_EAST_REALTIME_INFO_URL
       const token = process.env.NEXT_PUBLIC_OPEN_DATA_CHALLENGE_TOKEN_DEFAULT
-      const url = process.env.NEXT_PUBLIC_TOKYO_METRO_REALTIME_INFO_URL
       const config = {
         method: "GET",
         url: `${url}${token}`,
@@ -75,8 +76,8 @@ const useReqRailwayData = () => {
   //東京メトロ駅情報
   const reqTokyoMetroStationInfo = async () => {
     try {
+      const url = process.env.NEXT_PUBLIC_JR_EAST_REALTIME_INFO_URL
       const token = process.env.NEXT_PUBLIC_OPEN_DATA_CHALLENGE_TOKEN_DEFAULT
-      const url = process.env.NEXT_PUBLIC_TOKYO_METRO_STATION_INFO_URL
       const config = {
         method: "GET",
         url: `${url}${token}`,
@@ -95,8 +96,9 @@ const useReqRailwayData = () => {
   // 都営地下鉄の運行状況
   const reqToeiTrainRealTimeInfo = async () => {
     try {
-      const token = process.env.NEXT_PUBLIC_OPEN_DATA_CHALLENGE_TOKEN_DEFAULT
       const url = process.env.NEXT_PUBLIC_TOEI_TRAIN_REALTIME_INFO_URL
+      const token = process.env.NEXT_PUBLIC_OPEN_DATA_CHALLENGE_TOKEN_DEFAULT
+      
       const config: AxiosRequestConfig = {
         method: "GET",
         url: `${url}${token}`,
