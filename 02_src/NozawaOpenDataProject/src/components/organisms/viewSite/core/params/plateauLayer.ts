@@ -20,8 +20,9 @@ const plateauLayer: LayerType = {
   paint: {
     "fill-extrusion-height": ["*", ["get", "z"], 1],
     "fill-extrusion-color": "#888",
-    "fill-extrusion-opacity": 0.6,
+    "fill-extrusion-opacity": 0.8,
   },
+  minzoom: 15,
 } as LayerType
 
 export const plateauCard: CardListType = {

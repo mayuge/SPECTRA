@@ -19,6 +19,7 @@ const tokyoMetroSymbolLayer: LayerType = {
     "icon-allow-overlap": true,
     visibility: "visible",
   },
+  minzoom: 13,
 }
 
 export const tokyoMetroPointCard: CardListType = {

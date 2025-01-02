@@ -19,6 +19,7 @@ const toeiSubwaySymbolLayer: LayerType = {
     "icon-allow-overlap": true,
     visibility: "visible",
   },
+  minzoom: 13,
 }
 
 export const toeiSubwayPointCard: CardListType = {
