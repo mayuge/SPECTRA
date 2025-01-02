@@ -26,7 +26,7 @@ const tokyoMetroLayer: LayerType = {
       ...Object.entries(tokyoMetroLineParams).flatMap(([line, { color }]) => [line, color]),
       "#000000", // デフォルト色（色が一致しない場合）
     ],
-    "line-width": 8,
+    "line-width": 4,
     "line-opacity": 1,
   },
   popup: {

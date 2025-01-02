@@ -27,7 +27,7 @@ const toeiSubwayLineLayer: LayerType = {
       ...Object.entries(toeiSubwayLineParams).flatMap(([line, { color }]) => [line, color]),
       "#808080", // デフォルト色
     ],
-    "line-width": 8,
+    "line-width": 4,
     "line-opacity": 1,
   },
   popup: {

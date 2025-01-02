@@ -1,10 +1,10 @@
 import axios from "axios"
-import type { GeoJSONSourceSpecification } from "maplibre-gl"
+
 import { getInstance } from "@/infrastructure/axios/api"
 //apiからリクエスト用のインスタンスを持ってくる
 const http = getInstance()
 const useReqCycleData = () => {
-  const reqHelloCycleStationInfo = async (): Promise<GeoJSONSourceSpecification> => {
+  const reqHelloCycleStationInfo = async () => {
     try {
       const url = process.env.NEXT_PUBLIC_HELLO_CYCLE_STATION_INFO_URL
       const token = process.env.NEXT_PUBLIC_OPEN_DATA_CHALLENGE_TOKEN_DEFAULT
@@ -36,15 +36,9 @@ const useReqCycleData = () => {
         },
       }))
 
-      const helloCycleSource: GeoJSONSourceSpecification = {
-        type: "geojson",
-        data: {
-          type: "FeatureCollection",
-          features: features,
-        },
-      }
 
-      return helloCycleSource
+
+      return features
     } catch (error:any) {
         throw new Error(error.message)
     }

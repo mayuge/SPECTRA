@@ -19,13 +19,13 @@ export const cardLayerList: CardListType[] = [
   tokyoMetroPointCard,
   toeiSubwayLineCard,
   tokyoMetroLineCard,
-  toeiBusCard,
+  // toeiBusCard,
   plateauCard,
+  osmCard,
   cycleBlockCard,
   terrainCard,
   sateliteMapCard,
   googleCard,
-  osmCard,
   konjakuCard,
 ]
 

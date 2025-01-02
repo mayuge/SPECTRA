@@ -100,6 +100,7 @@ const useViewSiteMain = () => {
   const helloCycleStationInfoCallback = async () => {
     const res = await reqHelloCycleStationInfo()
     console.log("helloCycleStationInfoCallback", res)
+    return res
   }
 
   // ホームサイトに遷移する関数
@@ -115,7 +116,7 @@ const useViewSiteMain = () => {
 
   return {
     useCallback,
-    reqHelloCycleStationInfo,
+    helloCycleStationInfoCallback,
     buttonClicked,
     routeToHomeSite,
     getLayerBarOpen,

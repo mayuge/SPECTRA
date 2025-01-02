@@ -1,20 +1,29 @@
 import { CardListType } from "@/components/organisms/viewSite/core/types/cardListType"
 import { LayerType } from "@/components/organisms/viewSite/core/types/layerType"
 import { useReqCycleDataAdapter } from "@/infrastructure/adapters/httpReqAdapter"
-
+import type { GeoJSONSourceSpecification } from "maplibre-gl"
 const { reqHelloCycleStationInfo } = useReqCycleDataAdapter()
 
-let helloCycleSymbolSource = await reqHelloCycleStationInfo()
+
+let helloCycleSymbolFeature = await reqHelloCycleStationInfo()
+
+const helloCycleSource: GeoJSONSourceSpecification = {
+  type: "geojson",
+  data: {
+    type: "FeatureCollection",
+    features: helloCycleSymbolFeature,
+  },
+}
 
 
-let helloCycleSymbolLayer = await {
+let helloCycleSymbolLayer = {
   id: "pointHelloCycleSymbol",
   type: "symbol",
   sourceId: "pointHelloCycle",
-  source: helloCycleSymbolSource,
+  source: helloCycleSource,
   layout: {
     "icon-image": "default",
-    "icon-size": 0.12,
+    "icon-size": 0.08,
     "icon-allow-overlap": true,
     visibility: "visible",
   },
