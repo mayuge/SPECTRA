@@ -19,7 +19,33 @@ const toeiSubwaySymbolLayer: LayerType = {
     "icon-allow-overlap": true,
     visibility: "visible",
   },
+  
   minzoom: 13,
+  popup: {
+    template: (properties: any) => {
+      const div = document.createElement("div")
+      div.innerHTML = `
+        <div class="p-2">
+          <iframe
+            src="https://maps.google.co.jp/maps?output=embed&q=${properties.stop_name}駅"
+            width="100%"
+            height="auto"
+            frameborder="0"
+            style="border:0"
+            allowfullscreen
+          ></iframe>
+          <div class="flex items-center gap-2 mt-2">
+            <img src="/assets/logos/tokyoLogo.webp" alt="${properties.N05_002}" class="w-9 h-9">
+            <h3 class="text-lg font-semibold">${properties.stop_name}駅</h3>
+          </div>
+        </div>
+      `
+      return div
+    },
+    options: {
+      maxWidth: "400px",
+    },
+  },
 }
 
 export const toeiSubwayPointCard: CardListType = {
@@ -36,4 +62,5 @@ export const toeiSubwayPointCard: CardListType = {
   displayButtonClick: "buttonClicked",
   orderButtonClick: "buttonClicked",
   layer: toeiSubwaySymbolLayer,
+  
 }

@@ -23,8 +23,6 @@ const tokyoMetroSymbolLayer: LayerType = {
     template: (properties: any) => {
       const div = document.createElement("div")
       div.innerHTML = `
-
-        
         <div class="p-2">
           <iframe
             src="https://maps.google.co.jp/maps?output=embed&q=${properties.stop_name}駅"
@@ -39,7 +37,6 @@ const tokyoMetroSymbolLayer: LayerType = {
             <h3 class="text-lg font-semibold">${properties.stop_name}駅</h3>
           </div>
         </div>
-
       `
       return div
     },
