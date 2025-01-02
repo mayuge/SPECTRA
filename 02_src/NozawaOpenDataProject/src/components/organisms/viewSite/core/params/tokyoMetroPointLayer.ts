@@ -21,6 +21,8 @@ const tokyoMetroSymbolLayer: LayerType = {
     "text-size": 10, // テキストサイズを設定
     "text-offset": [0, 1.0], // シンボルの少し上にテキストを配置
     "text-anchor": "top", // テキストアンカーを上に設定
+    "text-allow-overlap": true, // テキストのオーバーラップを許可
+    "text-max-width": 300, // テキストの最大幅を設定
   },
   paint: {
     "text-color": "#000000", // テキストの色を設定

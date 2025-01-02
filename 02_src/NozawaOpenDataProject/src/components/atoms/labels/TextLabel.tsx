@@ -8,7 +8,7 @@ type TextLabelProps = {
 }
 
 const TextLabel: React.FC<TextLabelProps> = ({ text, size, bold, isBlack }: TextLabelProps) => {
-  let textColor = ""
+  let textColor = "text-black" // デフォルトの文字色は黒
   if (isBlack === false) {
     textColor = "text-white"
   }

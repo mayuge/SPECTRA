@@ -41,6 +41,8 @@ export type LayerType = {
     "text-size"?: number // テキストサイズを追加
     "text-offset"?: [number, number] // テキストオフセットを追加
     "text-anchor"?: "center" | "left" | "right" | "top" | "bottom" | "top-left" | "top-right" | "bottom-left" | "bottom-right" // テキストアンカーを追加
+    "text-allow-overlap"?: boolean // テキストのオーバーラップを許可
+    "text-max-width"?: number // テキストの最大幅を追加
     visibility: "visible" | "none"
     
   }
