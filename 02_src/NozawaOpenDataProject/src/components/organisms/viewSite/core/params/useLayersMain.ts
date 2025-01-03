@@ -12,6 +12,7 @@ import { toeiSubwayLineCard } from "@/components/organisms/viewSite/core/params/
 import { toeiSubwayPointCard } from "@/components/organisms/viewSite/core/params/toeiSubwayPointLayer"
 import { sateliteMapCard } from "@/components/organisms/viewSite/core/params/sateliteMapLayer"
 import { helloCyclePointCard } from "@/components/organisms/viewSite/core/params/helloCyclePointLayer"
+import { floodCard } from "@/components/organisms/viewSite/core/params/floodLayer"
 
 export const cardLayerList: CardListType[] = [
   helloCyclePointCard,
@@ -23,6 +24,7 @@ export const cardLayerList: CardListType[] = [
   plateauCard,
   osmCard,
   cycleBlockCard,
+  floodCard,
   terrainCard,
   sateliteMapCard,
   googleCard,

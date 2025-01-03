@@ -3,7 +3,7 @@ import type { CardListType } from "@/components/organisms/viewSite/core/types/ca
 import type { LayerType } from "@/components/organisms/viewSite/core/types/layerType"
 
 const cycleBlockLayer: LayerType = {
-  id: "polygon",
+  id: "cycleBlock",
   type: "fill",
   sourceId: "BaseCityBlocks",
   source: {
