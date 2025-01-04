@@ -19,11 +19,7 @@ const useViewSiteMain = () => {
   const { setTimeData, getTimeData } = useTimeDataStoreAdapter()
   const { reqHelloCycleStationInfo } = useReqCycleDataAdapter()
   const {
-    reqJrEastRealTimeLocateData,
     reqTokyoMetroRealTimeInfo,
-    reqJrEastRealTimeInfo,
-    reqToeiTrainRealTimeInfo,
-    reqTokyoMetroStationInfo,
   } = useReqRailwayDataAdapter()
   const {
     getLayerBarOpen,
@@ -51,30 +47,12 @@ const useViewSiteMain = () => {
    * コールバック関数をまとめて呼び出す
    */
   const useCallback = () => {
-    jrEastRealTimeLocateDataCallback()
-    jrEastRealTimeInfoCallback()
     tokyoMetroRealTimeInfoCallback()
-    tokyoMetroStationInfoCallback()
-    toeiTrainRealTimeInfoCallback()
-    helloCycleStationInfoCallback()
     setTimeData(getNowTime())
     console.log(getTimeData())
   }
-  /**
-   * JR東日本リアルタイム車両位置データ
-   */
-  const jrEastRealTimeLocateDataCallback = async () => {
-    //JR東日本リアルタイム車両位置データを非同期で取得する
-    const res = await reqJrEastRealTimeLocateData()
-    console.log("jrEastRealTimeLocateDataCallback", res)
-  }
-  /**
-   * JR東日本リアルタイム運行情報
-   */
-  const jrEastRealTimeInfoCallback = async () => {
-    const res = await reqJrEastRealTimeInfo()
-    console.log("jrEastRealTimeInfoCallback", res)
-  }
+
+
   /**
    * 東京メトロリアルタイム運行情報
    */
@@ -82,24 +60,12 @@ const useViewSiteMain = () => {
     const res = await reqTokyoMetroRealTimeInfo()
     console.log("tokyoMetroRealTimeInfoCallback", res)
   }
-  /**
-   * 東京メトロ駅情報
-   */
-  const tokyoMetroStationInfoCallback = async () => {
-    const res = await reqTokyoMetroStationInfo()
-    console.log("tokyoMetroStationInfoCallback ", res)
-  }
-  /**
-   * 都営地下鉄リアルタイム運行情報
-   */
-  const toeiTrainRealTimeInfoCallback = async () => {
-    const res = await reqToeiTrainRealTimeInfo()
-    console.log("reqToeiTrainRealTimeInfoCallback", res)
-  }
 
+  /**
+   * ハローサイクリングステーション情報
+   */
   const helloCycleStationInfoCallback = async () => {
     const res = await reqHelloCycleStationInfo()
-    console.log("helloCycleStationInfoCallback", res)
     return res
   }
 

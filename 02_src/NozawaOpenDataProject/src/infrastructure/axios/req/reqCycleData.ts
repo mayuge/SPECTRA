@@ -8,7 +8,6 @@ const useReqCycleData = () => {
     try {
       const url = process.env.NEXT_PUBLIC_HELLO_CYCLE_STATION_INFO_URL
       const token = process.env.NEXT_PUBLIC_OPEN_DATA_CHALLENGE_TOKEN_DEFAULT
-      console.log(url)
       const config = {
         method: "GET",
         url: `${url}${token}`,
@@ -16,7 +15,6 @@ const useReqCycleData = () => {
       //リクエストを行う
       const res = await http.request(config)
       const data = res.data
-      console.log(data)
       const features = data.data.stations.map((station: any) => ({
         type: "Feature",
         geometry: {

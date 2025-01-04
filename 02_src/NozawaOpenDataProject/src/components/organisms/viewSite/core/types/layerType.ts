@@ -7,9 +7,7 @@ import {
 
 export type PopupContent = {
   template: (properties: any) => HTMLElement // HTMLElementを返すように変更
-  options?: {
-    maxWidth?: string // 最大幅などのオプションも追加可能
-  }
+  options?:object
 }
 
 export type LayerType = {

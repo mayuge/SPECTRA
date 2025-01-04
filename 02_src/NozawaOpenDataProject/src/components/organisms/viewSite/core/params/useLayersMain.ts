@@ -5,21 +5,22 @@ import { cycleBlockCard } from "@/components/organisms/viewSite/core/params/cycl
 import { terrainCard } from "@/components/organisms/viewSite/core/params/terrainLayer"
 import { osmCard } from "@/components/organisms/viewSite/core/params/osmLayer"
 import { googleCard } from "@/components/organisms/viewSite/core/params/googleMapLayer"
-import { tokyoMetroLineCard } from "@/components/organisms/viewSite/core/params/tokyoMetroLineLayer"
+import { trainLineCard } from "@/components/organisms/viewSite/core/params/trainLineLayer"
 import { tokyoMetroPointCard } from "@/components/organisms/viewSite/core/params/tokyoMetroPointLayer"
 import { konjakuCard } from "@/components/organisms/viewSite/core/params/konjakuLayer"
-import { toeiSubwayLineCard } from "@/components/organisms/viewSite/core/params/toeiSubwayLineLayer"
+
 import { toeiSubwayPointCard } from "@/components/organisms/viewSite/core/params/toeiSubwayPointLayer"
 import { sateliteMapCard } from "@/components/organisms/viewSite/core/params/sateliteMapLayer"
 import { helloCyclePointCard } from "@/components/organisms/viewSite/core/params/helloCyclePointLayer"
 import { floodCard } from "@/components/organisms/viewSite/core/params/floodLayer"
+import { toeiBusPointCard } from "@/components/organisms/viewSite/core/params/toeiBusPointLayer"
 
 export const cardLayerList: CardListType[] = [
   helloCyclePointCard,
+  toeiBusPointCard,
   toeiSubwayPointCard,
   tokyoMetroPointCard,
-  toeiSubwayLineCard,
-  tokyoMetroLineCard,
+  trainLineCard,
   // toeiBusCard,
   plateauCard,
   osmCard,

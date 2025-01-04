@@ -1,15 +1,15 @@
 import type { GeoJSONSourceSpecification, LineLayerSpecification } from "maplibre-gl"
 import { CardListType } from "@/components/organisms/viewSite/core/types/cardListType"
 import { LayerType } from "@/components/organisms/viewSite/core/types/layerType"
-import { tokyoMetroLineParams } from "@/domain/params/tokyoMetroLine"
+import { trainLineParams } from "@/domain/params/trainLineParams"
 
 // GeoJSON ソース
 const tokyoMetroSource: GeoJSONSourceSpecification = {
   type: "geojson",
-  data: "/geojson/LineTokyoMetro.geojson",
+  data: "/geojson/LineTrain.geojson",
 }
 
-const tokyoMetroLayer: LayerType = {
+const trainLineLayer: LayerType = {
   id: "lineTokyoMetro",
   type: "line",
   sourceId: "LinetokyoMetro",
@@ -22,9 +22,9 @@ const tokyoMetroLayer: LayerType = {
   paint: {
     "line-color": [
       "match",
-      ["get", "N05_002"], // N05_002 属性に基づいて色を決定
-      ...Object.entries(tokyoMetroLineParams).flatMap(([line, { color }]) => [line, color]),
-      "#000000", // デフォルト色（色が一致しない場合）
+      ["get", "N02_003"], 
+      ...Object.entries(trainLineParams).flatMap(([line, { color }]) => [line, color]),
+      "#808080", // デフォルト色（色が一致しない場合）
     ],
     "line-width": 4,
     "line-opacity": 1,
@@ -35,8 +35,7 @@ const tokyoMetroLayer: LayerType = {
       div.innerHTML = `
         <div class="p-2">
           <div class="flex items-center gap-2">
-            <img src="/assets/logos/${properties.N05_002}.webp" alt="${properties.N05_002}" class="w-9 h-9">
-            <h3 class="text-lg font-semibold">${properties.N05_002}</h3>
+            <h3 class="text-lg font-semibold">${properties.N02_004}${properties.N02_003}</h3>
           </div>
         </div>
       `
@@ -48,7 +47,7 @@ const tokyoMetroLayer: LayerType = {
   },
 }
 
-export const tokyoMetroLineCard: CardListType = {
+export const trainLineCard: CardListType = {
   logoImg: "/assets/logos/tokyoMetro.webp",
   text: "東京メトロ",
   dangerBadge: "交通",
@@ -61,5 +60,5 @@ export const tokyoMetroLineCard: CardListType = {
   infoButtonClick: "tokyoMetroRealTimeInfoCallback",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "buttonClicked",
-  layer: tokyoMetroLayer,
+  layer: trainLineLayer,
 }
