@@ -24,7 +24,7 @@ export const cardLayerList: CardListType[] = [
   // toeiBusCard,
   plateauCard,
   osmCard,
-  cycleBlockCard,
+  // cycleBlockCard,
   floodCard,
   terrainCard,
   sateliteMapCard,

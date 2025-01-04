@@ -26,7 +26,7 @@ const trainLineLayer: LayerType = {
       ...Object.entries(trainLineParams).flatMap(([line, { color }]) => [line, color]),
       "#808080", // デフォルト色（色が一致しない場合）
     ],
-    "line-width": 4,
+    "line-width": 3,
     "line-opacity": 1,
   },
   popup: {
