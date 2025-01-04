@@ -8,7 +8,6 @@ const http = getInstance()
 const httpLimited = getInstanceLimited()
 
 const useReqRailwayData = () => {
-
   // 東京メトロの運行状況
   const reqTokyoMetroRealTimeInfo = async () => {
     try {

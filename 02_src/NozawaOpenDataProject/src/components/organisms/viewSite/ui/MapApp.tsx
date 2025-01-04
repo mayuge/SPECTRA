@@ -17,7 +17,7 @@ const addLayerToMap = (map: maplibregl.Map, layer: any) => {
     paint: layer.paint || {}, // paintプロパティが存在しない場合は空のオブジェクトを設定
     layout: layer.layout,
     maxzoom: layer.maxzoom !== undefined ? layer.maxzoom : 22, // maxzoomが存在しない場合のデフォルト値
-    minzoom: layer.minzoom !== undefined ? layer.minzoom : 0,  // minzoomが存在しない場合のデフォルト値
+    minzoom: layer.minzoom !== undefined ? layer.minzoom : 0, // minzoomが存在しない場合のデフォルト値
   }
 
   if (layer["source-layer"] !== undefined) {

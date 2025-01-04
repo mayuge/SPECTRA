@@ -7,7 +7,7 @@ import {
 
 export type PopupContent = {
   template: (properties: any) => HTMLElement // HTMLElementを返すように変更
-  options?:object
+  options?: object
 }
 
 export type LayerType = {
@@ -38,11 +38,19 @@ export type LayerType = {
     "text-field"?: any // テキストフィールドを追加
     "text-size"?: number // テキストサイズを追加
     "text-offset"?: [number, number] // テキストオフセットを追加
-    "text-anchor"?: "center" | "left" | "right" | "top" | "bottom" | "top-left" | "top-right" | "bottom-left" | "bottom-right" // テキストアンカーを追加
+    "text-anchor"?:
+      | "center"
+      | "left"
+      | "right"
+      | "top"
+      | "bottom"
+      | "top-left"
+      | "top-right"
+      | "bottom-left"
+      | "bottom-right" // テキストアンカーを追加
     "text-allow-overlap"?: boolean // テキストのオーバーラップを許可
     "text-max-width"?: number // テキストの最大幅を追加
     visibility: "visible" | "none"
-    
   }
   paint?: object
   minzoom?: number // minzoomプロパティを追加

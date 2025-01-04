@@ -18,9 +18,7 @@ const useViewSiteMain = () => {
   //更新時刻のセッター・ゲッター
   const { setTimeData, getTimeData } = useTimeDataStoreAdapter()
   const { reqHelloCycleStationInfo } = useReqCycleDataAdapter()
-  const {
-    reqTokyoMetroRealTimeInfo,
-  } = useReqRailwayDataAdapter()
+  const { reqTokyoMetroRealTimeInfo } = useReqRailwayDataAdapter()
   const {
     getLayerBarOpen,
     getDetailInfoDialogOpen,
@@ -51,7 +49,6 @@ const useViewSiteMain = () => {
     setTimeData(getNowTime())
     console.log(getTimeData())
   }
-
 
   /**
    * 東京メトロリアルタイム運行情報

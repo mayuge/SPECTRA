@@ -22,7 +22,7 @@ const trainLineLayer: LayerType = {
   paint: {
     "line-color": [
       "match",
-      ["get", "N02_003"], 
+      ["get", "N02_003"],
       ...Object.entries(trainLineParams).flatMap(([line, { color }]) => [line, color]),
       "#808080", // デフォルト色（色が一致しない場合）
     ],

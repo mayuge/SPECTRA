@@ -70,5 +70,4 @@ export const toeiSubwayPointCard: CardListType = {
   displayButtonClick: "buttonClicked",
   orderButtonClick: "buttonClicked",
   layer: toeiSubwaySymbolLayer,
-  
 }

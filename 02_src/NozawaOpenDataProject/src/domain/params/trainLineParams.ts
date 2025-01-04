@@ -41,6 +41,13 @@ export const trainLineParams = {
   大江戸線: {
     color: "#CF3366",
   },
+  荒川線: {
+    color: "#D04172",
+  },
+  日暮里舎人ライナー: {
+    color: "#85CA58",
+  },
+  
   八高線: {
     color: "#A09D95",
   },
@@ -80,9 +87,9 @@ export const trainLineParams = {
   川越線: {
     color: "#00AC84",
   },
-  東北線: {
-    color: "#00A7E3",
-  },
+  // 東北線: {
+  //   color: "#000000",
+  // },
   京葉線: {
     color: "#CF1225",
   },
@@ -107,6 +114,9 @@ export const trainLineParams = {
   埼京線: {
     color: "#00AC84",
   },
+  根岸線: {
+    color: "#00A7E3",
+  },
   湘南新宿ライン: {
     color: "#DE0515",
   },
@@ -128,9 +138,9 @@ export const trainLineParams = {
   東金線: {
     color: "#B31C31",
   },
-  東海道線: {
-    color: "#FF9845",
-  },
+  // 東海道線: {
+  //   color: "#FF9845",
+  // },
   鶴見線: {
     color: "#FFE500",
   },
@@ -173,6 +183,9 @@ export const trainLineParams = {
   多摩湖線: {
     color: "#F7AF0E",
   },
+  多摩都市モノレール線: {
+    color: "#ff6633",
+  },
   京王線: {
     color: "#dd0076",
   },
@@ -203,6 +216,9 @@ export const trainLineParams = {
   東急多摩川線: {
     color: "#ae0378",
   },
+  こどもの国線: {
+    color: "#0068b7",
+  },
   池上線: {
     color: "#ee86a7",
   },
@@ -227,6 +243,9 @@ export const trainLineParams = {
   東上本線: {
     color: "#000099",
   },
+  亀戸線: {
+    color: "#0f6cc3",
+  },
   野田線: {
     color: "#40B3E5",
   },
@@ -236,11 +255,73 @@ export const trainLineParams = {
   相鉄本線: {
     color: "#000080",
   },
+  相鉄いずみ野線: {
+    color: "#000080",
+  },
+  相鉄新横浜線: {
+    color: "#000080",
+  },
   京急本線: {
+    color: "#00A3E4",
+  },
+  空港線: {
+    color: "#00A3E4",
+  },
+  大師線: {
+    color: "#00A3E4",
+  },
+  逗子線: {
+    color: "#00A3E4",
+  },
+  久里浜線: {
     color: "#00A3E4",
   },
   京成本線: {
     color: "#15388B",
   },
-
+  押上線: {
+    color: "#15388B",
+  },
+  金町線: {
+    color: "#15388B",
+  },
+  千葉線: {
+    color: "#15388B",
+  },
+  千原線: {
+    color: "#15388B",
+  },
+  新京成線: {
+    color: "#ef59a1",
+  },
+  成田スカイアクセス線: {
+    color: "#EC7B02",
+  },
+  つくばエクスプレス: {
+    color: "#000080",
+  },
+  東葉高速線: {
+    color: "#3fb036",
+  },
+  ゆりかもめ: {
+    color: "#27404c",
+  },
+  千葉都市モノレール: {
+    color: "#2843ba",
+  },
+  金沢シーサイドライン: {
+    color: "#f68b1e",
+  },
+  りんかい線: {
+    color: "#222D65",
+  },
+  江の島線: {
+    color: "#ff0000",
+  },
+  横浜市営地下鉄ブルーライン: {
+    color: "#0068b7",
+  },
+  横浜市営地下鉄グリーンライン: {
+    color: "#00a968",
+  },
 }

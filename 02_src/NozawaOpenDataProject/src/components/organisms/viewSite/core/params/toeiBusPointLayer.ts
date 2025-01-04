@@ -67,5 +67,4 @@ export const toeiBusPointCard: CardListType = {
   displayButtonClick: "buttonClicked",
   orderButtonClick: "buttonClicked",
   layer: toeiBusSymbolLayer,
-  
 }
