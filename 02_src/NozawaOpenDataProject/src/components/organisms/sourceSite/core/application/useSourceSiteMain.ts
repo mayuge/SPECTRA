@@ -1,8 +1,6 @@
-import { useTestStoreAdapter } from "@/infrastructure/adapters/storeAdapter"
 import { useSiteRouteAdapter } from "@/infrastructure/adapters/routeAdapter"
-import { VIEW_SITE_ROOT_NAME } from "@/domain/params/siteRootName"
+import { VIEW_SITE_ROOT_NAME, HOME_SITE_ROOT_NAME } from "@/domain/params/siteRootName"
 const useSourceSiteMain = () => {
-  const { getCount } = useTestStoreAdapter()
   const { routeTo } = useSiteRouteAdapter()
   //ボタンが押されたとき
   const buttonClicked = () => {
@@ -12,10 +10,14 @@ const useSourceSiteMain = () => {
   const navigateToViewSite = () => {
     routeTo(VIEW_SITE_ROOT_NAME)
   }
+  const navigateToHomeSite = () => {
+    routeTo(HOME_SITE_ROOT_NAME)
+  }
+
   return {
     buttonClicked,
     navigateToViewSite,
-    getCount,
+    navigateToHomeSite,
   }
 }
 export default useSourceSiteMain

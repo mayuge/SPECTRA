@@ -15,11 +15,10 @@ const HomeSiteMain: React.FC = () => {
         src="/assets/platou_test_4.png"
         className="absolute inset-0 w-full h-full object-cover z-[-1]"
       />
-
       <div className="relative p-4 justify-center">
         <div className="max-w-screen-xl w-full mx-auto">
           <Header
-            text="NOZAWA OPENDATA PROJECT"
+            text="SPECTRA PROJECT"
             icon="menu"
             size="large"
             variant="header-light"
@@ -28,7 +27,7 @@ const HomeSiteMain: React.FC = () => {
           />
           <div className="my-12">
             <TextLabel
-              text={`都市の新たな価値を\n可視化する`}
+              text={`交通の新たな価値を\n可視化する`}
               size="xlarge"
               bold={true}
               isBlack={true}
@@ -36,7 +35,7 @@ const HomeSiteMain: React.FC = () => {
           </div>
           <div className="my-12">
             <TextLabel
-              text={`交通・不動産・地理・災害等さまざまなオープンデータを\nかけ合わせることで新たな気づきが生まれる`}
+              text={`鳥瞰的な視点を提供することによって、\n交通に新たな価値が生まれる`}
               size="large"
               bold={true}
               isBlack={true}
@@ -58,12 +57,12 @@ const HomeSiteMain: React.FC = () => {
       <div className="h-[60vh] bg-gray-20 justify-center p-8">
         <div className="max-w-screen-xl w-full mx-auto m-8 ">
           <div className="my-10">
-            <TextLabel text={`カテゴリ別に都市を見る`} size="large" bold={true} isBlack={false} />
+            <TextLabel text={`交通手段別で見る`} size="large" bold={true} isBlack={false} />
           </div>
           <div className="flex w-full gap-10">
             <Button
-              text="人口×交通で都市を見る"
-              iconLeft="layers"
+              text="鉄道中心で見る"
+              iconLeft="train"
               variant="btn-light"
               size="normal"
               shape="circle"
@@ -71,8 +70,8 @@ const HomeSiteMain: React.FC = () => {
               onClick={navigateToViewSite}
             />
             <Button
-              text="不動産×交通から都市を見る"
-              iconLeft="layers"
+              text="バス中心で見る"
+              iconLeft="directions_bus"
               variant="btn-light"
               size="normal"
               shape="circle"
@@ -80,8 +79,8 @@ const HomeSiteMain: React.FC = () => {
               onClick={navigateToViewSite}
             />
             <Button
-              text="地理×交通から都市を見る"
-              iconLeft="layers"
+              text="シェアサイクル中心で見る"
+              iconLeft="directions_bike"
               variant="btn-light"
               size="normal"
               shape="circle"
@@ -89,8 +88,8 @@ const HomeSiteMain: React.FC = () => {
               onClick={navigateToViewSite}
             />
             <Button
-              text="災害×交通から都市を見る"
-              iconLeft="layers"
+              text="徒歩中心で見る"
+              iconLeft="directions_walk"
               variant="btn-light"
               size="normal"
               shape="circle"
