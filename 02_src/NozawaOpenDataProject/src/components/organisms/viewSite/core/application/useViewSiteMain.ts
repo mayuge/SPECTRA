@@ -17,7 +17,7 @@ const useViewSiteMain = () => {
   const { getNowTime } = useGetTimeDataAdapter()
   //更新時刻のセッター・ゲッター
   const { setTimeData, getTimeData } = useTimeDataStoreAdapter()
-  const { reqHelloCycleStationInfo } = useReqCycleDataAdapter()
+  const { reqHelloCycleStationInfo, reqDocomoBikeShareStationInfo } = useReqCycleDataAdapter()
   const { reqTokyoMetroRealTimeInfo } = useReqRailwayDataAdapter()
   const {
     getLayerBarOpen,
@@ -45,7 +45,8 @@ const useViewSiteMain = () => {
    * コールバック関数をまとめて呼び出す
    */
   const useCallback = () => {
-    tokyoMetroRealTimeInfoCallback()
+    //tokyoMetroRealTimeInfoCallback()
+    docomoBikeShareStationInfoCallback()
     setTimeData(getNowTime())
     console.log(getTimeData())
   }
@@ -63,7 +64,15 @@ const useViewSiteMain = () => {
    */
   const helloCycleStationInfoCallback = async () => {
     const res = await reqHelloCycleStationInfo()
-    return res
+    console.log(res)
+  }
+
+  /**
+   * ドコモバイクシェアステーション情報
+   */
+  const docomoBikeShareStationInfoCallback = async () => {
+    const res = await reqDocomoBikeShareStationInfo()
+    console.log(res)
   }
 
   // ホームサイトに遷移する関数
@@ -80,6 +89,7 @@ const useViewSiteMain = () => {
   return {
     useCallback,
     helloCycleStationInfoCallback,
+    docomoBikeShareStationInfoCallback,
     buttonClicked,
     routeToHomeSite,
     getLayerBarOpen,

@@ -28,14 +28,16 @@ const trainLineLayer: LayerType = {
     ],
     "line-width": [
       "interpolate", // 線幅を補間する
-      ["linear"],    // 線形補間
-      ["zoom"],      // ズームレベルを基に補間
-      10, 1,          // ズームレベル10で線幅2
-      15, 10          // ズームレベル15で線幅10
+      ["linear"], // 線形補間
+      ["zoom"], // ズームレベルを基に補間
+      10,
+      1, // ズームレベル10で線幅2
+      15,
+      10, // ズームレベル15で線幅10
     ],
     "line-opacity": 1,
   },
-  
+
   popup: {
     template: (properties: any) => {
       const div = document.createElement("div")

@@ -20,8 +20,8 @@ let helloCycleSymbolLayer = {
   sourceId: "pointHelloCycle",
   source: helloCycleSource,
   layout: {
-    "icon-image": "default",
-    "icon-size": 0.08,
+    "icon-image": "yellowBike",
+    "icon-size": 0.04,
     "icon-allow-overlap": true,
     visibility: "visible",
   },
@@ -29,7 +29,7 @@ let helloCycleSymbolLayer = {
 } as LayerType
 
 export const helloCyclePointCard: CardListType = {
-  logoImg: "/assets/logos/default.webp",
+  logoImg: "/assets/logos/yellowBike.webp",
   text: "HelloCycleステーション",
   dangerBadge: "交通",
   warningBadge: "地下鉄",

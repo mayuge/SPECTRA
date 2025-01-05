@@ -18,12 +18,12 @@ const terrainLayer: LayerType = {
     visibility: "visible",
   },
   paint: {
-    "hillshade-exaggeration": 0.5,
+    "hillshade-exaggeration": 1.0,
   },
 }
 
 export const terrainCard: CardListType = {
-  logoImg: "",
+  logoImg: "/assets/logos/mountain.webp",
   text: "陰影起伏",
   dangerBadge: "地形",
   warningBadge: "陰影",

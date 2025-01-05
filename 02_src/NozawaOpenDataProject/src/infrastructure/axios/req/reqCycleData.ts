@@ -33,12 +33,40 @@ const useReqCycleData = () => {
           is_charging_station: station.is_charging_station,
         },
       }))
-
       return features
     } catch (error: any) {
       throw new Error(error.message)
     }
   }
-  return { reqHelloCycleStationInfo }
+  const reqDocomoBikeShareStationInfo = async () => {
+    try {
+      const url = process.env.NEXT_PUBLIC_DOCOMO_BIKE_SHARE_STATION_INFO_URL
+      const token = process.env.NEXT_PUBLIC_OPEN_DATA_CHALLENGE_TOKEN_DEFAULT
+      const config = {
+        method: "GET",
+        url: `${url}${token}`,
+      }
+      //リクエストを行う
+      const res = await http.request(config)
+      const data = res.data
+      const features = data.data.stations.map((station: any) => ({
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [station.lon, station.lat],
+        },
+        properties: {
+          name: station.name,
+          station_id: station.station_id,
+          region_id: station.region_id,
+          vehicle_capacity: station.capacity,
+        },
+      }))
+      return features
+    } catch (error: any) {
+      throw new Error(error.message)
+    }
+  }
+  return { reqHelloCycleStationInfo, reqDocomoBikeShareStationInfo }
 }
 export default useReqCycleData

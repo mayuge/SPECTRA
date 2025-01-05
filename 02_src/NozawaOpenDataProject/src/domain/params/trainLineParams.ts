@@ -318,7 +318,7 @@ export const trainLineParams = {
     color: "#27404c",
   },
   東京モノレール羽田線: {
-    color:"#019DE5"
+    color: "#019DE5",
   },
   千葉都市モノレール: {
     color: "#2843ba",
