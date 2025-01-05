@@ -1,19 +1,19 @@
-import type { GeoJSONSourceSpecification, LineLayerSpecification } from "maplibre-gl"
+import type { GeoJSONSourceSpecification } from "maplibre-gl"
 import { CardListType } from "@/components/organisms/viewSite/core/types/cardListType"
 import { LayerType } from "@/components/organisms/viewSite/core/types/layerType"
 import { trainLineParams } from "@/domain/params/trainLineParams"
 
 // GeoJSON ソース
-const tokyoMetroSource: GeoJSONSourceSpecification = {
+const trainSource: GeoJSONSourceSpecification = {
   type: "geojson",
   data: "/geojson/LineTrain.geojson",
 }
 
 const trainLineLayer: LayerType = {
-  id: "lineTokyoMetro",
+  id: "lineTrain",
   type: "line",
-  sourceId: "LinetokyoMetro",
-  source: tokyoMetroSource,
+  sourceId: "LineTrain",
+  source: trainSource,
   layout: {
     "line-join": "round",
     "line-cap": "round",
@@ -22,13 +22,20 @@ const trainLineLayer: LayerType = {
   paint: {
     "line-color": [
       "match",
-      ["get", "N02_003"],
+      ["get", "N02_003"], // 路線名
       ...Object.entries(trainLineParams).flatMap(([line, { color }]) => [line, color]),
       "#808080", // デフォルト色（色が一致しない場合）
     ],
-    "line-width": 3,
+    "line-width": [
+      "interpolate", // 線幅を補間する
+      ["linear"],    // 線形補間
+      ["zoom"],      // ズームレベルを基に補間
+      10, 2,          // ズームレベル10で線幅2
+      15, 10          // ズームレベル15で線幅10
+    ],
     "line-opacity": 1,
   },
+  
   popup: {
     template: (properties: any) => {
       const div = document.createElement("div")
@@ -48,16 +55,16 @@ const trainLineLayer: LayerType = {
 }
 
 export const trainLineCard: CardListType = {
-  logoImg: "/assets/logos/tokyoMetro.webp",
-  text: "東京メトロ",
+  logoImg: "/assets/logos/kokkousyou.webp",
+  text: "鉄道路線",
   dangerBadge: "交通",
-  warningBadge: "地下鉄",
+  warningBadge: "鉄道",
   primaryBadge: "ラインデータ",
-  darkBadge: "オープンデータチャレンジ",
+  darkBadge: "国土数値情報",
   isShadow: false,
   shape: "square",
   isDisplayLayer: true,
-  infoButtonClick: "tokyoMetroRealTimeInfoCallback",
+  infoButtonClick: "buttonClicked",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "buttonClicked",
   layer: trainLineLayer,

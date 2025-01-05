@@ -28,7 +28,7 @@ export const cardLayerList: CardListType[] = [
   terrainCard,
   sateliteMapCard,
   googleCard,
-  konjakuCard,
+  // konjakuCard,
 ]
 
 export default cardLayerList

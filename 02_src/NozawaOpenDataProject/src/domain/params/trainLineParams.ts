@@ -1,4 +1,5 @@
 export const trainLineParams = {
+  //東京メトロ
   銀座線: {
     color: "#FF9500",
   },
@@ -29,6 +30,7 @@ export const trainLineParams = {
   副都心線: {
     color: "#9C5E31",
   },
+  //都営地下鉄
   浅草線: {
     color: "#FF535F",
   },
@@ -47,7 +49,16 @@ export const trainLineParams = {
   日暮里舎人ライナー: {
     color: "#85CA58",
   },
-  
+  //JR
+  東北新幹線: {
+    color: "#008000",
+  },
+  上越新幹線: {
+    color: "#008000",
+  },
+  東海道新幹線: {
+    color: "#0000FF",
+  },
   八高線: {
     color: "#A09D95",
   },
@@ -305,6 +316,9 @@ export const trainLineParams = {
   },
   ゆりかもめ: {
     color: "#27404c",
+  },
+  東京モノレール羽田線: {
+    color:"#019DE5"
   },
   千葉都市モノレール: {
     color: "#2843ba",
