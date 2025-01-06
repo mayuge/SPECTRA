@@ -32,7 +32,7 @@ export type LayerType = {
   layout: {
     "line-join"?: "bevel" | "round" | "miter"
     "line-cap"?: "butt" | "round" | "square"
-    "icon-image"?: string
+    "icon-image"?: any
     "icon-size"?: number
     "icon-allow-overlap"?: boolean
     "text-field"?: any // テキストフィールドを追加

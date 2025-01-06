@@ -1,5 +1,6 @@
 import { CardListType } from "@/components/organisms/viewSite/core/types/cardListType"
 import { LayerType } from "@/components/organisms/viewSite/core/types/layerType"
+import { companyLogoParams } from "@/domain/params/companyLogoParams"
 import type { GeoJSONSourceSpecification } from "maplibre-gl"
 
 const trainSource: GeoJSONSourceSpecification = {
@@ -13,8 +14,13 @@ const trainSymbolLayer: LayerType = {
   sourceId: "pointTrain",
   source: trainSource,
   layout: {
-    "icon-image": "trainLogo",
-    "icon-size": 0.16,
+    "icon-image": [
+      "match",
+      ["get", "N02_004"], // 会社
+      ...Object.entries(companyLogoParams).flatMap(([line, { path }]) => [line, path]), // ロゴと会社名のペア
+      "trainLogo", // デフォルトのロゴ
+    ],
+    "icon-size": 0.12,
     "icon-allow-overlap": true,
     visibility: "visible",
     "text-field": ["get", "N02_005"], // テキストフィールドに駅名を設定
@@ -29,7 +35,7 @@ const trainSymbolLayer: LayerType = {
     "text-halo-color": "#ffffff", // テキストの縁取りの色を設定
     "text-halo-width": 1, // テキストの縁取りの幅を設定
   },
-  minzoom: 12,
+  minzoom: 14,
   popup: {
     template: (properties: any) => {
       const div = document.createElement("div")
@@ -44,7 +50,7 @@ const trainSymbolLayer: LayerType = {
             allowfullscreen
           ></iframe>
           <div class="flex items-center gap-2 mt-2">
-            <h3 class="text-lg font-semibold">${properties.N02_005}駅</h3>
+            <h3 class="text-lg font-semibold">${properties.N02_004}${properties.N02_005}駅</h3>
           </div>
         </div>
       `
@@ -58,7 +64,7 @@ const trainSymbolLayer: LayerType = {
 
 export const trainPointCard: CardListType = {
   logoImg: "/assets/logos/trainLogo.webp",
-  text: "東京メトロ駅",
+  text: "鉄道　駅",
   dangerBadge: "交通",
   warningBadge: "地下鉄",
   primaryBadge: "ポイントデータ",

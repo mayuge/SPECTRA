@@ -57,7 +57,7 @@ const trainLineLayer: LayerType = {
 }
 
 export const trainLineCard: CardListType = {
-  logoImg: "/assets/logos/kokkousyou.webp",
+  logoImg: "/assets/logos/trainLogo.webp",
   text: "鉄道路線",
   dangerBadge: "交通",
   warningBadge: "鉄道",

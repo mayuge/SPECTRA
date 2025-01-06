@@ -25,7 +25,7 @@ let docomoBikeShareSymbolLayer = {
     "icon-allow-overlap": true,
     visibility: "visible",
   },
-  minzoom: 14,
+  minzoom: 15,
 } as LayerType
 
 export const docomoBikeSharePointCard: CardListType = {
