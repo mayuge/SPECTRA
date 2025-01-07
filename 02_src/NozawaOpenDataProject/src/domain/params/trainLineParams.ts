@@ -176,6 +176,9 @@ export const trainLineParams = {
   池袋線: {
     color: "#EF7A00",
   },
+  西武有楽町線: {
+    color: "#EF7A00",
+  },
   豊島線: {
     color: "#EF7A00",
   },

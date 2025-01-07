@@ -14,16 +14,16 @@ const TextLabel: React.FC<TextLabelProps> = ({ text, size, bold, isBlack }: Text
   }
 
   // サイズの種類　small normal largeから指定 fontSize を設定
-  let fontSize = "text-base" // デフォルトのサイズ
+  let fontSize = "md:text-base text-xs" // デフォルトのサイズ
 
   if (size === "mini") {
     fontSize = "text-[8px]" // mini サイズの padding
   } else if (size === "small") {
     fontSize = "text-xs" // small サイズの padding
   } else if (size === "large") {
-    fontSize = "text-2xl" // large サイズの padding
+    fontSize = "md:text-2xl text-xl" // large サイズの padding
   } else if (size === "xlarge") {
-    fontSize = "text-6xl" // large サイズの padding
+    fontSize = "md:text-6xl text-5xl" // large サイズの padding
   }
 
   // 文字の太さ

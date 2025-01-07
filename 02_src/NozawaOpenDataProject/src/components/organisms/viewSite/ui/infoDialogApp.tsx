@@ -12,7 +12,7 @@ const DetailInfoDialogApp: React.FC = () => {
     <div className="absolute top-[150px] right-0 p-4 z-10 ">
       <div className="relative max-w-md">
         <DialogHeader
-          text="詳細情報"
+          text="交通情報"
           icon="close"
           variant="header-dark"
           size="normal"
@@ -21,11 +21,9 @@ const DetailInfoDialogApp: React.FC = () => {
           }}
           isShadow={false}
         />
-        <div className="max-h-[200px] max-w-[400px] min-h-[150px] min-w-[150px] bg-white rounded-b-lg shadow-md shadow-black">
+        <div className="max-h-[200px] max-w-[800px] min-h-[150px] min-w-[150px] bg-white rounded-b-lg shadow-md shadow-black">
           {/* サンプルテキストを追加 */}
-          <p className="p-4 text-black">
-            ここに内容を追加してください。ここにレイヤーの色やプロパティを調整できるものをおいてもいいかも
-          </p>
+          <p className="p-4 text-black"></p>
         </div>
       </div>
     </div>

@@ -60,7 +60,8 @@ const Header: React.FC<HeaderProps> = ({
 
   return (
     <header
-      className={`${headerVariant} ${circleShape} w-full flex items-center justify-between shadow-md shadow-black text-2xl font-bold`}
+      onClick={onClick}
+      className={`${headerVariant} ${circleShape} w-full flex items-center justify-between shadow-md shadow-black md:text-2xl text-xl font-bold`}
     >
       <div className={`${headerVariant} ml-8`}>{text}</div>
       <div>

@@ -83,7 +83,7 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <button
-      className={`${paddingSize} ${btnVariant} ${cornerShape} ${buttonShadow} flex items-center gap-1`} // flex と items-center を追加
+      className={`${paddingSize} ${btnVariant} ${cornerShape} ${buttonShadow} flex items-center gap-1 md:text-base text-xs`} // flex と items-center を追加
       onClick={onClick}
     >
       {iconLeft && <span className="material-icons">{iconLeft}</span>} {/* アイコンを表示*/}

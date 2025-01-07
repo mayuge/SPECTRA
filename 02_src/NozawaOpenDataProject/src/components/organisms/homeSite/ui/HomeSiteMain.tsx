@@ -23,7 +23,7 @@ const HomeSiteMain: React.FC = () => {
             size="large"
             variant="header-light"
             isCircle={true}
-            onClick={buttonClicked}
+            onClick={() => {}}
           />
           <div className="my-12">
             <TextLabel
@@ -54,12 +54,12 @@ const HomeSiteMain: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="h-[60vh] bg-gray-20 justify-center p-8">
+      <div className="h-[65vh] bg-gray-20 justify-center p-8">
         <div className="max-w-screen-xl w-full mx-auto m-8 ">
           <div className="my-10">
             <TextLabel text={`交通手段別で見る`} size="large" bold={true} isBlack={false} />
           </div>
-          <div className="flex w-full gap-10">
+          <div className="flex flex-wrap w-full gap-4 sm:gap-6 md:gap-10">
             <Button
               text="鉄道中心で見る"
               iconLeft="train"
@@ -97,6 +97,7 @@ const HomeSiteMain: React.FC = () => {
               onClick={navigateToViewSite}
             />
           </div>
+
           <div className="mt-16 mb-8">
             <TextLabel text={`リリースノート`} size="large" bold={true} isBlack={false} />
           </div>

@@ -3,6 +3,7 @@ import Badge from "@/components/atoms/labels/Badge"
 import Button from "@/components/atoms/buttons/Button"
 import BaseColorInput from "@/components/atoms/Inputs/ColorInput"
 import BaseSliderInput from "@/components/atoms/Inputs/SliderInput"
+import TextLabel from "@/components/atoms/labels/TextLabel"
 
 type CardProps = {
   text: string // カードテキスト
@@ -86,7 +87,7 @@ const Card: React.FC<CardProps> = ({
           <div className="pb-1 flex justify-between gap-2">
             <div className="inline-flex items-center gap-1 text-black">
               <img src={logoImgPath} className="w-5 h-5" />
-              {text}
+              <TextLabel text={text} size="normal" bold={false}/>
             </div>
             <div>
               <Button
