@@ -29,7 +29,7 @@ const Button: React.FC<ButtonProps> = ({
   if (size === "mini") {
     paddingSize = "p-0" // mini サイズの padding
   } else if (size === "small") {
-    paddingSize = "p-2" // small サイズの padding
+    paddingSize = "p-3" // small サイズの padding
   } else if (size === "large") {
     paddingSize = "p-6" // large サイズの padding
   }

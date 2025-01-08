@@ -20,19 +20,19 @@ const trainSymbolLayer: LayerType = {
       ...Object.entries(companyLogoParams).flatMap(([line, { path }]) => [line, path]), // ロゴと会社名のペア
       "trainLogo", // デフォルトのロゴ
     ],
-    "icon-size": 0.12,
+    "icon-size": 0.20,
     "icon-allow-overlap": true,
     visibility: "visible",
     "text-field": ["get", "N02_005"], // テキストフィールドに駅名を設定
-    "text-size": 10, // テキストサイズを設定
+    "text-size": 12, // テキストサイズを設定
     "text-offset": [0, 1.0], // シンボルの少し上にテキストを配置
     "text-anchor": "top", // テキストアンカーを上に設定
     "text-allow-overlap": true, // テキストのオーバーラップを許可
     "text-max-width": 300, // テキストの最大幅を設定
   },
   paint: {
-    "text-color": "#000000", // テキストの色を設定
-    "text-halo-color": "#ffffff", // テキストの縁取りの色を設定
+    "text-color": "#ffffff", // テキストの色を設定
+    "text-halo-color": "#000000", // テキストの縁取りの色を設定
     "text-halo-width": 1, // テキストの縁取りの幅を設定
   },
   minzoom: 14,

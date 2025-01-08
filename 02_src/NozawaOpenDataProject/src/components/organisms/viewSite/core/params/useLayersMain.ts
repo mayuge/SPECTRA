@@ -1,6 +1,6 @@
 import type { CardListType } from "@/components/organisms/viewSite/core/types/cardListType"
 import { plateauCard } from "@/components/organisms/viewSite/core/params/plateauLayer"
-import { toeiBusCard } from "@/components/organisms/viewSite/core/params/toeiBusLayer"
+import { lineBusCard } from "@/components/organisms/viewSite/core/params/busLineLayer"
 import { cycleBlockCard } from "@/components/organisms/viewSite/core/params/cycleBlockLayer"
 import { terrainCard } from "@/components/organisms/viewSite/core/params/terrainLayer"
 import { osmCard } from "@/components/organisms/viewSite/core/params/osmLayer"
@@ -10,16 +10,16 @@ import { konjakuCard } from "@/components/organisms/viewSite/core/params/konjaku
 import { sateliteMapCard } from "@/components/organisms/viewSite/core/params/sateliteMapLayer"
 import { helloCyclePointCard } from "@/components/organisms/viewSite/core/params/helloCyclePointLayer"
 import { docomoBikeSharePointCard } from "@/components/organisms/viewSite/core/params/docomoBikeSharePointLayer"
-import { toeiBusPointCard } from "@/components/organisms/viewSite/core/params/toeiBusPointLayer"
+import { busPointCard } from "@/components/organisms/viewSite/core/params/busPointLayer"
 import { trainPointCard } from "@/components/organisms/viewSite/core/params/trainPointLayer"
 
 export const cardLayerList: CardListType[] = [
   docomoBikeSharePointCard,
   helloCyclePointCard,
-  toeiBusPointCard,
+  busPointCard,
   trainPointCard,
   trainLineCard,
-  // toeiBusCard,
+  lineBusCard,
   plateauCard,
   osmCard,
   // cycleBlockCard,
