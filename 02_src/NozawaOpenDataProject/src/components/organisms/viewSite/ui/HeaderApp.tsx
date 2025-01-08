@@ -5,7 +5,7 @@ import Button from "@/components/atoms/buttons/Button"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
 
 const HeaderApp: React.FC = () => {
-  const { routeToHomeSite, useCallback } = useViewSiteMain()
+  const { routeToHomeSite, openAllDialogs } = useViewSiteMain()
 
   return (
     <div className="relative z-10 pr-6 py-6 flex justify-start items-center bg-gray-20 shadow-sm shadow-black">
@@ -21,18 +21,9 @@ const HeaderApp: React.FC = () => {
       </div>
       <div className="flex items-center md:gap-4 gap-2">
         <Button
-          iconLeft="photo_camera"
+          iconLeft="commute"
           isShadow={true}
-          onClick={useCallback}
-          shape="circle"
-          size="large"
-          text=""
-          variant="btn-light"
-        />
-        <Button
-          iconLeft="autorenew"
-          isShadow={true}
-          onClick={useCallback}
+          onClick={openAllDialogs}
           shape="circle"
           size="large"
           text=""

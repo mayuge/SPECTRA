@@ -10,7 +10,7 @@ const DetailInfoDialogApp: React.FC = () => {
 
   return (
     <div className="absolute top-[150px] right-0 p-4 z-10 ">
-      <div className="relative max-w-md">
+      <div className="relative  w-[50vw]">
         <DialogHeader
           text="交通情報"
           icon="close"
@@ -21,7 +21,7 @@ const DetailInfoDialogApp: React.FC = () => {
           }}
           isShadow={false}
         />
-        <div className="max-h-[200px] max-w-[800px] min-h-[150px] min-w-[150px] bg-white rounded-b-lg shadow-md shadow-black">
+        <div className="h-[50vh] w-[50vw] min-h-[150px] min-w-[150px] bg-white rounded-b-lg shadow-md shadow-black">
           {/* サンプルテキストを追加 */}
           <p className="p-4 text-black"></p>
         </div>
