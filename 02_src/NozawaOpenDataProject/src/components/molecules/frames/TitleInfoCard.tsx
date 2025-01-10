@@ -3,23 +3,20 @@ import Badge from "@/components/atoms/labels/Badge"
 import Button from "@/components/atoms/buttons/Button"
 import TextLabel from "@/components/atoms/labels/TextLabel"
 
-type InfoCardProps = {
+type CardProps = {
   titleText:string
   text: string // カードテキスト
   logoImg: string // ロゴ画像のパス
   isShadow: boolean // 影の有無
   shape?: string // カードの形状を文字列で指定 square(四角形) circle（丸）デフォルトで角丸
-  infoButtonClick: () => void
 }
 
-const InfoCard: React.FC<InfoCardProps> = ({
-  titleText,
+const Card: React.FC<CardProps> = ({
   text,
   logoImg,
   shape,
   isShadow,
-  infoButtonClick,
-}: InfoCardProps) => {
+}: CardProps) => {
   // カードのスタイルの種類 デフォルトは primary
   let cardVariant = "bg-white"
 
@@ -47,27 +44,14 @@ const InfoCard: React.FC<InfoCardProps> = ({
     <div className={`${cardVariant} ${cornerShape} ${buttonShadow} p-2 hover:bg-gray-90`}>
       <div className="flex items-center w-full gap-1">
         <div className="w-full">
-          <div className="pb-1 flex justify-between gap-2">
             <div className="inline-flex items-center gap-4 text-black">
-              <img src={logoImgPath} className="w-7 h-7" />
-              <TextLabel text={titleText} size="normal" bold={true} />
-              <TextLabel text={text} size="normal" bold={false} />
+              <img src={logoImgPath} className="w-8 h-8" />
+              <TextLabel text={text} size="large" bold={false} />
             </div>
-            <div>
-              <Button
-                variant="btn-text-gray"
-                size="mini"
-                iconLeft="info"
-                onClick={infoButtonClick}
-              />
-            </div>
-          </div>
         </div>
       </div>
-
-      <hr className="border-gray-70" />
     </div>
   )
 }
 
-export default InfoCard
+export default Card

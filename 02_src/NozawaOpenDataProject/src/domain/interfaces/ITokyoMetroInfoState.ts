@@ -23,7 +23,7 @@ export interface ITokyoMetroInfoState {
   setChiyodaInfo: (info: string) => void
   getChiyodaInfo: () => string
   setYurakuchoInfo: (info: string) => void
-  getYurackuchoInfo: () => string
+  getYurakuchoInfo: () => string
   setHanzomonInfo: (info: string) => void
   getHanzomonInfo: () => string
   setNanbokuInfo: (info: string) => void

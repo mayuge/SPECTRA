@@ -2,15 +2,24 @@
 import React from "react"
 import DialogHeader from "@/components/molecules/header/DialogHeader"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
-
+import InfoCard from "@/components/molecules/frames/InfoCard"
 const DetailInfoDialogApp: React.FC = () => {
-  const { setDetailInfoDialogOpen, getDetailInfoDialogOpen } = useViewSiteMain()
+  const { setDetailInfoDialogOpen, getDetailInfoDialogOpen, getGinzaInfo,
+    getChiyodaInfo,
+    getHanzomonInfo,
+    getHibiyaInfo,
+    getMarunouchiInfo,
+    getMarunouchiBranchInfo,
+    getTozaiInfo,
+    getYurakuchoInfo,
+    getNanbokuInfo,
+    getHukutoshinInfo, } = useViewSiteMain()
 
   if (!getDetailInfoDialogOpen()) return null // 完全に非表示になった後にDOMを削除
 
   return (
     <div className="absolute top-[150px] right-0 p-4 z-10 ">
-      <div className="relative  w-[50vw]">
+      <div className="relative  md:w-[50vw] w-[90vw]">
         <DialogHeader
           text="交通情報"
           icon="close"
@@ -21,9 +30,21 @@ const DetailInfoDialogApp: React.FC = () => {
           }}
           isShadow={false}
         />
-        <div className="h-[50vh] w-[50vw] min-h-[150px] min-w-[150px] bg-white rounded-b-lg shadow-md shadow-black">
-          {/* サンプルテキストを追加 */}
-          <p className="p-4 text-black"></p>
+
+        <div className="h-[50vh] md:w-[50vw] w-[90vw] bg-white rounded-b-lg shadow-md shadow-black overflow-y-auto no-scrollbar">
+        <InfoCard titleText="東京メトロ各線　運行情報" text="" logoImg="assets/logos/TokyoMetro.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
+          <div className="ml-4">
+            <InfoCard titleText="銀座線" text={getGinzaInfo()} logoImg="assets/logos/銀座線.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
+            <InfoCard titleText="丸ノ内線" text={getMarunouchiInfo()} logoImg="assets/logos/丸ノ内線.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
+            <InfoCard titleText="丸ノ内線支線" text={getMarunouchiBranchInfo()} logoImg="assets/logos/丸ノ内線.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
+            <InfoCard titleText="日比谷線" text={getHibiyaInfo()} logoImg="assets/logos/日比谷線.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
+            <InfoCard titleText="東西線" text={getTozaiInfo()} logoImg="assets/logos/東西線.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
+            <InfoCard titleText="千代田線" text={getChiyodaInfo()} logoImg="assets/logos/千代田線.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
+            <InfoCard titleText="有楽町線" text={getYurakuchoInfo()} logoImg="assets/logos/有楽町線.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
+            <InfoCard titleText="半蔵門線" text={getHanzomonInfo()} logoImg="assets/logos/半蔵門線.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
+            <InfoCard titleText="南北線" text={getNanbokuInfo()} logoImg="assets/logos/南北線.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
+            <InfoCard titleText="副都心線" text={getHukutoshinInfo()} logoImg="assets/logos/副都心線.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
+          </div>
         </div>
       </div>
     </div>

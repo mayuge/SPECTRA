@@ -34,7 +34,7 @@ const useTokyoMetroInfoStore = create<ITokyoMetroInfoState>()((set, get) => ({
   getChiyodaInfo: () => get().chiyodaInfo,
   //丸ノ内線運行状況のセッター/ゲッター
   setYurakuchoInfo: (info: string) => set(() => ({ yurakuchoInfo: info })),
-  getYurackuchoInfo: () => get().yurakuchoInfo,
+  getYurakuchoInfo: () => get().yurakuchoInfo,
   //丸ノ内線運行状況のセッター/ゲッター
   setHanzomonInfo: (info: string) => set(() => ({ hanzomonInfo: info })),
   getHanzomonInfo: () => get().hanzomonInfo,

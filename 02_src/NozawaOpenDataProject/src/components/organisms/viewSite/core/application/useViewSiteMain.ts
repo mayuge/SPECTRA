@@ -50,7 +50,7 @@ const useViewSiteMain = () => {
     setTozaiInfo,
     getTozaiInfo,
     setYurakuchoInfo,
-    getYurackuchoInfo,
+    getYurakuchoInfo,
     setHanzomonInfo,
     getHanzomonInfo,
     setNanbokuInfo,
@@ -88,8 +88,9 @@ const useViewSiteMain = () => {
     setHanzomonInfo(res[7]["odpt:trainInformationText"]["ja"])
     setNanbokuInfo(res[8]["odpt:trainInformationText"]["ja"])
     setHukutoshinInfo(res[9]["odpt:trainInformationText"]["ja"])
+    console.log(res)
   }
-
+  
   /**
    * ハローサイクリングステーション情報
    */
@@ -141,6 +142,7 @@ const useViewSiteMain = () => {
     getHibiyaInfo,
     getMarunouchiInfo,
     getMarunouchiBranchInfo,
+    getYurakuchoInfo,
     getTozaiInfo,
     getNanbokuInfo,
     getHukutoshinInfo,
