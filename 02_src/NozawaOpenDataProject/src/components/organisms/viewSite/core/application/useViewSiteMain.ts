@@ -4,6 +4,7 @@ import {
 } from "@/infrastructure/adapters/httpReqAdapter"
 import {
   useTokyoMetroStoreAdapter,
+  useToeiTrainInfoStoreAdapter,
   useDialogStoreAdapter,
   useManageLayerAdapter,
   useTimeDataStoreAdapter,
@@ -19,14 +20,13 @@ const useViewSiteMain = () => {
   //更新時刻のセッター・ゲッター
   const { setTimeData, getTimeData } = useTimeDataStoreAdapter()
   const { reqHelloCycleStationInfo, reqDocomoBikeShareStationInfo } = useReqCycleDataAdapter()
-  const { reqTokyoMetroRealTimeInfo } = useReqRailwayDataAdapter()
+  const { reqTokyoMetroRealTimeInfo, reqToeiTrainRealTimeInfo } = useReqRailwayDataAdapter()
+  //ダイアログ開閉
   const {
     getLayerBarOpen,
     getDetailInfoDialogOpen,
-    getMovieDialogOpen,
     setLayerBarOpen,
     setDetailInfoDialogOpen,
-    setMovieDialogOpen,
   } = useDialogStoreAdapter()
   const {
     changeLayerOrder,
@@ -58,6 +58,21 @@ const useViewSiteMain = () => {
     setHukutoshinInfo,
     getHukutoshinInfo,
   } = useTokyoMetroStoreAdapter()
+
+  const {
+    setOedoInfo,
+    getOedoInfo,
+    setMitaInfo,
+    getMitaInfo,
+    setAsakusaInfo,
+    getAsakusaInfo,
+    setShinjukuInfo,
+    getShinjukuInfo,
+    setArakawaInfo,
+    getArakawaInfo,
+    setNipporitoneriInfo,
+    getNipporitoneriInfo,
+  } = useToeiTrainInfoStoreAdapter()
   /**
    * ボタンがクリックされた場合
    **/
@@ -69,6 +84,7 @@ const useViewSiteMain = () => {
    */
   const useCallback = () => {
     tokyoMetroRealTimeInfoCallback()
+    toeiTrainRealTimeInfoCallback()
     setTimeData(getNowTime())
     console.log(getTimeData())
   }
@@ -88,7 +104,16 @@ const useViewSiteMain = () => {
     setHanzomonInfo(res[7]["odpt:trainInformationText"]["ja"])
     setNanbokuInfo(res[8]["odpt:trainInformationText"]["ja"])
     setHukutoshinInfo(res[9]["odpt:trainInformationText"]["ja"])
-    console.log(res)
+  }
+
+  const toeiTrainRealTimeInfoCallback = async () => {
+    const res = await reqToeiTrainRealTimeInfo()
+    setAsakusaInfo(res[0]["odpt:trainInformationText"]["ja"])
+    setMitaInfo(res[1]["odpt:trainInformationText"]["ja"])
+    setShinjukuInfo(res[2]["odpt:trainInformationText"]["ja"])
+    setOedoInfo(res[3]["odpt:trainInformationText"]["ja"])
+    setArakawaInfo(res[4]["odpt:trainInformationText"]["ja"])
+    setNipporitoneriInfo(res[5]["odpt:trainInformationText"]["ja"])
   }
   
   /**
@@ -113,7 +138,6 @@ const useViewSiteMain = () => {
   const openAllDialogs = () => {
     setLayerBarOpen(true)
     setDetailInfoDialogOpen(true)
-    setMovieDialogOpen(true)
   }
 
   return {
@@ -124,8 +148,6 @@ const useViewSiteMain = () => {
     routeToHomeSite,
     getLayerBarOpen,
     getDetailInfoDialogOpen,
-    getMovieDialogOpen,
-    setMovieDialogOpen,
     setLayerBarOpen,
     setDetailInfoDialogOpen,
     openAllDialogs,
@@ -146,6 +168,12 @@ const useViewSiteMain = () => {
     getTozaiInfo,
     getNanbokuInfo,
     getHukutoshinInfo,
+    getAsakusaInfo,
+    getShinjukuInfo,
+    getMitaInfo,
+    getOedoInfo,
+    getArakawaInfo,
+    getNipporitoneriInfo,
   }
 }
 export default useViewSiteMain

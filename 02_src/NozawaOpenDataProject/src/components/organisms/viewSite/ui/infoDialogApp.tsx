@@ -3,6 +3,7 @@ import React from "react"
 import DialogHeader from "@/components/molecules/header/DialogHeader"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
 import InfoCard from "@/components/molecules/frames/InfoCard"
+import TitleInfoCard from "@/components/molecules/frames/TitleInfoCard"
 const DetailInfoDialogApp: React.FC = () => {
   const { setDetailInfoDialogOpen, getDetailInfoDialogOpen, getGinzaInfo,
     getChiyodaInfo,
@@ -13,7 +14,14 @@ const DetailInfoDialogApp: React.FC = () => {
     getTozaiInfo,
     getYurakuchoInfo,
     getNanbokuInfo,
-    getHukutoshinInfo, } = useViewSiteMain()
+    getHukutoshinInfo,
+    getAsakusaInfo,
+    getShinjukuInfo,
+    getMitaInfo,
+    getOedoInfo,
+    getArakawaInfo,
+    getNipporitoneriInfo,
+  } = useViewSiteMain()
 
   if (!getDetailInfoDialogOpen()) return null // 完全に非表示になった後にDOMを削除
 
@@ -30,9 +38,17 @@ const DetailInfoDialogApp: React.FC = () => {
           }}
           isShadow={false}
         />
-
-        <div className="h-[50vh] md:w-[50vw] w-[90vw] bg-white rounded-b-lg shadow-md shadow-black overflow-y-auto no-scrollbar">
-        <InfoCard titleText="東京メトロ各線　運行情報" text="" logoImg="assets/logos/TokyoMetro.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
+        <div className="h-[60vh] md:w-[50vw] w-[90vw] bg-white rounded-b-lg shadow-md shadow-black overflow-y-auto no-scrollbar">
+        <TitleInfoCard text="都営地下鉄　運行情報" logoImg="assets/logos/TokyoLogo.webp" isShadow={false} shape="square"/>
+          <div className="ml-4">
+            <InfoCard titleText="浅草線" text={getAsakusaInfo()} logoImg="assets/logos/TokyoLogo.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
+            <InfoCard titleText="三田線" text={getMitaInfo()} logoImg="assets/logos/TokyoLogo.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
+            <InfoCard titleText="新宿線" text={getShinjukuInfo()} logoImg="assets/logos/TokyoLogo.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
+            <InfoCard titleText="大江戸線" text={getOedoInfo()} logoImg="assets/logos/TokyoLogo.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
+            <InfoCard titleText="都電荒川線" text={getArakawaInfo()} logoImg="assets/logos/TokyoLogo.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
+            <InfoCard titleText="日暮里・舎人ライナー" text={getNipporitoneriInfo()} logoImg="assets/logos/TokyoLogo.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
+          </div>
+        <TitleInfoCard text="東京メトロ各線　運行情報" logoImg="assets/logos/TokyoMetro.webp" isShadow={false} shape="square"/>
           <div className="ml-4">
             <InfoCard titleText="銀座線" text={getGinzaInfo()} logoImg="assets/logos/銀座線.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
             <InfoCard titleText="丸ノ内線" text={getMarunouchiInfo()} logoImg="assets/logos/丸ノ内線.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
