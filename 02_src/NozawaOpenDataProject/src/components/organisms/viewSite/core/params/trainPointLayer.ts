@@ -20,7 +20,7 @@ const trainSymbolLayer: LayerType = {
       ...Object.entries(companyLogoParams).flatMap(([line, { path }]) => [line, path]), // ロゴと会社名のペア
       "trainLogo", // デフォルトのロゴ
     ],
-    "icon-size": 0.20,
+    "icon-size": 0.2,
     "icon-allow-overlap": true,
     visibility: "visible",
     "text-field": ["get", "N02_005"], // テキストフィールドに駅名を設定

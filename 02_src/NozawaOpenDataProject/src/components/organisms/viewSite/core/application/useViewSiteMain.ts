@@ -3,6 +3,7 @@ import {
   useReqCycleDataAdapter,
 } from "@/infrastructure/adapters/httpReqAdapter"
 import {
+  useTokyoMetroStoreAdapter,
   useDialogStoreAdapter,
   useManageLayerAdapter,
   useTimeDataStoreAdapter,
@@ -35,6 +36,28 @@ const useViewSiteMain = () => {
     setIsDisplayLayer,
     setOpacity,
   } = useManageLayerAdapter()
+  const {
+    setGinzaInfo,
+    getGinzaInfo,
+    setMarunouchiBranchInfo,
+    getMarunouchiBranchInfo,
+    setChiyodaInfo,
+    getChiyodaInfo,
+    setHibiyaInfo,
+    getHibiyaInfo,
+    setMarunouchiInfo,
+    getMarunouchiInfo,
+    setTozaiInfo,
+    getTozaiInfo,
+    setYurakuchoInfo,
+    getYurackuchoInfo,
+    setHanzomonInfo,
+    getHanzomonInfo,
+    setNanbokuInfo,
+    getNanbokuInfo,
+    setHukutoshinInfo,
+    getHukutoshinInfo,
+  } = useTokyoMetroStoreAdapter()
   /**
    * ボタンがクリックされた場合
    **/
@@ -45,8 +68,7 @@ const useViewSiteMain = () => {
    * コールバック関数をまとめて呼び出す
    */
   const useCallback = () => {
-    //tokyoMetroRealTimeInfoCallback()
-    docomoBikeShareStationInfoCallback()
+    tokyoMetroRealTimeInfoCallback()
     setTimeData(getNowTime())
     console.log(getTimeData())
   }
@@ -56,7 +78,16 @@ const useViewSiteMain = () => {
    */
   const tokyoMetroRealTimeInfoCallback = async () => {
     const res = await reqTokyoMetroRealTimeInfo()
-    console.log("tokyoMetroRealTimeInfoCallback", res)
+    setGinzaInfo(res[0]["odpt:trainInformationText"]["ja"])
+    setMarunouchiInfo(res[1]["odpt:trainInformationText"]["ja"])
+    setMarunouchiBranchInfo(res[2]["odpt:trainInformationText"]["ja"])
+    setHibiyaInfo(res[3]["odpt:trainInformationText"]["ja"])
+    setTozaiInfo(res[4]["odpt:trainInformationText"]["ja"])
+    setChiyodaInfo(res[5]["odpt:trainInformationText"]["ja"])
+    setYurakuchoInfo(res[6]["odpt:trainInformationText"]["ja"])
+    setHanzomonInfo(res[7]["odpt:trainInformationText"]["ja"])
+    setNanbokuInfo(res[8]["odpt:trainInformationText"]["ja"])
+    setHukutoshinInfo(res[9]["odpt:trainInformationText"]["ja"])
   }
 
   /**
@@ -64,7 +95,6 @@ const useViewSiteMain = () => {
    */
   const helloCycleStationInfoCallback = async () => {
     const res = await reqHelloCycleStationInfo()
-    console.log(res)
   }
 
   /**
@@ -72,7 +102,6 @@ const useViewSiteMain = () => {
    */
   const docomoBikeShareStationInfoCallback = async () => {
     const res = await reqDocomoBikeShareStationInfo()
-    console.log(res)
   }
 
   // ホームサイトに遷移する関数
@@ -106,6 +135,15 @@ const useViewSiteMain = () => {
     setIsDisplayLayer,
     setOpacity,
     getTimeData,
+    getGinzaInfo,
+    getChiyodaInfo,
+    getHanzomonInfo,
+    getHibiyaInfo,
+    getMarunouchiInfo,
+    getMarunouchiBranchInfo,
+    getTozaiInfo,
+    getNanbokuInfo,
+    getHukutoshinInfo,
   }
 }
 export default useViewSiteMain
