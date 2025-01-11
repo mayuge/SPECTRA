@@ -21,6 +21,12 @@ const DetailInfoDialogApp: React.FC = () => {
     getOedoInfo,
     getArakawaInfo,
     getNipporitoneriInfo,
+    getChuoInfo,
+    getChuoKaisokuInfo,
+    getSoubuInfo,
+    getKeihinTouhokuInfo,
+    getMusasinoInfo,
+    getYamanoteInfo,
   } = useViewSiteMain()
 
   if (!getDetailInfoDialogOpen()) return null // 完全に非表示になった後にDOMを削除
@@ -60,6 +66,15 @@ const DetailInfoDialogApp: React.FC = () => {
             <InfoCard titleText="半蔵門線" text={getHanzomonInfo()} logoImg="assets/logos/半蔵門線.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
             <InfoCard titleText="南北線" text={getNanbokuInfo()} logoImg="assets/logos/南北線.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
             <InfoCard titleText="副都心線" text={getHukutoshinInfo()} logoImg="assets/logos/副都心線.webp" isShadow={false} shape="square"infoButtonClick={()=>{}}/>
+          </div>
+          <TitleInfoCard text="JR　運行情報" logoImg="assets/logos/JrEast.webp" isShadow={false} shape="square"/>
+          <div className="ml-4">
+            <InfoCard titleText="中央線" text={getChuoInfo()} logoImg="assets/logos/JrEast.webp" isShadow={false} shape="square" infoButtonClick={()=>{}}/>
+            <InfoCard titleText="中央線快速線" text={getChuoKaisokuInfo()} logoImg="assets/logos/JrEast.webp" isShadow={false} shape="square" infoButtonClick={()=>{}}/>
+            <InfoCard titleText="総武線" text={getSoubuInfo()} logoImg="assets/logos/JrEast.webp" isShadow={false} shape="square" infoButtonClick={()=>{}}/>
+            <InfoCard titleText="京浜東北線" text={getKeihinTouhokuInfo()} logoImg="assets/logos/JrEast.webp" isShadow={false} shape="square" infoButtonClick={()=>{}}/>
+            <InfoCard titleText="武蔵野線" text={getMusasinoInfo()} logoImg="assets/logos/JrEast.webp" isShadow={false} shape="square" infoButtonClick={()=>{}}/>
+            <InfoCard titleText="山手線" text={getYamanoteInfo()} logoImg="assets/logos/JrEast.webp" isShadow={false} shape="square" infoButtonClick={()=>{}}/>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ export interface IToeiTrainInfoState {
   shinjukuInfo:string
   oedoInfo: string
   arakawaInfo:string
-  nipporitoneriInfo: string
+  nipporiToneriInfo: string
   setAsakusaInfo: (info: string) => void
   getAsakusaInfo: () => string
   setMitaInfo: (info: string) => void
