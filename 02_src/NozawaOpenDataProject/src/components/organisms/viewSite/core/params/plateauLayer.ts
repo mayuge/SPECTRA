@@ -20,7 +20,7 @@ const plateauLayer: LayerType = {
   paint: {
     "fill-extrusion-height": ["*", ["get", "z"], 1],
     "fill-extrusion-color": "#888",
-    "fill-extrusion-opacity": 0.8,
+    "fill-extrusion-opacity": 0.4,
   },
   minzoom: 15,
 } as LayerType

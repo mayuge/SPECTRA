@@ -5,14 +5,14 @@ import Button from "@/components/atoms/buttons/Button"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
 
 const HeaderApp: React.FC = () => {
-  const { routeToHomeSite, openAllDialogs } = useViewSiteMain()
+  const { routeToHomeSite, setDetailInfoDialogOpen } = useViewSiteMain()
 
   return (
     <div className="relative z-10 p-4 flex justify-start items-center bg-gray-20 shadow-sm shadow-black gap-4">
       <div className="w-full">
         <Header
           text="SPECTRA PROJECT"
-          icon="menu"
+          icon="home"
           size="large"
           variant="header-light"
           isCircle={true}
@@ -23,7 +23,7 @@ const HeaderApp: React.FC = () => {
         <Button
           iconLeft="commute"
           isShadow={true}
-          onClick={openAllDialogs}
+          onClick={()=>{setDetailInfoDialogOpen(true)}}
           shape="circle"
           size="large"
           text=""

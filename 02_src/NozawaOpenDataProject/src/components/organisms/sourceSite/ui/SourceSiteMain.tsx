@@ -19,7 +19,7 @@ const SourceSiteMain: React.FC = () => {
         <div className="max-w-screen-xl w-full mx-auto">
           <Header
             text="SPECTRA PROJECT"
-            icon="menu"
+            icon="home"
             size="large"
             variant="header-light"
             isCircle={true}

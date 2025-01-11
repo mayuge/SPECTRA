@@ -57,7 +57,7 @@ const InfoCard: React.FC<InfoCardProps> = ({
               <Button
                 variant="btn-text-gray"
                 size="mini"
-                iconLeft="info"
+                iconLeft="open_in_new"
                 onClick={infoButtonClick}
               />
             </div>

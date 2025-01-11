@@ -19,7 +19,7 @@ const HomeSiteMain: React.FC = () => {
         <div className="max-w-screen-xl w-full mx-auto">
           <Header
             text="SPECTRA PROJECT"
-            icon="menu"
+            icon="home"
             size="large"
             variant="header-light"
             isCircle={true}
@@ -60,18 +60,9 @@ const HomeSiteMain: React.FC = () => {
             <TextLabel text={`交通手段別で見る`} size="large" bold={true} isBlack={false} />
           </div>
           <div className="flex flex-wrap w-full gap-4 sm:gap-6 md:gap-10">
-            <Button
-              text="鉄道中心で見る"
-              iconLeft="train"
-              variant="btn-light"
-              size="normal"
-              shape="circle"
-              isShadow={true}
-              onClick={navigateToViewSite}
-            />
-            <Button
-              text="バス中心で見る"
-              iconLeft="directions_bus"
+          <Button
+              text="徒歩中心で見る"
+              iconLeft="directions_walk"
               variant="btn-light"
               size="normal"
               shape="circle"
@@ -88,8 +79,17 @@ const HomeSiteMain: React.FC = () => {
               onClick={navigateToViewSite}
             />
             <Button
-              text="徒歩中心で見る"
-              iconLeft="directions_walk"
+              text="バス中心で見る"
+              iconLeft="directions_bus"
+              variant="btn-light"
+              size="normal"
+              shape="circle"
+              isShadow={true}
+              onClick={navigateToViewSite}
+            />
+            <Button
+              text="鉄道中心で見る"
+              iconLeft="train"
               variant="btn-light"
               size="normal"
               shape="circle"
