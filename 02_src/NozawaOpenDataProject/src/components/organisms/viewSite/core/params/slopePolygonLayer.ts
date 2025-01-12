@@ -44,7 +44,7 @@ const slopePolygonLayer: LayerType = {
 }
 
 export const slopePolygonCard: CardListType = {
-  logoImg: "/assets/logos/default.webp",
+  logoImg: "/assets/logos/mountain.webp",
   text: "傾斜　ポリゴン",
   dangerBadge: "交通",
   warningBadge: "シェアサイクル",

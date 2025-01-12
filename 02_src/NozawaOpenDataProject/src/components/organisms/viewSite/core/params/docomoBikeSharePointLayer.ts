@@ -21,7 +21,7 @@ let docomoBikeShareSymbolLayer = {
   source: docomoBikeShareSource,
   layout: {
     "icon-image": "redBike",
-    "icon-size": 0.04,
+    "icon-size": 0.25,
     "icon-allow-overlap": true,
     visibility: "visible",
   },
