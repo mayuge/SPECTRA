@@ -1,5 +1,5 @@
 "use client"
-import React from "react"
+import React, { useEffect } from "react"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
 import Card from "@/components/molecules/frames/Card"
 import PullTab from "@/components/atoms/buttons/PullTab"
@@ -24,7 +24,7 @@ const LayerListBarApp: React.FC = () => {
   }
 
   // cardList にコールバック関数を設定
-  const displayCardList = getCardList().map((card, index) => ({
+  const displayCardList= () => getCardList().map((card, index) => ({
     ...card,
     isDisplayLayer: getIsDisplayLayer(index),
     sliderClick: (value: number) => setOpacity(index, value), // スライダー変更時のハンドラー
@@ -53,7 +53,7 @@ const LayerListBarApp: React.FC = () => {
   return (
     <div className="relative z-10 flex items-center max-w-md">
       <div className="h-calc-100vh-120px bg-white shadow-lg shadow-black overflow-y-auto no-scrollbar">
-        {displayCardList.map((card, index) => (
+        {displayCardList().map((card, index) => (
           <Card key={index} {...card} />
         ))}
       </div>

@@ -1,7 +1,10 @@
 import { create } from "zustand"
 import { IModeState } from "@/domain/interfaces/IModeState"
+import { persist, createJSONStorage } from "zustand/middleware"
 
-const useModeStateStore = create<IModeState>()((set, get) => ({
+const useModeStateStore = create<IModeState>()(
+  persist(
+  (set, get) => ({
   walkModeSelected: true,
   cycleModeSelected: false,
   busModeSelected: false,
@@ -38,6 +41,13 @@ const useModeStateStore = create<IModeState>()((set, get) => ({
   getCycleModeSelected: () => get().cycleModeSelected,
   getBusModeSelected: () => get().busModeSelected,
   getTrainModeSelected: () => get().trainModeSelected,
-}))
+}),
+{
+  name: "mode-store", // ローカルストレージのキー
+  // 永続化に使用するストレージ
+  storage: createJSONStorage(() => sessionStorage),
+}
+  )
+)
 
 export default useModeStateStore

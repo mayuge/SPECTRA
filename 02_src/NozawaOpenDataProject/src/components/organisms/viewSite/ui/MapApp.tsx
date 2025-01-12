@@ -4,7 +4,7 @@ import React, { useRef, useEffect } from "react"
 import maplibregl, { LayerSpecification, SourceSpecification } from "maplibre-gl"
 import "maplibre-gl/dist/maplibre-gl.css"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
-import { helloCyclePointCard } from "@/components/organisms/viewSite/core/params/helloCyclePointLayer"
+import { helloCyclePointCard } from "@/components/organisms/viewSite/core/params/walkMode/helloCyclePointLayer"
 
 /**
  * レイヤをマップに追加
@@ -82,7 +82,7 @@ const initializeMap = async (
         version: 8 as const,
         sources: {},
         layers: [],
-        glyphs: "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf", // glyphsプロパティを追加
+        "glyphs": "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf",
         sky: {
           "sky-color": "#199EF3",
           "sky-horizon-blend": 0.5,

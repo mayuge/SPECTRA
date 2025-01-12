@@ -1,5 +1,5 @@
 import { create } from "zustand"
-import { cardLayerList } from "@/components/organisms/viewSite/core/params/useLayersMain"
+import { walkModeCardLayerList } from "@/components/organisms/viewSite/core/params/walkMode/useWalkLayersMain"
 import { CardListType } from "@/components/organisms/viewSite/core/types/cardListType"
 import { LayerType } from "@/components/organisms/viewSite/core/types/layerType"
 import {
@@ -21,12 +21,13 @@ interface ManageLayerState {
 
 // Zustandストアの作成
 const useManageLayerStateStore = create<ManageLayerState>()((set, get) => ({
-  layerList: cardLayerList,
-  getLayers: () =>
+  layerList: walkModeCardLayerList,
+  getCardList: () => get().layerList,
+  getLayers: () =>  
     get()
       .layerList.map((card) => card.layer)
       .reverse(),
-  getCardList: () => get().layerList,
+  
   changeLayerOrder: (index: number) => {
     set((state) => {
       const newLayerList = [...state.layerList]
@@ -40,6 +41,7 @@ const useManageLayerStateStore = create<ManageLayerState>()((set, get) => ({
     })
   },
   getIsDisplayLayer: (index: number) => get().layerList[index].isDisplayLayer,
+ 
   setIsDisplayLayer: (index: number) => {
     set((state) => {
       // isDisplayLayerを反転させる

@@ -3,6 +3,7 @@ import {
   useReqCycleDataAdapter,
 } from "@/infrastructure/adapters/httpReqAdapter"
 import {
+  useModeStateStoreAdapter,
   useTokyoMetroStoreAdapter,
   useToeiTrainInfoStoreAdapter,
   useJrEastInfoStoreAdapter,
@@ -20,6 +21,9 @@ const useViewSiteMain = () => {
   const { getNowTime } = useGetTimeDataAdapter()
   //更新時刻のセッター・ゲッター
   const { setTimeData, getTimeData } = useTimeDataStoreAdapter()
+  //交通モード取得
+  const {getWalkModeSelected, getCycleModeSelected, getBusModeSelected, getTrainModeSelected} = useModeStateStoreAdapter()
+  //サイクルデータ取得
   const { reqHelloCycleStationInfo, reqDocomoBikeShareStationInfo } = useReqCycleDataAdapter()
   //API呼び出し
   const { reqTokyoMetroRealTimeInfo, reqToeiTrainRealTimeInfo, reqJrEastRealTimeInfo } =
@@ -95,6 +99,16 @@ const useViewSiteMain = () => {
     console.log("buttonClicked")
   }
   /**
+   * 選択されたモードを取得
+   **/
+  const getSelectedMode = () => {
+    console.log(getWalkModeSelected())
+    console.log(getCycleModeSelected())
+    console.log(getBusModeSelected())
+    console.log(getTrainModeSelected())
+  }
+
+  /**
    * コールバック関数をまとめて呼び出す
    */
   const useCallback = () => {
@@ -102,6 +116,7 @@ const useViewSiteMain = () => {
     toeiTrainRealTimeInfoCallback()
     jrEastRealTimeInfoCallback()
     setTimeData(getNowTime())
+    getSelectedMode()
   }
   /**
    * JR東日本運行情報
