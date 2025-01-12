@@ -7,7 +7,13 @@ import Header from "@/components/molecules/header/Header"
 import useHomeSiteMain from "@/components/organisms/homeSite/core/application/useHomeSiteMain"
 
 const HomeSiteMain: React.FC = () => {
-  const { buttonClicked, navigateToViewSite, navigateToSourceSite } = useHomeSiteMain()
+  const {
+    navigateToSourceSite,
+    walkModeSelected,
+    cycleModeSelected,
+    busModeSelected,
+    trainModeSelected,
+  } = useHomeSiteMain()
 
   return (
     <div className="relative">
@@ -41,17 +47,6 @@ const HomeSiteMain: React.FC = () => {
               isBlack={true}
             />
           </div>
-          <div className="mt-8 mb-16">
-            <Button
-              text="オープンデータを見る"
-              iconRight="arrow_forward"
-              variant="btn-dark"
-              size="normal"
-              shape="circle"
-              isShadow={true}
-              onClick={navigateToViewSite}
-            />
-          </div>
         </div>
       </div>
       <div className="h-[65vh] bg-gray-20 justify-center p-8">
@@ -60,14 +55,14 @@ const HomeSiteMain: React.FC = () => {
             <TextLabel text={`交通手段別で見る`} size="large" bold={true} isBlack={false} />
           </div>
           <div className="flex flex-wrap w-full gap-4 sm:gap-6 md:gap-10">
-          <Button
+            <Button
               text="徒歩中心で見る"
               iconLeft="directions_walk"
               variant="btn-light"
               size="normal"
               shape="circle"
               isShadow={true}
-              onClick={navigateToViewSite}
+              onClick={walkModeSelected}
             />
             <Button
               text="シェアサイクル中心で見る"
@@ -76,7 +71,7 @@ const HomeSiteMain: React.FC = () => {
               size="normal"
               shape="circle"
               isShadow={true}
-              onClick={navigateToViewSite}
+              onClick={cycleModeSelected}
             />
             <Button
               text="バス中心で見る"
@@ -85,7 +80,7 @@ const HomeSiteMain: React.FC = () => {
               size="normal"
               shape="circle"
               isShadow={true}
-              onClick={navigateToViewSite}
+              onClick={busModeSelected}
             />
             <Button
               text="鉄道中心で見る"
@@ -94,7 +89,7 @@ const HomeSiteMain: React.FC = () => {
               size="normal"
               shape="circle"
               isShadow={true}
-              onClick={navigateToViewSite}
+              onClick={trainModeSelected}
             />
           </div>
 

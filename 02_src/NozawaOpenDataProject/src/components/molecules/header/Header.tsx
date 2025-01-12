@@ -63,7 +63,7 @@ const Header: React.FC<HeaderProps> = ({
       onClick={onClick}
       className={`${headerVariant} ${circleShape} w-full flex items-center justify-between shadow-md shadow-black md:text-2xl text-xl font-bold`}
     >
-      <div className={`${headerVariant} ml-8`}>{text}</div>
+      <div className={`${headerVariant} ml-6`}>{text}</div>
       <div>
         <Button
           variant={`${buttonVariant}`}

@@ -43,8 +43,8 @@ export const companyLogoParams = {
   京成電鉄: {
     path: "keisei",
   },
-  首都圏新都市鉄道:{
-    path:"tukuba"
+  首都圏新都市鉄道: {
+    path: "tukuba",
   },
 
   //京葉高速鉄道

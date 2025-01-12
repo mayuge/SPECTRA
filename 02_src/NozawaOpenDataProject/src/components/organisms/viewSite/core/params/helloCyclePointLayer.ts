@@ -21,7 +21,7 @@ let helloCycleSymbolLayer = {
   source: helloCycleSource,
   layout: {
     "icon-image": "yellowBike",
-    "icon-size": 0.25,
+    "icon-size": 0.24,
     "icon-allow-overlap": true,
     visibility: "visible",
   },

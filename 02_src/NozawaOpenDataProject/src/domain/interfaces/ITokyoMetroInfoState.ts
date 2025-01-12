@@ -8,7 +8,7 @@ export interface ITokyoMetroInfoState {
   yurakuchoInfo: string
   hanzomonInfo: string
   nanbokuInfo: string
-  hukutoshinInfo:string
+  hukutoshinInfo: string
 
   setMarunouchiInfo: (info: string) => void
   getMarunouchiInfo: () => string
@@ -28,6 +28,6 @@ export interface ITokyoMetroInfoState {
   getHanzomonInfo: () => string
   setNanbokuInfo: (info: string) => void
   getNanbokuInfo: () => string
-  setHukutoshinInfo:(info:string) => void
-  getHukutoshinInfo:()=>string
+  setHukutoshinInfo: (info: string) => void
+  getHukutoshinInfo: () => string
 }

@@ -12,6 +12,15 @@ const ViewSiteMain: React.FC = () => {
   useEffect(() => {
     useCallback()
   }, [])
+  //1分ごとに情報更新
+  useEffect(() => {
+    const interval = setInterval(() => {
+      useCallback()
+    }, 60000) // 1分（60秒）ごとに実行
+
+    return () => clearInterval(interval)
+  }, [useCallback])
+
   return (
     <div className="relative w-full h-screen">
       <HeaderApp />

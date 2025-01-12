@@ -4,7 +4,7 @@ import Button from "@/components/atoms/buttons/Button"
 import TextLabel from "@/components/atoms/labels/TextLabel"
 
 type InfoCardProps = {
-  titleText:string
+  titleText: string
   text: string // カードテキスト
   logoImg: string // ロゴ画像のパス
   isShadow: boolean // 影の有無

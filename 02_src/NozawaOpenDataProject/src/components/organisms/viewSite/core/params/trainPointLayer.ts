@@ -66,7 +66,7 @@ export const trainPointCard: CardListType = {
   logoImg: "/assets/logos/trainLogo.webp",
   text: "鉄道　駅",
   dangerBadge: "交通",
-  warningBadge: "地下鉄",
+  warningBadge: "鉄道",
   primaryBadge: "ポイントデータ",
   darkBadge: "オープンデータチャレンジ",
   isShadow: false,

@@ -23,7 +23,9 @@ const HeaderApp: React.FC = () => {
         <Button
           iconLeft="commute"
           isShadow={true}
-          onClick={()=>{setDetailInfoDialogOpen(true)}}
+          onClick={() => {
+            setDetailInfoDialogOpen(true)
+          }}
           shape="circle"
           size="large"
           text=""

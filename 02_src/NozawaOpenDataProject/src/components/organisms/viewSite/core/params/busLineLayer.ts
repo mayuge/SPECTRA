@@ -24,12 +24,12 @@ const lineBusLayer: LayerType = {
 }
 
 export const lineBusCard: CardListType = {
-  logoImg: "/assets/logos/default.webp",
+  logoImg: "/assets/logos/busLogo.webp",
   text: "バスルート",
   dangerBadge: "交通",
   warningBadge: "バス",
   primaryBadge: "ラインデータ",
-  darkBadge: "オープンデータチャレンジ",
+  darkBadge: "国土数値情報",
   isShadow: false,
   shape: "square",
   isDisplayLayer: true,

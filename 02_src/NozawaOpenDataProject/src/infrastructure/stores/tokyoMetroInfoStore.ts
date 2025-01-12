@@ -1,5 +1,5 @@
 import { create } from "zustand"
-import type { ITokyoMetroInfoState } from '@/domain/interfaces/ITokyoMetroInfoState'
+import type { ITokyoMetroInfoState } from "@/domain/interfaces/ITokyoMetroInfoState"
 
 const useTokyoMetroInfoStore = create<ITokyoMetroInfoState>()((set, get) => ({
   //東京メトロ各線運行状況
@@ -12,7 +12,7 @@ const useTokyoMetroInfoStore = create<ITokyoMetroInfoState>()((set, get) => ({
   yurakuchoInfo: "情報を取得できませんでした",
   hanzomonInfo: "情報を取得できませんでした",
   nanbokuInfo: "情報を取得できませんでした",
-  hukutoshinInfo:"情報を取得できませんでした",
+  hukutoshinInfo: "情報を取得できませんでした",
 
   //丸ノ内線運行状況のセッター/ゲッター
   setMarunouchiInfo: (info: string) => set(() => ({ marunouchiInfo: info })),
@@ -42,7 +42,7 @@ const useTokyoMetroInfoStore = create<ITokyoMetroInfoState>()((set, get) => ({
   setNanbokuInfo: (info: string) => set(() => ({ nanbokuInfo: info })),
   getNanbokuInfo: () => get().nanbokuInfo,
 
-  setHukutoshinInfo:(info: string) => set(() => ({ hukutoshinInfo: info })),
+  setHukutoshinInfo: (info: string) => set(() => ({ hukutoshinInfo: info })),
   getHukutoshinInfo: () => get().hukutoshinInfo,
 }))
 

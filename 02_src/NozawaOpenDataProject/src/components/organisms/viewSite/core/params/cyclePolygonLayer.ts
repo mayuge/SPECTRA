@@ -27,7 +27,7 @@ const cyclePolygonLayer: LayerType = {
       100,
       "#2171B5",
       300,
-      "#08306B"
+      "#08306B",
     ],
     "fill-opacity": 0.5,
   },
@@ -48,9 +48,8 @@ const cyclePolygonLayer: LayerType = {
     },
   },
 }
-
 export const cyclePolygonCard: CardListType = {
-  logoImg: "/assets/logos/default.webp",
+  logoImg: "/assets/logos/bikeLogo.webp",
   text: "町丁目人口あたりのハローサイクルポート数",
   dangerBadge: "交通",
   warningBadge: "シェアサイクル",

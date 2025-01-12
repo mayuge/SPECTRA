@@ -24,14 +24,14 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
 }: ButtonProps) => {
   // サイズの種類　small normal largeから指定 paddingSize を動的に設定
-  let paddingSize = "p-4" // デフォルトの padding
+  let paddingSize = "md:p-4 p-3" // デフォルトの padding
 
   if (size === "mini") {
     paddingSize = "p-0" // mini サイズの padding
   } else if (size === "small") {
-    paddingSize = "p-3" // small サイズの padding
+    paddingSize = "md:p-3 p-2" // small サイズの padding
   } else if (size === "large") {
-    paddingSize = "p-6" // large サイズの padding
+    paddingSize = "md:p-6 p-4" // large サイズの padding
   }
 
   // ボタンのスタイルの種類 デフォルトは primary
