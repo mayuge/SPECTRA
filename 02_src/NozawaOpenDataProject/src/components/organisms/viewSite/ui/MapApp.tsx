@@ -103,7 +103,7 @@ const initializeMap = async (
     })
 
     mapInstance.current.on("load", () => {
-      mapInstance.current?.addControl(new maplibregl.NavigationControl(), "bottom-right")
+      // mapInstance.current?.addControl(new maplibregl.NavigationControl(), "bottom-right")
       updateLayers()
     })
 

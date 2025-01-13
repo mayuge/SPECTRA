@@ -4,6 +4,7 @@ import MapApp from "@/components/organisms/viewSite/ui/MapApp"
 import LayerListBarApp from "@/components/organisms/viewSite/ui/LayerListBarApp"
 import InfoDialogApp from "@/components/organisms/viewSite/ui/InfoDialogApp"
 import DisplayInfoApp from "@/components/organisms/viewSite/ui/DisplayInfoApp"
+import DisplaySwitchApp from "@/components/organisms/viewSite/ui/DisplaySwitchApp"
 import HeaderApp from "@/components/organisms/viewSite/ui/HeaderApp"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
 import ModeDialogApp from "@/components/organisms/viewSite/ui/ModeDialogApp"
@@ -28,6 +29,7 @@ const ViewSiteMain: React.FC = () => {
       <LayerListBarApp />
       <ModeDialogApp />
       <InfoDialogApp />
+      <DisplaySwitchApp/>
       <DisplayInfoApp />
       <MapApp />
     </div>

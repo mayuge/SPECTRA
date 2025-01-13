@@ -21,7 +21,7 @@ const ModeDialogApp: React.FC = () => {
   if (!getModeDialogOpen()) return null
 
   return (
-    <div className="absolute top-[150px] right-0 p-4 z-10 ">
+    <div className="absolute top-[200px] right-0 p-4 z-10 ">
       <div className="relative md:w-[25vw] w-[60vw]">
         <DialogHeader
           text={`選択した交通手段：${selectedModeText}`}
