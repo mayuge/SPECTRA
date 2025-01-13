@@ -15,7 +15,7 @@ const LayerListBarApp: React.FC = () => {
     getIsDisplayLayer,
     setIsDisplayLayer,
     setOpacity,
-    openModeDialog
+    openModeDialog,
   } = useViewSiteMain()
 
   // 関数マッピング

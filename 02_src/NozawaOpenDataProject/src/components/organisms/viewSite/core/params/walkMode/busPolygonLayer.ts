@@ -36,7 +36,7 @@ const busPolygonLayer: LayerType = {
       div.innerHTML = `
         <div class="p-2">
           <iframe
-            src="https://maps.google.co.jp/maps?output=embed&q=${properties.NAME }"
+            src="https://maps.google.co.jp/maps?output=embed&q=${properties.NAME}"
             width="100%"
             height="auto"
             frameborder="0"
@@ -44,7 +44,7 @@ const busPolygonLayer: LayerType = {
             allowfullscreen
           ></iframe>
           <div class="flex items-center gap-2 mt-2">
-            <h3 class="text-lg font-semibold">${properties.NAME }</h3>
+            <h3 class="text-lg font-semibold">${properties.NAME}</h3>
           </div>
           <div class="flex items-center gap-2 mt-2">
             <h5 class="text-sm">バス運行密度（運行本数/町丁目面積）${properties.KantoBusTripCountPerArea}</h5>

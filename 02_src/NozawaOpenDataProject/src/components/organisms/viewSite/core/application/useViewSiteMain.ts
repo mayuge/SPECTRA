@@ -26,7 +26,10 @@ const useViewSiteMain = () => {
   //更新時刻のセッター・ゲッター
   const { setTimeData, getTimeData } = useTimeDataStoreAdapter()
   //交通モード取得
-  const { getWalkModeSelected, getCycleModeSelected, getBusModeSelected, getTrainModeSelected } =
+  const { getWalkModeSelected, getCycleModeSelected, getBusModeSelected, getTrainModeSelected,    setTrainModeSelected,
+    setBusModeSelected,
+    setCycleModeSelected,
+    setWalkModeSelected, } =
     useModeStateStoreAdapter()
   //サイクルデータ取得
   const { reqHelloCycleStationInfo, reqDocomoBikeShareStationInfo } = useReqCycleDataAdapter()
@@ -138,7 +141,6 @@ const useViewSiteMain = () => {
       return "鉄道"
     }
   }
-
 
   /**
    * コールバック関数をまとめて呼び出す
@@ -281,6 +283,14 @@ const useViewSiteMain = () => {
     getKeihinTouhokuInfo,
     getMusasinoInfo,
     getYamanoteInfo,
+    getTrainModeSelected,
+    getBusModeSelected,
+    getCycleModeSelected,
+    getWalkModeSelected,
+    setTrainModeSelected,
+    setBusModeSelected,
+    setCycleModeSelected,
+    setWalkModeSelected,
   }
 }
 export default useViewSiteMain

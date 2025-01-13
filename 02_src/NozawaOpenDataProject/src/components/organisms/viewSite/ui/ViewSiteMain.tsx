@@ -29,7 +29,7 @@ const ViewSiteMain: React.FC = () => {
       <LayerListBarApp />
       <ModeDialogApp />
       <InfoDialogApp />
-      <DisplaySwitchApp/>
+      <DisplaySwitchApp />
       <DisplayInfoApp />
       <MapApp />
     </div>

@@ -38,7 +38,7 @@ const ModeDialogApp: React.FC = () => {
             isShadow={false}
             shape="square"
           />
-                {/* ["get", "KantoBusTripCountPerArea"],
+          {/* ["get", "KantoBusTripCountPerArea"],
       0,
       "#ffd5ea",
       100,
@@ -57,7 +57,7 @@ const ModeDialogApp: React.FC = () => {
             isShadow={false}
             shape="square"
           />
-                {/* ["get", "BycycleCapacityPerArea"],
+          {/* ["get", "BycycleCapacityPerArea"],
       0,
       "#F7FBFF",
       20,
@@ -79,7 +79,7 @@ const ModeDialogApp: React.FC = () => {
             isShadow={false}
             shape="square"
           />
-                {/* "interpolate",
+          {/* "interpolate",
       ["linear"],
       ["get", "AverageSlopeAngleRound"],
       2,

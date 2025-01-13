@@ -32,7 +32,7 @@ const slopePolygonLayer: LayerType = {
       div.innerHTML = `
         <div class="p-2">
           <iframe
-            src="https://maps.google.co.jp/maps?output=embed&q=${properties.NAME }"
+            src="https://maps.google.co.jp/maps?output=embed&q=${properties.NAME}"
             width="100%"
             height="auto"
             frameborder="0"
@@ -40,7 +40,7 @@ const slopePolygonLayer: LayerType = {
             allowfullscreen
           ></iframe>
           <div class="flex items-center gap-2 mt-2">
-            <h3 class="text-lg font-semibold">${properties.NAME }</h3>
+            <h3 class="text-lg font-semibold">${properties.NAME}</h3>
           </div>
            <div class="flex items-center gap-2 mt-2">
             <h5 class="text-sm">土地傾斜度（町丁目）${properties.AverageSlopeAngleRound}</h5>
