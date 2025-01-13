@@ -11,7 +11,7 @@ const busPolygonLayer: LayerType = {
     data: "/geojson/PolygonBusTripKanto.geojson",
   } as GeoJSONSourceSpecification,
   layout: {
-    visibility: "visible",
+    visibility: "none",
   },
   paint: {
     "fill-color": [
@@ -56,7 +56,7 @@ export const busPolygonCard: CardListType = {
   darkBadge: "オープンデータチャレンジ",
   isShadow: false,
   shape: "square",
-  isDisplayLayer: true,
+  isDisplayLayer: false,
   infoButtonClick: "openAllDialogs",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "changeLayerOrder",

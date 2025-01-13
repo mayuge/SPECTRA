@@ -23,7 +23,7 @@ let helloCycleSymbolLayer = {
     "icon-image": "yellowBike",
     "icon-size": 0.24,
     "icon-allow-overlap": true,
-    visibility: "visible",
+    visibility: "none",
   },
   minzoom: 15,
 } as LayerType
@@ -37,7 +37,7 @@ export const helloCyclePointCard: CardListType = {
   darkBadge: "オープンデータチャレンジ",
   isShadow: false,
   shape: "square",
-  isDisplayLayer: true,
+  isDisplayLayer: false,
   infoButtonClick: "buttonClicked",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "buttonClicked",

@@ -11,7 +11,7 @@ const cyclePolygonLayer: LayerType = {
     data: "/geojson/PolygonBycycleCapacityPerArea.geojson",
   } as GeoJSONSourceSpecification,
   layout: {
-    visibility: "visible",
+    visibility: "none",
   },
   paint: {
     "fill-color": [
@@ -57,7 +57,7 @@ export const cyclePolygonCard: CardListType = {
   darkBadge: "オープンデータチャレンジ",
   isShadow: false,
   shape: "square",
-  isDisplayLayer: true,
+  isDisplayLayer: false,
   infoButtonClick: "openAllDialogs",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "changeLayerOrder",

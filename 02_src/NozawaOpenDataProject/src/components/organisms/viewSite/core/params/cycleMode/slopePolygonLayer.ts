@@ -11,7 +11,7 @@ const slopePolygonLayer: LayerType = {
     data: "/geojson/PolygonAverageSlopeAngleOver2deg.geojson",
   } as GeoJSONSourceSpecification,
   layout: {
-    visibility: "visible",
+    visibility: "none",
   },
   paint: {
     "fill-color": [
@@ -52,7 +52,7 @@ export const slopePolygonCard: CardListType = {
   darkBadge: "オープンデータチャレンジ",
   isShadow: false,
   shape: "square",
-  isDisplayLayer: true,
+  isDisplayLayer: false,
   infoButtonClick: "openAllDialogs",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "changeLayerOrder",

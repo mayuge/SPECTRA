@@ -14,6 +14,10 @@ import {
 import { useSiteRouteAdapter } from "@/infrastructure/adapters/routeAdapter"
 import { useGetTimeDataAdapter } from "@/infrastructure/adapters/getTimeDataAdapter"
 import { HOME_SITE_ROOT_NAME } from "@/domain/params/siteRootName"
+import cycleModeCardLayerList from "@/components/organisms/viewSite/core/params/cycleMode/useCycleLayersMain"
+import walkModeCardLayerList from "@/components/organisms/viewSite/core/params/walkMode/useWalkLayersMain"
+import busModeCardLayerList from "@/components/organisms/viewSite/core/params/busMode/useBusLayersMain"
+import trainModeCardLayerList from "@/components/organisms/viewSite/core/params/trainMode/useTrainLayersMain"
 
 const useViewSiteMain = () => {
   const { routeTo } = useSiteRouteAdapter()
@@ -34,6 +38,7 @@ const useViewSiteMain = () => {
   const {
     changeLayerOrder,
     getLayers,
+    setCardList,
     getCardList,
     getIsDisplayLayer,
     setIsDisplayLayer,
@@ -99,13 +104,18 @@ const useViewSiteMain = () => {
     console.log("buttonClicked")
   }
   /**
-   * 選択されたモードを取得
+   * 選択されたモードを取得し、セットする
    **/
   const getSelectedMode = () => {
-    console.log(getWalkModeSelected())
-    console.log(getCycleModeSelected())
-    console.log(getBusModeSelected())
-    console.log(getTrainModeSelected())
+    if(getWalkModeSelected()){
+      setCardList(walkModeCardLayerList)
+    }else if(getCycleModeSelected()){
+      setCardList(cycleModeCardLayerList)
+    }else if(getBusModeSelected()){
+      setCardList(busModeCardLayerList)
+    }else if(getTrainModeSelected()) {
+      setCardList(trainModeCardLayerList)
+    }
   }
 
   /**

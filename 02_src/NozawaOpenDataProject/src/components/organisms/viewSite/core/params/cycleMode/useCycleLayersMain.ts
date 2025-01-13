@@ -15,22 +15,22 @@ import { trainPointCard } from "@/components/organisms/viewSite/core/params/cycl
 import { busPolygonCard } from "@/components/organisms/viewSite/core/params/cycleMode/busPolygonLayer"
 import { slopePolygonCard } from "@/components/organisms/viewSite/core/params/cycleMode/slopePolygonLayer"
 
-export const cardLayerList: CardListType[] = [
+export const cycleModeCardLayerList: CardListType[] = [
   trainPointCard,
   busPointCard,
-  trainLineCard,
-  lineBusCard,
   docomoBikeSharePointCard,
   helloCyclePointCard,
+  trainLineCard,
+  lineBusCard,
   plateauCard,
   busPolygonCard,
   cyclePolygonCard,
   slopePolygonCard,
-  osmCard,
   googleCard,
+  osmCard,
   sateliteMapCard,
   // konjakuCard,
   // terrainCard,
 ]
 
-export default cardLayerList
+export default cycleModeCardLayerList

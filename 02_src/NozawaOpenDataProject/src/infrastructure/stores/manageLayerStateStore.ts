@@ -13,6 +13,7 @@ interface ManageLayerState {
   layerList: CardListType[]
   getLayers: () => LayerType[]
   getCardList: () => CardListType[]
+  setCardList:(cardList:CardListType[])=> void
   changeLayerOrder: (index: number) => void
   getIsDisplayLayer: (index: number) => boolean
   setIsDisplayLayer: (index: number) => void
@@ -22,6 +23,11 @@ interface ManageLayerState {
 // Zustandストアの作成
 const useManageLayerStateStore = create<ManageLayerState>()((set, get) => ({
   layerList: walkModeCardLayerList,
+  setCardList: (cardList: CardListType[]) => {
+    set(() => ({
+      layerList: cardList, // 新しい状態オブジェクトを返す
+    }))
+  },
   getCardList: () => get().layerList,
   getLayers: () =>  
     get()

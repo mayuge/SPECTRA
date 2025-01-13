@@ -15,7 +15,7 @@ const plateauLayer: LayerType = {
   } as VectorSourceSpecification,
   "source-layer": "bldg",
   layout: {
-    visibility: "visible",
+    visibility: "none",
   },
   paint: {
     "fill-extrusion-height": ["*", ["get", "z"], 1],
@@ -33,7 +33,7 @@ export const plateauCard: CardListType = {
   primaryBadge: "3D建物ポリゴンデータ",
   isShadow: false,
   shape: "square",
-  isDisplayLayer: true,
+  isDisplayLayer: false,
   infoButtonClick: "openAllDialogs",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "changeLayerOrder",

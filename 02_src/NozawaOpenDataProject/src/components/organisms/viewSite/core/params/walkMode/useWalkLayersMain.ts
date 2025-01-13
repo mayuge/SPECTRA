@@ -18,11 +18,11 @@ import { slopePolygonCard } from "@/components/organisms/viewSite/core/params/wa
 export const walkModeCardLayerList: CardListType[] = [
   trainPointCard,
   busPointCard,
-  trainLineCard,
-  lineBusCard,
   docomoBikeSharePointCard,
   helloCyclePointCard,
   plateauCard,
+  trainLineCard,
+  lineBusCard,
   busPolygonCard,
   cyclePolygonCard,
   slopePolygonCard,

@@ -11,7 +11,7 @@ const cyclePolygonLayer: LayerType = {
     data: "/geojson/PolygonBycycleCapacityPerArea.geojson",
   } as GeoJSONSourceSpecification,
   layout: {
-    visibility: "visible",
+    visibility: "none",
   },
   paint: {
     "fill-color": [

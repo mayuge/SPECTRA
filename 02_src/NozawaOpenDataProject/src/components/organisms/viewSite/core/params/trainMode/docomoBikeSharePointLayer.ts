@@ -23,7 +23,7 @@ let docomoBikeShareSymbolLayer = {
     "icon-image": "redBike",
     "icon-size": 0.25,
     "icon-allow-overlap": true,
-    visibility: "visible",
+    visibility: "none",
   },
   minzoom: 15,
 } as LayerType
@@ -37,7 +37,7 @@ export const docomoBikeSharePointCard: CardListType = {
   darkBadge: "オープンデータチャレンジ",
   isShadow: false,
   shape: "square",
-  isDisplayLayer: true,
+  isDisplayLayer: false,
   infoButtonClick: "buttonClicked",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "buttonClicked",
