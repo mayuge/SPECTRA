@@ -139,6 +139,7 @@ const useViewSiteMain = () => {
     }
   }
 
+
   /**
    * コールバック関数をまとめて呼び出す
    */
@@ -231,6 +232,10 @@ const useViewSiteMain = () => {
     setLayerBarOpen(true)
     setDetailInfoDialogOpen(true)
   }
+  //モードダイアログを開ける
+  const openModeDialog = () => {
+    setModeDialogOpen(true)
+  }
 
   return {
     useCallback,
@@ -241,8 +246,9 @@ const useViewSiteMain = () => {
     getLayerBarOpen,
     getDetailInfoDialogOpen,
     getModeDialogOpen,
-    setModeDialogOpen,
     getSelectedModeText,
+    openModeDialog,
+    setModeDialogOpen,
     setLayerBarOpen,
     setDetailInfoDialogOpen,
     openAllDialogs,

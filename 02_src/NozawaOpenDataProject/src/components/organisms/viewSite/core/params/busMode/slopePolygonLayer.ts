@@ -65,7 +65,7 @@ export const slopePolygonCard: CardListType = {
   isShadow: false,
   shape: "square",
   isDisplayLayer: false,
-  infoButtonClick: "buttonClicked",
+  infoButtonClick: "openModeDialog",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "changeLayerOrder",
   layer: slopePolygonLayer,

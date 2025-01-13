@@ -15,12 +15,13 @@ const LayerListBarApp: React.FC = () => {
     getIsDisplayLayer,
     setIsDisplayLayer,
     setOpacity,
+    openModeDialog
   } = useViewSiteMain()
 
   // 関数マッピング
   const functionMap: { [key: string]: (() => void) | undefined } = {
     buttonClicked,
-    openAllDialogs,
+    openModeDialog,
   }
 
   // cardList にコールバック関数を設定

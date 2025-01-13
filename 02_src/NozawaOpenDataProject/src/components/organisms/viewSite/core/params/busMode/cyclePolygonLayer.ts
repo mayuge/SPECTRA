@@ -70,7 +70,7 @@ export const cyclePolygonCard: CardListType = {
   isShadow: false,
   shape: "square",
   isDisplayLayer: false,
-  infoButtonClick: "buttonClicked",
+  infoButtonClick: "openModeDialog",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "changeLayerOrder",
   layer: cyclePolygonLayer,

@@ -69,7 +69,7 @@ export const busPolygonCard: CardListType = {
   isShadow: false,
   shape: "square",
   isDisplayLayer: true,
-  infoButtonClick: "buttonClicked",
+  infoButtonClick: "openModeDialog",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "changeLayerOrder",
   layer: busPolygonLayer,
