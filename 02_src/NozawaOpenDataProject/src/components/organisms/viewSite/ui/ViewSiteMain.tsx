@@ -6,6 +6,7 @@ import DetailInfoDialogApp from "@/components/organisms/viewSite/ui/infoDialogAp
 import DisplayInfoApp from "@/components/organisms/viewSite/ui/DisplayInfoApp"
 import HeaderApp from "@/components/organisms/viewSite/ui/HeaderApp"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
+import ModeDialogApp from "@/components/organisms/viewSite/ui/ModeDialogApp"
 
 const ViewSiteMain: React.FC = () => {
   const { useCallback } = useViewSiteMain()
@@ -25,6 +26,7 @@ const ViewSiteMain: React.FC = () => {
     <div className="relative w-full h-screen">
       <HeaderApp />
       <LayerListBarApp />
+      <ModeDialogApp/>
       <DetailInfoDialogApp />
       <DisplayInfoApp />
       <MapApp />

@@ -36,7 +36,7 @@ const DetailInfoDialogApp: React.FC = () => {
 
   return (
     <div className="absolute top-[150px] right-0 p-4 z-10 ">
-      <div className="relative  md:w-[50vw] w-[90vw]">
+      <div className="relative  md:w-[50vw] w-[95vw]">
         <DialogHeader
           text="交通情報"
           icon="close"
@@ -47,7 +47,7 @@ const DetailInfoDialogApp: React.FC = () => {
           }}
           isShadow={false}
         />
-        <div className="h-[60vh] md:w-[50vw] w-[90vw] bg-white rounded-b-lg shadow-md shadow-black overflow-y-auto no-scrollbar">
+        <div className="h-[60vh] md:w-[50vw] w-[95vw] bg-white rounded-b-lg shadow-md shadow-black overflow-y-auto no-scrollbar">
           <TitleInfoCard
             text="都営地下鉄　運行情報"
             logoImg="assets/logos/TokyoLogo.webp"

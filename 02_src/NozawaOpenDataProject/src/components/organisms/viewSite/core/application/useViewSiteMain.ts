@@ -34,7 +34,8 @@ const useViewSiteMain = () => {
   const { reqTokyoMetroRealTimeInfo, reqToeiTrainRealTimeInfo, reqJrEastRealTimeInfo } =
     useReqRailwayDataAdapter()
   //ダイアログ開閉
-  const { getLayerBarOpen, getDetailInfoDialogOpen, setLayerBarOpen, setDetailInfoDialogOpen } =
+  const { getModeDialogOpen,getLayerBarOpen, getDetailInfoDialogOpen,setModeDialogOpen,
+    setLayerBarOpen, setDetailInfoDialogOpen } =
     useDialogStoreAdapter()
   const {
     changeLayerOrder,
@@ -118,6 +119,21 @@ const useViewSiteMain = () => {
       setCardList(trainModeCardLayerList)
     }
   }
+  /**
+   * 選択されたモードのテキスト取得
+   **/
+  const getSelectedModeText = () => {
+    if (getWalkModeSelected()) {
+      return "徒歩"
+    } else if (getCycleModeSelected()) {
+      return "シェアサイクル"
+    } else if (getBusModeSelected()) {
+      return "バス"
+    } else if (getTrainModeSelected()) {
+      return "鉄道"
+    }
+  }
+
 
   /**
    * コールバック関数をまとめて呼び出す
@@ -220,6 +236,9 @@ const useViewSiteMain = () => {
     routeToHomeSite,
     getLayerBarOpen,
     getDetailInfoDialogOpen,
+    getModeDialogOpen,
+    setModeDialogOpen,
+    getSelectedModeText,
     setLayerBarOpen,
     setDetailInfoDialogOpen,
     openAllDialogs,
