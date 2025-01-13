@@ -36,7 +36,7 @@ const LayerListBarApp: React.FC = () => {
 
   if (!getLayerBarOpen()) {
     return (
-      <div className="relative z-10 w-min h-calc-100vh-120px overflow-y-auto no-scrollbar flex items-center">
+      <div className="relative z-10 w-min h-calc-100vh overflow-y-auto no-scrollbar flex items-center">
         <PullTab
           position="left"
           size="mini"
@@ -53,7 +53,7 @@ const LayerListBarApp: React.FC = () => {
 
   return (
     <div className="relative z-10 flex items-center max-w-md">
-      <div className="h-calc-100vh-120px bg-white shadow-lg shadow-black overflow-y-auto no-scrollbar">
+      <div className="h-calc-100vh bg-white shadow-lg shadow-black overflow-y-auto no-scrollbar">
         {displayCardList().map((card, index) => (
           <Card key={index} {...card} />
         ))}

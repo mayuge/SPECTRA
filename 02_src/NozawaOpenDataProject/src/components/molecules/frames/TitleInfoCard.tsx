@@ -43,7 +43,7 @@ const TitleInfoCard: React.FC<TitleInfoCardProps> = ({
     <div className={`${cardVariant} ${cornerShape} ${buttonShadow} p-2 bg-gray-90`}>
       <div className="flex items-center w-full gap-1">
         <div className="w-full">
-          <div className="inline-flex items-center gap-4 text-black">
+          <div className="inline-flex items-center gap-2 text-black">
             <img src={logoImgPath} className="w-8 h-8" />
             <TextLabel text={text} size="normal" bold={true} />
           </div>

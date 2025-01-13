@@ -34,10 +34,22 @@ const busPolygonLayer: LayerType = {
       // HTML要素を直接生成
       const div = document.createElement("div")
       div.innerHTML = `
-        <h3>${properties.NAME || "名前なし"}</h3>
-        <p><strong>面積:</strong> ${properties.SUM_AREA || "不明"} km²</p>
-        <p><strong>市区町村:</strong> ${properties.SHICHO_NAME || properties.SHI_NAME || "不明"}</p>
-        <p><strong>Capacity面積:</strong> ${properties.Capacity_面積 || "不明"}</p>
+        <div class="p-2">
+          <iframe
+            src="https://maps.google.co.jp/maps?output=embed&q=${properties.NAME }"
+            width="100%"
+            height="auto"
+            frameborder="0"
+            style="border:0"
+            allowfullscreen
+          ></iframe>
+          <div class="flex items-center gap-2 mt-2">
+            <h3 class="text-lg font-semibold">${properties.NAME }</h3>
+          </div>
+          <div class="flex items-center gap-2 mt-2">
+            <h5 class="text-sm">バス運行密度（運行本数/町丁目面積）${properties.KantoBusTripCountPerArea}</h5>
+          </div>
+        </div>
       `
       return div // HTMLElementを返す
     },

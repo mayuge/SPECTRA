@@ -12,7 +12,7 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
-  .h-calc-100vh-120px {
+  .h-calc-100vh {
     height: calc(100vh - 120px);
   }
 }

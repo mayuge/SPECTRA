@@ -30,7 +30,7 @@ let helloCycleSymbolLayer = {
 
 export const helloCyclePointCard: CardListType = {
   logoImg: "/assets/logos/yellowBike.webp",
-  text: "HelloCycleステーション",
+  text: "ハローサイクリングステーション",
   dangerBadge: "交通",
   warningBadge: "シェアサイクル",
   primaryBadge: "ポイントデータ",

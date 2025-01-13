@@ -30,7 +30,7 @@ let docomoBikeShareSymbolLayer = {
 
 export const docomoBikeSharePointCard: CardListType = {
   logoImg: "/assets/logos/redBike.webp",
-  text: "DocomoBikeShareステーション",
+  text: "ドコモ・バイクシェアステーション",
   dangerBadge: "交通",
   warningBadge: "シェアサイクル",
   primaryBadge: "ポイントデータ",

@@ -69,7 +69,7 @@ const DialogHeader: React.FC<DialogHeaderProps> = ({
 
   return (
     <div
-      className={`${headerVariant} ${headerShape} ${headerShadow} w-full flex items-center justify-between text-base font-bold`}
+      className={`${headerVariant} ${headerShape} ${headerShadow} w-full flex items-center justify-between md:text-base text-xs font-bold`}
     >
       <div className={`${headerVariant} ml-4`}>{text}</div>
       <div>
