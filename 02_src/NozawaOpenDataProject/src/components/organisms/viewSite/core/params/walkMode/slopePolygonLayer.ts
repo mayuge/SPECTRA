@@ -18,7 +18,7 @@ const slopePolygonLayer: LayerType = {
       "interpolate",
       ["linear"],
       ["get", "AverageSlopeAngleRound"],
-      0,
+      2,
       "#FFAA00",
       5,
       "#734C00",

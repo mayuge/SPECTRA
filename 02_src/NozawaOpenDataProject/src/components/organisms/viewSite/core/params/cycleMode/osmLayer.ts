@@ -25,7 +25,7 @@ export const osmCard: CardListType = {
   text: "オープンストリートマップ",
   successBadge: "マップ",
   primaryBadge: "ベースマップ",
-  darkBadge:"OpenStreetMap",
+  darkBadge: "OpenStreetMap",
   isShadow: false,
   shape: "square",
   isDisplayLayer: true,

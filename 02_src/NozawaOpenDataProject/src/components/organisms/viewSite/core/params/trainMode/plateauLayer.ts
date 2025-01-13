@@ -30,7 +30,7 @@ export const plateauCard: CardListType = {
   text: "PLATEAU",
   successBadge: "3D建物",
   primaryBadge: "3Dデータ",
-  darkBadge:"PLATEAU",
+  darkBadge: "PLATEAU",
   isShadow: false,
   shape: "square",
   isDisplayLayer: true,

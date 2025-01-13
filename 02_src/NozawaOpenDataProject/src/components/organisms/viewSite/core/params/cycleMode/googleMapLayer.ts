@@ -28,7 +28,7 @@ export const googleCard: CardListType = {
   dangerBadge: "ベース地図",
   successBadge: "マップ",
   primaryBadge: "ベースマップ",
-  darkBadge:"Google",
+  darkBadge: "Google",
   isShadow: false,
   shape: "square",
   isDisplayLayer: true,

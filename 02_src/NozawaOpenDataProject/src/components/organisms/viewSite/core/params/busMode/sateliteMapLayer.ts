@@ -27,7 +27,7 @@ export const sateliteMapCard: CardListType = {
   text: "地理院地図　衛星画像",
   successBadge: "衛星画像",
   primaryBadge: "ベースマップ",
-  darkBadge:"地理院地図",
+  darkBadge: "地理院地図",
   isShadow: false,
   shape: "square",
   isDisplayLayer: true,

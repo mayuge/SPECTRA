@@ -34,9 +34,14 @@ const useViewSiteMain = () => {
   const { reqTokyoMetroRealTimeInfo, reqToeiTrainRealTimeInfo, reqJrEastRealTimeInfo } =
     useReqRailwayDataAdapter()
   //ダイアログ開閉
-  const { getModeDialogOpen,getLayerBarOpen, getDetailInfoDialogOpen,setModeDialogOpen,
-    setLayerBarOpen, setDetailInfoDialogOpen } =
-    useDialogStoreAdapter()
+  const {
+    getModeDialogOpen,
+    getLayerBarOpen,
+    getDetailInfoDialogOpen,
+    setModeDialogOpen,
+    setLayerBarOpen,
+    setDetailInfoDialogOpen,
+  } = useDialogStoreAdapter()
   const {
     changeLayerOrder,
     getLayers,
@@ -133,7 +138,6 @@ const useViewSiteMain = () => {
       return "鉄道"
     }
   }
-
 
   /**
    * コールバック関数をまとめて呼び出す

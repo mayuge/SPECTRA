@@ -2,7 +2,7 @@
 import React, { useEffect } from "react"
 import MapApp from "@/components/organisms/viewSite/ui/MapApp"
 import LayerListBarApp from "@/components/organisms/viewSite/ui/LayerListBarApp"
-import DetailInfoDialogApp from "@/components/organisms/viewSite/ui/infoDialogApp"
+import InfoDialogApp from "@/components/organisms/viewSite/ui/InfoDialogApp"
 import DisplayInfoApp from "@/components/organisms/viewSite/ui/DisplayInfoApp"
 import HeaderApp from "@/components/organisms/viewSite/ui/HeaderApp"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
@@ -26,8 +26,8 @@ const ViewSiteMain: React.FC = () => {
     <div className="relative w-full h-screen">
       <HeaderApp />
       <LayerListBarApp />
-      <ModeDialogApp/>
-      <DetailInfoDialogApp />
+      <ModeDialogApp />
+      <InfoDialogApp />
       <DisplayInfoApp />
       <MapApp />
     </div>

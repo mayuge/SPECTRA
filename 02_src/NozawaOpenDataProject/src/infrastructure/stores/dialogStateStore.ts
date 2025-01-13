@@ -6,13 +6,13 @@ import { IDialogState } from "@/domain/interfaces/IDialogState"
 // ゲッターで状態を取得する
 const useDialogStateStore = create<IDialogState>()((set, get) => ({
   //選択モード表示ダイアログの開閉状態
-  isModeDialogOpen:true,
+  isModeDialogOpen: true,
   //詳細情報ダイアログの開閉状態
   isDetailInfoDialogOpen: false,
   //レイヤーダイアログの開閉状態
   isLayerBarOpen: true,
   //選択モード表示ダイアログのセッター
-  setModeDialogOpen:(isOpen: boolean) => set(() => ({ isModeDialogOpen: isOpen })),
+  setModeDialogOpen: (isOpen: boolean) => set(() => ({ isModeDialogOpen: isOpen })),
   //詳細情報ダイアログのセッター
   setDetailInfoDialogOpen: (isOpen: boolean) => set(() => ({ isDetailInfoDialogOpen: isOpen })),
   //レイヤーダイアログのセッター
