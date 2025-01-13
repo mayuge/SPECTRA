@@ -49,7 +49,7 @@ const busPolygonLayer: LayerType = {
 
 export const busPolygonCard: CardListType = {
   logoImg: "/assets/logos/busLogo.webp",
-  text: "バスポリゴン",
+  text: "バス運行密度（運行本数/町丁目面積）",
   dangerBadge: "交通",
   warningBadge: "シェアサイクル",
   primaryBadge: "ポリゴンデータ",
@@ -57,7 +57,7 @@ export const busPolygonCard: CardListType = {
   isShadow: false,
   shape: "square",
   isDisplayLayer: false,
-  infoButtonClick: "openAllDialogs",
+  infoButtonClick: "buttonClicked",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "changeLayerOrder",
   layer: busPolygonLayer,

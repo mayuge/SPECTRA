@@ -13,7 +13,7 @@ interface ManageLayerState {
   layerList: CardListType[]
   getLayers: () => LayerType[]
   getCardList: () => CardListType[]
-  setCardList:(cardList:CardListType[])=> void
+  setCardList: (cardList: CardListType[]) => void
   changeLayerOrder: (index: number) => void
   getIsDisplayLayer: (index: number) => boolean
   setIsDisplayLayer: (index: number) => void
@@ -29,11 +29,11 @@ const useManageLayerStateStore = create<ManageLayerState>()((set, get) => ({
     }))
   },
   getCardList: () => get().layerList,
-  getLayers: () =>  
+  getLayers: () =>
     get()
       .layerList.map((card) => card.layer)
       .reverse(),
-  
+
   changeLayerOrder: (index: number) => {
     set((state) => {
       const newLayerList = [...state.layerList]
@@ -47,7 +47,7 @@ const useManageLayerStateStore = create<ManageLayerState>()((set, get) => ({
     })
   },
   getIsDisplayLayer: (index: number) => get().layerList[index].isDisplayLayer,
- 
+
   setIsDisplayLayer: (index: number) => {
     set((state) => {
       // isDisplayLayerを反転させる

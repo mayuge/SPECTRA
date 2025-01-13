@@ -23,9 +23,9 @@ const osmLayer: LayerType = {
 export const osmCard: CardListType = {
   logoImg: "/assets/logos/mapLogo.webp",
   text: "オープンストリートマップ",
-  dangerBadge: "通常地図",
-  warningBadge: "マップ",
+  successBadge: "マップ",
   primaryBadge: "ベースマップ",
+  darkBadge:"OpenStreetMap",
   isShadow: false,
   shape: "square",
   isDisplayLayer: true,

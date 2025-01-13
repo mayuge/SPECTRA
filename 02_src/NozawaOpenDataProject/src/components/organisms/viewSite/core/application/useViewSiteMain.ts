@@ -26,7 +26,8 @@ const useViewSiteMain = () => {
   //更新時刻のセッター・ゲッター
   const { setTimeData, getTimeData } = useTimeDataStoreAdapter()
   //交通モード取得
-  const {getWalkModeSelected, getCycleModeSelected, getBusModeSelected, getTrainModeSelected} = useModeStateStoreAdapter()
+  const { getWalkModeSelected, getCycleModeSelected, getBusModeSelected, getTrainModeSelected } =
+    useModeStateStoreAdapter()
   //サイクルデータ取得
   const { reqHelloCycleStationInfo, reqDocomoBikeShareStationInfo } = useReqCycleDataAdapter()
   //API呼び出し
@@ -107,13 +108,13 @@ const useViewSiteMain = () => {
    * 選択されたモードを取得し、セットする
    **/
   const getSelectedMode = () => {
-    if(getWalkModeSelected()){
+    if (getWalkModeSelected()) {
       setCardList(walkModeCardLayerList)
-    }else if(getCycleModeSelected()){
+    } else if (getCycleModeSelected()) {
       setCardList(cycleModeCardLayerList)
-    }else if(getBusModeSelected()){
+    } else if (getBusModeSelected()) {
       setCardList(busModeCardLayerList)
-    }else if(getTrainModeSelected()) {
+    } else if (getTrainModeSelected()) {
       setCardList(trainModeCardLayerList)
     }
   }

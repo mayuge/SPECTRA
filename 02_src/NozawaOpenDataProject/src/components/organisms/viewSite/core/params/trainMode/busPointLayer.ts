@@ -57,7 +57,7 @@ export const busPointCard: CardListType = {
   logoImg: "/assets/logos/busStop.webp",
   text: "バス停",
   dangerBadge: "交通",
-  warningBadge: "地下鉄",
+  warningBadge: "バス",
   primaryBadge: "ポイントデータ",
   darkBadge: "オープンデータチャレンジ",
   isShadow: false,

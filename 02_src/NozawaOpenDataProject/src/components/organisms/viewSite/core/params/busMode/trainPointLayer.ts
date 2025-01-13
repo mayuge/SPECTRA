@@ -64,11 +64,11 @@ const trainSymbolLayer: LayerType = {
 
 export const trainPointCard: CardListType = {
   logoImg: "/assets/logos/trainLogo.webp",
-  text: "鉄道　駅",
+  text: "鉄道駅",
   dangerBadge: "交通",
   warningBadge: "鉄道",
   primaryBadge: "ポイントデータ",
-  darkBadge: "オープンデータチャレンジ",
+  darkBadge: "国土数値情報",
   isShadow: false,
   shape: "square",
   isDisplayLayer: true,

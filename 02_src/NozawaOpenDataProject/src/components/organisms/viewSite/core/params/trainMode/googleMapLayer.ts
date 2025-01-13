@@ -25,10 +25,9 @@ const googleLayer: LayerType = {
 export const googleCard: CardListType = {
   logoImg: "/assets/logos/google.webp",
   text: "Googleマップ",
-  dangerBadge: "ベース地図",
-  successBadge: "表示テスト",
-  warningBadge: "マップ",
+  successBadge: "マップ",
   primaryBadge: "ベースマップ",
+  darkBadge:"Google",
   isShadow: false,
   shape: "square",
   isDisplayLayer: true,

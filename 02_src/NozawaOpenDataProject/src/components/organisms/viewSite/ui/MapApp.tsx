@@ -82,7 +82,7 @@ const initializeMap = async (
         version: 8 as const,
         sources: {},
         layers: [],
-        "glyphs": "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf",
+        glyphs: "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf",
         sky: {
           "sky-color": "#199EF3",
           "sky-horizon-blend": 0.5,

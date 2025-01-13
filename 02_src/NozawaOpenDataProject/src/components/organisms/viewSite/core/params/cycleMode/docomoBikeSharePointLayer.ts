@@ -32,7 +32,7 @@ export const docomoBikeSharePointCard: CardListType = {
   logoImg: "/assets/logos/redBike.webp",
   text: "DocomoBikeShareステーション",
   dangerBadge: "交通",
-  warningBadge: "地下鉄",
+  warningBadge: "シェアサイクル",
   primaryBadge: "ポイントデータ",
   darkBadge: "オープンデータチャレンジ",
   isShadow: false,

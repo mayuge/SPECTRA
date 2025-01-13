@@ -25,7 +25,7 @@ const lineBusLayer: LayerType = {
 
 export const lineBusCard: CardListType = {
   logoImg: "/assets/logos/busLogo.webp",
-  text: "バスルート",
+  text: "バス路線",
   dangerBadge: "交通",
   warningBadge: "バス",
   primaryBadge: "ラインデータ",

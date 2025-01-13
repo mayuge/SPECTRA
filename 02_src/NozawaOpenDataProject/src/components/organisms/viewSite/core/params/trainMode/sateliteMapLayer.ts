@@ -25,10 +25,9 @@ const sateliteMapLayer: LayerType = {
 export const sateliteMapCard: CardListType = {
   logoImg: "/assets/logos/kokkousyou.webp",
   text: "地理院地図　衛星画像",
-  dangerBadge: "ベース地図",
-  successBadge: "表示テスト",
-  warningBadge: "マップ",
+  successBadge: "衛星画像",
   primaryBadge: "ベースマップ",
+  darkBadge:"地理院地図",
   isShadow: false,
   shape: "square",
   isDisplayLayer: true,

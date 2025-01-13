@@ -50,7 +50,7 @@ const cyclePolygonLayer: LayerType = {
 }
 export const cyclePolygonCard: CardListType = {
   logoImg: "/assets/logos/bikeLogo.webp",
-  text: "町丁目人口あたりのハローサイクルポート数",
+  text: "シェアサイクル密度（駐輪台数/町丁目面積）",
   dangerBadge: "交通",
   warningBadge: "シェアサイクル",
   primaryBadge: "ポリゴンデータ",
@@ -58,7 +58,7 @@ export const cyclePolygonCard: CardListType = {
   isShadow: false,
   shape: "square",
   isDisplayLayer: false,
-  infoButtonClick: "openAllDialogs",
+  infoButtonClick: "buttonClicked",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "changeLayerOrder",
   layer: cyclePolygonLayer,

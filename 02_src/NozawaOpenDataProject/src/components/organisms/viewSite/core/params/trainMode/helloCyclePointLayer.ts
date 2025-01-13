@@ -32,7 +32,7 @@ export const helloCyclePointCard: CardListType = {
   logoImg: "/assets/logos/yellowBike.webp",
   text: "HelloCycleステーション",
   dangerBadge: "交通",
-  warningBadge: "地下鉄",
+  warningBadge: "シェアサイクル",
   primaryBadge: "ポイントデータ",
   darkBadge: "オープンデータチャレンジ",
   isShadow: false,

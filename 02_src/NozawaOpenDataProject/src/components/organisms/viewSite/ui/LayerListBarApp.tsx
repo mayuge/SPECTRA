@@ -24,14 +24,15 @@ const LayerListBarApp: React.FC = () => {
   }
 
   // cardList にコールバック関数を設定
-  const displayCardList= () => getCardList().map((card, index) => ({
-    ...card,
-    isDisplayLayer: getIsDisplayLayer(index),
-    sliderClick: (value: number) => setOpacity(index, value), // スライダー変更時のハンドラー
-    infoButtonClick: functionMap[card.infoButtonClick] || (() => {}),
-    displayButtonClick: () => setIsDisplayLayer(index),
-    orderButtonClick: () => changeLayerOrder(index),
-  }))
+  const displayCardList = () =>
+    getCardList().map((card, index) => ({
+      ...card,
+      isDisplayLayer: getIsDisplayLayer(index),
+      sliderClick: (value: number) => setOpacity(index, value), // スライダー変更時のハンドラー
+      infoButtonClick: functionMap[card.infoButtonClick] || (() => {}),
+      displayButtonClick: () => setIsDisplayLayer(index),
+      orderButtonClick: () => changeLayerOrder(index),
+    }))
 
   if (!getLayerBarOpen()) {
     return (
