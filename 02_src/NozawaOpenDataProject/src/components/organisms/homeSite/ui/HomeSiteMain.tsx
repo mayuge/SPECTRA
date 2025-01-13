@@ -52,11 +52,11 @@ const HomeSiteMain: React.FC = () => {
       <div className="md:h-[65vh] h-[80vh] bg-gray-20 justify-center p-8">
         <div className="max-w-screen-xl w-full mx-auto m-8 ">
           <div className="my-10">
-            <TextLabel text={`交通手段別で見る`} size="large" bold={true} isBlack={false} />
+            <TextLabel text={`表示する交通手段を選択`} size="large" bold={true} isBlack={false} />
           </div>
           <div className="flex flex-wrap w-full gap-4 sm:gap-6 md:gap-10">
             <Button
-              text="徒歩中心で見る"
+              text="歩きやすさ(傾斜度)で見る"
               iconLeft="directions_walk"
               variant="btn-light"
               size="normal"
@@ -65,7 +65,7 @@ const HomeSiteMain: React.FC = () => {
               onClick={walkModeSelected}
             />
             <Button
-              text="シェアサイクル中心で見る"
+              text="シェアサイクルの利便性で見る"
               iconLeft="directions_bike"
               variant="btn-light"
               size="normal"
@@ -74,7 +74,7 @@ const HomeSiteMain: React.FC = () => {
               onClick={cycleModeSelected}
             />
             <Button
-              text="バス中心で見る"
+              text="バス本数の利便性で見る"
               iconLeft="directions_bus"
               variant="btn-light"
               size="normal"
