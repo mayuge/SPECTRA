@@ -18,7 +18,6 @@ let stationStatusData: any[] = []
 
 fetchStationStatusData().then(data => {
   stationStatusData = data // ステーション情報を準備
-  console.log()
 })
 
 const { reqDocomoBikeShareStationInfo } = useReqCycleDataAdapter()
@@ -27,22 +26,36 @@ const { reqDocomoBikeShareStationInfo } = useReqCycleDataAdapter()
 const docomoBikeShareSymbolFeature = await reqDocomoBikeShareStationInfo()
 
 // GeoJSONソースの作成
+// GeoJSONソースの作成時にステーションごとにnum_bikes_availableをプロパティに追加
 const docomoBikeShareSource: GeoJSONSourceSpecification = {
   type: "geojson",
   data: {
     type: "FeatureCollection",
-    features: docomoBikeShareSymbolFeature,
+    features: docomoBikeShareSymbolFeature.map((feature: any) => {
+      // ステーションの情報をGeoJSONのpropertiesに追加
+      const station = stationStatusData.find(
+        (item) => item.station_id === feature.properties.station_id
+      );
+      feature.properties.num_bikes_available = station ? station.num_bikes_available : 0;
+      return feature;
+    }),
   },
-}
+};
 
-// Popupテンプレート内で事前に準備したステーション状態を使う
+// レイヤーの作成
 const docomoBikeShareSymbolLayer = {
   id: "pointDocomoBikeShareSymbol",
   type: "symbol",
   sourceId: "pointDocomoBikeShare",
   source: docomoBikeShareSource,
   layout: {
-    "icon-image": "redBike",
+    "icon-image": [
+      "case", 
+      ["!=", ["get", "num_bikes_available"], 0], // num_bikes_availableが1未満の場合
+      "successRedBike" ,// それ以外のアイコン
+      "darkRedBike",  // 1未満の場合のアイコン
+      
+    ],
     "icon-size": 0.25,
     "icon-allow-overlap": true,
     visibility: "visible",
@@ -50,23 +63,24 @@ const docomoBikeShareSymbolLayer = {
   minzoom: 15,
   popup: {
     template: (properties: any) => {
-      // 事前に準備したステーション情報を利用
-      const station = stationStatusData.find((item: any) => item.station_id === properties.station_id)
+      const station = stationStatusData.find(
+        (item: any) => item.station_id === properties.station_id
+      );
 
-      // HTML要素を直接生成
-      const div = document.createElement("div")
+      const div = document.createElement("div");
       div.innerHTML = `
         <div class="p-2">
-         <div class="flex items-center gap-2 mt-2">
+          <div class="mt-2">
             <h3 class="text-base font-semibold">${properties.name}</h3>
-            <h3 class="text-base font-semibold">${station ? station.num_bikes_available : '情報取得中...'}</h3>
+            <h3 class="text-base font-semibold">利用できる台数${station ? station.num_bikes_available : '情報取得中...'}</h3>
+            <h3 class="text-base font-semibold">返却できる台数${station ? station.num_docks_available : '情報取得中...'}</h3>
           </div>
         </div>
-      `
-      return div // HTMLElementを返す
+      `;
+      return div;
     },
   },
-} as LayerType
+} as LayerType;
 
 export const docomoBikeSharePointCard: CardListType = {
   logoImg: "/assets/logos/redBike.webp",
