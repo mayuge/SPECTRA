@@ -10,6 +10,7 @@ import {
   useDialogStoreAdapter,
   useManageLayerAdapter,
   useTimeDataStoreAdapter,
+  useCycleStationStatusStoreAdapter,
 } from "@/infrastructure/adapters/storeAdapter"
 import { useSiteRouteAdapter } from "@/infrastructure/adapters/routeAdapter"
 import { useGetTimeDataAdapter } from "@/infrastructure/adapters/getTimeDataAdapter"
@@ -25,6 +26,8 @@ const useViewSiteMain = () => {
   const { getNowTime } = useGetTimeDataAdapter()
   //更新時刻のセッター・ゲッター
   const { setTimeData, getTimeData } = useTimeDataStoreAdapter()
+  //サイクルステーションの状態ストア呼び出し
+  const { setDocomoBikeShareStationStatusArray, setHelloCycleStationStatusArray,getDocomoBikeShareStationStatusObj, getHelloCycleStationStatusObj } = useCycleStationStatusStoreAdapter()
   //交通モード取得
   const { getWalkModeSelected, getCycleModeSelected, getBusModeSelected, getTrainModeSelected,    setTrainModeSelected,
     setBusModeSelected,
@@ -32,7 +35,7 @@ const useViewSiteMain = () => {
     setWalkModeSelected, } =
     useModeStateStoreAdapter()
   //サイクルデータ取得
-  const { reqHelloCycleStationInfo, reqDocomoBikeShareStationInfo } = useReqCycleDataAdapter()
+  const { reqHelloCycleStationInfo, reqHelloCycleStationStatus, reqDocomoBikeShareStationInfo, reqDocomoBikeShareStationStatus } = useReqCycleDataAdapter()
   //API呼び出し
   const { reqTokyoMetroRealTimeInfo, reqToeiTrainRealTimeInfo, reqJrEastRealTimeInfo } =
     useReqRailwayDataAdapter()
@@ -111,7 +114,7 @@ const useViewSiteMain = () => {
    * ボタンがクリックされた場合
    **/
   const buttonClicked = () => {
-    console.log("buttonClicked")
+  
   }
   /**
    * 選択されたモードを取得し、セットする
@@ -149,6 +152,8 @@ const useViewSiteMain = () => {
     tokyoMetroRealTimeInfoCallback()
     toeiTrainRealTimeInfoCallback()
     jrEastRealTimeInfoCallback()
+    helloCycleStationStatusCallback()
+    docomoBikeShareStationInfoCallback()
     setTimeData(getNowTime())
     getSelectedMode()
   }
@@ -157,7 +162,6 @@ const useViewSiteMain = () => {
    */
   const jrEastRealTimeInfoCallback = async () => {
     const res = await reqJrEastRealTimeInfo()
-    console.log("jr", res)
     setChuoInfo(getTrainInformationText(res, "odpt.Railway:JR-East.Chuo"))
     setChuoKaisokuInfo(getTrainInformationText(res, "odpt.Railway:JR-East.ChuoRapid"))
     setSoubuInfo(getTrainInformationText(res, "odpt.Railway:JR-East.Sobu"))
@@ -217,12 +221,20 @@ const useViewSiteMain = () => {
   const helloCycleStationInfoCallback = async () => {
     const res = await reqHelloCycleStationInfo()
   }
+    /**
+   * ハローサイクリングステーション情報
+   */
+    const helloCycleStationStatusCallback = async () => {
+      const res = await reqHelloCycleStationStatus()
+      setHelloCycleStationStatusArray(res)
+    }
 
   /**
    * ドコモバイクシェアステーション情報
    */
   const docomoBikeShareStationInfoCallback = async () => {
-    const res = await reqDocomoBikeShareStationInfo()
+    const res = await reqDocomoBikeShareStationStatus()
+    setDocomoBikeShareStationStatusArray(res)
   }
 
   // ホームサイトに遷移する関数
@@ -243,6 +255,8 @@ const useViewSiteMain = () => {
     useCallback,
     helloCycleStationInfoCallback,
     docomoBikeShareStationInfoCallback,
+    getDocomoBikeShareStationStatusObj,
+    getHelloCycleStationStatusObj,
     buttonClicked,
     routeToHomeSite,
     getLayerBarOpen,
