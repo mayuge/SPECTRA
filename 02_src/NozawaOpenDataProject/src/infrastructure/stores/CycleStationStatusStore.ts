@@ -1,7 +1,6 @@
-import { create } from "zustand";
+import { create } from "zustand"
 import { ICycleStationStatus } from "@/domain/interfaces/ICycleStationStatus"
 // Zustand ストアの型を定義
-
 
 // Zustand ストアを作成
 const useCycleStationStatusStore = create<ICycleStationStatus>()((set, get) => ({
@@ -24,15 +23,13 @@ const useCycleStationStatusStore = create<ICycleStationStatus>()((set, get) => (
   getDocomoBikeShareStationStatusObj: (stationId: string) => {
     return get().docomoBikeShareStationStatusArray.find(
       (station) => station.station_id === stationId
-    );
+    )
   },
 
   // station_id に一致する Hello のステーションデータを取得
   getHelloCycleStationStatusObj: (stationId: string) => {
-    return get().helloCycleStationStatusArray.find(
-      (station) => station.station_id === stationId
-    );
+    return get().helloCycleStationStatusArray.find((station) => station.station_id === stationId)
   },
-}));
+}))
 
-export default useCycleStationStatusStore;
+export default useCycleStationStatusStore

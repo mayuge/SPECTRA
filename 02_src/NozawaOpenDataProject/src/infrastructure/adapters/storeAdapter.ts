@@ -14,12 +14,11 @@ import type { IToeiTrainInfoState } from "@/domain/interfaces/IToeiTrainInfoStat
 import useJrEastInfoStore from "@/infrastructure/stores/jrEastInfoStore"
 import type { IJrEastInfoState } from "@/domain/interfaces/IJrEastInfoState"
 
-import type{ IModeState } from "@/domain/interfaces/IModeState"
+import type { IModeState } from "@/domain/interfaces/IModeState"
 import useModeStateStore from "@/infrastructure/stores/modeStateStore"
 
-import useCycleStationStatusStore from "@/infrastructure/stores/CycleStationStatusStore"
-import type{ ICycleStationStatus } from "@/domain/interfaces/ICycleStationStatus"
-
+import useCycleStationStatusStore from "@/infrastructure/stores/cycleStationStatusStore"
+import type { ICycleStationStatus } from "@/domain/interfaces/ICycleStationStatus"
 
 export const useTimeDataStoreAdapter = (): ITimeDataStore => useTimeDataStore()
 export const useDialogStoreAdapter = (): IDialogState => useDialogStateStore()
@@ -28,4 +27,4 @@ export const useTokyoMetroStoreAdapter = (): ITokyoMetroInfoState => useTokyoMet
 export const useToeiTrainInfoStoreAdapter = (): IToeiTrainInfoState => useToeiTrainInfoStore()
 export const useJrEastInfoStoreAdapter = (): IJrEastInfoState => useJrEastInfoStore()
 export const useModeStateStoreAdapter = (): IModeState => useModeStateStore()
-export const useCycleStationStatusStoreAdapter = ():ICycleStationStatus  => useCycleStationStatusStore()
+export const useCycleStationStatusStoreAdapter = () => useCycleStationStatusStore()

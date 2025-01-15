@@ -102,6 +102,11 @@ const useReqCycleData = () => {
       throw new Error(error.message)
     }
   }
-  return { reqHelloCycleStationInfo,reqHelloCycleStationStatus, reqDocomoBikeShareStationInfo,reqDocomoBikeShareStationStatus }
+  return {
+    reqHelloCycleStationInfo,
+    reqHelloCycleStationStatus,
+    reqDocomoBikeShareStationInfo,
+    reqDocomoBikeShareStationStatus,
+  }
 }
 export default useReqCycleData

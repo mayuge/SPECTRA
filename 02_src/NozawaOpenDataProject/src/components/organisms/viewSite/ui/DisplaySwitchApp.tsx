@@ -1,8 +1,8 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import Button from "@/components/atoms/buttons/Button";
-import TextLabel from "@/components/atoms/labels/TextLabel";
-import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain";
+"use client"
+import React, { useEffect, useState } from "react"
+import Button from "@/components/atoms/buttons/Button"
+import TextLabel from "@/components/atoms/labels/TextLabel"
+import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
 
 const DisplayInfoApp: React.FC = () => {
   const {
@@ -15,20 +15,20 @@ const DisplayInfoApp: React.FC = () => {
     setBusModeSelected,
     setCycleModeSelected,
     setWalkModeSelected,
-  } = useViewSiteMain();
+  } = useViewSiteMain()
 
   // ローカルステートに値を同期
-  const [trainModeSelected, setTrainModeSelectedLocal] = useState(false);
-  const [busModeSelected, setBusModeSelectedLocal] = useState(false);
-  const [cycleModeSelected, setCycleModeSelectedLocal] = useState(false);
-  const [walkModeSelected, setWalkModeSelectedLocal] = useState(false);
+  const [trainModeSelected, setTrainModeSelectedLocal] = useState(false)
+  const [busModeSelected, setBusModeSelectedLocal] = useState(false)
+  const [cycleModeSelected, setCycleModeSelectedLocal] = useState(false)
+  const [walkModeSelected, setWalkModeSelectedLocal] = useState(false)
 
   useEffect(() => {
-    setTrainModeSelectedLocal(getTrainModeSelected());
-    setBusModeSelectedLocal(getBusModeSelected());
-    setCycleModeSelectedLocal(getCycleModeSelected());
-    setWalkModeSelectedLocal(getWalkModeSelected());
-  }, [getTrainModeSelected(), getBusModeSelected(), getCycleModeSelected(), getWalkModeSelected()]);
+    setTrainModeSelectedLocal(getTrainModeSelected())
+    setBusModeSelectedLocal(getBusModeSelected())
+    setCycleModeSelectedLocal(getCycleModeSelected())
+    setWalkModeSelectedLocal(getWalkModeSelected())
+  }, [getTrainModeSelected(), getBusModeSelected(), getCycleModeSelected(), getWalkModeSelected()])
 
   return (
     <div className="absolute top-[115px] right-4 z-10">
@@ -45,9 +45,9 @@ const DisplayInfoApp: React.FC = () => {
             shape="circle"
             isShadow={true}
             onClick={() => {
-              setWalkModeSelected();
-              setWalkModeSelectedLocal(!walkModeSelected);
-              useCallback();
+              setWalkModeSelected()
+              setWalkModeSelectedLocal(!walkModeSelected)
+              useCallback()
             }}
           />
           <Button
@@ -58,9 +58,9 @@ const DisplayInfoApp: React.FC = () => {
             shape="circle"
             isShadow={true}
             onClick={() => {
-              setCycleModeSelected();
-              setCycleModeSelectedLocal(!cycleModeSelected);
-              useCallback();
+              setCycleModeSelected()
+              setCycleModeSelectedLocal(!cycleModeSelected)
+              useCallback()
             }}
           />
           <Button
@@ -71,9 +71,9 @@ const DisplayInfoApp: React.FC = () => {
             shape="circle"
             isShadow={true}
             onClick={() => {
-              setBusModeSelected();
-              setBusModeSelectedLocal(!busModeSelected);
-              useCallback();
+              setBusModeSelected()
+              setBusModeSelectedLocal(!busModeSelected)
+              useCallback()
             }}
           />
           <Button
@@ -84,15 +84,15 @@ const DisplayInfoApp: React.FC = () => {
             shape="circle"
             isShadow={true}
             onClick={() => {
-              setTrainModeSelected();
-              setTrainModeSelectedLocal(!trainModeSelected);
-              useCallback();
+              setTrainModeSelected()
+              setTrainModeSelectedLocal(!trainModeSelected)
+              useCallback()
             }}
           />
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default DisplayInfoApp;
+export default DisplayInfoApp

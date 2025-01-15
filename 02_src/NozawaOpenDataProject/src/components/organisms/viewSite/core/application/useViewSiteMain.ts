@@ -27,15 +27,30 @@ const useViewSiteMain = () => {
   //更新時刻のセッター・ゲッター
   const { setTimeData, getTimeData } = useTimeDataStoreAdapter()
   //サイクルステーションの状態ストア呼び出し
-  const { setDocomoBikeShareStationStatusArray, setHelloCycleStationStatusArray,getDocomoBikeShareStationStatusObj, getHelloCycleStationStatusObj } = useCycleStationStatusStoreAdapter()
+  const {
+    setDocomoBikeShareStationStatusArray,
+    setHelloCycleStationStatusArray,
+    getDocomoBikeShareStationStatusObj,
+    getHelloCycleStationStatusObj,
+  } = useCycleStationStatusStoreAdapter()
   //交通モード取得
-  const { getWalkModeSelected, getCycleModeSelected, getBusModeSelected, getTrainModeSelected,    setTrainModeSelected,
+  const {
+    getWalkModeSelected,
+    getCycleModeSelected,
+    getBusModeSelected,
+    getTrainModeSelected,
+    setTrainModeSelected,
     setBusModeSelected,
     setCycleModeSelected,
-    setWalkModeSelected, } =
-    useModeStateStoreAdapter()
+    setWalkModeSelected,
+  } = useModeStateStoreAdapter()
   //サイクルデータ取得
-  const { reqHelloCycleStationInfo, reqHelloCycleStationStatus, reqDocomoBikeShareStationInfo, reqDocomoBikeShareStationStatus } = useReqCycleDataAdapter()
+  const {
+    reqHelloCycleStationInfo,
+    reqHelloCycleStationStatus,
+    reqDocomoBikeShareStationInfo,
+    reqDocomoBikeShareStationStatus,
+  } = useReqCycleDataAdapter()
   //API呼び出し
   const { reqTokyoMetroRealTimeInfo, reqToeiTrainRealTimeInfo, reqJrEastRealTimeInfo } =
     useReqRailwayDataAdapter()
@@ -113,9 +128,7 @@ const useViewSiteMain = () => {
   /**
    * ボタンがクリックされた場合
    **/
-  const buttonClicked = () => {
-  
-  }
+  const buttonClicked = () => {}
   /**
    * 選択されたモードを取得し、セットする
    **/
@@ -221,13 +234,13 @@ const useViewSiteMain = () => {
   const helloCycleStationInfoCallback = async () => {
     const res = await reqHelloCycleStationInfo()
   }
-    /**
+  /**
    * ハローサイクリングステーション情報
    */
-    const helloCycleStationStatusCallback = async () => {
-      const res = await reqHelloCycleStationStatus()
-      setHelloCycleStationStatusArray(res)
-    }
+  const helloCycleStationStatusCallback = async () => {
+    const res = await reqHelloCycleStationStatus()
+    setHelloCycleStationStatusArray(res)
+  }
 
   /**
    * ドコモバイクシェアステーション情報
