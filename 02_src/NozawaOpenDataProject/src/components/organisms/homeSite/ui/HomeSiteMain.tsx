@@ -49,9 +49,9 @@ const HomeSiteMain: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="md:h-[65vh] h-auto bg-gray-20 justify-center p-8">
-        <div className="max-w-screen-xl w-full mx-auto m-8 ">
-          <div className="my-10">
+      <div className="h-max-[100vh] bg-gray-20 justify-center p-4">
+        <div className="max-w-screen-xl w-full mx-auto m-4 ">
+          <div className="my-8">
             <TextLabel text={`表示する交通手段を選択`} size="large" bold={true} isBlack={false} />
           </div>
           <div className="flex flex-wrap w-full gap-4 sm:gap-6 md:gap-10">
@@ -92,8 +92,18 @@ const HomeSiteMain: React.FC = () => {
               onClick={trainModeSelected}
             />
           </div>
-
-          <div className="mt-16 mb-8">
+          <div className="mt-8">
+            <TextLabel text={`このプロジェクトについて`} size="large" bold={true} isBlack={false} />
+          </div>
+          <div className="my-4">
+            <TextLabel
+              text={`SPECTRA PROJECTは、新たな視点（perspective）を交通（transportation）に提供するためのWEBサービスです。\n公共交通オープンデータを3D地図上でカスタマイズすることができ、交通の新たな価値を可視化します。`}
+              size="normal"
+              bold={false}
+              isBlack={false}
+            />
+          </div>
+          <div className="my-8">
             <TextLabel text={`リリースノート`} size="large" bold={true} isBlack={false} />
           </div>
           <div className="my-4">
@@ -119,7 +129,8 @@ const HomeSiteMain: React.FC = () => {
               bold={false}
               isBlack={false}
             />
-            <div className="my-8">
+          
+            <div className="my-8 bg-gray-20">
               <Button
                 text="参考資料を見る"
                 iconLeft="text_snippet"
