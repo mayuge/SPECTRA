@@ -99,7 +99,7 @@ const initializeLayer = async () => {
     isShadow: false,
     shape: "square",
     isDisplayLayer: true,
-    infoButtonClick: "buttonClicked",
+    infoButtonClick: "openModeDialog",
     displayButtonClick: "buttonClicked",
     orderButtonClick: "buttonClicked",
     layer: docomoBikeShareSymbolLayer,
