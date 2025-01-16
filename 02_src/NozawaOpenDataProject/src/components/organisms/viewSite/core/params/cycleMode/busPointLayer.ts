@@ -17,7 +17,7 @@ const busSymbolLayer: LayerType = {
     "icon-image": "busStop",
     "icon-size": 0.3,
     "icon-allow-overlap": true,
-    visibility: "visible",
+    visibility: "none",
     "text-field": ["get", "stop_name"], // テキストフィールドに駅名を設定
     "text-size": 9, // テキストサイズを設定
     "text-offset": [0, 2.0], // シンボルの少し上にテキストを配置
@@ -62,7 +62,7 @@ export const busPointCard: CardListType = {
   darkBadge: "オープンデータチャレンジ",
   isShadow: false,
   shape: "square",
-  isDisplayLayer: true,
+  isDisplayLayer:false,
   infoButtonClick: "buttonClicked",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "buttonClicked",
