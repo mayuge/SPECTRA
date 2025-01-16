@@ -4,6 +4,7 @@ import DialogHeader from "@/components/molecules/header/DialogHeader"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
 import TitleInfoCard from "@/components/molecules/frames/TitleInfoCard"
 import LegendCard from "@/components/molecules/frames/LegendCard"
+import InfoCard from "@/components/molecules/frames/InfoCard"
 
 const ModeDialogApp: React.FC = () => {
   const { setModeDialogOpen, getModeDialogOpen, getSelectedModeText } = useViewSiteMain()
@@ -47,10 +48,10 @@ const ModeDialogApp: React.FC = () => {
       "#ff55aa",
       20000,
       "#aa0055", */}
-          <LegendCard color="#ffd5ea" text="0 - 100" isShadow={false} />
-          <LegendCard color="#ffaad5" text="100 - 2500" isShadow={false} />
-          <LegendCard color="#ff55aa" text="2500 - 20000" isShadow={false} />
-          <LegendCard color="#aa0055" text="20000 -" isShadow={false} />
+          <LegendCard color="#ffd5ea" text="0 - 100" isShadow={false} shape="square"/>
+          <LegendCard color="#ffaad5" text="100 - 2500" isShadow={false} shape="square"/>
+          <LegendCard color="#ff55aa" text="2500 - 20000" isShadow={false} shape="square"/>
+          <LegendCard color="#aa0055" text="20000 -" isShadow={false} shape="square"/>
           <TitleInfoCard
             text="シェアサイクル密度（駐輪台数/町丁目面積）"
             logoImg="assets/logos/bikeLogo.webp"
@@ -68,11 +69,20 @@ const ModeDialogApp: React.FC = () => {
       "#2171B5",
       300,
       "#08306B", */}
-          <LegendCard color="#F7FBFF" text="0 - 20" isShadow={false} />
-          <LegendCard color="#C6DBEF" text="20 - 50" isShadow={false} />
-          <LegendCard color="#6BAED6" text="50 - 100" isShadow={false} />
-          <LegendCard color="#2171B5" text="100 - 300" isShadow={false} />
-          <LegendCard color="#08306B" text="300 -" isShadow={false} />
+          <LegendCard color="#F7FBFF" text="0 - 20" isShadow={false} shape="square"/>
+          <LegendCard color="#C6DBEF" text="20 - 50" isShadow={false} shape="square"/>
+          <LegendCard color="#6BAED6" text="50 - 100" isShadow={false} shape="square"/>
+          <LegendCard color="#2171B5" text="100 - 300" isShadow={false} shape="square"/>
+          <LegendCard color="#08306B" text="300 -" isShadow={false} shape="square"/>
+          <TitleInfoCard
+            text="シェアサイクル利用状況"
+            logoImg="assets/logos/bikeLogo.webp"
+            isShadow={false}
+            shape="square"
+          />
+          <InfoCard titleText="" text="シェアサイクル利用可能・返却可能" logoImg="assets/logos/successRedBike.webp" isShadow={false} infoButtonClick={()=>{}}/>
+          <InfoCard titleText="" text="シェアサイクル利用可能・返却不可" logoImg="assets/logos/warningRedBike.webp" isShadow={false} infoButtonClick={()=>{}}/>
+          <InfoCard titleText="" text="シェアサイクル利用不可・返却可能" logoImg="assets/logos/darkRedBike.webp" isShadow={false} infoButtonClick={()=>{}}/>
           <TitleInfoCard
             text="土地傾斜度（町丁目）"
             logoImg="assets/logos/mountain.webp"
@@ -87,9 +97,9 @@ const ModeDialogApp: React.FC = () => {
       5,
       "#734C00",
     ], */}
-          <LegendCard color="#FFFFFF" text="0.00 - 2.00" isShadow={false} />
-          <LegendCard color="#FFAA00" text="2.00 - 5.00" isShadow={false} />
-          <LegendCard color="#734C00" text="5.00 -" isShadow={false} />
+          <LegendCard color="#FFFFFF" text="0.00 - 2.00" isShadow={false} shape="square"/>
+          <LegendCard color="#FFAA00" text="2.00 - 5.00" isShadow={false} shape="square"/>
+          <LegendCard color="#734C00" text="5.00 -" isShadow={false} shape="square"/>
         </div>
       </div>
     </div>

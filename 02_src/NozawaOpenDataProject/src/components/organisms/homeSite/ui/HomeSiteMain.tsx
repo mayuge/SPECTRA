@@ -49,7 +49,7 @@ const HomeSiteMain: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="md:h-[65vh] h-[80vh] bg-gray-20 justify-center p-8">
+      <div className="md:h-[65vh] h-auto bg-gray-20 justify-center p-8">
         <div className="max-w-screen-xl w-full mx-auto m-8 ">
           <div className="my-10">
             <TextLabel text={`表示する交通手段を選択`} size="large" bold={true} isBlack={false} />
