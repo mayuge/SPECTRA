@@ -17,13 +17,13 @@ const TextLabel: React.FC<TextLabelProps> = ({ text, size, bold, isBlack }: Text
   let fontSize = "md:text-base text-xs" // デフォルトのサイズ
 
   if (size === "mini") {
-    fontSize = "text-[8px]" // mini サイズの padding
+    fontSize = "text-[8px]" // mini サイズ
   } else if (size === "small") {
-    fontSize = "text-xs" // small サイズの padding
+    fontSize = "text-xs" // small サイズ
   } else if (size === "large") {
-    fontSize = "md:text-2xl text-xl" // large サイズの padding
+    fontSize = "md:text-2xl text-lg" // large サイズ
   } else if (size === "xlarge") {
-    fontSize = "md:text-6xl text-5xl" // large サイズの padding
+    fontSize = "md:text-6xl text-3xl" // large サイズ
   }
 
   // 文字の太さ
