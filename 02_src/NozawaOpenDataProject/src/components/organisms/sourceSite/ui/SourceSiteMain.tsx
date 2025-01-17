@@ -54,7 +54,7 @@ const SourceSiteMain: React.FC = () => {
           <TextLabel text={`使用データ一覧`} size="large" bold={true} isBlack={false} />
         </div>
       </div>
-      <div className="h-[100vh] bg-gray-70 justify-center p-8">
+      <div className="md:h-[100vh] h-[150vh] bg-gray-70 justify-center p-8">
         <div className="max-w-screen-xl w-full mx-auto m-4">
           <div className="mt-8">
             <TextLabel text={`シェアサイクル関連`} size="large" bold={true} isBlack={true} />
