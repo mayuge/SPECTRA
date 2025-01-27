@@ -1,0 +1,2 @@
+フォルダ構成は基本的にatomicDesignです。
+ロジック部分はcleanArchitecture使ってます。
