@@ -18,13 +18,14 @@ const HomeSiteMain: React.FC = () => {
   return (
     <div className="relative">
       <img
-        src="/assets/platou_test_4.png"
-        className="absolute inset-0 w-full h-full object-cover z-[-1]"
+        src="/assets/relationBackground.png
+        "
+        className="absolute w-[100%] h-[60%] object-cover z-[-1]"
       />
       <div className="relative p-4 justify-center">
         <div className="max-w-screen-xl w-full mx-auto">
           <Header
-            text="SPECTRA PROJECT"
+            text="Relaha"
             icon="home"
             size="large"
             variant="header-light"
@@ -33,10 +34,10 @@ const HomeSiteMain: React.FC = () => {
           />
           <div className="my-12">
             <TextLabel
-              text={`交通の新たな価値を\n可視化する`}
+              text={`人とのつながりで\n世界が広がる`}
               size="xlarge"
               bold={true}
-              isBlack={true}
+              isBlack={false}
             />
           </div>
           <div className="my-12">
@@ -44,7 +45,29 @@ const HomeSiteMain: React.FC = () => {
               text={`鳥瞰的な視点を提供することによって、\n交通に新たな価値が生まれる`}
               size="large"
               bold={true}
-              isBlack={true}
+              isBlack={false}
+            />
+          </div>
+          <div className="my-8">
+          <Button
+              text="ログインはこちら"
+              iconRight="arrow_forward"
+              variant="btn-light"
+              size="normal"
+              shape="circle"
+              isShadow={true}
+              onClick={cycleModeSelected}
+            />
+          </div>
+          <div className="my-8">
+          <Button
+              text="新規登録はこちら"
+              iconRight="arrow_forward"
+              variant="btn-light"
+              size="normal"
+              shape="circle"
+              isShadow={true}
+              onClick={cycleModeSelected}
             />
           </div>
         </div>
