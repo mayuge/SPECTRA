@@ -1,8 +1,6 @@
 "use client"
 import React, { useEffect } from "react"
-import MapApp from "@/components/organisms/viewSite/ui/MapApp"
 import LayerListBarApp from "@/components/organisms/viewSite/ui/LayerListBarApp"
-import InfoDialogApp from "@/components/organisms/viewSite/ui/InfoDialogApp"
 import DisplayInfoApp from "@/components/organisms/viewSite/ui/DisplayInfoApp"
 import DisplaySwitchApp from "@/components/organisms/viewSite/ui/DisplaySwitchApp"
 import HeaderApp from "@/components/organisms/viewSite/ui/HeaderApp"
@@ -28,10 +26,8 @@ const ViewSiteMain: React.FC = () => {
       <HeaderApp />
       <LayerListBarApp />
       <ModeDialogApp />
-      <InfoDialogApp />
       <DisplaySwitchApp />
       <DisplayInfoApp />
-      <MapApp />
     </div>
   )
 }
