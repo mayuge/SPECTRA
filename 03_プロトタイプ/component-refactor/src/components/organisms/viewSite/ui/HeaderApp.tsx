@@ -5,19 +5,16 @@ import useViewSiteMain from "@/components/organisms/viewSite/core/application/us
 
 const HeaderApp: React.FC = () => {
   const { routeToHomeSite } = useViewSiteMain()
-
   return (
-    <div className="relative z-10 p-4 flex justify-start items-center bg-gray-20 shadow-sm shadow-black gap-4">
-      <div className="w-full">
-        <Header
-          text="Relaha"
-          icon="home"
-          size="large"
-          variant="header-light"
-          isCircle={true}
-          onClick={routeToHomeSite}
-        />
-      </div>
+    <div className="relative z-10 p-4 flex justify-start items-center bg-gray-20 shadow-sm shadow-black gap-4 w-full">
+      <Header
+        text="Relaha"
+        icon="home"
+        size="large"
+        variant="header-light"
+        isCircle={true}
+        onClick={routeToHomeSite}
+      />
     </div>
   )
 }

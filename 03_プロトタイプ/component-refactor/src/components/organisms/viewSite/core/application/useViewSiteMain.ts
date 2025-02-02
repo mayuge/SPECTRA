@@ -1,8 +1,4 @@
 import {
-  useReqRailwayDataAdapter,
-  useReqCycleDataAdapter,
-} from "@/infrastructure/adapters/httpReqAdapter"
-import {
   useModeStateStoreAdapter,
   useDialogStoreAdapter,
   useTimeDataStoreAdapter,
@@ -30,9 +26,6 @@ const useViewSiteMain = () => {
     setWalkModeSelected,
   } = useModeStateStoreAdapter()
 
-  //API呼び出し
-  const { reqTokyoMetroRealTimeInfo, reqToeiTrainRealTimeInfo, reqJrEastRealTimeInfo } =
-    useReqRailwayDataAdapter()
   //ダイアログ開閉
   const {
     getModeDialogOpen,
@@ -49,43 +42,10 @@ const useViewSiteMain = () => {
   const buttonClicked = () => {}
 
   /**
-   * 選択されたモードのテキスト取得
-   **/
-  const getSelectedModeText = () => {
-    if (getWalkModeSelected()) {
-      return "徒歩"
-    } else if (getCycleModeSelected()) {
-      return "シェアサイクル"
-    } else if (getBusModeSelected()) {
-      return "バス"
-    } else if (getTrainModeSelected()) {
-      return "鉄道"
-    }
-  }
-
-  /**
    * コールバック関数をまとめて呼び出す
    */
   const useCallback = () => {
     setTimeData(getNowTime())
-  }
-
-  // データ型の定義
-  type TrainInformation = {
-    "odpt:railway": string
-    "odpt:trainInformationText": { ja: string }
-    [key: string]: any // 他のプロパティを許容
-  }
-
-  // "odpt:railway" をキーに検索して、"odpt:trainInformationText" を取得する関数
-  const getTrainInformationText = (data: TrainInformation[], key: string): string => {
-    const item = data.find((entry) => entry["odpt:railway"] === key)
-    // itemが見つかった場合に情報を返す
-    if (item && item["odpt:trainInformationText"]) {
-      return item["odpt:trainInformationText"].ja
-    }
-    // 見つからなかった場合は「取得できませんでした」を返す
-    return "取得できませんでした"
   }
 
   // ホームサイトに遷移する関数
@@ -109,7 +69,6 @@ const useViewSiteMain = () => {
     getLayerBarOpen,
     getDetailInfoDialogOpen,
     getModeDialogOpen,
-    getSelectedModeText,
     openModeDialog,
     setModeDialogOpen,
     setLayerBarOpen,

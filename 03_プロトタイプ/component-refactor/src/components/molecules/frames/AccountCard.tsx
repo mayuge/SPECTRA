@@ -39,7 +39,7 @@ const AccountCard: React.FC<AccountCardProps> = ({
         {primaryBadge && <Badge variant="badge-primary" text={primaryBadge} />}
         {darkBadge && <Badge variant="badge-dark" text={darkBadge} />}
       </div>
-      <div className="min-w-[400px] inline-flex justify-between items-center gap-4">
+      <div className="min-w-[300px] inline-flex justify-between items-center gap-4">
         <div className="flex items-center gap-2">
           <img src={logoImgPath} className="w-10 h-10 rounded-full" />
           <TextLabel text={text} size="normal" bold={false} isBlack={false} />

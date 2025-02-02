@@ -49,10 +49,10 @@ const HomeSiteMain: React.FC = () => {
             />
           </div>
           <div className="my-8">
-          <Button
+            <Button
               text="ログインはこちら"
               iconRight="arrow_forward"
-              variant="btn-light"
+              variant="btn-primary"
               size="normal"
               shape="circle"
               isShadow={true}
@@ -60,10 +60,10 @@ const HomeSiteMain: React.FC = () => {
             />
           </div>
           <div className="my-8">
-          <Button
+            <Button
               text="新規登録はこちら"
               iconRight="arrow_forward"
-              variant="btn-light"
+              variant="btn-warning"
               size="normal"
               shape="circle"
               isShadow={true}
@@ -152,7 +152,7 @@ const HomeSiteMain: React.FC = () => {
               bold={false}
               isBlack={false}
             />
-          
+
             <div className="my-8 bg-gray-20">
               <Button
                 text="参考資料を見る"

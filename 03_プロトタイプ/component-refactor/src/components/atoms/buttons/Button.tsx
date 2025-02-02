@@ -6,10 +6,10 @@ type ButtonProps = {
   iconLeft?: string // アイコンの名前を文字列で指定
   iconRight?: string // アイコンの名前を文字列で指定
   isShadow?: boolean //影をつけるかつけないか
+  isStretch?: boolean //ボタンを横幅いっぱいに広げるかどうか
   shape?: string //ボタンの形状を文字列で指定 square circle
   size: ButtonSizeType // mini、small、normal、large のいずれかを指定
   variant: ButtonVariantType // ボタンのスタイル btn-primary, btn-secondary, btn-danger, btn-warning, btn-success のいずれかを指定
-
   onClick?: () => void
 }
 
@@ -21,6 +21,7 @@ const Button: React.FC<ButtonProps> = ({
   iconLeft,
   iconRight,
   isShadow,
+  isStretch,
   onClick,
 }: ButtonProps) => {
   // サイズの種類　small normal largeから指定 paddingSize を動的に設定
@@ -81,15 +82,19 @@ const Button: React.FC<ButtonProps> = ({
     buttonShadow = "shadow-md shadow-black"
   }
 
+  let buttonStretch = ""
+  if (isStretch === true) {
+    buttonStretch = "w-full"
+  }
+
   return (
     <button
-      className={`${paddingSize} ${btnVariant} ${cornerShape} ${buttonShadow} flex items-center gap-1 md:text-base text-xs`} // flex と items-center を追加
+      className={`${paddingSize} ${btnVariant} ${cornerShape} ${buttonShadow} ${buttonStretch} flex items-center justify-center gap-1 md:text-base text-xs`} // flex と items-center を追加
       onClick={onClick}
     >
-      {iconLeft && <span className="material-icons">{iconLeft}</span>} {/* アイコンを表示*/}
+      {iconLeft && <span className="material-icons">{iconLeft}</span>}
       {text}
       {iconRight && <span className="material-icons">{iconRight}</span>}{" "}
-      {/* アイコンを右寄せで表示*/}
     </button>
   )
 }

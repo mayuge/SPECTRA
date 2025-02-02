@@ -31,21 +31,6 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
-.maplibregl-popup-close-button {
-  display: block; /* 確実にボタンを表示 */
-  width: 24px; /* 適切な幅 */
-  height: 24px; /* 適切な高さ */
-  font-size: 20px; /* ボタン内のアイコンサイズ */
-  line-height: 24px; /* ボタン内テキストの高さ */
-  background-color: transparent; /* 背景を透明に */
-  border: none; /* 枠線なし */
-  color: var(--foreground); /* テーマに基づく色 */
-  position: absolute; /* 位置を固定 */
-  top: 8px; /* ポップアップの上からの距離 */
-  right: 8px; /* ポップアップの右からの距離 */
-  cursor: pointer; /* マウスオーバー時にポインタ表示 */
-}
-
 /* :root {
   --background: #ffffff;
   --foreground: #171717;

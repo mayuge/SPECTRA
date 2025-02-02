@@ -4,20 +4,21 @@ import useViewSiteMain from "@/components/organisms/viewSite/core/application/us
 import AccountCard from "@/components/molecules/frames/AccountCard"
 import PullTab from "@/components/atoms/buttons/PullTab"
 
-const LayerListBarApp: React.FC = () => {
-  const { setLayerBarOpen, getLayerBarOpen } = useViewSiteMain()
+const ProjectListApp: React.FC = () => {
+  const { setModeDialogOpen, getModeDialogOpen } = useViewSiteMain()
 
-  if (!getLayerBarOpen()) {
+  // ダイアログが閉じている場合は何も描画しない
+  if (!getModeDialogOpen()) {
     return (
       <div className="relative z-10 w-min h-calc-100vh overflow-y-auto no-scrollbar flex items-center">
         <PullTab
-          position="left"
+          position="right"
           size="mini"
           variant="pullTab-light"
-          icon="arrow_right"
+          icon="arrow_left"
           isShadow={true}
           onClick={() => {
-            setLayerBarOpen(true)
+            setModeDialogOpen(true)
           }}
         />
       </div>
@@ -26,170 +27,170 @@ const LayerListBarApp: React.FC = () => {
 
   return (
     <div className="relative z-10 flex items-center max-w-md">
+      <PullTab
+        position="right"
+        size="mini"
+        variant="pullTab-light"
+        icon="arrow_right"
+        isShadow={true}
+        onClick={() => {
+          setModeDialogOpen(false)
+        }}
+      />
       <div className="h-calc-100vh bg-back shadow-lg shadow-black overflow-y-auto no-scrollbar">
         <AccountCard
           logoImg=""
-          text="野澤遼太郎"
+          text="まなびばならは"
           infoButtonClick={() => {}}
-          dangerBadge="横浜国立大学"
-          warningBadge="SAAP"
+          dangerBadge="明治大学"
+          warningBadge="野澤ゼミ"
           successBadge="まなびばならは"
           primaryBadge="学生"
-          darkBadge="理工学部"
+          darkBadge="政治経済学部"
         />
         <AccountCard
           logoImg=""
-          text="野澤遼太郎"
+          text="まなびばならは"
           infoButtonClick={() => {}}
-          dangerBadge="横浜国立大学"
-          warningBadge="SAAP"
+          dangerBadge="明治大学"
+          warningBadge="野澤ゼミ"
           successBadge="まなびばならは"
           primaryBadge="学生"
-          darkBadge="理工学部"
+          darkBadge="政治経済学部"
         />
         <AccountCard
           logoImg=""
-          text="野澤遼太郎"
+          text="まなびばならは"
           infoButtonClick={() => {}}
-          dangerBadge="横浜国立大学"
-          warningBadge="SAAP"
+          dangerBadge="明治大学"
+          warningBadge="野澤ゼミ"
           successBadge="まなびばならは"
           primaryBadge="学生"
-          darkBadge="理工学部"
+          darkBadge="政治経済学部"
         />
         <AccountCard
           logoImg=""
-          text="野澤遼太郎"
+          text="まなびばならは"
           infoButtonClick={() => {}}
-          dangerBadge="横浜国立大学"
-          warningBadge="SAAP"
+          dangerBadge="明治大学"
+          warningBadge="野澤ゼミ"
           successBadge="まなびばならは"
           primaryBadge="学生"
-          darkBadge="理工学部"
+          darkBadge="政治経済学部"
         />
         <AccountCard
           logoImg=""
-          text="野澤遼太郎"
+          text="まなびばならは"
           infoButtonClick={() => {}}
-          dangerBadge="横浜国立大学"
-          warningBadge="SAAP"
+          dangerBadge="明治大学"
+          warningBadge="野澤ゼミ"
           successBadge="まなびばならは"
           primaryBadge="学生"
-          darkBadge="理工学部"
+          darkBadge="政治経済学部"
         />
         <AccountCard
           logoImg=""
-          text="野澤遼太郎"
+          text="まなびばならは"
           infoButtonClick={() => {}}
-          dangerBadge="横浜国立大学"
-          warningBadge="SAAP"
+          dangerBadge="明治大学"
+          warningBadge="野澤ゼミ"
           successBadge="まなびばならは"
           primaryBadge="学生"
-          darkBadge="理工学部"
+          darkBadge="政治経済学部"
         />
         <AccountCard
           logoImg=""
-          text="野澤遼太郎"
+          text="まなびばならは"
           infoButtonClick={() => {}}
-          dangerBadge="横浜国立大学"
-          warningBadge="SAAP"
+          dangerBadge="明治大学"
+          warningBadge="野澤ゼミ"
           successBadge="まなびばならは"
           primaryBadge="学生"
-          darkBadge="理工学部"
+          darkBadge="政治経済学部"
         />
         <AccountCard
           logoImg=""
-          text="野澤遼太郎"
+          text="まなびばならは"
           infoButtonClick={() => {}}
-          dangerBadge="横浜国立大学"
-          warningBadge="SAAP"
+          dangerBadge="明治大学"
+          warningBadge="野澤ゼミ"
           successBadge="まなびばならは"
           primaryBadge="学生"
-          darkBadge="理工学部"
+          darkBadge="政治経済学部"
         />
         <AccountCard
           logoImg=""
-          text="野澤遼太郎"
+          text="まなびばならは"
           infoButtonClick={() => {}}
-          dangerBadge="横浜国立大学"
-          warningBadge="SAAP"
+          dangerBadge="明治大学"
+          warningBadge="野澤ゼミ"
           successBadge="まなびばならは"
           primaryBadge="学生"
-          darkBadge="理工学部"
+          darkBadge="政治経済学部"
         />
         <AccountCard
           logoImg=""
-          text="野澤遼太郎"
+          text="まなびばならは"
           infoButtonClick={() => {}}
-          dangerBadge="横浜国立大学"
-          warningBadge="SAAP"
+          dangerBadge="明治大学"
+          warningBadge="野澤ゼミ"
           successBadge="まなびばならは"
           primaryBadge="学生"
-          darkBadge="理工学部"
+          darkBadge="政治経済学部"
         />
         <AccountCard
           logoImg=""
-          text="野澤遼太郎"
+          text="まなびばならは"
           infoButtonClick={() => {}}
-          dangerBadge="横浜国立大学"
-          warningBadge="SAAP"
+          dangerBadge="明治大学"
+          warningBadge="野澤ゼミ"
           successBadge="まなびばならは"
           primaryBadge="学生"
-          darkBadge="理工学部"
+          darkBadge="政治経済学部"
         />
         <AccountCard
           logoImg=""
-          text="野澤遼太郎"
+          text="まなびばならは"
           infoButtonClick={() => {}}
-          dangerBadge="横浜国立大学"
-          warningBadge="SAAP"
+          dangerBadge="明治大学"
+          warningBadge="野澤ゼミ"
           successBadge="まなびばならは"
           primaryBadge="学生"
-          darkBadge="理工学部"
+          darkBadge="政治経済学部"
         />
         <AccountCard
           logoImg=""
-          text="野澤遼太郎"
+          text="まなびばならは"
           infoButtonClick={() => {}}
-          dangerBadge="横浜国立大学"
-          warningBadge="SAAP"
+          dangerBadge="明治大学"
+          warningBadge="野澤ゼミ"
           successBadge="まなびばならは"
           primaryBadge="学生"
-          darkBadge="理工学部"
+          darkBadge="政治経済学部"
         />
         <AccountCard
           logoImg=""
-          text="野澤遼太郎"
+          text="まなびばならは"
           infoButtonClick={() => {}}
-          dangerBadge="横浜国立大学"
-          warningBadge="SAAP"
+          dangerBadge="明治大学"
+          warningBadge="野澤ゼミ"
           successBadge="まなびばならは"
           primaryBadge="学生"
-          darkBadge="理工学部"
+          darkBadge="政治経済学部"
         />
         <AccountCard
           logoImg=""
-          text="野澤遼太郎"
+          text="まなびばならは"
           infoButtonClick={() => {}}
-          dangerBadge="横浜国立大学"
-          warningBadge="SAAP"
+          dangerBadge="明治大学"
+          warningBadge="野澤ゼミ"
           successBadge="まなびばならは"
           primaryBadge="学生"
-          darkBadge="理工学部"
+          darkBadge="政治経済学部"
         />
       </div>
-      <PullTab
-        position="left"
-        size="mini"
-        variant="pullTab-light"
-        icon="arrow_left"
-        isShadow={true}
-        onClick={() => {
-          setLayerBarOpen(false)
-        }}
-      />
     </div>
   )
 }
 
-export default LayerListBarApp
+export default ProjectListApp

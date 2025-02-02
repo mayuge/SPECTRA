@@ -5,7 +5,7 @@ import DisplayInfoApp from "@/components/organisms/viewSite/ui/DisplayInfoApp"
 import DisplaySwitchApp from "@/components/organisms/viewSite/ui/DisplaySwitchApp"
 import HeaderApp from "@/components/organisms/viewSite/ui/HeaderApp"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
-import ModeDialogApp from "@/components/organisms/viewSite/ui/ModeDialogApp"
+import ModeDialogApp from "@/components/organisms/viewSite/ui/ProjectListApp"
 
 const ViewSiteMain: React.FC = () => {
   const { useCallback } = useViewSiteMain()
@@ -24,10 +24,13 @@ const ViewSiteMain: React.FC = () => {
   return (
     <div className="relative w-full h-screen">
       <HeaderApp />
-      <AccountListBarApp />
-      <ModeDialogApp />
-      <DisplaySwitchApp />
-      <DisplayInfoApp />
+      <div className="flex w-full justify-between bg-gray-20 h-calc-100vh">
+        <div className="flex">
+          <DisplaySwitchApp />
+          <AccountListBarApp />
+        </div>
+        <ModeDialogApp />
+      </div>
     </div>
   )
 }
