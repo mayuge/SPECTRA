@@ -16,6 +16,7 @@ export default {
         danger: "#F47B67",
         warning: "#F8A532",
         success: "#48B784",
+        back: "#36393F",
         gray: {
           10: "#1A1A1A",
           20: "#333333",

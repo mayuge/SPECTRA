@@ -10,7 +10,7 @@ const HeaderApp: React.FC = () => {
     <div className="relative z-10 p-4 flex justify-start items-center bg-gray-20 shadow-sm shadow-black gap-4">
       <div className="w-full">
         <Header
-          text="SPECTRA PROJECT"
+          text="Relaha"
           icon="home"
           size="large"
           variant="header-light"

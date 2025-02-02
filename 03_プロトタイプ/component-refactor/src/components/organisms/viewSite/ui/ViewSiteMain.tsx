@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect } from "react"
-import LayerListBarApp from "@/components/organisms/viewSite/ui/LayerListBarApp"
+import AccountListBarApp from "@/components/organisms/viewSite/ui/AccountListBarApp"
 import DisplayInfoApp from "@/components/organisms/viewSite/ui/DisplayInfoApp"
 import DisplaySwitchApp from "@/components/organisms/viewSite/ui/DisplaySwitchApp"
 import HeaderApp from "@/components/organisms/viewSite/ui/HeaderApp"
@@ -24,7 +24,7 @@ const ViewSiteMain: React.FC = () => {
   return (
     <div className="relative w-full h-screen">
       <HeaderApp />
-      <LayerListBarApp />
+      <AccountListBarApp />
       <ModeDialogApp />
       <DisplaySwitchApp />
       <DisplayInfoApp />
