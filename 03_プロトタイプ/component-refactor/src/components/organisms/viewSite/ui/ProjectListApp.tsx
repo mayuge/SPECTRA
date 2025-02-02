@@ -1,7 +1,7 @@
 "use client"
 import React from "react"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
-import AccountCard from "@/components/molecules/frames/AccountCard"
+import ProjectCard from "@/components/molecules/frames/ProjectCard"
 import PullTab from "@/components/atoms/buttons/PullTab"
 
 const ProjectListApp: React.FC = () => {
@@ -38,7 +38,7 @@ const ProjectListApp: React.FC = () => {
         }}
       />
       <div className="h-calc-100vh bg-back shadow-lg shadow-black overflow-y-auto no-scrollbar">
-        <AccountCard
+        <ProjectCard
           logoImg=""
           text="まなびばならは"
           infoButtonClick={() => {}}
@@ -48,7 +48,7 @@ const ProjectListApp: React.FC = () => {
           primaryBadge="学生"
           darkBadge="政治経済学部"
         />
-        <AccountCard
+        <ProjectCard
           logoImg=""
           text="まなびばならは"
           infoButtonClick={() => {}}
@@ -58,7 +58,7 @@ const ProjectListApp: React.FC = () => {
           primaryBadge="学生"
           darkBadge="政治経済学部"
         />
-        <AccountCard
+        <ProjectCard
           logoImg=""
           text="まなびばならは"
           infoButtonClick={() => {}}
@@ -68,7 +68,7 @@ const ProjectListApp: React.FC = () => {
           primaryBadge="学生"
           darkBadge="政治経済学部"
         />
-        <AccountCard
+        <ProjectCard
           logoImg=""
           text="まなびばならは"
           infoButtonClick={() => {}}
@@ -78,7 +78,7 @@ const ProjectListApp: React.FC = () => {
           primaryBadge="学生"
           darkBadge="政治経済学部"
         />
-        <AccountCard
+        <ProjectCard
           logoImg=""
           text="まなびばならは"
           infoButtonClick={() => {}}
@@ -88,7 +88,7 @@ const ProjectListApp: React.FC = () => {
           primaryBadge="学生"
           darkBadge="政治経済学部"
         />
-        <AccountCard
+        <ProjectCard
           logoImg=""
           text="まなびばならは"
           infoButtonClick={() => {}}
@@ -98,7 +98,7 @@ const ProjectListApp: React.FC = () => {
           primaryBadge="学生"
           darkBadge="政治経済学部"
         />
-        <AccountCard
+        <ProjectCard
           logoImg=""
           text="まなびばならは"
           infoButtonClick={() => {}}
@@ -108,7 +108,7 @@ const ProjectListApp: React.FC = () => {
           primaryBadge="学生"
           darkBadge="政治経済学部"
         />
-        <AccountCard
+        <ProjectCard
           logoImg=""
           text="まなびばならは"
           infoButtonClick={() => {}}
@@ -118,7 +118,7 @@ const ProjectListApp: React.FC = () => {
           primaryBadge="学生"
           darkBadge="政治経済学部"
         />
-        <AccountCard
+        <ProjectCard
           logoImg=""
           text="まなびばならは"
           infoButtonClick={() => {}}
@@ -128,7 +128,7 @@ const ProjectListApp: React.FC = () => {
           primaryBadge="学生"
           darkBadge="政治経済学部"
         />
-        <AccountCard
+        <ProjectCard
           logoImg=""
           text="まなびばならは"
           infoButtonClick={() => {}}
@@ -138,7 +138,7 @@ const ProjectListApp: React.FC = () => {
           primaryBadge="学生"
           darkBadge="政治経済学部"
         />
-        <AccountCard
+        <ProjectCard
           logoImg=""
           text="まなびばならは"
           infoButtonClick={() => {}}
@@ -148,7 +148,7 @@ const ProjectListApp: React.FC = () => {
           primaryBadge="学生"
           darkBadge="政治経済学部"
         />
-        <AccountCard
+        <ProjectCard
           logoImg=""
           text="まなびばならは"
           infoButtonClick={() => {}}
@@ -158,7 +158,7 @@ const ProjectListApp: React.FC = () => {
           primaryBadge="学生"
           darkBadge="政治経済学部"
         />
-        <AccountCard
+        <ProjectCard
           logoImg=""
           text="まなびばならは"
           infoButtonClick={() => {}}
@@ -168,7 +168,7 @@ const ProjectListApp: React.FC = () => {
           primaryBadge="学生"
           darkBadge="政治経済学部"
         />
-        <AccountCard
+        <ProjectCard
           logoImg=""
           text="まなびばならは"
           infoButtonClick={() => {}}
@@ -178,7 +178,7 @@ const ProjectListApp: React.FC = () => {
           primaryBadge="学生"
           darkBadge="政治経済学部"
         />
-        <AccountCard
+        <ProjectCard
           logoImg=""
           text="まなびばならは"
           infoButtonClick={() => {}}

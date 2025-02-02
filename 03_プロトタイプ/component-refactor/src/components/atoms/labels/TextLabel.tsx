@@ -2,7 +2,7 @@ import React from "react"
 
 type TextLabelProps = {
   text: string // テキスト
-  size: string // mini、small、normal、large,xlarge のいずれかを指定
+  size: "mini" | "small" | "normal" | "large" | "xlarge" // mini、small、normal、large,xlarge のいずれかを指定
   bold: boolean // 文字の太さ
   isBlack?: boolean //文字色
 }
