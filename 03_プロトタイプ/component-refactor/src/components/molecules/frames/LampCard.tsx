@@ -1,11 +1,12 @@
 import React from "react"
 import Button from "@/components/atoms/buttons/Button"
 import TextLabel from "@/components/atoms/labels/TextLabel"
+import type { SwitchColor } from "@/domain/types/atomsType"
 
 type AccountCardProps = {
   text: string // カードテキスト
   icon: string // アイコン
-  variant: "danger" | "warning" | "success" | "primary" // バリアント
+  variant: SwitchColor // バリアント
 }
 
 const AccountCard: React.FC<AccountCardProps> = ({ text, icon, variant }: AccountCardProps) => {

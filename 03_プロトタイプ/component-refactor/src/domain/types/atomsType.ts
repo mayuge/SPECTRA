@@ -35,6 +35,12 @@ import type {
   POSITION_BOTTOM,
   POSITION_RIGHT,
   POSITION_LEFT,
+  PRIMARY_COLOR,
+  SECONDARY_COLOR,
+  WARNING_COLOR,
+  DANGER_COLOR,
+  SUCCESS_COLOR,
+  DARK_COLOR,
 } from "@/domain/params/components"
 
 export type ButtonVariantType =
@@ -90,3 +96,9 @@ export type PullTabSizeType =
   | typeof SMALL_SIZE
   | typeof NORMAL_SIZE
   | typeof LARGE_SIZE
+
+export type SwitchColor =
+  | typeof PRIMARY_COLOR
+  | typeof WARNING_COLOR
+  | typeof DANGER_COLOR
+  | typeof SUCCESS_COLOR

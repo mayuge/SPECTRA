@@ -6,76 +6,81 @@ import useViewSiteMain from "@/components/organisms/viewSite/core/application/us
 const SwitchApp: React.FC = () => {
   const {
     useCallback,
-    getTrainModeSelected,
-    getBusModeSelected,
-    getCycleModeSelected,
-    getWalkModeSelected,
-    setTrainModeSelected,
-    setBusModeSelected,
-    setCycleModeSelected,
-    setWalkModeSelected,
+    getFileModeSelected,
+    getGroupModeSelected,
+    getPersonModeSelected,
+    getHomeModeSelected,
+    setFileModeSelected,
+    setGroupModeSelected,
+    setPersonModeSelected,
+    setHomeModeSelected,
   } = useViewSiteMain()
 
   // ローカルステートに値を同期
-  const [trainModeSelected, setTrainModeSelectedLocal] = useState(false)
-  const [busModeSelected, setBusModeSelectedLocal] = useState(false)
-  const [cycleModeSelected, setCycleModeSelectedLocal] = useState(false)
-  const [walkModeSelected, setWalkModeSelectedLocal] = useState(false)
+  const [FileModeSelected, setFileModeSelectedLocal] = useState(false)
+  const [GroupModeSelected, setGroupModeSelectedLocal] = useState(false)
+  const [PersonModeSelected, setPersonModeSelectedLocal] = useState(false)
+  const [HomeModeSelected, setHomeModeSelectedLocal] = useState(false)
 
   useEffect(() => {
-    setTrainModeSelectedLocal(getTrainModeSelected())
-    setBusModeSelectedLocal(getBusModeSelected())
-    setCycleModeSelectedLocal(getCycleModeSelected())
-    setWalkModeSelectedLocal(getWalkModeSelected())
-  }, [getTrainModeSelected(), getBusModeSelected(), getCycleModeSelected(), getWalkModeSelected()])
+    setFileModeSelectedLocal(getFileModeSelected())
+    setGroupModeSelectedLocal(getGroupModeSelected())
+    setPersonModeSelectedLocal(getPersonModeSelected())
+    setHomeModeSelectedLocal(getHomeModeSelected())
+  }, [
+    getFileModeSelected(),
+    getGroupModeSelected(),
+    getPersonModeSelected(),
+    getHomeModeSelected(),
+  ])
 
   return (
     <div className="h-calc-100vh gap-2 z-10 bg-gray-20 shadow-md shadow-black">
       <Button
         text=""
         iconLeft="home"
-        variant={trainModeSelected ? "btn-danger" : "btn-dark"}
+        variant={HomeModeSelected ? "btn-danger" : "btn-dark"}
         size="small"
         shape="square"
         isShadow={false}
         onClick={() => {
-          setTrainModeSelected()
+          setHomeModeSelected()
           useCallback()
         }}
       />
       <Button
         text=""
         iconLeft="person"
-        variant={walkModeSelected ? "btn-warning" : "btn-dark"}
+        variant={PersonModeSelected ? "btn-warning" : "btn-dark"}
         size="small"
         shape="square"
         isShadow={false}
         onClick={() => {
-          setWalkModeSelected()
+          setPersonModeSelected()
           useCallback()
         }}
       />
       <Button
         text=""
         iconLeft="groups"
-        variant={cycleModeSelected ? "btn-success" : "btn-dark"}
+        variant={GroupModeSelected ? "btn-success" : "btn-dark"}
         size="small"
         shape="square"
         isShadow={false}
         onClick={() => {
-          setCycleModeSelected()
+          setGroupModeSelected()
           useCallback()
         }}
       />
       <Button
         text=""
         iconLeft="folder"
-        variant={busModeSelected ? "btn-primary" : "btn-dark"}
+        variant={FileModeSelected ? "btn-primary" : "btn-dark"}
         size="small"
         shape="square"
         isShadow={false}
         onClick={() => {
-          setBusModeSelected()
+          setFileModeSelected()
           useCallback()
         }}
       />

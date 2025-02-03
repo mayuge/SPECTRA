@@ -5,7 +5,8 @@ import SearchInput from "@/components/molecules/forms/SearchInput"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
 import LampCard from "@/components/molecules/frames/LampCard"
 const HeaderApp: React.FC = () => {
-  const { routeToHomeSite } = useViewSiteMain()
+  const { getModeColor, getModeText, getModeIcon, routeToHomeSite } = useViewSiteMain()
+
   return (
     <div className="relative items-center bg-back w-full">
       <Header
@@ -28,7 +29,11 @@ const HeaderApp: React.FC = () => {
             isBlack={false}
           />
         </div>
-        <LampCard text={`テスト`} variant="success" icon="person" />
+        <LampCard
+          text={`${getModeText()}`}
+          variant={`${getModeColor()}`}
+          icon={`${getModeIcon()}`}
+        />
       </div>
     </div>
   )

@@ -1,3 +1,4 @@
+import type { SwitchColor } from "@/domain/types/atomsType"
 import {
   useModeStateStoreAdapter,
   useDialogStoreAdapter,
@@ -16,14 +17,14 @@ const useViewSiteMain = () => {
 
   //交通モード取得
   const {
-    getWalkModeSelected,
-    getCycleModeSelected,
-    getBusModeSelected,
-    getTrainModeSelected,
-    setTrainModeSelected,
-    setBusModeSelected,
-    setCycleModeSelected,
-    setWalkModeSelected,
+    getHomeModeSelected,
+    getPersonModeSelected,
+    getGroupModeSelected,
+    getFileModeSelected,
+    setFileModeSelected,
+    setGroupModeSelected,
+    setPersonModeSelected,
+    setHomeModeSelected,
   } = useModeStateStoreAdapter()
 
   //ダイアログ開閉
@@ -62,7 +63,47 @@ const useViewSiteMain = () => {
     setModeDialogOpen(true)
   }
 
+  const getModeColor = (): SwitchColor => {
+    if (getHomeModeSelected()) {
+      return "danger"
+    } else if (getPersonModeSelected()) {
+      return "warning"
+    } else if (getGroupModeSelected()) {
+      return "success"
+    } else if (getFileModeSelected()) {
+      return "primary"
+    }
+    return "primary"
+  }
+  const getModeIcon = () => {
+    if (getHomeModeSelected()) {
+      return "home"
+    } else if (getPersonModeSelected()) {
+      return "person"
+    } else if (getGroupModeSelected()) {
+      return "groups"
+    } else if (getFileModeSelected()) {
+      return "folder"
+    }
+    return "menu"
+  }
+  const getModeText = () => {
+    if (getHomeModeSelected()) {
+      return "Relahaホーム"
+    } else if (getPersonModeSelected()) {
+      return "メンバーについて知る"
+    } else if (getGroupModeSelected()) {
+      return "プロジェクトについて知る"
+    } else if (getFileModeSelected()) {
+      return "アーカイブを閲覧"
+    }
+    return "Relahaホーム"
+  }
+
   return {
+    getModeText,
+    getModeColor,
+    getModeIcon,
     useCallback,
     buttonClicked,
     routeToHomeSite,
@@ -75,14 +116,14 @@ const useViewSiteMain = () => {
     setDetailInfoDialogOpen,
     openAllDialogs,
     getTimeData,
-    getTrainModeSelected,
-    getBusModeSelected,
-    getCycleModeSelected,
-    getWalkModeSelected,
-    setTrainModeSelected,
-    setBusModeSelected,
-    setCycleModeSelected,
-    setWalkModeSelected,
+    getFileModeSelected,
+    getGroupModeSelected,
+    getPersonModeSelected,
+    getHomeModeSelected,
+    setFileModeSelected,
+    setGroupModeSelected,
+    setPersonModeSelected,
+    setHomeModeSelected,
   }
 }
 export default useViewSiteMain

@@ -1,14 +1,14 @@
 export interface IModeState {
-  walkModeSelected: boolean
-  cycleModeSelected: boolean
-  busModeSelected: boolean
-  trainModeSelected: boolean
-  setWalkModeSelected: () => void
-  setCycleModeSelected: () => void
-  setBusModeSelected: () => void
-  setTrainModeSelected: () => void
-  getWalkModeSelected: () => boolean
-  getCycleModeSelected: () => boolean
-  getBusModeSelected: () => boolean
-  getTrainModeSelected: () => boolean
+  homeModeSelected: boolean
+  personModeSelected: boolean
+  groupModeSelected: boolean
+  fileModeSelected: boolean
+  setHomeModeSelected: () => void
+  setPersonModeSelected: () => void
+  setGroupModeSelected: () => void
+  setFileModeSelected: () => void
+  getHomeModeSelected: () => boolean
+  getPersonModeSelected: () => boolean
+  getGroupModeSelected: () => boolean
+  getFileModeSelected: () => boolean
 }

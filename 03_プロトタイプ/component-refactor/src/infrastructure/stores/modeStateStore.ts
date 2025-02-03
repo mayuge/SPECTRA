@@ -5,42 +5,42 @@ import { persist, createJSONStorage } from "zustand/middleware"
 const useModeStateStore = create<IModeState>()(
   persist(
     (set, get) => ({
-      walkModeSelected: true,
-      cycleModeSelected: false,
-      busModeSelected: false,
-      trainModeSelected: false,
-      setWalkModeSelected: () =>
+      homeModeSelected: true,
+      personModeSelected: false,
+      groupModeSelected: false,
+      fileModeSelected: false,
+      setHomeModeSelected: () =>
         set(() => ({
-          walkModeSelected: true,
-          cycleModeSelected: false,
-          busModeSelected: false,
-          trainModeSelected: false,
+          homeModeSelected: true,
+          personModeSelected: false,
+          groupModeSelected: false,
+          fileModeSelected: false,
         })),
-      setCycleModeSelected: () =>
+      setPersonModeSelected: () =>
         set(() => ({
-          cycleModeSelected: true,
-          walkModeSelected: false,
-          busModeSelected: false,
-          trainModeSelected: false,
+          personModeSelected: true,
+          homeModeSelected: false,
+          groupModeSelected: false,
+          fileModeSelected: false,
         })),
-      setBusModeSelected: () =>
+      setGroupModeSelected: () =>
         set(() => ({
-          busModeSelected: true,
-          walkModeSelected: false,
-          cycleModeSelected: false,
-          trainModeSelected: false,
+          groupModeSelected: true,
+          homeModeSelected: false,
+          personModeSelected: false,
+          fileModeSelected: false,
         })),
-      setTrainModeSelected: () =>
+      setFileModeSelected: () =>
         set(() => ({
-          trainModeSelected: true,
-          walkModeSelected: false,
-          cycleModeSelected: false,
-          busModeSelected: false,
+          fileModeSelected: true,
+          homeModeSelected: false,
+          personModeSelected: false,
+          groupModeSelected: false,
         })),
-      getWalkModeSelected: () => get().walkModeSelected,
-      getCycleModeSelected: () => get().cycleModeSelected,
-      getBusModeSelected: () => get().busModeSelected,
-      getTrainModeSelected: () => get().trainModeSelected,
+      getHomeModeSelected: () => get().homeModeSelected,
+      getPersonModeSelected: () => get().personModeSelected,
+      getGroupModeSelected: () => get().groupModeSelected,
+      getFileModeSelected: () => get().fileModeSelected,
     }),
     {
       name: "mode-store", // ローカルストレージのキー
