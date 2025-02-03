@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react"
 import Button from "@/components/atoms/buttons/Button"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
 
-const DisplayInfoApp: React.FC = () => {
+const SwitchApp: React.FC = () => {
   const {
     useCallback,
     getTrainModeSelected,
@@ -33,8 +33,20 @@ const DisplayInfoApp: React.FC = () => {
     <div className="h-calc-100vh gap-2 z-10 bg-gray-20 shadow-md shadow-black">
       <Button
         text=""
+        iconLeft="home"
+        variant={trainModeSelected ? "btn-danger" : "btn-dark"}
+        size="small"
+        shape="square"
+        isShadow={false}
+        onClick={() => {
+          setTrainModeSelected()
+          useCallback()
+        }}
+      />
+      <Button
+        text=""
         iconLeft="person"
-        variant={walkModeSelected ? "btn-light" : "btn-dark"}
+        variant={walkModeSelected ? "btn-warning" : "btn-dark"}
         size="small"
         shape="square"
         isShadow={false}
@@ -46,7 +58,7 @@ const DisplayInfoApp: React.FC = () => {
       <Button
         text=""
         iconLeft="groups"
-        variant={cycleModeSelected ? "btn-light" : "btn-dark"}
+        variant={cycleModeSelected ? "btn-success" : "btn-dark"}
         size="small"
         shape="square"
         isShadow={false}
@@ -58,7 +70,7 @@ const DisplayInfoApp: React.FC = () => {
       <Button
         text=""
         iconLeft="folder"
-        variant={busModeSelected ? "btn-light" : "btn-dark"}
+        variant={busModeSelected ? "btn-primary" : "btn-dark"}
         size="small"
         shape="square"
         isShadow={false}
@@ -67,20 +79,8 @@ const DisplayInfoApp: React.FC = () => {
           useCallback()
         }}
       />
-      <Button
-        text=""
-        iconLeft="settings"
-        variant={trainModeSelected ? "btn-light" : "btn-dark"}
-        size="small"
-        shape="square"
-        isShadow={false}
-        onClick={() => {
-          setTrainModeSelected()
-          useCallback()
-        }}
-      />
     </div>
   )
 }
 
-export default DisplayInfoApp
+export default SwitchApp

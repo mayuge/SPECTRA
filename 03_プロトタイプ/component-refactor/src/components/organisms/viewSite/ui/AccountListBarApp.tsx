@@ -9,7 +9,7 @@ const LayerListBarApp: React.FC = () => {
 
   if (!getLayerBarOpen()) {
     return (
-      <div className="relative z-10 w-min h-calc-100vh overflow-y-auto no-scrollbar flex items-center">
+      <div className="flex items-center">
         <PullTab
           position="left"
           size="mini"

@@ -13,12 +13,12 @@
     scrollbar-width: none; /* Firefox */
   }
   .h-calc-100vh {
-    height: calc(100vh - 104px);
+    height: calc(100vh - 120px);
   }
 
   @media (max-width: 768px) {
     .h-calc-100vh {
-      height: calc(100vh - 88px);
+      height: calc(100vh - 96px);
     }
   }
 }

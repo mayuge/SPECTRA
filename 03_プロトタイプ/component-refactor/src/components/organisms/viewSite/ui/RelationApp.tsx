@@ -6,8 +6,8 @@ import TextLabel from "@/components/atoms/labels/TextLabel"
 const RelationApp: React.FC = () => {
   const { routeToHomeSite } = useViewSiteMain()
   return (
-    <div className="w-full px-4 pt-4 pb-2">
-      <div className="w-full h-[400px] bg-back shadow-black shadow-md">
+    <div className="w-full px-4 pb-2">
+      <div className="w-full h-[600px] bg-back shadow-black shadow-md">
         <div className="p-2">
           <TextLabel text="人物相関図" size="normal" bold={true} isBlack={false} />
         </div>
