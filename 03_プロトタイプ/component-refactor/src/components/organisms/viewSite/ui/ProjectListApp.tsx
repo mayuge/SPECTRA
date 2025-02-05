@@ -37,7 +37,7 @@ const ProjectListApp: React.FC = () => {
           setModeDialogOpen(false)
         }}
       />
-      <div className="h-calc-100vh bg-back shadow-lg shadow-black overflow-y-auto no-scrollbar">
+      <div className="h-calc-100vh min-w-[300px] bg-back shadow-lg shadow-black overflow-y-auto no-scrollbar">
         <ProjectCard
           logoImg=""
           text="まなびばならは"

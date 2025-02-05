@@ -25,8 +25,8 @@ const LayerListBarApp: React.FC = () => {
   }
 
   return (
-    <div className="relative z-10 flex items-center max-w-md">
-      <div className="h-calc-100vh bg-back shadow-lg shadow-black overflow-y-auto no-scrollbar">
+    <div className="relative z-10 flex items-center">
+      <div className="h-calc-100vh w-[300px] bg-back shadow-lg shadow-black overflow-y-auto no-scrollbar">
         <AccountCard
           logoImg=""
           text="野澤遼太郎"

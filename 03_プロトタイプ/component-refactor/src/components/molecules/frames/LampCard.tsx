@@ -12,7 +12,7 @@ type AccountCardProps = {
 const AccountCard: React.FC<AccountCardProps> = ({ text, icon, variant }: AccountCardProps) => {
   return (
     <div className={`bg-back flex items-center gap-2`}>
-      <hr className={`w-[6px] h-10 bg-${variant}`} />
+      <hr className={`w-[6px] h-10 border-0 bg-${variant}`} />
       <Button variant="btn-text-gray" size="mini" iconLeft={`${icon}`} />
       <TextLabel text={text} size="normal" bold={false} isBlack={false} />
     </div>

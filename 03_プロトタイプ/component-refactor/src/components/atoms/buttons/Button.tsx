@@ -26,13 +26,16 @@ const Button: React.FC<ButtonProps> = ({
 }: ButtonProps) => {
   // サイズの種類　small normal largeから指定 paddingSize を動的に設定
   let paddingSize = "md:p-4 p-3" // デフォルトの padding
-
+  let textSize = "md:text-base text-sm" // デフォルトの文字サイズ
   if (size === "mini") {
-    paddingSize = "p-0" // mini サイズの padding
+    paddingSize = "p-1" // mini サイズの padding
+    textSize = "text-xs"
   } else if (size === "small") {
     paddingSize = "md:p-3 p-2" // small サイズの padding
+    textSize = "text-sm"
   } else if (size === "large") {
     paddingSize = "md:p-6 p-4" // large サイズの padding
+    textSize = "text-base"
   }
 
   // ボタンのスタイルの種類 デフォルトは primary
@@ -92,9 +95,9 @@ const Button: React.FC<ButtonProps> = ({
       className={`${paddingSize} ${btnVariant} ${cornerShape} ${buttonShadow} ${buttonStretch} flex items-center justify-center gap-1 md:text-base text-xs`} // flex と items-center を追加
       onClick={onClick}
     >
-      {iconLeft && <span className="material-icons">{iconLeft}</span>}
-      {text}
-      {iconRight && <span className="material-icons">{iconRight}</span>}{" "}
+      {iconLeft && <span className={`${textSize} material-icons`}>{iconLeft}</span>}
+      {text && <span className={`${textSize}`}>{text}</span>}
+      {iconRight && <span className={`${textSize} material-icons`}>{iconRight}</span>}
     </button>
   )
 }

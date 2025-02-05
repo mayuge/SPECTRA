@@ -7,13 +7,7 @@ import Header from "@/components/molecules/header/Header"
 import useHomeSiteMain from "@/components/organisms/homeSite/core/application/useHomeSiteMain"
 
 const HomeSiteMain: React.FC = () => {
-  const {
-    navigateToSourceSite,
-    walkModeSelected,
-    cycleModeSelected,
-    busModeSelected,
-    trainModeSelected,
-  } = useHomeSiteMain()
+  const { navigateToSourceSite, navigateToViewSite } = useHomeSiteMain()
 
   return (
     <div className="relative">
@@ -56,7 +50,7 @@ const HomeSiteMain: React.FC = () => {
               size="normal"
               shape="circle"
               isShadow={true}
-              onClick={cycleModeSelected}
+              onClick={navigateToViewSite}
             />
           </div>
           <div className="my-8">
@@ -67,7 +61,7 @@ const HomeSiteMain: React.FC = () => {
               size="normal"
               shape="circle"
               isShadow={true}
-              onClick={cycleModeSelected}
+              onClick={navigateToViewSite}
             />
           </div>
         </div>
@@ -77,44 +71,7 @@ const HomeSiteMain: React.FC = () => {
           <div className="my-8">
             <TextLabel text={`表示する交通手段を選択`} size="large" bold={true} isBlack={false} />
           </div>
-          <div className="flex flex-wrap w-full gap-4 sm:gap-6 md:gap-10">
-            <Button
-              text="歩きやすさ(傾斜度)で見る"
-              iconLeft="directions_walk"
-              variant="btn-light"
-              size="normal"
-              shape="circle"
-              isShadow={true}
-              onClick={walkModeSelected}
-            />
-            <Button
-              text="シェアサイクルの利便性で見る"
-              iconLeft="directions_bike"
-              variant="btn-light"
-              size="normal"
-              shape="circle"
-              isShadow={true}
-              onClick={cycleModeSelected}
-            />
-            <Button
-              text="バス本数の利便性で見る"
-              iconLeft="directions_bus"
-              variant="btn-light"
-              size="normal"
-              shape="circle"
-              isShadow={true}
-              onClick={busModeSelected}
-            />
-            <Button
-              text="鉄道中心で見る"
-              iconLeft="train"
-              variant="btn-light"
-              size="normal"
-              shape="circle"
-              isShadow={true}
-              onClick={trainModeSelected}
-            />
-          </div>
+
           <div className="mt-8">
             <TextLabel text={`このプロジェクトについて`} size="large" bold={true} isBlack={false} />
           </div>

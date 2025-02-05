@@ -31,7 +31,7 @@ const AccountCard: React.FC<AccountCardProps> = ({
   }
 
   return (
-    <div className={`bg-back hover:bg-gray-20 px-2`}>
+    <div className={`bg-back hover:bg-gray-20 px-2`} onClick={infoButtonClick}>
       <div className="flex items-center gap-1 py-2">
         {dangerBadge && <Badge variant="badge-danger" text={dangerBadge} />}
         {warningBadge && <Badge variant="badge-warning" text={warningBadge} />}
@@ -39,17 +39,11 @@ const AccountCard: React.FC<AccountCardProps> = ({
         {primaryBadge && <Badge variant="badge-primary" text={primaryBadge} />}
         {darkBadge && <Badge variant="badge-dark" text={darkBadge} />}
       </div>
-      <div className="min-w-[300px] inline-flex justify-between items-center gap-4">
-        <div className="flex items-center gap-2">
+      <div className="w-full inline-flex justify-between items-center gap-4">
+        <div className="flex items-center gap-2 pb-2">
           <img src={logoImgPath} className="w-10 h-10 rounded-full" />
           <TextLabel text={text} size="normal" bold={false} isBlack={false} />
         </div>
-        <Button
-          variant="btn-text-gray"
-          size="mini"
-          iconLeft="more_horiz"
-          onClick={infoButtonClick}
-        />
       </div>
 
       <hr className="border-gray-50" />
