@@ -142,6 +142,14 @@ const SourceSiteMain: React.FC = () => {
           </div>
           <div className="my-4">
             <TextLabel
+              text={`国土数値情報　標高・傾斜度5次メッシュ`}
+              size="normal"
+              bold={false}
+              isBlack={true}
+            />
+          </div>
+          <div className="my-4">
+            <TextLabel
               text={`plateau画像　https://plateauview.mlit.go.jp/`}
               size="normal"
               bold={false}
@@ -165,28 +173,13 @@ const SourceSiteMain: React.FC = () => {
             />
           </div>
           <div className="my-4">
-            <TextLabel
-              text={`OpenStreetMap`}
-              size="normal"
-              bold={false}
-              isBlack={true}
-            />
+            <TextLabel text={`OpenStreetMap`} size="normal" bold={false} isBlack={true} />
           </div>
           <div className="my-4">
-            <TextLabel
-              text={`Googleマップ`}
-              size="normal"
-              bold={false}
-              isBlack={true}
-            />
+            <TextLabel text={`Googleマップ`} size="normal" bold={false} isBlack={true} />
           </div>
           <div className="my-4">
-            <TextLabel
-              text={`地理院地図　衛星画像`}
-              size="normal"
-              bold={false}
-              isBlack={true}
-            />
+            <TextLabel text={`地理院地図　衛星画像`} size="normal" bold={false} isBlack={true} />
           </div>
         </div>
       </div>

@@ -35,7 +35,13 @@ const addLayerToMap = (map: maplibregl.Map, layer: any) => {
       const properties = feature.properties
       const popupContent = layer.popup.template(properties) // template関数を使用してHTMLコンテンツ生成
 
-      const popup = new maplibregl.Popup()
+      // 既存のポップアップを閉じる
+      const existingPopups = document.getElementsByClassName("maplibregl-popup")
+      while (existingPopups.length > 0) {
+        existingPopups[0].remove()
+      }
+
+      new maplibregl.Popup()
         .setLngLat(e.lngLat)
         .setDOMContent(popupContent) // HTML要素を設定
         .addTo(map)
