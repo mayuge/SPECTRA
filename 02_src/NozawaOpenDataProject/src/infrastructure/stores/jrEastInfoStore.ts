@@ -26,8 +26,8 @@ const useJrEastInfoStore = create<IJrEastInfoState>()((set, get) => ({
   setKeihinTouhokuInfo: (info: string) => set(() => ({ keihinTohokuInfo: info })),
   getKeihinTouhokuInfo: () => get().keihinTohokuInfo,
   //武蔵野線運行状況のセッター/ゲッター
-  setMusasinoInfo: (info: string) => set(() => ({ chuoInfo: info })),
-  getMusasinoInfo: () => get().chuoInfo,
+  setMusasinoInfo: (info: string) => set(() => ({ musasinoInfo: info })),
+  getMusasinoInfo: () => get().musasinoInfo,
 }))
 
 export default useJrEastInfoStore
