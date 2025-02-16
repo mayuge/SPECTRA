@@ -38,12 +38,18 @@ const useHomeSiteMain = () => {
     routeTo(SOURCE_SITE_ROOT_NAME)
   }
 
+  // 問い合わせフォームに遷移する
+  const navigateToContactForm = () => {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSdFY-weuT-xRIALyESKOsPiogHhTX0rnRket9B-24yZWFJzOA/viewform?usp=dialog", "_blank")
+  }
+
   return {
     navigateToSourceSite,
     walkModeSelected,
     cycleModeSelected,
     busModeSelected,
     trainModeSelected,
+    navigateToContactForm,
   }
 }
 export default useHomeSiteMain

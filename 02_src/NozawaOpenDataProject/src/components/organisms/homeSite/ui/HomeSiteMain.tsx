@@ -13,6 +13,7 @@ const HomeSiteMain: React.FC = () => {
     cycleModeSelected,
     busModeSelected,
     trainModeSelected,
+    navigateToContactForm,
   } = useHomeSiteMain()
 
   return (
@@ -130,7 +131,7 @@ const HomeSiteMain: React.FC = () => {
               isBlack={false}
             />
           
-            <div className="my-8 bg-gray-20">
+            <div className="my-8 bg-gray-20 flex w-full gap-4 sm:gap-6 md:gap-10">
               <Button
                 text="参考資料を見る"
                 iconLeft="text_snippet"
@@ -140,6 +141,16 @@ const HomeSiteMain: React.FC = () => {
                 shape="circle"
                 isShadow={true}
                 onClick={navigateToSourceSite}
+              />
+              <Button
+                text="お問い合わせ"
+                iconLeft="contact_support"
+                iconRight="open_in_new"
+                variant="btn-light"
+                size="normal"
+                shape="circle"
+                isShadow={true}
+                onClick={navigateToContactForm}
               />
             </div>
           </div>
