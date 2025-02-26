@@ -13,13 +13,17 @@
     scrollbar-width: none; /* Firefox */
   }
   .h-calc-100vh {
-    height: calc(100vh - 104px);
+    height: calc(100svh - 104px);
   }
 
   @media (max-width: 768px) {
     .h-calc-100vh {
-      height: calc(100vh - 88px);
+      height: calc(100svh - 88px);
     }
+  }
+
+  .h-full {
+    height: 100svh;
   }
 }
 /* styles/globals.css */
