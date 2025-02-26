@@ -110,6 +110,15 @@ const initializeMap = async (
 
     mapInstance.current.on("load", () => {
       // mapInstance.current?.addControl(new maplibregl.NavigationControl(), "bottom-right")
+      mapInstance.current?.addControl(
+        new maplibregl.GeolocateControl({
+          positionOptions: {
+            enableHighAccuracy: true,
+          },
+          trackUserLocation: true,
+        }),
+        "bottom-right"
+      )
       updateLayers()
     })
 

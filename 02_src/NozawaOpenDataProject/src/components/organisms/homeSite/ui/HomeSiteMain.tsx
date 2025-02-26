@@ -130,7 +130,14 @@ const HomeSiteMain: React.FC = () => {
               bold={false}
               isBlack={false}
             />
-          
+          </div>
+          <div className="my-4">
+            <TextLabel
+              text={`2025年2月15日　本システムが公共交通オープンデータチャレンジ2024にて優秀賞、Project LINKS賞を受賞しました`}
+              size="normal"
+              bold={false}
+              isBlack={false}
+            />
             <div className="my-8 bg-gray-20 flex w-full gap-4 sm:gap-6 md:gap-10">
               <Button
                 text="参考資料を見る"

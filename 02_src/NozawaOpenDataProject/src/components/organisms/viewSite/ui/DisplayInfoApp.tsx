@@ -7,7 +7,7 @@ import useViewSiteMain from "@/components/organisms/viewSite/core/application/us
 const DisplayInfoApp: React.FC = () => {
   const { useCallback, getTimeData } = useViewSiteMain()
   return (
-    <div className="absolute bottom-[50px] right-4 z-10">
+    <div className="absolute bottom-[20px] left-4 z-10">
       <Button
         text={`データの更新時刻　${getTimeData()}`}
         iconLeft="refresh"
