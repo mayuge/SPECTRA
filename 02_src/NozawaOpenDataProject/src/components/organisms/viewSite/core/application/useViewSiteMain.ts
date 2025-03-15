@@ -6,7 +6,6 @@ import {
   useModeStateStoreAdapter,
   useTokyoMetroStoreAdapter,
   useToeiTrainInfoStoreAdapter,
-  useJrEastInfoStoreAdapter,
   useDialogStoreAdapter,
   useManageLayerAdapter,
   useTimeDataStoreAdapter,
@@ -52,8 +51,7 @@ const useViewSiteMain = () => {
     reqDocomoBikeShareStationStatus,
   } = useReqCycleDataAdapter()
   //API呼び出し
-  const { reqTokyoMetroRealTimeInfo, reqToeiTrainRealTimeInfo, reqJrEastRealTimeInfo } =
-    useReqRailwayDataAdapter()
+  const { reqTokyoMetroRealTimeInfo, reqToeiTrainRealTimeInfo } = useReqRailwayDataAdapter()
   //ダイアログ開閉
   const {
     getModeDialogOpen,
@@ -111,20 +109,6 @@ const useViewSiteMain = () => {
     getNipporitoneriInfo,
   } = useToeiTrainInfoStoreAdapter()
 
-  const {
-    setChuoInfo,
-    getChuoInfo,
-    setChuoKaisokuInfo,
-    getChuoKaisokuInfo,
-    setSoubuInfo,
-    getSoubuInfo,
-    setYamanoteInfo,
-    getYamanoteInfo,
-    setKeihinTouhokuInfo,
-    getKeihinTouhokuInfo,
-    setMusasinoInfo,
-    getMusasinoInfo,
-  } = useJrEastInfoStoreAdapter()
   /**
    * ボタンがクリックされた場合
    **/
@@ -164,41 +148,10 @@ const useViewSiteMain = () => {
   const useCallback = () => {
     tokyoMetroRealTimeInfoCallback()
     toeiTrainRealTimeInfoCallback()
-    jrEastRealTimeInfoCallback()
     helloCycleStationStatusCallback()
     docomoBikeShareStationInfoCallback()
     setTimeData(getNowTime())
     getSelectedMode()
-  }
-  /**
-   * JR東日本運行情報
-   */
-  const jrEastRealTimeInfoCallback = async () => {
-    const res = await reqJrEastRealTimeInfo()
-    setChuoInfo(getTrainInformationText(res, "odpt.Railway:JR-East.Chuo"))
-    setChuoKaisokuInfo(getTrainInformationText(res, "odpt.Railway:JR-East.ChuoRapid"))
-    setSoubuInfo(getTrainInformationText(res, "odpt.Railway:JR-East.Sobu"))
-    setYamanoteInfo(getTrainInformationText(res, "odpt.Railway:JR-East.Yamanote"))
-    setKeihinTouhokuInfo(getTrainInformationText(res, "odpt.Railway:JR-East.KeihinTohokuNegishi"))
-    setMusasinoInfo(getTrainInformationText(res, "odpt.Railway:JR-East.Musashino"))
-  }
-
-  // データ型の定義
-  type TrainInformation = {
-    "odpt:railway": string
-    "odpt:trainInformationText": { ja: string }
-    [key: string]: any // 他のプロパティを許容
-  }
-
-  // "odpt:railway" をキーに検索して、"odpt:trainInformationText" を取得する関数
-  const getTrainInformationText = (data: TrainInformation[], key: string): string => {
-    const item = data.find((entry) => entry["odpt:railway"] === key)
-    // itemが見つかった場合に情報を返す
-    if (item && item["odpt:trainInformationText"]) {
-      return item["odpt:trainInformationText"].ja
-    }
-    // 見つからなかった場合は「取得できませんでした」を返す
-    return "取得できませんでした"
   }
 
   /**
@@ -304,12 +257,6 @@ const useViewSiteMain = () => {
     getOedoInfo,
     getArakawaInfo,
     getNipporitoneriInfo,
-    getChuoInfo,
-    getChuoKaisokuInfo,
-    getSoubuInfo,
-    getKeihinTouhokuInfo,
-    getMusasinoInfo,
-    getYamanoteInfo,
     getTrainModeSelected,
     getBusModeSelected,
     getCycleModeSelected,

@@ -11,9 +11,6 @@ import type { ITokyoMetroInfoState } from "@/domain/interfaces/ITokyoMetroInfoSt
 import useToeiTrainInfoStore from "@/infrastructure/stores/toeiTrainInfoStore"
 import type { IToeiTrainInfoState } from "@/domain/interfaces/IToeiTrainInfoState"
 
-import useJrEastInfoStore from "@/infrastructure/stores/jrEastInfoStore"
-import type { IJrEastInfoState } from "@/domain/interfaces/IJrEastInfoState"
-
 import type { IModeState } from "@/domain/interfaces/IModeState"
 import useModeStateStore from "@/infrastructure/stores/modeStateStore"
 
@@ -25,6 +22,5 @@ export const useDialogStoreAdapter = (): IDialogState => useDialogStateStore()
 export const useManageLayerAdapter = () => useManageLayerStateStore()
 export const useTokyoMetroStoreAdapter = (): ITokyoMetroInfoState => useTokyoMetroInfoStore()
 export const useToeiTrainInfoStoreAdapter = (): IToeiTrainInfoState => useToeiTrainInfoStore()
-export const useJrEastInfoStoreAdapter = (): IJrEastInfoState => useJrEastInfoStore()
 export const useModeStateStoreAdapter = (): IModeState => useModeStateStore()
 export const useCycleStationStatusStoreAdapter = () => useCycleStationStatusStore()
