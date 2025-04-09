@@ -4,7 +4,7 @@ import React, { useRef, useEffect } from "react"
 import maplibregl, { LayerSpecification, SourceSpecification } from "maplibre-gl"
 import "maplibre-gl/dist/maplibre-gl.css"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
-import { helloCyclePointCard } from "@/components/organisms/viewSite/core/params/walkMode/helloCyclePointLayer"
+import { helloCyclePointCard } from "@/components/organisms/viewSite/core/params/cycleMode/helloCyclePointLayer"
 
 /**
  * レイヤをマップに追加
@@ -77,7 +77,7 @@ const updateExistingLayer = (map: maplibregl.Map, layer: any) => {
 }
 
 const initializeMap = async (
-  mapContainer: React.RefObject<HTMLDivElement>,
+  mapContainer: React.RefObject<HTMLDivElement | null>,
   mapInstance: React.MutableRefObject<maplibregl.Map | null>,
   updateLayers: () => void
 ) => {
@@ -171,14 +171,6 @@ const MapApp: React.FC = () => {
       clearInterval(timer)
     }
   }, [getLayers])
-
-  useEffect(() => {
-    // helloCyclePointCardのレイヤーを追加
-    const map = mapInstance.current
-    if (map?.isStyleLoaded() && helloCyclePointCard.layer) {
-      addLayerToMap(map, helloCyclePointCard.layer)
-    }
-  }, [mapInstance.current])
 
   return (
     <div className="absolute inset-0 z-0">

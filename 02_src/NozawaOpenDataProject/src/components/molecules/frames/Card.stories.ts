@@ -1,4 +1,3 @@
-import React from "react"
 import Card from "@/components/molecules/frames/Card"
 import type { Meta, StoryObj } from "@storybook/react"
 

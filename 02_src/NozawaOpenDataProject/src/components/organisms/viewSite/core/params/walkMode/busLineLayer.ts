@@ -1,4 +1,4 @@
-import type { GeoJSONSourceSpecification, LineLayerSpecification } from "maplibre-gl"
+import type { GeoJSONSourceSpecification } from "maplibre-gl"
 import { CardListType } from "@/components/organisms/viewSite/core/types/cardListType"
 import { LayerType } from "@/components/organisms/viewSite/core/types/layerType"
 

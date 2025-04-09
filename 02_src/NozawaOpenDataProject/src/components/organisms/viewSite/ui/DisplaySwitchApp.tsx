@@ -6,7 +6,7 @@ import useViewSiteMain from "@/components/organisms/viewSite/core/application/us
 
 const DisplayInfoApp: React.FC = () => {
   const {
-    useCallback,
+    useViewSiteCallback,
     getTrainModeSelected,
     getBusModeSelected,
     getCycleModeSelected,
@@ -47,7 +47,7 @@ const DisplayInfoApp: React.FC = () => {
             onClick={() => {
               setWalkModeSelected()
               setWalkModeSelectedLocal(!walkModeSelected)
-              useCallback()
+              useViewSiteCallback()
             }}
           />
           <Button
@@ -60,7 +60,7 @@ const DisplayInfoApp: React.FC = () => {
             onClick={() => {
               setCycleModeSelected()
               setCycleModeSelectedLocal(!cycleModeSelected)
-              useCallback()
+              useViewSiteCallback()
             }}
           />
           <Button
@@ -73,7 +73,7 @@ const DisplayInfoApp: React.FC = () => {
             onClick={() => {
               setBusModeSelected()
               setBusModeSelectedLocal(!busModeSelected)
-              useCallback()
+              useViewSiteCallback()
             }}
           />
           <Button
@@ -86,7 +86,7 @@ const DisplayInfoApp: React.FC = () => {
             onClick={() => {
               setTrainModeSelected()
               setTrainModeSelectedLocal(!trainModeSelected)
-              useCallback()
+              useViewSiteCallback()
             }}
           />
         </div>

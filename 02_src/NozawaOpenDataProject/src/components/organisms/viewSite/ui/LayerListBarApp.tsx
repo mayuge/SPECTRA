@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect } from "react"
+import React from "react"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
 import Card from "@/components/molecules/frames/Card"
 import PullTab from "@/components/atoms/buttons/PullTab"

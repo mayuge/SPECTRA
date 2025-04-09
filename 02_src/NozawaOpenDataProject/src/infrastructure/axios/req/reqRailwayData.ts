@@ -1,11 +1,7 @@
-import { AxiosRequestConfig } from "axios"
-import { getInstance, getInstanceLimited } from "@/infrastructure/axios/api"
-import GtfsRealtimeBindings from "gtfs-realtime-bindings"
-import JSZip from "jszip"
+import { getInstance } from "@/infrastructure/axios/api"
 
 //apiからリクエスト用のインスタンスを持ってくる
 const http = getInstance()
-const httpLimited = getInstanceLimited()
 
 const useReqRailwayData = () => {
   // 東京メトロの運行状況

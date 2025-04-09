@@ -9,7 +9,7 @@ import {
   useDialogStoreAdapter,
   useManageLayerAdapter,
   useTimeDataStoreAdapter,
-  useCycleStationStatusStoreAdapter,
+  useCycleStoreAdapter,
 } from "@/infrastructure/adapters/storeAdapter"
 import { useSiteRouteAdapter } from "@/infrastructure/adapters/routeAdapter"
 import { useGetTimeDataAdapter } from "@/infrastructure/adapters/getTimeDataAdapter"
@@ -18,6 +18,7 @@ import cycleModeCardLayerList from "@/components/organisms/viewSite/core/params/
 import walkModeCardLayerList from "@/components/organisms/viewSite/core/params/walkMode/useWalkLayersMain"
 import busModeCardLayerList from "@/components/organisms/viewSite/core/params/busMode/useBusLayersMain"
 import trainModeCardLayerList from "@/components/organisms/viewSite/core/params/trainMode/useTrainLayersMain"
+import type { GeoJSONSourceSpecification } from "maplibre-gl"
 
 const useViewSiteMain = () => {
   const { routeTo } = useSiteRouteAdapter()
@@ -25,13 +26,14 @@ const useViewSiteMain = () => {
   const { getNowTime } = useGetTimeDataAdapter()
   //更新時刻のセッター・ゲッター
   const { setTimeData, getTimeData } = useTimeDataStoreAdapter()
-  //サイクルステーションの状態ストア呼び出し
+  //サイクルステーションの状態を取得
   const {
-    setDocomoBikeShareStationStatusArray,
-    setHelloCycleStationStatusArray,
-    getDocomoBikeShareStationStatusObj,
-    getHelloCycleStationStatusObj,
-  } = useCycleStationStatusStoreAdapter()
+    setHelloCycleGeoJson,
+    setDocomoBikeShareGeoJson,
+    getHelloCycleGeoJson,
+    getDocomoBikeShareGeoJson,
+  } = useCycleStoreAdapter()
+
   //交通モード取得
   const {
     getWalkModeSelected,
@@ -145,11 +147,19 @@ const useViewSiteMain = () => {
   /**
    * コールバック関数をまとめて呼び出す
    */
-  const useCallback = () => {
-    tokyoMetroRealTimeInfoCallback()
-    toeiTrainRealTimeInfoCallback()
-    helloCycleStationStatusCallback()
-    docomoBikeShareStationInfoCallback()
+  const useViewSiteCallback = async () => {
+    await tokyoMetroRealTimeInfoCallback()
+
+    const docomoGeoJson = await docomoBikeShareInfoCallback()
+    setDocomoBikeShareGeoJson(docomoGeoJson)
+
+    const helloCycleGeoJson = await helloCycleInfoCallback()
+    setHelloCycleGeoJson(helloCycleGeoJson)
+
+    //console.log(getHelloCycleGeoJson())
+    //console.log(getDocomoBikeShareGeoJson())
+
+    await toeiTrainRealTimeInfoCallback()
     setTimeData(getNowTime())
     getSelectedMode()
   }
@@ -182,25 +192,91 @@ const useViewSiteMain = () => {
   }
 
   /**
-   * ハローサイクリングステーション情報
+   * ハローサイクリングステーション情報について位置情報とポート情報をくっつける
    */
-  const helloCycleStationInfoCallback = async () => {
-    const res = await reqHelloCycleStationInfo()
-  }
-  /**
-   * ハローサイクリングステーション情報
-   */
-  const helloCycleStationStatusCallback = async () => {
-    const res = await reqHelloCycleStationStatus()
-    setHelloCycleStationStatusArray(res)
-  }
 
+  const helloCycleInfoCallback = async (): Promise<GeoJSONSourceSpecification> => {
+    try {
+      const station = await reqHelloCycleStationInfo()
+      const status = await reqHelloCycleStationStatus()
+
+      const stationWithStatus = station.map((station: any) => {
+        const statusData = status.find((s: any) => s.station_id === station.station_id)
+        return {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [station.longitude, station.latitude], // 緯度経度を指定
+          },
+          properties: {
+            ...station,
+            ...statusData,
+          },
+        }
+      })
+
+      return {
+        type: "geojson",
+        data: {
+          type: "FeatureCollection",
+          features: stationWithStatus,
+        },
+      }
+    } catch (error) {
+      if (error instanceof Error) {
+        console.error("Error:", error.message)
+      }
+      return {
+        type: "geojson",
+        data: {
+          type: "FeatureCollection",
+          features: [],
+        },
+      }
+    }
+  }
   /**
-   * ドコモバイクシェアステーション情報
+   * ドコモバイクシェアステーション情報について位置情報とポート情報をくっつける
    */
-  const docomoBikeShareStationInfoCallback = async () => {
-    const res = await reqDocomoBikeShareStationStatus()
-    setDocomoBikeShareStationStatusArray(res)
+  const docomoBikeShareInfoCallback = async (): Promise<GeoJSONSourceSpecification> => {
+    try {
+      const station = await reqDocomoBikeShareStationInfo()
+      const status = await reqDocomoBikeShareStationStatus()
+
+      const stationWithStatus = station.map((station: any) => {
+        const statusData = status.find((s: any) => s.station_id === station.station_id)
+        return {
+          type: "Feature",
+          geometry: {
+            type: "Point",
+            coordinates: [station.longitude, station.latitude], // 緯度経度を指定
+          },
+          properties: {
+            ...station,
+            ...statusData,
+          },
+        }
+      })
+
+      return {
+        type: "geojson",
+        data: {
+          type: "FeatureCollection",
+          features: stationWithStatus,
+        },
+      }
+    } catch (error) {
+      if (error instanceof Error) {
+        console.error("Error:", error.message)
+      }
+      return {
+        type: "geojson",
+        data: {
+          type: "FeatureCollection",
+          features: [],
+        },
+      }
+    }
   }
 
   // ホームサイトに遷移する関数
@@ -218,11 +294,9 @@ const useViewSiteMain = () => {
   }
 
   return {
-    useCallback,
-    helloCycleStationInfoCallback,
-    docomoBikeShareStationInfoCallback,
-    getDocomoBikeShareStationStatusObj,
-    getHelloCycleStationStatusObj,
+    useViewSiteCallback,
+    helloCycleInfoCallback,
+    docomoBikeShareInfoCallback,
     buttonClicked,
     routeToHomeSite,
     getLayerBarOpen,

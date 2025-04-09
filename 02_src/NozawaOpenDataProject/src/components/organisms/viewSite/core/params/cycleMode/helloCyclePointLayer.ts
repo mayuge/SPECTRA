@@ -1,66 +1,70 @@
-import { CardListType } from "@/components/organisms/viewSite/core/types/cardListType"
-import { LayerType } from "@/components/organisms/viewSite/core/types/layerType"
 import { useReqCycleDataAdapter } from "@/infrastructure/adapters/httpReqAdapter"
+import type { CardListType } from "@/components/organisms/viewSite/core/types/cardListType"
+import type { LayerType } from "@/components/organisms/viewSite/core/types/layerType"
 import type { GeoJSONSourceSpecification } from "maplibre-gl"
 
-// 事前にハローサイクリングのステーション情報を取得
-const stationStatusJson = "https://api-public.odpt.org/api/v4/gbfs/hellocycling/station_status.json"
+const { reqHelloCycleStationInfo, reqHelloCycleStationStatus } = useReqCycleDataAdapter()
 
-// 非同期関数を使用してステーション情報を取得
-const fetchStationStatusData = async () => {
-  const response = await fetch(stationStatusJson);
-  const data = await response.json();
-  return data.data.stations; // ステーションデータを返す
-};
+// サイクルデータ取得
+const helloCycleGeoJson = async (): Promise<GeoJSONSourceSpecification> => {
+  try {
+    const station = await reqHelloCycleStationInfo()
+    const status = await reqHelloCycleStationStatus()
+    const stationWithStatus = station.map((station: any) => {
+      const statusData = status.find((s: any) => s.station_id === station.station_id)
+      return {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [station.longitude, station.latitude], // 緯度経度を指定
+        },
+        properties: {
+          ...station,
+          ...statusData,
+        },
+      }
+    })
 
-const { reqHelloCycleStationInfo } = useReqCycleDataAdapter();
+    return {
+      type: "geojson",
+      data: {
+        type: "FeatureCollection",
+        features: stationWithStatus,
+      },
+    }
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error("Error:", error.message)
+    }
+    return {
+      type: "geojson",
+      data: {
+        type: "FeatureCollection",
+        features: [],
+      },
+    }
+  }
+}
 
-const initializeLayer = async () => {
-  // ステーション情報を取得
-  const stationStatusData = await fetchStationStatusData();
+export const getHelloCyclePointCard = async (): Promise<CardListType> => {
+  const getHelloCycleGeoJson = await helloCycleGeoJson()
 
-  // Docomo Bike Shareの情報を取得
-  const helloCycleSymbolFeature = await reqHelloCycleStationInfo();
-
-  // GeoJSONソースを作成
-  const helloCycleSource: GeoJSONSourceSpecification = {
-    type: "geojson",
-    data: {
-      type: "FeatureCollection",
-      features: helloCycleSymbolFeature.map((feature: any) => {
-        const station = stationStatusData.find(
-          (item:any) => item.station_id === feature.properties.station_id
-        );
-
-        // num_bikes_availableを数値型に変換して追加（デフォルト値は0）
-        feature.properties.num_bikes_available = station
-          ? Number(station.num_bikes_available)
-          : 0;
-                  // num_bikes_availableを数値型に変換して追加（デフォルト値は0）
-        feature.properties.num_docks_available = station
-        ? Number(station.num_docks_available)
-        : 0;
-
-        return feature;
-      }),
-    },
-  };
+  console.log("getHelloCycleGeoJson", getHelloCycleGeoJson)
 
   // レイヤーの作成
   const helloCycleSymbolLayer: LayerType = {
     id: "pointHelloCycleSymbol",
     type: "symbol",
     sourceId: "pointHelloCycle",
-    source: helloCycleSource,
+    source: getHelloCycleGeoJson,
     layout: {
       "icon-image": [
         "case",
-        ["==", ["get", "num_bikes_available"], 0], 
+        ["==", ["get", "num_bikes_available"], 0],
         "darkYellowBike", // それ以外の場合
-        ["==", ["get", "num_docks_available"], 0], 
+        ["==", ["get", "num_docks_available"], 0],
         "warningYellowBike",
         "successYellowBike", // 表示するアイコン
-        
       ],
       "icon-size": 0.25,
       "icon-allow-overlap": true,
@@ -69,31 +73,26 @@ const initializeLayer = async () => {
     minzoom: 15,
     popup: {
       template: (properties: any) => {
-        const station = stationStatusData.find(
-          (item: any) => item.station_id === properties.station_id
-        );
-
-        const div = document.createElement("div");
+        const div = document.createElement("div")
         div.innerHTML = `
           <div class="p-2">
             <div class="mt-2">
               <h3 class="text-base font-semibold">${properties.name}</h3>
-              <h3 class="text-base font-semibold">利用できる台数${station ? station.num_bikes_available : "情報取得中..."}</h3>
-              <h3 class="text-base font-semibold">返却できる台数${station ? station.num_docks_available : "情報取得中..."}</h3>
+              <h3 class="text-base font-semibold">利用できる台数${properties ? properties.num_bikes_available : "情報取得中..."}</h3>
+              <h3 class="text-base font-semibold">返却できる台数${properties ? properties.num_docks_available : "情報取得中..."}</h3>
             </div>
           </div>
-        `;
-        return div;
+        `
+        return div
       },
     },
-  };
+  }
 
-  // レイヤーをCardListTypeに追加
   return {
     logoImg: "/assets/logos/yellowBike.webp",
     text: "ハローサイクリングステーション",
     dangerBadge: "交通",
-    warningBadge: "シェアサイクル",
+    warningBadge: "サイクル",
     primaryBadge: "ポイントデータ",
     darkBadge: "オープンデータチャレンジ",
     isShadow: false,
@@ -103,8 +102,8 @@ const initializeLayer = async () => {
     displayButtonClick: "buttonClicked",
     orderButtonClick: "buttonClicked",
     layer: helloCycleSymbolLayer,
-  } as CardListType;
-};
+  } as CardListType
+}
 
-// 初期化されたレイヤーをエクスポート
-export const helloCyclePointCard = await initializeLayer();
+export const helloCyclePointCard = await getHelloCyclePointCard()
+console.log("helloCyclePointCard", helloCyclePointCard)

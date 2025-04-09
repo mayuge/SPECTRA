@@ -1,9 +1,6 @@
 import type { NextConfig } from "next"
 
 const nextConfig: NextConfig = {
-  devIndicators: {
-    appIsrStatus: false,
-  },
   async rewrites() {
     return [
       {
@@ -11,6 +8,9 @@ const nextConfig: NextConfig = {
         destination: "https://api.odpt.org/api/v4/:path*", // プロキシ先のURL
       },
     ]
+  },
+  experimental: {
+    esmExternals: true, // ES Modules をサポート
   },
 }
 

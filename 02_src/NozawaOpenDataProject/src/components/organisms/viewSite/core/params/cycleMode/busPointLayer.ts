@@ -1,4 +1,4 @@
-import type { GeoJSONSourceSpecification, SymbolLayerSpecification } from "maplibre-gl"
+import type { GeoJSONSourceSpecification } from "maplibre-gl"
 import { CardListType } from "@/components/organisms/viewSite/core/types/cardListType"
 import { LayerType } from "@/components/organisms/viewSite/core/types/layerType"
 
@@ -62,7 +62,7 @@ export const busPointCard: CardListType = {
   darkBadge: "オープンデータチャレンジ",
   isShadow: false,
   shape: "square",
-  isDisplayLayer:false,
+  isDisplayLayer: false,
   infoButtonClick: "buttonClicked",
   displayButtonClick: "buttonClicked",
   orderButtonClick: "buttonClicked",

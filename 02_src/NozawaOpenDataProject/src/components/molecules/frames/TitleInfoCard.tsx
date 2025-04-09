@@ -1,6 +1,4 @@
 import React from "react"
-import Badge from "@/components/atoms/labels/Badge"
-import Button from "@/components/atoms/buttons/Button"
 import TextLabel from "@/components/atoms/labels/TextLabel"
 
 type TitleInfoCardProps = {
@@ -17,7 +15,7 @@ const TitleInfoCard: React.FC<TitleInfoCardProps> = ({
   isShadow,
 }: TitleInfoCardProps) => {
   // カードのスタイルの種類 デフォルトは primary
-  let cardVariant = "bg-white"
+  const cardVariant = "bg-white"
 
   // カードの形状の種類 circle square
   let cornerShape = "rounded-lg"

@@ -1,4 +1,3 @@
-import React from "react"
 import Button from "@/components/atoms/buttons/Button"
 import type { Meta, StoryObj } from "@storybook/react"
 

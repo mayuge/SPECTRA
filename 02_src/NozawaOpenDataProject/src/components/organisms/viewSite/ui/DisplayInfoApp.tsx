@@ -5,7 +5,7 @@ import Button from "@/components/atoms/buttons/Button"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
 
 const DisplayInfoApp: React.FC = () => {
-  const { useCallback, getTimeData } = useViewSiteMain()
+  const { useViewSiteCallback, getTimeData } = useViewSiteMain()
   return (
     <div className="absolute bottom-[20px] left-4 z-10">
       <Button
@@ -15,7 +15,7 @@ const DisplayInfoApp: React.FC = () => {
         size="small"
         shape="circle"
         isShadow={true}
-        onClick={useCallback}
+        onClick={useViewSiteCallback}
       />
     </div>
   )

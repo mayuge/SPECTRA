@@ -52,10 +52,9 @@ const Header: React.FC<HeaderProps> = ({
 
   //形の種類
   let circleShape = ""
-  let buttonShape = "square"
+
   if (isCircle === true) {
     circleShape = "rounded-full"
-    buttonShape = "circle"
   }
 
   return (

@@ -27,7 +27,7 @@ const TextLabel: React.FC<TextLabelProps> = ({ text, size, bold, isBlack }: Text
   }
 
   // 文字の太さ
-  let fontBold = bold ? "font-bold" : "" // boldがtrueならば、文字を太くする
+  const fontBold = bold ? "font-bold" : "" // boldがtrueならば、文字を太くする
 
   return <p className={`${fontSize} ${fontBold} ${textColor} whitespace-pre-line`}>{text}</p>
 }

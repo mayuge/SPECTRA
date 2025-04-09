@@ -1,7 +1,6 @@
 import React from "react"
 import Badge from "@/components/atoms/labels/Badge"
 import Button from "@/components/atoms/buttons/Button"
-import BaseColorInput from "@/components/atoms/Inputs/ColorInput"
 import BaseSliderInput from "@/components/atoms/Inputs/SliderInput"
 import TextLabel from "@/components/atoms/labels/TextLabel"
 
@@ -39,7 +38,7 @@ const Card: React.FC<CardProps> = ({
   orderButtonClick,
 }: CardProps) => {
   // カードのスタイルの種類 デフォルトは primary
-  let cardVariant = "bg-white"
+  const cardVariant = "bg-white"
 
   // カードの形状の種類 circle square
   let cornerShape = "rounded-lg"
@@ -56,7 +55,7 @@ const Card: React.FC<CardProps> = ({
   }
 
   // 目のアイコンで表示・非表示を示す
-  let displayIcon = isDisplayLayer ? "visibility" : "visibility_off"
+  const displayIcon = isDisplayLayer ? "visibility" : "visibility_off"
 
   // ロゴ画像のパス
   let logoImgPath = "/assets/logos/default.webp"
