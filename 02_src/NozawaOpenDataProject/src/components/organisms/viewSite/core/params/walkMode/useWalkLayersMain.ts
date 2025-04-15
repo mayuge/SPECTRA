@@ -6,6 +6,8 @@ import { osmCard } from "@/components/organisms/viewSite/core/params/walkMode/os
 import { googleCard } from "@/components/organisms/viewSite/core/params/walkMode/googleMapLayer"
 import { trainLineCard } from "@/components/organisms/viewSite/core/params/walkMode/trainLineLayer"
 import { sateliteMapCard } from "@/components/organisms/viewSite/core/params/walkMode/sateliteMapLayer"
+import { helloCyclePointCard } from "@/components/organisms/viewSite/core/params/walkMode/helloCyclePointLayer"
+import { docomoBikeSharePointCard } from "@/components/organisms/viewSite/core/params/walkMode/docomoBikeSharePointLayer"
 import { busPointCard } from "@/components/organisms/viewSite/core/params/walkMode/busPointLayer"
 import { trainPointCard } from "@/components/organisms/viewSite/core/params/walkMode/trainPointLayer"
 import { busPolygonCard } from "@/components/organisms/viewSite/core/params/walkMode/busPolygonLayer"
@@ -14,6 +16,8 @@ import { slopePolygonCard } from "@/components/organisms/viewSite/core/params/wa
 export const walkModeCardLayerList: CardListType[] = [
   trainPointCard,
   busPointCard,
+  docomoBikeSharePointCard,
+  helloCyclePointCard,
   trainLineCard,
   lineBusCard,
   plateauCard,

@@ -10,19 +10,18 @@ import useViewSiteMain from "@/components/organisms/viewSite/core/application/us
 import ModeDialogApp from "@/components/organisms/viewSite/ui/ModeDialogApp"
 
 const ViewSiteMain: React.FC = () => {
-  const { useViewSiteCallback, helloCycleInfoCallback, docomoBikeShareInfoCallback } =
-    useViewSiteMain()
+  const { useCallback } = useViewSiteMain()
   useEffect(() => {
-    useViewSiteCallback()
+    useCallback()
   }, [])
   //1分ごとに情報更新
   useEffect(() => {
     const interval = setInterval(() => {
-      useViewSiteCallback()
+      useCallback()
     }, 60000) // 1分（60秒）ごとに実行
 
     return () => clearInterval(interval)
-  }, [useViewSiteCallback])
+  }, [useCallback])
 
   return (
     <div className="relative w-full h-screen">

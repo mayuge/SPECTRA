@@ -64,7 +64,7 @@ const initializeLayer = async () => {
       ],
       "icon-size": 0.25,
       "icon-allow-overlap": true,
-      visibility: "visible",
+      visibility: "none",
     },
     minzoom: 15,
     popup: {
@@ -98,7 +98,7 @@ const initializeLayer = async () => {
     darkBadge: "オープンデータチャレンジ",
     isShadow: false,
     shape: "square",
-    isDisplayLayer: true,
+    isDisplayLayer: false,
     infoButtonClick: "openModeDialog",
     displayButtonClick: "buttonClicked",
     orderButtonClick: "buttonClicked",

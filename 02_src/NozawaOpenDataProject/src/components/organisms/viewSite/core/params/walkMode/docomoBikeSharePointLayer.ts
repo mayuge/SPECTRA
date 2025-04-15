@@ -3,8 +3,8 @@ import { LayerType } from "@/components/organisms/viewSite/core/types/layerType"
 import { useReqCycleDataAdapter } from "@/infrastructure/adapters/httpReqAdapter"
 import type { GeoJSONSourceSpecification } from "maplibre-gl"
 
-// 事前にハローサイクリングのステーション情報を取得
-const stationStatusJson = "https://api-public.odpt.org/api/v4/gbfs/hellocycling/station_status.json"
+// 事前にDocomo Bike Shareのステーション情報を取得
+const stationStatusJson = "https://api-public.odpt.org/api/v4/gbfs/docomo-cycle/station_status.json"
 
 // 非同期関数を使用してステーション情報を取得
 const fetchStationStatusData = async () => {
@@ -13,21 +13,21 @@ const fetchStationStatusData = async () => {
   return data.data.stations; // ステーションデータを返す
 };
 
-const { reqHelloCycleStationInfo } = useReqCycleDataAdapter();
+const { reqDocomoBikeShareStationInfo } = useReqCycleDataAdapter();
 
 const initializeLayer = async () => {
   // ステーション情報を取得
   const stationStatusData = await fetchStationStatusData();
 
   // Docomo Bike Shareの情報を取得
-  const helloCycleSymbolFeature = await reqHelloCycleStationInfo();
+  const docomoBikeShareSymbolFeature = await reqDocomoBikeShareStationInfo();
 
   // GeoJSONソースを作成
-  const helloCycleSource: GeoJSONSourceSpecification = {
+  const docomoBikeShareSource: GeoJSONSourceSpecification = {
     type: "geojson",
     data: {
       type: "FeatureCollection",
-      features: helloCycleSymbolFeature.map((feature: any) => {
+      features: docomoBikeShareSymbolFeature.map((feature: any) => {
         const station = stationStatusData.find(
           (item:any) => item.station_id === feature.properties.station_id
         );
@@ -47,19 +47,19 @@ const initializeLayer = async () => {
   };
 
   // レイヤーの作成
-  const helloCycleSymbolLayer: LayerType = {
-    id: "pointHelloCycleSymbol",
+  const docomoBikeShareSymbolLayer: LayerType = {
+    id: "pointDocomoBikeShareSymbol",
     type: "symbol",
-    sourceId: "pointHelloCycle",
-    source: helloCycleSource,
+    sourceId: "pointDocomoBikeShare",
+    source: docomoBikeShareSource,
     layout: {
       "icon-image": [
         "case",
         ["==", ["get", "num_bikes_available"], 0], 
-        "darkYellowBike", // それ以外の場合
+        "darkRedBike", // それ以外の場合
         ["==", ["get", "num_docks_available"], 0], 
-        "warningYellowBike",
-        "successYellowBike", // 表示するアイコン
+        "warningRedBike",
+        "successRedBike", // 表示するアイコン
         
       ],
       "icon-size": 0.25,
@@ -90,8 +90,8 @@ const initializeLayer = async () => {
 
   // レイヤーをCardListTypeに追加
   return {
-    logoImg: "/assets/logos/yellowBike.webp",
-    text: "ハローサイクリングステーション",
+    logoImg: "/assets/logos/redBike.webp",
+    text: "ドコモ・バイクシェアステーション",
     dangerBadge: "交通",
     warningBadge: "シェアサイクル",
     primaryBadge: "ポイントデータ",
@@ -102,9 +102,9 @@ const initializeLayer = async () => {
     infoButtonClick: "openModeDialog",
     displayButtonClick: "buttonClicked",
     orderButtonClick: "buttonClicked",
-    layer: helloCycleSymbolLayer,
+    layer: docomoBikeShareSymbolLayer,
   } as CardListType;
 };
 
 // 初期化されたレイヤーをエクスポート
-export const helloCyclePointCard = await initializeLayer();
+export const docomoBikeSharePointCard = await initializeLayer();

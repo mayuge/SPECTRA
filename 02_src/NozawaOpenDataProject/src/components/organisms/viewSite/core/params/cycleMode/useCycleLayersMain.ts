@@ -6,16 +6,18 @@ import { osmCard } from "@/components/organisms/viewSite/core/params/cycleMode/o
 import { googleCard } from "@/components/organisms/viewSite/core/params/cycleMode/googleMapLayer"
 import { trainLineCard } from "@/components/organisms/viewSite/core/params/cycleMode/trainLineLayer"
 import { sateliteMapCard } from "@/components/organisms/viewSite/core/params/cycleMode/sateliteMapLayer"
+import { helloCyclePointCard } from "@/components/organisms/viewSite/core/params/cycleMode/helloCyclePointLayer"
+import { docomoBikeSharePointCard } from "@/components/organisms/viewSite/core/params/cycleMode/docomoBikeSharePointLayer"
 import { busPointCard } from "@/components/organisms/viewSite/core/params/cycleMode/busPointLayer"
 import { trainPointCard } from "@/components/organisms/viewSite/core/params/cycleMode/trainPointLayer"
 import { busPolygonCard } from "@/components/organisms/viewSite/core/params/cycleMode/busPolygonLayer"
 import { slopePolygonCard } from "@/components/organisms/viewSite/core/params/cycleMode/slopePolygonLayer"
-import { helloCyclePointCard } from "@/components/organisms/viewSite/core/params/cycleMode/helloCyclePointLayer"
 
 export const cycleModeCardLayerList: CardListType[] = [
   trainPointCard,
-  //helloCyclePointCard,
   busPointCard,
+  docomoBikeSharePointCard,
+  helloCyclePointCard,
   trainLineCard,
   lineBusCard,
   plateauCard,
