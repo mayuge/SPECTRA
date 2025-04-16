@@ -4,7 +4,6 @@ import React, { useRef, useEffect } from "react"
 import maplibregl, { LayerSpecification, SourceSpecification } from "maplibre-gl"
 import "maplibre-gl/dist/maplibre-gl.css"
 import useViewSiteMain from "@/components/organisms/viewSite/core/application/useViewSiteMain"
-import { helloCyclePointCard } from "@/components/organisms/viewSite/core/params/cycleMode/helloCyclePointLayer"
 
 /**
  * レイヤをマップに追加
