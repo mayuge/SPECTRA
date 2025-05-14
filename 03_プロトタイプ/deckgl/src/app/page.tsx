@@ -1,9 +1,9 @@
-import MapApp from "@/components/MapApp";
+import HomeSite from "@/components/templates/homeSite/HomeSite"
 
-const Home = async () => (
-  <div style={{ height: "100vh" }}>
-    <MapApp />
+const HomePage = async () => (
+  <div>
+    <HomeSite />
   </div>
-);
+)
 
-export default Home;
+export default HomePage
