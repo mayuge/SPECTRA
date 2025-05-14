@@ -1,0 +1,47 @@
+{
+  "name": "deckgl",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@deck.gl/core": "^9.1.11",
+    "@deck.gl/extensions": "^9.1.11",
+    "@deck.gl/geo-layers": "^9.1.11",
+    "@deck.gl/layers": "^9.1.11",
+    "@deck.gl/mesh-layers": "^9.1.11",
+    "@deck.gl/react": "^9.1.11",
+    "@deck.gl/widgets": "^9.1.11",
+    "@loaders.gl/3d-tiles": "^4.3.3",
+    "@loaders.gl/core": "^4.3.3",
+    "@loaders.gl/gis": "^4.3.3",
+    "@loaders.gl/mvt": "^4.3.3",
+    "@luma.gl/engine": "^9.1.9",
+    "@luma.gl/shadertools": "^9.1.9",
+    "@math.gl/core": "^4.1.0",
+    "autoprefixer": "^10.4.21",
+    "mapbox-gl": "^3.11.0",
+    "next": "15.3.1",
+    "postcss": "^8.5.3",
+    "react": "^18.2.0",
+    "react-dom": "19.1.0",
+    "react-map-gl": "8.0.4",
+    "twitter-api-v2": "^1.22.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/react-map-gl": "^6.1.7",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
