@@ -1,0 +1,123 @@
+import React from "react"
+import Badge from "@/components/atoms/labels/Badge"
+import Button from "@/components/atoms/buttons/Button"
+import BaseSliderInput from "@/components/atoms/Inputs/SliderInput"
+import TextLabel from "@/components/atoms/labels/TextLabel"
+
+type CardProps = {
+  text: string // カードテキスト
+  logoImg: string // ロゴ画像のパス
+  isShadow: boolean // 影の有無
+  shape?: string // カードの形状を文字列で指定 square(四角形) circle（丸）デフォルトで角丸
+  displayButtonClick: () => void
+  infoButtonClick: () => void
+  sliderClick: (value: number) => void
+  orderButtonClick: () => void
+  isDisplayLayer: boolean
+  dangerBadge?: string
+  warningBadge?: string
+  successBadge?: string
+  primaryBadge?: string
+  darkBadge?: string
+}
+
+const Card: React.FC<CardProps> = ({
+  text,
+  logoImg,
+  shape,
+  isShadow,
+  dangerBadge,
+  warningBadge,
+  successBadge,
+  primaryBadge,
+  darkBadge,
+  isDisplayLayer,
+  displayButtonClick,
+  infoButtonClick,
+  sliderClick,
+  orderButtonClick,
+}: CardProps) => {
+  // カードのスタイルの種類 デフォルトは primary
+  const cardVariant = "bg-white"
+
+  // カードの形状の種類 circle square
+  let cornerShape = "rounded-lg"
+
+  if (shape === "square") {
+    cornerShape = "" // 四角形の場合は角丸を指定しない
+  } else if (shape === "round") {
+    cornerShape = "rounded-full" // 円形の角
+  }
+
+  let buttonShadow = ""
+  if (isShadow) {
+    buttonShadow = "shadow-md shadow-black"
+  }
+
+  // 目のアイコンで表示・非表示を示す
+  const displayIcon = isDisplayLayer ? "visibility" : "visibility_off"
+
+  // ロゴ画像のパス
+  let logoImgPath = "/assets/logos/default.webp"
+  if (logoImg) {
+    logoImgPath = logoImg
+  }
+
+  return (
+    <div className={`${cardVariant} ${cornerShape} ${buttonShadow} p-2 hover:bg-gray-90`}>
+      <div className="flex items-center gap-1 pb-1">
+        {dangerBadge && <Badge variant="badge-danger" text={dangerBadge} />}
+        {warningBadge && <Badge variant="badge-warning" text={warningBadge} />}
+        {successBadge && <Badge variant="badge-success" text={successBadge} />}
+        {primaryBadge && <Badge variant="badge-primary" text={primaryBadge} />}
+        {darkBadge && <Badge variant="badge-dark" text={darkBadge} />}
+      </div>
+      <div className="flex items-center w-full gap-1">
+        <div className="flex items-center gap-1">
+          <Button
+            variant="btn-text-gray"
+            size="mini"
+            iconLeft={`${displayIcon}`}
+            onClick={displayButtonClick}
+          />
+          <hr className="w-[1px] h-10 bg-gray-60" />
+        </div>
+        <div className="w-full">
+          <div className="pb-1 flex justify-between gap-2">
+            <div className="inline-flex items-center gap-1 text-black">
+              <img src={logoImgPath} className="w-5 h-5" />
+              <TextLabel text={text} size="normal" bold={false} />
+            </div>
+            <div>
+              <Button
+                variant="btn-text-gray"
+                size="mini"
+                iconLeft="info"
+                onClick={infoButtonClick}
+              />
+            </div>
+          </div>
+          <div className="pb-1 flex justify-between">
+            <div className="inline-flex items-center gap-2">
+              <BaseSliderInput
+                onChange={sliderClick} // スライダー値の変更を通知
+              />
+            </div>
+            <div>
+              <Button
+                variant="btn-text-gray"
+                size="mini"
+                iconLeft="swap_vert"
+                onClick={orderButtonClick}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr className="border-gray-70" />
+    </div>
+  )
+}
+
+export default Card
