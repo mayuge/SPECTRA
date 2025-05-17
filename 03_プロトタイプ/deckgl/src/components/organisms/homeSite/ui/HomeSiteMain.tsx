@@ -1,6 +1,7 @@
 "use client"
 import React from "react"
 import MapApp from "@/components/organisms/homeSite/ui/MapApp"
+import DialogApp from "@/components/organisms/homeSite/ui/DialogApp"
 import ImageButton from "@/components/atoms/buttons/ImageButton"
 import SearchInput from "@/components/molecules/forms/SearchInput"
 
@@ -23,6 +24,9 @@ const HomeSite: React.FC = () => {
             onClick={() => {}}
           />
         </div>
+      </div>
+      <div className="absolute z-[10] bottom-0">
+        <DialogApp />
       </div>
       <MapApp />
     </div>
