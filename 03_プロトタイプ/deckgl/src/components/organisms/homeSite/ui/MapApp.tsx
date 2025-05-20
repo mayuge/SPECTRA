@@ -39,6 +39,43 @@ const geoJsonLayer = new GeoJsonLayer({
     getElevation: (f: any) => f.properties?.height,
   },
 })
+// 避難所レイヤー
+const evacuationPointLayer = new TileLayer({
+  id: "evacuation-point-layer",
+  data: "https://cyberjapandata.gsi.go.jp/xyz/skhb01/{z}/{x}/{y}.geojson",
+  minZoom: 0,
+  maxZoom: 19,
+  tileSize: 512,
+  onTileError: (error) => {
+    console.log("Tile error:", error)
+    return null
+  },
+  renderSubLayers: (props) => {
+    const { data } = props
+    if (!data || !data.features) return null
+
+    return new GeoJsonLayer({
+      id: `${props.id}-geojson`,
+      data,
+      pointRadiusScale: 1,
+      getPointRadius: 100,
+      getFillColor: [255, 0, 0], // 赤色
+      getLineColor: [0, 0, 0],
+      getLineWidth: 1,
+      lineWidthMinPixels: 1,
+      pickable: true,
+      stroked: true,
+      filled: true,
+      pointType: "circle",
+      // ポップアップ用の設定
+      onClick: (info) => {
+        if (info.object) {
+          console.log("クリックされた避難所:", info.object.properties)
+        }
+      },
+    })
+  },
+})
 
 // タイルのプロパティの型定義
 const tileLayer = new TileLayer({
@@ -162,7 +199,7 @@ function MapApp() {
           maxPitch: 90,
         }}
         controller={true}
-        layers={[tileLayer, floodLayer, geoJsonLayer, plateauLayer]}
+        layers={[tileLayer, floodLayer, geoJsonLayer, plateauLayer, evacuationPointLayer]}
       />
     </div>
   )

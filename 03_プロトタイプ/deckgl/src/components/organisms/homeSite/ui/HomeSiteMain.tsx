@@ -25,7 +25,7 @@ const HomeSite: React.FC = () => {
           />
         </div>
       </div>
-      <div className="absolute z-[10] bottom-0">
+      <div className="absolute z-[10] left-1/2 bottom-0 -translate-x-1/2">
         <DialogApp />
       </div>
       <MapApp />
