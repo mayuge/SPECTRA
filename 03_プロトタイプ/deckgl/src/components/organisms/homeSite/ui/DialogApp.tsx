@@ -4,6 +4,7 @@ import DialogHeader from "@/components/molecules/header/DialogHeader"
 import PullTab from "@/components/atoms/buttons/PullTab"
 import Badge from "@/components/atoms/labels/Badge"
 import Button from "@/components/atoms/buttons/Button"
+import TextLabel from "@/components/atoms/labels/TextLabel"
 
 import { useDialogStateAdapter } from "@/infrastructure/adapters/storeAdapters"
 
@@ -39,12 +40,24 @@ const DialogApp: React.FC = () => {
         }}
       />
       <div className="max-w-screen-xl w-full mx-auto h-[60vh] p-4 bg-white shadow-black shadow-lg">
+        <div className="py-2">
+          <TextLabel text="レイヤーの選択" size="normal" isBlack={true} bold={false} />
+        </div>
         <div className="flex items-center gap-2">
           <Badge variant="badge-primary" shape="circle" text="デフォルトプリセット" />
           <Badge variant="badge-secondary" shape="circle" text="都市計画プリセット" />
           <Badge variant="badge-secondary" shape="circle" text="鉄道路線プリセット" />
           <Badge variant="badge-secondary" shape="circle" text="不動産探しプリセット" />
           <Badge variant="badge-secondary" shape="circle" text="3Dレイヤープリセット" />
+        </div>
+        <div className="py-4">
+          <TextLabel
+            text="この画面が見れていれば、正常に動作しています。 storybookの動作確認も行ってください。
+        各レイヤーのアイコンを作ってグリッドレイアウトに並べ、表示する予定。"
+            size="normal"
+            isBlack={true}
+            bold={false}
+          />
         </div>
       </div>
     </div>

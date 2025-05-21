@@ -3,6 +3,7 @@ import React from "react"
 import DeckGL from "@deck.gl/react"
 import { TileLayer, MVTLayer } from "@deck.gl/geo-layers"
 import { BitmapLayer, GeoJsonLayer } from "@deck.gl/layers"
+import Button from "@/components/atoms/buttons/Button"
 
 const INITIAL_VIEW_STATE = {
   longitude: 139.6917, // 東京の経度
@@ -184,16 +185,41 @@ const plateauLayer = new MVTLayer({
   },
 })
 
+// ...existing code...
+
 function MapApp() {
+  const deckRef = React.useRef<any>(null)
+
+  const handleScreenshot = () => {
+    if (!deckRef.current) return
+
+    try {
+      // DeckGLのキャンバスを直接取得
+      const canvas = deckRef.current.deck.canvas
+      const result = canvas.toDataURL("image/jpeg", 1.0)
+
+      // ダウンロードリンクを作成
+      const link = document.createElement("a")
+      const timestamp = new Date().toISOString().replace(/[:.]/g, "-")
+      link.download = `map-screenshot-${timestamp}.jpg`
+      link.href = result
+      link.click()
+    } catch (error) {
+      console.error("スクリーンショットの作成に失敗しました:", error)
+    }
+  }
+
   return (
     <div
       style={{
         width: "100vw",
         height: "100vh",
         background: "linear-gradient(to bottom, #87CEEB 0%, #E0F6FF 100%)",
+        position: "relative",
       }}
     >
       <DeckGL
+        ref={deckRef}
         initialViewState={{
           ...INITIAL_VIEW_STATE,
           maxPitch: 90,
@@ -201,6 +227,15 @@ function MapApp() {
         controller={true}
         layers={[tileLayer, floodLayer, geoJsonLayer, plateauLayer, evacuationPointLayer]}
       />
+      <div className="absolute top-4 right-4 z-10">
+        <Button
+          variant="btn-primary"
+          size="normal"
+          text="スクリーンショット"
+          iconLeft="photo_camera"
+          onClick={handleScreenshot}
+        />
+      </div>
     </div>
   )
 }
