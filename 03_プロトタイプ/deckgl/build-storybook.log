@@ -1,18 +1,18 @@
 yarn run v1.22.22
-$ storybook build --output-dir=C:\Users\keita\AppData\Local\Temp\chromatic--31216-Abxm01s5BK0b
+$ storybook build --output-dir=C:\Users\keita\AppData\Local\Temp\chromatic--33644-JfcMIAGMnOYK
 [1m@storybook/core v8.4.5
 [22m
-info => Cleaning outputDir: [36m..\..\..\..\..\..\AppData\Local\Temp\chromatic--31216-Abxm01s5BK0b[39m
+info => Cleaning outputDir: [36m..\..\..\..\..\..\AppData\Local\Temp\chromatic--33644-JfcMIAGMnOYK[39m
 info => Loading presets
 info => Building manager..
-info => Manager built ([38;2;181;126;229m212 ms[39m)
+info => Manager built ([38;2;181;126;229m160 ms[39m)
 info => Building preview..
 info Addon-docs: using MDX3
 info => Using implicit CSS loaders
 info => Using SWC as compiler
 info => Using default Webpack5 setup
-info => Copying static files: [36mpublic[39m at [36m..\..\..\..\..\..\AppData\Local\Temp\chromatic--31216-Abxm01s5BK0b[39m
 info Using tsconfig paths for react-docgen
+info => Copying static files: [36mpublic[39m at [36m..\..\..\..\..\..\AppData\Local\Temp\chromatic--33644-JfcMIAGMnOYK[39m
 WARN asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
 WARN This can impact web performance.
 WARN Assets: 
@@ -23,10 +23,10 @@ WARN   764.fd40bad3.iframe.bundle.js (972 KiB)
 WARN entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
 WARN Entrypoints:
 WARN   main (1.86 MiB)
-WARN       runtime~main.cc16b14f.iframe.bundle.js
+WARN       runtime~main.99f5787c.iframe.bundle.js
 WARN       723.9ec02211.iframe.bundle.js
 WARN       main.06b1a1aa.iframe.bundle.js
 WARN 
-info => Preview built ([38;2;181;126;229m12 s[39m)
-info => Output directory: C:\Users\keita\AppData\Local\Temp\chromatic--31216-Abxm01s5BK0b
-Done in 15.83s.
+info => Preview built ([38;2;181;126;229m11 s[39m)
+info => Output directory: C:\Users\keita\AppData\Local\Temp\chromatic--33644-JfcMIAGMnOYK
+Done in 14.10s.
