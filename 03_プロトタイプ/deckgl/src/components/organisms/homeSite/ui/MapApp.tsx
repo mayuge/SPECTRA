@@ -17,6 +17,7 @@ const INITIAL_VIEW_STATE = {
   farZMultiplier: 10, // 描画距離の乗数
   nearZMultiplier: 0.1, // 近距離クリッピング
 }
+
 //ローカルにある鉄道路線のGeoJSONデータを読み込む
 const geoJsonLayer = new GeoJsonLayer({
   id: "geojson-layer",
@@ -31,50 +32,13 @@ const geoJsonLayer = new GeoJsonLayer({
   getLineWidth: (f) => {
     return f.properties?.width || 1
   },
-  getElevation: (f) => {
+  getElevation: (f: any) => {
     return f.properties?.height || 0
   },
   elevationScale: true,
   updateTriggers: {
     getLineWidth: (f: any) => f.properties?.width,
     getElevation: (f: any) => f.properties?.height,
-  },
-})
-// 避難所レイヤー
-const evacuationPointLayer = new TileLayer({
-  id: "evacuation-point-layer",
-  data: "https://cyberjapandata.gsi.go.jp/xyz/skhb01/{z}/{x}/{y}.geojson",
-  minZoom: 0,
-  maxZoom: 19,
-  tileSize: 512,
-  onTileError: (error) => {
-    console.log("Tile error:", error)
-    return null
-  },
-  renderSubLayers: (props) => {
-    const { data } = props
-    if (!data || !data.features) return null
-
-    return new GeoJsonLayer({
-      id: `${props.id}-geojson`,
-      data,
-      pointRadiusScale: 1,
-      getPointRadius: 100,
-      getFillColor: [255, 0, 0], // 赤色
-      getLineColor: [0, 0, 0],
-      getLineWidth: 1,
-      lineWidthMinPixels: 1,
-      pickable: true,
-      stroked: true,
-      filled: true,
-      pointType: "circle",
-      // ポップアップ用の設定
-      onClick: (info) => {
-        if (info.object) {
-          console.log("クリックされた避難所:", info.object.properties)
-        }
-      },
-    })
   },
 })
 
@@ -225,7 +189,7 @@ function MapApp() {
           maxPitch: 90,
         }}
         controller={true}
-        layers={[tileLayer, floodLayer, geoJsonLayer, plateauLayer, evacuationPointLayer]}
+        layers={[tileLayer, floodLayer, geoJsonLayer, plateauLayer]}
       />
       <div className="absolute top-4 right-4 z-10">
         <Button
