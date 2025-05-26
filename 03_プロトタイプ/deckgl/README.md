@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# フォルダ構成
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+C:.
+├─app
+│      favicon.ico
+│      globals.css
+│      layout.tsx
+│      page.tsx
+│
+├─components
+│  ├─atoms
+│  │  ├─buttons
+│  │  │      Button.stories.ts
+│  │  │      Button.tsx
+│  │  │      ImageButton.tsx
+│  │  │      PullTab.stories.ts
+│  │  │      PullTab.tsx
+│  │  │
+│  │  ├─Inputs
+│  │  │      BaseInput.tsx
+│  │  │      ColorInput.tsx
+│  │  │      SliderInput.tsx
+│  │  │
+│  │  └─labels
+│  │          Badge.stories.ts
+│  │          Badge.tsx
+│  │          TextLabel.stories.ts
+│  │          TextLabel.tsx
+│  │
+│  ├─molecules
+│  │  ├─forms
+│  │  │      SearchInput.tsx
+│  │  │
+│  │  ├─frames
+│  │  │      Card.stories.ts
+│  │  │      Card.tsx
+│  │  │      InfoCard.tsx
+│  │  │      LegendCard.tsx
+│  │  │      TitleInfoCard.tsx
+│  │  │
+│  │  └─header
+│  │          DialogHeader.tsx
+│  │          Header.stories.ts
+│  │          Header.tsx
+│  │
+│  ├─organisms
+│  │  └─homeSite
+│  │      ├─core
+│  │      │  ├─application
+│  │      │  ├─params
+│  │      │  │      plateauLayer.ts
+│  │      │  │
+│  │      │  └─types
+│  │      └─ui
+│  │              DialogApp.tsx
+│  │              HomeSiteMain.stories.ts
+│  │              HomeSiteMain.tsx//基本的なview部分の作成
+│  │              MapApp.tsx
+│  │
+│  └─templates
+│      └─homeSite
+│              HomeSite.tsx
+│
+├─domain
+│  ├─interfaces
+│  │      IDialogState.ts
+│  │
+│  ├─params
+│  │      atoms.ts
+│  │      companyLogoParams.ts
+│  │      components.ts
+│  │      molecules.ts
+│  │      siteRootName.ts
+│  │      trainLineParams.ts
+│  │
+│  └─types
+│          atomsType.ts
+│          moleculesType.ts
+│          siteRootNameType.ts
+│
+└─infrastructure
+    ├─adapters
+    │      storeAdapters.ts
+    │
+    └─stores
+            dialogStateStore.ts
+```
