@@ -8,3 +8,10 @@ const meta: Meta<typeof HomeSite> = {
 }
 
 export default meta
+
+type Story = StoryObj<typeof meta>
+
+// ストーリーの定義
+export const Default: Story = {
+  name: "デフォルト表示",
+}

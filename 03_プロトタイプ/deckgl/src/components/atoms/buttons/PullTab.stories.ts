@@ -62,3 +62,13 @@ export const Primary: Story = {
     isShadow: true, // 影をつける
   },
 }
+
+export const Gray: Story = {
+  args: {
+    size: "mini",
+    variant: "pullTab-light",
+    position: "left",
+    icon: "arrow_right", // マテリアルアイコンの名前
+    isShadow: true, // 影をつける
+  },
+}

@@ -4,6 +4,7 @@ import DeckGL from "@deck.gl/react"
 import { TileLayer, MVTLayer } from "@deck.gl/geo-layers"
 import { BitmapLayer, GeoJsonLayer } from "@deck.gl/layers"
 import Button from "@/components/atoms/buttons/Button"
+import { plateauLayer } from "@/components/organisms/homeSite/core/params/plateauLayer"
 
 const INITIAL_VIEW_STATE = {
   longitude: 139.6917, // 東京の経度
@@ -107,48 +108,6 @@ const floodLayer = new TileLayer({
   },
 })
 
-// PLATEAUの3Dビルディングレイヤー
-const plateauLayer = new MVTLayer({
-  id: "plateau-buildings",
-  data: "https://indigo-lab.github.io/plateau-lod2-mvt/{z}/{x}/{y}.pbf",
-  minZoom: 4,
-  maxZoom: 25,
-  tileSize: 512,
-  getFillColor: [136, 136, 136, 160],
-  getLineColor: [255, 255, 255, 0],
-  getLineWidth: 0,
-  getElevation: (f: any) => {
-    const height = f.properties?.z || 0
-    return height
-  },
-  elevationScale: true,
-  // タイルエラー処理を追加
-  onTileError: () => null,
-  // タイルの読み込みオプションを追加
-  loadOptions: {
-    fetch: {
-      retries: 3,
-      maxRetryDelay: 1000,
-      maxConcurrency: 4,
-    },
-  },
-  refinementStrategy: "no-overlap",
-  extent: [139.0, 35.0, 140.0, 36.0],
-  extruded: true,
-  wireframe: false,
-  pickable: true,
-  opacity: 1,
-  material: {
-    ambient: 0.9,
-    diffuse: 0.7,
-    shininess: 32,
-    specularColor: [51, 51, 51],
-  },
-  updateTriggers: {
-    getElevation: (f: any) => f.properties?.z,
-  },
-})
-
 // ...existing code...
 
 function MapApp() {
@@ -191,12 +150,23 @@ function MapApp() {
         controller={true}
         layers={[tileLayer, floodLayer, geoJsonLayer, plateauLayer]}
       />
-      <div className="absolute top-4 right-4 z-10">
+      <div className="absolute top-[70px] right-4 z-10">
         <Button
           variant="btn-primary"
           size="normal"
-          text="スクリーンショット"
+          text=""
+          shape="circle"
           iconLeft="photo_camera"
+          onClick={handleScreenshot}
+        />
+      </div>
+      <div className="absolute top-[142px] right-4 z-10">
+        <Button
+          variant="btn-primary"
+          size="normal"
+          text=""
+          shape="circle"
+          iconLeft="3d_rotation"
           onClick={handleScreenshot}
         />
       </div>

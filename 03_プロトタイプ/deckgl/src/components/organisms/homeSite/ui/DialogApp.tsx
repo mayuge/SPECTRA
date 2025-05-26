@@ -43,7 +43,7 @@ const DialogApp: React.FC = () => {
         <div className="py-2">
           <TextLabel text="レイヤーの選択" size="normal" isBlack={true} bold={false} />
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex-wrap items-center space-x-2">
           <Badge variant="badge-primary" shape="circle" text="デフォルトプリセット" />
           <Badge variant="badge-secondary" shape="circle" text="都市計画プリセット" />
           <Badge variant="badge-secondary" shape="circle" text="鉄道路線プリセット" />
