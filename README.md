@@ -1,7 +1,10 @@
-01設計
-02src
-03プロトタイプ→プロトタイプdeckglで後継アプリの実装を検証中
+## 全体フォルダ構成
+- 01設計→設計資料等保管用
+- 02src→本番用
+- 03プロトタイプ→技術検証用
+  - deckglで後継アプリの実装を検証中（2025/05/28）
 
-
-フォルダ構成は基本的にatomicDesignです。
-ロジック部分はcleanArchitecture使ってます。
+## フォルダ構成は基本的にatomicDesignです。atomsとmoleculesフォルダには汎用的なUI部品が格納してあり、npm storybookコマンドでご確認いただけます。
+  - ![アトミックデザインについての記事](https://qiita.com/haykubo/items/5e0c26c0f03ed52e6cdb)
+  - ![アトミックデザインについてのメモ書き](https://github.com/mayuge/OpenDataChallenge/blob/main/01_%E8%A8%AD%E8%A8%88/AtomicDesign%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6.md)
+## システムアーキテクチャはcleanArchitecture使ってます。
