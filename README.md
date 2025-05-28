@@ -1,2 +1,7 @@
+01設計
+02src
+03プロトタイプ→プロトタイプdeckglで後継アプリの実装を検証中
+
+
 フォルダ構成は基本的にatomicDesignです。
 ロジック部分はcleanArchitecture使ってます。
