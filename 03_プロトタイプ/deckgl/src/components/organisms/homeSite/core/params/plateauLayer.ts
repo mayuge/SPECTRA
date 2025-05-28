@@ -1,4 +1,4 @@
-import { TileLayer, MVTLayer } from "@deck.gl/geo-layers"
+import { MVTLayer } from "@deck.gl/geo-layers"
 
 // PLATEAUの3Dビルディングレイヤー
 export const plateauLayer = new MVTLayer({
