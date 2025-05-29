@@ -16,3 +16,5 @@
   - ![アトミックデザインについてのメモ書き](https://github.com/mayuge/OpenDataChallenge/blob/main/01_%E8%A8%AD%E8%A8%88/AtomicDesign%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6.md)
 ### システムアーキテクチャはcleanArchitecture、ヘキサゴナルアーキテクチャ使ってます。
   - ![アーキテクチャについてのメモ書き](https://github.com/mayuge/OpenDataChallenge/blob/main/01_%E8%A8%AD%E8%A8%88/%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E9%A7%86%E5%8B%95%E8%A8%AD%E8%A8%88%E3%81%A8CleanArchitecture%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6.md)
+- DDDにおけるUIとそれに付随するアプリケーション層をinfrastructure層と分離するために間にdomainで指定したインターフェースを挿入したadapter層（腐敗防止層）を追加する構成となっている。
+
