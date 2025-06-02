@@ -19,7 +19,7 @@ const { handleScreenshot } = useMapApp()
 const INITIAL_VIEW_STATE = {
   longitude: 139.6917, // 東京の経度
   latitude: 35.6895, // 東京の緯度
-  zoom: 15,
+  zoom: 10,
   pitch: 60, // 3D 表示のため視点を傾ける
   bearing: 0,
   maxZoom: 19,
