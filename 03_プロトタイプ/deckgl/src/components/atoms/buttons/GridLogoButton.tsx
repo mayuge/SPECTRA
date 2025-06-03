@@ -2,10 +2,8 @@ import React from "react"
 import Image from "next/image"
 import type { ButtonVariantType, ButtonSizeType } from "@/domain/types/atomsType"
 
-type ImageButtonProps = {
-  text?: string // ボタンテキスト
-  iconLeft?: string // アイコンの名前を文字列で指定
-  iconRight?: string // アイコンの名前を文字列で指定
+type GridLogoButtonProps = {
+  text: string // ボタンテキスト
   isShadow?: boolean //影をつけるかつけないか
   shape?: string //ボタンの形状を文字列で指定 square circle
   size: ButtonSizeType // mini、small、normal、large のいずれかを指定
@@ -14,17 +12,15 @@ type ImageButtonProps = {
   onClick?: () => void
 }
 
-const ImageButton: React.FC<ImageButtonProps> = ({
+const GridLogoButton: React.FC<GridLogoButtonProps> = ({
   text,
   size,
   shape,
   variant,
-  iconLeft,
-  iconRight,
   isShadow,
   path,
   onClick,
-}: ImageButtonProps) => {
+}: GridLogoButtonProps) => {
   // サイズの種類　small normal largeから指定 paddingSize を動的に設定
   let paddingSize = "md:p-4 p-3" // デフォルトの padding
 
@@ -85,16 +81,15 @@ const ImageButton: React.FC<ImageButtonProps> = ({
 
   return (
     <button
-      className={`${paddingSize} ${btnVariant} ${cornerShape} ${buttonShadow} flex items-center gap-1 md:text-base text-xs`} // flex と items-center を追加
+      className={`${paddingSize} ${btnVariant} ${cornerShape} ${buttonShadow} rounded-md`} // flex と items-center を追加
       onClick={onClick}
     >
-      {iconLeft && <span className="material-icons">{iconLeft}</span>} {/* アイコンを表示*/}
-      {path && <Image alt="Image" src={path} width={32} height={32} />}
-      {text}
-      {iconRight && <span className="material-icons">{iconRight}</span>}{" "}
-      {/* アイコンを右寄せで表示*/}
+      <div className="flex flex-col items-center justify-center space-y-1">
+        {path && <Image alt="Image" src={path} width={48} height={48} className="rounded-md" />}
+        <div className="text-[8px]">{text}</div>
+      </div>
     </button>
   )
 }
 
-export default ImageButton
+export default GridLogoButton

@@ -5,6 +5,7 @@ import PullTab from "@/components/atoms/buttons/PullTab"
 import Badge from "@/components/atoms/labels/Badge"
 import Button from "@/components/atoms/buttons/Button"
 import TextLabel from "@/components/atoms/labels/TextLabel"
+import GridLogoButton from "@/components/atoms/buttons/GridLogoButton"
 
 import { useDialogStateAdapter } from "@/infrastructure/adapters/storeAdapters"
 
@@ -28,7 +29,7 @@ const DialogApp: React.FC = () => {
     )
   }
   return (
-    <div className="w-[100svw] max-w-screen-xl">
+    <div className="w-[100svw] max-w-screen-lg z-50">
       <DialogHeader
         text="操作用ダイアログ"
         icon="close"
@@ -39,21 +40,207 @@ const DialogApp: React.FC = () => {
           setMainPanelOpen(false)
         }}
       />
-      <div className="max-w-screen-xl w-full mx-auto h-[60vh] p-4 bg-white shadow-black shadow-lg">
-        <div className="py-2">
-          <TextLabel text="レイヤーの選択" size="normal" isBlack={true} bold={false} />
+      <div className="max-w-screen-lg w-full mx-auto overflow-y-auto no-scrollbar h-[60vh] p-4 bg-white shadow-black shadow-lg z-50">
+        <div className="pb-2 flex items-center">
+          <Button size="mini" variant="btn-text-gray" iconLeft="filter_alt" />
+          <TextLabel text="プリセットの選択" size="normal" isBlack={true} bold={false} />
         </div>
-        <div className="flex-wrap items-center space-x-2">
+        <div className="flex-wrap items-center flex gap-2">
           <Badge variant="badge-primary" shape="circle" text="デフォルトプリセット" />
           <Badge variant="badge-secondary" shape="circle" text="都市計画プリセット" />
           <Badge variant="badge-secondary" shape="circle" text="鉄道路線プリセット" />
           <Badge variant="badge-secondary" shape="circle" text="不動産探しプリセット" />
           <Badge variant="badge-secondary" shape="circle" text="3Dレイヤープリセット" />
+          <Badge variant="badge-secondary" shape="circle" text="都市計画プリセット" />
+          <Badge variant="badge-secondary" shape="circle" text="鉄道路線プリセット" />
+          <Badge variant="badge-secondary" shape="circle" text="不動産探しプリセット" />
         </div>
-        <div className="py-4">
+        <div className="pt-4">
+          <hr className="border-gray-70" />
+        </div>
+        <div className="py-2 flex items-center">
+          <Button size="mini" variant="btn-text-gray" iconLeft="layers" />
+          <TextLabel text="レイヤーの選択" size="normal" isBlack={true} bold={false} />
+        </div>
+        <div>
+          <GridLogoButton
+            path="/image/logo/default.webp"
+            variant="btn-text-black"
+            size="small"
+            text="ベースマップ"
+            shape="square"
+            onClick={() => {
+              setMainPanelOpen(false)
+            }}
+          />
+          <GridLogoButton
+            path="/image/logo/default.webp"
+            variant="btn-primary"
+            size="small"
+            text="ベースマップ"
+            shape="square"
+            onClick={() => {
+              setMainPanelOpen(false)
+            }}
+          />
+          <GridLogoButton
+            path="/image/logo/default.webp"
+            variant="btn-text-black"
+            size="small"
+            text="ベースマップ"
+            shape="square"
+            onClick={() => {
+              setMainPanelOpen(false)
+            }}
+          />
+          <GridLogoButton
+            path="/image/logo/default.webp"
+            variant="btn-text-black"
+            size="small"
+            text="ベースマップ"
+            shape="square"
+            onClick={() => {
+              setMainPanelOpen(false)
+            }}
+          />
+          <GridLogoButton
+            path="/image/logo/default.webp"
+            variant="btn-text-black"
+            size="small"
+            text="ベースマップ"
+            shape="square"
+            onClick={() => {
+              setMainPanelOpen(false)
+            }}
+          />
+          <GridLogoButton
+            path="/image/logo/default.webp"
+            variant="btn-text-black"
+            size="small"
+            text="ベースマップ"
+            shape="square"
+            onClick={() => {
+              setMainPanelOpen(false)
+            }}
+          />
+          <GridLogoButton
+            path="/image/logo/default.webp"
+            variant="btn-text-black"
+            size="small"
+            text="ベースマップ"
+            shape="square"
+            onClick={() => {
+              setMainPanelOpen(false)
+            }}
+          />
+          <GridLogoButton
+            path="/image/logo/default.webp"
+            variant="btn-text-black"
+            size="small"
+            text="ベースマップ"
+            shape="square"
+            onClick={() => {
+              setMainPanelOpen(false)
+            }}
+          />
+          <GridLogoButton
+            path="/image/logo/default.webp"
+            variant="btn-text-black"
+            size="small"
+            text="ベースマップ"
+            shape="square"
+            onClick={() => {
+              setMainPanelOpen(false)
+            }}
+          />
+          <GridLogoButton
+            path="/image/logo/default.webp"
+            variant="btn-text-black"
+            size="small"
+            text="ベースマップ"
+            shape="square"
+            onClick={() => {
+              setMainPanelOpen(false)
+            }}
+          />
+          <GridLogoButton
+            path="/image/logo/default.webp"
+            variant="btn-text-black"
+            size="small"
+            text="ベースマップ"
+            shape="square"
+            onClick={() => {
+              setMainPanelOpen(false)
+            }}
+          />
+          <GridLogoButton
+            path="/image/logo/default.webp"
+            variant="btn-text-black"
+            size="small"
+            text="ベースマップ"
+            shape="square"
+            onClick={() => {
+              setMainPanelOpen(false)
+            }}
+          />
+          <GridLogoButton
+            path="/image/logo/default.webp"
+            variant="btn-text-black"
+            size="small"
+            text="ベースマップ"
+            shape="square"
+            onClick={() => {
+              setMainPanelOpen(false)
+            }}
+          />
+          <GridLogoButton
+            path="/image/logo/default.webp"
+            variant="btn-text-black"
+            size="small"
+            text="ベースマップ"
+            shape="square"
+            onClick={() => {
+              setMainPanelOpen(false)
+            }}
+          />
+          <GridLogoButton
+            path="/image/logo/default.webp"
+            variant="btn-text-black"
+            size="small"
+            text="ベースマップ"
+            shape="square"
+            onClick={() => {
+              setMainPanelOpen(false)
+            }}
+          />
+          <GridLogoButton
+            path="/image/logo/default.webp"
+            variant="btn-text-black"
+            size="small"
+            text="ベースマップ"
+            shape="square"
+            onClick={() => {
+              setMainPanelOpen(false)
+            }}
+          />
+          <GridLogoButton
+            path="/image/logo/default.webp"
+            variant="btn-text-black"
+            size="small"
+            text="ベースマップ"
+            shape="square"
+            onClick={() => {
+              setMainPanelOpen(false)
+            }}
+          />
+        </div>
+        <div className="pt-4">
+          <hr className="border-gray-70" />
+        </div>
+        <div className="py-2 flex items-center">
+          <Button size="mini" variant="btn-text-gray" iconLeft="edit" />
           <TextLabel
-            text="この画面が見れていれば、正常に動作しています。 storybookの動作確認も行ってください。
-        各レイヤーのアイコンを作ってグリッドレイアウトに並べ、表示する予定。"
+            text="選択されたレイヤーの詳細設定"
             size="normal"
             isBlack={true}
             bold={false}

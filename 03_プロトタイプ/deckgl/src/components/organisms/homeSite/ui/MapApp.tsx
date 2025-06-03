@@ -35,8 +35,8 @@ function MapApp() {
   return (
     <div
       style={{
-        width: "100vw",
-        height: "100vh",
+        width: "100svw",
+        height: "100svh",
         background: "linear-gradient(to bottom, #87CEEB 0%, #E0F6FF 100%)",
         position: "relative",
       }}
@@ -65,25 +65,43 @@ function MapApp() {
           meshPolygonLayer,
         ]}
       />
-      <div className="absolute top-[70px] right-4 z-10">
+      <div className="absolute top-0 right-0">
         <Button
-          variant="btn-primary"
-          size="normal"
+          variant="btn-dark"
+          size="large"
           text=""
-          shape="circle"
+          shape="square"
           iconLeft="photo_camera"
           onClick={() => {
             handleScreenshot(deckRef)
           }}
         />
-      </div>
-      <div className="absolute top-[142px] right-4 z-10">
         <Button
           variant="btn-primary"
-          size="normal"
+          size="large"
           text=""
-          shape="circle"
+          shape="square"
           iconLeft="3d_rotation"
+          onClick={() => {
+            handleScreenshot(deckRef)
+          }}
+        />
+        <Button
+          variant="btn-dark"
+          size="large"
+          text=""
+          shape="square"
+          iconLeft="layers"
+          onClick={() => {
+            handleScreenshot(deckRef)
+          }}
+        />
+        <Button
+          variant="btn-primary"
+          size="large"
+          text=""
+          shape="square"
+          iconLeft="my_location"
           onClick={() => {
             handleScreenshot(deckRef)
           }}
