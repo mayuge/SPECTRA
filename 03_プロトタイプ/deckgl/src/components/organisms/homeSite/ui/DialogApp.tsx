@@ -6,6 +6,7 @@ import Badge from "@/components/atoms/labels/Badge"
 import Button from "@/components/atoms/buttons/Button"
 import TextLabel from "@/components/atoms/labels/TextLabel"
 import GridLogoButton from "@/components/atoms/buttons/GridLogoButton"
+import Card from "@/components/molecules/frames/Card"
 
 import { useDialogStateAdapter } from "@/infrastructure/adapters/storeAdapters"
 
@@ -246,6 +247,22 @@ const DialogApp: React.FC = () => {
             bold={false}
           />
         </div>
+        <Card
+          isDisplayLayer={true}
+          isShadow={false}
+          logoImg="/image/logo/default.webp"
+          dangerBadge="危険"
+          darkBadge="ダーク"
+          displayButtonClick={() => {}}
+          infoButtonClick={() => {}}
+          orderButtonClick={() => {}}
+          primaryBadge="主要"
+          shape="rounded"
+          sliderClick={() => {}}
+          successBadge="成功"
+          text="現行版のレイヤの詳細設定がここで一つだけ表示されるイメージ"
+          warningBadge="警告"
+        />
       </div>
     </div>
   )
