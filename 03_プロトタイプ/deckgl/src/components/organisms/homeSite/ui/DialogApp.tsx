@@ -30,7 +30,7 @@ const DialogApp: React.FC = () => {
     )
   }
   return (
-    <div className="w-[100svw] max-w-screen-lg z-50">
+    <div className="w-[100svw] max-w-screen-lg z-50 animate-slide-up">
       <DialogHeader
         text="操作用ダイアログ"
         icon="close"
@@ -41,7 +41,7 @@ const DialogApp: React.FC = () => {
           setMainPanelOpen(false)
         }}
       />
-      <div className="max-w-screen-lg w-full mx-auto overflow-y-auto no-scrollbar h-[60vh] p-4 bg-white shadow-black shadow-lg z-50">
+      <div className="max-w-screen-lg w-full mx-auto overflow-y-auto no-scrollbar h-[60vh] p-4 bg-white shadow-black shadow-lg z-50 animate-slide-up">
         <div className="pb-2 flex items-center">
           <Button size="mini" variant="btn-text-gray" iconLeft="filter_alt" />
           <TextLabel text="プリセットの選択" size="normal" isBlack={true} bold={false} />
