@@ -106,6 +106,16 @@ function MapApp() {
             handleScreenshot(deckRef)
           }}
         />
+        <Button
+          variant="btn-dark"
+          size="large"
+          text=""
+          shape="square"
+          iconLeft="share"
+          onClick={() => {
+            handleScreenshot(deckRef)
+          }}
+        />
       </div>
     </div>
   )

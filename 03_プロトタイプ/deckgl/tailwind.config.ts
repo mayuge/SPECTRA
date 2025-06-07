@@ -73,7 +73,7 @@ export default {
         "fade-in": "fade-in 0.5s ease-out",
         "fade-down": "fade-down 0.7s ease-out",
         "slide-in-left": "slide-in-left 0.6s ease-out",
-        "slide-up": "slide-up 0.1s ease-out",
+        "slide-up": "slide-up 0.2s ease-out",
         float: "float 6s ease-in-out infinite",
         "float-delayed": "float-delayed 8s ease-in-out infinite 2s",
         "spin-slow": "spin-slow 8s linear infinite",
