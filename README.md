@@ -1,3 +1,5 @@
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=SPECTRA%20PROJECT&fontSize=90&animation=fadeIn&fontAlignY=38&descAlignY=51&descAlign=62"/>
+
 ### 現行システム参考動画
 - ![リンク](https://youtu.be/bD8sS1OV2hQ?si=uW0oOqOIoVhTTgVh)
 
@@ -9,6 +11,7 @@
 - 02src→本番用
 - 03プロトタイプ→技術検証用
   - deckglで後継アプリの実装を検証中（2025/05/28）
+  - rag構築による対話型のgisの可能性について模索中
 
 ### フォルダ構成は基本的にatomicDesignです。
   - atomsとmoleculesフォルダには汎用的なUI部品が格納してあり、npm storybookコマンドでご確認いただけます。

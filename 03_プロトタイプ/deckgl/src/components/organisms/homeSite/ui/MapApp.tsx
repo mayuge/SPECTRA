@@ -9,6 +9,8 @@ import { floodHazardLayer } from "@/components/organisms/homeSite/core/params/fl
 import { satelliteLayer } from "@/components/organisms/homeSite/core/params/sateliteLayer"
 import { trainLineLayer } from "@/components/organisms/homeSite/core/params/trainLineLayer"
 import { osmLayer } from "@/components/organisms/homeSite/core/params/osmLayer"
+import { cityPolygonLayer } from "@/components/organisms/homeSite/core/params/cityPolygonLayer"
+import { meshPolygonLayer } from "@/components/organisms/homeSite/core/params/meshPolygonLayer"
 
 import useMapApp from "@/components/organisms/homeSite/core/application/useMapApp"
 
@@ -17,11 +19,11 @@ const { handleScreenshot } = useMapApp()
 const INITIAL_VIEW_STATE = {
   longitude: 139.6917, // 東京の経度
   latitude: 35.6895, // 東京の緯度
-  zoom: 15,
+  zoom: 10,
   pitch: 60, // 3D 表示のため視点を傾ける
   bearing: 0,
   maxZoom: 19,
-  minZoom: 14,
+  minZoom: 1,
   // 視点の制限を追加
   farZMultiplier: 10, // 描画距離の乗数
   nearZMultiplier: 0.1, // 近距離クリッピング
@@ -33,8 +35,8 @@ function MapApp() {
   return (
     <div
       style={{
-        width: "100vw",
-        height: "100vh",
+        width: "100svw",
+        height: "100svh",
         background: "linear-gradient(to bottom, #87CEEB 0%, #E0F6FF 100%)",
         position: "relative",
       }}
@@ -53,27 +55,63 @@ function MapApp() {
           keyboard: true, // キーボード操作を有効化
           dragRotate: true, // ドラッグ回転を有効化
         }}
-        layers={[osmLayer, satelliteLayer, floodHazardLayer, trainLineLayer, plateauLayer]}
+        layers={[
+          osmLayer,
+          satelliteLayer,
+          floodHazardLayer,
+          trainLineLayer,
+          plateauLayer,
+          cityPolygonLayer,
+          meshPolygonLayer,
+        ]}
       />
-      <div className="absolute top-[70px] right-4 z-10">
+      <div className="absolute top-0 right-0">
         <Button
-          variant="btn-primary"
-          size="normal"
+          variant="btn-dark"
+          size="large"
           text=""
-          shape="circle"
+          shape="square"
           iconLeft="photo_camera"
           onClick={() => {
             handleScreenshot(deckRef)
           }}
         />
-      </div>
-      <div className="absolute top-[142px] right-4 z-10">
         <Button
           variant="btn-primary"
-          size="normal"
+          size="large"
           text=""
-          shape="circle"
+          shape="square"
           iconLeft="3d_rotation"
+          onClick={() => {
+            handleScreenshot(deckRef)
+          }}
+        />
+        <Button
+          variant="btn-dark"
+          size="large"
+          text=""
+          shape="square"
+          iconLeft="layers"
+          onClick={() => {
+            handleScreenshot(deckRef)
+          }}
+        />
+        <Button
+          variant="btn-primary"
+          size="large"
+          text=""
+          shape="square"
+          iconLeft="my_location"
+          onClick={() => {
+            handleScreenshot(deckRef)
+          }}
+        />
+        <Button
+          variant="btn-dark"
+          size="large"
+          text=""
+          shape="square"
+          iconLeft="share"
           onClick={() => {
             handleScreenshot(deckRef)
           }}

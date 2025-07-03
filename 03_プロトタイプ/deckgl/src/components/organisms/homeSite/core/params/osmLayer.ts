@@ -4,7 +4,7 @@ import { BitmapLayer } from "@deck.gl/layers"
 // タイルのプロパティの型定義
 export const osmLayer = new TileLayer({
   id: "osm-layer",
-  data: "https://tile.openstreetmap.jp/styles/osm-bright-ja/{z}/{x}/{y}.png",
+  data: "https://a.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png",
   minZoom: 0,
   maxZoom: 19,
   tileSize: 512,

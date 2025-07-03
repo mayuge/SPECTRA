@@ -1,0 +1,32 @@
+yarn run v1.22.22
+$ storybook build --output-dir=C:\Users\keita\AppData\Local\Temp\chromatic--30660-MdcZ7M5voo0U
+[1m@storybook/core v8.4.5
+[22m
+info => Cleaning outputDir: [36m..\..\..\..\..\..\AppData\Local\Temp\chromatic--30660-MdcZ7M5voo0U[39m
+info => Loading presets
+info => Building manager..
+info => Manager built ([38;2;181;126;229m144 ms[39m)
+info => Building preview..
+info Addon-docs: using MDX3
+info => Using implicit CSS loaders
+info => Using SWC as compiler
+info => Using default Webpack5 setup
+info => Copying static files: [36mpublic[39m at [36m..\..\..\..\..\..\AppData\Local\Temp\chromatic--30660-MdcZ7M5voo0U[39m
+info Using tsconfig paths for react-docgen
+WARN asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+WARN This can impact web performance.
+WARN Assets: 
+WARN   83.b150d7e4.iframe.bundle.js (1.14 MiB)
+WARN   735.b440f5aa.iframe.bundle.js (361 KiB)
+WARN   723.9ec02211.iframe.bundle.js (1.82 MiB)
+WARN   764.fd40bad3.iframe.bundle.js (972 KiB)
+WARN entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+WARN Entrypoints:
+WARN   main (1.86 MiB)
+WARN       runtime~main.29c2653f.iframe.bundle.js
+WARN       723.9ec02211.iframe.bundle.js
+WARN       main.52d0e678.iframe.bundle.js
+WARN 
+info => Preview built ([38;2;181;126;229m9.62 s[39m)
+info => Output directory: C:\Users\keita\AppData\Local\Temp\chromatic--30660-MdcZ7M5voo0U
+Done in 12.35s.

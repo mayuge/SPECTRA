@@ -13,7 +13,6 @@ const HomeSiteMain: React.FC = () => {
     cycleModeSelected,
     busModeSelected,
     trainModeSelected,
-    navigateToContactForm,
   } = useHomeSiteMain()
 
   return (
@@ -148,16 +147,6 @@ const HomeSiteMain: React.FC = () => {
                 shape="circle"
                 isShadow={true}
                 onClick={navigateToSourceSite}
-              />
-              <Button
-                text="お問い合わせ"
-                iconLeft="contact_support"
-                iconRight="open_in_new"
-                variant="btn-light"
-                size="normal"
-                shape="circle"
-                isShadow={true}
-                onClick={navigateToContactForm}
               />
             </div>
           </div>
