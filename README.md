@@ -31,11 +31,12 @@
 
 - atoms と molecules フォルダには汎用的な UI 部品が格納してあり、npm storybook コマンドでご確認いただけます。
 - ![アトミックデザインについての記事](https://qiita.com/haykubo/items/5e0c26c0f03ed52e6cdb)
-- ![アトミックデザインについてのメモ書き](https://github.com/mayuge/OpenDataChallenge/blob/main/01_%E8%A8%AD%E8%A8%88/AtomicDesign%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6.md)
+- ![アトミックデザインについてのメモ書き](01_設計/AtomicDesignについて.md)
 
 ### システムアーキテクチャは cleanArchitecture、ヘキサゴナルアーキテクチャ使ってます。
 
-- ![アーキテクチャについてのメモ書き](https://github.com/mayuge/OpenDataChallenge/blob/main/01_%E8%A8%AD%E8%A8%88/%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E9%A7%86%E5%8B%95%E8%A8%AD%E8%A8%88%E3%81%A8CleanArchitecture%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6.md)
+- ![アーキテクチャについてのメモ書き](01_設計/ドメイン駆動設計とCleanArchitectureについて.md)
 - DDD における UI とそれに付随するアプリケーション層を infrastructure 層と分離するために間に domain で指定したインターフェースを挿入した adapter 層（腐敗防止層）を追加する構成となっている。
-###　サーバー構成
+
+### サーバー構成
 ![](01_設計/image/SPECTRA_サーバー構成.png)
