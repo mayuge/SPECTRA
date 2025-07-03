@@ -8,6 +8,7 @@
 <img src="https://img.shields.io/badge/-Maplibre-396CB2.svg?logo=maplibre&style=flat">
 <img src="https://img.shields.io/badge/-zustand-000000.svg?logo=zustand&style=flat">
 <img src="https://img.shields.io/badge/-axios-5A29E4.svg?logo=axios&style=flat">
+  <img src="https://img.shields.io/badge/-cloudflare-F38020.svg?logo=cloudflare&style=flat">
 </p>
 
 ### 現行システム参考動画
@@ -36,3 +37,5 @@
 
 - ![アーキテクチャについてのメモ書き](https://github.com/mayuge/OpenDataChallenge/blob/main/01_%E8%A8%AD%E8%A8%88/%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E9%A7%86%E5%8B%95%E8%A8%AD%E8%A8%88%E3%81%A8CleanArchitecture%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6.md)
 - DDD における UI とそれに付随するアプリケーション層を infrastructure 層と分離するために間に domain で指定したインターフェースを挿入した adapter 層（腐敗防止層）を追加する構成となっている。
+###　サーバー構成
+![](01_設計/image/SPECTRA_サーバー構成.png)
