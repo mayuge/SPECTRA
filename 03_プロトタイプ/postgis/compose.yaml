@@ -1,0 +1,50 @@
+version: "3.8"
+
+services:
+  postgis:
+    image: kartoza/postgis:12.4
+    container_name: postgis
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgis-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U docker"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - backend
+
+  pgtileserv:
+    image: pramsey/pg_tileserv
+    container_name: pgtileserv
+    ports:
+      - "7800:7800"
+    environment:
+      DATABASE_URL: postgres://docker:docker@postgis:5432/postgres
+    depends_on:
+      - postgis
+    networks:
+      - backend
+
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgis
+      - pgtileserv
+    networks:
+      - backend
+
+volumes:
+  postgis-data:
+
+networks:
+  backend:
