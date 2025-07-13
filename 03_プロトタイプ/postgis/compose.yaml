@@ -35,14 +35,14 @@ services:
     depends_on:
       - postgis
 
-  frontend:
-    build: ./frontend
-    ports:
-      - "3000:3000"
-    depends_on:
-      - postgis
-    environment:
-      - NODE_ENV=development
+  # frontend:
+  #   build: ./frontend
+  #   ports:
+  #     - "3000:3000"
+  #   depends_on:
+  #     - postgis
+  #   environment:
+  #     - NODE_ENV=development
 
 volumes:
   postgis-data:

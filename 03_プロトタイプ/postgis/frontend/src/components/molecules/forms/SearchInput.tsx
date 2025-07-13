@@ -1,5 +1,5 @@
 import React from "react"
-import BaseInput from "@/components/atoms/Inputs/BaseInput"
+import BaseInput from "@/components/atoms/inputs/BaseInput"
 import Button from "@/components/atoms/buttons/Button"
 import type { ButtonVariantType } from "@/domain/types/atomsType"
 

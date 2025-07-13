@@ -1,7 +1,7 @@
 import React from "react"
 import Badge from "@/components/atoms/labels/Badge"
 import Button from "@/components/atoms/buttons/Button"
-import BaseSliderInput from "@/components/atoms/Inputs/SliderInput"
+import BaseSliderInput from "@/components/atoms/inputs/SliderInput"
 import TextLabel from "@/components/atoms/labels/TextLabel"
 
 type CardProps = {
