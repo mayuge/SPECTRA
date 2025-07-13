@@ -19,6 +19,8 @@
 
 - ![リンク](https://traffic.quantum-rabbit.net/)
 
+![](01_設計/image/フロント側構成.drawio.png)
+
 ### 全体フォルダ構成
 
 - 01 設計 → 設計資料等保管用
@@ -39,4 +41,5 @@
 - DDD における UI とそれに付随するアプリケーション層を infrastructure 層と分離するために間に domain で指定したインターフェースを挿入した adapter 層（腐敗防止層）を追加する構成となっている。
 
 ### サーバー構成
+
 ![](01_設計/image/SPECTRA_サーバー構成.png)
