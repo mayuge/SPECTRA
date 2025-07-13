@@ -89,7 +89,7 @@ const ImageButton: React.FC<ImageButtonProps> = ({
       onClick={onClick}
     >
       {iconLeft && <span className="material-icons">{iconLeft}</span>} {/* アイコンを表示*/}
-      {path && <Image alt="Image" src={path} width={32} height={32} />}
+      {path && <Image alt="Image" src={path} width={48} height={48} />}
       {text}
       {iconRight && <span className="material-icons">{iconRight}</span>}{" "}
       {/* アイコンを右寄せで表示*/}
