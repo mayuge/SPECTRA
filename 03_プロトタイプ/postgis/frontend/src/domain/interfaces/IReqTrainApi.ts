@@ -1,4 +1,4 @@
 export interface IReqTrainApi {
-  getAllStation: () => Promise<any>
-  getStationByName: (stationName: string) => Promise<any>
+  getAllStation: () => Promise<GeoJSON.FeatureCollection<GeoJSON.Point>>
+  getStationByName: (stationName: string) => Promise<GeoJSON.FeatureCollection<GeoJSON.Point>>
 }
