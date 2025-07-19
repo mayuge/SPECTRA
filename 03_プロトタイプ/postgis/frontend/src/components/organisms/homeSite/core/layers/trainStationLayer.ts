@@ -5,7 +5,7 @@ const { getAllStation, getStationByName } = useMapApp()
 
 export const trainStationLayer = new GeoJsonLayer({
   id: "train-station-layer",
-  data: getStationByName("品川"), // 駅名を指定してデータを取得
+  data: getStationByName("旭川"), // 駅名を指定してデータを取得
   minZoom: 0,
   maxZoom: 16,
 
@@ -14,7 +14,7 @@ export const trainStationLayer = new GeoJsonLayer({
 
   // ポイントサイズ
   pointRadiusUnits: "pixels",
-  getPointRadius: 5, // 少し大きくすると目立つ
+  getPointRadius: 10, // 少し大きくすると目立つ
 
   // クリックやホバー可能にする
   pickable: true,

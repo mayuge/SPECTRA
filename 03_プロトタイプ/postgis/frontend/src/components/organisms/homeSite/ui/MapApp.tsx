@@ -12,6 +12,7 @@ import { osmLayer } from "@/components/organisms/homeSite/core/layers/osmLayer"
 import { cityPolygonLayer } from "@/components/organisms/homeSite/core/layers/cityPolygonLayer"
 import { meshPolygonLayer } from "@/components/organisms/homeSite/core/layers/meshPolygonLayer"
 import { trainStationLayer } from "@/components/organisms/homeSite/core/layers/trainStationLayer"
+import { baseTrainStationLayer } from "@/components/organisms/homeSite/core/layers/baseTrainStationLayer"
 
 import useMapApp from "@/components/organisms/homeSite/core/application/useMapApp"
 
@@ -60,10 +61,11 @@ function MapApp() {
           osmLayer,
           // satelliteLayer,
           // floodHazardLayer,
-          // trainLineLayer,
+          trainLineLayer,
           // plateauLayer,
           // cityPolygonLayer,
           // meshPolygonLayer,
+          baseTrainStationLayer,
           trainStationLayer,
         ]}
       />
@@ -74,46 +76,6 @@ function MapApp() {
           text=""
           shape="square"
           iconLeft="photo_camera"
-          onClick={() => {
-            getScreenshot(deckRef)
-          }}
-        />
-        <Button
-          variant="btn-primary"
-          size="large"
-          text=""
-          shape="square"
-          iconLeft="3d_rotation"
-          onClick={() => {
-            getScreenshot(deckRef)
-          }}
-        />
-        <Button
-          variant="btn-dark"
-          size="large"
-          text=""
-          shape="square"
-          iconLeft="layers"
-          onClick={() => {
-            getScreenshot(deckRef)
-          }}
-        />
-        <Button
-          variant="btn-primary"
-          size="large"
-          text=""
-          shape="square"
-          iconLeft="my_location"
-          onClick={() => {
-            getScreenshot(deckRef)
-          }}
-        />
-        <Button
-          variant="btn-dark"
-          size="large"
-          text=""
-          shape="square"
-          iconLeft="share"
           onClick={() => {
             getScreenshot(deckRef)
           }}
