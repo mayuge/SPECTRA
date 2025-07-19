@@ -1,48 +1,38 @@
-version: "3.8"
-
 services:
   postgis:
     image: kartoza/postgis:12.4
+    container_name: postgis_container
     environment:
       - POSTGRES_USER=docker
       - POSTGRES_PASSWORD=docker
       - POSTGRES_DB=postgres
+      - POSTGRES_MULTIPLE_EXTENSIONS=postgis,hstore,postgis_topology
     ports:
       - "5432:5432"
     volumes:
       - postgis-data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready"]
+      test: ["CMD-SHELL", "pg_isready -U docker -d postgres"]
       interval: 10s
       timeout: 5s
       retries: 5
-
-  pgtileserv:
-    image: pramsey/pg_tileserv
-    ports:
-      - "7800:7800"
-    environment:
-      - DATABASE_URL=postgres://docker:docker@postgis:5432/postgres
-    depends_on:
-      - postgis
+    restart: unless-stopped
 
   pgfeatureserv:
-    image: pramsey/pg_featureserv
+    image: pramsey/pg_featureserv:latest
+    container_name: pgfeatureserv_container
     ports:
       - "9000:9000"
     environment:
       - DATABASE_URL=postgres://docker:docker@postgis:5432/postgres
+      - CONFIG_FILE=/config/config.yaml
+    volumes:
+      - ./pg_featureserv_config:/config
     depends_on:
-      - postgis
-
-  # frontend:
-  #   build: ./frontend
-  #   ports:
-  #     - "3000:3000"
-  #   depends_on:
-  #     - postgis
-  #   environment:
-  #     - NODE_ENV=development
+      postgis:
+        condition: service_healthy
+    restart: unless-stopped
 
 volumes:
   postgis-data:
+    driver: local
