@@ -23,7 +23,7 @@ services:
     working_dir: /app
     volumes:
       - ./backend:/app
-    command: ["node", "index.js"]
+    command: ["node", "app.js"]
     ports:
       - "4000:4000"
     environment:
