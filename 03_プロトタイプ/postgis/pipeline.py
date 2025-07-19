@@ -3,6 +3,7 @@ import time
 import subprocess
 import pathlib
 
+#ファイルシステム的にwindowsでないと動かない可能性あり
 # Docker Compose を起動
 print("🟢 Docker Compose 起動中...")
 subprocess.run(["docker-compose", "up", "-d"], check=True)
@@ -26,14 +27,15 @@ print("✅ PostGIS が正常に起動しました")
 migration_dir = pathlib.Path("./migration")
 geojson_files = list(migration_dir.glob("*.geojson"))
 print(f"📦 {len(geojson_files)} 件の GeoJSON を検出")
-
 for geojson_path in geojson_files:
-    filename = geojson_path.name
-    table_name = filename.replace(".geojson", "").lower().replace("-", "_")
-    print(f"📤 インポート中: {filename} → テーブル: {table_name}")
+
+    basename = geojson_path.stem  # 拡張子なしファイル名（例: N05-23_Station2）
+    table_name = basename.lower().replace("-", "_")
+    print(f"📤 インポート中: {basename} → テーブル: {table_name}")
 
     # Windows のパスを Docker 用に `/` 区切りへ変換
-    docker_path = f"/data/{filename}"
+    docker_path = f"/data/{basename}.geojson"
+
 
     try:
         subprocess.run([
@@ -49,8 +51,8 @@ for geojson_path in geojson_files:
     "-lco", "GEOMETRY_NAME=geometry",  # ここを追加
     "-overwrite"  # 既存テーブルがあれば上書き（必要に応じて）
 ], check=True)
-        print(f"✅ {filename} のインポートに成功しました")
+        print(f"✅ {basename} のインポートに成功しました")
     except subprocess.CalledProcessError as e:
-        print(f"❌ {filename} のインポートに失敗しました\n{e}")
+        print(f"❌ {basename} のインポートに失敗しました\n{e}")
 
 print("🎉 全ての GeoJSON をインポートしました")

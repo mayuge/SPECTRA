@@ -1,12 +1,11 @@
 services:
   postgis:
-    image: kartoza/postgis:12.4
+    image: postgis/postgis:15-3.3
     container_name: postgis_container
     environment:
       - POSTGRES_USER=docker
       - POSTGRES_PASSWORD=docker
       - POSTGRES_DB=postgres
-      - POSTGRES_MULTIPLE_EXTENSIONS=postgis,hstore,postgis_topology
     ports:
       - "5432:5432"
     volumes:
@@ -18,16 +17,21 @@ services:
       retries: 5
     restart: unless-stopped
 
-  pgfeatureserv:
-    image: pramsey/pg_featureserv:latest
-    container_name: pgfeatureserv_container
-    ports:
-      - "9000:9000"
-    environment:
-      - DATABASE_URL=postgres://docker:docker@postgis:5432/postgres
-      - CONFIG_FILE=/config/config.yaml
+  backend:
+    image: node:20
+    container_name: backend_container
+    working_dir: /app
     volumes:
-      - ./pg_featureserv_config:/config
+      - ./backend:/app
+    command: ["node", "index.js"]
+    ports:
+      - "4000:4000"
+    environment:
+      - PGUSER=docker
+      - PGPASSWORD=docker
+      - PGHOST=postgis
+      - PGDATABASE=postgres
+      - PGPORT=5432
     depends_on:
       postgis:
         condition: service_healthy
