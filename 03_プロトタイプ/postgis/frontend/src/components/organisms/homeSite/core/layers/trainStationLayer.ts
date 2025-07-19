@@ -1,8 +1,9 @@
 import { GeoJsonLayer } from "@deck.gl/layers"
-
+import useMapApp from "@/components/organisms/homeSite/core/application/useMapApp"
+const { getAllStation } = useMapApp()
 export const trainStationLayer = new GeoJsonLayer({
   id: "train-station-layer",
-  data: "http://localhost:9000/collections/public.n05_23_station2/items",
+  data: getAllStation(),
   minZoom: 0,
   maxZoom: 16,
   getFillColor: [255, 0, 0, 180],

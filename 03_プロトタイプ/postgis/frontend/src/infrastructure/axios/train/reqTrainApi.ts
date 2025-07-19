@@ -1,6 +1,5 @@
 import { getInstance } from "@/infrastructure/axios/api"
 import type { IReqTrainApi } from "@/domain/interfaces/IReqTrainApi"
-
 export const useReqTrainApi = (): IReqTrainApi => {
   const instance = getInstance()
 
@@ -10,11 +9,13 @@ export const useReqTrainApi = (): IReqTrainApi => {
    */
   const getAllStation = async () => {
     const url = process.env.NEXT_PUBLIC_BACKEND_TRAIN_STATION_URL
+
     const config = {
       method: "GET",
       url: `${url}`,
     }
     const res = await instance.request(config)
+    console.log("getAllStation res", res)
     if (res.status === 200) {
       return res.data
     } else {

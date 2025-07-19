@@ -1,5 +1,5 @@
 const useMapApp = () => {
-  const handleScreenshot = (deckRef: any) => {
+  const getScreenshot = (deckRef: any) => {
     if (!deckRef.current) return
 
     try {
@@ -18,7 +18,7 @@ const useMapApp = () => {
     }
   }
   return {
-    handleScreenshot,
+    getScreenshot,
   }
 }
 

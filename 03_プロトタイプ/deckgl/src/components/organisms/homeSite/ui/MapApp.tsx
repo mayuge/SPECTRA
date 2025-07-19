@@ -14,7 +14,7 @@ import { meshPolygonLayer } from "@/components/organisms/homeSite/core/params/me
 
 import useMapApp from "@/components/organisms/homeSite/core/application/useMapApp"
 
-const { handleScreenshot } = useMapApp()
+const { getScreenshot } = useMapApp()
 
 const INITIAL_VIEW_STATE = {
   longitude: 139.6917, // 東京の経度
@@ -73,7 +73,7 @@ function MapApp() {
           shape="square"
           iconLeft="photo_camera"
           onClick={() => {
-            handleScreenshot(deckRef)
+            getScreenshot(deckRef)
           }}
         />
         <Button
@@ -83,7 +83,7 @@ function MapApp() {
           shape="square"
           iconLeft="3d_rotation"
           onClick={() => {
-            handleScreenshot(deckRef)
+            getScreenshot(deckRef)
           }}
         />
         <Button
@@ -93,7 +93,7 @@ function MapApp() {
           shape="square"
           iconLeft="layers"
           onClick={() => {
-            handleScreenshot(deckRef)
+            getScreenshot(deckRef)
           }}
         />
         <Button
@@ -103,7 +103,7 @@ function MapApp() {
           shape="square"
           iconLeft="my_location"
           onClick={() => {
-            handleScreenshot(deckRef)
+            getScreenshot(deckRef)
           }}
         />
         <Button
@@ -113,7 +113,7 @@ function MapApp() {
           shape="square"
           iconLeft="share"
           onClick={() => {
-            handleScreenshot(deckRef)
+            getScreenshot(deckRef)
           }}
         />
       </div>

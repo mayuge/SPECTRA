@@ -1,7 +1,10 @@
-const useMapApp = () => {
-  const handleScreenshot = (deckRef: any) => {
-    if (!deckRef.current) return
+import { useReqTrainApiAdapter } from "@/infrastructure/adapters/httpAdapter"
 
+const useMapApp = () => {
+  const { getAllStation } = useReqTrainApiAdapter()
+
+  const getScreenshot = (deckRef: any) => {
+    if (!deckRef.current) return
     try {
       // DeckGLのキャンバスを直接取得
       const canvas = deckRef.current.deck.canvas
@@ -18,7 +21,8 @@ const useMapApp = () => {
     }
   }
   return {
-    handleScreenshot,
+    getScreenshot,
+    getAllStation,
   }
 }
 

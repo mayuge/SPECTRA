@@ -1,18 +1,21 @@
 import express from "express"
+import cors from "cors"
 import pkg from "pg"
 import trainRouter from "./train/index.js"
 
 const { Pool } = pkg
 
 const pool = new Pool({
-  host: process.env.PGHOST, // ← PGHOST を使用
-  user: process.env.PGUSER, // ← PGUSER を使用
-  password: process.env.PGPASSWORD, // ← PGPASSWORD を使用
-  database: process.env.PGDATABASE, // ← PGDATABASE を使用
+  host: process.env.PGHOST,
+  user: process.env.PGUSER,
+  password: process.env.PGPASSWORD,
+  database: process.env.PGDATABASE,
   port: process.env.PGPORT || 5432,
 })
 
 const app = express()
+
+app.use(cors())
 app.use(express.json())
 
 app.get("/", (req, res) => {
