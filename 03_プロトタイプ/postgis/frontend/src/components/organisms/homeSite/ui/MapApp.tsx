@@ -62,7 +62,7 @@ function MapApp() {
           // satelliteLayer,
           // floodHazardLayer,
           trainLineLayer,
-          // plateauLayer,
+          //plateauLayer,
           // cityPolygonLayer,
           // meshPolygonLayer,
           baseTrainStationLayer,

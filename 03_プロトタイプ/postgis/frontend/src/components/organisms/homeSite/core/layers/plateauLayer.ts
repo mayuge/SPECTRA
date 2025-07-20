@@ -30,7 +30,7 @@ export const plateauLayer = new MVTLayer({
   extruded: true,
   wireframe: false,
   pickable: true,
-  opacity: 1,
+  opacity: 0.5,
   material: {
     ambient: 0.9,
     diffuse: 0.7,
