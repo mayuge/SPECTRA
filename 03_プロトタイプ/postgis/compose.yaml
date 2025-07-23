@@ -18,12 +18,13 @@ services:
     restart: unless-stopped
 
   backend:
-    image: node:20
+    build:
+      context: ./backend
     container_name: backend_container
     working_dir: /app
     volumes:
       - ./backend:/app
-    command: ["node", "app.js"]
+    command: ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "4000"]
     ports:
       - "4000:4000"
     environment:
