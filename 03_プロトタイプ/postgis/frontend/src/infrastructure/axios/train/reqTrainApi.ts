@@ -15,9 +15,8 @@ export const useReqTrainApi = (): IReqTrainApi => {
       url: `${url}`,
     }
     const res = await instance.request(config)
-    console.log("getAllStation res", res)
     if (res.status === 200) {
-      return res.data
+      return typeof res.data === "string" ? JSON.parse(res.data) : res.data
     } else {
       throw new Error("Failed to fetch station data")
     }
@@ -36,7 +35,7 @@ export const useReqTrainApi = (): IReqTrainApi => {
     }
     const res = await instance.request(config)
     if (res.status === 200) {
-      return res.data
+      return typeof res.data === "string" ? JSON.parse(res.data) : res.data
     } else {
       throw new Error(`Failed to fetch station data for ${stationName}`)
     }
