@@ -1,12 +1,16 @@
-FROM node:20
+FROM python:3.11-slim
 
-WORKDIR /app
+# 作業ディレクトリを /backend に変更
+WORKDIR /backend
 
-COPY package*.json ./
-RUN npm install
+# ホストの backend/requirements.txt をコンテナの /backend にコピー
+COPY requirements.txt ./
 
+# 依存関係をインストール
+RUN pip install --no-cache-dir -r requirements.txt
+
+# アプリケーションコードを全て /backend にコピー
 COPY . .
 
-EXPOSE 4000
-
-CMD ["node", "app.js"]
+# アプリケーションの起動コマンド
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "4000"]
