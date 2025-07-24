@@ -1,23 +1,24 @@
+# main.py
+
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 import asyncpg
 import os
-from fastapi.middleware.cors import CORSMiddleware
-from urllib.parse import unquote
-from fastapi import HTTPException
+
+from controller.train.train_controller import router as train_router
 
 app = FastAPI()
 
-origins = [
-    "http://localhost:3000",
-]
-
+# CORS設定
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["http://localhost:3000"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# DB接続プール
 @app.on_event("startup")
 async def startup():
     app.state.pool = await asyncpg.create_pool(
@@ -34,48 +35,7 @@ async def shutdown():
 
 @app.get("/")
 async def root():
-    return {"message": "Welcome to the Train Info API"}
+    return {"message": "hello"}
 
-@app.get("/train/station")
-async def get_all_stations():
-    query = """
-    SELECT jsonb_build_object(
-      'type', 'FeatureCollection',
-      'features', jsonb_agg(
-        jsonb_build_object(
-          'type', 'Feature',
-          'geometry', ST_AsGeoJSON(geometry)::jsonb,
-          'properties', to_jsonb(row) - 'geometry'
-        )
-      )
-    ) AS geojson
-    FROM (SELECT * FROM n05_23_station2) row
-    """
-    async with app.state.pool.acquire() as conn:
-        result = await conn.fetchrow(query)
-        return result["geojson"]
-
-
-
-@app.get("/train/station/{station_name}")
-async def get_station_by_name(station_name: str):
-    decoded_name = unquote(station_name)  # ここで定義！
-    query = """
-    SELECT jsonb_build_object(
-      'type', 'Feature',
-      'geometry', ST_AsGeoJSON(geometry)::jsonb,
-      'properties', to_jsonb(row) - 'geometry'
-    ) AS geojson
-    FROM n05_23_station2 row
-    WHERE "n05_011" = $1
-    LIMIT 10
-    """
-    try:
-        async with app.state.pool.acquire() as conn:
-            result = await conn.fetchrow(query, decoded_name)
-            if result:
-                return result["geojson"]
-            raise HTTPException(status_code=404, detail="Station not found")
-    except Exception as e:
-        print(f"Error: {e}")
-        raise HTTPException(status_code=500, detail="Internal server error")
+# ルーター登録
+app.include_router(train_router)
