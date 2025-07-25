@@ -13,7 +13,6 @@ type TextareaProps = {
 const Textarea: React.FC<TextareaProps> = ({
   placeholder,
   rows,
-  width,
   shape,
   isShadow,
   value,
@@ -34,25 +33,23 @@ const Textarea: React.FC<TextareaProps> = ({
   if (isShadow) {
     shadow = "shadow-sm shadow-gray-20"
   }
-  let border = "border border-black"
+  let border = "border border-gray-60"
   if (isBorderNone) {
     border = "border-none focus:outline-none"
   }
 
   // 幅
-  const textareaWidth = width ? width : "w-full"
+
   let fontSize = "md:text-base text-xs"
 
   return (
-    <div className="relative">
-      <textarea
-        className={`${textareaWidth} ${className} p-2 ${border} resize-none ${cornerShape} ${shadow} ${fontSize}`}
-        placeholder={placeholder}
-        value={value ? value : ""}
-        onChange={onChange}
-        rows={rows}
-      />
-    </div>
+    <textarea
+      className={`w-full ${className} p-2 ${border} resize-none ${cornerShape} ${shadow} ${fontSize}`}
+      placeholder={placeholder}
+      value={value ? value : ""}
+      onChange={onChange}
+      rows={rows}
+    />
   )
 }
 
