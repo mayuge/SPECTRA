@@ -19,6 +19,7 @@ const DialogApp: React.FC = () => {
         <DialogHeader
           text="チャットで質問"
           icon="arrow_drop_up"
+          isPullIcon={true}
           size="normal"
           variant="header-dark"
           //shape="square"
@@ -48,6 +49,8 @@ const DialogApp: React.FC = () => {
         icon="arrow_drop_down"
         size="normal"
         variant="header-dark"
+        isShadow={true}
+        isPullIcon={true}
         //shape="square"
         onClick={() => {
           setMainPanelOpen(false)

@@ -5,10 +5,11 @@ import type { HeaderVariantType, HeaderSizeType } from "@/domain/types/molecules
 
 type DialogHeaderProps = {
   text?: string // ヘッダーテキスト
-  icon: string // アイコンの名前を文字列で指定
+  icon?: string // アイコンの名前を文字列で指定
   size: HeaderSizeType // mini、small、normal、large のいずれかを指定
   variant: HeaderVariantType // ヘッダーのスタイル header-primary, header-secondary, header-danger, header-warning, header-success のいずれかを指定
   shape?: string //ヘッダーを角丸にする
+  isPullIcon?: boolean // プルアイコンを表示するかどうか
   isShadow?: boolean //影をつける
   onClick: () => void
 }
@@ -18,6 +19,7 @@ const DialogHeader: React.FC<DialogHeaderProps> = ({
   size,
   variant,
   icon,
+  isPullIcon,
   shape,
   isShadow,
   onClick,
@@ -64,23 +66,29 @@ const DialogHeader: React.FC<DialogHeaderProps> = ({
   }
   let headerShadow = ""
   if (isShadow === true) {
-    headerShadow = "shadow-md shadow-black"
+    headerShadow = " shadow-black shadow-md"
   }
-
   return (
     <div
       onClick={onClick}
-      className={`${headerVariant} ${headerShape} ${headerShadow} ${buttonShape} w-full flex items-center justify-between md:text-base text-xs font-bold`}
+      className={`${headerVariant} ${headerShape} ${headerShadow} ${buttonShape} w-full flex flex-col`}
     >
-      <div className={`${headerVariant} ml-4`}>{text}</div>
-      <div>
-        <Button
-          variant={`${buttonVariant}`}
-          shape="circle"
-          iconLeft={`${icon}`}
-          size={`${size}`}
-          onClick={onClick}
-        />
+      {isPullIcon && (
+        <div className="absolute top-1 left-1/2 -translate-x-1/2">
+          <div className="h-[4px] w-10 bg-gray-50 rounded-full" />
+        </div>
+      )}
+      <div className="flex items-center justify-between px-4 md:text-base text-xs font-bold w-full">
+        <div className="text-inherit">{text}</div>
+        {icon && (
+          <Button
+            variant={buttonVariant}
+            shape="circle"
+            iconLeft={icon}
+            size={size}
+            onClick={onClick}
+          />
+        )}
       </div>
     </div>
   )
