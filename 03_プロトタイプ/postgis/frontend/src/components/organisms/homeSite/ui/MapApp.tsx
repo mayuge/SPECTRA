@@ -12,6 +12,7 @@ import { osmLayer } from "@/components/organisms/homeSite/core/layers/osmLayer"
 import { cityPolygonLayer } from "@/components/organisms/homeSite/core/layers/cityPolygonLayer"
 import { meshPolygonLayer } from "@/components/organisms/homeSite/core/layers/meshPolygonLayer"
 import { trainStationLayer } from "@/components/organisms/homeSite/core/layers/trainStationLayer"
+import { trainLineLayer } from "@/components/organisms/homeSite/core/layers/trainLineLayer"
 import { baseTrainStationLayer } from "@/components/organisms/homeSite/core/layers/baseTrainStationLayer"
 
 import useMapApp from "@/components/organisms/homeSite/core/application/useMapApp"
@@ -66,6 +67,7 @@ function MapApp() {
           // cityPolygonLayer,
           // meshPolygonLayer,
           baseTrainStationLayer,
+          trainLineLayer,
           trainStationLayer,
         ]}
       />

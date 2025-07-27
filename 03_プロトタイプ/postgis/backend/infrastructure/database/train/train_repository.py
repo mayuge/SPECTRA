@@ -1,3 +1,4 @@
+import json
 from fastapi import Request, HTTPException
 
 class TrainRepository:
@@ -62,11 +63,14 @@ class TrainRepository:
           'properties', to_jsonb(row) - 'geometry'
         ) AS geojson
         FROM n05_23_railroadsection2 row
-        WHERE "N05_002" = $1
-        LIMIT 10
+        WHERE "n05_002" = $1
         """
         async with request.app.state.pool.acquire() as conn:
-            result = await conn.fetchrow(query, line_name)
-            if result:
-                return result["geojson"]
-            raise HTTPException(status_code=404, detail="Line not found")
+          rows = await conn.fetch(query, line_name)
+          if not rows:
+              raise HTTPException(status_code=404, detail=f"Line not found: {line_name}")
+
+          # 🔑 ここで json.loads して「文字列 → オブジェクト」に変換
+          features = [json.loads(r["geojson"]) for r in rows]
+
+          return {"type": "FeatureCollection", "features": features}
