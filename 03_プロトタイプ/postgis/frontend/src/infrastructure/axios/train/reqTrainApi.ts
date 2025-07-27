@@ -1,11 +1,11 @@
 import { getInstance } from "@/infrastructure/axios/api"
 import type { IReqTrainApi } from "@/domain/interfaces/IReqTrainApi"
 export const useReqTrainApi = (): IReqTrainApi => {
-  const instance = getInstance()
+  const httpInstance = getInstance()
 
   /**
    * 駅一覧を取得
-   * @returns any 駅の情報の配列
+   * @returns {geojson} 駅の情報
    */
   const getAllStation = async () => {
     const url = process.env.NEXT_PUBLIC_BACKEND_TRAIN_STATION_URL
@@ -14,7 +14,7 @@ export const useReqTrainApi = (): IReqTrainApi => {
       method: "GET",
       url: `${url}`,
     }
-    const res = await instance.request(config)
+    const res = await httpInstance.request(config)
     if (res.status === 200) {
       return typeof res.data === "string" ? JSON.parse(res.data) : res.data
     } else {
@@ -25,7 +25,7 @@ export const useReqTrainApi = (): IReqTrainApi => {
   /**
    * 駅名から駅の情報を取得
    * @param stationName {string} 駅名
-   * @returns 駅の情報
+   * @returns {geojson} 駅の情報
    */
   const getStationByName = async (stationName: string) => {
     const url = process.env.NEXT_PUBLIC_BACKEND_TRAIN_STATION_DETAIL_URL
@@ -33,7 +33,7 @@ export const useReqTrainApi = (): IReqTrainApi => {
       method: "GET",
       url: `${url}${stationName}`,
     }
-    const res = await instance.request(config)
+    const res = await httpInstance.request(config)
     if (res.status === 200) {
       return typeof res.data === "string" ? JSON.parse(res.data) : res.data
     } else {

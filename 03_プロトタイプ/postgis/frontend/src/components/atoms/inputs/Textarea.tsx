@@ -7,7 +7,7 @@ type TextareaProps = {
   value: string | null
   className?: string
   isBorderNone?: boolean
-  onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void
+  onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void
 }
 
 const Textarea: React.FC<TextareaProps> = ({

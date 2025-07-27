@@ -1,5 +1,4 @@
 import { useReqTrainApiAdapter } from "@/infrastructure/adapters/httpAdapter"
-import { get } from "http"
 
 const useMapApp = () => {
   const { getAllStation, getStationByName } = useReqTrainApiAdapter()

@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Request
 from urllib.parse import unquote
-from infrastructure.train.train_repository import TrainRepository
+from infrastructure.database.train.train_repository import TrainRepository
 
 router = APIRouter()
 train_repository = TrainRepository()

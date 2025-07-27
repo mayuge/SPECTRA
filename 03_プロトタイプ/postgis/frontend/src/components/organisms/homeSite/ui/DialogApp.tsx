@@ -1,17 +1,23 @@
 "use client"
-import React from "react"
+import React, { useState } from "react"
 import DialogHeader from "@/components/molecules/header/DialogHeader"
-import Badge from "@/components/atoms/labels/Badge"
 import Button from "@/components/atoms/buttons/Button"
-import TextLabel from "@/components/atoms/labels/TextLabel"
-import GridLogoButton from "@/components/atoms/buttons/GridLogoButton"
-import Card from "@/components/molecules/frames/Card"
 import Textarea from "@/components/atoms/inputs/Textarea"
-
-import { useDialogStateAdapter } from "@/infrastructure/adapters/storeAdapters"
+import useDialogApp from "@/components/organisms/homeSite/core/application/useDialogApp"
 
 const DialogApp: React.FC = () => {
-  const { getMainPanelOpen, setMainPanelOpen } = useDialogStateAdapter()
+  const { sendChatMessage, getMainPanelOpen, setMainPanelOpen } = useDialogApp()
+  const [chatInput, setChatInput] = useState("")
+
+  const chatInputOnChange = (value: string) => {
+    setChatInput(value)
+  }
+
+  const chatButtonClicked = () => {
+    // 必要ならここで API 呼び出し
+    sendChatMessage(chatInput)
+    setChatInput("")
+  }
 
   if (!getMainPanelOpen()) {
     return (
@@ -29,13 +35,17 @@ const DialogApp: React.FC = () => {
         />
         <div className="p-4 bg-white shadow-black shadow-lg">
           <div className="flex gap-4">
-            <Textarea rows={2} value="" onChange={() => {}} />
+            <Textarea
+              rows={2}
+              value={chatInput}
+              onChange={(e) => chatInputOnChange(e.target.value)}
+            />
             <Button
               size="large"
               variant="btn-primary"
               shape="circle"
               iconLeft="send"
-              onClick={() => {}}
+              onClick={chatButtonClicked}
             />
           </div>
         </div>
@@ -56,25 +66,7 @@ const DialogApp: React.FC = () => {
           setMainPanelOpen(false)
         }}
       />
-      <div className="max-w-screen-lg w-full mx-auto overflow-y-auto no-scrollbar h-[60vh] p-4 bg-white shadow-black shadow-lg z-50 animate-slide-up">
-        <div className="pb-2 flex items-center">
-          <Button size="mini" variant="btn-text-gray" iconLeft="filter_alt" />
-          <TextLabel text="プリセットの選択" size="normal" isBlack={true} bold={false} />
-        </div>
-
-        <div className="pt-4">
-          <hr className="border-gray-70" />
-        </div>
-        <div className="py-2 flex items-center">
-          <Button size="mini" variant="btn-text-gray" iconLeft="edit" />
-          <TextLabel
-            text="選択されたレイヤーの詳細設定"
-            size="normal"
-            isBlack={true}
-            bold={false}
-          />
-        </div>
-      </div>
+      <div className="max-w-screen-lg w-full mx-auto overflow-y-auto no-scrollbar h-[60vh] p-4 bg-white shadow-black shadow-lg z-50 animate-slide-up"></div>
     </div>
   )
 }

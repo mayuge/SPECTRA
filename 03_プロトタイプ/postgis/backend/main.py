@@ -6,7 +6,7 @@ import asyncpg
 import os
 
 from controller.train.train_controller import router as train_router
-
+from controller.chat.chat_controller import router as chat_router
 app = FastAPI()
 
 # CORS設定
@@ -39,3 +39,4 @@ async def root():
 
 # ルーター登録
 app.include_router(train_router)
+app.include_router(chat_router)

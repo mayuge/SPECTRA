@@ -1,4 +1,5 @@
+import type { GeoJsonPointType } from "@/domain/types/geoJsonType"
 export interface IReqTrainApi {
-  getAllStation: () => Promise<GeoJSON.FeatureCollection<GeoJSON.Point>>
-  getStationByName: (stationName: string) => Promise<GeoJSON.FeatureCollection<GeoJSON.Point>>
+  getAllStation: () => Promise<GeoJsonPointType>
+  getStationByName: (stationName: string) => Promise<GeoJsonPointType>
 }
