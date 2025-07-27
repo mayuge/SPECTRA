@@ -11,5 +11,14 @@ async def get_all_stations(request: Request):
 
 @router.get("/train/station/{station_name}")
 async def get_station_by_name(station_name: str, request: Request):
-    decoded_name = unquote(station_name)  # ここでデコード
+    decoded_name = unquote(station_name)  
     return await train_repository.get_station_by_name(decoded_name, request)
+
+@router.get("/train/line")
+async def get_all_lines(request: Request):
+    return await train_repository.get_all_lines(request)
+
+@router.get("/train/line/{line_name}")
+async def get_line_by_name(line_name: str, request: Request):
+    decoded_name = unquote(line_name)
+    return await train_repository.get_line_by_name(decoded_name, request)

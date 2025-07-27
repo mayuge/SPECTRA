@@ -7,7 +7,7 @@ import Button from "@/components/atoms/buttons/Button"
 import { plateauLayer } from "@/components/organisms/homeSite/core/layers/plateauLayer"
 import { floodHazardLayer } from "@/components/organisms/homeSite/core/layers/floodHazardLayer"
 import { satelliteLayer } from "@/components/organisms/homeSite/core/layers/sateliteLayer"
-import { trainLineLayer } from "@/components/organisms/homeSite/core/layers/trainLineLayer"
+import { baseTrainLineLayer } from "@/components/organisms/homeSite/core/layers/baseTrainLineLayer"
 import { osmLayer } from "@/components/organisms/homeSite/core/layers/osmLayer"
 import { cityPolygonLayer } from "@/components/organisms/homeSite/core/layers/cityPolygonLayer"
 import { meshPolygonLayer } from "@/components/organisms/homeSite/core/layers/meshPolygonLayer"
@@ -61,7 +61,7 @@ function MapApp() {
           osmLayer,
           // satelliteLayer,
           // floodHazardLayer,
-          trainLineLayer,
+          baseTrainLineLayer,
           //plateauLayer,
           // cityPolygonLayer,
           // meshPolygonLayer,

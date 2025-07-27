@@ -1,7 +1,8 @@
 import { useReqTrainApiAdapter } from "@/infrastructure/adapters/httpAdapter"
 
 const useMapApp = () => {
-  const { getAllStation, getStationByName } = useReqTrainApiAdapter()
+  const { getAllStation, getStationByName, getAllTrainLine, getTrainLineByName } =
+    useReqTrainApiAdapter()
 
   const getScreenshot = (deckRef: any) => {
     if (!deckRef.current) return
@@ -24,6 +25,8 @@ const useMapApp = () => {
     getScreenshot,
     getAllStation,
     getStationByName,
+    getAllTrainLine,
+    getTrainLineByName,
   }
 }
 

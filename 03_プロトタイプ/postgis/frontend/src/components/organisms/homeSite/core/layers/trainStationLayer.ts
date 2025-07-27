@@ -1,7 +1,7 @@
 import { GeoJsonLayer } from "@deck.gl/layers"
 import useMapApp from "@/components/organisms/homeSite/core/application/useMapApp"
 
-const { getAllStation, getStationByName } = useMapApp()
+const { getStationByName } = useMapApp()
 
 export const trainStationLayer = new GeoJsonLayer({
   id: "train-station-layer",
