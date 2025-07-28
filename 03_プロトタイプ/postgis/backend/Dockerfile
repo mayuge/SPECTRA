@@ -1,16 +1,23 @@
 FROM python:3.11-slim
 
+# uvをインストール
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+
 # 作業ディレクトリを /backend に変更
 WORKDIR /backend
 
-# ホストの backend/requirements.txt をコンテナの /backend にコピー
-COPY requirements.txt ./
-
 # 依存関係をインストール
-RUN pip install --no-cache-dir -r requirements.txt
+RUN --mount=type=cache,target=/root/.cache/uv \
+    --mount=type=bind,source=uv.lock,target=uv.lock \
+    --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
+    uv sync --locked --no-install-project
 
-# アプリケーションコードを全て /backend にコピー
-COPY . .
+# プロジェクトをコピー
+ADD . /backend
+
+# プロジェクトを同期
+RUN --mount=type=cache,target=/root/.cache/uv \
+    uv sync --locked
 
 # アプリケーションの起動コマンド
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "4000"]
+CMD ["uv", "run", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "4000"]
