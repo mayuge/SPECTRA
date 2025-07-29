@@ -9,7 +9,9 @@ dependencies = [
     "psycopg2-binary==2.9.10",
     "asyncpg",
     "mcp[cli]>=1.12.2",
-    "google-generativeai"
+    "google-generativeai",
+    "generativeai>=0.0.1",
+    "fastmcp>=2.10.6",
 ]
 
 [tool.uv]
