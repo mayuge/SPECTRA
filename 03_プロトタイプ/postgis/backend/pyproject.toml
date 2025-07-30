@@ -4,14 +4,12 @@ version = "0.1.0"
 description = ""
 requires-python = ">=3.11"
 dependencies = [
-    "fastapi==0.116.1",
-    "uvicorn==0.35.0",
-    "psycopg2-binary==2.9.10",
-    "asyncpg",
+    "fastapi>=0.116.1",
+    "uvicorn>=0.35.0",
+    "psycopg2-binary>=2.9.10",
+    "asyncpg>=0.30.0",
     "mcp[cli]>=1.12.2",
-    "google-generativeai",
-    "generativeai>=0.0.1",
-    "fastmcp>=2.10.6",
+    "google-genai>=1.27.0",
 ]
 
 [tool.uv]
