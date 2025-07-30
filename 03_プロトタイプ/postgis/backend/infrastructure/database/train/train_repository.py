@@ -68,11 +68,11 @@ class TrainRepository:
         WHERE "n05_002" = $1
         """
         async with request.app.state.pool.acquire() as conn:
-          rows = await conn.fetch(query, line_name)
-          if not rows:
-              raise HTTPException(status_code=404, detail=f"Line not found: {line_name}")
+            rows = await conn.fetch(query, line_name)
+            if not rows:
+                raise HTTPException(status_code=404, detail=f"Line not found: {line_name}")
 
-          # 🔑 ここで json.loads して「文字列 → オブジェクト」に変換
-          features = [json.loads(r["geojson"]) for r in rows]
+            # 🔑 ここで json.loads して「文字列 → オブジェクト」に変換
+            features = [json.loads(r["geojson"]) for r in rows]
 
-          return {"type": "FeatureCollection", "features": features}
+            return {"type": "FeatureCollection", "features": features}

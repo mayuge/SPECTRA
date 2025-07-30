@@ -20,6 +20,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 # DB接続プール
 @app.on_event("startup")
 async def startup():
@@ -31,13 +32,16 @@ async def startup():
         port=int(os.getenv("PGPORT", 5432)),
     )
 
+
 @app.on_event("shutdown")
 async def shutdown():
     await app.state.pool.close()
 
+
 @app.get("/")
 async def root():
     return {"message": "hello"}
+
 
 # ルーター登録
 app.include_router(train_router)
