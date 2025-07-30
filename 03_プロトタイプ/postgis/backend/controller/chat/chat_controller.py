@@ -1,36 +1,51 @@
-import os
-
-from fastapi import APIRouter, Request
-from google import generativeai as genai
+from fastapi import APIRouter, HTTPException
+from google import genai
+from google.genai import types
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
+from pydantic import BaseModel
+
+
+class ChatRequest(BaseModel):
+    message: str
+
 
 router = APIRouter()
 
-# Google Generative AI の初期化
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+client = genai.Client()
 
 # MCP 設定
 server_params = StdioServerParameters(
-    command="uv",  # Executable
-    args=["run", "infrastructure/mcp/chat_repository.py"],
-    env=None,  # Optional environment variables
+    command="npx",
+    args=["-y", "@philschmid/weather-mcp"],
+    env=None,
 )
 
 
 @router.post("/chat")
-async def chat_request(request: Request):
-    body = await request.json()
-    message = body.get("message")
+async def chat_request(request: ChatRequest):
+    try:
+        if not request.message:
+            raise HTTPException(status_code=400, detail="Message is required")
 
-    # MCPツールに自然言語プロンプトを送信
-    async with stdio_client(server_params) as client:
-        session = ClientSession(client)
-        mcp_response = await session.prompt(message)
+        async with stdio_client(server_params) as (read, write):
+            async with ClientSession(read, write) as session:
+                await session.initialize()
 
-    # Gemini に応答の自然な説明を依頼（必要に応じて）
-    model = genai.GenerativeModel("gemini-pro")
-    gemini_response = model.generate_content(f"以下のデータをわかりやすく説明してください：\n{mcp_response}")
-    explanation = gemini_response.text
+                # Gemini APIを使用してレスポンスを生成
+                response = await client.aio.models.generate_content(
+                    # gemini-2.5-proだと、回答が遅すぎるので一旦flashを使う
+                    model="gemini-2.5-flash-preview-05-20",
+                    config=types.GenerateContentConfig(
+                        system_instruction="天気について質問されたら、weather-mcpを使用して回答してください",
+                        tools=[session],
+                    ),
+                    contents=request.message,
+                )
 
-    return {"tool_result": mcp_response, "gemini_summary": explanation}
+        return {"response": response.text}
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"エラーが発生しました: {str(e)}")

@@ -3,6 +3,14 @@ FROM python:3.11-slim
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1
 
+# 必要なパッケージとNode.jsをインストール
+# 試しにnpxコマンドで外部のmcpサーバーを使用するためにインストールするので、自作mcpサーバーを使うようになったら削除する
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    nodejs \
+    npm && \
+    rm -rf /var/lib/apt/lists/*
+
 # uvをインストール
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
