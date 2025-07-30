@@ -1,5 +1,7 @@
-from fastapi import APIRouter, Request
 from urllib.parse import unquote
+
+from fastapi import APIRouter, Request
+
 from infrastructure.database.train.train_repository import TrainRepository
 
 router = APIRouter()
@@ -11,7 +13,7 @@ async def get_all_stations(request: Request):
 
 @router.get("/train/station/{station_name}")
 async def get_station_by_name(station_name: str, request: Request):
-    decoded_name = unquote(station_name)  
+    decoded_name = unquote(station_name)
     return await train_repository.get_station_by_name(decoded_name, request)
 
 @router.get("/train/line")

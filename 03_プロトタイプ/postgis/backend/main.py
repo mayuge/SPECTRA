@@ -1,12 +1,14 @@
 # main.py
 
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-import asyncpg
 import os
 
-from controller.train.train_controller import router as train_router
+import asyncpg
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
 from controller.chat.chat_controller import router as chat_router
+from controller.train.train_controller import router as train_router
+
 app = FastAPI()
 
 # CORS設定

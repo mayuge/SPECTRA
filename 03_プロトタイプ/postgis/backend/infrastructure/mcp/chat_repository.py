@@ -1,5 +1,6 @@
-from infrastructure.database.train.train_repository import TrainRepository
 from mcp.server.fastmcp import FastMCP
+
+from infrastructure.database.train.train_repository import TrainRepository
 
 mcp = FastMCP("chat-server")
 train_repository = TrainRepository()

@@ -1,8 +1,9 @@
-from fastapi import APIRouter, Request
-from mcp.client.stdio import stdio_client
-from mcp import ClientSession, StdioServerParameters
-from google import generativeai as genai
 import os
+
+from fastapi import APIRouter, Request
+from google import generativeai as genai
+from mcp import ClientSession, StdioServerParameters
+from mcp.client.stdio import stdio_client
 
 router = APIRouter()
 
