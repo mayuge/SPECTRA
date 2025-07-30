@@ -5,10 +5,15 @@ ENV PYTHONUNBUFFERED=1 \
 
 # 必要なパッケージとNode.jsをインストール
 # 試しにnpxコマンドで外部のmcpサーバーを使用するためにインストールするので、自作mcpサーバーを使うようになったら削除する
+# RUN apt-get update && \
+#     apt-get install -y --no-install-recommends \
+#     nodejs \
+#     npm && \
+#     rm -rf /var/lib/apt/lists/*
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-    nodejs \
-    npm && \
+    apt-get install -y curl ca-certificates gnupg && \
+    curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
+    apt-get install -y nodejs && \
     rm -rf /var/lib/apt/lists/*
 
 # uvをインストール
