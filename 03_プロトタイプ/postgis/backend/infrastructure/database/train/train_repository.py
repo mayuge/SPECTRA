@@ -1,5 +1,7 @@
 import json
-from fastapi import Request, HTTPException
+
+from fastapi import HTTPException, Request
+
 
 class TrainRepository:
     async def get_all_stations(self, request: Request):
@@ -36,7 +38,7 @@ class TrainRepository:
             if result:
                 return result["geojson"]
             raise HTTPException(status_code=404, detail="Station not found")
-        
+
     async def get_all_lines(self, request: Request):
         query = """
         SELECT jsonb_build_object(
@@ -54,7 +56,7 @@ class TrainRepository:
         async with request.app.state.pool.acquire() as conn:
             result = await conn.fetchrow(query)
             return result["geojson"]
-        
+
     async def get_line_by_name(self, line_name: str, request: Request):
         query = """
         SELECT jsonb_build_object(
@@ -66,11 +68,11 @@ class TrainRepository:
         WHERE "n05_002" = $1
         """
         async with request.app.state.pool.acquire() as conn:
-          rows = await conn.fetch(query, line_name)
-          if not rows:
-              raise HTTPException(status_code=404, detail=f"Line not found: {line_name}")
+            rows = await conn.fetch(query, line_name)
+            if not rows:
+                raise HTTPException(status_code=404, detail=f"Line not found: {line_name}")
 
-          # 🔑 ここで json.loads して「文字列 → オブジェクト」に変換
-          features = [json.loads(r["geojson"]) for r in rows]
+            # 🔑 ここで json.loads して「文字列 → オブジェクト」に変換
+            features = [json.loads(r["geojson"]) for r in rows]
 
-          return {"type": "FeatureCollection", "features": features}
+            return {"type": "FeatureCollection", "features": features}

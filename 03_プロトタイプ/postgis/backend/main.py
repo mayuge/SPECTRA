@@ -1,12 +1,14 @@
 # main.py
 
-from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
-import asyncpg
 import os
 
-from controller.train.train_controller import router as train_router
+import asyncpg
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
 from controller.chat.chat_controller import router as chat_router
+from controller.train.train_controller import router as train_router
+
 app = FastAPI()
 
 # CORS設定
@@ -17,6 +19,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 # DB接続プール
 @app.on_event("startup")
@@ -29,13 +32,16 @@ async def startup():
         port=int(os.getenv("PGPORT", 5432)),
     )
 
+
 @app.on_event("shutdown")
 async def shutdown():
     await app.state.pool.close()
 
+
 @app.get("/")
 async def root():
     return {"message": "hello"}
+
 
 # ルーター登録
 app.include_router(train_router)
