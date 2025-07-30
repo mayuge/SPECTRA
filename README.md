@@ -11,6 +11,39 @@
   <img src="https://img.shields.io/badge/-cloudflare-F38020.svg?logo=cloudflare&style=flat">
 </p>
 
+### 現状の市場分析
+
+```mermaid
+quadrantChart
+    title 現状の地図アプリの作成目的と実用性の組み合わせ
+    x-axis "公共貢献" --> "ビジネス"
+    y-axis "エンタメ" --> "実用"
+    quadrant-1 "便利系アプリ"
+    quadrant-2 "業務用アプリ"
+    quadrant-3 "知育・ポイ活アプリ"
+    quadrant-4 "ゲーム"
+    SPECTRA PROJECT: [0.3, 0.6]
+    "地理院地図": [0.1, 0.55]
+    "電柱の写真撮ってポイ活みたいなアプリ": [0.45, 0.23]
+    GoogleMap: [0.9, 0.9]
+    PokemonGO: [0.9, 0.1]
+    "vacan避難所アプリ": [0.45, 0.78]
+```
+```mermaid
+quadrantChart
+    title 既存のGIS
+    x-axis "公共貢献" --> "ビジネス"
+    y-axis "エディター" --> "ビューワー"
+    quadrant-1 "手軽に見れるがビジネス的"
+    quadrant-2 "手軽に見れて学術的"
+    quadrant-3 "高性能で学術目的"
+    quadrant-4 "高性能でビジネス目的"
+    "地理院地図": [0.1, 0.55]
+    "QGIS": [0.45, 0.23]
+    GoogleMap: [0.9, 0.9]
+    ArcGIS: [0.9, 0.1]
+    "SPECTRA PROJECT": [0.45, 0.78]
+```
 ### 現行システム参考動画
 
 - ![リンク](https://youtu.be/bD8sS1OV2hQ?si=uW0oOqOIoVhTTgVh)
@@ -45,3 +78,6 @@
 ### サーバー構成
 
 ![](01_設計/image/SPECTRA_サーバー構成.png)
+
+
+
