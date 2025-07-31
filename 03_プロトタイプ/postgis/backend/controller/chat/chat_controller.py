@@ -14,13 +14,11 @@ router = APIRouter()
 
 client = genai.Client()
 
-# MCP 設定
 server_params = StdioServerParameters(
-    command="npx",
-    args=["-y", "@philschmid/weather-mcp"],
-    env=None,
+    command="python",
+    args=["-m", "infrastructure.mcp.chat_repository"],
+    env={"PYTHONPATH": "/backend"},
 )
-
 
 @router.post("/chat")
 async def chat_request(request: ChatRequest):
@@ -32,12 +30,10 @@ async def chat_request(request: ChatRequest):
             async with ClientSession(read, write) as session:
                 await session.initialize()
 
-                # Gemini APIを使用してレスポンスを生成
                 response = await client.aio.models.generate_content(
-                    # gemini-2.5-proだと、回答が遅すぎるので一旦flashを使う
                     model="gemini-2.5-flash-preview-05-20",
                     config=types.GenerateContentConfig(
-                        system_instruction="天気について質問されたら、weather-mcpを使用して回答してください",
+                        system_instruction="ユーザーが鉄道路線の名前（例: 池袋線、山手線）を入力した場合は、 `get_train_line_by_name` ツールを使用してください。",
                         tools=[session],
                     ),
                     contents=request.message,
@@ -48,4 +44,5 @@ async def chat_request(request: ChatRequest):
     except HTTPException:
         raise
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"エラーが発生しました: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"エラーが発生しました: {str(e)}") from e
+
