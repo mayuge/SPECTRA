@@ -19,7 +19,7 @@ const useReqTrainApi = (): IReqChatApi => {
 
     const res = await httpInstance.request(config)
 
-    console.log("Response from chat API:", res.data)
+    console.log("Response from chat API:", res)
 
     if (res.status === 200) {
       // res.data がすでにオブジェクトである前提ならこのままでOK
