@@ -36,6 +36,8 @@ async def chat_request(request: ChatRequest):
                         system_instruction=(
                             "ユーザーが鉄道路線の名前（例: 池袋線、山手線）を入力した場合、"
                             "`get_train_line_by_name` ツールを必ず使用してください。"
+                            "ユーザーが駅の名前（例: 東京、池袋）を入力した場合、"
+                            "`get_station_by_name` ツールを必ず使用してください。"
                             "ツールから返された結果をそのまま返答として使ってください。"
                         ),
                         tools=[session],

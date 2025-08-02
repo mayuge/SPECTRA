@@ -1,5 +1,5 @@
 from fastmcp import FastMCP
-
+import httpx
 from infrastructure.database.train.train_repository import TrainRepository
 
 mcp = FastMCP("chat-server")
@@ -7,17 +7,26 @@ train_repository = TrainRepository()
 
 
 @mcp.tool()
-def get_station_by_name(station_name: str):
-    """駅名を指定して駅情報を取得します。"""
-    #station_geojson = train_repository.get_station_by_name(station_name)
-    return "get_station_by_nameが呼び出されました。駅名: " + station_name
+async def get_station_by_name(station_name: str):
+    """駅名を指定して駅情報を取得します。最後の文字が駅だった場合は引数に入れない。引数の例: '東京', '池袋'"""
+    #http://localhost:4000/train/station/東京
+    async with httpx.AsyncClient() as client:
+        url = f"http://localhost:4000/train/station/{station_name}"
+        response = await client.get(url)
+        response.raise_for_status()
+        return response.json()
+
 
 
 @mcp.tool()
-def get_train_line_by_name(line_name: str):
+async def get_train_line_by_name(line_name: str):
     """路線名を指定して路線情報を取得します。引数の例: '池袋線', '山手線'"""
-    #line_geojson = train_repository.get_line_by_name(line_name)
-    return "get_train_line_by_nameが呼び出されました。路線名: " + line_name
+    #http://localhost:4000/train/line/池袋線
+    async with httpx.AsyncClient() as client:
+        url = f"http://localhost:4000/train/line/{line_name}"
+        response = await client.get(url)
+        response.raise_for_status()
+        return response.json()
 
 
 if __name__ == "__main__":
