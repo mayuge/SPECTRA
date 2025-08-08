@@ -28,7 +28,7 @@ async def chat_request(request: ChatRequest):
                 await session.initialize()
 
                 response = await client.aio.models.generate_content(
-                    model="gemini-2.5-flash-preview-05-20",
+                    model="gemini-2.5-flash",
                     config=types.GenerateContentConfig(
                         system_instruction=(
                             "ユーザーが鉄道路線の名前（例: 池袋線、山手線）を入力した場合、"
@@ -42,30 +42,7 @@ async def chat_request(request: ChatRequest):
                     contents=request.message,
                 )
 
-        # response.candidates から functionResponse を探す
-        for candidate in response.candidates or []:
-            parts = candidate.content.parts if candidate.content else []
-            for part in parts:
-                # MCPの返り値を取り出す
-                fr = getattr(part, "functionResponse", None)
-                if fr and fr.response:
-                    result = fr.response.result
-                    contents = result.get("content", [])
-                    for item in contents:
-                        if item.get("type") == "text":
-                            return {"response": item["text"]}
-
-        # fallback: モデル自身の応答があれば返す
-        fallback_texts = [
-            part.text
-            for candidate in response.candidates or []
-            for part in (candidate.content.parts if candidate.content else [])
-            if hasattr(part, "text") and part.text
-        ]
-        if fallback_texts:
-            return {"response": fallback_texts[0]}
-
-        raise HTTPException(status_code=500, detail="返答がありません")
+        return {"response": response.text}
 
     except HTTPException:
         raise
