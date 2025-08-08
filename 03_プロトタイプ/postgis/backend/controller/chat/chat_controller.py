@@ -1,8 +1,8 @@
 from fastapi import APIRouter, HTTPException
 from google import genai
 from google.genai import types
-from mcp import ClientSession, StdioServerParameters
-from mcp.client.stdio import stdio_client
+from mcp import ClientSession
+from mcp.client.sse import sse_client
 from pydantic import BaseModel
 
 
@@ -14,11 +14,8 @@ router = APIRouter()
 
 client = genai.Client()
 
-server_params = StdioServerParameters(
-    command="python",
-    args=["-m", "infrastructure.mcp.chat_repository"],
-    env={"PYTHONPATH": "/backend"},
-)
+MCP_SERVER_URL = "http://localhost:4000/mcp"
+
 
 @router.post("/chat")
 async def chat_request(request: ChatRequest):
@@ -26,7 +23,7 @@ async def chat_request(request: ChatRequest):
         if not request.message:
             raise HTTPException(status_code=400, detail="Message is required")
 
-        async with stdio_client(server_params) as (read, write):
+        async with sse_client(MCP_SERVER_URL) as (read, write):
             async with ClientSession(read, write) as session:
                 await session.initialize()
 
@@ -35,7 +32,7 @@ async def chat_request(request: ChatRequest):
                     config=types.GenerateContentConfig(
                         system_instruction=(
                             "ユーザーが鉄道路線の名前（例: 池袋線、山手線）を入力した場合、"
-                            "`get_train_line_by_name` ツールを必ず使用してください。"
+                            "`get_line_by_name` ツールを必ず使用してください。"
                             "ユーザーが駅の名前（例: 東京、池袋）を入力した場合、"
                             "`get_station_by_name` ツールを必ず使用してください。"
                             "ツールから返された結果をそのまま返答として使ってください。"
@@ -60,7 +57,8 @@ async def chat_request(request: ChatRequest):
 
         # fallback: モデル自身の応答があれば返す
         fallback_texts = [
-            part.text for candidate in response.candidates or []
+            part.text
+            for candidate in response.candidates or []
             for part in (candidate.content.parts if candidate.content else [])
             if hasattr(part, "text") and part.text
         ]
