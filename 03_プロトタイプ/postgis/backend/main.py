@@ -5,6 +5,7 @@ import os
 import asyncpg
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi_mcp import FastApiMCP
 
 from controller.chat.chat_controller import router as chat_router
 from controller.train.train_controller import router as train_router
@@ -46,3 +47,6 @@ async def root():
 # ルーター登録
 app.include_router(train_router)
 app.include_router(chat_router)
+
+mcp = FastApiMCP(app)
+mcp.mount()
