@@ -17,13 +17,17 @@ const useReqTrainApi = (): IReqChatApi => {
       data: { message },
     }
 
-    const res = await httpInstance.request(config)
+    const chatResponse = await httpInstance.request(config)
 
-    console.log("Response from chat API:", res)
+    const responseConfig = {
+      method: "GET",
+      url: chatResponse.data[0],
+    }
+    const res = await httpInstance.request(responseConfig)
+    console.log("Received response:", res.data)
 
     if (res.status === 200) {
-      // res.data がすでにオブジェクトである前提ならこのままでOK
-      return res.data
+      return typeof res.data === "string" ? JSON.parse(res.data) : res.data
     } else {
       throw new Error("Failed to send chat message")
     }

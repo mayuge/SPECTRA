@@ -71,7 +71,6 @@ export const useReqTrainApi = (): IReqTrainApi => {
     }
     const res = await httpInstance.request(config)
     if (res.status === 200) {
-      console.log(res.data)
       return typeof res.data === "string" ? JSON.parse(res.data) : res.data
     } else {
       throw new Error(`Failed to fetch line data for ${lineName}`)
