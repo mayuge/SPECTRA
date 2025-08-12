@@ -38,9 +38,23 @@ async def chat_request(request: ChatRequest):
                             "ツールから返された結果をそのまま返答として使ってください。"
                         ),
                         tools=[session],
+                        automatic_function_calling=genai.types.AutomaticFunctionCallingConfig(disable=True),
                     ),
                     contents=request.message,
                 )
+                try:
+                    part = response.candidates[0].content.parts[0]
+                except Exception:
+                    part = None
+
+                if part and hasattr(part, "function_call") and part.function_call:
+                    fn = part.function_call.name
+                    args = dict(part.function_call.args or {})
+
+                    # MCPツールを実行
+                    tool_result = await session.call_tool(fn, args)
+
+                    return {"response": str(tool_result.content[0].text)}
 
         return {"response": response.text}
 
