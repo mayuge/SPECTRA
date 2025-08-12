@@ -31,11 +31,14 @@ async def chat_request(request: ChatRequest):
                     model="gemini-2.5-flash",
                     config=types.GenerateContentConfig(
                         system_instruction=(
-                            "ユーザーが鉄道路線の名前（例: 池袋線、山手線）を入力した場合、"
-                            "`get_line_by_name` ツールを必ず使用してください。"
-                            "ユーザーが駅の名前（例: 東京、池袋）を入力した場合、"
-                            "`get_station_by_name` ツールを必ず使用してください。"
-                            "ツールから返された結果をそのまま返答として使ってください。"
+                            """
+                            あなたは鉄道の情報を取得するツールの実行に特化したAIです。
+                            ユーザーが鉄道路線の名前（例: 池袋線、山手線）を入力した場合、
+                            `get_line_by_name` ツールを必ず使用してください。
+                            ユーザーが駅の名前（例: 東京、池袋）を入力した場合、
+                            `get_station_by_name` ツールを必ず使用してください。
+                            使用すべきツールがわからない場合は必ず、「駅名または路線名を入力してください。」と返答してください。
+                            """
                         ),
                         tools=[session],
                         automatic_function_calling=genai.types.AutomaticFunctionCallingConfig(disable=True),
