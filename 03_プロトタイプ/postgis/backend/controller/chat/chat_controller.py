@@ -41,6 +41,7 @@ async def chat_request(request: ChatRequest):
                             """
                         ),
                         tools=[session],
+                        # MCPツールを実行しないようにする
                         automatic_function_calling=genai.types.AutomaticFunctionCallingConfig(disable=True),
                     ),
                     contents=request.message,
