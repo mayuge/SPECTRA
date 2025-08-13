@@ -13,7 +13,7 @@ import { cityPolygonLayer } from "@/components/organisms/homeSite/core/layers/ci
 import { meshPolygonLayer } from "@/components/organisms/homeSite/core/layers/meshPolygonLayer"
 import { trainStationLayer } from "@/components/organisms/homeSite/core/layers/trainStationLayer"
 import { trainLineLayer } from "@/components/organisms/homeSite/core/layers/trainLineLayer"
-import { baseTrainStationLayer } from "@/components/organisms/homeSite/core/layers/baseTrainStationLayer"
+import { useStationLayer } from "@/components/organisms/homeSite/core/layers/baseTrainStationLayer"
 
 import useMapApp from "@/components/organisms/homeSite/core/application/useMapApp"
 
@@ -25,14 +25,15 @@ const INITIAL_VIEW_STATE = {
   zoom: 10,
   pitch: 60, // 3D 表示のため視点を傾ける
   bearing: 0,
-  maxZoom: 19,
+  maxZoom: 20,
   minZoom: 1,
   // 視点の制限を追加
   farZMultiplier: 10, // 描画距離の乗数
   nearZMultiplier: 0.1, // 近距離クリッピング
 }
 
-function MapApp() {
+const MapApp = () => {
+  const [viewState, setViewState] = React.useState(INITIAL_VIEW_STATE)
   const deckRef = React.useRef<any>(null)
 
   return (
@@ -66,7 +67,7 @@ function MapApp() {
           //plateauLayer,
           // cityPolygonLayer,
           // meshPolygonLayer,
-          baseTrainStationLayer,
+          useStationLayer(), // 鉄道駅のレイヤーを動的に取得
           trainLineLayer,
           trainStationLayer,
         ]}
