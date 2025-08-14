@@ -8,7 +8,7 @@ import { plateauLayer } from "@/components/organisms/homeSite/core/layers/platea
 import { floodHazardLayer } from "@/components/organisms/homeSite/core/layers/floodHazardLayer"
 import { satelliteLayer } from "@/components/organisms/homeSite/core/layers/sateliteLayer"
 import { baseTrainLineLayer } from "@/components/organisms/homeSite/core/layers/baseTrainLineLayer"
-import { osmLayer } from "@/components/organisms/homeSite/core/layers/osmLayer"
+import { gsiLayer, osmLayer } from "@/components/organisms/homeSite/core/layers/osmLayer"
 import { cityPolygonLayer } from "@/components/organisms/homeSite/core/layers/cityPolygonLayer"
 import { meshPolygonLayer } from "@/components/organisms/homeSite/core/layers/meshPolygonLayer"
 import { trainStationLayer } from "@/components/organisms/homeSite/core/layers/trainStationLayer"
@@ -41,7 +41,8 @@ const MapApp = () => {
       style={{
         width: "100svw",
         height: "100svh",
-        background: "linear-gradient(to bottom, #87CEEB 0%, #E0F6FF 100%)",
+        // background: "linear-gradient(to bottom, #87CEEB 0%, #E0F6FF 100%)",
+        backgroundColor: "#E6E6E6",
         position: "relative",
       }}
     >
@@ -61,6 +62,7 @@ const MapApp = () => {
         }}
         layers={[
           osmLayer,
+          gsiLayer,
           // satelliteLayer,
           // floodHazardLayer,
           baseTrainLineLayer,
