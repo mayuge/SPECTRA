@@ -17,6 +17,9 @@ export const baseTrainLineLayer = new GeoJsonLayer({
   data: getAllTrainLine(),
   minZoom: 0,
   maxZoom: 16,
+  parameters: {
+    depthTest: false,
+  },
 
   getFillColor: [250, 250, 250, 255],
 
@@ -31,11 +34,14 @@ export const baseTrainLineLayer = new GeoJsonLayer({
     return [128, 128, 128, 255]
   },
 
-  lineWidthScale: 12,
-  getLineWidth: (f) => f.properties?.width || 1,
+  lineWidthScale: 1,
+  getLineWidth: (f: any) => {
+    const count = (f.properties?.順方向運行本数2024 || 0) + (f.properties?.逆方向運行本数2024 || 0)
 
-  pointRadiusScale: 12,
-  getPointRadius: (f) => f.properties?.radius || 5,
+    // 対数スケールで調整
+    //return Math.max(1, Math.log(count) * 2)
+    return Math.sqrt(count) * 1.2
+  },
 
   pickable: true,
 })

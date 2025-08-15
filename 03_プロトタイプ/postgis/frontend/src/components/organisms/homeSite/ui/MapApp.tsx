@@ -65,8 +65,9 @@ const MapApp = () => {
           gsiLayer,
           // satelliteLayer,
           // floodHazardLayer,
+
+          plateauLayer,
           baseTrainLineLayer,
-          //plateauLayer,
           // cityPolygonLayer,
           // meshPolygonLayer,
           useStationLayer(), // 鉄道駅のレイヤーを動的に取得

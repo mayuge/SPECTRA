@@ -7,7 +7,10 @@ export const plateauLayer = new MVTLayer({
   minZoom: 4,
   maxZoom: 25,
   tileSize: 512,
-  getFillColor: [136, 136, 136, 160],
+  parameters: {
+    depthTest: false,
+  },
+  getFillColor: [136, 136, 136, 255], // 建物の色（グレー）
   getLineColor: [255, 255, 255, 0],
   getLineWidth: 0,
   getElevation: (f: any) => {

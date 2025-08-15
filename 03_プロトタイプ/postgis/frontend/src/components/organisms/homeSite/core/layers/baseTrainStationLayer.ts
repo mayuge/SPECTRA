@@ -20,7 +20,9 @@ export async function createBaseTrainStationLayer(geojson: any) {
     getText: (d) => d.name,
     getSize: 36, // 単位がメートル扱いになる
     sizeUnits: "meters", // これで地図上の距離ベースに
-
+    parameters: {
+      depthTest: false,
+    },
     getTextAnchor: "middle",
     getAlignmentBaseline: "bottom",
     billboard: true,
