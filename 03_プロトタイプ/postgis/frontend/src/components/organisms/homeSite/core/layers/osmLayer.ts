@@ -65,7 +65,7 @@ export const gsiLayer = new MVTLayer({
     if (k >= 2000 && k < 3000) return [200, 180, 100, 255]
 
     // 水域の縁取り
-    if (k >= 5000 && k < 6000) return [50, 130, 200, 255]
+    if (k >= 5000 && k < 6000) return [50, 130, 200, 100]
     // 建物縁
     if (k >= 3100 && k < 3200) return [150, 150, 150, 255]
 

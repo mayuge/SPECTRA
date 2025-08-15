@@ -8,7 +8,7 @@ export async function createBaseTrainStationLayer(geojson: any) {
   const points = geojson.features.map((f: any) => ({
     lng: f.geometry.coordinates[0],
     lat: f.geometry.coordinates[1],
-    name: f.properties?.n05_011 || "",
+    name: f.properties?.駅名 || "",
   }))
 
   return new TextLayer({
@@ -29,10 +29,6 @@ export async function createBaseTrainStationLayer(geojson: any) {
 
     fontFamily: "Noto Sans JP Bold, 'Hiragino Kaku Gothic ProN', 'Yu Gothic UI', sans-serif",
     fontWeight: "bold",
-
-    stroked: true,
-    getOutlineColor: [255, 255, 255],
-    outlineWidth: 2,
 
     maxZoom: 20,
     minZoom: 13,

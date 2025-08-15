@@ -16,7 +16,7 @@ class TrainRepository:
             )
           )
         ) AS geojson
-        FROM (SELECT * FROM n05_23_station2) row
+        FROM (SELECT * FROM unkohonsu2024_rosen_eki) row
         """
         async with request.app.state.pool.acquire() as conn:
             result = await conn.fetchrow(query)
@@ -29,8 +29,8 @@ class TrainRepository:
           'geometry', ST_AsGeoJSON(geometry)::jsonb,
           'properties', to_jsonb(row) - 'geometry'
         ) AS geojson
-        FROM n05_23_station2 row
-        WHERE "n05_011" = $1
+        FROM unkohonsu2024_rosen_eki row
+        WHERE "駅名" = $1
         LIMIT 10
         """
         async with request.app.state.pool.acquire() as conn:
@@ -51,7 +51,7 @@ class TrainRepository:
             )
           )
         ) AS geojson
-        FROM (SELECT * FROM n05_23_railroadsection2) row
+        FROM (SELECT * FROM unkohonsu2024_rosen_kukan) row
         """
         async with request.app.state.pool.acquire() as conn:
             result = await conn.fetchrow(query)
@@ -64,8 +64,8 @@ class TrainRepository:
           'geometry', ST_AsGeoJSON(geometry)::jsonb,
           'properties', to_jsonb(row) - 'geometry'
         ) AS geojson
-        FROM n05_23_railroadsection2 row
-        WHERE "n05_002" = $1
+        FROM unkohonsu2024_rosen_kukan row
+        WHERE "路線名" = $1
         """
         async with request.app.state.pool.acquire() as conn:
             rows = await conn.fetch(query, line_name)
