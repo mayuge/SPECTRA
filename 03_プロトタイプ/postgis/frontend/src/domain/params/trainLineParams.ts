@@ -1,4 +1,4 @@
-export const trainLineParams = {
+export const trainLineParams: Record<string, { color: string }> = {
   //東京メトロ
   銀座線: {
     color: "#FF9500",
