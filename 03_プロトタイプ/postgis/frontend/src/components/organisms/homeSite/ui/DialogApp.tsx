@@ -6,7 +6,7 @@ import Textarea from "@/components/atoms/inputs/Textarea"
 import useDialogApp from "@/components/organisms/homeSite/core/application/useDialogApp"
 
 const DialogApp: React.FC = () => {
-  const { sendChatMessage, getMainPanelOpen, setMainPanelOpen } = useDialogApp()
+  const { manageChatMessage, getMainPanelOpen, setMainPanelOpen } = useDialogApp()
   const [chatInput, setChatInput] = useState("")
 
   const chatInputOnChange = (value: string) => {
@@ -15,7 +15,7 @@ const DialogApp: React.FC = () => {
 
   const chatButtonClicked = () => {
     // 必要ならここで API 呼び出し
-    sendChatMessage(chatInput)
+    manageChatMessage(chatInput)
     setChatInput("")
   }
 

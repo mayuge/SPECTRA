@@ -34,10 +34,11 @@ class TrainRepository:
         LIMIT 10
         """
         async with request.app.state.pool.acquire() as conn:
-            result = await conn.fetchrow(query, station_name)
-            if result:
-                return result["geojson"]
-            raise HTTPException(status_code=404, detail="Station not found")
+              result = await conn.fetchrow(query, station_name)
+              if result:
+                  # 🔑 文字列 → Pythonオブジェクトに変換
+                  return json.loads(result["geojson"])
+              raise HTTPException(status_code=404, detail="Station not found")
 
     async def get_all_lines(self, request: Request):
         query = """

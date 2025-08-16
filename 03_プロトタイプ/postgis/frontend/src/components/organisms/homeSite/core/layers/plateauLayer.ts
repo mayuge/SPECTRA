@@ -7,9 +7,7 @@ export const plateauLayer = new MVTLayer({
   minZoom: 4,
   maxZoom: 25,
   tileSize: 512,
-  parameters: {
-    depthTest: false,
-  },
+
   getFillColor: [136, 136, 136, 255], // 建物の色（グレー）
   getLineColor: [255, 255, 255, 0],
   getLineWidth: 0,
@@ -27,6 +25,9 @@ export const plateauLayer = new MVTLayer({
       maxRetryDelay: 1000,
       maxConcurrency: 4,
     },
+  },
+  parameters: {
+    depthTest: false,
   },
   refinementStrategy: "no-overlap",
   extent: [139.0, 35.0, 140.0, 36.0],

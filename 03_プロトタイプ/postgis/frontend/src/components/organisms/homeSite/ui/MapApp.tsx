@@ -14,6 +14,7 @@ import { meshPolygonLayer } from "@/components/organisms/homeSite/core/layers/me
 import { trainStationLayer } from "@/components/organisms/homeSite/core/layers/trainStationLayer"
 import { trainLineLayer } from "@/components/organisms/homeSite/core/layers/trainLineLayer"
 import { useStationLayer } from "@/components/organisms/homeSite/core/layers/baseTrainStationLayer"
+import { chatGeojsonLayer } from "@/components/organisms/homeSite/core/layers/chatGeojsonLayer"
 
 import useMapApp from "@/components/organisms/homeSite/core/application/useMapApp"
 
@@ -71,7 +72,8 @@ const MapApp = () => {
           // cityPolygonLayer,
           // meshPolygonLayer,
           useStationLayer(), // 鉄道駅のレイヤーを動的に取得
-          trainLineLayer,
+          //trainLineLayer,
+          chatGeojsonLayer(),
           trainStationLayer,
         ]}
       />
