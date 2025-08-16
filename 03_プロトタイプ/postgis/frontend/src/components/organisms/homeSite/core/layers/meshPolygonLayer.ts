@@ -39,7 +39,9 @@ export const meshPolygonLayer = new MVTLayer({
   data: "https://tiles.kmproj.com/jp_estat_mesh_2020.json",
 
   tileSize: 512,
-
+  parameters: {
+    depthTest: false,
+  },
   // 塗りつぶし色の設定（人口に応じた色分け）
   getFillColor: (f) => {
     const population = parseInt(f.properties?.["人口（総数）"] || "0")

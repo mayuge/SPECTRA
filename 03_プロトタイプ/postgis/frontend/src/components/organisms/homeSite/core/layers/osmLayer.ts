@@ -28,6 +28,9 @@ export const gsiLayer = new MVTLayer({
   minZoom: 4,
   maxZoom: 16,
   pickable: true,
+  parameters: {
+    depthTest: false,
+  },
   getFillColor: (f: any) => {
     const k = f.properties.ftCode
 
@@ -48,7 +51,7 @@ export const gsiLayer = new MVTLayer({
     if (k >= 2700 && k < 2900) return [0, 0, 0, 0]
 
     // 水域
-    if (k >= 5000 && k < 6000) return [150, 210, 255, 255]
+    if (k >= 5000 && k < 6000) return [150, 210, 255, 200]
     // 公園・緑地・森林・運動場など
     if ((k >= 7000 && k < 9000) || (k >= 9100 && k < 9200)) return [140, 200, 140, 255]
 
