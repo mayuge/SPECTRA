@@ -29,6 +29,7 @@ quadrantChart
     PokemonGO: [0.9, 0.1]
     "vacan避難所アプリ": [0.45, 0.78]
 ```
+
 ```mermaid
 quadrantChart
     title 既存のGIS
@@ -44,6 +45,7 @@ quadrantChart
     ArcGIS: [0.9, 0.1]
     "SPECTRA PROJECT": [0.45, 0.78]
 ```
+
 ### 現行システム参考動画
 
 - ![リンク](https://youtu.be/bD8sS1OV2hQ?si=uW0oOqOIoVhTTgVh)
@@ -54,7 +56,7 @@ quadrantChart
 
 ### フロント側構成
 
-![](01_設計/image/フロント側構成.drawio.png)
+![](01_設計\image\SPECTRA_PROJECT\フロント側構成.drawio.png)
 
 ### 全体フォルダ構成
 
@@ -77,7 +79,4 @@ quadrantChart
 
 ### サーバー構成
 
-![](01_設計/image/SPECTRA_サーバー構成.png)
-
-
-
+![](01_設計\image\SPECTRA_PROJECT\SPECTRA_サーバー構成.png)
