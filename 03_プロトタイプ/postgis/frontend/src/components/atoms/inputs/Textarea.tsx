@@ -44,7 +44,7 @@ const Textarea: React.FC<TextareaProps> = ({
 
   return (
     <textarea
-      className={`w-full ${className} p-2 ${border} resize-none ${cornerShape} ${shadow} ${fontSize}`}
+      className={`w-full ${className} text-black p-2 ${border} resize-none ${cornerShape} ${shadow} ${fontSize}`}
       placeholder={placeholder}
       value={value ? value : ""}
       onChange={onChange}
