@@ -11,9 +11,11 @@ export const chatGeojsonLayer = () => {
     data: latestGeojson,
     minZoom: 0,
     maxZoom: 16,
-    getFillColor: [250, 250, 250, 255],
+    getFillColor: [0, 0, 255, 255],
     getLineColor: [0, 0, 255, 255],
     lineWidthMinPixels: 5,
+    pointRadiusUnits: "pixels",
+    getPointRadius: 16, // 少し大きくすると目立つ
   })
 
   return layer

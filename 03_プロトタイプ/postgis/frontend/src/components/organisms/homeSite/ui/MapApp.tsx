@@ -74,7 +74,7 @@ const MapApp = () => {
           useStationLayer(), // 鉄道駅のレイヤーを動的に取得
           //trainLineLayer,
           chatGeojsonLayer(),
-          trainStationLayer,
+          //trainStationLayer,
         ]}
       />
       <div className="absolute top-0 right-0">
