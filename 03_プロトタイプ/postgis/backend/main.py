@@ -9,6 +9,7 @@ from fastapi_mcp import FastApiMCP
 
 from controller.chat.chat_controller import router as chat_router
 from controller.train.train_controller import router as train_router
+from controller.city.city_controller import router as city_router
 
 app = FastAPI()
 
@@ -46,6 +47,7 @@ async def root():
 
 # ルーター登録
 app.include_router(train_router)
+app.include_router(city_router)
 app.include_router(chat_router)
 
 mcp = FastApiMCP(app)
