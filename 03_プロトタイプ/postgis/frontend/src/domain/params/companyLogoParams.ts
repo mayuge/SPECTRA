@@ -8,7 +8,7 @@ export const companyLogoParams = {
     path: "tokyoLogo",
   },
   //JR
-  東日本旅客鉄道: {
+  JR東日本: {
     path: "jrEast",
   },
   //西武線
@@ -62,3 +62,5 @@ export const companyLogoParams = {
   //横浜市営地下鉄ブルーライン
   //横浜市営地下鉄グリーンライン
 }
+
+export type CompanyKey = keyof typeof companyLogoParams
