@@ -1,0 +1,32 @@
+from urllib.parse import unquote
+
+from fastapi import APIRouter, Request
+
+from infrastructure.database.train.train_repository import TrainRepository
+
+router = APIRouter()
+train_repository = TrainRepository()
+
+
+@router.get("/train/station")
+async def get_all_stations(request: Request):
+    return await train_repository.get_all_stations(request)
+
+
+@router.get("/train/station/{station_name}")
+async def get_station_by_name(station_name: str, request: Request):
+    """駅名を指定して駅情報を取得します。最後の文字が駅だった場合は引数に入れない。引数の例: '東京', '池袋'"""
+    decoded_name = unquote(station_name)
+    return await train_repository.get_station_by_name(decoded_name, request)
+
+
+@router.get("/train/line")
+async def get_all_lines(request: Request):
+    return await train_repository.get_all_lines(request)
+
+
+@router.get("/train/line/{line_name}")
+async def get_line_by_name(line_name: str, request: Request):
+    """路線名を指定して路線情報を取得します。引数の例: '池袋線', '山手線'"""
+    decoded_name = unquote(line_name)
+    return await train_repository.get_line_by_name(decoded_name, request)

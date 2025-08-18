@@ -1,0 +1,45 @@
+services:
+  postgis:
+    image: postgis/postgis:15-3.3
+    container_name: postgis_container
+    environment:
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgis-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U docker -d postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./backend
+    container_name: backend_container
+    working_dir: /backend
+    volumes:
+      - ./backend:/backend
+    command: ["uv", "run", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "4000"]
+    ports:
+      - "4000:4000"
+    env_file:
+      - ./backend/.env
+    environment:
+      - PGUSER=docker
+      - PGPASSWORD=docker
+      - PGHOST=postgis
+      - PGDATABASE=postgres
+      - PGPORT=5432
+    depends_on:
+      postgis:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  postgis-data:
+    driver: local
