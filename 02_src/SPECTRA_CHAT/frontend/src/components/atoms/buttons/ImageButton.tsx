@@ -37,7 +37,7 @@ const ImageButton: React.FC<ImageButtonProps> = ({
   }
 
   // ボタンのスタイルの種類 デフォルトは primary
-  let btnVariant = "bg-primary text-white hover:bg-primaryDark"
+  let btnVariant = "text-white"
 
   if (variant === "btn-secondary") {
     //variantがsecondaryのとき
