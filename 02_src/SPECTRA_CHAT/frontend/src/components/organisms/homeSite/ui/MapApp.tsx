@@ -41,7 +41,7 @@ const MapApp = () => {
     <div
       style={{
         width: "100svw",
-        height: "100vh",
+        height: "100svh",
         // background: "linear-gradient(to bottom, #87CEEB 0%, #E0F6FF 100%)",
         backgroundColor: "#E6E6E6",
         position: "relative",
