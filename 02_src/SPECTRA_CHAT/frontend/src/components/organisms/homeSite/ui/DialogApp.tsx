@@ -7,7 +7,8 @@ import PullTab from "@/components/atoms/buttons/PullTab"
 import useDialogApp from "@/components/organisms/homeSite/core/application/useDialogApp"
 
 const DialogApp: React.FC = () => {
-  const { manageChatMessage, getMainPanelOpen, setMainPanelOpen } = useDialogApp()
+  const { manageChatMessage, getMainPanelOpen, setMainPanelOpen, getChatMessageList } =
+    useDialogApp()
   const [chatInput, setChatInput] = useState("")
 
   const chatInputOnChange = (value: string) => {
@@ -39,8 +40,7 @@ const DialogApp: React.FC = () => {
           </div>
         </div>
 
-        {/* モバイル用: 下に固定 */}
-        <div className="md:hidden fixed bottom-0 left-0 w-full bg-white shadow-black shadow-lg flex flex-col z-20">
+        <div className="md:hidden fixed bottom-0 left-0 w-full rounded-t-lg bg-white shadow-black shadow-lg flex flex-col z-20">
           {/* タイトルバー（閉じてても出す） */}
           <DialogHeader
             icon="arrow_drop_up"
@@ -90,11 +90,28 @@ const DialogApp: React.FC = () => {
               }}
             />
           </div>
-          <div className="bg-white h-[60vh] md:h-[100svh] shadow-black shadow-lg flex flex-col">
-            {/* ヘッダー */}
-
+          <div className="bg-white h-[50vh] md:h-[100svh] shadow-black shadow-lg flex flex-col">
             {/* 本文（スクロール可能） */}
-            <div className="flex-1 overflow-y-auto p-4">{/* チャット履歴など */}</div>
+            <div className="flex-1 overflow-y-auto pt-20 px-4 space-y-3">
+              {getChatMessageList().map((chat, index) => {
+                const isUser = chat.type === "request"
+                return (
+                  <div key={index} className={`flex ${isUser ? "justify-end" : "justify-start"}`}>
+                    <div
+                      className={`max-w-[75%] px-3 py-2 rounded-2xl text-sm shadow
+            ${
+              isUser
+                ? "bg-blue-500 text-white rounded-br-none"
+                : "bg-gray-200 text-gray-900 rounded-bl-none"
+            }
+          `}
+                    >
+                      {chat.message}
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
 
             {/* 入力欄（下固定） */}
             <div className="shadow-black shadow-sm sticky bottom-0 z-10 flex p-4 gap-4 border-t border-gray-200 bg-gray-90">

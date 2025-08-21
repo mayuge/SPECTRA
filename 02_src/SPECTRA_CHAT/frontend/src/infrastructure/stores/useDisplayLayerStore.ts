@@ -1,5 +1,5 @@
 import { create } from "zustand"
-import { IDisplayLayerState } from "@/domain/interfaces/IDisplayLayerState"
+import type { IDisplayLayerState } from "@/domain/interfaces/IDisplayLayerState"
 
 const useDisplayLayerStore = create<IDisplayLayerState>((set) => ({
   layersObj: {
