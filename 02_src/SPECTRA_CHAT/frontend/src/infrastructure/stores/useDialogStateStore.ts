@@ -1,5 +1,5 @@
 import { create } from "zustand"
-import { IDialogState } from "@/domain/interfaces/IDialogState"
+import type { IDialogState } from "@/domain/interfaces/IDialogState"
 
 // ダイアログの開閉状態を管理するストア
 // セッターの引数にtrueを入れると開いている状態、falseを入れると閉じている状態にできる

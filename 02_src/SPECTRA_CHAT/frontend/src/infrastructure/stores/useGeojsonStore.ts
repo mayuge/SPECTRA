@@ -1,5 +1,5 @@
 import { create } from "zustand"
-import { IGeojsonState } from "@/domain/interfaces/IGeojsonState"
+import type { IGeojsonState } from "@/domain/interfaces/IGeojsonState"
 import type { AllGeoJsonType } from "@/domain/types/geoJsonType"
 
 // Geojsonを管理するストア

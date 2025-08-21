@@ -35,7 +35,7 @@ const Button: React.FC<ButtonProps> = ({
   }
 
   // ボタンのスタイルの種類 デフォルトは primary
-  let btnVariant = "bg-primary text-white hover:bg-primaryDark"
+  let btnVariant = "bg-primary text-gray-20 hover:bg-primaryDark"
 
   if (variant === "btn-secondary") {
     //variantがsecondaryのとき
