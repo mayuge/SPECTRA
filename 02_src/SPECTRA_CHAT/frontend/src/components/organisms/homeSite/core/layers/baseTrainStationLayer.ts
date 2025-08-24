@@ -26,11 +26,13 @@ class BaseTrainStationLayer extends CompositeLayer<any> {
         getAlignmentBaseline: "bottom",
         billboard: true,
         getColor: [255, 255, 255],
-        fontFamily:
-          "Noto Sans JP, 'Hiragino Kaku Gothic ProN', 'Yu Gothic UI', sans-serif",
+        fontFamily: "Noto Sans JP, 'Hiragino Kaku Gothic ProN', 'Yu Gothic UI', sans-serif",
         fontWeight: "900",
         maxZoom: 20,
         minZoom: 13,
+        updateTriggers: {
+          getText: [], // データが変わったときだけ更新
+        },
       }),
 
       // 前景テキスト（グレー・細め）
@@ -48,11 +50,13 @@ class BaseTrainStationLayer extends CompositeLayer<any> {
         getAlignmentBaseline: "bottom",
         billboard: true,
         getColor: [80, 80, 80],
-        fontFamily:
-          "Noto Sans JP, 'Hiragino Kaku Gothic ProN', 'Yu Gothic UI', sans-serif",
+        fontFamily: "Noto Sans JP, 'Hiragino Kaku Gothic ProN', 'Yu Gothic UI', sans-serif",
         fontWeight: "400",
         maxZoom: 20,
         minZoom: 13,
+        updateTriggers: {
+          getText: [], // データが変わったときだけ更新
+        },
       }),
 
       // 会社ロゴ
@@ -64,6 +68,9 @@ class BaseTrainStationLayer extends CompositeLayer<any> {
         getSize: 24,
         sizeUnits: "meters",
         billboard: true,
+        updateTriggers: {
+          getText: [], // データが変わったときだけ更新
+        },
       }),
     ]
   }
