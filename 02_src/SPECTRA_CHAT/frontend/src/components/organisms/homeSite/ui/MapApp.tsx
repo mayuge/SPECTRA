@@ -34,25 +34,42 @@ const MapApp = () => {
 
   const [viewState, setViewState] = useState<MapViewState>(INITIAL_VIEW_STATE)
 
-  // MapLibre 初期化
   useEffect(() => {
     if (mapRef.current) return
 
     const map = new maplibregl.Map({
       container: mapContainerRef.current!,
       style: {
-        version: 8 as const,
+        version: 8,
         sources: {
-          carto: {
-            type: "raster",
-            tiles: [
-              "https://a.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png",
-            ],
-            tileSize: 256,
-            attribution: "© CARTO",
+          gsi: {
+            type: "vector",
+            tiles: ["https://cyberjapandata.gsi.go.jp/xyz/experimental_bvmap/{z}/{x}/{y}.pbf"],
           },
         },
-        layers: [{ id: "carto-layer", type: "raster", source: "carto" }],
+        layers: [
+          {
+            id: "gsi-station-label",
+            type: "symbol",
+            source: "gsi",
+            "source-layer": "label",
+            filter: ["all", ["==", "ftCode", 100], ["==", "annoCtg", 422]],
+            layout: {
+              "text-field": ["get", "knj"],
+              "text-size": 12,
+              "text-anchor": "top",
+              // "text-rotate": ["get", "arrngAgl"],
+              "text-pitch-alignment": "viewport",
+              "text-rotation-alignment": "viewport",
+            },
+            paint: {
+              "text-color": "#136145",
+              "text-halo-color": "#fff",
+              "text-halo-width": 1,
+            },
+          },
+        ],
+        glyphs: "https://glyphs.geolonia.com/{fontstack}/{range}.pbf",
       },
       center: [INITIAL_VIEW_STATE.longitude, INITIAL_VIEW_STATE.latitude],
       zoom: INITIAL_VIEW_STATE.zoom,
@@ -63,31 +80,6 @@ const MapApp = () => {
 
     mapRef.current = map
 
-    map.on("load", () => {
-      map.addSource("terrain", {
-        type: "raster-dem",
-        tiles: ["https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"],
-        encoding: "terrarium",
-        tileSize: 256,
-        minzoom: 0,
-        maxzoom: 14,
-      })
-
-      map.setTerrain({ source: "terrain", exaggeration: 1.2 })
-
-      map.addLayer({
-        id: "hillshade",
-        type: "hillshade",
-        source: "terrain",
-        layout: {},
-        paint: {
-          "hillshade-illumination-anchor": "map",
-          "hillshade-exaggeration": 0.1,
-        },
-      })
-    })
-
-    // MapLibre の移動に DeckGL を追従
     map.on("move", () => {
       if (frameRef.current) return
       frameRef.current = requestAnimationFrame(() => {
@@ -128,18 +120,17 @@ const MapApp = () => {
 
   return (
     <div style={{ width: "100svw", height: "100svh", position: "relative" }}>
-      <div
-        ref={mapContainerRef}
-        style={{ width: "100%", height: "100%", position: "absolute", zIndex: 0 }}
-      />
-
       <DeckGL
         ref={deckRef}
         viewState={viewState}
         controller={false}
         useDevicePixels={false}
         layers={[gsiLayer, plateauLayer, baseTrainLineLayer, useStationLayer(), chatGeojsonLayer()]}
-        style={{ position: "absolute", zIndex: "1", pointerEvents: "none" }}
+        style={{ position: "absolute", zIndex: "0", pointerEvents: "none" }}
+      />
+      <div
+        ref={mapContainerRef}
+        style={{ width: "100%", height: "100%", position: "absolute", zIndex: 1 }}
       />
 
       <div className="absolute top-20 right-4 z-30 flex items-center gap-2">
