@@ -8,69 +8,18 @@ import { companyLogoParams, CompanyKey } from "@/domain/params/companyLogoParams
 // CompositeLayer で駅名テキストと会社ロゴをまとめる
 class BaseTrainStationLayer extends CompositeLayer<any> {
   renderLayers() {
-    const { data, logoData } = this.props
+    const { logoData } = this.props
 
     return [
-      // 背景テキスト（白・太字）
-      new TextLayer({
-        id: `${this.props.id}-background`,
-        data,
-        pickable: false,
-        characterSet: "auto",
-        getPosition: (d) => [d.lng, d.lat, -24],
-        getText: (d) => d.name,
-        getSize: 32,
-        sizeUnits: "meters",
-        parameters: { depthTest: false },
-        getTextAnchor: "middle",
-        getAlignmentBaseline: "bottom",
-        billboard: true,
-        getColor: [255, 255, 255],
-        fontFamily: "Noto Sans JP, 'Hiragino Kaku Gothic ProN', 'Yu Gothic UI', sans-serif",
-        fontWeight: "900",
-        maxZoom: 20,
-        minZoom: 13,
-        updateTriggers: {
-          getText: [], // データが変わったときだけ更新
-        },
-      }),
-
-      // 前景テキスト（グレー・細め）
-      new TextLayer({
-        id: `${this.props.id}-foreground`,
-        data,
-        pickable: false,
-        characterSet: "auto",
-        getPosition: (d) => [d.lng, d.lat, -24],
-        getText: (d) => d.name,
-        getSize: 32,
-        sizeUnits: "meters",
-        parameters: { depthTest: false },
-        getTextAnchor: "middle",
-        getAlignmentBaseline: "bottom",
-        billboard: true,
-        getColor: [80, 80, 80],
-        fontFamily: "Noto Sans JP, 'Hiragino Kaku Gothic ProN', 'Yu Gothic UI', sans-serif",
-        fontWeight: "400",
-        maxZoom: 20,
-        minZoom: 13,
-        updateTriggers: {
-          getText: [], // データが変わったときだけ更新
-        },
-      }),
-
       // 会社ロゴ
       new IconLayer({
         id: `${this.props.id}-logo`,
         data: logoData,
         getPosition: (d) => [d.lng, d.lat, 24], // テキストより少し上に表示
         getIcon: (d) => d.icon,
-        getSize: 24,
+        getSize: 48,
         sizeUnits: "meters",
         billboard: true,
-        updateTriggers: {
-          getText: [], // データが変わったときだけ更新
-        },
       }),
     ]
   }

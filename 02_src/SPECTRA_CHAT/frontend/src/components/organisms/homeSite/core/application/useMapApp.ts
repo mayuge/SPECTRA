@@ -21,8 +21,30 @@ const useMapApp = () => {
       console.error("スクリーンショットの作成に失敗しました:", error)
     }
   }
+
+  const getCurrentLocation = (mapRef: any) => {
+    if (!navigator.geolocation) return alert("ブラウザが位置情報に対応していません")
+
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        const { latitude, longitude } = pos.coords
+        mapRef.current?.flyTo({
+          center: [longitude, latitude],
+          zoom: 14,
+          pitch: mapRef.current.getPitch(),
+          bearing: mapRef.current.getBearing(),
+        })
+      },
+      (err) => {
+        alert("位置情報の取得に失敗しました")
+        console.error(err)
+      }
+    )
+  }
+
   return {
     getScreenshot,
+    getCurrentLocation,
     getAllStation,
     getStationByName,
     getAllTrainLine,
