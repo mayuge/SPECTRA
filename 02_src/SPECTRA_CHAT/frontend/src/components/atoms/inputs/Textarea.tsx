@@ -1,52 +1,40 @@
+import type { TextareaShapeType } from "@/domain/types/atomsType"
+
 type TextareaProps = {
   placeholder?: string
   rows: number
   width?: string
-  shape?: string
+  shape?: TextareaShapeType
   isShadow?: boolean
   value: string | null
-  className?: string
-  isBorderNone?: boolean
+  isBorder?: boolean
   onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void
+}
+
+const shapeStyles: Record<TextareaShapeType, string> = {
+  square: "",
+  round: "rounded-md",
 }
 
 const Textarea: React.FC<TextareaProps> = ({
   placeholder,
   rows,
-  shape,
-  isShadow,
+  shape = "round",
+  isShadow = false,
   value,
-  className,
-  isBorderNone,
+  isBorder = false,
   onChange,
 }) => {
-  // 角の形
-  let cornerShape = "rounded-md"
-  if (shape === "square") {
-    cornerShape = ""
-  } else if (shape === "rounded-lg") {
-    cornerShape = "rounded-lg"
-  }
-
-  // 影の有無
-  let shadow = ""
-  if (isShadow) {
-    shadow = "shadow-sm shadow-gray-20"
-  }
-  let border = "border border-gray-60"
-  if (isBorderNone) {
-    border = "border-none focus:outline-none"
-  }
-
-  // 幅
-
-  let fontSize = "md:text-base text-xs"
+  const cornerShape = shapeStyles[shape] ?? shapeStyles["round"]
+  const shadow = isShadow ? "shadow-sm shadow-gray-20" : ""
+  const border = isBorder ? "border border-gray-60" : "border-none focus:outline-none"
+  const fontSize = "md:text-base text-xs"
 
   return (
     <textarea
-      className={`w-full ${className} text-black p-2 ${border} resize-none ${cornerShape} ${shadow} ${fontSize}`}
+      className={`w-full text-black p-2 ${border} resize-none ${cornerShape} ${shadow} ${fontSize}`}
       placeholder={placeholder}
-      value={value ? value : ""}
+      value={value ?? ""}
       onChange={onChange}
       rows={rows}
     />
