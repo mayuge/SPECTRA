@@ -1,5 +1,3 @@
-"use client"
-
 import { useEffect, useRef, useState } from "react"
 import maplibregl from "maplibre-gl"
 import Button from "@/components/atoms/buttons/Button"
@@ -8,6 +6,7 @@ import { baseSource, baseLayer } from "@/components/organisms/homeSite/core/laye
 import { gsiSource, gsiLayer } from "@/components/organisms/homeSite/core/layers/gsiLayer"
 import { addTrainLineLayer } from "@/components/organisms/homeSite/core/layers/baseTrainLineLayer"
 import { addTrainStationLayer } from "@/components/organisms/homeSite/core/layers/baseTrainStationLayer"
+import { addAllGeojsonLayers } from "@/components/organisms/homeSite/core/layers/chatGeojsonLayer" // ←追加
 
 const INITIAL_VIEW_STATE = {
   longitude: 139.6917,
@@ -52,7 +51,6 @@ const MapApp = () => {
 
     mapRef.current = map
 
-    // move中は rAF で viewState 更新
     map.on("move", () => {
       if (frameRef.current) return
       frameRef.current = requestAnimationFrame(() => {
@@ -74,6 +72,7 @@ const MapApp = () => {
     ;(async () => {
       await addTrainLineLayer(map)
       await addTrainStationLayer(map)
+      await addAllGeojsonLayers(map) // ←追加
     })()
   }, [])
 
