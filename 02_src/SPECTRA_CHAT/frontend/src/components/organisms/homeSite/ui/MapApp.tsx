@@ -1,45 +1,30 @@
 "use client"
 
-import React, { useEffect, useRef, useState } from "react"
-import DeckGL from "@deck.gl/react"
+import { useEffect, useRef, useState } from "react"
 import maplibregl from "maplibre-gl"
-import type { MapViewState } from "@deck.gl/core"
-
 import Button from "@/components/atoms/buttons/Button"
-import { plateauLayer } from "@/components/organisms/homeSite/core/layers/plateauLayer"
-import { baseTrainLineLayer } from "@/components/organisms/homeSite/core/layers/baseTrainLineLayer"
-import { gsiLayer, osmLayer } from "@/components/organisms/homeSite/core/layers/osmLayer"
-import { useStationLayer } from "@/components/organisms/homeSite/core/layers/baseTrainStationLayer"
-import { chatGeojsonLayer } from "@/components/organisms/homeSite/core/layers/chatGeojsonLayer"
-import {
-  gsiTextSource,
-  gsiStationLayer,
-  gsiTownLayer,
-  gsiCityLayer,
-  gsiBigCityLayer,
-} from "@/components/organisms/homeSite/core/layers/gsiTextLayer"
 import useMapApp from "@/components/organisms/homeSite/core/application/useMapApp"
+import { baseSource, baseLayer } from "@/components/organisms/homeSite/core/layers/baseLayer"
+import { gsiSource, gsiLayer } from "@/components/organisms/homeSite/core/layers/gsiLayer"
+import { addTrainLineLayer } from "@/components/organisms/homeSite/core/layers/baseTrainLineLayer"
+import { addTrainStationLayer } from "@/components/organisms/homeSite/core/layers/baseTrainStationLayer"
 
-const { getScreenshot, getCurrentLocation } = useMapApp()
-
-const INITIAL_VIEW_STATE: MapViewState = {
+const INITIAL_VIEW_STATE = {
   longitude: 139.6917,
-  latitude: 36.0,
-  zoom: 5,
-  pitch: 50,
+  latitude: 35.6,
+  zoom: 9,
+  pitch: 0,
   bearing: 0,
-  maxPitch: 90,
-  maxZoom: 20,
-  minZoom: 4,
+  maxZoom: 15,
+  minZoom: 6,
 }
 
 const MapApp = () => {
-  const deckRef = useRef<any>(null)
   const mapContainerRef = useRef<HTMLDivElement | null>(null)
   const mapRef = useRef<maplibregl.Map | null>(null)
   const frameRef = useRef<number | null>(null)
-
-  const [viewState, setViewState] = useState<MapViewState>(INITIAL_VIEW_STATE)
+  const { getScreenshot, getCurrentLocation } = useMapApp()
+  const [viewState, setViewState] = useState(INITIAL_VIEW_STATE)
 
   useEffect(() => {
     if (mapRef.current) return
@@ -49,13 +34,16 @@ const MapApp = () => {
       style: {
         version: 8,
         sources: {
-          gsi: gsiTextSource,
+          base: baseSource,
+          gsi: gsiSource,
         },
-        layers: [gsiStationLayer, gsiTownLayer, gsiCityLayer, gsiBigCityLayer],
+        layers: [baseLayer, ...gsiLayer],
         glyphs: "https://glyphs.geolonia.com/{fontstack}/{range}.pbf",
       },
       center: [INITIAL_VIEW_STATE.longitude, INITIAL_VIEW_STATE.latitude],
       zoom: INITIAL_VIEW_STATE.zoom,
+      maxZoom: INITIAL_VIEW_STATE.maxZoom,
+      minZoom: INITIAL_VIEW_STATE.minZoom,
       pitch: INITIAL_VIEW_STATE.pitch,
       bearing: INITIAL_VIEW_STATE.bearing,
       attributionControl: false,
@@ -64,7 +52,7 @@ const MapApp = () => {
 
     mapRef.current = map
 
-    // move中は rAF で更新
+    // move中は rAF で viewState 更新
     map.on("move", () => {
       if (frameRef.current) return
       frameRef.current = requestAnimationFrame(() => {
@@ -81,30 +69,20 @@ const MapApp = () => {
         frameRef.current = null
       })
     })
+
+    // --- 非同期で各レイヤ追加 ---
+    ;(async () => {
+      await addTrainLineLayer(map)
+      await addTrainStationLayer(map)
+    })()
   }, [])
 
   return (
     <div style={{ width: "100svw", height: "100svh", position: "relative" }}>
-      <DeckGL
-        ref={deckRef}
-        viewState={viewState}
-        controller={false}
-        useDevicePixels={true}
-        layers={[
-          osmLayer,
-          gsiLayer,
-          plateauLayer,
-          baseTrainLineLayer,
-          useStationLayer(),
-          chatGeojsonLayer(),
-        ]}
-        style={{ position: "absolute", zIndex: "0", pointerEvents: "none" }}
-      />
       <div
         ref={mapContainerRef}
-        style={{ width: "100%", height: "100%", position: "absolute", zIndex: 1 }}
+        style={{ width: "100%", height: "100%", position: "absolute", zIndex: 0 }}
       />
-
       <div className="absolute top-20 right-4 z-30 flex items-center gap-2">
         <Button
           variant="btn-dark"
@@ -112,7 +90,7 @@ const MapApp = () => {
           text="キャプチャ"
           shape="circle"
           iconLeft="photo_camera"
-          onClick={() => getScreenshot(deckRef)}
+          onClick={() => getScreenshot(mapRef)}
         />
         <Button
           variant="btn-dark"

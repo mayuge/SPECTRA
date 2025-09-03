@@ -1,94 +1,70 @@
-// layers/baseTrainStationLayer.ts
-import { useState, useEffect } from "react"
-import { CompositeLayer } from "@deck.gl/core"
-import { TextLayer, IconLayer } from "@deck.gl/layers"
+import maplibregl, { GeoJSONSourceSpecification, SymbolLayerSpecification } from "maplibre-gl"
 import useMapApp from "@/components/organisms/homeSite/core/application/useMapApp"
-import { companyLogoParams, CompanyKey } from "@/domain/params/companyLogoParams"
+import { companyLogoParams } from "@/domain/params/companyLogoParams"
 
-// CompositeLayer で駅名テキストと会社ロゴをまとめる
-class BaseTrainStationLayer extends CompositeLayer<any> {
-  renderLayers() {
-    const { logoData } = this.props
+const { getAllStation } = useMapApp()
 
-    return [
-      // 会社ロゴ
-      new IconLayer({
-        id: `${this.props.id}-logo`,
-        data: logoData,
-        getPosition: (d) => [d.lng, d.lat, 24], // テキストより少し上に表示
-        getIcon: (d) => d.icon,
-        getSize: 48,
-        sizeUnits: "meters",
-        billboard: true,
-      }),
-    ]
-  }
-}
+async function loadCompanyIcons(map: maplibregl.Map) {
+  const promises = Object.entries(companyLogoParams).map(async ([company, { path }]) => {
+    const iconId = `${company}-icon`
+    const iconUrl = `/image/companyLogo/${path}.webp`
 
-// 駅データから CompositeLayer を生成
-export async function createBaseTrainStationLayer(geojson: any) {
-  type StationPoint = {
-    lng: number
-    lat: number
-    name: string
-    company?: string
-  }
-
-  type LogoPoint = StationPoint & {
-    icon: { url: string; width: number; height: number; anchorY: number }
-  }
-
-  const points: StationPoint[] = geojson.features.map((f: any) => ({
-    lng: f.geometry.coordinates[0],
-    lat: f.geometry.coordinates[1],
-    name: f.properties?.駅名 || "",
-    company: f.properties?.事業者名,
-  }))
-
-  const isCompanyKey = (v: string): v is CompanyKey => v in companyLogoParams
-
-  const logoData: LogoPoint[] = points.map((p) => {
-    const iconUrl =
-      p.company && isCompanyKey(p.company)
-        ? `/image/companyLogo/${companyLogoParams[p.company].path}.webp`
-        : "/image/companyLogo/default.webp"
-
-    return {
-      ...p,
-      icon: {
-        url: iconUrl,
-        width: 100,
-        height: 100,
-        anchorY: 100,
-      },
+    if (!map.hasImage(iconId)) {
+      try {
+        const response = await fetch(iconUrl)
+        const blob = await response.blob()
+        const imageBitmap = await createImageBitmap(blob)
+        if (!map.hasImage(iconId)) {
+          map.addImage(iconId, imageBitmap)
+        }
+      } catch (err) {
+        console.error(`Failed to load icon for ${company}:`, err)
+      }
     }
   })
 
-  return new BaseTrainStationLayer({
-    id: "base-train-station-layer",
-    data: points,
-    logoData,
-  })
+  await Promise.all(promises)
 }
 
-// React フックとして外部から参照可能
-export function useStationLayer() {
-  const [layer, setLayer] = useState<any>(null)
-  const { getAllStation } = useMapApp()
+export async function addTrainStationLayer(map: maplibregl.Map) {
+  const geojson = await getAllStation()
 
-  useEffect(() => {
-    let mounted = true
+  const source: GeoJSONSourceSpecification = {
+    type: "geojson",
+    data: geojson,
+  }
 
-    getAllStation().then((geojson) => {
-      createBaseTrainStationLayer(geojson).then((layer) => {
-        if (mounted) setLayer(layer)
-      })
-    })
+  if (!map.getSource("station-points")) {
+    map.addSource("station-points", source)
+  } else {
+    ;(map.getSource("station-points") as maplibregl.GeoJSONSource).setData(geojson)
+  }
 
-    return () => {
-      mounted = false
-    }
-  }, [getAllStation])
+  await loadCompanyIcons(map)
 
-  return layer
+  const layer: SymbolLayerSpecification = {
+    id: "station-layer",
+    type: "symbol",
+    source: "station-points",
+    layout: {
+      "icon-image": ["concat", ["get", "事業者名"], "-icon"],
+      "icon-size": 0.2,
+      "icon-allow-overlap": true,
+      "text-field": ["get", "駅名"],
+      "text-font": ["Noto Sans CJK JP Bold"],
+      "text-size": 10,
+      "text-anchor": "top",
+      "text-offset": [0, 1],
+      "text-allow-overlap": false,
+    },
+    paint: {
+      "text-color": "#505050",
+      "text-halo-color": "#ffffff", // テキストの縁取りの色を設定
+      "text-halo-width": 1, // テキストの縁取りの幅を設定
+    },
+  }
+
+  if (!map.getLayer("station-layer")) {
+    map.addLayer(layer)
+  }
 }
