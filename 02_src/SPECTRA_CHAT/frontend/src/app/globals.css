@@ -26,3 +26,9 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.maplibregl-ctrl-top-right {
+  top: 64px !important;
+  width: 64px;
+  height: 64px;
+}

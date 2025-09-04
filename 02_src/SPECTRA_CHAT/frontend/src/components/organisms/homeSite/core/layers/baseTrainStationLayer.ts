@@ -48,11 +48,11 @@ export async function addTrainStationLayer(map: maplibregl.Map) {
     source: "station-points",
     layout: {
       "icon-image": ["concat", ["get", "事業者名"], "-icon"],
-      "icon-size": 0.2,
+      "icon-size": 0.12,
       "icon-allow-overlap": true,
       "text-field": ["get", "駅名"],
       "text-font": ["Noto Sans CJK JP Bold"],
-      "text-size": 10,
+      "text-size": 8,
       "text-anchor": "top",
       "text-offset": [0, 1],
       "text-allow-overlap": false,
