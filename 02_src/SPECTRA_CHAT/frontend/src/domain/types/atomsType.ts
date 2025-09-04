@@ -35,6 +35,9 @@ import type {
   POSITION_BOTTOM,
   POSITION_RIGHT,
   POSITION_LEFT,
+  SQUARE_SHAPE,
+  CIRCLE_SHAPE,
+  ROUND_SHAPE,
 } from "@/domain/params/components"
 
 export type ButtonVariantType =
@@ -55,6 +58,8 @@ export type ButtonSizeType =
   | typeof NORMAL_SIZE
   | typeof LARGE_SIZE
 
+export type ButtonShapeType = typeof SQUARE_SHAPE | typeof CIRCLE_SHAPE | typeof ROUND_SHAPE
+
 export type BadgeVariantType =
   | typeof BADGE_PRIMARY
   | typeof BADGE_SECONDARY
@@ -62,6 +67,8 @@ export type BadgeVariantType =
   | typeof BADGE_DANGER
   | typeof BADGE_SUCCESS
   | typeof BADGE_DARK
+
+export type BadgeShapeType = typeof SQUARE_SHAPE | typeof ROUND_SHAPE | typeof CIRCLE_SHAPE
 
 export type TextLabelSizeType =
   | typeof MINI_SIZE
@@ -90,3 +97,5 @@ export type PullTabSizeType =
   | typeof SMALL_SIZE
   | typeof NORMAL_SIZE
   | typeof LARGE_SIZE
+
+export type TextareaShapeType = typeof SQUARE_SHAPE | typeof ROUND_SHAPE

@@ -1,98 +1,70 @@
 import React from "react"
 import Image from "next/image"
-import type { ButtonVariantType, ButtonSizeType } from "@/domain/types/atomsType"
+import type { ButtonVariantType, ButtonSizeType, ButtonShapeType } from "@/domain/types/atomsType"
 
 type ImageButtonProps = {
-  text?: string // ボタンテキスト
-  iconLeft?: string // アイコンの名前を文字列で指定
-  iconRight?: string // アイコンの名前を文字列で指定
-  isShadow?: boolean //影をつけるかつけないか
-  shape?: string //ボタンの形状を文字列で指定 square circle
-  size: ButtonSizeType // mini、small、normal、large のいずれかを指定
-  variant: ButtonVariantType // ボタンのスタイル btn-primary, btn-secondary, btn-danger, btn-warning, btn-success のいずれかを指定
-  path: string // 画像のパスを指定
+  text?: string
+  iconLeft?: string
+  iconRight?: string
+  isShadow?: boolean
+  shape?: ButtonShapeType // Button.tsxと同じ型に変更
+  size?: ButtonSizeType
+  variant?: ButtonVariantType
+  path: string
   onClick?: () => void
 }
 
+const variantStyles: Record<ButtonVariantType, string> = {
+  "btn-primary": "bg-primary text-white hover:bg-primaryDark",
+  "btn-secondary":
+    "bg-white text-primary border-2 border-primary shadow-[inset_0_0_0_2px_var(--primary-color)]",
+  "btn-danger": "bg-danger text-white",
+  "btn-warning": "bg-warning text-white",
+  "btn-success": "bg-success text-white",
+  "btn-dark": "bg-gray-20 text-white",
+  "btn-light": "bg-white text-gray-20",
+  "btn-text-black": "text-gray-20",
+  "btn-text-gray": "text-gray-50",
+  "btn-text-white": "text-white",
+}
+
+const shapeStyles: Record<ButtonShapeType, string> = {
+  round: "rounded",
+  square: "",
+  circle: "rounded-full",
+}
+
+const paddingSize: Record<ButtonSizeType, string> = {
+  mini: "p-0",
+  small: "md:p-3 p-2",
+  normal: "md:p-4 p-3",
+  large: "md:p-6 p-4",
+}
+
 const ImageButton: React.FC<ImageButtonProps> = ({
-  text,
-  size,
-  shape,
-  variant,
-  iconLeft,
-  iconRight,
-  isShadow,
+  text = "",
+  size = "normal",
+  shape = "round",
+  variant = "btn-primary",
+  iconLeft = "",
+  iconRight = "",
+  isShadow = false,
   path,
   onClick,
 }: ImageButtonProps) => {
-  // サイズの種類　small normal largeから指定 paddingSize を動的に設定
-  let paddingSize = "md:p-4 p-3" // デフォルトの padding
-
-  if (size === "mini") {
-    paddingSize = "p-0" // mini サイズの padding
-  } else if (size === "small") {
-    paddingSize = "md:p-3 p-2" // small サイズの padding
-  } else if (size === "large") {
-    paddingSize = "md:p-6 p-4" // large サイズの padding
-  }
-
-  // ボタンのスタイルの種類 デフォルトは primary
-  let btnVariant = "text-white"
-
-  if (variant === "btn-secondary") {
-    //variantがsecondaryのとき
-    btnVariant =
-      "bg-white text-primary border-2 border-primary shadow-[inset_0_0_0_2px_var(--primary-color)]" // primary の色を使用、ボーダーの太さも考慮
-  } else if (variant === "btn-danger") {
-    //variantがdangerのとき
-    btnVariant = "bg-danger text-white"
-  } else if (variant === "btn-warning") {
-    //variantがwarningのとき
-    btnVariant = "bg-warning text-white"
-  } else if (variant === "btn-success") {
-    //variantがsuccessのとき
-    btnVariant = "bg-success text-white"
-  } else if (variant === "btn-dark") {
-    //variantがdarkのとき
-    btnVariant = "bg-gray-20 text-white"
-  } else if (variant === "btn-light") {
-    //variantがlightのとき
-    btnVariant = "bg-white text-gray-20"
-  } else if (variant === "btn-text-black") {
-    //variantがtext-blackのとき
-    btnVariant = "text-gray-20"
-  } else if (variant === "btn-text-gray") {
-    //variantがtext-grayのとき
-    btnVariant = "text-gray-50"
-  } else if (variant === "btn-text-white") {
-    //variantがtext-whiteのとき
-    btnVariant = "text-white"
-  }
-
-  //ボタンの形状の種類　circle square
-  let cornerShape = "rounded"
-
-  if (shape === "square") {
-    cornerShape = "" //四角形の場合は角丸を指定しない
-  } else if (shape === "circle") {
-    cornerShape = "rounded-full" //円形の場合は角丸をfullにする
-  }
-
-  let buttonShadow = ""
-  if (isShadow === true) {
-    buttonShadow = "shadow-md shadow-black"
-  }
+  const btnVariant = variantStyles[variant] ?? variantStyles["btn-primary"]
+  const cornerShape = shapeStyles[shape] ?? shapeStyles["round"]
+  const buttonShadow = isShadow ? "shadow-md shadow-black" : ""
 
   return (
     <button
-      className={`${paddingSize} ${btnVariant} ${cornerShape} ${buttonShadow} flex items-center gap-1 md:text-base text-xs`} // flex と items-center を追加
+      className={`${paddingSize[size]} ${btnVariant} ${cornerShape} ${buttonShadow} flex items-center gap-1 md:text-base text-xs`}
       onClick={onClick}
     >
-      {iconLeft && <span className="material-icons">{iconLeft}</span>} {/* アイコンを表示*/}
+      {iconLeft && <span className="material-icons">{iconLeft}</span>}
       {path && <Image alt="Image" src={path} width={48} height={48} />}
       {text}
-      {iconRight && <span className="material-icons">{iconRight}</span>}{" "}
-      {/* アイコンを右寄せで表示*/}
+      {iconRight && <span className="material-icons">{iconRight}</span>}
     </button>
   )
 }

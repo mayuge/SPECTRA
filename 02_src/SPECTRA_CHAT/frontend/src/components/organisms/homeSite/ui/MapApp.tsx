@@ -1,94 +1,142 @@
-"use client"
-import React from "react"
-import DeckGL from "@deck.gl/react"
-
-import Button from "@/components/atoms/buttons/Button"
-
-import { plateauLayer } from "@/components/organisms/homeSite/core/layers/plateauLayer"
-import { floodHazardLayer } from "@/components/organisms/homeSite/core/layers/floodHazardLayer"
-import { satelliteLayer } from "@/components/organisms/homeSite/core/layers/sateliteLayer"
-import { baseTrainLineLayer } from "@/components/organisms/homeSite/core/layers/baseTrainLineLayer"
-import { gsiLayer, osmLayer } from "@/components/organisms/homeSite/core/layers/osmLayer"
-import { cityPolygonLayer } from "@/components/organisms/homeSite/core/layers/cityPolygonLayer"
-import { meshPolygonLayer } from "@/components/organisms/homeSite/core/layers/meshPolygonLayer"
-import { trainStationLayer } from "@/components/organisms/homeSite/core/layers/trainStationLayer"
-import { trainLineLayer } from "@/components/organisms/homeSite/core/layers/trainLineLayer"
-import { useStationLayer } from "@/components/organisms/homeSite/core/layers/baseTrainStationLayer"
-import { chatGeojsonLayer } from "@/components/organisms/homeSite/core/layers/chatGeojsonLayer"
-
-import useMapApp from "@/components/organisms/homeSite/core/application/useMapApp"
-
-const { getScreenshot } = useMapApp()
+import { useEffect, useRef, useState } from "react"
+import maplibregl from "maplibre-gl"
+import "maplibre-gl/dist/maplibre-gl.css"
+// @ts-ignore
+import MeasuresControl from "maplibre-gl-measures"
+import { baseSource, baseLayer } from "@/components/organisms/homeSite/core/layers/baseLayer"
+import { gsiSource, gsiLayer } from "@/components/organisms/homeSite/core/layers/gsiLayer"
+import { addTrainLineLayer } from "@/components/organisms/homeSite/core/layers/baseTrainLineLayer"
+import { addTrainStationLayer } from "@/components/organisms/homeSite/core/layers/baseTrainStationLayer"
+import { addAllGeojsonLayers } from "@/components/organisms/homeSite/core/layers/chatGeojsonLayer" // ←追加
 
 const INITIAL_VIEW_STATE = {
-  longitude: 139.6917, // 東京の経度
-  latitude: 35.6895, // 東京の緯度
-  zoom: 10,
-  pitch: 60, // 3D 表示のため視点を傾ける
+  longitude: 139.6917,
+  latitude: 35.6,
+  zoom: 9,
+  pitch: 0,
+  maxPitch: 90,
   bearing: 0,
-  maxZoom: 20,
-  minZoom: 1,
-  // 視点の制限を追加
-  farZMultiplier: 10, // 描画距離の乗数
-  nearZMultiplier: 0.1, // 近距離クリッピング
+  maxZoom: 15,
+  minZoom: 6,
 }
 
 const MapApp = () => {
-  const [viewState, setViewState] = React.useState(INITIAL_VIEW_STATE)
-  const deckRef = React.useRef<any>(null)
+  const mapContainerRef = useRef<HTMLDivElement | null>(null)
+  const mapRef = useRef<maplibregl.Map | null>(null)
+  const frameRef = useRef<number | null>(null)
+  const [viewState, setViewState] = useState(INITIAL_VIEW_STATE)
+
+  useEffect(() => {
+    if (mapRef.current) return
+
+    const map = new maplibregl.Map({
+      container: mapContainerRef.current!,
+      style: {
+        version: 8,
+        sources: {
+          base: baseSource,
+          gsi: gsiSource,
+        },
+        layers: [baseLayer, ...gsiLayer],
+        glyphs: "https://glyphs.geolonia.com/{fontstack}/{range}.pbf",
+        sky: {
+          "sky-color": "#199EF3",
+          "sky-horizon-blend": 0.5,
+          "horizon-color": "#ffffff",
+          "horizon-fog-blend": 0.5,
+          "fog-color": "#0000ff",
+          "fog-ground-blend": 0.5,
+          "atmosphere-blend": ["interpolate", ["linear"], ["zoom"], 0, 1, 10, 1, 12, 0],
+        },
+      },
+      center: [INITIAL_VIEW_STATE.longitude, INITIAL_VIEW_STATE.latitude],
+      zoom: INITIAL_VIEW_STATE.zoom,
+      maxZoom: INITIAL_VIEW_STATE.maxZoom,
+      minZoom: INITIAL_VIEW_STATE.minZoom,
+      pitch: INITIAL_VIEW_STATE.pitch,
+      bearing: INITIAL_VIEW_STATE.bearing,
+      attributionControl: false,
+      renderWorldCopies: false,
+    })
+
+    mapRef.current = map
+    map.addControl(
+      new MeasuresControl({
+        lang: {
+          areaMeasurementButtonTitle: "面積計測",
+          lengthMeasurementButtonTitle: "距離計測",
+          clearMeasurementsButtonTitle: "計測クリア",
+        },
+        units: "metric",
+        style: {
+          text: { color: "#0000FF", haloColor: "#fff", font: "Noto Sans CJK JP Bold" },
+          areaMeasurement: {
+            fillColor: "#0000FF",
+            fillOutlineColor: "#0000FF",
+            fillOpacity: 0.05,
+            lineWidth: 2,
+          },
+          lengthMeasurement: { lineWidth: 2, lineColor: "#0000FF" },
+        },
+      }),
+      "top-right"
+    )
+
+    // 位置情報ボタン
+    map.addControl(
+      new maplibregl.GeolocateControl({
+        positionOptions: { enableHighAccuracy: true },
+        trackUserLocation: true,
+      }),
+      "top-right"
+    )
+
+    // 方位磁針ボタン（Compass）
+    map.addControl(
+      new maplibregl.NavigationControl({ showCompass: true, showZoom: true, visualizePitch: true }),
+      "top-right"
+    )
+    // 全画面ボタン
+    map.addControl(new maplibregl.FullscreenControl(), "top-right")
+    map.addControl(
+      new maplibregl.ScaleControl({
+        maxWidth: 100,
+        unit: "metric",
+      }),
+      "bottom-right"
+    )
+    map.on("move", () => {
+      if (frameRef.current) return
+      frameRef.current = requestAnimationFrame(() => {
+        const center = map.getCenter()
+        setViewState({
+          longitude: center.lng,
+          latitude: center.lat,
+          zoom: map.getZoom(),
+          pitch: map.getPitch(),
+          maxPitch: INITIAL_VIEW_STATE.maxPitch,
+          bearing: map.getBearing(),
+          maxZoom: INITIAL_VIEW_STATE.maxZoom,
+          minZoom: INITIAL_VIEW_STATE.minZoom,
+        })
+        frameRef.current = null
+      })
+    })
+
+    // --- 非同期で各レイヤ追加 ---
+    ;(async () => {
+      await addTrainLineLayer(map)
+      await addTrainStationLayer(map)
+      await addAllGeojsonLayers(map)
+    })()
+  }, [])
 
   return (
-    <div
-      style={{
-        width: "100svw",
-        height: "100svh",
-        // background: "linear-gradient(to bottom, #87CEEB 0%, #E0F6FF 100%)",
-        backgroundColor: "#E6E6E6",
-        position: "relative",
-      }}
-    >
-      <DeckGL
-        ref={deckRef}
-        initialViewState={{
-          ...INITIAL_VIEW_STATE,
-          maxPitch: 90,
-        }}
-        controller={{
-          touchRotate: true, // タッチ回転を有効化
-          inertia: true, // 慣性スクロールを有効化
-          touchZoom: true, // ピンチズームを有効化
-          doubleClickZoom: true,
-          keyboard: true, // キーボード操作を有効化
-          dragRotate: true, // ドラッグ回転を有効化
-        }}
-        layers={[
-          osmLayer,
-          gsiLayer,
-          // satelliteLayer,
-          // floodHazardLayer,
-
-          plateauLayer,
-          baseTrainLineLayer,
-          // cityPolygonLayer,
-          // meshPolygonLayer,
-          useStationLayer(), // 鉄道駅のレイヤーを動的に取得
-          //trainLineLayer,
-          chatGeojsonLayer(),
-          //trainStationLayer,
-        ]}
+    <div style={{ width: "100svw", height: "100svh", position: "relative" }}>
+      <div
+        ref={mapContainerRef}
+        style={{ width: "100%", height: "100%", position: "absolute", zIndex: 0 }}
       />
-      <div className="absolute top-20  right-4 z-30">
-        <Button
-          variant="btn-dark"
-          size="small"
-          text="キャプチャ"
-          shape="circle"
-          iconLeft="photo_camera"
-          onClick={() => {
-            getScreenshot(deckRef)
-          }}
-        />
-      </div>
     </div>
   )
 }
