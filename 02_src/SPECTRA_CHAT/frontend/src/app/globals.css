@@ -29,6 +29,6 @@ body {
 
 .maplibregl-ctrl-top-right {
   top: 64px !important;
-  width: 64px;
+  width: 200px;
   height: 64px;
 }

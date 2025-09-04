@@ -27,6 +27,7 @@
     "@luma.gl/engine": "^9.1.9",
     "@luma.gl/shadertools": "^9.1.9",
     "@math.gl/core": "^4.1.0",
+    "@watergis/maplibre-gl-export": "^4.1.0",
     "autoprefixer": "^10.4.21",
     "axios": "^1.10.0",
     "deck.gl": "^9.1.12",

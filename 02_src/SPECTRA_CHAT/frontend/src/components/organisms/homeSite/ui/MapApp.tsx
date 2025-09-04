@@ -3,6 +3,14 @@ import maplibregl from "maplibre-gl"
 import "maplibre-gl/dist/maplibre-gl.css"
 // @ts-ignore
 import MeasuresControl from "maplibre-gl-measures"
+import {
+  MaplibreExportControl,
+  Size,
+  PageOrientation,
+  Format,
+  DPI,
+} from "@watergis/maplibre-gl-export"
+import "@watergis/maplibre-gl-export/dist/maplibre-gl-export.css"
 import { baseSource, baseLayer } from "@/components/organisms/homeSite/core/layers/baseLayer"
 import { gsiSource, gsiLayer } from "@/components/organisms/homeSite/core/layers/gsiLayer"
 import { addTrainLineLayer } from "@/components/organisms/homeSite/core/layers/baseTrainLineLayer"
@@ -60,6 +68,17 @@ const MapApp = () => {
     })
 
     mapRef.current = map
+
+    const exportControl = new MaplibreExportControl({
+      PageSize: Size.A4,
+      PageOrientation: PageOrientation.Landscape,
+      Format: Format.PNG,
+      DPI: DPI[300],
+      Crosshair: true,
+      PrintableArea: true,
+      Local: "ja",
+    })
+    map.addControl(exportControl as unknown as maplibregl.IControl, "top-right")
     map.addControl(
       new MeasuresControl({
         lang: {
