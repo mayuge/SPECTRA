@@ -11,6 +11,7 @@ export default {
       colors: {
         primary: "#C3FF4B",
         primaryDark: "#C3FF4B",
+        secondary: "#CAB2FB",
         danger: "#dc3545",
         warning: "#ff6700",
         success: "#28a745",

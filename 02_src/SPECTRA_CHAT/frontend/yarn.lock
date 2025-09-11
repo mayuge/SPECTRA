@@ -8450,6 +8450,11 @@ mapbox-gl@3.12.0:
     tinyqueue "^3.0.0"
     vt-pbf "^3.1.3"
 
+maplibre-gl-compass@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/maplibre-gl-compass/-/maplibre-gl-compass-0.3.1.tgz#dbaa389a5f12ae2c961f024c554f5d6c9c5faa58"
+  integrity sha512-xEs1LM4pTp5z0Ma02xvzxLIFk5/ytOMN062+jOenRtmax9qMivXvbXYy4JivmCxcI6v8eY8plsbKhInkEy6CVQ==
+
 maplibre-gl-measures@^0.0.16:
   version "0.0.16"
   resolved "https://registry.yarnpkg.com/maplibre-gl-measures/-/maplibre-gl-measures-0.0.16.tgz#c15127682e86c775e094c678e65660257e944513"

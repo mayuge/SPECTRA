@@ -6,7 +6,7 @@ import type { IDialogState } from "@/domain/interfaces/IDialogState"
 // ゲッターで状態を取得する
 const useDialogStateStore = create<IDialogState>()((set, get) => ({
   //メインパネルの開閉状態
-  isMainPanelOpen: false,
+  isMainPanelOpen: true,
   //メインパネルのセッター
   setMainPanelOpen: (isOpen: boolean) => set(() => ({ isMainPanelOpen: isOpen })),
   //メインパネルのゲッター

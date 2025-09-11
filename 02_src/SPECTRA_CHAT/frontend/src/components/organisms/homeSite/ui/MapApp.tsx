@@ -11,6 +11,8 @@ import {
   DPI,
 } from "@watergis/maplibre-gl-export"
 import "@watergis/maplibre-gl-export/dist/maplibre-gl-export.css"
+import { CompassControl } from "maplibre-gl-compass"
+import "maplibre-gl-compass/style.css"
 import { baseSource, baseLayer } from "@/components/organisms/homeSite/core/layers/baseLayer"
 import { gsiSource, gsiLayer } from "@/components/organisms/homeSite/core/layers/gsiLayer"
 import { addTrainLineLayer } from "@/components/organisms/homeSite/core/layers/baseTrainLineLayer"
@@ -69,6 +71,12 @@ const MapApp = () => {
 
     mapRef.current = map
 
+    const compass = new CompassControl({
+      debug: false, // Show debug view. Default is false.
+      visible: true, // Show compass button. Default is true.
+      timeout: 10000, // The maximum time to wait for a DeviceOrientationEvent. Default is 3000 [ms].
+    })
+    map.addControl(compass)
     const exportControl = new MaplibreExportControl({
       PageSize: Size.A4,
       PageOrientation: PageOrientation.Landscape,

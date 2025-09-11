@@ -59,7 +59,6 @@ const DialogApp: React.FC = () => {
               rows={2}
               value={chatInput}
               onChange={(e) => chatInputOnChange(e.target.value)}
-              className="flex-1"
             />
             <Button
               size="large"
@@ -98,12 +97,8 @@ const DialogApp: React.FC = () => {
                 return (
                   <div key={index} className={`flex ${isUser ? "justify-end" : "justify-start"}`}>
                     <div
-                      className={`max-w-[75%] px-3 py-2 rounded-2xl text-sm shadow
-            ${
-              isUser
-                ? "bg-blue-500 text-white rounded-br-none"
-                : "bg-gray-200 text-gray-900 rounded-bl-none"
-            }
+                      className={`flex justify-center max-w-[75%] min-w-[40%] p-4 rounded-lg text-xs shadow
+            ${isUser ? "bg-secondary text-black " : "bg-gray-200 text-gray-900 "}
           `}
                     >
                       {chat.message}
@@ -119,7 +114,6 @@ const DialogApp: React.FC = () => {
                 rows={2}
                 value={chatInput}
                 onChange={(e) => chatInputOnChange(e.target.value)}
-                className="flex-1"
               />
               <Button
                 size="large"
