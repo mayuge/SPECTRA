@@ -1,8 +1,8 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import maplibregl, { GeoJSONSourceSpecification, SymbolLayerSpecification } from "maplibre-gl"
-import useMapApp from "@/components/organisms/homeSite/core/application/useMapApp"
-import { companyLogoParams } from "@/domain/params/companyLogoParams"
+import { useReqTrainApiAdapter } from "@/infrastructure/adapters/httpClientAdapters"
 
-const { getAllStation } = useMapApp()
+import { companyLogoParams } from "@/domain/params/companyLogoParams"
 
 async function loadCompanyIcons(map: maplibregl.Map) {
   const promises = Object.entries(companyLogoParams).map(async ([company, { path }]) => {
@@ -27,6 +27,7 @@ async function loadCompanyIcons(map: maplibregl.Map) {
 }
 
 export async function addTrainStationLayer(map: maplibregl.Map) {
+  const { getAllStation } = useReqTrainApiAdapter()
   const geojson = await getAllStation()
 
   const source: GeoJSONSourceSpecification = {

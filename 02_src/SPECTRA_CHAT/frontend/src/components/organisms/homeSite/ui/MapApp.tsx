@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import maplibregl from "maplibre-gl"
 import "maplibre-gl/dist/maplibre-gl.css"
-// @ts-ignore
+// @ts-expect-error: サードパーティ製で型定義が提供されていないため
 import MeasuresControl from "maplibre-gl-measures"
 import {
   MaplibreExportControl,
@@ -164,6 +164,12 @@ const MapApp = () => {
         ref={mapContainerRef}
         style={{ width: "100%", height: "100%", position: "absolute", zIndex: 0 }}
       />
+      <div
+        style={{ position: "absolute", bottom: 0, right: "120px", padding: 4, background: "#fff" }}
+      >
+        緯度: {viewState.latitude.toFixed(4)}, 経度: {viewState.longitude.toFixed(4)}, ズーム:{" "}
+        {viewState.zoom.toFixed(2)}
+      </div>
     </div>
   )
 }

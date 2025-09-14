@@ -1,14 +1,14 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import maplibregl, {
   GeoJSONSourceSpecification,
   LineLayerSpecification,
   ExpressionSpecification,
 } from "maplibre-gl"
 import { trainLineParams } from "@/domain/params/trainLineParams"
-import useMapApp from "@/components/organisms/homeSite/core/application/useMapApp"
-
-const { getAllTrainLine } = useMapApp()
+import { useReqTrainApiAdapter } from "@/infrastructure/adapters/httpClientAdapters"
 
 export async function addTrainLineLayer(map: maplibregl.Map) {
+  const { getAllTrainLine } = useReqTrainApiAdapter()
   const geojson = await getAllTrainLine()
 
   const source: GeoJSONSourceSpecification = {
