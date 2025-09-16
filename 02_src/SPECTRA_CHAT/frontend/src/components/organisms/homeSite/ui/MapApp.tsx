@@ -85,6 +85,8 @@ const MapApp = () => {
       Crosshair: true,
       PrintableArea: true,
       Local: "ja",
+      attributionOptions: { visibility: "none" },
+      northIconOptions: { visibility: "none" },
     })
     map.addControl(exportControl as unknown as maplibregl.IControl, "top-right")
     map.addControl(
