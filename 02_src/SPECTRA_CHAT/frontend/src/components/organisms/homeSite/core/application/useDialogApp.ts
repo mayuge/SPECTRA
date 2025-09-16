@@ -8,7 +8,7 @@ import {
 
 const useDialogApp = () => {
   const { sendChatMessage } = useReqChatApiAdapter()
-  const { setGeojson, getGeojson } = useGeojsonStateStoreAdapter()
+  const { setGeojson } = useGeojsonStateStoreAdapter()
   const { getChatMessageList, addChatMessage } = useChatStateStoreAdapter()
 
   const manageChatMessage = async (message: string) => {

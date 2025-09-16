@@ -1,32 +1,38 @@
 import maplibregl, {
-  GeoJSONSourceSpecification,
   FillLayerSpecification,
   LineLayerSpecification,
   CircleLayerSpecification,
+  GeoJSONSourceSpecification,
 } from "maplibre-gl"
 import useGeojsonStateStore from "@/infrastructure/stores/useGeojsonStore"
+import type { Feature, FeatureCollection, Geometry } from "geojson"
+
+type GeojsonType = Feature<Geometry> | FeatureCollection<Geometry>
 
 export function addAllGeojsonLayers(map: maplibregl.Map) {
-  const addLayer = (geojson: any, idx: number) => {
+  const addLayer = (geojson: GeojsonType, idx: number) => {
     const sourceId = `geojson-${idx}`
     const layerId = `geojson-layer-${idx}`
 
-    // GeoJSON が単一 Feature なら配列化
+    // GeoJSON が FeatureCollection なら features 配列、単一 Feature は配列化
     const features = geojson.type === "FeatureCollection" ? geojson.features : [geojson]
 
     if (!features || features.length === 0) return
 
-    // source がなければ追加、あれば更新
+    // source が存在しなければ追加、あれば更新
     if (!map.getSource(sourceId)) {
-      map.addSource(sourceId, { type: "geojson", data: geojson })
+      const source: GeoJSONSourceSpecification = {
+        type: "geojson",
+        data: geojson,
+      }
+      map.addSource(sourceId, source)
     } else {
       const existingSource = map.getSource(sourceId) as maplibregl.GeoJSONSource
       existingSource.setData(geojson)
     }
 
-    // layer がなければ追加
+    // layer が存在しなければ追加
     if (!map.getLayer(layerId)) {
-      // 最初の feature のジオメトリでレイヤータイプ決定
       const geomType = features[0].geometry?.type
       const color = `#${Math.floor(Math.random() * 0xffffff).toString(16)}`
 
@@ -71,12 +77,12 @@ export function addAllGeojsonLayers(map: maplibregl.Map) {
   }
 
   // 初回描画
-  const geojsonList = useGeojsonStateStore.getState().geojsonList
+  const geojsonList: GeojsonType[] = useGeojsonStateStore.getState().geojsonList
   geojsonList.forEach((geojson, idx) => addLayer(geojson, idx))
 
   // store 更新時に自動描画
   useGeojsonStateStore.subscribe((state) => {
-    const geojsonList: any[] = state.geojsonList
-    geojsonList.forEach((geojson: any, idx: number) => addLayer(geojson, idx))
+    const updatedList: GeojsonType[] = state.geojsonList
+    updatedList.forEach((geojson, idx) => addLayer(geojson, idx))
   })
 }
