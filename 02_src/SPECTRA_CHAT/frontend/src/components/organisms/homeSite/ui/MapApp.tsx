@@ -13,11 +13,14 @@ import {
 import "@watergis/maplibre-gl-export/dist/maplibre-gl-export.css"
 import { CompassControl } from "maplibre-gl-compass"
 import "maplibre-gl-compass/style.css"
+import { terrainSource } from "@/components/organisms/homeSite/core/layers/terrainLayer"
+
 import { baseSource, baseLayer } from "@/components/organisms/homeSite/core/layers/baseLayer"
 import { gsiSource, gsiLayer } from "@/components/organisms/homeSite/core/layers/gsiLayer"
 import { addTrainLineLayer } from "@/components/organisms/homeSite/core/layers/baseTrainLineLayer"
 import { addTrainStationLayer } from "@/components/organisms/homeSite/core/layers/baseTrainStationLayer"
 import { addAllGeojsonLayers } from "@/components/organisms/homeSite/core/layers/chatGeojsonLayer" // ←追加
+import { Protocol } from "pmtiles"
 
 const INITIAL_VIEW_STATE = {
   longitude: 139.6917,
@@ -26,7 +29,7 @@ const INITIAL_VIEW_STATE = {
   pitch: 0,
   maxPitch: 90,
   bearing: 0,
-  maxZoom: 15,
+  maxZoom: 20,
   minZoom: 6,
 }
 
@@ -44,6 +47,7 @@ const MapApp = () => {
       style: {
         version: 8,
         sources: {
+          terrain: terrainSource,
           base: baseSource,
           gsi: gsiSource,
         },
@@ -110,7 +114,13 @@ const MapApp = () => {
       }),
       "top-right"
     )
-
+    map.addControl(
+      new maplibregl.TerrainControl({
+        source: "terrain",
+        exaggeration: 1.0,
+      }),
+      "top-right"
+    )
     // 位置情報ボタン
     map.addControl(
       new maplibregl.GeolocateControl({
