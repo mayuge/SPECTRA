@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 import maplibregl from "maplibre-gl"
 import "maplibre-gl/dist/maplibre-gl.css"
-// @ts-expect-error
+// @ts-expect-error MeasuresControl 型定義がないため
 import MeasuresControl from "maplibre-gl-measures"
 import {
   MaplibreExportControl,
@@ -40,7 +40,8 @@ const MapApp = () => {
 
     const map = new maplibregl.Map({
       container: mapContainerRef.current!,
-      style: "https://tile.openstreetmap.jp/styles/osm-bright-ja/style.json",
+      //style: "https://tile.openstreetmap.jp/styles/osm-bright-ja/style.json",
+      style: "https://tiles.kmproj.com/styles/osm-ja-light.json",
       center: [INITIAL_VIEW_STATE.longitude, INITIAL_VIEW_STATE.latitude],
       zoom: INITIAL_VIEW_STATE.zoom,
       pitch: INITIAL_VIEW_STATE.pitch,
@@ -49,6 +50,7 @@ const MapApp = () => {
       minZoom: INITIAL_VIEW_STATE.minZoom,
       attributionControl: false,
       renderWorldCopies: false,
+      localIdeographFontFamily: "sans-serif",
     })
     mapRef.current = map
 
