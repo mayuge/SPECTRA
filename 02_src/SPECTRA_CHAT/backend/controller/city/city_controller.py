@@ -14,3 +14,13 @@ async def get_city_by_name(city_name: str, request: Request):
     """
     decoded_name = unquote(city_name)
     return await city_repository.get_city_by_name(decoded_name, request)
+
+#　都道府県名で取得
+@router.get("/prefecture/{prefecture_name}")
+async def get_prefecture_by_name(prefecture_name: str, request: Request):
+    """
+    都道府県の名前を指定して都道府県を取得します。
+    例: '埼玉県', '千葉県'
+    """
+    decoded_name = unquote(prefecture_name)
+    return await city_repository.get_prefecture_by_name(decoded_name, request)

@@ -9,6 +9,12 @@ import type { Feature, FeatureCollection, Geometry } from "geojson"
 import bbox from "@turf/bbox"
 
 type GeojsonType = Feature<Geometry> | FeatureCollection<Geometry>
+function getRandomRichColor(): string {
+  const r = Math.floor(Math.random() * 128) + 64
+  const g = Math.floor(Math.random() * 128) + 64
+  const b = Math.floor(Math.random() * 128) + 64
+  return `#${[r, g, b].map((v) => v.toString(16).padStart(2, "0")).join("")}`
+}
 
 export function addAllGeojsonLayers(map: maplibregl.Map) {
   const addLayer = (geojson: GeojsonType, idx: number) => {
@@ -33,7 +39,7 @@ export function addAllGeojsonLayers(map: maplibregl.Map) {
     // layer が存在しなければ追加
     if (!map.getLayer(layerId)) {
       const geomType = features[0].geometry?.type
-      const color = `#${Math.floor(Math.random() * 0xffffff).toString(16)}`
+      const color = getRandomRichColor()
 
       if (geomType === "Point") {
         const layer: CircleLayerSpecification = {
@@ -42,10 +48,10 @@ export function addAllGeojsonLayers(map: maplibregl.Map) {
           source: sourceId,
           paint: {
             "circle-color": color,
-            "circle-radius": 10,
+            "circle-radius": 16,
             "circle-stroke-opacity": 0.3,
             "circle-stroke-color": color,
-            "circle-stroke-width": 40,
+            "circle-stroke-width": 32,
           },
         }
         map.addLayer(layer)
@@ -56,7 +62,8 @@ export function addAllGeojsonLayers(map: maplibregl.Map) {
           source: sourceId,
           paint: {
             "line-color": color,
-            "line-width": 4,
+            "line-width": 3,
+            "line-gap-width": 5,
           },
         }
         map.addLayer(layer)
@@ -67,7 +74,7 @@ export function addAllGeojsonLayers(map: maplibregl.Map) {
           source: sourceId,
           paint: {
             "fill-color": color,
-            "fill-opacity": 0.3,
+            "fill-opacity": 0.4,
             "fill-outline-color": color,
           },
         }
