@@ -6,6 +6,7 @@ import maplibregl, {
 } from "maplibre-gl"
 import useGeojsonStateStore from "@/infrastructure/stores/useGeojsonStore"
 import type { Feature, FeatureCollection, Geometry } from "geojson"
+import bbox from "@turf/bbox"
 
 type GeojsonType = Feature<Geometry> | FeatureCollection<Geometry>
 
@@ -14,9 +15,7 @@ export function addAllGeojsonLayers(map: maplibregl.Map) {
     const sourceId = `geojson-${idx}`
     const layerId = `geojson-layer-${idx}`
 
-    // GeoJSON が FeatureCollection なら features 配列、単一 Feature は配列化
     const features = geojson.type === "FeatureCollection" ? geojson.features : [geojson]
-
     if (!features || features.length === 0) return
 
     // source が存在しなければ追加、あれば更新
@@ -44,8 +43,9 @@ export function addAllGeojsonLayers(map: maplibregl.Map) {
           paint: {
             "circle-color": color,
             "circle-radius": 10,
-            "circle-stroke-color": "#000",
-            "circle-stroke-width": 1,
+            "circle-stroke-opacity": 0.3,
+            "circle-stroke-color": color,
+            "circle-stroke-width": 40,
           },
         }
         map.addLayer(layer)
@@ -67,12 +67,22 @@ export function addAllGeojsonLayers(map: maplibregl.Map) {
           source: sourceId,
           paint: {
             "fill-color": color,
-            "fill-opacity": 0.5,
-            "fill-outline-color": "#000",
+            "fill-opacity": 0.3,
+            "fill-outline-color": color,
           },
         }
         map.addLayer(layer)
       }
+
+      // ← 新規レイヤー追加後にズーム
+      const [minX, minY, maxX, maxY] = bbox(geojson)
+      map.fitBounds(
+        [
+          [minX, minY],
+          [maxX, maxY],
+        ],
+        { padding: 50, duration: 1000 }
+      )
     }
   }
 
