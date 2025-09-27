@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import maplibregl from "maplibre-gl"
 import "maplibre-gl/dist/maplibre-gl.css"
-// @ts-expect-error MeasuresControl 型定義がないため
-import MeasuresControl from "maplibre-gl-measures"
 import {
   MaplibreExportControl,
   Size,
@@ -11,7 +9,6 @@ import {
   DPI,
 } from "@watergis/maplibre-gl-export"
 import "@watergis/maplibre-gl-export/dist/maplibre-gl-export.css"
-import { CompassControl } from "maplibre-gl-compass"
 import "maplibre-gl-compass/style.css"
 
 import { terrainSource } from "@/components/organisms/homeSite/core/layers/terrainLayer"
@@ -40,8 +37,7 @@ const MapApp = () => {
 
     const map = new maplibregl.Map({
       container: mapContainerRef.current!,
-      //style: "https://tile.openstreetmap.jp/styles/osm-bright-ja/style.json",
-      style: "https://tiles.kmproj.com/styles/osm-ja-light.json",
+      style: "./map/style.json",
       center: [INITIAL_VIEW_STATE.longitude, INITIAL_VIEW_STATE.latitude],
       zoom: INITIAL_VIEW_STATE.zoom,
       pitch: INITIAL_VIEW_STATE.pitch,
@@ -66,7 +62,18 @@ const MapApp = () => {
     })
 
     // コントロール類
-    map.addControl(new CompassControl({ debug: false, visible: true }), "top-right")
+
+    map.addControl(
+      new maplibregl.NavigationControl({ showCompass: true, showZoom: true, visualizePitch: true }),
+      "top-right"
+    )
+    map.addControl(
+      new maplibregl.GeolocateControl({
+        positionOptions: { enableHighAccuracy: true },
+        trackUserLocation: true,
+      }),
+      "top-right"
+    )
     map.addControl(
       new MaplibreExportControl({
         PageSize: Size.A4,
@@ -81,38 +88,7 @@ const MapApp = () => {
       }) as unknown as maplibregl.IControl,
       "top-right"
     )
-    map.addControl(
-      new MeasuresControl({
-        lang: {
-          areaMeasurementButtonTitle: "面積計測",
-          lengthMeasurementButtonTitle: "距離計測",
-          clearMeasurementsButtonTitle: "計測クリア",
-        },
-        units: "metric",
-        style: {
-          text: { color: "#0000FF", haloColor: "#fff", font: "Noto Sans CJK JP Bold" },
-          areaMeasurement: {
-            fillColor: "#0000FF",
-            fillOutlineColor: "#0000FF",
-            fillOpacity: 0.05,
-            lineWidth: 2,
-          },
-          lengthMeasurement: { lineWidth: 2, lineColor: "#0000FF" },
-        },
-      }),
-      "top-right"
-    )
-    map.addControl(
-      new maplibregl.GeolocateControl({
-        positionOptions: { enableHighAccuracy: true },
-        trackUserLocation: true,
-      }),
-      "top-right"
-    )
-    map.addControl(
-      new maplibregl.NavigationControl({ showCompass: true, showZoom: true, visualizePitch: true }),
-      "top-right"
-    )
+
     map.addControl(new maplibregl.FullscreenControl(), "top-right")
     map.addControl(new maplibregl.ScaleControl({ maxWidth: 100, unit: "metric" }), "bottom-right")
 
