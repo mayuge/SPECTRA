@@ -27,16 +27,7 @@ export async function addTrainLineLayer(map: maplibregl.Map) {
         ...Object.entries(trainLineParams).flatMap(([name, param]) => [name, param.color]),
         "#808080",
       ] as unknown as ExpressionSpecification,
-      "line-width": [
-        "interpolate", // 線幅を補間する
-        ["linear"], // 線形補間
-        ["zoom"], // ズームレベルを基に補間
-        10,
-        1, // ズームレベル10で線幅2
-        15,
-        10, // ズームレベル15で線幅10
-      ],
-
+      "line-width": ["interpolate", ["linear"], ["zoom"], 10, 1, 15, 10],
       "line-opacity": 1,
     },
     layout: {
@@ -56,4 +47,26 @@ export async function addTrainLineLayer(map: maplibregl.Map) {
   if (!map.getLayer("base-train-line-layer")) {
     map.addLayer(layer)
   }
+
+  // --- クリックイベントで路線名を表示 ---
+  map.on("click", "base-train-line-layer", (e) => {
+    const feature = e.features?.[0]
+    if (!feature) return
+
+    const routeName = feature.properties?.["路線名"]
+    if (!routeName) return
+
+    new maplibregl.Popup()
+      .setLngLat(e.lngLat)
+      .setHTML(`<div style="font-size:14px;">${routeName}</div>`)
+      .addTo(map)
+  })
+
+  // クリックでカーソル変更
+  map.on("mouseenter", "base-train-line-layer", () => {
+    map.getCanvas().style.cursor = "pointer"
+  })
+  map.on("mouseleave", "base-train-line-layer", () => {
+    map.getCanvas().style.cursor = ""
+  })
 }

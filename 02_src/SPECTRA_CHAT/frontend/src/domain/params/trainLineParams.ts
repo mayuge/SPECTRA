@@ -68,6 +68,15 @@ export const trainLineParams: Record<string, { color: string }> = {
   中央線: {
     color: "#EB5C01",
   },
+  "中央・総武線緩行線": {
+    color: "#FDD400",
+  },
+  中央線快速: {
+    color: "#EB5C01",
+  },
+  "総武線（快速）": {
+    color: "#007ac0",
+  },
   吾妻線: {
     color: "#008689",
   },
@@ -113,6 +122,9 @@ export const trainLineParams: Record<string, { color: string }> = {
   南武線: {
     color: "#FFE400",
   },
+  南武支線: {
+    color: "#FFE400",
+  },
   成田線: {
     color: "#00BB85",
   },
@@ -125,8 +137,14 @@ export const trainLineParams: Record<string, { color: string }> = {
   埼京線: {
     color: "#00AC84",
   },
+  "埼京線（相鉄直通）": {
+    color: "#00AC84",
+  },
   根岸線: {
-    color: "#00A7E3",
+    color: "#00bae8",
+  },
+  "京浜東北・根岸線": {
+    color: "#00bae8",
   },
   湘南新宿ライン: {
     color: "#DE0515",
@@ -149,9 +167,9 @@ export const trainLineParams: Record<string, { color: string }> = {
   東金線: {
     color: "#B31C31",
   },
-  // 東海道線: {
-  //   color: "#FF9845",
-  // },
+  東海道線: {
+    color: "#f68b1e",
+  },
   鶴見線: {
     color: "#FFE500",
   },
@@ -293,6 +311,9 @@ export const trainLineParams: Record<string, { color: string }> = {
   京成本線: {
     color: "#15388B",
   },
+  北総線: {
+    color: "#36A5FF",
+  },
   押上線: {
     color: "#15388B",
   },
@@ -332,13 +353,22 @@ export const trainLineParams: Record<string, { color: string }> = {
   りんかい線: {
     color: "#222D65",
   },
+  東京臨海新交通臨海線: {
+    color: "#27404c",
+  },
   江の島線: {
     color: "#ff0000",
   },
   横浜市営地下鉄ブルーライン: {
     color: "#0068b7",
   },
+  ブルーライン: {
+    color: "#0068b7",
+  },
   横浜市営地下鉄グリーンライン: {
+    color: "#00a968",
+  },
+  グリーンライン: {
     color: "#00a968",
   },
 }
