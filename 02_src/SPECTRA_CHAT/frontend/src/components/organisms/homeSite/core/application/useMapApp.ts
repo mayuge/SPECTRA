@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react"
+import "@watergis/maplibre-gl-export/dist/maplibre-gl-export.css"
 import maplibregl from "maplibre-gl"
 import {
   MaplibreExportControl,
@@ -11,6 +12,7 @@ import { terrainSource } from "@/components/organisms/homeSite/core/layers/terra
 import { addTrainLineLayer } from "@/components/organisms/homeSite/core/layers/baseTrainLineLayer"
 import { addTrainStationLayer } from "@/components/organisms/homeSite/core/layers/baseTrainStationLayer"
 import { addAllGeojsonLayers } from "@/components/organisms/homeSite/core/layers/chatGeojsonLayer"
+import useDisplayLayerStore from "@/infrastructure/stores/useDisplayLayerStore"
 
 const INITIAL_VIEW_STATE = {
   longitude: 139.6917,
@@ -27,6 +29,7 @@ export const useMapApp = () => {
   const mapContainerRef = useRef<HTMLDivElement | null>(null)
   const mapRef = useRef<maplibregl.Map | null>(null)
   const [viewState, setViewState] = useState(INITIAL_VIEW_STATE)
+  const { toggleDisplayLayer, getDisplayLayer } = useDisplayLayerStore()
 
   useEffect(() => {
     if (mapRef.current) return
@@ -108,8 +111,41 @@ export const useMapApp = () => {
     loadLayers()
   }, [])
 
+  // trainLineVisibleの変化でレイヤの表示/非表示を切り替える
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map) return
+    if (!map.getLayer("base-train-line-layer")) return
+
+    map.setLayoutProperty(
+      "base-train-line-layer",
+      "visibility",
+      getDisplayLayer("trainLine") ? "visible" : "none"
+    )
+  }, [getDisplayLayer("trainLine")])
+
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map) return
+    if (!map.getLayer("base-train-station-layer")) return
+
+    map.setLayoutProperty(
+      "base-train-station-layer",
+      "visibility",
+      getDisplayLayer("train") ? "visible" : "none"
+    )
+  }, [getDisplayLayer("train")])
+
+  // UIで使うtoggle関数
+  const toggleTrainLayer = () => {
+    toggleDisplayLayer("trainLine")
+    toggleDisplayLayer("train")
+  }
+
   return {
     mapContainerRef,
     viewState,
+    toggleTrainLayer,
+    getDisplayLayer,
   }
 }

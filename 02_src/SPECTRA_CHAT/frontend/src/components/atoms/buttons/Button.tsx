@@ -58,7 +58,7 @@ const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
     >
       {iconLeft && <span className="material-icons">{iconLeft}</span>}
-      {text}
+      {text !== "" && <span style={{ position: "relative", top: "-1px" }}>{text}</span>}
       {iconRight && <span className="material-icons">{iconRight}</span>}
     </button>
   )

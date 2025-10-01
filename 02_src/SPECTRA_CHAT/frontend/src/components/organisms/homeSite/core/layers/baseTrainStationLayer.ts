@@ -35,18 +35,18 @@ export async function addTrainStationLayer(map: maplibregl.Map) {
     data: geojson,
   }
 
-  if (!map.getSource("station-points")) {
-    map.addSource("station-points", source)
+  if (!map.getSource("train-station")) {
+    map.addSource("train-station", source)
   } else {
-    ;(map.getSource("station-points") as maplibregl.GeoJSONSource).setData(geojson)
+    ;(map.getSource("train-station") as maplibregl.GeoJSONSource).setData(geojson)
   }
 
   await loadCompanyIcons(map)
 
   const layer: SymbolLayerSpecification = {
-    id: "station-layer",
+    id: "base-train-station-layer",
     type: "symbol",
-    source: "station-points",
+    source: "train-station",
     layout: {
       "icon-image": ["concat", ["get", "事業者名"], "-icon"],
       "icon-size": 0.12,
@@ -65,7 +65,7 @@ export async function addTrainStationLayer(map: maplibregl.Map) {
     },
   }
 
-  if (!map.getLayer("station-layer")) {
+  if (!map.getLayer("base-train-station-layer")) {
     map.addLayer(layer)
   }
 }
