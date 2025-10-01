@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/rules-of-hooks */
 import maplibregl, {
   GeoJSONSourceSpecification,
   LineLayerSpecification,
@@ -7,8 +6,10 @@ import maplibregl, {
 import { trainLineParams } from "@/domain/params/trainLineParams"
 import { useReqTrainApiAdapter } from "@/infrastructure/adapters/httpClientAdapters"
 
-export async function addTrainLineLayer(map: maplibregl.Map) {
+// getDisplayLayer を引数で受け取るように変更
+export const addTrainLineLayer = async (map: maplibregl.Map) => {
   const { getAllTrainLine } = useReqTrainApiAdapter()
+
   const geojson = await getAllTrainLine()
 
   const source: GeoJSONSourceSpecification = {
@@ -33,7 +34,6 @@ export async function addTrainLineLayer(map: maplibregl.Map) {
     layout: {
       "line-cap": "round",
       "line-join": "round",
-      visibility: "visible",
     },
   }
 
@@ -58,7 +58,7 @@ export async function addTrainLineLayer(map: maplibregl.Map) {
 
     new maplibregl.Popup()
       .setLngLat(e.lngLat)
-      .setHTML(`<div style="font-size:14px;">${routeName}</div>`)
+      .setHTML(`<div style="font-size:8px;">${routeName}</div>`)
       .addTo(map)
   })
 

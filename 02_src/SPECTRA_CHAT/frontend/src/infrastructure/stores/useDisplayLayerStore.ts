@@ -1,7 +1,7 @@
 import { create } from "zustand"
 import type { IDisplayLayerState } from "@/domain/interfaces/IDisplayLayerState"
 
-const useDisplayLayerStore = create<IDisplayLayerState>((set) => ({
+const useDisplayLayerStore = create<IDisplayLayerState>((set, get) => ({
   layersObj: {
     osm: true,
     satellite: false,
@@ -17,6 +17,7 @@ const useDisplayLayerStore = create<IDisplayLayerState>((set) => ({
         [DisplayLayerName]: !state.layersObj[DisplayLayerName],
       },
     })),
+  getDisplayLayer: (DisplayLayerName) => get().layersObj[DisplayLayerName],
 }))
 
 export default useDisplayLayerStore
