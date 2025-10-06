@@ -29,10 +29,16 @@ const useDialogApp = () => {
         // 文字列化された JSON をオブジェクトに変換
         const geojson = JSON.parse(responseStr)
         setGeojson(geojson)
+        const successMessage: ChatType = {
+          type: "response",
+          message: "表示しました",
+          isdata: true,
+        }
+        addChatMessage(successMessage)
       } else {
         const errorMessage: ChatType = {
           type: "error",
-          message: "No response from the server",
+          message: "エラーです。分かりやすくリクエストすると成功率が高まります。",
           isdata: false,
         }
         addChatMessage(errorMessage)

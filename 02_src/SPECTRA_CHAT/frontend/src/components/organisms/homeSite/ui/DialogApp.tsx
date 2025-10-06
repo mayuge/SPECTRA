@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from "react"
 import DialogHeader from "@/components/molecules/header/DialogHeader"
+import ChatList from "@/components/molecules/frames/Chat"
 import Button from "@/components/atoms/buttons/Button"
 import Textarea from "@/components/atoms/inputs/Textarea"
 import PullTab from "@/components/atoms/buttons/PullTab"
@@ -91,22 +92,7 @@ const DialogApp: React.FC = () => {
           </div>
           <div className="bg-white h-[50vh] md:h-[100svh] shadow-black shadow-lg flex flex-col">
             {/* 本文（スクロール可能） */}
-            <div className="flex-1 overflow-y-auto pt-20 px-4 space-y-3">
-              {getChatMessageList().map((chat, index) => {
-                const isUser = chat.type === "request"
-                return (
-                  <div key={index} className={`flex ${isUser ? "justify-end" : "justify-start"}`}>
-                    <div
-                      className={`flex justify-center max-w-[75%] min-w-[40%] p-4 rounded-lg text-xs shadow
-            ${isUser ? "bg-secondary text-black " : "bg-gray-200 text-gray-900 "}
-          `}
-                    >
-                      {chat.message}
-                    </div>
-                  </div>
-                )
-              })}
-            </div>
+            <ChatList chatList={getChatMessageList()} />
 
             {/* 入力欄（下固定） */}
             <div className="shadow-black shadow-sm sticky bottom-0 z-10 flex p-4 gap-4 border-t border-gray-200 bg-gray-90">

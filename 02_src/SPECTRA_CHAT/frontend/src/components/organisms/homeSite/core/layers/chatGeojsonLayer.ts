@@ -67,7 +67,7 @@ export function addAllGeojsonLayers(map: maplibregl.Map) {
           },
         }
         map.addLayer(layer)
-      } else if (geomType === "Polygon") {
+      } else if (geomType === "Polygon" || geomType === "MultiPolygon") {
         const layer: FillLayerSpecification = {
           id: layerId,
           type: "fill",
