@@ -9,7 +9,7 @@ city_repository = CityRepository()
 @router.get("/city/{city_name}")
 async def get_city_by_name(city_name: str, request: Request):
     """
-    市区町村の名前を指定して市区町村を取得します。
+    市区町村の名前を指定して市区町村を表示
     例: 'さいたま市', '千葉市'
     """
     decoded_name = unquote(city_name)
@@ -20,7 +20,7 @@ async def get_city_by_name(city_name: str, request: Request):
 @router.get("/prefecture/{prefecture_name}")
 async def get_prefecture_by_name(prefecture_name: str, request: Request):
     """
-    都道府県の名前を指定して都道府県を取得します。
+    都道府県の名前を指定して都道府県を表示
     例: '埼玉県', '千葉県'
     """
     decoded_name = unquote(prefecture_name)
