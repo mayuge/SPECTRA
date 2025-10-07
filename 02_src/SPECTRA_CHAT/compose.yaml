@@ -1,6 +1,6 @@
 services:
   postgis:
-    image: postgis/postgis:15-3.3
+    image: postgis/postgis:18-3.6
     container_name: postgis_container
     environment:
       - POSTGRES_USER=docker
@@ -24,7 +24,17 @@ services:
     working_dir: /backend
     volumes:
       - ./backend:/backend
-    command: ["uv", "run", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "4000"]
+    command:
+      [
+        "uv",
+        "run",
+        "uvicorn",
+        "main:app",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "4000",
+      ]
     ports:
       - "4000:4000"
     env_file:

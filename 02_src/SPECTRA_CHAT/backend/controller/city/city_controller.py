@@ -13,6 +13,7 @@ async def get_city_by_name(city_name: str, request: Request):
     例: 'さいたま市', '千葉市'
     """
     decoded_name = unquote(city_name)
+    print(f"Received city_name: {decoded_name}")
     return await city_repository.get_city_by_name(decoded_name, request)
 
 #　都道府県名で取得
@@ -23,4 +24,5 @@ async def get_prefecture_by_name(prefecture_name: str, request: Request):
     例: '埼玉県', '千葉県'
     """
     decoded_name = unquote(prefecture_name)
+    print(f"Received prefecture_name: {decoded_name}")
     return await city_repository.get_prefecture_by_name(decoded_name, request)
