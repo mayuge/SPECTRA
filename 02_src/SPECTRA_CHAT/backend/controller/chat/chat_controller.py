@@ -9,6 +9,7 @@ from pydantic import BaseModel
 class ChatRequest(BaseModel):
     message: str
 
+
 router = APIRouter()
 
 client = genai.Client()
@@ -32,14 +33,7 @@ async def chat_request(request: ChatRequest):
                         system_instruction=(
                             """
                             あなたは都市の情報を取得するツールの実行に特化したAIです。
-                            ユーザーが鉄道路線の名前（例: 池袋線、山手線）を入力した場合、
-                            `get_line_by_name` ツールを必ず使用してください。
-                            ユーザーが駅の名前（例: 東京、池袋）を入力した場合、
-                            `get_station_by_name` ツールを必ず使用してください。
-                            ユーザーが市区町村の名前（例: さいたま市、千葉市）を入力した場合、
-                            `get_city_by_name` ツールを必ず使用してください。
-                            ユーザーが都道府県の名前（例: 埼玉県、千葉県）を入力した場合、
-                            `get_prefecture_by_name` ツールを必ず使用してください。
+                            ユーザーからの指示をもとに、使用すべきツールを判断し、実行してください。
                             使用すべきツールがわからない場合は必ず、「駅名または路線名または市区町村名を入力してください。」と返答してください。
                             """
                         ),
