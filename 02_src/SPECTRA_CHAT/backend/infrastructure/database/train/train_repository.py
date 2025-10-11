@@ -20,7 +20,10 @@ class TrainRepository:
         """
         async with request.app.state.pool.acquire() as conn:
             result = await conn.fetchrow(query)
-            return result["geojson"]
+            geojson = result["geojson"]
+            if isinstance(geojson, str):
+                geojson = json.loads(geojson)
+            return geojson  # ← dictで返す
 
     async def get_station_by_name(self, station_name: str, request: Request):
         query = """
@@ -56,7 +59,10 @@ class TrainRepository:
         """
         async with request.app.state.pool.acquire() as conn:
             result = await conn.fetchrow(query)
-            return result["geojson"]
+            geojson = result["geojson"]
+            if isinstance(geojson, str):
+                geojson = json.loads(geojson)
+            return geojson  # ← dictで返す
 
     async def get_line_by_name(self, line_name: str, request: Request):
         query = """

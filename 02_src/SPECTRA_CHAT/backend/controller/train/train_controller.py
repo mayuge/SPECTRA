@@ -10,6 +10,7 @@ train_repository = TrainRepository()
 
 @router.get("/train/station")
 async def get_all_stations(request: Request):
+    """全ての駅情報を取得します。"""
     return await train_repository.get_all_stations(request)
 
 
@@ -22,6 +23,7 @@ async def get_station_by_name(station_name: str, request: Request):
 
 @router.get("/train/line")
 async def get_all_lines(request: Request):
+    """全ての路線情報を取得します。"""
     return await train_repository.get_all_lines(request)
 
 

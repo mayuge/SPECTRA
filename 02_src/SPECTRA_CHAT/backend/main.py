@@ -16,7 +16,7 @@ app = FastAPI()
 # CORS設定
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000","http://192.168.0.7:3000"],
+    allow_origins=["*"],  # 本番は適切に制限してください
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
