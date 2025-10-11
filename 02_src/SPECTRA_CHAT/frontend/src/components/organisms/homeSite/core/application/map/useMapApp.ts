@@ -29,8 +29,9 @@ export const useMapApp = () => {
   const mapContainerRef = useRef<HTMLDivElement | null>(null)
   const mapRef = useRef<maplibregl.Map | null>(null)
   const [viewState, setViewState] = useState(INITIAL_VIEW_STATE)
-  const { toggleDisplayLayer, getDisplayLayer } = useDisplayLayerStore()
-
+  const { getDisplayLayer } = useDisplayLayerStore()
+  const trainLineVisible = getDisplayLayer("trainLine")
+  const trainVisible = getDisplayLayer("train")
   useEffect(() => {
     if (mapRef.current) return
     if (!mapContainerRef.current) return
@@ -123,9 +124,9 @@ export const useMapApp = () => {
     map.setLayoutProperty(
       "base-train-line-layer",
       "visibility",
-      getDisplayLayer("trainLine") ? "visible" : "none"
+      trainLineVisible ? "visible" : "none"
     )
-  }, [getDisplayLayer("trainLine")])
+  }, [trainLineVisible])
 
   useEffect(() => {
     const map = mapRef.current
@@ -135,9 +136,9 @@ export const useMapApp = () => {
     map.setLayoutProperty(
       "base-train-station-layer",
       "visibility",
-      getDisplayLayer("train") ? "visible" : "none"
+      trainVisible ? "visible" : "none"
     )
-  }, [getDisplayLayer("train")])
+  }, [trainVisible])
 
   return {
     mapContainerRef,

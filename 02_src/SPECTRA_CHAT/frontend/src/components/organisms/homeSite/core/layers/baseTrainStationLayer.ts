@@ -11,11 +11,10 @@ async function loadCompanyIcons(map: maplibregl.Map) {
 
     if (!map.hasImage(iconId)) {
       try {
-        const response = await fetch(iconUrl)
-        const blob = await response.blob()
-        const imageBitmap = await createImageBitmap(blob)
+        // ✅ Promise版API
+        const image = await map.loadImage(iconUrl)
         if (!map.hasImage(iconId)) {
-          map.addImage(iconId, imageBitmap)
+          map.addImage(iconId, image.data)
         }
       } catch (err) {
         console.error(`Failed to load icon for ${company}:`, err)

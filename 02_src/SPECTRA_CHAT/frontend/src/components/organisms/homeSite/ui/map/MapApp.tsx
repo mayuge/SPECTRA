@@ -1,4 +1,3 @@
-import Button from "@/components/atoms/buttons/Button"
 import { useMapApp } from "@/components/organisms/homeSite/core/application/map/useMapApp"
 import "maplibre-gl/dist/maplibre-gl.css"
 const MapApp = () => {

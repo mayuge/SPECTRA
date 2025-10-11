@@ -4,6 +4,7 @@ import maplibregl, {
   ExpressionSpecification,
 } from "maplibre-gl"
 import { trainLineParams } from "@/domain/params/trainLineParams"
+/* eslint-disable react-hooks/rules-of-hooks */
 import { useReqTrainApiAdapter } from "@/infrastructure/adapters/httpClientAdapters"
 
 // getDisplayLayer を引数で受け取るように変更
