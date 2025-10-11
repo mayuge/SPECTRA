@@ -1,3 +1,6 @@
+import { Jaro } from "next/font/google"
+import path from "path"
+
 export const companyLogoParams = {
   //東京メトロ
   東京地下鉄: {
@@ -8,14 +11,32 @@ export const companyLogoParams = {
     path: "tokyoLogo",
   },
   //JR
+  JR北海道: {
+    path: "jrHokkaido",
+  },
   JR東日本: {
     path: "jrEast",
+  },
+  JR東海: {
+    path: "jrCentral",
+  },
+  JR西日本: {
+    path: "jrWest",
+  },
+  JR四国: {
+    path: "jrSikoku",
+  },
+  JR九州: {
+    path: "jrKyusyu",
   },
   //西武線
   西武鉄道: {
     path: "seibu",
   },
   //多摩モノレール
+  多摩都市モノレール: {
+    path: "tamaMonoRail",
+  },
   //京王線
   京王電鉄: {
     path: "keio",
@@ -32,6 +53,9 @@ export const companyLogoParams = {
   東武鉄道: {
     path: "tobu",
   },
+  埼玉高速鉄道: {
+    path: "saitamakousoku",
+  },
   //相鉄
   相模鉄道: {
     path: "sotetsu",
@@ -42,6 +66,12 @@ export const companyLogoParams = {
   },
   京成電鉄: {
     path: "keisei",
+  },
+  新京成電鉄: {
+    path: "sinkeisei",
+  },
+  北総鉄道: {
+    path: "hokusou",
   },
   首都圏新都市鉄道: {
     path: "tukuba",
@@ -55,6 +85,9 @@ export const companyLogoParams = {
   //千葉都市モノレール
   //金沢シーサイドライン:
   //りんかい線
+  ゆりかもめ: {
+    path: "yurikamome",
+  },
   東京臨海高速鉄道: {
     path: "rinkai",
   },

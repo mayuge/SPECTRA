@@ -185,6 +185,10 @@ export const trainLineParams: Record<string, { color: string }> = {
   横須賀線: {
     color: "#0074BE",
   },
+  埼玉高速鉄道線: {
+    color: "#2351a5",
+  },
+  //西武線
   西武新宿線: {
     color: "#01A6BF",
   },
