@@ -48,10 +48,10 @@ export function addAllGeojsonLayers(map: maplibregl.Map) {
           source: sourceId,
           paint: {
             "circle-color": color,
-            "circle-radius": 16,
-            "circle-stroke-opacity": 0.3,
+            "circle-radius": 6,
+            "circle-stroke-opacity": 0.5,
             "circle-stroke-color": color,
-            "circle-stroke-width": 32,
+            "circle-stroke-width": 4,
           },
         }
         map.addLayer(layer)

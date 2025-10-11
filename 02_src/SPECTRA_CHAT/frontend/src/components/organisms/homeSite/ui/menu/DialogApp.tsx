@@ -5,7 +5,7 @@ import ChatList from "@/components/molecules/frames/Chat"
 import Button from "@/components/atoms/buttons/Button"
 import Textarea from "@/components/atoms/inputs/Textarea"
 import PullTab from "@/components/atoms/buttons/PullTab"
-import useDialogApp from "@/components/organisms/homeSite/core/application/useDialogApp"
+import useDialogApp from "@/components/organisms/homeSite/core/application/menu/useDialogApp"
 
 const DialogApp: React.FC = () => {
   const { manageChatMessage, getMainPanelOpen, setMainPanelOpen, getChatMessageList } =

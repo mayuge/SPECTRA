@@ -33,6 +33,7 @@ export const useMapApp = () => {
 
   useEffect(() => {
     if (mapRef.current) return
+    if (!mapContainerRef.current) return
 
     const map = new maplibregl.Map({
       container: mapContainerRef.current!,
@@ -115,6 +116,8 @@ export const useMapApp = () => {
   useEffect(() => {
     const map = mapRef.current
     if (!map) return
+    if (!mapContainerRef.current) return
+
     if (!map.getLayer("base-train-line-layer")) return
 
     map.setLayoutProperty(
@@ -136,16 +139,9 @@ export const useMapApp = () => {
     )
   }, [getDisplayLayer("train")])
 
-  // UIで使うtoggle関数
-  const toggleTrainLayer = () => {
-    toggleDisplayLayer("trainLine")
-    toggleDisplayLayer("train")
-  }
-
   return {
     mapContainerRef,
     viewState,
-    toggleTrainLayer,
-    getDisplayLayer,
+    mapRef,
   }
 }
