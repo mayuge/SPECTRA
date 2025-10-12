@@ -5,8 +5,8 @@ export const useLayerControlApp = () => {
 
   // UIで使うtoggle関数
   const toggleTrainLayer = () => {
-    toggleDisplayLayer("trainLine")
-    toggleDisplayLayer("train")
+    toggleDisplayLayer("base-train-line-layer")
+    toggleDisplayLayer("base-train-station-layer")
   }
 
   return {

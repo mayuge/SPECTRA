@@ -2,22 +2,26 @@ import { create } from "zustand"
 import type { IDisplayLayerState } from "@/domain/interfaces/IDisplayLayerState"
 
 const useDisplayLayerStore = create<IDisplayLayerState>((set, get) => ({
+  //レイヤーとidを一致させること
   layersObj: {
-    osm: true,
-    satellite: false,
-    floodHazard: true,
-    train: true,
-    plateau: false,
-    trainLine: true,
+    "base-train-station-layer": true,
+    "base-train-line-layer": true,
   },
-  toggleDisplayLayer: (DisplayLayerName) =>
+  toggleDisplayLayer: (name) =>
     set((state) => ({
       layersObj: {
         ...state.layersObj,
-        [DisplayLayerName]: !state.layersObj[DisplayLayerName],
+        [name]: !(state.layersObj[name] ?? false),
       },
     })),
-  getDisplayLayer: (DisplayLayerName) => get().layersObj[DisplayLayerName],
+  addDisplayLayer: (name, visible = true) =>
+    set((state) => ({
+      layersObj: {
+        ...state.layersObj,
+        [name]: visible,
+      },
+    })),
+  getDisplayLayer: (name) => get().layersObj[name],
 }))
 
 export default useDisplayLayerStore

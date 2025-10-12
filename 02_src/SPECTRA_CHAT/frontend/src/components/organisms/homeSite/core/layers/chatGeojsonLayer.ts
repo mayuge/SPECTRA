@@ -5,6 +5,7 @@ import maplibregl, {
   GeoJSONSourceSpecification,
 } from "maplibre-gl"
 import useGeojsonStateStore from "@/infrastructure/stores/useGeojsonStore"
+import useDisplayLayerStore from "@/infrastructure/stores/useDisplayLayerStore"
 import type { Feature, FeatureCollection, Geometry } from "geojson"
 import bbox from "@turf/bbox"
 
@@ -31,6 +32,8 @@ export function addAllGeojsonLayers(map: maplibregl.Map) {
         data: geojson,
       }
       map.addSource(sourceId, source)
+      //displayLayerStoreに登録
+      useDisplayLayerStore.getState().addDisplayLayer(sourceId, true)
     } else {
       const existingSource = map.getSource(sourceId) as maplibregl.GeoJSONSource
       existingSource.setData(geojson)

@@ -1,8 +1,6 @@
 export interface IDisplayLayerState {
-  layersObj: {
-    train: boolean
-    trainLine: boolean
-  }
-  toggleDisplayLayer: (DisplayLayerName: keyof IDisplayLayerState["layersObj"]) => void
-  getDisplayLayer: (DisplayLayerName: keyof IDisplayLayerState["layersObj"]) => boolean
+  layersObj: Record<string, boolean>
+  toggleDisplayLayer: (name: string) => void
+  addDisplayLayer: (name: string, visible?: boolean) => void
+  getDisplayLayer: (name: string) => boolean | undefined
 }

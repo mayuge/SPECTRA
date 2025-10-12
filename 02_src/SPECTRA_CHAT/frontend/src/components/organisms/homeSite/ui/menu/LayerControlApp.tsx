@@ -13,27 +13,27 @@ const LayerControlApp: React.FC = () => {
 
       <div className="flex items-center gap-2">
         <Button
-          variant={getDisplayLayer("train") ? "btn-light" : "btn-dark"}
+          variant={getDisplayLayer("base-train-station-layer") ? "btn-light" : "btn-dark"}
           size="small"
           shape="circle"
           iconLeft="train"
-          text={getDisplayLayer("train") ? "鉄道" : ""}
+          text={getDisplayLayer("base-train-station-layer") ? "鉄道" : ""}
           onClick={toggleTrainLayer}
         />
         <Button
-          variant={getDisplayLayer("train") ? "btn-light" : "btn-dark"}
+          variant={getDisplayLayer("base-train-station-layer") ? "btn-light" : "btn-dark"}
           size="small"
           shape="circle"
           iconLeft="flood"
-          text={getDisplayLayer("train") ? "浸水想定" : ""}
+          text={getDisplayLayer("base-train-station-layer") ? "浸水想定" : ""}
           onClick={toggleTrainLayer}
         />
         <Button
-          variant={getDisplayLayer("train") ? "btn-light" : "btn-dark"}
+          variant={getDisplayLayer("base-train-station-layer") ? "btn-light" : "btn-dark"}
           size="small"
           shape="circle"
           iconLeft="maps_home_work"
-          text={getDisplayLayer("train") ? "用途地域" : ""}
+          text={getDisplayLayer("base-train-station-layer") ? "用途地域" : ""}
           onClick={toggleTrainLayer}
         />
       </div>

@@ -22,16 +22,17 @@ const INITIAL_VIEW_STATE = {
   maxPitch: 85,
   bearing: 0,
   maxZoom: 20,
-  minZoom: 6,
+  minZoom: 5,
 }
 
 export const useMapApp = () => {
   const mapContainerRef = useRef<HTMLDivElement | null>(null)
   const mapRef = useRef<maplibregl.Map | null>(null)
   const [viewState, setViewState] = useState(INITIAL_VIEW_STATE)
-  const { getDisplayLayer } = useDisplayLayerStore()
-  const trainLineVisible = getDisplayLayer("trainLine")
-  const trainVisible = getDisplayLayer("train")
+
+  // ✅ displayLayerStore を監視
+  const displayLayers = useDisplayLayerStore((state) => state.layersObj)
+
   useEffect(() => {
     if (mapRef.current) return
     if (!mapContainerRef.current) return
@@ -52,6 +53,7 @@ export const useMapApp = () => {
     })
     mapRef.current = map
 
+    // styleロード完了後
     map.on("style.load", () => {
       if (!map.getSource("terrain")) {
         map.addSource("terrain", terrainSource)
@@ -62,6 +64,7 @@ export const useMapApp = () => {
       )
     })
 
+    // 標準コントロール類
     map.addControl(
       new maplibregl.NavigationControl({ showCompass: true, showZoom: true, visualizePitch: true }),
       "top-right"
@@ -87,10 +90,10 @@ export const useMapApp = () => {
       }) as unknown as maplibregl.IControl,
       "top-right"
     )
-
     map.addControl(new maplibregl.FullscreenControl(), "top-right")
     map.addControl(new maplibregl.ScaleControl({ maxWidth: 100, unit: "metric" }), "bottom-right")
 
+    // viewState更新
     map.on("move", () => {
       const center = map.getCenter()
       setViewState({
@@ -105,40 +108,26 @@ export const useMapApp = () => {
       })
     })
 
+    // レイヤー読み込み
     const loadLayers = async () => {
+      await addAllGeojsonLayers(map)
       await addTrainLineLayer(map)
       await addTrainStationLayer(map)
-      await addAllGeojsonLayers(map)
     }
     loadLayers()
   }, [])
 
-  // trainLineVisibleの変化でレイヤの表示/非表示を切り替える
+  // ✅ displayStore の変更を map に反映
   useEffect(() => {
     const map = mapRef.current
     if (!map) return
-    if (!mapContainerRef.current) return
 
-    if (!map.getLayer("base-train-line-layer")) return
-
-    map.setLayoutProperty(
-      "base-train-line-layer",
-      "visibility",
-      trainLineVisible ? "visible" : "none"
-    )
-  }, [trainLineVisible])
-
-  useEffect(() => {
-    const map = mapRef.current
-    if (!map) return
-    if (!map.getLayer("base-train-station-layer")) return
-
-    map.setLayoutProperty(
-      "base-train-station-layer",
-      "visibility",
-      trainVisible ? "visible" : "none"
-    )
-  }, [trainVisible])
+    Object.entries(displayLayers).forEach(([layerId, visible]) => {
+      if (map.getLayer(layerId)) {
+        map.setLayoutProperty(layerId, "visibility", visible ? "visible" : "none")
+      }
+    })
+  }, [displayLayers])
 
   return {
     mapContainerRef,
