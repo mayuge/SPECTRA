@@ -1,6 +1,23 @@
 {
 	"version": 8,
-	"metadata": { "maputnik:renderer": "mlgljs" },
+	"name": "KeitaOhmuro",
+	"metadata": {
+		"mapbox:autocomposite": false,
+		"mapbox:groups": {
+			"1444849242106.713": { "collapsed": false, "name": "Places" },
+			"1444849334699.1902": { "collapsed": true, "name": "Bridges" },
+			"1444849345966.4436": { "collapsed": false, "name": "Roads" },
+			"1444849354174.1904": { "collapsed": true, "name": "Tunnels" },
+			"1444849364238.8171": { "collapsed": false, "name": "Buildings" },
+			"1444849382550.77": { "collapsed": false, "name": "Water" },
+			"1444849388993.3071": { "collapsed": false, "name": "Land" }
+		},
+		"mapbox:type": "template",
+		"openmaptiles:mapbox:owner": "openmaptiles",
+		"openmaptiles:mapbox:source:url": "mapbox://openmaptiles.4qljc88t",
+		"openmaptiles:version": "3.x",
+		"maputnik:renderer": "mbgljs"
+	},
 	"sources": {
 		"osm": {
 			"type": "vector",
@@ -10,10 +27,18 @@
 		"openmaptiles": {
 			"type": "vector",
 			"url": "https://tiles.openfreemap.org/planet"
+		},
+		"takeshima": {
+			"type": "vector",
+			"url": "https://tile.openstreetmap.jp/data/takeshima.json"
+		},
+		"hoppo": {
+			"type": "vector",
+			"url": "https://tile.openstreetmap.jp/data/hoppo.json"
 		}
 	},
 	"sprite": "https://protomaps.github.io/basemaps-assets/sprites/v4/light",
-	"glyphs": "https://glyphs.geolonia.com/{fontstack}/{range}.pbf",
+	"glyphs": "https://tile.openstreetmap.jp/fonts/{fontstack}/{range}.pbf",
 	"layers": [
 		{
 			"id": "background",
@@ -5405,6 +5430,89 @@
 				"text-color": "#a3a3a3",
 				"text-halo-color": "#e2dfda",
 				"text-halo-width": 1
+			}
+		},
+		{
+			"id": "island-hoppo",
+			"type": "fill",
+			"metadata": { "mapbox:group": "1444849388993.3071" },
+			"source": "hoppo",
+			"source-layer": "island",
+			"minzoom": 0,
+			"layout": { "visibility": "visible" },
+			"paint": { "fill-color": "#fff", "fill-opacity": 1 }
+		},
+		{
+			"id": "island-hoppo-name",
+			"type": "symbol",
+			"source": "hoppo",
+			"source-layer": "island",
+			"layout": {
+				"text-field": "{name}",
+				"text-size": {
+					"stops": [
+						[10, 14],
+						[15, 24]
+					]
+				},
+				"visibility": "visible"
+			},
+			"paint": {
+				"text-color": "#333",
+				"text-halo-color": "rgba(255, 255, 255, 0.8)",
+				"text-halo-width": 1.2
+			}
+		},
+		{
+			"id": "island-takeshima",
+			"type": "fill",
+			"metadata": { "mapbox:group": "1444849388993.3071" },
+			"source": "takeshima",
+			"source-layer": "island",
+			"minzoom": 0,
+			"layout": { "visibility": "visible" },
+			"paint": { "fill-color": "#fff", "fill-opacity": 1 }
+		},
+		{
+			"id": "island-takeshima-name",
+			"type": "symbol",
+			"source": "takeshima",
+			"source-layer": "island",
+			"layout": {
+				"text-field": "{name}",
+				"text-size": {
+					"stops": [
+						[10, 14],
+						[15, 24]
+					]
+				},
+				"visibility": "visible"
+			},
+			"paint": {
+				"text-color": "#333",
+				"text-halo-color": "rgba(255, 255, 255, 0.8)",
+				"text-halo-width": 1.2
+			}
+		},
+		{
+			"id": "island-takeshima-poi",
+			"type": "symbol",
+			"source": "takeshima",
+			"source-layer": "island_poi",
+			"layout": {
+				"text-field": "{name}",
+				"text-font": ["migu2m-regular"],
+				"text-size": {
+					"stops": [
+						[10, 14],
+						[15, 24]
+					]
+				}
+			},
+			"paint": {
+				"text-color": "#333",
+				"text-halo-color": "rgba(255, 255, 255, 0.8)",
+				"text-halo-width": 1.2
 			}
 		}
 	],
