@@ -53,7 +53,7 @@ const ChatList: React.FC<ChatListProps> = ({ chatList }) => {
               >
                 <Button
                   variant="btn-text-white"
-                  iconLeft={getDisplayLayer(layerId) ? "visibility" : "visibility_off"}
+                  iconLeft={getDisplayLayer(layerId) === false ? "visibility_off" : "visibility"}
                   size="mini"
                 />
                 <TextLabel text="表示切替" size="small" isBlack={false} />

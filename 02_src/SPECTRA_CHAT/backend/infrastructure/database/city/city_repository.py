@@ -25,7 +25,7 @@ class CityRepository:
         query = """
         SELECT jsonb_build_object(
         'type', 'Feature',
-        'geometry', ST_AsGeoJSON(ST_Simplify(geometry, 0.001))::jsonb, -- 0.001度 ≈ 100m 単位で単純化
+        'geometry', ST_AsGeoJSON(geometry)::jsonb,
         'properties', to_jsonb(row) - 'geometry'
         ) AS geojson
         FROM n03_20250101 row
