@@ -12,6 +12,8 @@ import { terrainSource } from "@/components/organisms/homeSite/core/layers/terra
 import { addTrainLineLayer } from "@/components/organisms/homeSite/core/layers/baseTrainLineLayer"
 import { addTrainStationLayer } from "@/components/organisms/homeSite/core/layers/baseTrainStationLayer"
 import { addAllGeojsonLayers } from "@/components/organisms/homeSite/core/layers/chatGeojsonLayer"
+import { addHelloCycleStationLayer } from "@/components/organisms/homeSite/core/layers/helloCycleStationLayer"
+import { addDocomoBikeShareStationLayer } from "@/components/organisms/homeSite/core/layers/docomoBikeShareStationLayer"
 import useDisplayLayerStore from "@/infrastructure/stores/useDisplayLayerStore"
 
 const INITIAL_VIEW_STATE = {
@@ -113,6 +115,8 @@ export const useMapApp = () => {
       await addAllGeojsonLayers(map)
       await addTrainLineLayer(map)
       await addTrainStationLayer(map)
+      await addHelloCycleStationLayer(map)
+      await addDocomoBikeShareStationLayer(map)
     }
     loadLayers()
   }, [])

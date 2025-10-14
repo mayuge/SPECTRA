@@ -6,6 +6,8 @@ const useDisplayLayerStore = create<IDisplayLayerState>((set, get) => ({
   layersObj: {
     "base-train-station-layer": true,
     "base-train-line-layer": true,
+    "hello-cycle-station-layer": true,
+    "docomo-bike-share-station-layer": true,
   },
   toggleDisplayLayer: (name) =>
     set((state) => ({

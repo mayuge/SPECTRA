@@ -8,9 +8,14 @@ export const useLayerControlApp = () => {
     toggleDisplayLayer("base-train-line-layer")
     toggleDisplayLayer("base-train-station-layer")
   }
+  const toggleCycleLayer = () => {
+    toggleDisplayLayer("hello-cycle-station-layer")
+    toggleDisplayLayer("docomo-bike-share-station-layer")
+  }
 
   return {
     toggleTrainLayer,
+    toggleCycleLayer,
     getDisplayLayer,
   }
 }
