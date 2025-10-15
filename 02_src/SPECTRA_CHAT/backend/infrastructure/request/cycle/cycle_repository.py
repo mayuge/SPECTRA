@@ -3,10 +3,6 @@ import httpx
 
 class CycleRepository:
     async def get_hello_cycle_port_status(self, request: Request):
-        """
-        HELLO CYCLING のステーション情報とステータスを統合して
-        GeoJSON形式で返す。
-        """
         info_url = "https://api-public.odpt.org/api/v4/gbfs/hellocycling/station_information.json"
         status_url = "https://api-public.odpt.org/api/v4/gbfs/hellocycling/station_status.json"
 
