@@ -13,6 +13,10 @@ async def get_all_stations(request: Request):
     """全ての駅情報を取得します。"""
     return await train_repository.get_all_stations(request)
 
+@router.get("/train/station/buffer/{meter}")
+async def get_all_stations_buffer(meter: int, request: Request):
+    """駅の半径メートル圏内を取得します。単位がkmのときはmeterに1000をかけた値を入れてください。"""
+    return await train_repository.get_all_stations_buffer(meter, request)
 
 @router.get("/train/station/{station_name}")
 async def get_station_by_name(station_name: str, request: Request):
