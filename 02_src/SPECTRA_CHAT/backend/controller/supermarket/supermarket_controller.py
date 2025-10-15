@@ -10,6 +10,6 @@ async def get_all_supermarkets(request: Request):
     return await supermarket_repository.get_all_supermarkets(request)
 
 @router.get("/supermarket/buffer/{meter}")
-async def get_supermarkets_with_buffer(meter: int, request: Request):
+async def get_all_supermarkets_buffer(meter: int, request: Request):
     """スーパーマーケットの半径メートル圏内を表示 単位がkmのときはmeterに1000をかけた値を入れてください。"""
-    return await supermarket_repository.get_supermarkets_with_buffer(meter, request)
+    return await supermarket_repository.get_all_supermarkets_buffer(meter, request)
