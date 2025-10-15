@@ -11,6 +11,7 @@ from controller.chat.chat_controller import router as chat_router
 from controller.train.train_controller import router as train_router
 from controller.city.city_controller import router as city_router
 from controller.cycle.cycle_controller import router as cycle_router
+from controller.osm.osm_controller import router as osm_router
 
 app = FastAPI()
 
@@ -51,6 +52,7 @@ app.include_router(train_router)
 app.include_router(city_router)
 app.include_router(chat_router)
 app.include_router(cycle_router)
+app.include_router(osm_router)
 
 mcp = FastApiMCP(app)
 mcp.mount()

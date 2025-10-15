@@ -1,0 +1,4268 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.8 e802775f",
+  "osm3s": {
+    "timestamp_osm_base": "2025-10-15T12:25:19Z",
+    "timestamp_areas_base": "2025-10-15T04:02:15Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 301389167,
+      "lat": 35.3945151,
+      "lon": 136.2901283,
+      "tags": {
+        "name": "酒道楽長浜インター店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 413406068,
+      "lat": 35.385926,
+      "lon": 136.3638943,
+      "tags": {
+        "name": "平和堂フレンドマート山東店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 477197827,
+      "lat": 35.3387196,
+      "lon": 136.2940448,
+      "tags": {
+        "name": "フタバヤ近江店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 506041281,
+      "lat": 35.3860098,
+      "lon": 136.2724978,
+      "tags": {
+        "name": "ダイヤサービス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 864388353,
+      "lat": 35.2437874,
+      "lon": 136.2499219,
+      "tags": {
+        "name": "平和堂/ Viva City mall",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1833383034,
+      "lat": 35.3276753,
+      "lon": 136.0213042,
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1912843936,
+      "lat": 35.2792004,
+      "lon": 136.2445337,
+      "tags": {
+        "brand": "ベイシア",
+        "brand:en": "Beisia",
+        "brand:ja": "ベイシア",
+        "brand:wikidata": "Q11336776",
+        "level": "0",
+        "name": "ベイシア",
+        "name:en": "Beisia",
+        "name:ja": "ベイシア",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1915053907,
+      "lat": 35.03664,
+      "lon": 135.9817847,
+      "tags": {
+        "name": "アルプラザ栗東",
+        "shop": "supermarket",
+        "wikidata": "Q17213493"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1952208934,
+      "lat": 35.0009241,
+      "lon": 135.8888011,
+      "tags": {
+        "addr:postcode": "520-0818",
+        "addr:street": "滋賀県大津市西の庄20番1号",
+        "branch": "大津西の庄店",
+        "name": "フレンドマート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2764140946,
+      "lat": 35.0256857,
+      "lon": 135.8627895,
+      "tags": {
+        "brand": "業務スーパー",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja_rm": "Gyomu Supa",
+        "operator": "神戸物産",
+        "shop": "supermarket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2924329758,
+      "lat": 34.9853428,
+      "lon": 135.9095407,
+      "tags": {
+        "name": "アヤハディオ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2965564533,
+      "lat": 35.148198,
+      "lon": 136.13464,
+      "tags": {
+        "branch": "安土店",
+        "name": "(株)平和堂フレンドマート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3229350902,
+      "lat": 35.1277515,
+      "lon": 136.1053285,
+      "tags": {
+        "name": "百均-seria",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3229350909,
+      "lat": 35.1248058,
+      "lon": 136.1148456,
+      "tags": {
+        "name": "ファミリーマート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3240577475,
+      "lat": 35.1205284,
+      "lon": 136.0944044,
+      "tags": {
+        "branch": "近江八幡店",
+        "name": "丸善",
+        "name:en": "Maruzen Omihachiman store",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3296106275,
+      "lat": 35.0303666,
+      "lon": 135.943084,
+      "tags": {
+        "name": "フレンドマート 上笠店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3730033661,
+      "lat": 35.1192832,
+      "lon": 135.9156311,
+      "tags": {
+        "name": "アルプラザ平和堂 堅田店",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3730049374,
+      "lat": 35.0625463,
+      "lon": 136.1886808,
+      "tags": {
+        "name": "ハズイ",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3846167399,
+      "lat": 35.0258073,
+      "lon": 135.9559948,
+      "tags": {
+        "name": "セブンイレブン 草津野村１丁目店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3846174102,
+      "lat": 35.0432807,
+      "lon": 135.9605178,
+      "tags": {
+        "name": "ファミリーマート 草津駒井沢店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3947007924,
+      "lat": 35.0213084,
+      "lon": 135.9465771,
+      "tags": {
+        "name": "ハズイ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4228956222,
+      "lat": 35.0666488,
+      "lon": 135.9948194,
+      "tags": {
+        "addr:city": "守山市",
+        "addr:province": "滋賀県",
+        "addr:quarter": "播磨田町",
+        "name": "モリーブ",
+        "name:en": "Molly",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4239035089,
+      "lat": 34.9776965,
+      "lon": 135.9093027,
+      "tags": {
+        "name": "フレンドマート",
+        "operator": "平和堂",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4275421690,
+      "lat": 35.0434224,
+      "lon": 135.8619324,
+      "tags": {
+        "addr:housenumber": "大津市柳川2丁目6-2",
+        "name": "フレンドマート大津京店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4282131203,
+      "lat": 35.0738858,
+      "lon": 135.9933643,
+      "tags": {
+        "name": "フレンドマート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4292165484,
+      "lat": 35.1121236,
+      "lon": 135.9520224,
+      "tags": {
+        "brand": "ライフ",
+        "brand:en": "Life",
+        "brand:ja": "ライフ",
+        "brand:wikidata": "Q11346476",
+        "name": "ライフ",
+        "name:en": "Life",
+        "name:ja": "ライフ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4349968789,
+      "lat": 35.0683511,
+      "lon": 136.017877,
+      "tags": {
+        "name": "アクロスプラザ野洲",
+        "name:en": "Across Plaza",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4372849193,
+      "lat": 35.0202867,
+      "lon": 136.0042305,
+      "tags": {
+        "addr:housenumber": "三丁目2-18",
+        "addr:postcode": "520-3015",
+        "branch": "安養寺店",
+        "branch:ja": "安養寺店",
+        "name": "スター",
+        "name:ja": "スター",
+        "opening_hours": "Mo-Su 08:00-23:00",
+        "phone": "0775548211",
+        "shop": "supermarket",
+        "website": "http://star.co.jp"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4607178499,
+      "lat": 35.0223216,
+      "lon": 135.9589661,
+      "tags": {
+        "branch": "& 酒のケント 草津駅前店",
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q11590183",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4613240037,
+      "lat": 35.0649112,
+      "lon": 136.0266954,
+      "tags": {
+        "name": "平和堂",
+        "name:en": "Heiwado",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4652687348,
+      "lat": 35.0885044,
+      "lon": 136.2476245,
+      "tags": {
+        "name": "マックスバリュ・八日市店",
+        "opening_hours": "24/7",
+        "phone": "0748252835",
+        "shop": "supermarket",
+        "website": "https://www.mv-chubu.co.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4875755754,
+      "lat": 34.9862468,
+      "lon": 136.1266613,
+      "tags": {
+        "brand": "ベイシア",
+        "brand:en": "Beisia",
+        "brand:ja": "ベイシア",
+        "brand:wikidata": "Q11336776",
+        "brand:wikipedia": "ja:ベイシア",
+        "name": "ベイシア",
+        "name:en": "Beisia",
+        "name:ja": "ベイシア",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4897239922,
+      "lat": 35.4050537,
+      "lon": 136.038258,
+      "tags": {
+        "name": "平和堂",
+        "name:ja": "平和堂",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4899711463,
+      "lat": 35.0215106,
+      "lon": 135.9617456,
+      "tags": {
+        "branch": "草津店",
+        "level": "0",
+        "name": "阪急OASIS",
+        "opening_hours": "09:30-22:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4967003677,
+      "lat": 34.9807777,
+      "lon": 136.1672344,
+      "tags": {
+        "name": "Ponto br",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5033321522,
+      "lat": 35.0719268,
+      "lon": 135.9859903,
+      "tags": {
+        "addr:housenumber": "1348",
+        "addr:postcode": "524-0012",
+        "addr:street": "草津守山線",
+        "branch": "守山店",
+        "branch:en": "moriyama",
+        "name": "ラ・ム",
+        "name:en": "ra.mu",
+        "opening_hours": "24/7",
+        "phone": "0775141520",
+        "shop": "supermarket",
+        "website": "https://dki-s.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5049920924,
+      "lat": 35.1087462,
+      "lon": 135.893884,
+      "tags": {
+        "name": "フレスコ 仰木の里店",
+        "name:ja": "フレスコ 仰木の里店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5138774991,
+      "lat": 35.0686573,
+      "lon": 136.0174408,
+      "tags": {
+        "brand": "西友",
+        "brand:en": "Seiyu",
+        "brand:ja": "西友",
+        "brand:wikidata": "Q3108542",
+        "brand:wikipedia": "en:Seiyu Group",
+        "name": "西友",
+        "name:en": "Seiyu",
+        "name:ja": "西友",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5338386822,
+      "lat": 35.1019046,
+      "lon": 136.0124727,
+      "tags": {
+        "name": "フレンドマート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5502981241,
+      "lat": 35.3800262,
+      "lon": 136.2679389,
+      "tags": {
+        "name": "八百利本店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5504784341,
+      "lat": 35.3813026,
+      "lon": 136.2693326,
+      "tags": {
+        "name": "一富士",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5504784342,
+      "lat": 35.3810194,
+      "lon": 136.2699577,
+      "tags": {
+        "name": "きたかぜ食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5504784348,
+      "lat": 35.380264,
+      "lon": 136.2711931,
+      "tags": {
+        "name": "井上食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5507517545,
+      "lat": 35.3735292,
+      "lon": 136.2766676,
+      "tags": {
+        "name": "フレンドマート 長浜平方店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5507524626,
+      "lat": 35.3760042,
+      "lon": 136.2701298,
+      "tags": {
+        "name": "外村商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5508089245,
+      "lat": 35.3252535,
+      "lon": 136.0248727,
+      "tags": {
+        "name": "スーパーマーケット バロー 安曇川店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5517520361,
+      "lat": 35.5023567,
+      "lon": 136.2295669,
+      "tags": {
+        "name": "丸善食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5740067621,
+      "lat": 35.0227146,
+      "lon": 135.9633568,
+      "tags": {
+        "name": "前浜",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5808587053,
+      "lat": 35.0012793,
+      "lon": 135.880769,
+      "tags": {
+        "name": "フレスコ 膳所駅前店",
+        "name:en": "Fresco",
+        "phone": "+81 77 510 1851",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5809940559,
+      "lat": 35.0028426,
+      "lon": 135.8852563,
+      "tags": {
+        "branch": "大津店",
+        "name": "A-プライス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5811708656,
+      "lat": 35.0081326,
+      "lon": 135.8616482,
+      "tags": {
+        "name": "松楽食品",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5811708753,
+      "lat": 35.0085291,
+      "lon": 135.8643855,
+      "tags": {
+        "name": "フレスコ 大津店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5811709154,
+      "lat": 35.0087212,
+      "lon": 135.8606737,
+      "tags": {
+        "branch": "大津なかまち店",
+        "name": "フレンドマート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5814390760,
+      "lat": 34.9953617,
+      "lon": 135.8933594,
+      "tags": {
+        "branch": "膳所店",
+        "name": "フレスコ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5814391156,
+      "lat": 35.0049823,
+      "lon": 135.8833612,
+      "tags": {
+        "branch": "膳所店",
+        "brand": "マックスバリュ",
+        "brand:en": "Maxvalu Tokai",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q1960109",
+        "brand:wikipedia": "en:MaxValu",
+        "name": "マックスバリュ",
+        "name:en": "Maxvalu Tokai",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5820134454,
+      "lat": 35.0056789,
+      "lon": 135.8611926,
+      "tags": {
+        "name": "石川食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5822257562,
+      "lat": 35.0080248,
+      "lon": 135.8652483,
+      "tags": {
+        "name": "千丸屋",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5822257760,
+      "lat": 35.008239,
+      "lon": 135.8672109,
+      "tags": {
+        "name": "豆藤本店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5822258203,
+      "lat": 35.023847,
+      "lon": 135.8627109,
+      "tags": {
+        "name": "スーパーマーケット パロー 茶が崎店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5824931859,
+      "lat": 35.0477592,
+      "lon": 135.8640134,
+      "tags": {
+        "name": "ハッピーテラダ 大津唐崎店",
+        "name:en": "Happy Terada",
+        "opening_hours": "Mo-Su 09:30-21:00",
+        "phone": "+81 77 577 2855",
+        "shop": "supermarket",
+        "website": "http://happyterada.co.jp"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5829190585,
+      "lat": 35.2246194,
+      "lon": 136.2396664,
+      "tags": {
+        "addr:street": "国道8号",
+        "name:en": "Trial megacentre",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5835900292,
+      "lat": 35.1039122,
+      "lon": 135.9057596,
+      "tags": {
+        "name": "サンディ 大津衣川店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5835900389,
+      "lat": 35.10547,
+      "lon": 135.9056341,
+      "tags": {
+        "name": "コープ かたた店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5835901487,
+      "lat": 35.1063385,
+      "lon": 135.9076123,
+      "tags": {
+        "name": "生鮮館げんさん 堅田店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5839285109,
+      "lat": 35.1195399,
+      "lon": 135.9153324,
+      "tags": {
+        "name": "ジュピター",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5839285285,
+      "lat": 35.0963615,
+      "lon": 135.8998224,
+      "tags": {
+        "name": "池見商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5839497703,
+      "lat": 35.1358927,
+      "lon": 135.92251,
+      "tags": {
+        "branch": "真野店",
+        "brand": "バロー",
+        "brand:en": "Valor",
+        "brand:ja": "バロー",
+        "brand:wikidata": "Q11328346",
+        "name": "バロー",
+        "name:en": "Valor",
+        "name:ja": "バロー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5839502487,
+      "lat": 35.1383733,
+      "lon": 135.9173291,
+      "tags": {
+        "name": "フレスコ 向陽店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5847973886,
+      "lat": 35.1122098,
+      "lon": 135.9523188,
+      "tags": {
+        "branch": "守山水保店",
+        "name": "フレンドマート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5847973897,
+      "lat": 35.1031271,
+      "lon": 135.9522852,
+      "tags": {
+        "name": "中島食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5847981087,
+      "lat": 35.1062865,
+      "lon": 135.9533936,
+      "tags": {
+        "branch": "守山水保店",
+        "name": "スター",
+        "name:en": "Star",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5847983785,
+      "lat": 35.0910028,
+      "lon": 135.9714171,
+      "tags": {
+        "name": "和田食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5850818700,
+      "lat": 35.053587,
+      "lon": 135.9782404,
+      "tags": {
+        "branch": "守山店",
+        "name": "丸善スーパー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5850818704,
+      "lat": 35.0545336,
+      "lon": 135.976893,
+      "tags": {
+        "branch": "滋賀守山店",
+        "name": "アミカ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5850831500,
+      "lat": 35.0668969,
+      "lon": 135.9946122,
+      "tags": {
+        "name": "アルプラザ 守山",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5850849605,
+      "lat": 35.0561768,
+      "lon": 135.9943801,
+      "tags": {
+        "name": "えんどう食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5850857285,
+      "lat": 35.0528682,
+      "lon": 135.9850472,
+      "tags": {
+        "name": "サンディ 守山店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5850859008,
+      "lat": 35.0598315,
+      "lon": 135.9941651,
+      "tags": {
+        "name": "魔法のパスタ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5853329387,
+      "lat": 35.0773693,
+      "lon": 135.9986672,
+      "tags": {
+        "name": "スーパーマーケット バロー 守山小島店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5855892840,
+      "lat": 35.0772032,
+      "lon": 135.9668156,
+      "tags": {
+        "name": "高岡食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5855908490,
+      "lat": 35.0715394,
+      "lon": 135.9798954,
+      "tags": {
+        "name": "にくるま",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5857913991,
+      "lat": 35.0355307,
+      "lon": 135.9347184,
+      "tags": {
+        "name": "池田商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5860076794,
+      "lat": 35.0054163,
+      "lon": 135.924601,
+      "tags": {
+        "name": "松田食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5862959779,
+      "lat": 35.0999904,
+      "lon": 136.0721348,
+      "tags": {
+        "name": "よろずや",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5872885789,
+      "lat": 35.0081742,
+      "lon": 135.8648428,
+      "tags": {
+        "organic": "only",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5872949697,
+      "lat": 35.2755639,
+      "lon": 136.2636403,
+      "tags": {
+        "name": "宮崎商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5887259875,
+      "lat": 35.2436357,
+      "lon": 136.2491254,
+      "tags": {
+        "name": "げんさん",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5887281085,
+      "lat": 35.2400625,
+      "lon": 136.2569092,
+      "tags": {
+        "name": "フタバヤ 彦根店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5890368915,
+      "lat": 35.1688397,
+      "lon": 136.2085826,
+      "tags": {
+        "name": "Made in Brazil",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5892709000,
+      "lat": 35.2036556,
+      "lon": 136.2209425,
+      "tags": {
+        "addr:block_number": "256",
+        "addr:county": "犬上郡",
+        "addr:housenumber": "5",
+        "addr:neighbourhood": "高野瀬",
+        "addr:postcode": "529-1173",
+        "addr:province": "滋賀県",
+        "addr:quarter": "豊郷町",
+        "branch": "豊郷店",
+        "brand": "ドン・キホーテ",
+        "brand:en": "Don Quijote",
+        "brand:ja": "ドン・キホーテ",
+        "brand:wikidata": "Q1185381",
+        "name": "MEGAドン・キホーテ",
+        "name:en": "MEGA Don Quijote",
+        "name:ja": "MEGAドン・キホーテ",
+        "opening_hours": "24/7",
+        "phone": "+81-749-35-2147",
+        "shop": "supermarket",
+        "short_name": "MEGAドンキ",
+        "short_name:en": "MegaDonki",
+        "short_name:ja": "MEGAドンキ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5893801191,
+      "lat": 35.2245339,
+      "lon": 136.2255365,
+      "tags": {
+        "name": "みつや商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5895757189,
+      "lat": 35.2541391,
+      "lon": 136.2334478,
+      "tags": {
+        "name": "スーパーマーケット バロー 南彦根店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5895757209,
+      "lat": 35.2532115,
+      "lon": 136.239961,
+      "tags": {
+        "branch": "南彦根店",
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q105687460",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5895768085,
+      "lat": 35.2513505,
+      "lon": 136.2446561,
+      "tags": {
+        "name": "丸善スーパー 彦根店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5901193097,
+      "lat": 35.2633513,
+      "lon": 136.2434216,
+      "tags": {
+        "name": "Pマート サンペデック店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5905864996,
+      "lat": 35.1038546,
+      "lon": 136.1924925,
+      "tags": {
+        "name": "村栄",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5909029685,
+      "lat": 35.0945857,
+      "lon": 136.233247,
+      "tags": {
+        "name": "スキナ",
+        "name:en": "SkinaBrazil Imported shop",
+        "name:ja": "スキナブラジル輸入食品",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5911260331,
+      "lat": 35.1035998,
+      "lon": 136.2134991,
+      "tags": {
+        "name": "いしづち",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5911264093,
+      "lat": 35.1119295,
+      "lon": 136.2060316,
+      "tags": {
+        "name": "テニー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5915717995,
+      "lat": 35.0213398,
+      "lon": 136.2403912,
+      "tags": {
+        "name": "フレンドマート 日野店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5915731092,
+      "lat": 35.0708998,
+      "lon": 136.2710448,
+      "tags": {
+        "name": "今井商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6071973687,
+      "lat": 35.006607,
+      "lon": 135.9405087,
+      "tags": {
+        "name": "フレンドマート",
+        "name:ja": "フレンドマート南草津店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6108087785,
+      "lat": 35.1118377,
+      "lon": 136.0106916,
+      "tags": {
+        "name": "中主スーパー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6167648169,
+      "lat": 35.2712094,
+      "lon": 136.2689979,
+      "tags": {
+        "addr:block_number": "1",
+        "addr:city": "彦根市",
+        "addr:neighbourhood": "255",
+        "addr:postcode": "522-0007",
+        "addr:province": "滋賀県",
+        "addr:quarter": "古沢町",
+        "branch": "彦根",
+        "branch:en": "Hikone",
+        "name": "イオンザ．ビッグエクストラ",
+        "name:en": "AEON Big Extra",
+        "name:ja": "イオンザ．ビッグエクストラ",
+        "phone": "0749-21-3460",
+        "shop": "supermarket",
+        "website": "https://www.aeon.com/store/%E3%82%B6%E3%83%BB%E3%83%93%E3%83%83%E3%82%B0/%E3%82%B6%E3%83%BB%E3%83%93%E3%83%83%E3%82%B0%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%88%E3%83%A9%E5%BD%A6%E6%A0%B9%E5%BA%97/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7077784838,
+      "lat": 35.0677483,
+      "lon": 136.0221346,
+      "tags": {
+        "addr:block_number": "2199－4",
+        "addr:city": "野洲市",
+        "addr:province": "滋賀県",
+        "addr:suburb": "小篠原",
+        "name": "すまいる市",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7965555634,
+      "lat": 35.378186,
+      "lon": 136.2659302,
+      "tags": {
+        "name": "平和堂",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8324307457,
+      "lat": 35.1238882,
+      "lon": 135.946911,
+      "tags": {
+        "name": "TOKUYA",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9166575805,
+      "lat": 35.4630217,
+      "lon": 136.0387498,
+      "tags": {
+        "brand": "エーコープ",
+        "brand:en": "A-COOP",
+        "brand:ja": "エーコープ",
+        "brand:wikidata": "Q11291524",
+        "name": "エーコープ",
+        "name:en": "A-COOP",
+        "name:ja": "エーコープ",
+        "organic": "only",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9587061045,
+      "lat": 35.0304698,
+      "lon": 135.8649383,
+      "tags": {
+        "addr:block_number": "1",
+        "addr:city": "大津市",
+        "addr:neighbourhood": "1",
+        "addr:postcode": "520-0021",
+        "addr:province": "滋賀県",
+        "addr:quarter": "二本松",
+        "name": "マックスバリュ大津京店",
+        "opening_hours": "Mo-Su 7:00～23:00",
+        "operator": "マックスバリュ東海",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:electronic_purses": "yes",
+        "phone": "+81 77-521-1101",
+        "shop": "supermarket",
+        "website": "https://www.mv-tokai.co.jp/store/19575/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9816147548,
+      "lat": 35.3555678,
+      "lon": 136.0339138,
+      "tags": {
+        "name": "Aコープパネス新旭店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10033929706,
+      "lat": 35.0033872,
+      "lon": 135.8656019,
+      "tags": {
+        "name": "フレンドマート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11212235394,
+      "lat": 34.9991305,
+      "lon": 135.9392562,
+      "tags": {
+        "brand": "バロー",
+        "brand:en": "Valor",
+        "brand:ja": "バロー",
+        "brand:wikidata": "Q11328346",
+        "name": "バロー",
+        "name:en": "Valor",
+        "name:ja": "バロー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11932440848,
+      "lat": 34.9771884,
+      "lon": 135.9200797,
+      "tags": {
+        "check_date": "2024-05-25",
+        "name": "F-market",
+        "name:ja": "エフマーケット",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12378721453,
+      "lat": 35.1217957,
+      "lon": 136.1028479,
+      "tags": {
+        "branch": "近江八幡店",
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "operator": "イオンリテール",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12686814094,
+      "lat": 34.9814092,
+      "lon": 135.9096258,
+      "tags": {
+        "name": "Super Center TRIAL",
+        "name:ja": "スーパーセンタートライアル 滋賀大津店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12709714391,
+      "lat": 35.0046808,
+      "lon": 135.8792243,
+      "tags": {
+        "name": "フレンドマート大津テラス店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12709719990,
+      "lat": 34.994061,
+      "lon": 136.1074998,
+      "tags": {
+        "name": "ザビッグエクストラ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12709738390,
+      "lat": 34.9980607,
+      "lon": 135.9109024,
+      "tags": {
+        "name": "イオンスタイル草津店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12916345002,
+      "lat": 35.2722788,
+      "lon": 136.2619673,
+      "tags": {
+        "level": "-1",
+        "name": "平和堂",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 35972312,
+      "center": {
+        "lat": 35.3787831,
+        "lon": 136.2872033
+      },
+      "nodes": [
+        420456666,
+        12136942245,
+        420456667,
+        420456669,
+        508263742,
+        420456666
+      ],
+      "tags": {
+        "addr:block_number": "1200",
+        "addr:city": "長浜市",
+        "addr:neighbourhood": "宮司町",
+        "addr:postcode": "526-0831",
+        "addr:province": "滋賀県",
+        "alt_name:en": "Co-op",
+        "branch": "ながはま店",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "building": "yes",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 210930864,
+      "center": {
+        "lat": 35.4580642,
+        "lon": 136.2385201
+      },
+      "nodes": [
+        2209579728,
+        2209579730,
+        2209579822,
+        2209579801,
+        2209579831,
+        2209579748,
+        2209579728
+      ],
+      "tags": {
+        "building": "retail",
+        "building:levels": "1",
+        "name": "フレンドマート 湖北店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 240279209,
+      "center": {
+        "lat": 35.0210912,
+        "lon": 135.9624944
+      },
+      "nodes": [
+        2480147918,
+        2480147908,
+        2480147913,
+        5012183372,
+        5012183371,
+        5012183370,
+        5012183369,
+        5012183368,
+        5012183367,
+        2480147894,
+        2480147873,
+        2480147867,
+        2480147855,
+        2480147842,
+        2480147831,
+        5012183366,
+        5012183365,
+        2480147857,
+        2480147854,
+        5012183364,
+        2480147862,
+        2480147865,
+        2480147893,
+        2480147890,
+        5012183363,
+        5012183362,
+        2480147898,
+        13071858966,
+        2480147918
+      ],
+      "tags": {
+        "building": "retail",
+        "building:levels": "4",
+        "name": "平和堂",
+        "name:en": "Heiwado",
+        "shop": "supermarket",
+        "source": "GSI/KIBAN 2500;NARO",
+        "source_ref": "http://wiki.osm.org/wiki/GSI_KIBAN"
+      }
+    },
+    {
+      "type": "way",
+      "id": 243416800,
+      "center": {
+        "lat": 35.4797243,
+        "lon": 136.2306189
+      },
+      "nodes": [
+        2508302459,
+        2508302460,
+        2508302461,
+        2508302462,
+        2508302459
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "パワーズ 高月店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 243416809,
+      "center": {
+        "lat": 35.4813898,
+        "lon": 136.2298605
+      },
+      "nodes": [
+        2508302486,
+        2508302487,
+        2508302488,
+        2508302489,
+        10818472172,
+        2508302490,
+        2508302491,
+        2508302492,
+        2508302493,
+        2508302494,
+        2508302495,
+        2508302486
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "ザ・ビッグ 高月店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 243416813,
+      "center": {
+        "lat": 35.4823266,
+        "lon": 136.2293028
+      },
+      "nodes": [
+        2508302511,
+        2508302512,
+        2508302513,
+        2508302514,
+        2508302515,
+        2508302516,
+        2508302517,
+        2508302518,
+        2508302519,
+        2508302520,
+        2508302511
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "ユース 高月店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 245219301,
+      "center": {
+        "lat": 35.3969246,
+        "lon": 136.2895218
+      },
+      "nodes": [
+        2524523897,
+        2524523898,
+        2524523899,
+        2524523900,
+        2524523903,
+        2524523901,
+        2524523913,
+        2524523902,
+        2524523897
+      ],
+      "tags": {
+        "addr:block_number": "271-1",
+        "addr:city": "長浜市",
+        "addr:neighbourhood": "山階町",
+        "addr:postcode": "526-0847",
+        "addr:province": "滋賀県",
+        "branch": "長浜店",
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "building": "retail",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "phone": "0749-68-5500",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 247999576,
+      "center": {
+        "lat": 35.1303635,
+        "lon": 136.0958077
+      },
+      "nodes": [
+        2548431033,
+        2548431034,
+        2548431035,
+        2548431036,
+        2548431033
+      ],
+      "tags": {
+        "building": "retail",
+        "building:levels": "4",
+        "name": "アル・プラザ近江八幡",
+        "operator": "平和堂",
+        "shop": "supermarket",
+        "wikidata": "Q17220928"
+      }
+    },
+    {
+      "type": "way",
+      "id": 247999582,
+      "center": {
+        "lat": 34.9769358,
+        "lon": 136.1699799
+      },
+      "nodes": [
+        2548431100,
+        2646747437,
+        8302080209,
+        2646747481,
+        2646747801,
+        2548431101,
+        2548431102,
+        2548431103,
+        2548431104,
+        2548431105,
+        2548431106,
+        2548431107,
+        2610693053,
+        2646747728,
+        2548431108,
+        2548431109,
+        2548431110,
+        2610693046,
+        2548431111,
+        2548431112,
+        2548431113,
+        2548431114,
+        2548431115,
+        2548431116,
+        2646747692,
+        2548431100
+      ],
+      "tags": {
+        "addr:block_number": "566",
+        "addr:city": "甲賀市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "本綾野",
+        "addr:postcode": "528-0037",
+        "addr:province": "滋賀県",
+        "addr:quarter": "水口町",
+        "branch": "水口",
+        "branch:en": "Minakuchi",
+        "building": "retail",
+        "building:levels": "5",
+        "fax": "+81 748 62 7100",
+        "name": "アル・プラザ",
+        "name:en": "AL Plaza",
+        "name:ja": "アル・プラザ",
+        "opening_hours": "10:00-21:00",
+        "operator": "平和堂",
+        "phone": "0748-62-7101",
+        "shop": "supermarket",
+        "website": "http://www.alplaza-minakuchi.jp/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 248981493,
+      "center": {
+        "lat": 34.9650166,
+        "lon": 136.1676254
+      },
+      "nodes": [
+        2556871311,
+        2556871314,
+        2556871317,
+        2556871321,
+        2556871323,
+        2556871327,
+        2556871331,
+        2556871335,
+        2556871337,
+        2688784424,
+        2556871340,
+        2556871311
+      ],
+      "tags": {
+        "branch": "水口店",
+        "brand": "西友",
+        "brand:en": "Seiyu",
+        "brand:ja": "西友",
+        "brand:wikidata": "Q3108542",
+        "building": "retail",
+        "name": "西友",
+        "name:en": "Seiyu",
+        "name:ja": "西友",
+        "operator": "西友",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 250806697,
+      "center": {
+        "lat": 35.503662,
+        "lon": 136.2202745
+      },
+      "nodes": [
+        2571726558,
+        2571726559,
+        2571726560,
+        2571726561,
+        2571726562,
+        2571726563,
+        2571726558
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "平和堂木之本店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 255682750,
+      "center": {
+        "lat": 35.4257325,
+        "lon": 136.3111147
+      },
+      "nodes": [
+        2613532532,
+        2613532534,
+        2613532536,
+        2613532538,
+        2613532567,
+        2613532540,
+        2613532542,
+        2613532543,
+        2613532544,
+        2613532546,
+        2613532548,
+        2613532550,
+        2613532552,
+        2613532532
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "平和堂フレンドマート浅井店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 263261988,
+      "center": {
+        "lat": 34.9663734,
+        "lon": 136.1695299
+      },
+      "nodes": [
+        2688796423,
+        2688796424,
+        2688796425,
+        2688796426,
+        2688796427,
+        2688796428,
+        2688796429,
+        2688796430,
+        2688796423
+      ],
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:wikidata": "Q11590183",
+        "brand:wikipedia": "ja:神戸物産",
+        "building": "retail",
+        "name": "業務スーパー",
+        "name:en": "Gyōmu sūpā",
+        "name:ja": "業務スーパー",
+        "name:ja_rm": "Gyomu Supa",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 264571430,
+      "center": {
+        "lat": 34.9900012,
+        "lon": 135.9673168
+      },
+      "nodes": [
+        2702355197,
+        7101544530,
+        7101544529,
+        2702355198,
+        2702355199,
+        7101544543,
+        2702355200,
+        2702355201,
+        2702355202,
+        7101544533,
+        7101544544,
+        2702355203,
+        7101544531,
+        7101544532,
+        7101544542,
+        7101544541,
+        7101544540,
+        7101544539,
+        7101544538,
+        2702355204,
+        7101544545,
+        2702355197
+      ],
+      "tags": {
+        "addr:city": "草津市 (Kusatsu)",
+        "addr:postcode": "525-0045",
+        "building": "retail",
+        "name": "スター グリーンヒル店",
+        "name:en": "Star",
+        "note": "立命館大学BKCキャンパスから1番近くにあるスーパー。買い出しなどは、ここがおすすめ。",
+        "opening_hours": "08:00-23:00",
+        "phone": "077-561-7411",
+        "shop": "supermarket",
+        "source": "Bing,2012",
+        "website": "https://www.sstar.co.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 264572409,
+      "center": {
+        "lat": 34.9988759,
+        "lon": 135.9610686
+      },
+      "nodes": [
+        5328338928,
+        7042965431,
+        7042965430,
+        5328338926,
+        7042965426,
+        7042965427,
+        7042965425,
+        7042965424,
+        5328338924,
+        5328338925,
+        5328338933,
+        7042965428,
+        7042965429,
+        5299030771,
+        2702362874,
+        5299030773,
+        2702499641,
+        7042965435,
+        7042965433,
+        7042965432,
+        7042965434,
+        5328338932,
+        5328338928
+      ],
+      "tags": {
+        "addr:city": "草津市 (Kusatsu)",
+        "addr:postcode": "5250048",
+        "building": "retail",
+        "name": "フレンドマート 追分店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 264899321,
+      "center": {
+        "lat": 35.0027386,
+        "lon": 135.9488726
+      },
+      "nodes": [
+        2704002074,
+        6436437216,
+        2705494920,
+        7080101496,
+        7080101495,
+        7080101494,
+        2704002072,
+        7080101493,
+        7080101492,
+        2704002073,
+        7080101491,
+        7080101490,
+        7080101489,
+        7080101488,
+        2704002074
+      ],
+      "tags": {
+        "addr:city": "草津市",
+        "addr:postcode": "525-0059",
+        "branch": "南草津店",
+        "brand": "西友",
+        "brand:en": "Seiyu",
+        "brand:wikidata": "Q3108542",
+        "brand:wikipedia": "en:Seiyu Group",
+        "building": "retail",
+        "building:levels": "2",
+        "name": "西友",
+        "name:en": "Seiyu",
+        "name:ja": "西友",
+        "name:ja_rm": "Seiyu",
+        "phone": "+81 77 565 8666",
+        "shop": "supermarket",
+        "website": "https://www.seiyu.co.jp/shop/%E8%A5%BF%E5%8F%8B%E5%8D%97%E8%8D%89%E6%B4%A5%E5%BA%97/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 269376284,
+      "center": {
+        "lat": 34.9654552,
+        "lon": 136.1711353
+      },
+      "nodes": [
+        2746030250,
+        2746030252,
+        2746030253,
+        2746030255,
+        2746030257,
+        2746030259,
+        2746030250
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "スーパーハズイ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 270576953,
+      "center": {
+        "lat": 35.0745344,
+        "lon": 135.8782939
+      },
+      "nodes": [
+        2755982157,
+        2755982161,
+        2755982155,
+        2755982126,
+        2755982142,
+        2755982129,
+        2755982138,
+        2755982151,
+        2755982154,
+        2755982160,
+        2755982157
+      ],
+      "tags": {
+        "branch": "坂本店",
+        "building": "retail",
+        "name": "平和堂",
+        "name:en": "Heiwado",
+        "phone": "+81 77 578 3111",
+        "shop": "supermarket",
+        "source": "GSI/KIBAN 2500; NARO",
+        "website": "https://heiwado.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 310030253,
+      "center": {
+        "lat": 35.1172966,
+        "lon": 136.1066055
+      },
+      "nodes": [
+        3153871628,
+        3153871629,
+        3153871631,
+        3153871633,
+        3153871612,
+        3153877865,
+        3153871616,
+        3153871617,
+        3153871628
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ピアゴ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 315101401,
+      "center": {
+        "lat": 35.1615222,
+        "lon": 135.923113
+      },
+      "nodes": [
+        3211929689,
+        3211929690,
+        3211929694,
+        3211929693,
+        3211929689
+      ],
+      "tags": {
+        "name": "平和堂",
+        "shop": "supermarket",
+        "source": "GSI/KIBAN 2500; NARO"
+      }
+    },
+    {
+      "type": "way",
+      "id": 317754711,
+      "center": {
+        "lat": 35.1205853,
+        "lon": 136.0944112
+      },
+      "nodes": [
+        3240577471,
+        3240577482,
+        3240577487,
+        3240577481,
+        3240577471
+      ],
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 318823969,
+      "center": {
+        "lat": 35.0387658,
+        "lon": 136.0610891
+      },
+      "nodes": [
+        3252022248,
+        3252022244,
+        3252022245,
+        3252022249,
+        3252022248
+      ],
+      "tags": {
+        "name": "フレンドマート",
+        "shop": "supermarket",
+        "source": "bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 319085596,
+      "center": {
+        "lat": 34.9838807,
+        "lon": 135.9262559
+      },
+      "nodes": [
+        3255031940,
+        3255031941,
+        3255031942,
+        3255031960,
+        3255031959,
+        10006625381,
+        10006625382,
+        3255031958,
+        3255031943,
+        3255031951,
+        3255031952,
+        3255031940
+      ],
+      "tags": {
+        "branch": "瀬田店",
+        "brand": "ダイエー",
+        "brand:en": "daiei",
+        "brand:ja": "ダイエー",
+        "brand:wikidata": "Q11316644",
+        "building": "yes",
+        "name": "ダイエー",
+        "name:en": "Daiei",
+        "name:ja": "ダイエー",
+        "operator": "ダイエー",
+        "shop": "supermarket",
+        "website": "https://www.daiei.co.jp/stores/d0854/",
+        "wikipedia": "ja:イオン_(店舗ブランド)#フードスタイルストア"
+      }
+    },
+    {
+      "type": "way",
+      "id": 319104391,
+      "center": {
+        "lat": 34.9871928,
+        "lon": 135.9292378
+      },
+      "nodes": [
+        3255191312,
+        3255191313,
+        3255191314,
+        3255191315,
+        10870241062,
+        10870241063,
+        3255191316,
+        3255191317,
+        3255191318,
+        3255191319,
+        3255191320,
+        10870241028,
+        10870241046,
+        3255191321,
+        10870240960,
+        10870240958,
+        10870240956,
+        3255191312
+      ],
+      "tags": {
+        "branch": "瀬田店",
+        "building": "yes",
+        "name": "アル・プラザ",
+        "name:en": "AL. PLAZA",
+        "name:ja": "アル・プラザ",
+        "name:ja-Hira": "ある・ぷらざ",
+        "name:ja-Latn": "Aru puraza",
+        "operator": "平和堂",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 335758253,
+      "center": {
+        "lat": 34.9440172,
+        "lon": 135.908446
+      },
+      "nodes": [
+        3428661439,
+        3428661440,
+        3428661441,
+        3428661442,
+        3428661443,
+        3428661444,
+        3428661439
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フレンドマート南郷店",
+        "operator": "平和堂",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 339344510,
+      "center": {
+        "lat": 34.995352,
+        "lon": 135.9528424
+      },
+      "nodes": [
+        3465317931,
+        7095590788,
+        7095590789,
+        7095590790,
+        7095590791,
+        3465317932,
+        7095590795,
+        3465317933,
+        7095590794,
+        3465317934,
+        7095590793,
+        7095590792,
+        3465317931
+      ],
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q11590183",
+        "brand:wikipedia": "ja:神戸物産",
+        "building": "yes",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347090937,
+      "center": {
+        "lat": 35.000656,
+        "lon": 135.9549682
+      },
+      "nodes": [
+        3535080911,
+        7042812024,
+        7042812023,
+        7042812022,
+        3535080912,
+        7042812025,
+        7042812026,
+        7042812030,
+        7042812027,
+        7042812028,
+        7042812029,
+        5283405081,
+        5283405082,
+        5283405083,
+        5283405084,
+        5283405085,
+        3535080913,
+        3535080914,
+        7042812031,
+        3535080915,
+        3535080916,
+        3535080917,
+        3535080918,
+        7042812033,
+        7042812034,
+        7042812035,
+        7042812032,
+        7042833032,
+        3535080911
+      ],
+      "tags": {
+        "addr:city": "草津市 (Kusatsu)",
+        "addr:postcode": "525-0054",
+        "addr:street": "国道１号線",
+        "branch": "矢倉店",
+        "building": "yes",
+        "name": "マツヤスーパー",
+        "opening_hours": "09:00-22:00",
+        "operator": "マツヤスーパー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347090938,
+      "center": {
+        "lat": 34.9778402,
+        "lon": 135.9694345
+      },
+      "nodes": [
+        3535080922,
+        3535080923,
+        3535080924,
+        3535080925,
+        3535080926,
+        3535080921,
+        3535080922
+      ],
+      "tags": {
+        "addr:postcode": "520-2101",
+        "branch": "グリーンヒル青山店",
+        "building": "retail",
+        "name": "フレンドマートグリーンヒル青山店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 347960886,
+      "center": {
+        "lat": 34.9656962,
+        "lon": 136.1623326
+      },
+      "nodes": [
+        2556508777,
+        3541799147,
+        3541799148,
+        3541799149,
+        3541799150,
+        3541799151,
+        3541799152,
+        3541799153,
+        2556508777
+      ],
+      "tags": {
+        "branch": "水口店",
+        "brand": "バロー",
+        "brand:en": "Valor",
+        "brand:ja": "バロー",
+        "brand:wikidata": "Q11328346",
+        "brand:wikipedia": "ja:バロー (チェーンストア)",
+        "building": "yes",
+        "name": "バロー",
+        "name:en": "Valor",
+        "name:ja": "バロー",
+        "operator": "バロー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 369192515,
+      "center": {
+        "lat": 34.9838245,
+        "lon": 135.8889917
+      },
+      "nodes": [
+        3730031138,
+        3730031139,
+        3730031140,
+        3730031141,
+        3730031142,
+        3730031138
+      ],
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:wikidata": "Q11590183",
+        "brand:wikipedia": "ja:神戸物産",
+        "building": "yes",
+        "name": "業務スーパー",
+        "name:en": "Gyōmu sūpā",
+        "name:ja": "業務スーパー",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 369193738,
+      "center": {
+        "lat": 35.0255368,
+        "lon": 135.958455
+      },
+      "nodes": [
+        3730031745,
+        7176531867,
+        7176531866,
+        3730031746,
+        3730031118,
+        3730031117,
+        7176531865,
+        9899739377,
+        9899739376,
+        3846423386,
+        7176531864,
+        7176531863,
+        7176531859,
+        7176531858,
+        7176531860,
+        7176531861,
+        7176531862,
+        7176531857,
+        7176531855,
+        7176531856,
+        6960032855,
+        7176531854,
+        7176531853,
+        3730031747,
+        3730031748,
+        7176531871,
+        7176531870,
+        7176531869,
+        7176531868,
+        3730031745
+      ],
+      "tags": {
+        "addr:block_number": "23",
+        "addr:city": "草津市",
+        "addr:country": "JP",
+        "addr:housenumber": "30",
+        "addr:neighbourhood": "1",
+        "addr:postcode": "525-0025",
+        "addr:province": "滋賀県",
+        "addr:quarter": "西渋川",
+        "branch": "草津",
+        "branch:en": "Kusatsu",
+        "building": "retail",
+        "building:levels": "4",
+        "name": "アル・プラザ草津",
+        "name:en": "AL.Plaza",
+        "name:ja": "アル・プラザ草津",
+        "opening_hours": "10:00-21:00",
+        "operator": "平和堂",
+        "shop": "supermarket",
+        "source": "bing",
+        "website": "https://www.alplaza-kusatsu-apa.jp/",
+        "wikidata": "Q17192316"
+      }
+    },
+    {
+      "type": "way",
+      "id": 369195551,
+      "center": {
+        "lat": 35.0600911,
+        "lon": 136.1780823
+      },
+      "nodes": [
+        3730049440,
+        3730049441,
+        3730049442,
+        3730049443,
+        3730049444,
+        3730049440
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "平和堂",
+        "shop": "supermarket",
+        "source": "Bing",
+        "source_1": "survey"
+      }
+    },
+    {
+      "type": "way",
+      "id": 370272734,
+      "center": {
+        "lat": 35.1026478,
+        "lon": 136.0734076
+      },
+      "nodes": [
+        5862960036,
+        3739827855,
+        12643270570,
+        12643270568,
+        3739827856,
+        12643270569,
+        3739827854,
+        3739827853,
+        5862960036
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "平和堂 篠原店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 412361429,
+      "center": {
+        "lat": 34.9339682,
+        "lon": 135.9351807
+      },
+      "nodes": [
+        4138124623,
+        4138124624,
+        4138124626,
+        4138124627,
+        4138124623
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フードマーケット エフマート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 418976166,
+      "center": {
+        "lat": 34.9969761,
+        "lon": 135.9209546
+      },
+      "nodes": [
+        4191773399,
+        4191773400,
+        7091867002,
+        7091867001,
+        4191773401,
+        4191773402,
+        4191773403,
+        4191773404,
+        7091867003,
+        4191773405,
+        7091866997,
+        7091866998,
+        4191773406,
+        7091866999,
+        7091867000,
+        4191773399
+      ],
+      "tags": {
+        "addr:city": "草津市",
+        "addr:postcode": "525-0067",
+        "addr:street": "大津草津線",
+        "branch": "草津店",
+        "building": "yes",
+        "name": "ラ・ムー",
+        "opening_hours": "24時間営業",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 434991770,
+      "center": {
+        "lat": 34.978427,
+        "lon": 135.9026975
+      },
+      "nodes": [
+        4329282626,
+        4329282627,
+        4329282628,
+        6384431585,
+        11281783159,
+        4329282630,
+        4329282631,
+        11281783157,
+        11281783158,
+        4329282626
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "平和堂",
+        "operator": "平和堂",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 441720609,
+      "center": {
+        "lat": 35.0507959,
+        "lon": 135.9938255
+      },
+      "nodes": [
+        4394297279,
+        5138730933,
+        13158924370,
+        13158924371,
+        5138730932,
+        4394297280,
+        4394297281,
+        4394297282,
+        13158924368,
+        13158924369,
+        4394297279
+      ],
+      "tags": {
+        "brand": "西友",
+        "brand:en": "Seiyu",
+        "brand:ja": "西友",
+        "brand:wikidata": "Q3108542",
+        "brand:wikipedia": "en:Seiyu Group",
+        "building": "yes",
+        "name": "西友",
+        "name:en": "Seiyu",
+        "name:ja": "西友",
+        "shop": "supermarket",
+        "source": "mapbox"
+      }
+    },
+    {
+      "type": "way",
+      "id": 442871267,
+      "center": {
+        "lat": 35.2021177,
+        "lon": 136.198215
+      },
+      "nodes": [
+        4405202399,
+        4405202400,
+        4405202401,
+        4405202402,
+        4405202399
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フレンドマート　稲枝店",
+        "shop": "supermarket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "way",
+      "id": 445041778,
+      "center": {
+        "lat": 35.0107095,
+        "lon": 136.060501
+      },
+      "nodes": [
+        4424943173,
+        4424943174,
+        4424943175,
+        4424943176,
+        4424943177,
+        4424943178,
+        4424943173
+      ],
+      "tags": {
+        "addr:block_number": "1",
+        "addr:city": "湖南市",
+        "addr:housenumber": "31",
+        "addr:neighbourhood": "六丁目",
+        "addr:province": "滋賀県",
+        "addr:quarter": "石部中央",
+        "branch": "石部店",
+        "building": "yes",
+        "name": "平和堂",
+        "name:en": "HEIWADO",
+        "name:ja": "平和堂",
+        "name:ja-Hira": "へいわどう",
+        "name:ja-Latn": "Heiwadō",
+        "operator": "平和堂",
+        "shop": "supermarket",
+        "website": "http://www.hatosen.jp/shop/shiga/konan/53"
+      }
+    },
+    {
+      "type": "way",
+      "id": 465634511,
+      "center": {
+        "lat": 35.2780458,
+        "lon": 136.2594625
+      },
+      "nodes": [
+        4605699324,
+        4605699326,
+        12916849503,
+        12625095344,
+        12625095375,
+        4684923489,
+        4605699328,
+        4605699329,
+        12878364001,
+        12625095376,
+        12878289497,
+        12916835092,
+        12878289496,
+        12878289493,
+        4605699324
+      ],
+      "tags": {
+        "brand": "ドン・キホーテ",
+        "brand:en": "Don Quijote",
+        "brand:ja": "ドン・キホーテ",
+        "brand:wikidata": "Q1185381",
+        "building": "retail",
+        "name": "MEGAドン・キホーテ",
+        "name:en": "MEGA Don Quijote",
+        "name:ja": "MEGAドン・キホーテ",
+        "opening_hours": "24/7",
+        "shop": "supermarket",
+        "short_name": "MEGAドンキ",
+        "short_name:en": "MegaDonki",
+        "short_name:ja": "MEGAドンキ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 465860774,
+      "center": {
+        "lat": 34.9223214,
+        "lon": 136.172823
+      },
+      "nodes": [
+        4607691539,
+        4607691540,
+        4607691541,
+        4607691542,
+        4607691543,
+        4607691544,
+        4607691545,
+        4607691546,
+        4607691547,
+        4607691548,
+        4607691549,
+        4607691550,
+        4607691551,
+        4607691552,
+        4607691553,
+        4607691554,
+        4607691555,
+        4607691556,
+        4607691557,
+        4607691558,
+        4607691559,
+        4607691539
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フレンドマート甲南店",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 466004094,
+      "center": {
+        "lat": 34.954844,
+        "lon": 135.9005834
+      },
+      "nodes": [
+        4608985679,
+        6505845939,
+        6505845940,
+        6505845938,
+        6505845941,
+        4608985680,
+        4608985681,
+        6505845944,
+        6505845942,
+        6505845943,
+        4608985682,
+        6505845947,
+        6505845946,
+        6505845945,
+        4608985679
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フレンドマート石山寺辺店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 466004447,
+      "center": {
+        "lat": 34.9427066,
+        "lon": 135.9164088
+      },
+      "nodes": [
+        4608988486,
+        6514056427,
+        4608988487,
+        4608988488,
+        4608988689,
+        4608988690,
+        6514056426,
+        4608988486
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "スーパースター田上店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 466811745,
+      "center": {
+        "lat": 35.0464337,
+        "lon": 135.989133
+      },
+      "nodes": [
+        4615466047,
+        4615466048,
+        4615466049,
+        4615466050,
+        4615466047
+      ],
+      "tags": {
+        "alt_name:en": "Co-op",
+        "branch": "もりやま店",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "brand:wikipedia": "ja:日本生活協同組合連合会",
+        "building": "yes",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "official_name:ja": "日本生活協同組合連合会",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 467205325,
+      "center": {
+        "lat": 35.0038745,
+        "lon": 136.1203586
+      },
+      "nodes": [
+        4618540165,
+        4618540166,
+        4618540167,
+        4618540168,
+        4618540169,
+        4618540170,
+        4618540171,
+        4618540172,
+        4618540165
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "平和堂甲西店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 467337216,
+      "center": {
+        "lat": 34.998871,
+        "lon": 135.8777659
+      },
+      "nodes": [
+        4619787209,
+        4619787210,
+        4619787212,
+        6410644750,
+        6410644749,
+        6410644748,
+        4619787213,
+        4619787214,
+        4619787215,
+        4619787216,
+        6412571878,
+        6410644752,
+        6410644759,
+        6410644751,
+        4619787209
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "コープぜぜ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 468934486,
+      "center": {
+        "lat": 35.0317211,
+        "lon": 135.8640053
+      },
+      "nodes": [
+        4633845310,
+        4633845311,
+        4633845312,
+        4633845325,
+        4633845313,
+        4633845310
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フレンドマート大津京店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 469087164,
+      "center": {
+        "lat": 35.0978017,
+        "lon": 135.8927643
+      },
+      "nodes": [
+        4634940716,
+        9952805833,
+        9952805834,
+        9952805835,
+        4634940717,
+        4634940718,
+        9952805832,
+        9952805829,
+        9952805830,
+        9952805831,
+        4634940719,
+        4634940716
+      ],
+      "tags": {
+        "branch": "雄琴駅前店",
+        "building": "yes",
+        "name": "フレンドマート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 473330908,
+      "center": {
+        "lat": 35.0029537,
+        "lon": 135.8887714
+      },
+      "nodes": [
+        4674634646,
+        4674634647,
+        4674634648,
+        4674634649,
+        4674634646
+      ],
+      "tags": {
+        "branch": "大津店",
+        "brand": "バロー",
+        "brand:en": "Valor",
+        "brand:ja": "バロー",
+        "brand:wikidata": "Q11328346",
+        "brand:wikipedia": "ja:バロー (チェーンストア)",
+        "building": "yes",
+        "name": "バロー",
+        "name:en": "Valor",
+        "name:ja": "バロー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 473507370,
+      "center": {
+        "lat": 35.0180839,
+        "lon": 135.9471591
+      },
+      "nodes": [
+        4676060330,
+        7227513316,
+        7227513317,
+        7227513318,
+        7227513319,
+        4676060331,
+        4676060332,
+        4676060333,
+        4676060334,
+        4676060335,
+        4676060330
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "バロー草津店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 473513060,
+      "center": {
+        "lat": 35.0418283,
+        "lon": 135.9623598
+      },
+      "nodes": [
+        4676092769,
+        4676092770,
+        7206013555,
+        7206013556,
+        7206013557,
+        7206013558,
+        4676092771,
+        7206013544,
+        7206013543,
+        4676092772,
+        4676092773,
+        7206013545,
+        7206013546,
+        7206013547,
+        7206013548,
+        7206013549,
+        7206013550,
+        7206013551,
+        7206013552,
+        7206013553,
+        7206013554,
+        4676092774,
+        4676092769
+      ],
+      "tags": {
+        "branch": "駒井沢店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "brand:wikipedia": "en:MaxValu",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 473690039,
+      "center": {
+        "lat": 35.0718861,
+        "lon": 136.0307713
+      },
+      "nodes": [
+        4677562014,
+        4677562013,
+        4677562018,
+        4677562017,
+        12628453676,
+        4677562016,
+        12628453677,
+        4677562015,
+        12628453672,
+        12628453673,
+        12628453674,
+        12628453675,
+        4677562014
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "丸善野洲店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 490255934,
+      "center": {
+        "lat": 35.0095236,
+        "lon": 135.9679989
+      },
+      "nodes": [
+        4824300161,
+        8235939697,
+        8235939698,
+        7040028969,
+        7040028968,
+        7040028966,
+        7040028960,
+        7040028961,
+        7040028962,
+        7040028959,
+        7040028958,
+        7040028957,
+        4824300162,
+        7040028956,
+        7040028951,
+        7040028950,
+        4824300163,
+        7040028952,
+        7040028953,
+        7040028954,
+        4824300164,
+        4824300161
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フレンドマート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 543216976,
+      "center": {
+        "lat": 35.1021541,
+        "lon": 136.0093958
+      },
+      "nodes": [
+        5251387194,
+        6957051824,
+        6957051822,
+        6957051823,
+        6957051821,
+        5251387193,
+        5251387192,
+        5251387191,
+        5251387194
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "魚忠ママセンター",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 544161339,
+      "center": {
+        "lat": 35.1124383,
+        "lon": 136.206233
+      },
+      "nodes": [
+        5260253980,
+        5260253981,
+        5260253982,
+        5260253983,
+        5260253980
+      ],
+      "tags": {
+        "brand": "西友",
+        "brand:en": "Seiyu",
+        "brand:ja": "西友",
+        "brand:wikidata": "Q3108542",
+        "brand:wikipedia": "en:Seiyu Group",
+        "building": "yes",
+        "name": "西友",
+        "name:en": "Seiyu",
+        "name:ja": "西友",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 544168323,
+      "center": {
+        "lat": 35.1045583,
+        "lon": 136.2112259
+      },
+      "nodes": [
+        5260325654,
+        5260325655,
+        5260325656,
+        5894098425,
+        5260325657,
+        5260325654
+      ],
+      "tags": {
+        "branch": "八日市店",
+        "brand": "バロー",
+        "brand:en": "Valor",
+        "brand:ja": "バロー",
+        "brand:wikidata": "Q11328346",
+        "building": "yes",
+        "name": "バロー",
+        "name:en": "Valor",
+        "name:ja": "バロー",
+        "opening_hours": "-21:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 559364424,
+      "center": {
+        "lat": 35.2307397,
+        "lon": 136.2212723
+      },
+      "nodes": [
+        5395198692,
+        5395198693,
+        5395198694,
+        5395198695,
+        5395198696,
+        5395198697,
+        5395198692
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "平和堂日夏店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 563877413,
+      "center": {
+        "lat": 35.2670776,
+        "lon": 136.2531559
+      },
+      "nodes": [
+        5433472029,
+        12721824881,
+        12721824882,
+        5433472043,
+        5433472028,
+        5433472025,
+        5433472024,
+        12916607263,
+        5433472027,
+        5433472023,
+        5433472022,
+        5433472021,
+        5433471520,
+        5433472026,
+        5433472029
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "平和堂",
+        "name:en": "Heiwado",
+        "opening_hours": "Mo-Su,PH 09:00-20:00",
+        "operator": "平和堂",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 569655913,
+      "center": {
+        "lat": 35.1066205,
+        "lon": 136.1992771
+      },
+      "nodes": [
+        5478033063,
+        5478033064,
+        5478033065,
+        5478033066,
+        5478033067,
+        5478033068,
+        5478033069,
+        5478033070,
+        5478033071,
+        5478033072,
+        5478033063
+      ],
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 583982013,
+      "center": {
+        "lat": 35.1032719,
+        "lon": 136.1647949
+      },
+      "nodes": [
+        5582747363,
+        5582747364,
+        5582747365,
+        5582747366,
+        5582747363
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マミーショッピングセンター",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 615621919,
+      "center": {
+        "lat": 35.0434406,
+        "lon": 135.8619228
+      },
+      "nodes": [
+        5821318276,
+        5821318277,
+        5821318278,
+        5821318279,
+        5821318280,
+        5821318281,
+        5821318282,
+        5821318283,
+        5821318284,
+        5821318285,
+        5821318286,
+        5821318287,
+        5821318276
+      ],
+      "tags": {
+        "building": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 625076589,
+      "center": {
+        "lat": 35.0885381,
+        "lon": 136.2475694
+      },
+      "nodes": [
+        5901907195,
+        5901907196,
+        5901907197,
+        5901907198,
+        5901907199,
+        5901907200,
+        5901907201,
+        5901907202,
+        5901907203,
+        5901907204,
+        5901907205,
+        5901907206,
+        5901907195
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マックスバリュ・八日市店",
+        "phone": "0748252835",
+        "shop": "supermarket",
+        "website": "https://www.mv-chubu.co.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 625975269,
+      "center": {
+        "lat": 35.131082,
+        "lon": 136.2470523
+      },
+      "nodes": [
+        5909911692,
+        5909911693,
+        5909911694,
+        5909911695,
+        5909911696,
+        5909911697,
+        5909911698,
+        5909911699,
+        5909911700,
+        5909911701,
+        5909911702,
+        5909911703,
+        5909911704,
+        5909911705,
+        5909911706,
+        5909911707,
+        5909911708,
+        5909911692
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "東近江市立湖東味咲館",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 638525982,
+      "center": {
+        "lat": 35.0165973,
+        "lon": 136.2462621
+      },
+      "nodes": [
+        6017793161,
+        6017793162,
+        5915730498,
+        6017793164,
+        6017793165,
+        6017793166,
+        6017793161
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フーズアイランド 日野店",
+        "name:en": "Foods Island",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "phone": "+81 748 53 3661",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 645974880,
+      "center": {
+        "lat": 35.1117626,
+        "lon": 136.195147
+      },
+      "nodes": [
+        6070766851,
+        6070766852,
+        6070766853,
+        6070766854,
+        6070766851
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ライスセンターきまた",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 652606715,
+      "center": {
+        "lat": 35.1679085,
+        "lon": 136.2127713
+      },
+      "nodes": [
+        6117946667,
+        6117946668,
+        6117946669,
+        6117946670,
+        6117946671,
+        6117946672,
+        6117946673,
+        6117946674,
+        6117946675,
+        6117946676,
+        6117946677,
+        6117946678,
+        6117946679,
+        6117946667
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "平和堂　愛知川店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 741005400,
+      "center": {
+        "lat": 35.1461287,
+        "lon": 136.1804229
+      },
+      "nodes": [
+        6937513916,
+        6937513917,
+        6937513918,
+        6937513919,
+        6937513920,
+        6937513921,
+        6937513922,
+        6937513916
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フレンドマート五個荘",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 744318720,
+      "center": {
+        "lat": 35.2022207,
+        "lon": 136.2185053
+      },
+      "nodes": [
+        6966325803,
+        6966325804,
+        6966325805,
+        6966325806,
+        6966325803
+      ],
+      "tags": {
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "brand:wikipedia": "ja:イオン (店舗ブランド)",
+        "building": "yes",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 761128529,
+      "center": {
+        "lat": 35.0298422,
+        "lon": 135.9450799
+      },
+      "nodes": [
+        7111184876,
+        7111184875,
+        7111184874,
+        7111184873,
+        7111184872,
+        7111184871,
+        7111184870,
+        7111184869,
+        7111184868,
+        7111184867,
+        7111184876
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ハッピー六原",
+        "shop": "supermarket",
+        "source": "GSImaps/std"
+      }
+    },
+    {
+      "type": "way",
+      "id": 795278333,
+      "center": {
+        "lat": 35.1158466,
+        "lon": 136.1359044
+      },
+      "nodes": [
+        7438357593,
+        7438357594,
+        7438357595,
+        7438357596,
+        7438357597,
+        7438357598,
+        7438357593
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "平和堂武佐店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 815886927,
+      "center": {
+        "lat": 34.9915547,
+        "lon": 135.8866079
+      },
+      "nodes": [
+        7620004190,
+        7620004191,
+        7620004192,
+        7620004193,
+        7620004194,
+        7620004195,
+        7620004196,
+        12384178204,
+        12384178203,
+        7620004197,
+        7620004198,
+        7620004199,
+        7620004190
+      ],
+      "tags": {
+        "addr:block_number": "1",
+        "addr:city": "大津市",
+        "addr:housenumber": "85",
+        "addr:neighbourhood": "2丁目",
+        "addr:postcode": "520-0837",
+        "addr:province": "滋賀県",
+        "addr:quarter": "中庄",
+        "air_conditioning": "yes",
+        "branch": "膳所店",
+        "building": "yes",
+        "currency:JPY": "yes",
+        "fax": "+81 77 523 2900",
+        "name": "フレンドマート",
+        "name:ja": "フレンドマート",
+        "phone": "+81 77 523 4141",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1086213552,
+      "center": {
+        "lat": 35.0977777,
+        "lon": 135.9034295
+      },
+      "nodes": [
+        9952805673,
+        9952805670,
+        9952805671,
+        9952805668,
+        9952805669,
+        9952805672,
+        9952805673
+      ],
+      "tags": {
+        "branch": "雄琴店",
+        "building": "yes",
+        "name": "ラ・ムー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1086584485,
+      "center": {
+        "lat": 35.0726511,
+        "lon": 135.8796569
+      },
+      "nodes": [
+        9956192292,
+        9956192288,
+        9956192287,
+        9956192291,
+        9956192286,
+        9956192285,
+        9956192279,
+        9956192290,
+        9956192276,
+        9956192275,
+        9956192277,
+        9956192278,
+        9956192284,
+        9956192281,
+        9956192280,
+        9956192289,
+        9956192282,
+        9956192283,
+        9956192292
+      ],
+      "tags": {
+        "branch": "坂本店",
+        "building": "yes",
+        "name": "スーパー サンライズ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1099432405,
+      "center": {
+        "lat": 35.0073928,
+        "lon": 136.0634781
+      },
+      "nodes": [
+        10065288779,
+        10065288780,
+        10065288781,
+        10065288782,
+        10065288783,
+        10065288784,
+        10065288785,
+        10065288786,
+        10065288779
+      ],
+      "tags": {
+        "branch": "石部店",
+        "building": "yes",
+        "name": "丸善スーパー",
+        "name:en": "maruzen",
+        "name:ja": "丸善スーパー",
+        "name:ja-Hira": "まるぜんすーぱー",
+        "name:ja-Latn": "maruzen sūpā",
+        "shop": "supermarket",
+        "website": "http://www.maruzensuper.co.jp/ishibe.php"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1102324201,
+      "center": {
+        "lat": 34.9834428,
+        "lon": 135.939655
+      },
+      "nodes": [
+        10086803747,
+        10086803748,
+        10086803749,
+        10086803750,
+        10086803751,
+        10086803752,
+        10086803753,
+        10086803754,
+        10086803760,
+        10086803759,
+        10086803758,
+        10086803755,
+        10086803756,
+        10086803757,
+        10086803747
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マックスバリュ大津月輪店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1158348685,
+      "center": {
+        "lat": 34.9395914,
+        "lon": 136.2592477
+      },
+      "nodes": [
+        10772480018,
+        10772480017,
+        10772480016,
+        10772480015,
+        10772480018
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "フレンドマート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1163376570,
+      "center": {
+        "lat": 35.3872504,
+        "lon": 136.2582622
+      },
+      "nodes": [
+        10819496449,
+        10819496446,
+        10819496445,
+        390835379,
+        10819496447,
+        10819496443,
+        10819496444,
+        10819496448,
+        10819496449
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "平和堂フレンドマート祇園店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1172339955,
+      "center": {
+        "lat": 35.0058896,
+        "lon": 136.0754129
+      },
+      "nodes": [
+        10892664643,
+        10892664642,
+        10892664641,
+        10892664640,
+        10892664639,
+        7077648085,
+        10892664643
+      ],
+      "tags": {
+        "brand": "トライアル",
+        "brand:en": "Trial",
+        "brand:ja": "トライアル",
+        "brand:wikidata": "Q11321723",
+        "building": "yes",
+        "name": "トライアル",
+        "name:en": "Trial",
+        "name:ja": "トライアル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1220061586,
+      "center": {
+        "lat": 34.9876682,
+        "lon": 136.1102257
+      },
+      "nodes": [
+        11304950979,
+        11304950980,
+        11304950981,
+        11304950982,
+        11304950979
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "スーパーハズイ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1222906418,
+      "center": {
+        "lat": 35.0180413,
+        "lon": 135.9746136
+      },
+      "nodes": [
+        11343004280,
+        11343004281,
+        11343004282,
+        11343004283,
+        11343004280
+      ],
+      "tags": {
+        "addr:block_number": "11",
+        "addr:city": "栗東市",
+        "addr:housenumber": "13",
+        "addr:neighbourhood": "9丁目",
+        "addr:postcode": "520-3024",
+        "addr:province": "滋賀県",
+        "addr:quarter": "小柿",
+        "branch": "小柿店",
+        "building": "yes",
+        "fax": "+81 77 554 3636",
+        "name": "フレンドマート",
+        "name:ja": "フレンドマート",
+        "opening_hours": "Mo-Su 10:00-21:30",
+        "operator": "平和堂",
+        "phone": "+81 77 554 3633",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1241499837,
+      "center": {
+        "lat": 35.3331081,
+        "lon": 136.0297555
+      },
+      "nodes": [
+        11535258815,
+        11535258816,
+        11535258817,
+        11535258818,
+        11535258819,
+        11535258820,
+        11535258821,
+        11535258822,
+        11535258823,
+        11535258824,
+        11535258815
+      ],
+      "tags": {
+        "building": "yes",
+        "name:en": "PLANT Takashimaten",
+        "name:ja": "PLANT 高島店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1308390115,
+      "center": {
+        "lat": 35.2602134,
+        "lon": 136.2648792
+      },
+      "nodes": [
+        12771569492,
+        12116412400,
+        12116412398,
+        12116412399,
+        12763405569,
+        12116418101,
+        12116418102,
+        12771569492
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フタバヤ",
+        "name:en": "Futabaya",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1308404199,
+      "center": {
+        "lat": 35.3968689,
+        "lon": 136.2801023
+      },
+      "nodes": [
+        12116553075,
+        12116553076,
+        12116553077,
+        12116553078,
+        12116553079,
+        12116553080,
+        12116553075
+      ],
+      "tags": {
+        "brand": "バロー",
+        "brand:en": "Valor",
+        "brand:ja": "バロー",
+        "brand:wikidata": "Q11328346",
+        "building": "yes",
+        "name": "バロー",
+        "name:en": "Valor",
+        "name:ja": "バロー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1310986522,
+      "center": {
+        "lat": 35.3897609,
+        "lon": 136.270126
+      },
+      "nodes": [
+        12135210044,
+        12135210059,
+        12135210045,
+        12135210046,
+        12135210047,
+        12135210048,
+        12135210049,
+        12135210050,
+        12135215797,
+        12135210051,
+        12135210052,
+        12135210053,
+        12135210054,
+        12135210055,
+        12135210044
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フタバヤ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1369805186,
+      "center": {
+        "lat": 35.0326672,
+        "lon": 135.9774464
+      },
+      "nodes": [
+        12685960206,
+        12685960207,
+        12685960208,
+        12685960209,
+        12685960210,
+        12685960211,
+        12685960212,
+        12685960213,
+        12685960206
+      ],
+      "tags": {
+        "brand": "バロー",
+        "brand:en": "Valor",
+        "brand:ja": "バロー",
+        "brand:wikidata": "Q11328346",
+        "building": "yes",
+        "name": "バロー",
+        "name:en": "Valor",
+        "name:ja": "バロー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1374316448,
+      "center": {
+        "lat": 35.2666826,
+        "lon": 136.2547201
+      },
+      "nodes": [
+        12724701847,
+        12979714924,
+        12724701850,
+        12724701853,
+        12724701852,
+        12724701848,
+        12724701847
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "Thai Duong Mart",
+        "opening_hours": "Mo-Fr 10:00-20:00",
+        "operator": "Thai Duong Mart",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1376637231,
+      "center": {
+        "lat": 35.2705365,
+        "lon": 136.2548875
+      },
+      "nodes": [
+        12745991053,
+        12745991054,
+        12745991055,
+        12995298044,
+        12745991056,
+        12995298059,
+        12745991053
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "イブ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1381321657,
+      "center": {
+        "lat": 35.2631886,
+        "lon": 136.2412025
+      },
+      "nodes": [
+        5901193300,
+        12787598368,
+        12787598367,
+        12787598338,
+        12787598339,
+        12787598363,
+        12787598364,
+        12787598340,
+        5901193300
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "フレンドマート 大藪店",
+        "opening_hours": "Mo-Su 09:30-21:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1383855572,
+      "center": {
+        "lat": 35.020241,
+        "lon": 136.0042831
+      },
+      "nodes": [
+        12812491745,
+        12812491746,
+        12812491747,
+        12812491748,
+        12812491749,
+        12812491750,
+        12812491751,
+        12812491752,
+        12812491753,
+        12812491754,
+        12812491755,
+        12812491756,
+        12812491757,
+        12812491758,
+        12812491759,
+        12812491760,
+        12812491761,
+        12812491762,
+        12812491763,
+        12812491764,
+        12812491765,
+        12812491766,
+        12812491767,
+        12812491768,
+        12812491769,
+        12812491770,
+        12812491771,
+        12812491772,
+        12812491773,
+        12812491745
+      ],
+      "tags": {
+        "building": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1383904787,
+      "center": {
+        "lat": 35.0238407,
+        "lon": 135.9981241
+      },
+      "nodes": [
+        12813273165,
+        12813273166,
+        12813273167,
+        12813273168,
+        12813273169,
+        12813273170,
+        12813273171,
+        12813273172,
+        12813273173,
+        12813273174,
+        12813273175,
+        12813273165
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フレンドマート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1387878302,
+      "center": {
+        "lat": 35.0403067,
+        "lon": 136.0145244
+      },
+      "nodes": [
+        12847734307,
+        12847734308,
+        12847734309,
+        12847734310,
+        12847734311,
+        12847734312,
+        12847734307
+      ],
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q105687460",
+        "building": "yes",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1390577550,
+      "center": {
+        "lat": 35.0382538,
+        "lon": 136.0137392
+      },
+      "nodes": [
+        12872110272,
+        12872110273,
+        12872110274,
+        12872110275,
+        12872110276,
+        12872110277,
+        12872110278,
+        12872110279,
+        12872110280,
+        12872110281,
+        12872110272
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "STAR",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1410198476,
+      "center": {
+        "lat": 35.3138485,
+        "lon": 136.2872045
+      },
+      "nodes": [
+        12957714243,
+        12957714244,
+        12957714245,
+        12957714246,
+        12957714247,
+        12957714248,
+        12957714243
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フレンドマート米原駅前店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1411330474,
+      "center": {
+        "lat": 35.000715,
+        "lon": 136.023525
+      },
+      "nodes": [
+        12968285597,
+        12968285598,
+        12968285599,
+        12968285600,
+        12968285601,
+        12968285602,
+        12968285603,
+        12968285604,
+        12968285605,
+        12968285606,
+        12968285607,
+        12968285608,
+        12968285609,
+        12968285610,
+        12968285611,
+        12968285597
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フレンドマート栗東御園店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1415087233,
+      "center": {
+        "lat": 35.2433675,
+        "lon": 136.2513209
+      },
+      "nodes": [
+        13003634302,
+        13003633407,
+        13003633810,
+        13003633811,
+        13003622726,
+        13003634302
+      ],
+      "tags": {
+        "fixme": "There is no tag for builders, homes, housing, construction, or contractors",
+        "level": "0",
+        "name": "Suumo",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1426312573,
+      "center": {
+        "lat": 35.4012234,
+        "lon": 136.0304259
+      },
+      "nodes": [
+        13111341796,
+        13111341797,
+        13111341798,
+        13111341799,
+        13111341796
+      ],
+      "tags": {
+        "brand": "エーコープ",
+        "brand:en": "A-COOP",
+        "brand:ja": "エーコープ",
+        "brand:wikidata": "Q11291524",
+        "building": "yes",
+        "description": "今津店",
+        "name": "エーコープ",
+        "name:en": "A-COOP",
+        "name:ja": "エーコープ",
+        "organic": "only",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 7724919,
+      "center": {
+        "lat": 35.1471593,
+        "lon": 136.1329381
+      },
+      "members": [
+        {
+          "type": "way",
+          "ref": 539777217,
+          "role": "outer"
+        },
+        {
+          "type": "way",
+          "ref": 539777218,
+          "role": "outer"
+        }
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "いしや",
+        "shop": "supermarket",
+        "type": "multipolygon"
+      }
+    }
+  ]
+}

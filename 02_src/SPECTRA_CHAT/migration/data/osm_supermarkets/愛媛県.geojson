@@ -1,0 +1,4471 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.8 e802775f",
+  "osm3s": {
+    "timestamp_osm_base": "2025-10-15T12:31:29Z",
+    "timestamp_areas_base": "2025-10-15T04:02:15Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 636903844,
+      "lat": 33.9212318,
+      "lon": 133.0802334,
+      "tags": {
+        "name": "ディオ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 636903851,
+      "lat": 33.9089982,
+      "lon": 133.1925481,
+      "tags": {
+        "name": "はらだ",
+        "shop": "supermarket",
+        "source": "bing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 656142837,
+      "lat": 33.7913233,
+      "lon": 132.8808201,
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 690085978,
+      "lat": 33.9203154,
+      "lon": 133.0763953,
+      "tags": {
+        "name": "パルティフジ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 690565500,
+      "lat": 33.9120731,
+      "lon": 133.1994813,
+      "tags": {
+        "addr:block_number": "963",
+        "addr:city": "西条市",
+        "addr:housenumber": "1",
+        "addr:postcode": "793-0035",
+        "addr:quarter": "福武甲",
+        "branch": "西条店",
+        "name": "マルナカ　西条店",
+        "name:en": "Marunaka",
+        "name:ja": "マルナカ　西条店",
+        "opening_hours": "09:00-22:00",
+        "phone": "+81 897 58 5801",
+        "shop": "supermarket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 696846274,
+      "lat": 33.9307069,
+      "lon": 133.2013607,
+      "tags": {
+        "branch": "西条玉津店",
+        "name": "フジ",
+        "name:ja": "フジ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 696846304,
+      "lat": 33.9311662,
+      "lon": 133.1911924,
+      "tags": {
+        "branch": "伊予西条店",
+        "name": "ラ・ムー",
+        "shop": "supermarket",
+        "source": "bing;survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 698468298,
+      "lat": 33.9153851,
+      "lon": 133.0685283,
+      "tags": {
+        "name": "周ちゃん広場",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 717451128,
+      "lat": 33.928294,
+      "lon": 133.189811,
+      "tags": {
+        "brand": "フレッシュバリュー",
+        "name": "フレッシュバリュー西条店",
+        "opening_hours": "9:00-24:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 717451158,
+      "lat": 33.9152486,
+      "lon": 133.1745967,
+      "tags": {
+        "name": "マルヨシセンター",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 722482949,
+      "lat": 33.9179997,
+      "lon": 133.1783947,
+      "tags": {
+        "name": "水都市",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2109277127,
+      "lat": 33.788754,
+      "lon": 132.7150292,
+      "tags": {
+        "brand": "フジ",
+        "brand:en": "Fuji",
+        "brand:ja": "フジ",
+        "brand:wikidata": "Q8963035",
+        "brand:wikipedia": "ja:フジ (チェーンストア)",
+        "name": "フジグラン エミフルMASAKI",
+        "name:en": "Fuji GRAND",
+        "name:ja": "フジグラン",
+        "operator": "フジ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2183107874,
+      "lat": 33.968339,
+      "lon": 133.278251,
+      "tags": {
+        "brand": "マルナカ",
+        "brand:en": "Marunaka",
+        "brand:ja": "マルナカ",
+        "brand:wikidata": "Q11341399",
+        "name": "マルナカ",
+        "name:en": "Marunaka",
+        "name:ja": "マルナカ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2223749862,
+      "lat": 33.916647,
+      "lon": 133.180198,
+      "tags": {
+        "addr:block_number": "584",
+        "addr:city": "西条市",
+        "addr:housenumber": "1",
+        "addr:postcode": "793-0041",
+        "addr:quarter": "神拝甲",
+        "branch": "西条神拝店",
+        "name": "マックスバリュ　西条神拝店",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ　西条神拝店",
+        "opening_hours": "07:00-24:00",
+        "phone": "+81 897 58 5101",
+        "shop": "supermarket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2302058603,
+      "lat": 33.85188,
+      "lon": 132.775566,
+      "tags": {
+        "brand": "サニーマート",
+        "name": "サニーマート 道後店",
+        "opening_hours": "8:30-24:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2306394371,
+      "lat": 33.8472791,
+      "lon": 132.7719385,
+      "tags": {
+        "name": "スーパーいしまる",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2367993823,
+      "lat": 33.8210195,
+      "lon": 132.7732244,
+      "tags": {
+        "name": "フレッシュバリュー ラヴィ 松山店",
+        "operator": "ママイ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2385735874,
+      "lat": 33.807909,
+      "lon": 132.7652375,
+      "tags": {
+        "name": "スーパー生協",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2385739832,
+      "lat": 33.825068,
+      "lon": 132.7756927,
+      "tags": {
+        "name": "マルナカ立花店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2385936386,
+      "lat": 33.7856504,
+      "lon": 132.7497667,
+      "tags": {
+        "name": "松山生協北伊予マーケット",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2385941706,
+      "lat": 33.7681356,
+      "lon": 132.7072751,
+      "tags": {
+        "name": "マルヨシセンター 伊予店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2386715898,
+      "lat": 33.7638388,
+      "lon": 132.7075974,
+      "tags": {
+        "name": "フレッシュバリュー 伊予店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2386986469,
+      "lat": 33.8157577,
+      "lon": 132.7447287,
+      "tags": {
+        "name": "業務スーパー保免西店",
+        "name:zh": "业务超市",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2387094078,
+      "lat": 33.8322203,
+      "lon": 132.7869494,
+      "tags": {
+        "name": "コープ愛媛",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2388079257,
+      "lat": 33.8445424,
+      "lon": 132.7528759,
+      "tags": {
+        "name": "食品館",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2580272856,
+      "lat": 33.8950702,
+      "lon": 132.7485724,
+      "tags": {
+        "name": "ファミリーマート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2580272869,
+      "lat": 33.8521563,
+      "lon": 132.7125661,
+      "tags": {
+        "name": "コーナン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2580290512,
+      "lat": 33.856627,
+      "lon": 132.7152262,
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2580366027,
+      "lat": 33.8969544,
+      "lon": 132.7369715,
+      "tags": {
+        "name": "フジ和気店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2620788556,
+      "lat": 33.8732997,
+      "lon": 132.7404813,
+      "tags": {
+        "name": "フジ安城寺店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2957595091,
+      "lat": 33.7675637,
+      "lon": 132.7032041,
+      "tags": {
+        "name": "ディスカウントストア ダイレックス 伊予店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3283256262,
+      "lat": 33.8700954,
+      "lon": 132.7404987,
+      "tags": {
+        "name": "コープえひめ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3791022861,
+      "lat": 33.8033711,
+      "lon": 132.7864255,
+      "tags": {
+        "name": "ドラッグセイムス松山インター店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3791023961,
+      "lat": 33.8036999,
+      "lon": 132.7853712,
+      "tags": {
+        "name": "スーパーABC石井店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4056738277,
+      "lat": 33.9534823,
+      "lon": 133.4192777,
+      "tags": {
+        "name": "ハローズ土居店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4070885624,
+      "lat": 33.9566732,
+      "lon": 133.4285168,
+      "tags": {
+        "name": "コープ土居店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4070889091,
+      "lat": 33.9591252,
+      "lon": 133.430114,
+      "tags": {
+        "name": "フレッシュバリュー土居店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4070931161,
+      "lat": 33.963825,
+      "lon": 133.4648075,
+      "tags": {
+        "name": "マルナカ土居店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4256269894,
+      "lat": 34.0668672,
+      "lon": 132.9996683,
+      "tags": {
+        "name": "Marunaka",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4455000509,
+      "lat": 33.9202565,
+      "lon": 133.1897932,
+      "tags": {
+        "name": "木村チェーン",
+        "name:en": "Kimura",
+        "name:ja": "木村チェーン",
+        "shop": "supermarket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4465712278,
+      "lat": 33.8278481,
+      "lon": 132.7188923,
+      "tags": {
+        "addr:city": "松山市高岡町４３２番地１",
+        "addr:postcode": "791-8036",
+        "name": "フジ・ZY高岡店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4574622589,
+      "lat": 33.8527039,
+      "lon": 132.7378677,
+      "tags": {
+        "name": "マルナカ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4734147413,
+      "lat": 33.2237587,
+      "lon": 132.5618321,
+      "tags": {
+        "addr:block_number": "6",
+        "addr:city": "宇和島市",
+        "addr:housenumber": "15",
+        "addr:neighbourhood": "3丁目",
+        "addr:postcode": "798-0031",
+        "addr:province": "愛媛県",
+        "addr:quarter": "栄町港",
+        "branch": "栄町店",
+        "name": "スーパーハッピー",
+        "opening_hours": "8:00-22:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4738053875,
+      "lat": 33.3685039,
+      "lon": 132.5082592,
+      "tags": {
+        "name": "坂本食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4810600041,
+      "lat": 32.9628763,
+      "lon": 132.5757925,
+      "tags": {
+        "brand": "フジ",
+        "brand:en": "Fuji",
+        "brand:ja": "フジ",
+        "brand:wikidata": "Q8963035",
+        "name": "フジ",
+        "name:en": "Fuji",
+        "name:ja": "フジ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4945293666,
+      "lat": 33.8434209,
+      "lon": 132.7845062,
+      "tags": {
+        "addr:city": "松山市",
+        "addr:housenumber": "3番21号",
+        "addr:neighbourhood": "1丁目",
+        "addr:province": "愛媛県",
+        "addr:quarter": "持田町",
+        "name": "ファミリマート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4946441822,
+      "lat": 33.8515456,
+      "lon": 132.7834548,
+      "tags": {
+        "name": "道後にきたつの路日曜市",
+        "name:ja": "道後にきたつの路日曜市",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4946441823,
+      "lat": 33.8523964,
+      "lon": 132.7833522,
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:wikidata": "Q11590183",
+        "brand:wikipedia": "ja:神戸物産",
+        "name": "業務スーパー 道後店",
+        "name:en": "Gyōmu sūpā",
+        "name:ja": "業務スーパー",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4946449623,
+      "lat": 33.5283575,
+      "lon": 132.5733287,
+      "tags": {
+        "name": "オズメッセ ozmesse21",
+        "name:ja": "オズメッセ ozmesse21",
+        "opening_hours": "Mo-Su 09:30-20:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4946461822,
+      "lat": 33.5303416,
+      "lon": 132.5738372,
+      "tags": {
+        "name": "愛たい菜",
+        "opening_hours": "Mo-Su 08:30-17:30",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4946461824,
+      "lat": 33.5238692,
+      "lon": 132.5603436,
+      "tags": {
+        "name": "マルナカ 大洲店 Maruka",
+        "opening_hours": "Mo-Su 09:00-21:30",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4948022722,
+      "lat": 33.5683599,
+      "lon": 132.8009512,
+      "tags": {
+        "name": "Odanosatoseseragi Rest Area 道の駅 小田の郷せせらぎ",
+        "opening_hours": "Mo-Su 08:00-17:30",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4948022822,
+      "lat": 33.5579434,
+      "lon": 132.6541539,
+      "tags": {
+        "name": "河野食料品店",
+        "name:ja": "河野食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4949824422,
+      "lat": 33.5363428,
+      "lon": 132.6631317,
+      "tags": {
+        "name": "Matsumoto Tofu Shop 松本豆腐店",
+        "name:ja": "Matsumoto Tofu Shop 松本豆腐店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4957766721,
+      "lat": 33.3629312,
+      "lon": 132.5134948,
+      "tags": {
+        "name": "宇和ヤマミ醤油",
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4987456821,
+      "lat": 33.8538282,
+      "lon": 132.7469243,
+      "tags": {
+        "name": "パルティ・フジ衣山",
+        "opening_hours": "Mo-Su 11:00-22:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5108175132,
+      "lat": 33.3613253,
+      "lon": 132.5171133,
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5156443418,
+      "lat": 33.8048443,
+      "lon": 132.833416,
+      "tags": {
+        "name": "スーパーＡＢＣ　平井店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5178614921,
+      "lat": 33.8341917,
+      "lon": 132.7509343,
+      "tags": {
+        "name": "Aプライス 松山店",
+        "name:en": "A-PRICE Matsuyama Store",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5413471739,
+      "lat": 34.1845547,
+      "lon": 132.8836786,
+      "tags": {
+        "name": "ＪＡおちいまばり関前",
+        "opening_hours": "Mo-st 09:00-18:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5432837521,
+      "lat": 33.7741444,
+      "lon": 132.7931794,
+      "tags": {
+        "addr:housenumber": "伊予郡砥部町原町324-1",
+        "addr:postcode": "791-2116",
+        "name": "フジ砥部原町店",
+        "phone": "0899581231",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5852931469,
+      "lat": 33.5163603,
+      "lon": 132.5451256,
+      "tags": {
+        "addr:full": "愛媛県大洲市中村246-1",
+        "addr:postcode": "795-0054",
+        "name": "フジグラン大洲",
+        "opening_hours": "09:00-21:00",
+        "phone": "+81 893 24 2101",
+        "shop": "supermarket",
+        "website": "https://www.the-fuji.com/store/shop/ehime/grand_ozu.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5920290192,
+      "lat": 33.5319172,
+      "lon": 132.5775017,
+      "tags": {
+        "name": "ラム",
+        "name:en": "Lamu",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5924981485,
+      "lat": 33.5477677,
+      "lon": 132.6519569,
+      "tags": {
+        "name": "Fresh Food Market Fuji",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5977040469,
+      "lat": 33.2553122,
+      "lon": 132.6731917,
+      "tags": {
+        "brand": "フジ",
+        "brand:en": "Fuji",
+        "brand:ja": "フジ",
+        "brand:wikidata": "Q8963035",
+        "name": "フジ広見店",
+        "name:en": "Fuji",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5977040599,
+      "lat": 33.2510085,
+      "lon": 132.6793608,
+      "tags": {
+        "name": "ダイレックス 広見店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6357362409,
+      "lat": 33.8095584,
+      "lon": 132.8085248,
+      "tags": {
+        "addr:block_number": "70",
+        "addr:city": "松山市",
+        "addr:province": "愛媛県",
+        "addr:quarter": "鷹子町",
+        "brand": "CO・OP",
+        "name": "コープ久米",
+        "operator": "コープえひめ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6403588921,
+      "lat": 33.2033653,
+      "lon": 132.552759,
+      "tags": {
+        "name": "エースワン宇和島店",
+        "opening_hours": "08:00-21:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6566781557,
+      "lat": 33.8089325,
+      "lon": 132.7576465,
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6680758489,
+      "lat": 33.8112991,
+      "lon": 132.7930828,
+      "tags": {
+        "name": "日東",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6680764787,
+      "lat": 33.8110832,
+      "lon": 132.792881,
+      "tags": {
+        "name": "日東駐車場入口",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6758879185,
+      "lat": 33.7957108,
+      "lon": 132.8336689,
+      "tags": {
+        "name": "フジグラン重信",
+        "shop": "supermarket",
+        "wikidata": "Q11333127",
+        "wikipedia": "ja:フジグラン重信"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6908059785,
+      "lat": 33.4573593,
+      "lon": 132.4309838,
+      "tags": {
+        "name": "FUJI",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7022899580,
+      "lat": 33.4584168,
+      "lon": 132.4330107,
+      "tags": {
+        "branch": "八幡浜店",
+        "name": "エースワン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7022934742,
+      "lat": 33.4584694,
+      "lon": 132.4238439,
+      "tags": {
+        "name": "てやてや広場",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7086502764,
+      "lat": 34.2682782,
+      "lon": 133.0402139,
+      "tags": {
+        "brand": "Aコープ",
+        "name": "Aコープかみうら",
+        "shop": "supermarket",
+        "source": "local knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7418211985,
+      "lat": 33.2250367,
+      "lon": 132.5640889,
+      "tags": {
+        "addr:block_number": "3",
+        "addr:city": "宇和島市",
+        "addr:housenumber": "28",
+        "addr:neighbourhood": "2丁目",
+        "addr:postcode": "798-0032",
+        "addr:province": "愛媛県",
+        "addr:quarter": "恵美須町",
+        "branch": "宇和島店",
+        "brand": "フジ",
+        "brand:en": "Fuji",
+        "brand:ja": "フジ",
+        "brand:wikidata": "Q8963035",
+        "brand:wikipedia": "ja:フジ (チェーンストア)",
+        "name": "フジ",
+        "name:en": "Fuji",
+        "name:ja": "フジ",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7706760485,
+      "lat": 33.8620318,
+      "lon": 132.7116214,
+      "tags": {
+        "name": "ラ・ムー",
+        "name:ja": "ラ・ムー松山西店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8223775371,
+      "lat": 33.9991852,
+      "lon": 133.0157183,
+      "tags": {
+        "name": "彩咲あさくら",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8236239497,
+      "lat": 33.8424435,
+      "lon": 132.7853257,
+      "tags": {
+        "fixme": "resurvey",
+        "name": "スーパーABC",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8254178840,
+      "lat": 34.0694277,
+      "lon": 132.9973351,
+      "tags": {
+        "name": "小林蒲鉾店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8285809041,
+      "lat": 34.0694886,
+      "lon": 132.9895251,
+      "tags": {
+        "alt_name:en": "Co-op",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "brand:wikipedia": "ja:日本生活協同組合連合会",
+        "name": "Aコープ 今治愛彩店",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8288456559,
+      "lat": 34.0489782,
+      "lon": 132.9964571,
+      "tags": {
+        "name": "JA今治立花くみあいマーケット郷店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8290353643,
+      "lat": 34.0598348,
+      "lon": 132.9836706,
+      "tags": {
+        "name": "サカエマート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9663130033,
+      "lat": 33.846437,
+      "lon": 132.7757648,
+      "tags": {
+        "name": "SUPER ABC",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10177482259,
+      "lat": 33.8651551,
+      "lon": 132.7196462,
+      "tags": {
+        "name": "そごうマート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10240219893,
+      "lat": 34.102764,
+      "lon": 132.9665543,
+      "tags": {
+        "brand": "フジ",
+        "brand:en": "Fuji",
+        "brand:ja": "フジ",
+        "brand:wikidata": "Q8963035",
+        "name": "フジ",
+        "name:en": "Fuji",
+        "name:ja": "フジ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11559723887,
+      "lat": 33.8274306,
+      "lon": 132.7218669,
+      "tags": {
+        "name": "フレッシュバリュー 松山店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11815415864,
+      "lat": 33.9577807,
+      "lon": 133.2767316,
+      "tags": {
+        "alt_name:en": "Co-op",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "official_name:ja": "日本生活協同組合連合会",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11901732959,
+      "lat": 33.921154,
+      "lon": 133.2819358,
+      "tags": {
+        "name": "フレッシュバリュー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11923778802,
+      "lat": 33.3809961,
+      "lon": 132.4198334,
+      "tags": {
+        "name": "海の駅潮彩館",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12154705099,
+      "lat": 33.2347581,
+      "lon": 132.5699106,
+      "tags": {
+        "name": "食品館",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12217489552,
+      "lat": 33.2070779,
+      "lon": 132.5557034,
+      "tags": {
+        "branch": "宇和島南店",
+        "brand": "フジ",
+        "brand:en": "Fuji",
+        "brand:ja": "フジ",
+        "brand:wikidata": "Q8963035",
+        "name": "フジ",
+        "name:en": "Fuji",
+        "name:ja": "フジ",
+        "opening_hours": "09:00-22:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12260395458,
+      "lat": 33.1908335,
+      "lon": 132.5465911,
+      "tags": {
+        "branch": "宇和島店",
+        "brand": "マルナカ",
+        "brand:en": "Marunaka",
+        "brand:ja": "マルナカ",
+        "brand:wikidata": "Q11341399",
+        "name": "マルナカ",
+        "name:en": "Marunaka",
+        "name:ja": "マルナカ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12351290770,
+      "lat": 33.2889585,
+      "lon": 132.6051132,
+      "tags": {
+        "name": "Ａコープ みま店",
+        "opening_hours": "09:30-19:00",
+        "shop": "supermarket",
+        "website": "https://acoop-nishinihon.jp/shop/acoop/ehime/mima/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12365027977,
+      "lat": 33.2409735,
+      "lon": 132.5690094,
+      "tags": {
+        "branch": "北宇和島店",
+        "name": "エースワン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12367152752,
+      "lat": 34.0560774,
+      "lon": 132.9794975,
+      "tags": {
+        "branch": "今治馬越",
+        "name": "イオンスタイル",
+        "name:en": "AEON STYLE",
+        "name:ja": "イオンスタイル",
+        "operator": "イオンリテール",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12410880995,
+      "lat": 33.1241561,
+      "lon": 132.5203048,
+      "tags": {
+        "branch": "つしま店",
+        "brand": "エーコープ",
+        "brand:en": "A-COOP",
+        "brand:ja": "エーコープ",
+        "brand:wikidata": "Q11291524",
+        "name": "エーコープ",
+        "name:en": "A-COOP",
+        "name:ja": "エーコープ",
+        "organic": "only",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12870128487,
+      "lat": 33.7571924,
+      "lon": 132.7052844,
+      "tags": {
+        "name": "フジ　伊予店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12944733842,
+      "lat": 33.9508249,
+      "lon": 133.0584426,
+      "tags": {
+        "name": "そごうマート　三芳本店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13113277786,
+      "lat": 33.8220771,
+      "lon": 132.7567122,
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q105687460",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13146976091,
+      "lat": 33.9675106,
+      "lon": 133.2833942,
+      "tags": {
+        "brand": "フジ",
+        "brand:en": "Fuji",
+        "brand:ja": "フジ",
+        "brand:wikidata": "Q8963035",
+        "name": "フジ",
+        "name:en": "Fuji",
+        "name:ja": "フジ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13166656726,
+      "lat": 33.4925203,
+      "lon": 132.359664,
+      "tags": {
+        "name": "Shoppers",
+        "opening_hours": "Mo-Su 08:30-19:30",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13185354801,
+      "lat": 33.8964537,
+      "lon": 133.1258748,
+      "tags": {
+        "int_name": "Marunaka Himi",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "+81 897-52-2501",
+        "shop": "supermarket",
+        "website": "http://maxvalu.co.jp"
+      }
+    },
+    {
+      "type": "way",
+      "id": 108342283,
+      "center": {
+        "lat": 33.9224427,
+        "lon": 133.0835788
+      },
+      "nodes": [
+        1243358114,
+        3375872817,
+        3375872819,
+        3375872818,
+        1243358106,
+        1243358112,
+        1243358110,
+        1243358095,
+        3375872816,
+        3375872815,
+        3375872814,
+        3375872810,
+        1243358105,
+        3375872808,
+        3375872809,
+        3375872811,
+        3375872812,
+        3375872813,
+        1243358109,
+        1243358116,
+        3375872806,
+        3375872807,
+        1243358092,
+        1243358114
+      ],
+      "tags": {
+        "name": "マルナカ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 182046011,
+      "center": {
+        "lat": 33.8694434,
+        "lon": 132.8142587
+      },
+      "nodes": [
+        1923898517,
+        1923898515,
+        1923898514,
+        1923898513,
+        1923898512,
+        1923898511,
+        1923898506,
+        1923898507,
+        1923898504,
+        1923898505,
+        1923898503,
+        1923898508,
+        1923898509,
+        1923898510,
+        1923898518,
+        1923898516,
+        1923898517
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "グリーンマート湯の山",
+        "opening_hours": "09:00-21:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 183456470,
+      "center": {
+        "lat": 33.9199863,
+        "lon": 133.0765371
+      },
+      "nodes": [
+        1938267495,
+        1938267504,
+        1938267505,
+        1938267507,
+        1938267496,
+        1938267502,
+        1938267512,
+        1938267509,
+        1938267503,
+        1938267508,
+        1938267506,
+        1938267511,
+        1938267499,
+        1938267497,
+        1938267501,
+        1938267495
+      ],
+      "tags": {
+        "name": "パルティフジ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 183461105,
+      "center": {
+        "lat": 33.9179408,
+        "lon": 133.0756171
+      },
+      "nodes": [
+        1938313221,
+        1938313222,
+        1938313218,
+        1938313213,
+        1938313216,
+        1938313221
+      ],
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 184747258,
+      "center": {
+        "lat": 33.9251761,
+        "lon": 133.1825274
+      },
+      "nodes": [
+        1952597468,
+        1952597475,
+        1952597470,
+        1952597467,
+        1952597469,
+        1952597471,
+        1952597473,
+        1952597479,
+        1952597466,
+        1952597468
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "フジグラン西条",
+        "phone": "0897-58-2811",
+        "shop": "supermarket",
+        "source": "Bing, 2010,survey 2013-03-26",
+        "url": "http://www.the-fuji.com"
+      }
+    },
+    {
+      "type": "way",
+      "id": 204350595,
+      "center": {
+        "lat": 33.8277773,
+        "lon": 132.7482703
+      },
+      "nodes": [
+        2143553542,
+        2143553539,
+        2143553538,
+        2143553540,
+        2143553532,
+        2143553535,
+        2143553536,
+        2143553534,
+        2143553533,
+        2143553530,
+        2143553529,
+        2143553526,
+        2143553527,
+        2143553525,
+        2143553524,
+        2143553518,
+        2143553521,
+        2143553514,
+        2143553515,
+        2143553520,
+        2143553519,
+        2143553517,
+        2143553516,
+        2143553523,
+        2143553522,
+        2143553531,
+        2143553542
+      ],
+      "tags": {
+        "building": "supermarket",
+        "name": "マルナカ 土居田店",
+        "name:en": "Marunaka Doida Store",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208453796,
+      "center": {
+        "lat": 33.8534011,
+        "lon": 132.7535557
+      },
+      "nodes": [
+        2187479292,
+        2187479291,
+        2187479288,
+        2187479289,
+        2187479283,
+        2187479284,
+        2187479286,
+        2187479285,
+        2187479293,
+        2187479292
+      ],
+      "tags": {
+        "brand": "マルナカ",
+        "brand:en": "Marunaka",
+        "brand:ja": "マルナカ",
+        "brand:wikidata": "Q11341399",
+        "brand:wikipedia": "ja:マルナカ (チェーンストア)",
+        "building": "commercial",
+        "name": "マルナカ 中央道り店",
+        "name:en": "Marunaka",
+        "name:ja": "マルナカ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 209585670,
+      "center": {
+        "lat": 33.9566345,
+        "lon": 133.28454
+      },
+      "nodes": [
+        2197845914,
+        10779527352,
+        10779527357,
+        10779527356,
+        10779527355,
+        10779527354,
+        10779527353,
+        10779527358,
+        10779527359,
+        2197845901,
+        10779527360,
+        10779527361,
+        10779527362,
+        10779527363,
+        2197845914
+      ],
+      "tags": {
+        "brand": "マルナカ",
+        "brand:en": "Marunaka",
+        "brand:ja": "マルナカ",
+        "brand:wikidata": "Q11341399",
+        "building": "retail",
+        "name": "マルナカ",
+        "name:en": "Marunaka",
+        "name:ja": "マルナカ",
+        "opening_hours": "PH,Mo-Su 09:00-22:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 212496948,
+      "center": {
+        "lat": 33.9076988,
+        "lon": 133.111925
+      },
+      "nodes": [
+        2223404565,
+        2223404561,
+        2223404563,
+        2223404558,
+        2223404565
+      ],
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 214849303,
+      "center": {
+        "lat": 33.7846313,
+        "lon": 132.7886295
+      },
+      "nodes": [
+        2243168201,
+        2243168204,
+        2243168177,
+        2243168146,
+        2243168148,
+        2243168156,
+        2243168160,
+        2243168201
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "セブンスター 砥部店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 214849305,
+      "center": {
+        "lat": 33.7848268,
+        "lon": 132.7857365
+      },
+      "nodes": [
+        2243168219,
+        2243168221,
+        2243168217,
+        2243168199,
+        2243168179,
+        2243168171,
+        2243168169,
+        2243168158,
+        2243168129,
+        2243168142,
+        2243168155,
+        2243168164,
+        2243168162,
+        2243168213,
+        2243168215,
+        2243168219
+      ],
+      "tags": {
+        "building": "commercial",
+        "name": "フジ 砥部店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 215084288,
+      "center": {
+        "lat": 33.8130208,
+        "lon": 132.7778434
+      },
+      "nodes": [
+        2245028514,
+        2245028518,
+        2245028507,
+        2245028510,
+        2245028505,
+        2245028501,
+        2245028498,
+        2245028514
+      ],
+      "tags": {
+        "brand": "マルナカ",
+        "brand:en": "Marunaka",
+        "brand:ja": "マルナカ",
+        "brand:wikidata": "Q11341399",
+        "brand:wikipedia": "ja:マルナカ (チェーンストア)",
+        "building": "retail",
+        "name": "マルナカ　東石井店",
+        "name:en": "Marunaka",
+        "name:ja": "マルナカ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 215084289,
+      "center": {
+        "lat": 33.8036355,
+        "lon": 132.7853971
+      },
+      "nodes": [
+        2245028454,
+        2245028457,
+        2245028449,
+        2245028453,
+        2245028421,
+        2245028424,
+        2245028413,
+        2245028418,
+        2245028405,
+        2245028399,
+        2245028435,
+        2245028437,
+        2245028454
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "スーパーABC 石井店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 215098486,
+      "center": {
+        "lat": 33.8539054,
+        "lon": 132.7482324
+      },
+      "nodes": [
+        2245154609,
+        2245154603,
+        2245154554,
+        2245154556,
+        2245154566,
+        2245154589,
+        2245154587,
+        2245154609
+      ],
+      "tags": {
+        "building": "supermarket",
+        "name": "サニーマート 衣山店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 215098489,
+      "center": {
+        "lat": 33.8563393,
+        "lon": 132.7462612
+      },
+      "nodes": [
+        2245154697,
+        2245154696,
+        2245154703,
+        2245154700,
+        2245154705,
+        2245154702,
+        2245154698,
+        2245154686,
+        2245154688,
+        2245154666,
+        2245154668,
+        2245154675,
+        2245154681,
+        2245154697
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "ラ・ムー 松山中央店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 224698396,
+      "center": {
+        "lat": 33.94712,
+        "lon": 133.2929448
+      },
+      "nodes": [
+        2334927319,
+        8502445828,
+        8502445827,
+        2336728888,
+        8502445824,
+        2336728880,
+        8502445826,
+        8502445825,
+        2336728881,
+        2334927319
+      ],
+      "tags": {
+        "brand": "フジ",
+        "brand:en": "Fuji",
+        "brand:ja": "フジ",
+        "brand:wikidata": "Q8963035",
+        "brand:wikipedia": "ja:フジ (チェーンストア)",
+        "building": "retail",
+        "name": "フジ",
+        "name:en": "Fuji",
+        "name:ja": "フジ",
+        "shop": "supermarket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "way",
+      "id": 228164193,
+      "center": {
+        "lat": 33.8163561,
+        "lon": 132.7779114
+      },
+      "nodes": [
+        2367993754,
+        2367993756,
+        2367993752,
+        2367993749,
+        2367993747,
+        2367993748,
+        2367993745,
+        2367993737,
+        2367993736,
+        2367993738,
+        2367993739,
+        2367993741,
+        2367993740,
+        2367993743,
+        2367993742,
+        2367993744,
+        2367993746,
+        2424839861,
+        2367993754
+      ],
+      "tags": {
+        "branch": "石井店",
+        "brand:wikidata": "Q11314415",
+        "building": "supermarket",
+        "building:levels": "1",
+        "name": "セブンスター",
+        "operator": "ITMグループ",
+        "phone": "+81-89-956-1677",
+        "shop": "supermarket",
+        "website": "https://www.sevenstar.jp.net/shop/ishii/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 230494937,
+      "center": {
+        "lat": 33.8113809,
+        "lon": 132.7610971
+      },
+      "nodes": [
+        2389937216,
+        2389937212,
+        2389937215,
+        2389937217,
+        2389937223,
+        2389937218,
+        2389937214,
+        2389937220,
+        2389937221,
+        2389937211,
+        2389937213,
+        2389937222,
+        2389937219,
+        2389937216
+      ],
+      "tags": {
+        "building": "supermarket",
+        "name": "フジ 古川店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 230941531,
+      "center": {
+        "lat": 33.8212004,
+        "lon": 132.7716196
+      },
+      "nodes": [
+        2393667907,
+        2393667911,
+        2393667908,
+        2393667906,
+        2393667905,
+        2393667907
+      ],
+      "tags": {
+        "branch": "松山中央店",
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q11590183",
+        "brand:wikipedia": "ja:神戸物産",
+        "building": "commercial",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 230964590,
+      "center": {
+        "lat": 33.8184411,
+        "lon": 132.7591416
+      },
+      "nodes": [
+        2393876279,
+        2393876278,
+        2393876277,
+        2393876276,
+        2393876275,
+        2393876273,
+        2393876272,
+        4437566787,
+        2393876274,
+        2393876279
+      ],
+      "tags": {
+        "building": "supermarket",
+        "name": "マルナカ 和泉店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 231125866,
+      "center": {
+        "lat": 33.8524737,
+        "lon": 132.7591707
+      },
+      "nodes": [
+        2395320534,
+        12163658509,
+        2395320535,
+        2395320530,
+        2395320529,
+        2395320531,
+        2395320534
+      ],
+      "tags": {
+        "building": "supermarket",
+        "name": "フジ 本町店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 231298438,
+      "center": {
+        "lat": 33.8088912,
+        "lon": 132.7675319
+      },
+      "nodes": [
+        2396986990,
+        2396986986,
+        2396986985,
+        2396986989,
+        2396986987,
+        2396986988,
+        2396986990
+      ],
+      "tags": {
+        "branch": "椿店",
+        "building": "supermarket",
+        "name": "マルヨシセンター",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 233047736,
+      "center": {
+        "lat": 33.830652,
+        "lon": 132.7258369
+      },
+      "nodes": [
+        2413843741,
+        2413843730,
+        2413843731,
+        2413843724,
+        2413843726,
+        2413843735,
+        2413843733,
+        2413843737,
+        2413843739,
+        2413843743,
+        2413843741
+      ],
+      "tags": {
+        "branch": "高岡店",
+        "brand": "マルナカ",
+        "brand:en": "Marunaka",
+        "brand:ja": "マルナカ",
+        "brand:wikidata": "Q11341399",
+        "building": "supermarket",
+        "name": "マルナカ",
+        "name:en": "Marunaka",
+        "name:ja": "マルナカ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 234185179,
+      "center": {
+        "lat": 33.8628561,
+        "lon": 132.7236
+      },
+      "nodes": [
+        2424840133,
+        2424840131,
+        2424840091,
+        2424840093,
+        2424840096,
+        2424840098,
+        2424840094,
+        2424840097,
+        2424840100,
+        2424840106,
+        2424840103,
+        2424840104,
+        2424840107,
+        2424840109,
+        2424840122,
+        2424840125,
+        2424840127,
+        2424840128,
+        2424840133
+      ],
+      "tags": {
+        "building": "supermarket",
+        "name": "セブンスター 三津店",
+        "operator": "ITMグループ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 234185180,
+      "center": {
+        "lat": 34.0414971,
+        "lon": 133.0286042
+      },
+      "nodes": [
+        2424840174,
+        2424840177,
+        2424840175,
+        2424840172,
+        2424840174
+      ],
+      "tags": {
+        "brand": "Big-A",
+        "brand:en": "Big-A",
+        "brand:ja": "ビッグ・エー",
+        "brand:wikidata": "Q11330804",
+        "brand:wikipedia": "jp:ビッグ・エー",
+        "building": "supermarket",
+        "name": "Big-A",
+        "name:en": "Big-A",
+        "name:ja": "ビッグ・エー",
+        "operator": "ITMグループ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 234185181,
+      "center": {
+        "lat": 33.8484461,
+        "lon": 132.7214836
+      },
+      "nodes": [
+        2424840041,
+        2424840039,
+        2424840038,
+        2424840036,
+        2424840035,
+        2424840033,
+        2424840029,
+        2424840030,
+        2424840015,
+        2424840012,
+        2424840008,
+        2424840010,
+        2424840002,
+        2424840004,
+        2424840041
+      ],
+      "tags": {
+        "building": "supermarket",
+        "name": "セブンスター 別府店",
+        "operator": "ITMグループ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 234185182,
+      "center": {
+        "lat": 33.8359061,
+        "lon": 132.7456863
+      },
+      "nodes": [
+        2424839934,
+        2424839936,
+        2424839948,
+        2424839951,
+        2424839937,
+        2424839939,
+        2424839949,
+        2424839952,
+        2424839943,
+        2424839945,
+        2424839926,
+        2424839927,
+        2424839923,
+        2424839924,
+        2424839917,
+        2424839915,
+        2424839920,
+        2424839921,
+        2424839934
+      ],
+      "tags": {
+        "building": "supermarket",
+        "name": "セブンスター 南江戸店",
+        "name:en": "Sevenstar Minamiedo Store",
+        "operator": "ITMグループ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 234185183,
+      "center": {
+        "lat": 33.8118297,
+        "lon": 132.7168011
+      },
+      "nodes": [
+        2424839825,
+        2424839808,
+        2424839809,
+        2424839800,
+        2424839799,
+        2424839797,
+        2424839796,
+        2424839791,
+        2424839790,
+        2424839786,
+        2424839788,
+        2424839806,
+        2424839827,
+        2424839825
+      ],
+      "tags": {
+        "building": "supermarket",
+        "name": "セブンスター 垣生店",
+        "operator": "ITMグループ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 234185184,
+      "center": {
+        "lat": 33.8703528,
+        "lon": 132.7536681
+      },
+      "nodes": [
+        2424840164,
+        2424840168,
+        2424840167,
+        2424840154,
+        2424840152,
+        2424840156,
+        2424840155,
+        2424840159,
+        2424840158,
+        2424840162,
+        2424840164
+      ],
+      "tags": {
+        "building": "supermarket",
+        "name": "セブンスター 東長戸店",
+        "operator": "ITMグループ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 234185185,
+      "center": {
+        "lat": 33.8481825,
+        "lon": 132.8009401
+      },
+      "nodes": [
+        2424840045,
+        2424840044,
+        2424840032,
+        2424840027,
+        2424840024,
+        2424840021,
+        2424840013,
+        2424840019,
+        2424840016,
+        3142507768,
+        3142507767,
+        3142507764,
+        3142507766,
+        2424839974,
+        2424839973,
+        2424839965,
+        2424839968,
+        2424839967,
+        2424839970,
+        2424839971,
+        2424839976,
+        3142507769,
+        3142507770,
+        2424840025,
+        2424840022,
+        2424840045
+      ],
+      "tags": {
+        "building": "supermarket",
+        "name": "セブンスター 石手店",
+        "operator": "ITMグループ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 234185186,
+      "center": {
+        "lat": 33.8045237,
+        "lon": 132.8802965
+      },
+      "nodes": [
+        2424839763,
+        2424839757,
+        2424839753,
+        2424839755,
+        2424839759,
+        2424839760,
+        2424839766,
+        2424839767,
+        2424839771,
+        2424839769,
+        2424839774,
+        2424839772,
+        2424839764,
+        2424839763
+      ],
+      "tags": {
+        "building": "supermarket",
+        "name": "セブンスター 重信店",
+        "operator": "ITMグループ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 251868044,
+      "center": {
+        "lat": 33.8566267,
+        "lon": 132.7151614
+      },
+      "nodes": [
+        2580272862,
+        2580272863,
+        2580272865,
+        2580272867,
+        2580272862
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "フジ松江店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 253142574,
+      "center": {
+        "lat": 33.8968812,
+        "lon": 132.7368789
+      },
+      "nodes": [
+        2591191280,
+        2591191281,
+        2591191282,
+        2591191283,
+        2591191284,
+        2591191285,
+        2591191286,
+        2591191287,
+        2591191288,
+        2591191289,
+        2591191290,
+        2591191291,
+        2591191280
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "フジ和気店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 253912579,
+      "center": {
+        "lat": 33.879429,
+        "lon": 132.7511492
+      },
+      "nodes": [
+        2597769198,
+        2597769199,
+        2597769200,
+        2597769201,
+        2597769198
+      ],
+      "tags": {
+        "branch": "松山谷町店",
+        "brand": "スポーツデポ",
+        "building": "retail",
+        "name": "ラ・ムー北店",
+        "name:zh": "DEPO SPORT・松山谷町店",
+        "opening_hours": "Mo-Su 10:00-21:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 290527439,
+      "center": {
+        "lat": 33.7990629,
+        "lon": 132.9113124
+      },
+      "nodes": [
+        2940505252,
+        2940505253,
+        2940505254,
+        2940505255,
+        2940505252
+      ],
+      "tags": {
+        "building": "retail",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 290527441,
+      "center": {
+        "lat": 33.7991923,
+        "lon": 132.9108447
+      },
+      "nodes": [
+        2940505256,
+        2940505257,
+        2940505258,
+        2940505259,
+        2940505270,
+        2940505267,
+        2940505269,
+        2940505260,
+        2940505268,
+        2940505261,
+        2940505262,
+        2940505263,
+        2940505264,
+        2940505265,
+        2940505266,
+        2940505256
+      ],
+      "tags": {
+        "building": "retail",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 321565708,
+      "center": {
+        "lat": 33.8702099,
+        "lon": 132.7406398
+      },
+      "nodes": [
+        3283256263,
+        3283256264,
+        3991689516,
+        3991689524,
+        3283256265,
+        3991689538,
+        3991689539,
+        3283256266,
+        3991689588,
+        3991689603,
+        3991689604,
+        3991689597,
+        3991689576,
+        3283256267,
+        3283256268,
+        3991689566,
+        3991689561,
+        3283256263
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "コープえひめ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 345635189,
+      "center": {
+        "lat": 33.2770929,
+        "lon": 132.5398253
+      },
+      "nodes": [
+        3522752639,
+        3522752640,
+        3522752642,
+        3522752641,
+        3522752639
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フジ吉田店",
+        "shop": "supermarket",
+        "source": "GSImaps/std"
+      }
+    },
+    {
+      "type": "way",
+      "id": 345635197,
+      "center": {
+        "lat": 33.2796564,
+        "lon": 132.5409651
+      },
+      "nodes": [
+        3522752658,
+        3522752662,
+        3522752663,
+        3522752660,
+        3522752661,
+        3522752659,
+        3522752658
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "しんばし 吉田店",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 354721358,
+      "center": {
+        "lat": 33.7392881,
+        "lon": 132.792438
+      },
+      "nodes": [
+        3604200835,
+        3604200836,
+        3604200837,
+        3604200838,
+        3604200839,
+        3604200840,
+        3604200835
+      ],
+      "tags": {
+        "brand": "エーコープ",
+        "brand:en": "A-COOP",
+        "brand:ja": "エーコープ",
+        "brand:wikidata": "Q11291524",
+        "brand:wikipedia": "ja:エーコープ",
+        "building": "yes",
+        "name": "エーコープ",
+        "name:en": "A-COOP",
+        "name:ja": "エーコープ",
+        "organic": "only",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 385186296,
+      "center": {
+        "lat": 33.8871407,
+        "lon": 132.7500627
+      },
+      "nodes": [
+        3885422994,
+        3885422995,
+        3885422996,
+        3885422997,
+        3885422994
+      ],
+      "tags": {
+        "branch": "平田店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "retail",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "operator": "フジ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 400983876,
+      "center": {
+        "lat": 33.8180652,
+        "lon": 132.8028221
+      },
+      "nodes": [
+        4034654312,
+        4034654313,
+        4034654314,
+        4034654315,
+        4034654312
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "スーパー日東 久米店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 407442977,
+      "center": {
+        "lat": 33.9823165,
+        "lon": 133.5396667
+      },
+      "nodes": [
+        4094909995,
+        4094909996,
+        4094909997,
+        4094909998,
+        4094909995
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フジ三島店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 407606390,
+      "center": {
+        "lat": 33.9797974,
+        "lon": 133.554254
+      },
+      "nodes": [
+        4096501537,
+        11279842102,
+        4096501541,
+        11279842101,
+        11279842100,
+        11279842099,
+        4096501542,
+        4096501543,
+        11279842109,
+        11279842108,
+        11279842107,
+        11279842106,
+        4096501544,
+        4096501545,
+        4096501546,
+        11279842105,
+        11279842104,
+        11279842103,
+        4096501537
+      ],
+      "tags": {
+        "branch": "三島店",
+        "building": "retail",
+        "name": "ハローズ",
+        "name:en": "Halows",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 408761662,
+      "center": {
+        "lat": 33.9705777,
+        "lon": 133.5236359
+      },
+      "nodes": [
+        4106891147,
+        4106891148,
+        4106891149,
+        4106891150,
+        4106891157,
+        4106891158,
+        4106891159,
+        4106891147
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "木村チェーン三島店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 408999417,
+      "center": {
+        "lat": 33.9946596,
+        "lon": 133.5824687
+      },
+      "nodes": [
+        4108938788,
+        4108939389,
+        4108939390,
+        4108939391,
+        4108939392,
+        4108939393,
+        4108939394,
+        4108939395,
+        4108938788
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "フレッシュバリュー上分店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 409826768,
+      "center": {
+        "lat": 34.0103557,
+        "lon": 133.5855831
+      },
+      "nodes": [
+        4116956868,
+        4116956869,
+        11047913796,
+        4116956870,
+        4116956871,
+        11047913797,
+        11047913798,
+        11047913799,
+        11047913800,
+        11047913801,
+        11047913802,
+        4116956872,
+        4116956873,
+        4116956868
+      ],
+      "tags": {
+        "branch": "川之江店",
+        "building": "yes",
+        "name": "フレッシュバリュー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 409829268,
+      "center": {
+        "lat": 34.0124915,
+        "lon": 133.5736465
+      },
+      "nodes": [
+        4116987102,
+        10877062422,
+        4116987103,
+        4116987104,
+        4116987105,
+        4116987106,
+        4116987107,
+        4116987108,
+        10877062416,
+        10877062417,
+        10877062418,
+        10877062415,
+        4116987109,
+        10877062419,
+        10877062420,
+        10877062421,
+        4116987102
+      ],
+      "tags": {
+        "branch": "川之江店",
+        "brand": "フジ",
+        "brand:en": "Fuji",
+        "brand:ja": "フジ",
+        "brand:wikidata": "Q8963035",
+        "building": "yes",
+        "name": "フジ",
+        "name:en": "Fuji",
+        "name:ja": "フジ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 435406616,
+      "center": {
+        "lat": 34.2463308,
+        "lon": 132.9985071
+      },
+      "nodes": [
+        4333185814,
+        4333185811,
+        7088822033,
+        4333185809,
+        7088822032,
+        4333185810,
+        4333185814
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "Aコープ大三島店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 449625315,
+      "center": {
+        "lat": 33.827569,
+        "lon": 132.7188819
+      },
+      "nodes": [
+        4465711827,
+        11663934907,
+        11663934908,
+        11663934903,
+        11663934904,
+        11663934905,
+        11663934909,
+        11663934910,
+        11663934911,
+        11663934912,
+        11663934913,
+        11663934906,
+        4465711827
+      ],
+      "tags": {
+        "addr:city": "愛媛県松山市高岡町４３２番地１",
+        "addr:postcode": "791-8036",
+        "addr:street": "松山空港線",
+        "building": "yes",
+        "name": "フジ・ZY高岡店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 450534510,
+      "center": {
+        "lat": 33.8527245,
+        "lon": 132.7182916
+      },
+      "nodes": [
+        4474574633,
+        4474574634,
+        4474574635,
+        4474574636,
+        4474574633
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マルナカ清住店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 450537701,
+      "center": {
+        "lat": 33.8409118,
+        "lon": 132.7275002
+      },
+      "nodes": [
+        4474604801,
+        4474604802,
+        4474604803,
+        4474604804,
+        4474604801
+      ],
+      "tags": {
+        "addr:block_number": "698",
+        "addr:city": "松山市",
+        "addr:housenumber": "1",
+        "addr:postcode": "791-8031",
+        "addr:province": "愛媛県",
+        "addr:quarter": "北斎院町",
+        "building": "yes",
+        "name": "フジ北斎院店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 450537891,
+      "center": {
+        "lat": 33.8404527,
+        "lon": 132.7280632
+      },
+      "nodes": [
+        4474606224,
+        4474606225,
+        4474606226,
+        4474606227,
+        4474606228,
+        4474606229,
+        4474606230,
+        4474606231,
+        4474606232,
+        4474606233,
+        4474606234,
+        4474606878,
+        4474606235,
+        4474606236,
+        4474606237,
+        4474606239,
+        4474606238,
+        4474606224
+      ],
+      "tags": {
+        "addr:block_number": "698",
+        "addr:city": "松山市",
+        "addr:housenumber": "1",
+        "addr:postcode": "791-8031",
+        "addr:province": "愛媛県",
+        "addr:quarter": "北斎院町",
+        "building": "yes",
+        "name": "フジ北斎院店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 450538711,
+      "center": {
+        "lat": 33.8403488,
+        "lon": 132.7268381
+      },
+      "nodes": [
+        4474612329,
+        4474612330,
+        4474612331,
+        4474612332,
+        4474612329
+      ],
+      "tags": {
+        "addr:block_number": "698",
+        "addr:city": "松山市",
+        "addr:housenumber": "1",
+        "addr:postcode": "791-8031",
+        "addr:province": "愛媛県",
+        "addr:quarter": "北斎院町",
+        "building": "yes",
+        "name": "くすりのレデイ北斎院店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 481490576,
+      "center": {
+        "lat": 33.8108905,
+        "lon": 132.8202882
+      },
+      "nodes": [
+        4744235597,
+        4744235598,
+        4744235599,
+        9958694238,
+        9958694239,
+        4744235600,
+        4744235597
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マルナカ平井店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 503971272,
+      "center": {
+        "lat": 34.0669392,
+        "lon": 133.0000814
+      },
+      "nodes": [
+        4941994941,
+        4941994935,
+        4941994934,
+        4941994936,
+        4941994937,
+        4941994933,
+        4941994932,
+        4941994940,
+        4941994931,
+        4941994930,
+        4941994939,
+        4941994938,
+        4941994941
+      ],
+      "tags": {
+        "brand": "マルナカ",
+        "brand:en": "Marunaka",
+        "brand:ja": "マルナカ",
+        "brand:wikidata": "Q11341399",
+        "brand:wikipedia": "ja:マルナカ (チェーンストア)",
+        "building": "yes",
+        "name": "マルナカ",
+        "name:en": "Marunaka",
+        "name:ja": "マルナカ",
+        "shop": "supermarket",
+        "source": "GSImaps/std"
+      }
+    },
+    {
+      "type": "way",
+      "id": 505958708,
+      "center": {
+        "lat": 33.9008806,
+        "lon": 132.7479315
+      },
+      "nodes": [
+        2580400492,
+        4957756897,
+        4957756898,
+        4957756899,
+        4957756900,
+        4957756901,
+        4957756902,
+        4957756903,
+        4957756904,
+        4957756905,
+        2580400492
+      ],
+      "tags": {
+        "branch": "堀江店",
+        "building": "yes",
+        "name": "そごうマート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 507316678,
+      "center": {
+        "lat": 33.8677923,
+        "lon": 132.7511087
+      },
+      "nodes": [
+        4968434106,
+        4968434107,
+        4968434108,
+        4968434109,
+        4968434106
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "業務スーパー東長戸店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 507317812,
+      "center": {
+        "lat": 33.866817,
+        "lon": 132.7589136
+      },
+      "nodes": [
+        4968446185,
+        4968446186,
+        4968446187,
+        4968446197,
+        4968446198,
+        4968446188,
+        4968446189,
+        4968446190,
+        4968446191,
+        4968446192,
+        4968446193,
+        4968446194,
+        4968446195,
+        4968446196,
+        4968446185
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フジ姫原店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 511427481,
+      "center": {
+        "lat": 33.8730945,
+        "lon": 132.7405078
+      },
+      "nodes": [
+        5002664241,
+        5002664242,
+        5002664243,
+        5002664244,
+        5002664245,
+        5002664246,
+        5002664247,
+        5002664248,
+        5002664249,
+        5002664250,
+        5002664251,
+        5002664252,
+        5002664253,
+        5002664241
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フジ安城寺店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 527354137,
+      "center": {
+        "lat": 33.8148555,
+        "lon": 132.7399783
+      },
+      "nodes": [
+        5127040673,
+        5127040672,
+        5127040664,
+        5127040665,
+        5127040671,
+        5127040669,
+        5127040666,
+        5127040667,
+        5127040668,
+        5127040670,
+        5127040673
+      ],
+      "tags": {
+        "building": "supermarket",
+        "name": "マルヨシセンター 余戸店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 527522719,
+      "center": {
+        "lat": 33.2275374,
+        "lon": 132.7100077
+      },
+      "nodes": [
+        5128309888,
+        5128309889,
+        5128309885,
+        5128309886,
+        5128309890,
+        5128309887,
+        5128309884,
+        5128309883,
+        5128309888
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "Aコープ　松野店",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 531168491,
+      "center": {
+        "lat": 33.8048553,
+        "lon": 132.833341
+      },
+      "nodes": [
+        5156427013,
+        5156427014,
+        5156427015,
+        5156427016,
+        5156427013
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "スーパーＡＢＣ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 575281025,
+      "center": {
+        "lat": 33.9731969,
+        "lon": 133.2956047
+      },
+      "nodes": [
+        5520564297,
+        5520564298,
+        5520564299,
+        5520564300,
+        5520564297
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フレッシュバリュー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 575282278,
+      "center": {
+        "lat": 33.9742794,
+        "lon": 133.3275476
+      },
+      "nodes": [
+        5520576565,
+        5520576566,
+        5520576567,
+        5520576568,
+        5520576565
+      ],
+      "tags": {
+        "brand": "ザ・ビッグ",
+        "brand:en": "THE BIG",
+        "brand:ja": "ザ・ビッグ",
+        "brand:wikidata": "Q11306676",
+        "building": "yes",
+        "name": "ザ・ビッグ",
+        "name:en": "THE BIG",
+        "name:ja": "ザ・ビッグ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 584187624,
+      "center": {
+        "lat": 34.0569091,
+        "lon": 132.9789768
+      },
+      "nodes": [
+        5584440023,
+        5584440024,
+        5584440025,
+        5584440026,
+        5584440027,
+        5584440028,
+        5584440023
+      ],
+      "tags": {
+        "building": "retail",
+        "building:levels": "1",
+        "name": "コープえひめ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 591030995,
+      "center": {
+        "lat": 33.8458542,
+        "lon": 132.7601697
+      },
+      "nodes": [
+        5641986495,
+        5641986496,
+        5641986497,
+        5641986498,
+        5641986495
+      ],
+      "tags": {
+        "building": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 618018193,
+      "center": {
+        "lat": 34.2597175,
+        "lon": 133.2025096
+      },
+      "nodes": [
+        5841776258,
+        5841776244,
+        5841776245,
+        5841776246,
+        5841776247,
+        5841776258
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "Aコープ弓削店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 622101748,
+      "center": {
+        "lat": 33.8606676,
+        "lon": 132.758486
+      },
+      "nodes": [
+        5876632486,
+        5876632487,
+        5876632488,
+        5876632490,
+        5876632486
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "Aコープハトマート山越店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 622101751,
+      "center": {
+        "lat": 33.861843,
+        "lon": 132.7596595
+      },
+      "nodes": [
+        5876632505,
+        5876632506,
+        5876632507,
+        5876632508,
+        5876632509,
+        5876632510,
+        5876632505
+      ],
+      "tags": {
+        "addr:block_number": "13-18",
+        "addr:city": "松山市",
+        "addr:neighbourhood": "３丁目",
+        "addr:postcode": "791-8013",
+        "addr:province": "愛媛県",
+        "addr:quarter": "山越",
+        "building": "yes",
+        "name": "ザ・ビッグ　松山山越店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 625669294,
+      "center": {
+        "lat": 33.9813385,
+        "lon": 132.7787969
+      },
+      "nodes": [
+        5907295226,
+        5907295227,
+        5907295228,
+        5907295229,
+        5907295230,
+        5907295231,
+        5907295232,
+        5907295233,
+        5907295234,
+        5907295235,
+        5907295236,
+        5907295237,
+        5907295238,
+        5907295239,
+        5907295240,
+        5907295241,
+        5907295226
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マルナカ北条店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 625671429,
+      "center": {
+        "lat": 33.9458382,
+        "lon": 132.7740039
+      },
+      "nodes": [
+        5907316484,
+        5907317285,
+        5907317286,
+        5907317287,
+        5907317288,
+        5907317289,
+        5907317290,
+        5907317291,
+        5907317292,
+        5907317293,
+        5907317294,
+        5907317295,
+        5907316484
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フジ夏目店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 625671430,
+      "center": {
+        "lat": 33.9464188,
+        "lon": 132.7741881
+      },
+      "nodes": [
+        5907317296,
+        5907317297,
+        5907317298,
+        5907317299,
+        5907317296
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フジ夏目店　カジュアル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 636162995,
+      "center": {
+        "lat": 34.0488798,
+        "lon": 133.0203858
+      },
+      "nodes": [
+        5999368685,
+        5999368687,
+        5999368688,
+        5999368689,
+        5999368685
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "コープえひめ喜田村店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 701686281,
+      "center": {
+        "lat": 34.2497689,
+        "lon": 133.0060834
+      },
+      "nodes": [
+        6589768162,
+        6589768163,
+        6589768164,
+        11177106344,
+        11177106346,
+        11177106347,
+        11177106348,
+        11177106345,
+        6589768162
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "大三島ショッパーズ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 714783687,
+      "center": {
+        "lat": 34.2035083,
+        "lon": 133.1014177
+      },
+      "nodes": [
+        6718643658,
+        6718643659,
+        8366863658,
+        8366863661,
+        6718643660,
+        6718643661,
+        6718643662,
+        6718643663,
+        6718643658
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "伯方ショッピングセンター",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 744818352,
+      "center": {
+        "lat": 34.2038893,
+        "lon": 133.1145336
+      },
+      "nodes": [
+        6970811285,
+        6970811286,
+        11281565011,
+        11281565010,
+        6970811287,
+        6970811288,
+        6970811289,
+        6970811285
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "Aコープはかた",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 753517532,
+      "center": {
+        "lat": 34.1428389,
+        "lon": 133.0422047
+      },
+      "nodes": [
+        7040436998,
+        7040436999,
+        7040437000,
+        7040437001,
+        7040437002,
+        7040437003,
+        7040437004,
+        7040437005,
+        7040436998
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ライフショップ 大島店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 753531940,
+      "center": {
+        "lat": 34.1422839,
+        "lon": 133.0404827
+      },
+      "nodes": [
+        7040547275,
+        7040547276,
+        7040547277,
+        7040547278,
+        7040547275
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "Aコープおおしま",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 806267491,
+      "center": {
+        "lat": 34.0480104,
+        "lon": 133.0070283
+      },
+      "nodes": [
+        7539589063,
+        7539589064,
+        10594072506,
+        7539589065,
+        8413757569,
+        7539589066,
+        7539589067,
+        7539589068,
+        7539589063
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ハローズ 今治店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 806278286,
+      "center": {
+        "lat": 34.0357243,
+        "lon": 133.0326008
+      },
+      "nodes": [
+        7539715504,
+        7539715505,
+        7539715506,
+        7539715507,
+        7539715508,
+        7539715509,
+        7539715510,
+        7539715511,
+        7539715512,
+        7539715513,
+        7539715504
+      ],
+      "tags": {
+        "brand": "マルナカ",
+        "brand:en": "Marunaka",
+        "brand:ja": "マルナカ",
+        "brand:wikidata": "Q11341399",
+        "brand:wikipedia": "ja:マルナカ (チェーンストア)",
+        "building": "yes",
+        "name": "マルナカ",
+        "name:en": "Marunaka",
+        "name:ja": "マルナカ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 806280242,
+      "center": {
+        "lat": 34.0474638,
+        "lon": 132.9808217
+      },
+      "nodes": [
+        7539739715,
+        7539739716,
+        7539739717,
+        7539739718,
+        7539739719,
+        7539739720,
+        7539739715
+      ],
+      "tags": {
+        "brand": "フジ",
+        "brand:en": "Fuji",
+        "brand:ja": "フジ",
+        "brand:wikidata": "Q8963035",
+        "brand:wikipedia": "ja:フジ (チェーンストア)",
+        "building": "yes",
+        "name": "フジ",
+        "name:en": "Fuji",
+        "name:ja": "フジ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 806281311,
+      "center": {
+        "lat": 34.0556824,
+        "lon": 133.0145203
+      },
+      "nodes": [
+        7539699878,
+        7539699879,
+        7539699880,
+        7539699881,
+        7539699878
+      ],
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q11590183",
+        "brand:wikipedia": "ja:神戸物産",
+        "building": "yes",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 806281312,
+      "center": {
+        "lat": 34.0614076,
+        "lon": 133.0148661
+      },
+      "nodes": [
+        7539699882,
+        7539699883,
+        7539699884,
+        10583317229,
+        7539751585,
+        7539751586,
+        7539751587,
+        7539751588,
+        7539751589,
+        7539751590,
+        10583317228,
+        7539751591,
+        10583317226,
+        7539751592,
+        10583317238,
+        10583317239,
+        10583317247,
+        10583317248,
+        7539751593,
+        7539751594,
+        7539751595,
+        8528603457,
+        7539751596,
+        10583317260,
+        10583317261,
+        7539751597,
+        7539751598,
+        7539751599,
+        7539699882
+      ],
+      "tags": {
+        "brand": "フジ",
+        "brand:en": "Fuji",
+        "brand:ja": "フジ",
+        "brand:wikidata": "Q8963035",
+        "brand:wikipedia": "ja:フジ (チェーンストア)",
+        "building": "yes",
+        "name": "フジグラン",
+        "name:en": "Fuji GRAND",
+        "name:ja": "フジグラン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 806282871,
+      "center": {
+        "lat": 34.0589713,
+        "lon": 133.0065359
+      },
+      "nodes": [
+        7539782306,
+        7539782307,
+        7539782308,
+        7539782309,
+        7539782310,
+        7539782311,
+        7539782312,
+        7539782313,
+        7539782306
+      ],
+      "tags": {
+        "brand": "マルナカ",
+        "brand:en": "Marunaka",
+        "brand:ja": "マルナカ",
+        "brand:wikidata": "Q11341399",
+        "brand:wikipedia": "ja:マルナカ (チェーンストア)",
+        "building": "yes",
+        "name": "マルナカ",
+        "name:en": "Marunaka",
+        "name:ja": "マルナカ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 806293308,
+      "center": {
+        "lat": 34.030192,
+        "lon": 133.0149616
+      },
+      "nodes": [
+        7539921428,
+        7539921429,
+        7539921430,
+        7539921431,
+        7539921428
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "そごうマート 上徳店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 806297449,
+      "center": {
+        "lat": 34.0204669,
+        "lon": 133.0104596
+      },
+      "nodes": [
+        7539961618,
+        7539961619,
+        7539961620,
+        7539961621,
+        7539961622,
+        7539961623,
+        7539961624,
+        7539961625,
+        7539961626,
+        7539961618
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フレッシュバリュー 今治高市店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 806319960,
+      "center": {
+        "lat": 34.0428098,
+        "lon": 133.0140797
+      },
+      "nodes": [
+        7540188734,
+        7540188735,
+        7540188736,
+        7540188737,
+        7540188738,
+        7540188739,
+        7540188740,
+        7540188741,
+        7540188734
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "生鮮市場 まるひろ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 806342541,
+      "center": {
+        "lat": 34.0343195,
+        "lon": 133.0037134
+      },
+      "nodes": [
+        7540420937,
+        7540420938,
+        7540420939,
+        7540420940,
+        7540420941,
+        7540420942,
+        7540420943,
+        7540420937
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "そごうマート 八町店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 806347309,
+      "center": {
+        "lat": 34.0616322,
+        "lon": 133.0097565
+      },
+      "nodes": [
+        7540472214,
+        7540472215,
+        7540472216,
+        7540472217,
+        7540472218,
+        7540472219,
+        7540472220,
+        7540472221,
+        7540472214
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フレッシュバリュー 今治城東店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 806362856,
+      "center": {
+        "lat": 34.058925,
+        "lon": 132.9828079
+      },
+      "nodes": [
+        7540633957,
+        7540633958,
+        7540633959,
+        7540633960,
+        7540633957
+      ],
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:wikidata": "Q11590183",
+        "brand:wikipedia": "ja:神戸物産",
+        "building": "yes",
+        "name": "業務スーパー",
+        "name:en": "Gyōmu sūpā",
+        "name:ja": "業務スーパー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 806384325,
+      "center": {
+        "lat": 34.0429725,
+        "lon": 132.9882712
+      },
+      "nodes": [
+        7540894100,
+        7540894101,
+        7540894102,
+        7540894103,
+        7540894104,
+        7540894105,
+        7540894106,
+        7540894107,
+        7540894100
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ハローズ 今治中寺店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 806432245,
+      "center": {
+        "lat": 34.0373389,
+        "lon": 132.979794
+      },
+      "nodes": [
+        7541393361,
+        7541393362,
+        7541393363,
+        7541393364,
+        7541393361
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "四村ショッパーズ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 806460111,
+      "center": {
+        "lat": 34.0618336,
+        "lon": 132.9655616
+      },
+      "nodes": [
+        7541654065,
+        7541654066,
+        7541654067,
+        7541654068,
+        7541654069,
+        10582291141,
+        7541654070,
+        7541654071,
+        7541654072,
+        7541654073,
+        7541654074,
+        7541654075,
+        7541654065
+      ],
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "brand:wikipedia": "en:MaxValu",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 806578452,
+      "center": {
+        "lat": 34.0758981,
+        "lon": 132.9963114
+      },
+      "nodes": [
+        7542605154,
+        7542605155,
+        7542605156,
+        7542605157,
+        7542605158,
+        7542605159,
+        7542605154
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フレッシュバリュー今治本町店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 867636730,
+      "center": {
+        "lat": 33.9363091,
+        "lon": 133.3105241
+      },
+      "nodes": [
+        8087271261,
+        8087271259,
+        8087271258,
+        8087271257,
+        8087271260,
+        8087271256,
+        8087271255,
+        8087271263,
+        8087271266,
+        8087271267,
+        8087271268,
+        8087271269,
+        8087271270,
+        8087271271,
+        8087271272,
+        8087271273,
+        8087271274,
+        8087271275,
+        8087271276,
+        8087271277,
+        8087271281,
+        8087271282,
+        8087271264,
+        8087271280,
+        8087271278,
+        8087271262,
+        8087271249,
+        8087271251,
+        8087271250,
+        8087271252,
+        8087271279,
+        8087271240,
+        8087271248,
+        8087271245,
+        8087271244,
+        8087271247,
+        8087271243,
+        8087271242,
+        8087271246,
+        8087271241,
+        8087271253,
+        8087271254,
+        8087271265,
+        8087271261
+      ],
+      "tags": {
+        "brand": "マルナカ",
+        "brand:en": "Marunaka",
+        "brand:ja": "マルナカ",
+        "brand:wikidata": "Q11341399",
+        "building": "yes",
+        "name": "マルナカ",
+        "name:en": "Marunaka",
+        "name:ja": "マルナカ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 887783812,
+      "center": {
+        "lat": 34.0707447,
+        "lon": 132.9973239
+      },
+      "nodes": [
+        8254121254,
+        8254121255,
+        8254121256,
+        8254121257,
+        8254121254
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ユーアイマート 共栄町店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 946019724,
+      "center": {
+        "lat": 33.9862479,
+        "lon": 133.5736349
+      },
+      "nodes": [
+        8757815399,
+        8757815400,
+        8757815401,
+        8757815402,
+        8757815403,
+        8757815404,
+        8757815405,
+        8757815406,
+        8757815407,
+        8757815408,
+        8757815399
+      ],
+      "tags": {
+        "brand": "フジ",
+        "brand:en": "Fuji",
+        "brand:ja": "フジ",
+        "brand:wikidata": "Q8963035",
+        "building": "yes",
+        "name": "フジ",
+        "name:en": "Fuji",
+        "name:ja": "フジ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1124734230,
+      "center": {
+        "lat": 33.9707638,
+        "lon": 133.3206457
+      },
+      "nodes": [
+        10285412426,
+        10285412427,
+        10285412428,
+        10285412429,
+        10285412426
+      ],
+      "tags": {
+        "alt_name:en": "Co-op",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "building": "yes",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1124734243,
+      "center": {
+        "lat": 33.9687731,
+        "lon": 133.3161502
+      },
+      "nodes": [
+        10285412446,
+        10285412447,
+        10285412448,
+        10285412449,
+        10285412446
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マルヨシセンター",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127938092,
+      "center": {
+        "lat": 33.9200771,
+        "lon": 133.2309096
+      },
+      "nodes": [
+        10312332466,
+        10312332467,
+        13115680047,
+        13115680046,
+        10312332468,
+        13115680045,
+        13115680044,
+        10312332469,
+        10312332466
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ハローズ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1137004022,
+      "center": {
+        "lat": 33.956811,
+        "lon": 133.3024148
+      },
+      "nodes": [
+        10599138467,
+        10599138468,
+        10599138469,
+        10599138470,
+        10599138471,
+        10599138472,
+        10599138473,
+        10599138474,
+        10599138475,
+        10599138476,
+        10599138477,
+        10599138478,
+        10599138479,
+        10599138480,
+        10599138467
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ハローズ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1147073515,
+      "center": {
+        "lat": 33.923778,
+        "lon": 133.300471
+      },
+      "nodes": [
+        10673975109,
+        10673975110,
+        10673975111,
+        10673975112,
+        10673975113,
+        10673975114,
+        10673975115,
+        10673975116,
+        10673975109
+      ],
+      "tags": {
+        "alt_name:en": "Co-op",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "building": "yes",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1147073531,
+      "center": {
+        "lat": 33.9388318,
+        "lon": 133.3187734
+      },
+      "nodes": [
+        10673976434,
+        10673976435,
+        10673976436,
+        10673976437,
+        10673976441,
+        10673976440,
+        10673976438,
+        10673976439,
+        10673976434
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ラ・ムー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1148003242,
+      "center": {
+        "lat": 33.9501623,
+        "lon": 133.282537
+      },
+      "nodes": [
+        10681345733,
+        10681345734,
+        10681345735,
+        10681345736,
+        10681345737,
+        10681345738,
+        10681345739,
+        10681345740,
+        10681345741,
+        10681345733
+      ],
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1148003251,
+      "center": {
+        "lat": 33.937997,
+        "lon": 133.2848034
+      },
+      "nodes": [
+        10681345785,
+        10681345786,
+        10681345787,
+        10681345788,
+        10681345789,
+        10681345790,
+        10681345791,
+        10681345792,
+        10681345793,
+        10681345794,
+        10681345795,
+        10681345796,
+        10681345797,
+        10681345798,
+        10681345799,
+        10681345800,
+        10681345801,
+        10681345785
+      ],
+      "tags": {
+        "brand": "フジ",
+        "brand:en": "Fuji",
+        "brand:ja": "フジ",
+        "brand:wikidata": "Q8963035",
+        "building": "yes",
+        "name": "フジ",
+        "name:en": "Fuji",
+        "name:ja": "フジ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1149352627,
+      "center": {
+        "lat": 33.9687159,
+        "lon": 133.2812747
+      },
+      "nodes": [
+        10692510813,
+        10692510814,
+        10692510815,
+        10692510816,
+        10692510817,
+        10692510818,
+        10692510819,
+        10692510820,
+        10692510821,
+        10692510813
+      ],
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q105687460",
+        "building": "yes",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1149382712,
+      "center": {
+        "lat": 33.9314087,
+        "lon": 133.2836143
+      },
+      "nodes": [
+        10692781984,
+        10692781985,
+        10692781986,
+        10692781987,
+        10692781988,
+        10692781989,
+        10692781990,
+        10692781991,
+        10692781992,
+        10692781993,
+        10692781994,
+        10692781995,
+        10692781984
+      ],
+      "tags": {
+        "alt_name:en": "Co-op",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "building": "yes",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "official_name:ja": "日本生活協同組合連合会",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1168234822,
+      "center": {
+        "lat": 33.9785435,
+        "lon": 133.5524147
+      },
+      "nodes": [
+        10864547755,
+        10864547765,
+        10864547767,
+        10864547768,
+        10864547766,
+        10864547756,
+        10864547757,
+        10864547758,
+        10864547759,
+        10864547760,
+        10864547761,
+        10864547762,
+        10864547763,
+        10864547764,
+        10864547755
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フレッシュバリュー三島店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1272055853,
+      "center": {
+        "lat": 33.9325574,
+        "lon": 133.2996872
+      },
+      "nodes": [
+        11812308199,
+        11812308200,
+        11812308201,
+        11812308202,
+        11812308199
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フレッシュバリュー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1272225655,
+      "center": {
+        "lat": 33.9267229,
+        "lon": 133.2868871
+      },
+      "nodes": [
+        11813868414,
+        11813868415,
+        11813868416,
+        11813868417,
+        11813868418,
+        11813868419,
+        11813868414
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "木村チェーン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1272324465,
+      "center": {
+        "lat": 33.9631775,
+        "lon": 133.2859894
+      },
+      "nodes": [
+        11814666287,
+        11814666288,
+        11814666289,
+        11814666290,
+        11814666287
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "木村チェーン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1282503963,
+      "center": {
+        "lat": 33.9425403,
+        "lon": 133.2994171
+      },
+      "nodes": [
+        11901454926,
+        11901454927,
+        11901454928,
+        11901454929,
+        11901454930,
+        11901454931,
+        11901454932,
+        11901454933,
+        11901454934,
+        11901454935,
+        11901454936,
+        11901454937,
+        11901454938,
+        11901454939,
+        11901454940,
+        11901454941,
+        11901454942,
+        11901454943,
+        11901454944,
+        11901454945,
+        11901454946,
+        11901454926
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マルヨシセンター",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1294710918,
+      "center": {
+        "lat": 33.8505495,
+        "lon": 132.7428567
+      },
+      "nodes": [
+        11998666062,
+        11998666063,
+        11998666064,
+        11998666065,
+        11998666066,
+        11998666067,
+        11998666068,
+        11998705669,
+        11998666062
+      ],
+      "tags": {
+        "brand": "マルナカ",
+        "brand:en": "Marunaka",
+        "brand:ja": "マルナカ",
+        "brand:wikidata": "Q11341399",
+        "building": "yes",
+        "name": "マルナカ",
+        "name:en": "Marunaka",
+        "name:ja": "マルナカ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 15813218,
+      "center": {
+        "lat": 33.9932386,
+        "lon": 133.5745657
+      },
+      "members": [
+        {
+          "type": "way",
+          "ref": 1169028322,
+          "role": "outer"
+        },
+        {
+          "type": "way",
+          "ref": 1169028323,
+          "role": "outer"
+        },
+        {
+          "type": "way",
+          "ref": 406372523,
+          "role": "outer"
+        }
+      ],
+      "tags": {
+        "branch": "川之江",
+        "brand": "フジ",
+        "brand:en": "Fuji",
+        "brand:ja": "フジ",
+        "brand:wikidata": "Q8963035",
+        "building": "retail",
+        "layer": "1",
+        "name": "フジグラン",
+        "name:en": "Fuji GRAND",
+        "name:ja": "フジグラン",
+        "shop": "supermarket",
+        "type": "multipolygon"
+      }
+    }
+  ]
+}

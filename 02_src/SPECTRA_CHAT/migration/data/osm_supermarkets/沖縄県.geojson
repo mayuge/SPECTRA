@@ -1,0 +1,7838 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.8 e802775f",
+  "osm3s": {
+    "timestamp_osm_base": "2025-10-15T12:34:29Z",
+    "timestamp_areas_base": "2025-10-15T04:02:15Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 1704453071,
+      "lat": 26.1245312,
+      "lon": 127.6675628,
+      "tags": {
+        "name": "サンエーしおざきシティ",
+        "name:en": "San-A Shiozaki City",
+        "shop": "supermarket",
+        "wikidata": "Q11305467"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1704453085,
+      "lat": 26.1194471,
+      "lon": 127.6685816,
+      "tags": {
+        "addr:block_number": "1851",
+        "addr:city": "糸満市",
+        "addr:postcode": "901-0362",
+        "addr:province": "沖縄県",
+        "addr:quarter": "真栄里",
+        "addr:street": "国道331号（糸満道路）",
+        "branch": "真栄里市場",
+        "name": "かねひで",
+        "name:en": "Town Plaza Kanehide",
+        "name:ja": "タウンプラザかねひで",
+        "name:ja_kana": "かねひで",
+        "phone": "098-995-4044",
+        "shop": "supermarket",
+        "source": "survey",
+        "survey:date": "2012-10-01",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1711302009,
+      "lat": 26.4004491,
+      "lon": 127.7238191,
+      "tags": {
+        "addr:housenumber": "中頭郡読谷村波平２１６１−２",
+        "addr:postcode": "904-0322",
+        "branch": "読谷店",
+        "branch:en": "Yomitan",
+        "name": "かねひで",
+        "name:en": "Town Plaza Kanehide",
+        "name:ja": "タウンプラザかねひで",
+        "name:ja_kana": "かねひで",
+        "phone": "098-958-6558",
+        "shop": "supermarket",
+        "source": "survey",
+        "survey:date": "2012-10-01",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1720489355,
+      "lat": 26.4093692,
+      "lon": 127.7325634,
+      "tags": {
+        "addr:block_number": "300",
+        "addr:city": "読谷村",
+        "addr:county": "中頭郡",
+        "addr:postcode": "904-0323",
+        "addr:province": "沖縄県",
+        "addr:quarter": "高志保",
+        "name": "スーパー松田",
+        "name:en": "Super Matsuda",
+        "opening_hours": "Mo-Su 10:00-19:00",
+        "phone": "098-923-1531",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1926960861,
+      "lat": 26.2095699,
+      "lon": 127.6934412,
+      "tags": {
+        "addr:housenumber": "沖縄県那覇市寄宮１丁目８−４５",
+        "addr:postcode": "902-0064",
+        "name": "かねひで",
+        "name:en": "Town Plaza Kanehide Yogi park Market",
+        "name:ja": "タウンプラザかねひで 与儀公園市場",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "operator": "タウンプラザかねひで",
+        "phone": "098-832-3939",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1992271927,
+      "lat": 26.3340559,
+      "lon": 126.7953985,
+      "tags": {
+        "shop": "supermarket",
+        "source": "survey",
+        "survey:date": "2012-10-01"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1993573526,
+      "lat": 26.6827551,
+      "lon": 127.9764591,
+      "tags": {
+        "name": "ＪＡおきなわ今帰仁支店Ａコープ 今帰仁店",
+        "name:en": "A Coop Nakijin Store",
+        "name:ja": "ＪＡおきなわ今帰仁支店 Ａコープ今帰仁店",
+        "shop": "supermarket",
+        "source": "survey",
+        "survey:date": "2012-10-01"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1993573527,
+      "lat": 26.1869294,
+      "lon": 127.7747242,
+      "tags": {
+        "branch": "佐敷店",
+        "brand": "ザ・ビッグ",
+        "brand:en": "THE BIG",
+        "brand:ja": "ザ・ビッグ",
+        "brand:wikidata": "Q11306676",
+        "name": "ザ・ビッグ",
+        "name:en": "THE BIG",
+        "name:ja": "ザ・ビッグ",
+        "operator": "AEON",
+        "shop": "supermarket",
+        "source": "survey",
+        "survey:date": "2012-10-01"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1993573528,
+      "lat": 26.3717695,
+      "lon": 127.8593957,
+      "tags": {
+        "addr:housenumber": "うるま市字田場１９５３－１",
+        "addr:postcode": "904-2213",
+        "addr:street": "県道8号",
+        "branch": "田場店",
+        "name": "ザ・ビッグ",
+        "name:en": "THE BIG Taba Store",
+        "name:ja": "ザ・ビッグ田場店",
+        "phone": "098-983-6500",
+        "shop": "supermarket",
+        "source": "survey",
+        "survey:date": "2012-10-01",
+        "website": "https://aeon-ryukyu.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1993573533,
+      "lat": 26.1630501,
+      "lon": 127.7243279,
+      "tags": {
+        "addr:street": "国道507号",
+        "branch": "八重瀬店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "name:ja_rm": "Makkusubaryu",
+        "shop": "supermarket",
+        "source": "survey",
+        "survey:date": "2012-10-01"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1993573537,
+      "lat": 26.6534599,
+      "lon": 127.8798658,
+      "tags": {
+        "addr:block_number": "851",
+        "addr:city": "本部町",
+        "addr:county": "国頭郡",
+        "addr:housenumber": "1",
+        "addr:postcode": "905-0212",
+        "addr:province": "沖縄県",
+        "addr:quarter": "大浜",
+        "addr:street": "本部循環線",
+        "alt_name": "イオンビッグエクスプレスもとぶ店",
+        "branch": "もとぶ店",
+        "brand": "ザ・ビッグ エクスプレス",
+        "brand:en": "THE BIG Express",
+        "brand:ja": "ザ・ビッグ エクスプレス",
+        "brand:wikidata": "Q11306676",
+        "contact:phone": "+81 980 47 5588",
+        "name": "ザ・ビッグ エクスプレス",
+        "name:en": "THE BIG Express",
+        "name:ja": "ザ・ビッグ エクスプレス",
+        "old_short_name": "AEON MVもとぶ店",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "operator": "イオン琉球",
+        "operator:wikidata": "Q11286302",
+        "operator:wikipedia": "ja:イオン琉球",
+        "shop": "supermarket",
+        "source": "site visit",
+        "survey:date": "2012-10-01"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1993573538,
+      "lat": 26.1318056,
+      "lon": 127.76066,
+      "tags": {
+        "shop": "supermarket",
+        "source": "survey",
+        "survey:date": "2012-10-01"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1993573539,
+      "lat": 26.1863153,
+      "lon": 127.8047989,
+      "tags": {
+        "name": "伊集スーパー",
+        "shop": "supermarket",
+        "source": "survey",
+        "survey:date": "2012-10-01"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1993573540,
+      "lat": 26.160791,
+      "lon": 127.7218373,
+      "tags": {
+        "name": "タウンプラザかねひで東風平店",
+        "name:en": "Kanehide",
+        "name:ja": "タウンプラザかねひで東風平店",
+        "name:ja_kana": "かねひで",
+        "shop": "supermarket",
+        "source": "survey",
+        "survey:date": "2012-10-01"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1993573541,
+      "lat": 26.2079877,
+      "lon": 127.678801,
+      "tags": {
+        "addr:block_number": "1",
+        "addr:city": "那覇市",
+        "addr:housenumber": "5",
+        "addr:neighbourhood": "3丁目",
+        "addr:postcode": "900-0025",
+        "addr:province": "沖縄県",
+        "addr:quarter": "壺川",
+        "addr:street": "国道330号",
+        "branch": "壺川店",
+        "name": "かねひで",
+        "name:en": "Town Plaza Kanehide Tsubogawa Store",
+        "name:ja": "タウンプラザかねひで壺川店",
+        "name:ja_kana": "かねひで",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "098-836-5050",
+        "shop": "supermarket",
+        "source": "survey",
+        "survey:date": "2012-10-01",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1993573543,
+      "lat": 26.3709579,
+      "lon": 127.8523149,
+      "tags": {
+        "addr:housenumber": "沖縄県うるま市田場１２２０−１",
+        "addr:postcode": "904-2213",
+        "addr:street": "沖縄石川線",
+        "branch": "安慶名市場",
+        "name": "かねひで",
+        "name:en": "Town Plaza Kanehide",
+        "name:ja_kana": "かねひで",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "phone": "098-974-1712",
+        "shop": "supermarket",
+        "source": "survey",
+        "survey:date": "2012-10-01",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1993573544,
+      "lat": 26.4273254,
+      "lon": 127.8263525,
+      "tags": {
+        "addr:housenumber": "沖縄県うるま市石川２丁目２−１",
+        "addr:postcode": "904-1106",
+        "branch": "石川店",
+        "name": "かねひで",
+        "name:en": "Town Plaza Kanehide Ishikawa",
+        "name:ja": "タウンプラザかねひで石川店",
+        "name:ja_kana": "かねひで",
+        "phone": "098-964-6262",
+        "shop": "supermarket",
+        "source": "survey",
+        "survey:date": "2012-10-01",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1993573553,
+      "lat": 26.7012416,
+      "lon": 127.9266682,
+      "tags": {
+        "addr:street": "国道505号",
+        "name": "北山スーパー",
+        "name:en": "Kitayama Supermarket",
+        "name:ja": "北山スーパー（北山商店）",
+        "shop": "supermarket",
+        "source": "survey",
+        "survey:date": "2012-10-01"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1993573554,
+      "lat": 26.4216302,
+      "lon": 127.8250599,
+      "tags": {
+        "brand": "業務スーパー",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja_rm": "Gyomu Supa",
+        "shop": "supermarket",
+        "source": "survey",
+        "survey:date": "2012-10-01"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2004388162,
+      "lat": 26.3592961,
+      "lon": 127.7516695,
+      "tags": {
+        "branch": "嘉手納店",
+        "name": "ジミー",
+        "name:en": "Jimmy's",
+        "shop": "supermarket",
+        "source": "survey",
+        "survey:date": "2012-10-01"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2185241742,
+      "lat": 26.3390421,
+      "lon": 127.8211702,
+      "tags": {
+        "addr:housenumber": "沖縄県沖縄市宮里2-17-27",
+        "addr:postcode": "904-2165",
+        "branch": "V21みやざと食品館",
+        "name": "サンエー",
+        "name:en": "San-A V21 Food Hall Miyazato",
+        "name:ja": "サンエーV21食品館宮里店",
+        "phone": "098-934-3000",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2432016574,
+      "lat": 26.333193,
+      "lon": 127.798947,
+      "tags": {
+        "addr:housenumber": "沖縄県沖縄市胡屋２丁目１−５６",
+        "addr:postcode": "904-0021",
+        "addr:street": "国道330号",
+        "name": "サンエー中の町タウン",
+        "name:en": "San-A Nakanomachi Town",
+        "phone": "098-932-2322",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2469917706,
+      "lat": 26.3240006,
+      "lon": 127.8010416,
+      "tags": {
+        "addr:housenumber": "中頭郡北中城村島袋６９０−１",
+        "addr:postcode": "901-2301",
+        "name": "サンエー",
+        "name:en": "San-A V21 Shimabukuro Food Hall",
+        "name:ja": "サンエーV21しまぶくろ食品館",
+        "phone": "098-930-0100",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2519703677,
+      "lat": 24.4184826,
+      "lon": 123.7984574,
+      "tags": {
+        "addr:block_number": "547",
+        "addr:city": "竹富町",
+        "addr:county": "八重山郡",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "上原",
+        "addr:postcode": "907-1541",
+        "addr:province": "沖縄県",
+        "name": "スーパー川満",
+        "opening_hours": "Mo-Su 07:00-21:00",
+        "phone": "+81-980-85-6157",
+        "shop": "supermarket",
+        "source": "website",
+        "website": "https://ptl.zchain.co.jp/store/7937?store_group_id=1"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2525016321,
+      "lat": 24.2722536,
+      "lon": 123.8806036,
+      "tags": {
+        "name": "玉盛スーパー",
+        "name:en": "Tamamori Supermarket",
+        "name:ja-Latn": "Tamamori Sūpā",
+        "name:ja_kana": "たまもりスーパー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2552596335,
+      "lat": 26.261904,
+      "lon": 127.751974,
+      "tags": {
+        "addr:housenumber": "沖縄県宜野湾市佐真下６０",
+        "addr:postcode": "901-2216",
+        "atm": "no",
+        "name": "かねひで",
+        "name:en": "Town Plaza Kanehide Okinawa International University",
+        "name:ja": "タウンプラザかねひで沖国大前店",
+        "phone": "098-899-2555",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2700846521,
+      "lat": 26.3629321,
+      "lon": 127.7542982,
+      "tags": {
+        "branch": "V21かでな食品館",
+        "name": "サンエー",
+        "name:en": "San-A V21 Kadena Food Hall",
+        "name:ja": "サンエーV21かでな食品店",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2700846524,
+      "lat": 26.3575246,
+      "lon": 127.7411787,
+      "tags": {
+        "addr:housenumber": "中頭郡嘉手納町水釜6-18-1",
+        "addr:postcode": "904-0204",
+        "branch": "V21みずがま食品館",
+        "name": "サンエーV21みずがま食品館",
+        "name:en": "San-A V21 Mizugama Food Hall",
+        "phone": "098-957-2121",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2753327064,
+      "lat": 26.3665586,
+      "lon": 127.8168696,
+      "tags": {
+        "name": "サンエー",
+        "name:en": "San-A V21 Food Hall Chibana",
+        "name:ja": "サンエーV21食品館知花店",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2771838339,
+      "lat": 26.3260901,
+      "lon": 127.7741925,
+      "tags": {
+        "addr:block_number": "517",
+        "addr:city": "北谷町",
+        "addr:county": "中頭郡",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "桑江",
+        "addr:postcode": "904-0103",
+        "addr:province": "沖縄県",
+        "name": "ユニオン北谷店",
+        "name:en": "Union Chatan store",
+        "note": "２４H営業のスーパーマーケット。食料品を主とした生活雑貨販売。",
+        "opening_hours": "24/7",
+        "operator": "株式会社　野嵩商会",
+        "phone": "098-936-1238",
+        "shop": "supermarket",
+        "website": "http://www.nodake.co.jp/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2771848136,
+      "lat": 26.328833,
+      "lon": 127.7896313,
+      "tags": {
+        "addr:block_number": "44",
+        "addr:city": "沖縄市",
+        "addr:housenumber": "39",
+        "addr:neighbourhood": "3",
+        "addr:postcode": "904-0032",
+        "addr:province": "沖縄県",
+        "addr:quarter": "諸見里",
+        "addr:street": "諸見里",
+        "name": "タウンプラザかねひで諸見店",
+        "name:en": "Town Plaza Kanehide Moromizato",
+        "note": "営業時間:あさ9：00～よる12：00まで営業、駐車場あり",
+        "operator": "金秀商事株式会社",
+        "phone": "098-933-9952",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2935585763,
+      "lat": 24.8756107,
+      "lon": 125.2958581,
+      "tags": {
+        "name": "島尻講売店",
+        "name:en": "Shimajiri General Store",
+        "name:ja": "島尻講売店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2982086498,
+      "lat": 24.4683626,
+      "lon": 123.0035415,
+      "tags": {
+        "fixme": "本当に店舗があるか不明",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3331470183,
+      "lat": 26.2674188,
+      "lon": 127.7298004,
+      "tags": {
+        "name": "業務用食品スーパー",
+        "name:en": "Guiallume Center",
+        "shop": "supermarket",
+        "website": "https://act-cs.co.jp/work/gss/store.php?id=okinawahonten"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3331483813,
+      "lat": 26.2864421,
+      "lon": 127.7469556,
+      "tags": {
+        "addr:street": "国道58号 宜野湾バイパス",
+        "branch": "はにんす宜野湾店",
+        "brand": "ザ・ビッグ エクスプレス",
+        "brand:en": "THE BIG Express",
+        "brand:ja": "ザ・ビッグ エクスプレス",
+        "brand:wikidata": "Q11306676",
+        "name": "ザ・ビッグ エクスプレス",
+        "name:en": "THE BIG Express",
+        "name:ja": "ザ・ビッグ エクスプレス",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3714706406,
+      "lat": 26.2371744,
+      "lon": 127.7223212,
+      "tags": {
+        "name": "サンエー",
+        "name:en": "San-A",
+        "name:ko": "산에",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3977624370,
+      "lat": 26.3415756,
+      "lon": 127.7800112,
+      "tags": {
+        "name": "Commisary",
+        "opening_hours": "Mo-Su 07:00-19:00",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3977678741,
+      "lat": 24.341814,
+      "lon": 124.1671456,
+      "tags": {
+        "name": "マックスバリュー石垣店",
+        "name:en": "MaxValue Ishigaki Store",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3977690297,
+      "lat": 24.3418108,
+      "lon": 124.1541721,
+      "tags": {
+        "addr:block_number": "1",
+        "addr:city": "石垣市",
+        "addr:housenumber": "2",
+        "addr:neighbourhood": "新栄町",
+        "addr:postcode": "907-0014",
+        "addr:province": "沖縄県",
+        "name": "ゆらてぃく市場",
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "operator": "JAおきなわ",
+        "phone": "+81-980-88-5300",
+        "shop": "supermarket",
+        "source": "http://www.yaeyama-pain.com/index.html",
+        "start_date": "2011",
+        "website": "http://www.yaeyama-pain.com/index.html",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3977996792,
+      "lat": 24.3482717,
+      "lon": 124.1472851,
+      "tags": {
+        "addr:block_number": "75",
+        "addr:city": "石垣市",
+        "addr:housenumber": "27",
+        "addr:neighbourhood": "新栄町",
+        "addr:postcode": "907-0014",
+        "addr:province": "沖縄県",
+        "branch": "新川店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "opening_hours": "24/7",
+        "operator": "イオン琉球",
+        "payment:aeon_pay": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:ic": "yes",
+        "payment:waon": "yes",
+        "phone": "+81-980-83-5041",
+        "shop": "supermarket",
+        "source": "https://www.aeon-ryukyu.jp/store/maxvalu/arakawa/;survey",
+        "website": "https://www.aeon-ryukyu.jp/store/maxvalu/arakawa/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4081847889,
+      "lat": 26.2109469,
+      "lon": 127.6987661,
+      "tags": {
+        "branch": "三原店",
+        "name": "りうぼう",
+        "name:en": "Ryubo Mihara Store",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4119029691,
+      "lat": 24.7877939,
+      "lon": 125.2801742,
+      "tags": {
+        "addr:street": "国道390号",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4274944789,
+      "lat": 24.4590948,
+      "lon": 124.1405621,
+      "tags": {
+        "name": "宮里商店",
+        "name:en": "Miyazato",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4294633291,
+      "lat": 24.3397869,
+      "lon": 124.1580489,
+      "tags": {
+        "name": "石桓公設市場",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4360054700,
+      "lat": 26.4039525,
+      "lon": 127.7250651,
+      "tags": {
+        "addr:block_number": "1696",
+        "addr:city": "読谷村",
+        "addr:county": "中頭郡",
+        "addr:postcode": "904-0322",
+        "addr:province": "沖縄県",
+        "addr:quarter": "波平",
+        "branch": "読谷波平店",
+        "branch:en": "Yomitan Namihara Store",
+        "branch:ja": "読谷波平店",
+        "name": "丸大 読谷波平店",
+        "name:en": "Marudai",
+        "name:ja": "丸大",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "phone": "098-923-2535",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4384207793,
+      "lat": 26.196613,
+      "lon": 127.6775407,
+      "tags": {
+        "addr:block_number": "35",
+        "addr:city": "那覇市",
+        "addr:housenumber": "24",
+        "addr:postcode": "901-0151",
+        "addr:province": "沖縄県",
+        "addr:quarter": "鏡原町",
+        "branch": "きょうはら店",
+        "branch:en": "Kyohara shop",
+        "name": "サンエー",
+        "name:en": "San-A V21 Food Hall Kyohara",
+        "name:ja": "サンエーV21食品館 きょうはら店",
+        "phone": "098-857-3755",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4394239317,
+      "lat": 26.226024,
+      "lon": 127.6952789,
+      "tags": {
+        "addr:block_number": "4",
+        "addr:city": "那覇市",
+        "addr:housenumber": "9",
+        "addr:neighbourhood": "おもろまち四丁目",
+        "addr:postcode": "900-0006",
+        "addr:province": "沖縄県",
+        "addr:street": "那覇市おもろまち",
+        "branch": "サンエー那覇メインプレイス",
+        "internet_access": "wlan",
+        "level": "0",
+        "name": "サンエー",
+        "name:en": "San-A",
+        "name:ja": "サンエー",
+        "name:ko": "산에이",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "opening_hours:covid19": "Mo-Su 09:00-21:00",
+        "payment:cash": "yes",
+        "payment:contactless": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "0989513300",
+        "shop": "supermarket",
+        "website": "https://san-a.co.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4415758156,
+      "lat": 26.3285842,
+      "lon": 127.7815003,
+      "tags": {
+        "name": "エープライス",
+        "name:en": "A-Price",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4415937763,
+      "lat": 26.319991,
+      "lon": 127.8271881,
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q11590183",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4424450490,
+      "lat": 26.2143679,
+      "lon": 127.6671817,
+      "tags": {
+        "addr:block_number": "3",
+        "addr:city": "那覇市",
+        "addr:housenumber": "4",
+        "addr:neighbourhood": "3丁目",
+        "addr:postcode": "900-0036",
+        "addr:quarter": "西",
+        "addr:street": "沖縄ガス通り",
+        "branch": "にしのまち市場",
+        "name": "タウンプラザかねひで",
+        "name:en": "Town Plaza Kanehide",
+        "name:ja": "タウンプラザかねひで",
+        "name:ko": "타운프라자 카네히데",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "phone": "098-863-4500",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4427843098,
+      "lat": 24.3458141,
+      "lon": 124.1665467,
+      "tags": {
+        "name": "知念商會",
+        "name:ja": "知念商会",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4489979489,
+      "lat": 26.4137462,
+      "lon": 127.8249943,
+      "tags": {
+        "addr:housenumber": "沖縄県うるま市石川東恩納601",
+        "addr:postcode": "904-1111",
+        "addr:street": "国道329号",
+        "branch": "東恩納市場",
+        "name": "タウンプラザかねひで",
+        "name:en": "Town Plaza Kanehide HigashiOnna Market",
+        "name:ja": "タウンプラザかねひで 東恩納市場",
+        "name:ko": "슈퍼마켓",
+        "phone": "098-923-1520",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4528182590,
+      "lat": 24.3902647,
+      "lon": 123.7480117,
+      "tags": {
+        "fixme": "情報不足",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4546560378,
+      "lat": 26.3382864,
+      "lon": 126.8034231,
+      "tags": {
+        "name": "Aコープ",
+        "name:en": "A-coop",
+        "operator": "沖縄県農業協同組合",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4546564934,
+      "lat": 26.3390596,
+      "lon": 126.8034354,
+      "tags": {
+        "name": "真栄堂",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4546572139,
+      "lat": 26.3387779,
+      "lon": 126.8028623,
+      "tags": {
+        "name": "生活雑貨のねは(neha)",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4546573141,
+      "lat": 26.3384742,
+      "lon": 126.8031026,
+      "tags": {
+        "name": "スーパー山城",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4546574345,
+      "lat": 26.3365027,
+      "lon": 126.8005515,
+      "tags": {
+        "name": "ドラックストア　モリ",
+        "name:ja": "ドラックストア モリ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4546576149,
+      "lat": 26.335735,
+      "lon": 126.7986413,
+      "tags": {
+        "name": "ホームセンターよしなが",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4546577211,
+      "lat": 26.3364364,
+      "lon": 126.7991404,
+      "tags": {
+        "name": "コンビニ　ティーダ（保険・黒糖・サーターアンダギー）",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4564459890,
+      "lat": 26.2290799,
+      "lon": 127.3034112,
+      "tags": {
+        "name": "一〇五ストアー",
+        "name:en": "105 store",
+        "name:fr": "105 store",
+        "name:ja_kana": "105 store",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4564459990,
+      "lat": 26.2278044,
+      "lon": 127.3021426,
+      "tags": {
+        "name": "小嶺商店",
+        "name:en": "Komine",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4577380591,
+      "lat": 26.3613037,
+      "lon": 127.8216406,
+      "tags": {
+        "addr:housenumber": "沖縄県沖縄市知花6-10-1",
+        "addr:postcode": "904-2143",
+        "name": "マックスバリュ知花店",
+        "name:en": "Maxvalu Chibana Store",
+        "name:ja": "マックスバリュ知花店",
+        "opening_hours": "24/7",
+        "phone": "098-982-1988",
+        "shop": "supermarket",
+        "website": "http://aeon.ryukyu.jp"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4580908396,
+      "lat": 26.4974113,
+      "lon": 127.8514491,
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4582867490,
+      "lat": 26.3683785,
+      "lon": 127.81868,
+      "tags": {
+        "addr:housenumber": "沖縄県沖縄市登川1-8-8",
+        "addr:postcode": "904-2142",
+        "name": "かねひで",
+        "name:en": "Town Plaza Kanehide Noborikawa",
+        "name:ja": "タウンプラザかねひで登川店",
+        "phone": "098-939-6255",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4584824391,
+      "lat": 26.2213951,
+      "lon": 127.6808175,
+      "tags": {
+        "branch": "松山店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "level": "0",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4692404029,
+      "lat": 26.2847,
+      "lon": 127.815721,
+      "tags": {
+        "addr:housenumber": "沖縄県中頭郡中城村久場１９６３",
+        "addr:postcode": "901-2401",
+        "name": "タウンプラザかねひで 中城モール店",
+        "name:en": "Town Plaza Kanehide Nakagusuku mall",
+        "phone": "098-895-6686",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4832558626,
+      "lat": 26.2170771,
+      "lon": 127.7066586,
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4856742721,
+      "lat": 26.1819192,
+      "lon": 127.7225301,
+      "tags": {
+        "name": "JA Okinawa くがにいちば",
+        "name:ja": "JA Okinawa くがにいちば",
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4887119503,
+      "lat": 26.6805522,
+      "lon": 127.9765815,
+      "tags": {
+        "addr:street": "国道505号",
+        "name": "みねい食品",
+        "name:en": "Minei Food Store",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4936959970,
+      "lat": 26.344497,
+      "lon": 127.8568628,
+      "tags": {
+        "addr:street": "県道33号",
+        "branch": "うるま店",
+        "brand": "ドン・キホーテ",
+        "brand:en": "Don Quijote",
+        "brand:ja": "ドン・キホーテ",
+        "brand:wikidata": "Q1185381",
+        "internet_access": "wlan",
+        "name": "MEGAドン・キホーテ",
+        "name:en": "MEGA Don Quijote",
+        "name:ja": "MEGAドン・キホーテ",
+        "opening_hours": "24/7",
+        "shop": "supermarket",
+        "short_name": "MEGAドンキ",
+        "short_name:en": "MegaDonki",
+        "short_name:ja": "MEGAドンキ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4944043624,
+      "lat": 26.3212215,
+      "lon": 127.8294681,
+      "tags": {
+        "addr:block_number": "5",
+        "addr:city": "沖縄市",
+        "addr:housenumber": "7",
+        "addr:neighbourhood": "4丁目",
+        "addr:postcode": "904-2172",
+        "addr:province": "沖縄県",
+        "addr:quarter": "泡瀬",
+        "branch": "泡瀬店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "opening_hours": "24/7",
+        "phone": "098-937-8744",
+        "shop": "supermarket",
+        "website": "https://aeon-ryukyu.jp/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4969336421,
+      "lat": 24.3364206,
+      "lon": 124.1813758,
+      "tags": {
+        "name": "マックスバリュやいま",
+        "name:en": "MaxValue Yaima Store",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4994254913,
+      "lat": 26.3206996,
+      "lon": 127.7840983,
+      "tags": {
+        "name": "ビッグワン",
+        "name:en": "Big 1",
+        "shop": "supermarket",
+        "shop_1": "alcohol",
+        "website": "https://www.big1-ds.co.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5000959124,
+      "lat": 26.1899062,
+      "lon": 127.6591279,
+      "tags": {
+        "name": "ビッグワン",
+        "name:en": "Big1",
+        "name:ja": "ビッグワン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5084182494,
+      "lat": 24.818087,
+      "lon": 125.1768493,
+      "tags": {
+        "name": "下地スーパー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5139415727,
+      "lat": 26.2700158,
+      "lon": 127.7698983,
+      "tags": {
+        "branch": "宜野湾愛知店",
+        "name": "ビッグワン",
+        "name:en": "Big 1",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5166477730,
+      "lat": 26.2520322,
+      "lon": 127.7367628,
+      "tags": {
+        "name": "浦西りうぼう",
+        "name:en": "Uranishi Ryubo",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5226070622,
+      "lat": 26.1912775,
+      "lon": 127.2833988,
+      "tags": {
+        "name:en": "Tatsunojo Store",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5234825627,
+      "lat": 26.179921,
+      "lon": 127.6540684,
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q11590183",
+        "brand:wikipedia": "ja:神戸物産",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Hira": "Gyōmu sūpā",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5234825736,
+      "lat": 26.1392193,
+      "lon": 127.6724086,
+      "tags": {
+        "addr:block_number": "400",
+        "addr:city": "糸満市",
+        "addr:postcode": "901-0303",
+        "addr:province": "沖縄県",
+        "addr:quarter": "兼城",
+        "branch": "いちゅまん市場",
+        "name": "かねひで",
+        "name:en": "Town Plaza Kanehide",
+        "name:ja": "タウンプラザかねひで",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "098-992-3994",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5234826253,
+      "lat": 26.3140217,
+      "lon": 127.7572549,
+      "tags": {
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "brand:wikipedia": "ja:イオン (店舗ブランド)",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "opening_hours": "Mo-Su 07:00-24:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5241584837,
+      "lat": 26.2672857,
+      "lon": 127.716322,
+      "tags": {
+        "name": "イバノ",
+        "name:en": "IVANO",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5244649709,
+      "lat": 26.3152877,
+      "lon": 127.7942105,
+      "tags": {
+        "addr:block_number": "1番地",
+        "addr:city": "北中城村",
+        "addr:county": "中頭郡",
+        "addr:postcode": "901-2300",
+        "addr:province": "沖縄県",
+        "addr:quarter": "字ライカム",
+        "addr:street": "国道330号",
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "brand:wikipedia": "ja:イオン (店舗ブランド)",
+        "internet_access": "wlan",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "name:zh": "永旺",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "phone": "098-930-0425",
+        "shop": "supermarket",
+        "website": "https://aeon-ryukyu.jp/",
+        "wikidata": "Q17192809"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5244651647,
+      "lat": 26.3014911,
+      "lon": 127.7605708,
+      "tags": {
+        "addr:block_number": "2",
+        "addr:city": "北谷町",
+        "addr:county": "中頭郡",
+        "addr:housenumber": "3",
+        "addr:neighbourhood": "1",
+        "addr:postcode": "904-0117",
+        "addr:province": "沖縄県",
+        "addr:quarter": "北前",
+        "name": "サンエー",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5248647234,
+      "lat": 26.3760299,
+      "lon": 127.7560708,
+      "tags": {
+        "name": "サンエー",
+        "name:en": "San-A",
+        "name:ja": "サンエー",
+        "operator": "サンエー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5248665803,
+      "lat": 26.3738973,
+      "lon": 127.7541855,
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5344842221,
+      "lat": 26.3298061,
+      "lon": 127.7803612,
+      "tags": {
+        "addr:housenumber": "沖縄県沖縄市南桃原4-29-6",
+        "addr:postcode": "904-0035",
+        "name": "かねひで山内店",
+        "name:en": "Town Plaza Kanehide Yamauchi Store",
+        "name:ja": "タウンプラザかねひで山内店",
+        "phone": "098-989-7280",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5344876621,
+      "lat": 24.5401169,
+      "lon": 124.3000146,
+      "tags": {
+        "name": "明石共同売店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5369582610,
+      "lat": 26.1901946,
+      "lon": 127.6880909,
+      "tags": {
+        "branch": "とよみ店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5372707897,
+      "lat": 26.2305287,
+      "lon": 127.6897271,
+      "tags": {
+        "name": "りうぼう",
+        "name:en": "RYUBO",
+        "opening_hours": "24/7",
+        "payment:cash": "yes",
+        "payment:contactless": "yes",
+        "payment:credit_cards": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5372750178,
+      "lat": 26.2284424,
+      "lon": 127.6918421,
+      "tags": {
+        "alt_name:en": "Co-op",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "brand:wikipedia": "ja:日本生活協同組合連合会",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "official_name:ja": "日本生活協同組合連合会",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5379669480,
+      "lat": 26.3343562,
+      "lon": 127.834602,
+      "tags": {
+        "addr:city": "沖縄市",
+        "addr:housenumber": "20-1",
+        "addr:neighbourhood": "2",
+        "addr:province": "沖縄県",
+        "addr:quarter": "古謝",
+        "name": "ユニオンあわせ店",
+        "name:en": "Union Awase store",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5384098038,
+      "lat": 26.2584324,
+      "lon": 127.712883,
+      "tags": {
+        "addr:housenumber": "沖縄県浦添市城間４丁目７−１",
+        "addr:postcode": "901-2133",
+        "name": "りうぼう",
+        "name:en": "Urasoe Ryubo",
+        "name:ja": "浦添りうぼう",
+        "phone": "098-871-1861",
+        "shop": "supermarket",
+        "website": "https://ryubo.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5400437962,
+      "lat": 26.3187107,
+      "lon": 127.8212958,
+      "tags": {
+        "addr:city": "沖縄市",
+        "addr:housenumber": "20-3",
+        "addr:neighbourhood": "7丁目",
+        "addr:province": "沖縄県",
+        "addr:quarter": "高原",
+        "description": "http://www.san-a.co.jp/store/687/",
+        "name": "サンエー V21食品館 高原店",
+        "name:en": "San-A V21 Food Hall Takahara Store",
+        "name:ja": "サンエーV21食品館高原店",
+        "opening_hours": "09:00-23:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5407899636,
+      "lat": 26.3378695,
+      "lon": 127.8436934,
+      "tags": {
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5412184529,
+      "lat": 24.3384277,
+      "lon": 124.1577552,
+      "tags": {
+        "name": "730コート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5453989327,
+      "lat": 26.6603791,
+      "lon": 127.8954833,
+      "tags": {
+        "name": "本部町営市場",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5454027121,
+      "lat": 26.6580006,
+      "lon": 127.8887207,
+      "tags": {
+        "addr:block_number": "29",
+        "addr:city": "本部町",
+        "addr:county": "国頭郡",
+        "addr:housenumber": "62",
+        "addr:postcode": "905-0213",
+        "addr:province": "沖縄県",
+        "addr:quarter": "谷茶",
+        "branch": "V21もとぶ食品館",
+        "brand:en": "San-A",
+        "name": "サンエーV21もとぶ食品館",
+        "name:en": "San-A V21 Motobu food store",
+        "name:ja": "サンエーV21もとぶ食品館",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "phone": "+81 980 47 7600",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5521823783,
+      "lat": 26.1402414,
+      "lon": 127.767605,
+      "tags": {
+        "brand": "エーコープ",
+        "brand:en": "A-COOP",
+        "brand:ja": "エーコープ",
+        "brand:wikidata": "Q11291524",
+        "brand:wikipedia": "ja:エーコープ",
+        "name": "エーコープ",
+        "name:en": "A-COOP",
+        "name:ja": "エーコープ",
+        "opening_hours": "Mo-Su 09:00-20:00",
+        "organic": "only",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5535212021,
+      "lat": 25.9387616,
+      "lon": 131.3114961,
+      "tags": {
+        "name": "宮城商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5535452627,
+      "lat": 25.9539847,
+      "lon": 131.2877937,
+      "tags": {
+        "name": "浅沼商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5536952322,
+      "lat": 25.9463032,
+      "lon": 131.3023345,
+      "tags": {
+        "name": "名か",
+        "name:ja": "名嘉商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5536961821,
+      "lat": 25.9463095,
+      "lon": 131.2970545,
+      "tags": {
+        "image": "https://vill.kitadaito.okinawa.jp/_files/00001502/photogallery13.jpg",
+        "name": "JA北大東村",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885016990,
+      "lat": 26.3475708,
+      "lon": 127.8113733,
+      "tags": {
+        "addr:housenumber": "沖縄県沖縄市越来３−１４−４６",
+        "addr:postcode": "904-0001",
+        "addr:street": "国道329号",
+        "name": "タウンプラザかねひで越来店",
+        "name:en": "Town Plaza Kanehide Goeku",
+        "phone": "098-934-8977",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885016991,
+      "lat": 26.65601,
+      "lon": 127.886069,
+      "tags": {
+        "addr:housenumber": "国頭郡本部町字大浜876−13",
+        "addr:postcode": "905-0212",
+        "addr:street": "県道219号",
+        "name": "タウンプラザかねひで美ら海市場",
+        "name:en": "Town Plaza Kanehide Churaumi Market",
+        "phone": "098-047-2481",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885016992,
+      "lat": 26.4502224,
+      "lon": 127.9104396,
+      "tags": {
+        "addr:block_number": "7956",
+        "addr:city": "金武町",
+        "addr:county": "国頭郡",
+        "addr:housenumber": "6",
+        "addr:postcode": "904-1201",
+        "addr:quarter": "金武",
+        "addr:street": "国道329号",
+        "name": "タウンプラザかねひで金武店",
+        "name:en": "Town Plaza Kanehide Kin",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "phone": "098-968-4451",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885017086,
+      "lat": 26.2108395,
+      "lon": 127.7073966,
+      "tags": {
+        "addr:housenumber": "沖縄県那覇市繁多川1−5−34",
+        "addr:postcode": "902-0071",
+        "name": "タウンプラザかねひで 繁多川市場",
+        "name:en": "Town Plaza kanehide Hantagawa Market",
+        "phone": "098-996-5030",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885017187,
+      "lat": 26.6012631,
+      "lon": 127.9750815,
+      "tags": {
+        "addr:block_number": "8",
+        "addr:city": "名護市",
+        "addr:housenumber": "18",
+        "addr:neighbourhood": "6",
+        "addr:postcode": "905-0011",
+        "addr:province": "沖縄県",
+        "addr:quarter": "宮里",
+        "branch": "大宮市場",
+        "name": "タウンプラザかねひで大宮市場",
+        "name:en": "Town Plaza Kanehide Omiya Ichiba",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "098-043-0586",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885017785,
+      "lat": 26.2756743,
+      "lon": 127.73915,
+      "tags": {
+        "addr:block_number": "10",
+        "addr:city": "宜野湾市",
+        "addr:housenumber": "4",
+        "addr:neighbourhood": "大山6",
+        "addr:postcode": "901-2223",
+        "addr:province": "沖縄県",
+        "branch": "真志喜店",
+        "name": "タウンプラザかねひで",
+        "name:en": "Town Plaza Kanehide Mashiki",
+        "phone": "098-890-0707",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885017786,
+      "lat": 26.3782558,
+      "lon": 127.857448,
+      "tags": {
+        "addr:housenumber": "うるま市みどり町4-2-6",
+        "addr:postcode": "904-2215",
+        "name": "タウンプラザかねひで具志川店",
+        "name:en": "Town Plaza Kanehide Gushikawa",
+        "phone": "098-973-0598",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885017787,
+      "lat": 26.3446482,
+      "lon": 127.822443,
+      "tags": {
+        "addr:housenumber": "沖縄県沖縄市東2丁目1−39",
+        "addr:postcode": "904-2154",
+        "addr:street": "県道75号",
+        "branch": "美里市場",
+        "name": "タウンプラザかねひで",
+        "name:en": "Town Plaza Kanehide Misato Market",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "phone": "098-923-0404",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885029903,
+      "lat": 26.1651891,
+      "lon": 127.691962,
+      "tags": {
+        "addr:block_number": "194",
+        "addr:city": "糸満市",
+        "addr:postcode": "901-0311",
+        "addr:province": "沖縄県",
+        "addr:quarter": "武富仲間田原",
+        "addr:street": "県道7号",
+        "internet_access": "wlan",
+        "name": "イオンタウン武富ショッピングセンター",
+        "name:en": "AEON Town Taketomi Shopping Centre",
+        "name:ja": "イオンタウン武富SC",
+        "phone": "098-851-7031",
+        "shop": "supermarket",
+        "website": "https://aeon-ryukyu.jp/",
+        "wikidata": "Q11286021"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885029928,
+      "lat": 26.3575941,
+      "lon": 127.8368277,
+      "tags": {
+        "addr:street": "県道70号",
+        "name": "サンエー赤道ショッピングタウン",
+        "name:en": "San-A Akamachi Shopping Town",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885029929,
+      "lat": 26.3266707,
+      "lon": 127.8148476,
+      "tags": {
+        "addr:housenumber": "沖縄県沖縄市高原２丁目４−１４",
+        "addr:postcode": "904-2171",
+        "addr:street": "県道20号",
+        "name": "〒904-2171 沖縄県沖縄市高原２丁目４−１４ サンエーV21てるや食品館",
+        "name:en": "San-A V21 Teruya Food Hall",
+        "name:ja": "サンエーV21てるや食品館",
+        "phone": "098-930-1100",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885029930,
+      "lat": 26.139119,
+      "lon": 127.6629689,
+      "tags": {
+        "addr:street": "国道331号",
+        "name": "サンエーV21にしざき食品館",
+        "name:en": "San-A V21 Nishizaki Food Hall",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885029931,
+      "lat": 24.797238,
+      "lon": 125.27953,
+      "tags": {
+        "name": "サンエーV21カママヒルズ食品館",
+        "name:en": "San-A V21 Kamama Hills Food Hall",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885029932,
+      "lat": 24.8020408,
+      "lon": 125.28737,
+      "tags": {
+        "name": "ああ",
+        "name:en": "San-A Shopping Town Miyako Food Hall",
+        "name:ja": "サンエーショッピングタウン 宮古食品館",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885029933,
+      "lat": 24.8016557,
+      "lon": 125.28011,
+      "tags": {
+        "name": "サンエー宮古オリタ食品館",
+        "name:en": "San-A Miyako Orira Food Hall",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885031394,
+      "lat": 26.3678631,
+      "lon": 127.7449124,
+      "tags": {
+        "addr:housenumber": "沖縄県中頭郡読谷村古堅７４０",
+        "addr:postcode": "904-0314",
+        "name": "イオンタウン 読谷ショッピングセンター",
+        "name:en": "AEON Town Yomitan Shopping Centre",
+        "phone": "098-921-5550",
+        "shop": "supermarket",
+        "website": "https://aeon-ryukyu.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885031413,
+      "lat": 26.2482815,
+      "lon": 127.73987,
+      "tags": {
+        "name": "サンエーV21うらにし食品館",
+        "name:en": "San-A V21 Uranishi Food Hall",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885031416,
+      "lat": 26.1259418,
+      "lon": 127.6769315,
+      "tags": {
+        "addr:street": "県道54号",
+        "name": "サンエー糸満店",
+        "name:en": "San-A Itoman",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885031417,
+      "lat": 26.410848,
+      "lon": 127.82596,
+      "tags": {
+        "name": "サンエー",
+        "name:en": "San-A V21 HigashiOnna Food Hall",
+        "name:ja": "サンエーV21 ひがしおんな食品館",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885031418,
+      "lat": 26.3215331,
+      "lon": 127.83206,
+      "tags": {
+        "addr:street": "県道85号",
+        "name": "サンエー泡瀬衣料館",
+        "name:en": "San-A Awase Clothing Hall",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885031494,
+      "lat": 24.801774,
+      "lon": 125.28681,
+      "tags": {
+        "name": "サンエーショッピングタウン宮古衣料館",
+        "name:en": "San-A Shopping Town Miyako Clothing Center",
+        "name:ja": "サンエーショッピングタウン 宮古衣料館",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885046886,
+      "lat": 26.6796139,
+      "lon": 127.97758,
+      "tags": {
+        "addr:street": "国道505号",
+        "name": "エスケイマートきな",
+        "name:en": "SK mart Kina",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885054988,
+      "lat": 26.6100927,
+      "lon": 127.9851681,
+      "tags": {
+        "addr:street": "国道58号（名護バイパス）",
+        "name": "ダイソーイオン名護店",
+        "name:en": "Daiso Aeon Nago store",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885062620,
+      "lat": 26.4523789,
+      "lon": 127.9119026,
+      "tags": {
+        "addr:housenumber": "国頭郡金武町金武７９０６−２",
+        "addr:postcode": "904-1201",
+        "addr:street": "国道329号",
+        "branch": "金武店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "internet_access": "wlan",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "phone": "098-968-5709",
+        "shop": "supermarket",
+        "website": "https://aeon-ryukyu.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885062621,
+      "lat": 26.1738047,
+      "lon": 127.7450738,
+      "tags": {
+        "addr:street": "県道77号",
+        "branch": "南城大里店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885062626,
+      "lat": 26.356539,
+      "lon": 127.81252,
+      "tags": {
+        "addr:street": "国道329号",
+        "name": "ユニオン松本店",
+        "name:en": "Union Matsumoto store",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885062628,
+      "lat": 26.1584882,
+      "lon": 127.660164,
+      "tags": {
+        "name": "りうぼう豊崎食品館",
+        "name:en": "Ryubo Toyosaki Food Center",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885062629,
+      "lat": 26.3225653,
+      "lon": 127.7713247,
+      "tags": {
+        "name": "ジミー北谷店",
+        "name:en": "Jimmy  Chatan Store",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885062918,
+      "lat": 24.7933405,
+      "lon": 125.3027844,
+      "tags": {
+        "name": "マックスバリュ宮古西里店",
+        "name:en": "MaxValue Miyako Nishizato Store",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885063621,
+      "lat": 24.7877032,
+      "lon": 125.280564,
+      "tags": {
+        "addr:housenumber": "沖縄県宮古島市平良松原６３１",
+        "addr:postcode": "906-0014",
+        "addr:street": "国道390号",
+        "internet_access": "wlan",
+        "name": "イオンタウン宮古南SC",
+        "name:en": "AEON Town Miyako Shopping Sentre",
+        "phone": "098-073-7711",
+        "shop": "supermarket",
+        "website": "https://aeon-ryukyu.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885064094,
+      "lat": 26.2136796,
+      "lon": 127.6794658,
+      "tags": {
+        "level": "-1",
+        "name": "リウボウ食品館",
+        "name:en": "Ryubo Food House",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5885064394,
+      "lat": 26.1921188,
+      "lon": 127.7709447,
+      "tags": {
+        "amenity": "pharmacy",
+        "healthcare": "pharmacy",
+        "name": "マツモトキヨシ板良敷店",
+        "name:en": "Matsumoto Kiyoshi Itarashiki  Store",
+        "shop": "supermarket",
+        "website": "http://matsukiyo.co.jp"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5993557238,
+      "lat": 24.3926476,
+      "lon": 124.1635883,
+      "tags": {
+        "name": "石垣名蔵果樹生産組合(直販所)",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6047891885,
+      "lat": 26.2150196,
+      "lon": 127.6688232,
+      "tags": {
+        "name": "りうぼう",
+        "name:en": "RYUBO FOODMARKET",
+        "opening_hours": "Mo-Su 09:00-00:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6141494201,
+      "lat": 26.3643542,
+      "lon": 127.8690715,
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6166317089,
+      "lat": 26.1907627,
+      "lon": 127.6932121,
+      "tags": {
+        "name": "丸大 真玉橋店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6312699099,
+      "lat": 26.3238764,
+      "lon": 127.7926744,
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "Maxvalu Tokai",
+        "brand:wikidata": "Q1960109",
+        "name": "マックスバリュ",
+        "name:en": "Maxvalu",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6316321637,
+      "lat": 26.2009236,
+      "lon": 127.7368415,
+      "tags": {
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "brand:wikipedia": "ja:イオン (店舗ブランド)",
+        "level": "0",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "opening_hours": "Mo-Su 07:00-24:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6427806287,
+      "lat": 26.1896397,
+      "lon": 127.2780757,
+      "tags": {
+        "name": "中村商店",
+        "name:en": "Nakamura store",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6518070487,
+      "lat": 24.2391753,
+      "lon": 124.0157455,
+      "tags": {
+        "name": "たま商店",
+        "name:en": "Tama Shoten",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6593968021,
+      "lat": 26.2614434,
+      "lon": 127.6983818,
+      "tags": {
+        "name": "サンエー",
+        "name:en": "San-A",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6635703130,
+      "lat": 26.2744625,
+      "lon": 127.7295482,
+      "tags": {
+        "name": "サンエー",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6853677858,
+      "lat": 26.1906474,
+      "lon": 127.2819219,
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6906607249,
+      "lat": 26.2064305,
+      "lon": 127.7641251,
+      "tags": {
+        "branch": "東浜市場",
+        "name": "かねひで",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7187665787,
+      "lat": 24.3420441,
+      "lon": 124.158529,
+      "tags": {
+        "name": "ハッピーマートほんな",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7293583778,
+      "lat": 26.5833617,
+      "lon": 127.9841583,
+      "tags": {
+        "name": "Big 1",
+        "name:ja": "ビッグワン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7483060493,
+      "lat": 26.2301669,
+      "lon": 127.7020578,
+      "tags": {
+        "name": "ユニオン",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7639639870,
+      "lat": 26.2278481,
+      "lon": 127.3020057,
+      "tags": {
+        "name": "座間味売店",
+        "name:en": "Zamami Store",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7653281773,
+      "lat": 26.1578356,
+      "lon": 127.650693,
+      "tags": {
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "brand:wikipedia": "ja:イオン (店舗ブランド)",
+        "name": "イオンスタイル",
+        "name:en": "AEONSTYLE",
+        "name:ja": "イオン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8117363019,
+      "lat": 26.9290016,
+      "lon": 127.9410853,
+      "tags": {
+        "name": "農協スーパー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8124978794,
+      "lat": 26.1675263,
+      "lon": 127.6952418,
+      "tags": {
+        "name": "ユニオン",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8158327728,
+      "lat": 26.223247,
+      "lon": 127.7205418,
+      "tags": {
+        "addr:block_number": "12",
+        "addr:city": "那覇市",
+        "addr:housenumber": "101",
+        "addr:neighbourhood": "首里赤平町二丁目",
+        "addr:postcode": "903-0811",
+        "addr:province": "沖縄県",
+        "name": "アジア物産",
+        "name:en": "Asia Product",
+        "name:ja": "アジア物産",
+        "phone": "+81 80 3931 1679",
+        "shop": "supermarket",
+        "website": "https://shop.qzdian.com/okinawa-ajiabusan/d/index.php"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8724276723,
+      "lat": 26.3913309,
+      "lon": 127.729712,
+      "tags": {
+        "brand": "ザ・ビッグ",
+        "brand:en": "THE BIG",
+        "brand:ja": "ザ・ビッグ",
+        "brand:wikidata": "Q11306676",
+        "brand:wikipedia": "ja:イオン (店舗ブランド)",
+        "name": "ザ・ビッグ",
+        "name:en": "THE BIG",
+        "name:ja": "ザ・ビッグ",
+        "shop": "supermarket",
+        "website": "https://www.aeon-ryukyu.jp/store/thebig/toya/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8868973567,
+      "lat": 26.1286283,
+      "lon": 127.6674768,
+      "tags": {
+        "name": "糸満市中央市場",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9008791633,
+      "lat": 26.2019341,
+      "lon": 127.6956115,
+      "tags": {
+        "name": "エコイート",
+        "name:en": "ecoeat",
+        "opening_hours": "We-Su 11:30-19:00",
+        "payment:cash": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9045001244,
+      "lat": 26.1964784,
+      "lon": 127.6766124,
+      "tags": {
+        "name": "ビッグワン",
+        "name:en": "Big1",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9691924894,
+      "lat": 26.224664,
+      "lon": 127.7644399,
+      "tags": {
+        "name": "サンエー",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9691925122,
+      "lat": 26.2368791,
+      "lon": 127.7728478,
+      "tags": {
+        "name": "ビッグワン",
+        "opening_hours": "Mo-Fr 09:00-22:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9691925257,
+      "lat": 26.2133563,
+      "lon": 127.6706464,
+      "tags": {
+        "name": "台湾物産",
+        "opening_hours": "Mo-Su 10:00-20:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9776244025,
+      "lat": 24.7964119,
+      "lon": 125.2941634,
+      "tags": {
+        "addr:block_number": "９６５番２号",
+        "addr:city": "宮古島市",
+        "addr:postcode": "901-0012",
+        "addr:province": "沖縄県",
+        "addr:quarter": "平良西里",
+        "name": "かねひで　みゃーく平良市場",
+        "opening_hours": "Mo-Su 09:00-24:00",
+        "operator": "金秀商事",
+        "phone": "+81 980 73 5111",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9872290172,
+      "lat": 26.2693986,
+      "lon": 127.7681237,
+      "tags": {
+        "branch": "宜野湾愛知店",
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q11590183",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9934302572,
+      "lat": 26.3088028,
+      "lon": 127.7636295,
+      "tags": {
+        "name": "プロマート",
+        "name:en": "PROMART",
+        "shop": "supermarket",
+        "website": "https://promart-official.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9954983352,
+      "lat": 26.2396114,
+      "lon": 127.6870932,
+      "tags": {
+        "name": "業務用食品スーパー",
+        "name:en": "PROMART",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10043812652,
+      "lat": 24.0612597,
+      "lon": 123.7756447,
+      "tags": {
+        "addr:block_number": "98",
+        "addr:city": "竹富町",
+        "addr:county": "八重山郡",
+        "addr:postcode": "907-1751",
+        "addr:province": "沖縄県",
+        "addr:quarter": "字波照間",
+        "name": "名石共同売店",
+        "shop": "supermarket",
+        "source": "unknown"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10046242858,
+      "lat": 24.7882875,
+      "lon": 125.30641,
+      "tags": {
+        "addr:block_number": "1442-1",
+        "addr:city": "宮古島市",
+        "addr:county": "宮古郡",
+        "addr:neighbourhood": "西里",
+        "addr:postcode": "906-0012",
+        "addr:province": "沖縄県",
+        "addr:quarter": "平良",
+        "name": "ファーマーズマーケットみやこ　「あたらす市場」",
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "operator": "沖縄県農業協同組合",
+        "phone": "+81-980-72-2972",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10240456608,
+      "lat": 26.4209266,
+      "lon": 127.8240212,
+      "tags": {
+        "level": "0",
+        "name": "サンエー　石川シティ店",
+        "organic": "yes",
+        "shop": "supermarket",
+        "toilets": "yes",
+        "toilets:access": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10543581619,
+      "lat": 26.2342361,
+      "lon": 127.6908534,
+      "tags": {
+        "name": "Food & Package Ribbon",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10587265680,
+      "lat": 26.3207166,
+      "lon": 127.8304321,
+      "tags": {
+        "name": "ビッグワン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10596200545,
+      "lat": 26.5936998,
+      "lon": 127.9728054,
+      "tags": {
+        "alt_name:en": "Co-op",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11151668912,
+      "lat": 26.2623208,
+      "lon": 127.7629542,
+      "tags": {
+        "branch": "長田店",
+        "name": "サンエー",
+        "name:en": "San-A",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11198102167,
+      "lat": 26.217323,
+      "lon": 127.6717482,
+      "tags": {
+        "name": "辻スーパー",
+        "opening_hours": "24/7",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11210940204,
+      "lat": 26.7098828,
+      "lon": 127.806621,
+      "tags": {
+        "addr:block_number": "150",
+        "addr:city": "伊江村",
+        "addr:housenumber": "3",
+        "addr:postcode": "905-0503",
+        "addr:province": "沖縄県",
+        "addr:quarter": "川平",
+        "branch": "ゆいランド店",
+        "brand": "エーコープ",
+        "brand:en": "A-COOP",
+        "brand:ja": "エーコープ",
+        "brand:wikidata": "Q11291524",
+        "name": "エーコープ",
+        "name:en": "A-COOP",
+        "name:ja": "エーコープ",
+        "opening_hours": "Mo-Su 09:00-20:00",
+        "organic": "only",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11238278540,
+      "lat": 26.3772141,
+      "lon": 127.8565919,
+      "tags": {
+        "name": "ユニオン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11248215269,
+      "lat": 26.3585816,
+      "lon": 127.8424777,
+      "tags": {
+        "name": "かねひで",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11770396163,
+      "lat": 26.7091985,
+      "lon": 127.8028096,
+      "tags": {
+        "name": "マルイストアー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11845777780,
+      "lat": 26.2462082,
+      "lon": 127.9379045,
+      "tags": {
+        "name": "あずま商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11846963993,
+      "lat": 26.2474002,
+      "lon": 127.9369231,
+      "tags": {
+        "addr:block_number": "1221",
+        "addr:city": "うるま市",
+        "addr:postcode": "904-2317",
+        "addr:province": "沖縄県",
+        "addr:quarter": "津堅",
+        "addr:suburb": "勝連",
+        "name": "仲村商店",
+        "phone": "098-978-4026",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12042678903,
+      "lat": 26.4227383,
+      "lon": 127.7305961,
+      "tags": {
+        "addr:block_number": "224",
+        "addr:city": "読谷村",
+        "addr:county": "中頭郡",
+        "addr:housenumber": "17",
+        "addr:postcode": "904-0325",
+        "addr:province": "沖縄県",
+        "addr:quarter": "瀬名波",
+        "name": "LOVE ORGANICS",
+        "opening_hours": "Mo-Su 10:00-19:00",
+        "organic": "only",
+        "phone": "098-923-3870",
+        "shop": "supermarket",
+        "website": "https://birthorganics.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12045247107,
+      "lat": 26.4197639,
+      "lon": 127.7258459,
+      "tags": {
+        "addr:city": "読谷村",
+        "addr:county": "中頭郡",
+        "addr:postcode": "904-0326",
+        "addr:province": "沖縄県",
+        "addr:quarter": "渡慶次",
+        "name": "マルクニスーパー",
+        "opening_hours": "Mo-Su 08:00-23:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12441293739,
+      "lat": 26.2893958,
+      "lon": 127.7772599,
+      "tags": {
+        "addr:housenumber": "宜野湾市普天間２−１４−１",
+        "addr:postcode": "901-2202",
+        "addr:street": "国道330号",
+        "name": "りうぼう",
+        "name:en": "Ryubo",
+        "phone": "098-896-1177",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12465354835,
+      "lat": 25.8296136,
+      "lon": 131.2308613,
+      "tags": {
+        "name": "Aコープ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12465354860,
+      "lat": 25.83251,
+      "lon": 131.2317002,
+      "tags": {
+        "name": "ケンチャンストアー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12465354861,
+      "lat": 25.8330219,
+      "lon": 131.2313005,
+      "tags": {
+        "name": "スーパーミナミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12522903193,
+      "lat": 26.1875822,
+      "lon": 127.6581271,
+      "tags": {
+        "name": "ユニオン スカラ",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "operator": "野嵩商会",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12876540001,
+      "lat": 26.4761134,
+      "lon": 127.9737673,
+      "tags": {
+        "addr:housenumber": "1191",
+        "addr:postcode": "〒904-1303",
+        "addr:street": "沖縄県国頭郡宜野座村惣慶",
+        "name": "コスぎの",
+        "opening_hours": "Mo-Su 08:00-21:00",
+        "phone": "098-968-8675",
+        "shop": "supermarket",
+        "website": "https://www.nakama-shouten.com/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12898837101,
+      "lat": 26.5938387,
+      "lon": 127.9769461,
+      "tags": {
+        "addr:housenumber": "２丁目５−１２",
+        "addr:postcode": "905-0015",
+        "addr:street": "大南",
+        "name": "コス75",
+        "opening_hours": "Mo-Fr 08:00-19:00; Sa-Su 07:00-19:00",
+        "phone": "090-7133-7575",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12912471528,
+      "lat": 26.1610521,
+      "lon": 127.7301909,
+      "tags": {
+        "name": "サンエー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12912857513,
+      "lat": 24.4291371,
+      "lon": 123.7876498,
+      "tags": {
+        "name": "スーパーおやかわ",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12946696483,
+      "lat": 26.2178665,
+      "lon": 127.6938738,
+      "tags": {
+        "name": "ユニオン スカラ",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12989019878,
+      "lat": 26.2750674,
+      "lon": 127.7489504,
+      "tags": {
+        "name": "Futenma Exchange",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 93092753,
+      "center": {
+        "lat": 26.1969424,
+        "lon": 127.6658574
+      },
+      "nodes": [
+        1079070428,
+        1203659712,
+        1203659651,
+        1205565910,
+        1079070434,
+        11780239033,
+        1079070436,
+        9281754000,
+        9281753999,
+        2064390956,
+        5234825740,
+        9281753998,
+        9281753997,
+        9281753996,
+        5234825741,
+        9281753994,
+        9281754001,
+        9281754002,
+        9281753993,
+        1079070440,
+        1203659508,
+        11780239035,
+        1203659583,
+        1079070428
+      ],
+      "tags": {
+        "addr:block_number": "10",
+        "addr:city": "那覇市",
+        "addr:housenumber": "2",
+        "addr:neighbourhood": "5",
+        "addr:postcode": "901-0155",
+        "addr:province": "沖縄県",
+        "addr:quarter": "金城",
+        "addr:street": "那覇内環状線",
+        "branch": "那覇店",
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "brand:wikipedia": "ja:イオン (店舗ブランド)",
+        "building": "retail",
+        "building:levels": "5",
+        "level": "6",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "operator": "イオン",
+        "phone": "098-852-1515",
+        "shop": "supermarket",
+        "website": "https://www.aeon-ryukyu.jp/store/aeon/naha/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 126918865,
+      "center": {
+        "lat": 26.2400001,
+        "lon": 127.6910026
+      },
+      "nodes": [
+        1406028513,
+        1406033442,
+        1406029268,
+        1406030992,
+        1406028761,
+        1406029983,
+        1406035281,
+        1406027428,
+        1406034499,
+        1406026926,
+        1406028513
+      ],
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "brand:wikipedia": "en:MaxValu",
+        "building": "retail",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 167979266,
+      "center": {
+        "lat": 26.1936348,
+        "lon": 127.6608584
+      },
+      "nodes": [
+        1792984349,
+        1792984344,
+        1792984342,
+        1792984343,
+        1835580648,
+        1792984350,
+        1792984349
+      ],
+      "tags": {
+        "branch": "赤嶺店",
+        "building": "retail",
+        "name": "ユニオン",
+        "name:en": "Union Akamine store",
+        "opening_hours": "24/7",
+        "shop": "supermarket",
+        "source": "image;Bing,2010-09-26"
+      }
+    },
+    {
+      "type": "way",
+      "id": 168683742,
+      "center": {
+        "lat": 26.2164304,
+        "lon": 127.6965925
+      },
+      "nodes": [
+        1799114306,
+        1799114295,
+        1799114174,
+        1799114191,
+        4076072500,
+        4076072512,
+        4076072542,
+        4076072534,
+        1799114288,
+        1799114297,
+        1799114306
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "りうぼう",
+        "opening_hours": "24/7",
+        "shop": "supermarket",
+        "source": "image;Bing,2010-09-26"
+      }
+    },
+    {
+      "type": "way",
+      "id": 168809010,
+      "center": {
+        "lat": 26.1883496,
+        "lon": 127.673468
+      },
+      "nodes": [
+        1800090509,
+        9319660147,
+        9319660148,
+        9319660149,
+        9319660150,
+        1800090505,
+        9319660151,
+        9319660152,
+        9319660153,
+        1800090503,
+        1800090504,
+        9319660146,
+        1800090502,
+        1800090500,
+        1800090501,
+        1800090508,
+        1800090506,
+        1800090509
+      ],
+      "tags": {
+        "addr:street": "県道7号",
+        "brand": "ザ・ビッグ エクスプレス",
+        "brand:en": "THE BIG Express",
+        "brand:ja": "ザ・ビッグ エクスプレス",
+        "brand:wikidata": "Q11306676",
+        "building": "retail",
+        "name": "ザ・ビッグ エクスプレス",
+        "name:en": "THE BIG Express",
+        "name:ja": "ザ・ビッグ エクスプレス",
+        "name:ja_rm": "za bigguekusupuresu",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "shop": "supermarket",
+        "source": "image;Bing,2010-09-26"
+      }
+    },
+    {
+      "type": "way",
+      "id": 168873341,
+      "center": {
+        "lat": 26.1689942,
+        "lon": 127.6939158
+      },
+      "nodes": [
+        1800565095,
+        1800565094,
+        1800565080,
+        1800565084,
+        1800565088,
+        1800565095
+      ],
+      "tags": {
+        "addr:housenumber": "沖縄県豊見城市平良１０３−１",
+        "addr:postcode": "901-0212",
+        "building": "retail",
+        "name": "タウンプラザ かねひで",
+        "name:en": "Town Plaza Kanehide Tomigusuku Danchi Front Store",
+        "name:ja": "タウンプラザかねひで豊見城団地前店",
+        "phone": "098-850-4934",
+        "shop": "supermarket",
+        "source": "image;Bing,2010-09-26",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "way",
+      "id": 168928617,
+      "center": {
+        "lat": 26.1646857,
+        "lon": 127.6914236
+      },
+      "nodes": [
+        1801127052,
+        1801127018,
+        11042463562,
+        11042463561,
+        1801127051,
+        11042463563,
+        11042463564,
+        11042463565,
+        11042463566,
+        1801127061,
+        11042463568,
+        11042463567,
+        1801127052
+      ],
+      "tags": {
+        "addr:block_number": "194",
+        "addr:city": "糸満市",
+        "addr:postcode": "901-0311",
+        "addr:quarter": "武富仲間田原",
+        "addr:street": "県道7号",
+        "branch": "武富店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "retail",
+        "internet_access": "wlan",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "name:ja_rm": "Makkusubaryu",
+        "opening_hours": "24/7",
+        "phone": "098-851-7031",
+        "shop": "supermarket",
+        "source": "image;Bing,2010-09-26",
+        "website": "https://aeon-ryukyu.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 169423591,
+      "center": {
+        "lat": 26.2188017,
+        "lon": 127.6908384
+      },
+      "nodes": [
+        1805891558,
+        10567467161,
+        10567467160,
+        1805891551,
+        10567467156,
+        10567467157,
+        10567467158,
+        10567467159,
+        1805891537,
+        4192451643,
+        1805891543,
+        1805891539,
+        1805891546,
+        1805891548,
+        1805891558
+      ],
+      "tags": {
+        "addr:block_number": "10",
+        "addr:city": "那覇市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "2",
+        "addr:postcode": "900-0013",
+        "addr:province": "沖縄県",
+        "addr:quarter": "牧志",
+        "branch": "牧志店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "retail",
+        "building:levels": "2",
+        "internet_access": "wlan",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "name:ja_rm": "Makkusubaryu",
+        "name:ko": "맥스밸류",
+        "name:zh": "Aeon超市",
+        "opening_hours": "24/7",
+        "phone": "098-860-5590",
+        "shop": "supermarket",
+        "source": "image;Bing,2010-09-26;GSImaps/std",
+        "website": "https://www.aeon-ryukyu.jp/store/maxvalu/makishi/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 189613300,
+      "center": {
+        "lat": 26.2443314,
+        "lon": 127.6940518
+      },
+      "nodes": [
+        2001987246,
+        2001987249,
+        2001987251,
+        2001987248,
+        2001987250,
+        2001987247,
+        2001987246
+      ],
+      "tags": {
+        "building": "commercial",
+        "name": "A-プライス",
+        "name:en": "A-Price",
+        "opening_hours": "Mo-Su 09:30-18:30",
+        "shop": "supermarket",
+        "source": "survey;bing",
+        "survey:date": "2012-10-01"
+      }
+    },
+    {
+      "type": "way",
+      "id": 189827102,
+      "center": {
+        "lat": 26.4332251,
+        "lon": 127.8344427
+      },
+      "nodes": [
+        2004388334,
+        2004388332,
+        2004388336,
+        2004388339,
+        2004388334
+      ],
+      "tags": {
+        "addr:block_number": "1",
+        "addr:city": "うるま市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "2",
+        "addr:postcode": "904-1103",
+        "addr:province": "沖縄県",
+        "addr:quarter": "石川赤碕",
+        "addr:street": "国道329号",
+        "branch": "石川ショッピングタウン",
+        "building": "commercial",
+        "building:levels": "2",
+        "name": "サンエー",
+        "name:en": "San-A Ishikawa Shopping Town",
+        "name:ja": "サンエー",
+        "opening_hours": "PH,Mo-Su 09:00-22:00",
+        "phone": "098-964-5000",
+        "shop": "supermarket",
+        "source": "survey",
+        "survey:date": "2012-10-01",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 190679659,
+      "center": {
+        "lat": 26.3913634,
+        "lon": 127.7297308
+      },
+      "nodes": [
+        2013149280,
+        2013149281,
+        2013149279,
+        8723824703,
+        2013149278,
+        2013149280
+      ],
+      "tags": {
+        "branch": "都屋店",
+        "brand": "ザ・ビッグ",
+        "brand:en": "THE BIG",
+        "brand:ja": "ザ・ビッグ",
+        "brand:wikidata": "Q11306676",
+        "brand:wikipedia": "ja:イオン (店舗ブランド)",
+        "building": "retail",
+        "name": "ザ・ビッグ",
+        "name:en": "THE BIG",
+        "name:ja": "ザ・ビッグ",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 190679674,
+      "center": {
+        "lat": 26.3239989,
+        "lon": 127.7512931
+      },
+      "nodes": [
+        2013149037,
+        7341315921,
+        7341315920,
+        2013149044,
+        7341315923,
+        7341315922,
+        2013149028,
+        2013149024,
+        2013149019,
+        2013149014,
+        7341315919,
+        2013149018,
+        2013149037
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "San A",
+        "name:en": "San-A Chatan Hamagawa",
+        "name:ja": "サンエー北谷はまがわ店",
+        "shop": "supermarket",
+        "source": "Bing",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 195925806,
+      "center": {
+        "lat": 24.3364106,
+        "lon": 124.1812955
+      },
+      "nodes": [
+        2063138177,
+        2063138230,
+        2063138265,
+        2063138116,
+        2063138166,
+        2063138238,
+        2063138177
+      ],
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "Maxvalu Tokai",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q1960109",
+        "building": "retail",
+        "name": "マックスバリュ",
+        "name:en": "Maxvalu Tokai",
+        "name:ja": "マックスバリュ",
+        "name:zh": "MaxValu超市",
+        "shop": "supermarket",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 195925810,
+      "center": {
+        "lat": 24.3369557,
+        "lon": 124.1799446
+      },
+      "nodes": [
+        2063138154,
+        2063138283,
+        2063138144,
+        2063138140,
+        2063138154
+      ],
+      "tags": {
+        "building": "retail",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 196947148,
+      "center": {
+        "lat": 24.3375039,
+        "lon": 124.182497
+      },
+      "nodes": [
+        2072433618,
+        2072433644,
+        2955701998,
+        2072433617,
+        2072433629,
+        2072433639,
+        2072433636,
+        2072433613,
+        2072433614,
+        2072433625,
+        2072433618
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "サンエー石垣シティ",
+        "name:en": "San-A Ishigaki City",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/",
+        "wheelchair": "yes",
+        "wikidata": "Q117073977",
+        "wikipedia": "ja:サンエー石垣シティ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 197110212,
+      "center": {
+        "lat": 26.2144803,
+        "lon": 127.6671142
+      },
+      "nodes": [
+        2074053806,
+        2074053790,
+        2074053821,
+        2074053795,
+        2074053806
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "かねひで",
+        "name:en": "Kanehide",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 197295192,
+      "center": {
+        "lat": 24.3379034,
+        "lon": 124.1837744
+      },
+      "nodes": [
+        2075600740,
+        6700383733,
+        6700383730,
+        6700383734,
+        6700383731,
+        6700383732,
+        2075600741,
+        2075600742,
+        2075600738,
+        2075600743,
+        2075600739,
+        2075600744,
+        2075600740
+      ],
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 197309770,
+      "center": {
+        "lat": 24.3380044,
+        "lon": 124.1840973
+      },
+      "nodes": [
+        2075693034,
+        2075693004,
+        2955702004,
+        2955702005,
+        2955702006,
+        2955702007,
+        2075692992,
+        2075693042,
+        2075693034
+      ],
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 197309773,
+      "center": {
+        "lat": 24.3390544,
+        "lon": 124.1848799
+      },
+      "nodes": [
+        2075692998,
+        2075693043,
+        2075693010,
+        2075693030,
+        2075693009,
+        2075693048,
+        2075693047,
+        2075693032,
+        2075692996,
+        2075692990,
+        2075693023,
+        2075693015,
+        2075692998
+      ],
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 211570545,
+      "center": {
+        "lat": 26.3415435,
+        "lon": 127.8238382
+      },
+      "nodes": [
+        2215650949,
+        2215650938,
+        2215650943,
+        2215650950,
+        2215650936,
+        2215650928,
+        2215650949
+      ],
+      "tags": {
+        "branch": "宮里店",
+        "building": "yes",
+        "name": "ユニオン",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 272223992,
+      "center": {
+        "lat": 26.2551295,
+        "lon": 127.7162211
+      },
+      "nodes": [
+        2771798260,
+        2771798263,
+        2771798258,
+        8214227582,
+        8214227583,
+        2771798257,
+        2771798260
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "マックスバリュ伊祖店",
+        "name:en": "Maxvalu Iso Store",
+        "shop": "supermarket",
+        "website": "https://aeon-ryukyu.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 272224808,
+      "center": {
+        "lat": 26.2096988,
+        "lon": 127.6933782
+      },
+      "nodes": [
+        2771801700,
+        2771801702,
+        2771801703,
+        3983941886,
+        3983941887,
+        3983941898,
+        2771801705,
+        2771801706,
+        2771801700
+      ],
+      "tags": {
+        "branch": "与儀公園市場",
+        "building": "retail",
+        "name": "かねひで",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 333252988,
+      "center": {
+        "lat": 26.2376312,
+        "lon": 127.6956381
+      },
+      "nodes": [
+        3403816917,
+        3403816918,
+        3403816919,
+        3403816920,
+        3403816921,
+        3403816922,
+        3403816917
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "ジミー",
+        "name:en": "Jimmy's",
+        "name:ja": "ジミー",
+        "shop": "supermarket",
+        "website": "https://jimmys.co.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 359244265,
+      "center": {
+        "lat": 26.1445984,
+        "lon": 127.668629
+      },
+      "nodes": [
+        3640013838,
+        3640013840,
+        3640013837,
+        3640013842,
+        3640013841,
+        3640013839,
+        3640013836,
+        3640013843,
+        3640013838
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "かねひで",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 359283466,
+      "center": {
+        "lat": 26.1413131,
+        "lon": 127.6727978
+      },
+      "nodes": [
+        3640334362,
+        3640334361,
+        3640334363,
+        3640334360,
+        3640334362
+      ],
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "Maxvalu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q1960109",
+        "brand:wikipedia": "en:MaxValu",
+        "building": "retail",
+        "name": "マックスバリュ",
+        "name:en": "Maxvalu Tokai",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 375636905,
+      "center": {
+        "lat": 26.1904393,
+        "lon": 127.7097237
+      },
+      "nodes": [
+        3789891120,
+        3789891121,
+        3789891156,
+        3789891122,
+        3789891114,
+        3789891115,
+        3789891123,
+        3789891124,
+        3789891125,
+        3789891259,
+        3789891260,
+        3789891261,
+        3789891262,
+        3789891263,
+        3789891258,
+        3789891257,
+        3789891126,
+        3789891127,
+        3789891128,
+        3789891129,
+        3789891130,
+        3789891131,
+        3789891132,
+        3789891133,
+        3789891120
+      ],
+      "tags": {
+        "landuse": "retail",
+        "name": "サンエーつかざんシティ",
+        "shop": "supermarket",
+        "wikidata": "Q11305469"
+      }
+    },
+    {
+      "type": "way",
+      "id": 376250948,
+      "center": {
+        "lat": 26.6071989,
+        "lon": 127.9792593
+      },
+      "nodes": [
+        3796935649,
+        3796935648,
+        3796935646,
+        3796935647,
+        3796935652,
+        3796938857,
+        3796938858,
+        3796938864,
+        3796938863,
+        3796938860,
+        3796935653,
+        3796935649
+      ],
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:ja-Hira": "イーオン",
+        "brand:wikidata": "Q11340427",
+        "building": "supermarket",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 395579015,
+      "center": {
+        "lat": 26.2040435,
+        "lon": 127.6811595
+      },
+      "nodes": [
+        3984164392,
+        3984164390,
+        3984164389,
+        3984164387,
+        3984164392
+      ],
+      "tags": {
+        "branch": "壷川店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "retail",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 415456937,
+      "center": {
+        "lat": 26.6099151,
+        "lon": 127.9846748
+      },
+      "nodes": [
+        4165290102,
+        4165290103,
+        4165290112,
+        4165290116,
+        4165290121,
+        4165290124,
+        4165290128,
+        4165290132,
+        4165290141,
+        4166946757,
+        4165290145,
+        4165290144,
+        4165290142,
+        4165290134,
+        4165290131,
+        4165290129,
+        4165290125,
+        4165290123,
+        4165290120,
+        4165290119,
+        4165290115,
+        4165290109,
+        4165290108,
+        4165290107,
+        4165290106,
+        4165290105,
+        4165290104,
+        4165290102
+      ],
+      "tags": {
+        "branch": "名護店",
+        "landuse": "retail",
+        "name": "イオン",
+        "name:en": "Aeon",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 415712232,
+      "center": {
+        "lat": 26.6082825,
+        "lon": 127.9823818
+      },
+      "nodes": [
+        4166943768,
+        4166943775,
+        4166943787,
+        4166943788,
+        4166943786,
+        4166943777,
+        4166943771,
+        4166943768
+      ],
+      "tags": {
+        "landuse": "retail",
+        "name": "サンエー",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 415712233,
+      "center": {
+        "lat": 26.6070469,
+        "lon": 127.9793326
+      },
+      "nodes": [
+        4166943726,
+        4166943731,
+        4166943733,
+        4166943735,
+        4166943738,
+        4166943740,
+        4166943742,
+        4166943745,
+        4166943748,
+        4166943749,
+        4166943751,
+        4166943759,
+        4166943765,
+        4166943763,
+        4166943754,
+        4166943757,
+        4166943764,
+        4166943767,
+        4166943746,
+        4166943741,
+        4166943737,
+        4166943730,
+        4166943726
+      ],
+      "tags": {
+        "brand": "MaxValu",
+        "check_date": "2025-06-09",
+        "landuse": "retail",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "name:ja_rm": "Makkusubaryu",
+        "opening_hours": "24/7",
+        "shop": "supermarket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "way",
+      "id": 416256473,
+      "center": {
+        "lat": 26.5859764,
+        "lon": 127.9858739
+      },
+      "nodes": [
+        4170574519,
+        4170574531,
+        4170574526,
+        4170574504,
+        4170574505,
+        4170574519
+      ],
+      "tags": {
+        "branch": "東江ショッピングタウン",
+        "landuse": "commercial",
+        "name": "サンエー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 416256482,
+      "center": {
+        "lat": 26.5859636,
+        "lon": 127.9858579
+      },
+      "nodes": [
+        4170574517,
+        4170574530,
+        4170574523,
+        4170574508,
+        4170574506,
+        4170574507,
+        4170574510,
+        4170574517
+      ],
+      "tags": {
+        "bicycle_parking": "rack",
+        "building": "yes",
+        "building:levels": "4",
+        "building:material": "concrete",
+        "building:use": "commercial",
+        "name": "サンエー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 454980779,
+      "center": {
+        "lat": 26.5769127,
+        "lon": 127.9842101
+      },
+      "nodes": [
+        4514578559,
+        4514578562,
+        4514578563,
+        4514578564,
+        4514578561,
+        4514578560,
+        4514578559
+      ],
+      "tags": {
+        "addr:block_number": "22",
+        "addr:city": "名護市",
+        "addr:housenumber": "34",
+        "addr:neighbourhood": "5",
+        "addr:postcode": "905-0021",
+        "addr:province": "沖縄県",
+        "addr:quarter": "東江",
+        "addr:street": "国道58号",
+        "building": "yes",
+        "building:levels": "2",
+        "name": "かねひで",
+        "name:en": "Town Plaza Kanehide Nago",
+        "name:ja": "タウンプラザかねひで名護店",
+        "name:ja_kana": "かねひで",
+        "phone": "098-052-7663",
+        "shop": "supermarket",
+        "source": "survey",
+        "survey:date": "2012-10-01",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "way",
+      "id": 474728916,
+      "center": {
+        "lat": 26.1723115,
+        "lon": 127.3455892
+      },
+      "nodes": [
+        4686221638,
+        4686221635,
+        4686221636,
+        4686221637,
+        4686221638
+      ],
+      "tags": {
+        "building": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 490343630,
+      "center": {
+        "lat": 26.1607913,
+        "lon": 127.7301147
+      },
+      "nodes": [
+        4825239816,
+        4825241178,
+        4825239817,
+        4825239818,
+        4825239819,
+        4825239820,
+        4825240721,
+        4825240722,
+        4825240723,
+        4825240724,
+        4825240725,
+        4825240726,
+        4825240727,
+        4825240728,
+        4825240729,
+        4825240730,
+        4825240731,
+        4825240732,
+        4825240733,
+        4825241174,
+        4825240734,
+        4825240735,
+        4825239816
+      ],
+      "tags": {
+        "addr:housenumber": "島尻郡八重瀬町屋宜原９９−１",
+        "addr:postcode": "901-0406",
+        "addr:street": "県道77号",
+        "building": "yes",
+        "name": "サンエー八重瀬シティ",
+        "name:en": "San-A Yaese City",
+        "phone": "098-998-3111",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 532414332,
+      "center": {
+        "lat": 26.2611264,
+        "lon": 127.7109112
+      },
+      "nodes": [
+        5166413831,
+        5166413832,
+        8838368091,
+        8838368088,
+        5166413835,
+        11832024540,
+        5166413836,
+        5166413837,
+        5166413831
+      ],
+      "tags": {
+        "addr:block_number": "2008",
+        "addr:city": "浦添市",
+        "addr:housenumber": "1",
+        "addr:postcode": "901-2133",
+        "addr:province": "沖縄県",
+        "addr:quarter": "城間",
+        "building": "yes",
+        "building:levels": "4",
+        "name": "サンエーマチナト",
+        "name:en": "San-A Machinato",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/",
+        "wikidata": "Q11305470"
+      }
+    },
+    {
+      "type": "way",
+      "id": 538577672,
+      "center": {
+        "lat": 26.1959928,
+        "lon": 127.7216102
+      },
+      "nodes": [
+        5212949329,
+        5212949330,
+        5212949331,
+        5212949332,
+        5212949333,
+        5212949329
+      ],
+      "tags": {
+        "addr:block_number": "571",
+        "addr:city": "南風原町",
+        "addr:county": "島尻郡",
+        "addr:postcode": "901-1111",
+        "addr:province": "沖縄県",
+        "addr:quarter": "兼城",
+        "branch": "南風原市場",
+        "building": "yes",
+        "level": "1",
+        "name": "タウンプラザかねひで",
+        "name:en": "Town Plaza Kanehide",
+        "name:ja": "タウンプラザかねひで",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "098-888-4727",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "way",
+      "id": 538577678,
+      "center": {
+        "lat": 26.221365,
+        "lon": 127.7025474
+      },
+      "nodes": [
+        5212949366,
+        5212949367,
+        8987162984,
+        8987162983,
+        8987162981,
+        8987162982,
+        5212949368,
+        8987162980,
+        8987162979,
+        5212949369,
+        8987162978,
+        5212949366
+      ],
+      "tags": {
+        "addr:block_number": "22",
+        "addr:city": "那覇市",
+        "addr:neighbourhood": "一丁目",
+        "addr:postcode": "902-0068",
+        "addr:province": "沖縄県",
+        "addr:quarter": "真嘉比",
+        "branch": "真嘉比店",
+        "branch:en": "Makabi",
+        "building": "yes",
+        "name": "サンエー",
+        "name:en": "San-A",
+        "name:ja": "サンエー",
+        "operator": "サンエー",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 538577680,
+      "center": {
+        "lat": 26.2353993,
+        "lon": 127.6998455
+      },
+      "nodes": [
+        5212949381,
+        5212949382,
+        5212949383,
+        5212949384,
+        5212949385,
+        5212949381
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ビッグワン",
+        "name:en": "Big 1",
+        "name:ja": "ビッグワン",
+        "name:ko": "빅원",
+        "opening_hours": "Mo-Su 09:00-00:00",
+        "payment:cash": "yes",
+        "payment:contactless": "yes",
+        "payment:credit_cards": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 538577685,
+      "center": {
+        "lat": 26.2633952,
+        "lon": 127.7128355
+      },
+      "nodes": [
+        5212949414,
+        5212949415,
+        5212949416,
+        5212949417,
+        5212949418,
+        5212949419,
+        5212949420,
+        5212949421,
+        5212949414
+      ],
+      "tags": {
+        "addr:block_number": "3004",
+        "addr:city": "浦添市",
+        "addr:housenumber": "1",
+        "addr:postcode": "901-2133",
+        "addr:province": "沖縄県",
+        "addr:quarter": "城間",
+        "addr:street": "国道58号",
+        "branch": "牧港58市場",
+        "building": "yes",
+        "name": "かねひで",
+        "name:en": "Town Plaza Kanehide",
+        "name:ja": "タウンプラザかねひで",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "098-879-0117",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "way",
+      "id": 538823837,
+      "center": {
+        "lat": 26.1867037,
+        "lon": 127.6729906
+      },
+      "nodes": [
+        5214886070,
+        5214886071,
+        5214886072,
+        5214886073,
+        5214886070
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "サンエー",
+        "name:en": "San-A V21 Food Hall Uebaru Danchi",
+        "name:ja": "サンエーV21食品館 うえばる団地店",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 538835664,
+      "center": {
+        "lat": 26.2415714,
+        "lon": 127.6824328
+      },
+      "nodes": [
+        5215012438,
+        5215012439,
+        5215012440,
+        8917009379,
+        8917009380,
+        8917009382,
+        8917009381,
+        5215012441,
+        5215012438
+      ],
+      "tags": {
+        "addr:block_number": "19",
+        "addr:city": "那覇市",
+        "addr:housenumber": "7",
+        "addr:neighbourhood": "3丁目",
+        "addr:postcode": "900-0002",
+        "addr:province": "沖縄県",
+        "addr:quarter": "曙",
+        "building": "yes",
+        "name": "かねひで",
+        "name:en": "Town Plaza Kanehide Akebono Store",
+        "name:ja": "タウンプラザかねひであけぼの店",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "098-861-7014",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "way",
+      "id": 540474831,
+      "center": {
+        "lat": 26.2526393,
+        "lon": 127.7162352
+      },
+      "nodes": [
+        5228721659,
+        5228721660,
+        5228721661,
+        5228721662,
+        5228721659
+      ],
+      "tags": {
+        "addr:housenumber": "沖縄県浦添市伊祖２丁目１０−３",
+        "addr:postcode": "901-2132",
+        "addr:street": "県道251号",
+        "building": "yes",
+        "name": "かねひで",
+        "name:en": "Town Plaza Kanehide Pipeline Iso Store",
+        "name:ja": "タウンプラザかねひで パイプライン伊祖店",
+        "phone": "098-876-4334",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "way",
+      "id": 541344349,
+      "center": {
+        "lat": 26.2299693,
+        "lon": 127.7040147
+      },
+      "nodes": [
+        5234825789,
+        5234825790,
+        5234825791,
+        5234825792,
+        5234825793,
+        5234825794,
+        5234825789
+      ],
+      "tags": {
+        "addr:block_number": "13",
+        "addr:city": "那覇市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "古島1丁目",
+        "addr:postcode": "902-0061",
+        "addr:province": "沖縄県",
+        "building": "yes",
+        "building:levels": "2",
+        "name": "かねひで",
+        "name:en": "Town Plaza Kanehide Furujima",
+        "name:ja": "タウンプラザかねひで古島店",
+        "phone": "098-885-7563",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "way",
+      "id": 541344367,
+      "center": {
+        "lat": 26.2336739,
+        "lon": 127.7200398
+      },
+      "nodes": [
+        5234825956,
+        9764457357,
+        5234825957,
+        5234825958,
+        9764457361,
+        9386946252,
+        9386946251,
+        9764457358,
+        5234825959,
+        9764457359,
+        9764457374,
+        9386946248,
+        5234825956
+      ],
+      "tags": {
+        "addr:housenumber": "沖縄県浦添市経塚581番2",
+        "addr:postcode": "901-2111",
+        "building": "yes",
+        "name": "サンエー",
+        "name:en": "San-A V21 Ona Food Hall",
+        "name:ja": "サンエーV21おおな食品館",
+        "phone": "098-885-2001",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 541344376,
+      "center": {
+        "lat": 26.2643038,
+        "lon": 127.7274451
+      },
+      "nodes": [
+        5234826003,
+        5234826004,
+        5234826005,
+        5234826006,
+        5234826003
+      ],
+      "tags": {
+        "alt_name:en": "Co-op",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "brand:wikipedia": "ja:日本生活協同組合連合会",
+        "building": "yes",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 541344383,
+      "center": {
+        "lat": 26.2739787,
+        "lon": 127.7300746
+      },
+      "nodes": [
+        5234826129,
+        5234826130,
+        5234826131,
+        5234826132,
+        5234826133,
+        5234826134,
+        5234826135,
+        5234826129
+      ],
+      "tags": {
+        "branch": "宇地泊店",
+        "building": "yes",
+        "check_date": "2025-05-13",
+        "name": "ユニオン",
+        "name:en": "FRESH PLAZA UNION",
+        "name:ja": "ユニオン",
+        "name:ko": "유니언",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 541358615,
+      "center": {
+        "lat": 26.2427207,
+        "lon": 127.7053848
+      },
+      "nodes": [
+        5234934746,
+        5234934747,
+        5234934748,
+        5234934749,
+        5234934746
+      ],
+      "tags": {
+        "addr:block_number": "1",
+        "addr:city": "浦添市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "5",
+        "addr:postcode": "901-2126",
+        "addr:province": "沖縄県",
+        "addr:quarter": "宮城",
+        "branch": "内間市場",
+        "building": "yes",
+        "building:levels": "2",
+        "level": "1",
+        "name": "かねひで",
+        "name:en": "Town Plaza Kanehide",
+        "name:ja": "タウンプラザかねひで",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "098-874-6521",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "way",
+      "id": 541366393,
+      "center": {
+        "lat": 26.2243394,
+        "lon": 127.7038719
+      },
+      "nodes": [
+        5235009760,
+        5235009761,
+        5235009762,
+        5235009763,
+        5235009760
+      ],
+      "tags": {
+        "branch": "真嘉比店",
+        "building": "yes",
+        "name": "ユニオン",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 541366398,
+      "center": {
+        "lat": 26.2356452,
+        "lon": 127.7068645
+      },
+      "nodes": [
+        5235009781,
+        5235009782,
+        5235009783,
+        5235009784,
+        5235009785,
+        5235009781
+      ],
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q105687460",
+        "brand:wikipedia": "ja:神戸物産",
+        "building": "yes",
+        "building:levels": "2",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "opening_hours": "Mo-Su 09:30-21:30",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 542133089,
+      "center": {
+        "lat": 26.1753264,
+        "lon": 127.6621677
+      },
+      "nodes": [
+        5241584199,
+        5241584200,
+        5241584201,
+        5241584202,
+        5241584199
+      ],
+      "tags": {
+        "addr:street": "県道68号",
+        "branch": "豊見城店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 549353787,
+      "center": {
+        "lat": 26.1908388,
+        "lon": 127.6598585
+      },
+      "nodes": [
+        5306584623,
+        5306584624,
+        5306584625,
+        5306584626,
+        5306584627,
+        5306584628,
+        5306584623
+      ],
+      "tags": {
+        "addr:block_number": "２",
+        "addr:city": "那覇市",
+        "addr:housenumber": "２３",
+        "addr:neighbourhood": "３丁目",
+        "addr:postcode": "901-0145",
+        "addr:province": "沖縄県",
+        "addr:quarter": "高良",
+        "building": "yes",
+        "building:levels": "2",
+        "level": "1",
+        "name": "サンエーV21食品館高良店",
+        "name:en": "San-A V21 Food Hall Takara",
+        "name:ja": "サンエーV21食品館高良店",
+        "phone": "098-858-3111",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 549353789,
+      "center": {
+        "lat": 26.2079706,
+        "lon": 127.6787958
+      },
+      "nodes": [
+        5306584642,
+        5306584643,
+        5306584644,
+        5306584645,
+        5306584642
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "タウンプラザかねひで",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 552370397,
+      "center": {
+        "lat": 26.1927876,
+        "lon": 127.7139188
+      },
+      "nodes": [
+        5333109268,
+        5333109269,
+        12118862602,
+        12118862601,
+        5333109270,
+        5333109271,
+        5333109268
+      ],
+      "tags": {
+        "branch": "津嘉山店",
+        "building": "yes",
+        "name": "ユニオン",
+        "name:en": "Union Tsukazan Store",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 554275877,
+      "center": {
+        "lat": 26.1994597,
+        "lon": 127.7361375
+      },
+      "nodes": [
+        5349222602,
+        5349222603,
+        5349222604,
+        5349222605,
+        5349222606,
+        5349222607,
+        5349222608,
+        5349222609,
+        5349222610,
+        5349222611,
+        5349222612,
+        5349222613,
+        5349222602
+      ],
+      "tags": {
+        "branch": "南風原店",
+        "building": "yes",
+        "level": "1",
+        "name": "丸大",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 554290824,
+      "center": {
+        "lat": 26.1965518,
+        "lon": 127.7050095
+      },
+      "nodes": [
+        5349362863,
+        5349362864,
+        9121463206,
+        5349362865,
+        5349362866,
+        5361596879,
+        5349362867,
+        5349362868,
+        5349362869,
+        5349362870,
+        5349362871,
+        5349362872,
+        5349362873,
+        5349362874,
+        5349362863
+      ],
+      "tags": {
+        "alt_name:en": "Co-op",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "brand:wikipedia": "ja:日本生活協同組合連合会",
+        "building": "yes",
+        "building:levels": "1",
+        "level": "1",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "official_name:ja": "日本生活協同組合連合会",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 554541217,
+      "center": {
+        "lat": 26.2022227,
+        "lon": 127.6835525
+      },
+      "nodes": [
+        5351513734,
+        5351513735,
+        5351513736,
+        5351513737,
+        5351513738,
+        5351513739,
+        5351513734
+      ],
+      "tags": {
+        "addr:street": "県道221号",
+        "building": "yes",
+        "name": "サンエー",
+        "name:en": "San-A V21 Tsubogawa Food Hall",
+        "name:ja": "サンエー V21つぼがわ食品館",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 555025277,
+      "center": {
+        "lat": 26.249295,
+        "lon": 127.7744723
+      },
+      "nodes": [
+        5355834175,
+        5355834176,
+        5355834177,
+        5355834179,
+        5355834180,
+        8692246388,
+        8692246389,
+        8692246390,
+        8692246391,
+        8692246392,
+        8692246393,
+        8692246394,
+        5355834175
+      ],
+      "tags": {
+        "addr:block_number": "795",
+        "addr:city": "中城村",
+        "addr:county": "中頭郡",
+        "addr:postcode": "901-2424",
+        "addr:province": "沖縄県",
+        "addr:quarter": "南上原",
+        "building": "yes",
+        "name": "サンエー中城店",
+        "name:en": "San-A Nakagusuku",
+        "phone": "098-942-3333",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 555254512,
+      "center": {
+        "lat": 26.2028713,
+        "lon": 127.701483
+      },
+      "nodes": [
+        5357367484,
+        5357367485,
+        5357367486,
+        5357367487,
+        5357367488,
+        5357367489,
+        5357367490,
+        5357367484
+      ],
+      "tags": {
+        "branch": "長田店",
+        "building": "yes",
+        "name": "丸大",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 555255686,
+      "center": {
+        "lat": 26.2026283,
+        "lon": 127.6984425
+      },
+      "nodes": [
+        5357383171,
+        5357383172,
+        5357383173,
+        5357383184,
+        5357383174,
+        5357383175,
+        5357383176,
+        5357383171
+      ],
+      "tags": {
+        "addr:housenumber": "沖縄県那覇市国場７０３",
+        "addr:postcode": "902-0075",
+        "building": "yes",
+        "name": "りうぼう",
+        "name:en": "Kokuba Ryubo",
+        "name:ja": "国場りうぼう",
+        "phone": "098-833-8282",
+        "shop": "supermarket",
+        "website": "https://ryubostore.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 555256433,
+      "center": {
+        "lat": 26.2879552,
+        "lon": 127.7532647
+      },
+      "nodes": [
+        5357394836,
+        5357394837,
+        5357394838,
+        5357394839,
+        5357394840,
+        5357394841,
+        5357394842,
+        5357394836
+      ],
+      "tags": {
+        "branch": "伊佐店",
+        "building": "yes",
+        "name": "ユニオン",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 555475914,
+      "center": {
+        "lat": 26.2910081,
+        "lon": 127.77561
+      },
+      "nodes": [
+        5359207280,
+        5359207283,
+        5359207284,
+        5359207285,
+        5359207286,
+        5359207287,
+        5359207280
+      ],
+      "tags": {
+        "addr:block_number": "33",
+        "addr:city": "宜野湾市",
+        "addr:housenumber": "17",
+        "addr:neighbourhood": "二丁目",
+        "addr:postcode": "901-2202",
+        "addr:province": "沖縄県",
+        "addr:quarter": "普天間",
+        "branch": "V21普天間",
+        "building": "yes",
+        "name": "サンエー",
+        "phone": "098-892-1955",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 555475917,
+      "center": {
+        "lat": 26.320777,
+        "lon": 127.7840827
+      },
+      "nodes": [
+        5359207299,
+        5359207300,
+        5359207301,
+        5359207302,
+        5359207303,
+        5359207304,
+        5359207305,
+        5359207306,
+        5359207299
+      ],
+      "tags": {
+        "building": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 555771224,
+      "center": {
+        "lat": 26.1968259,
+        "lon": 127.6979221
+      },
+      "nodes": [
+        5361641444,
+        5361641445,
+        5361641446,
+        5361641447,
+        5361641448,
+        5361641449,
+        5361641450,
+        5361641451,
+        5361641452,
+        5361641453,
+        5361641454,
+        5361641444
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "丸大国場店",
+        "name:en": "Marudai Kokuba",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 555778620,
+      "center": {
+        "lat": 26.197219,
+        "lon": 127.6771365
+      },
+      "nodes": [
+        5361717204,
+        5361717205,
+        5361717206,
+        4380887066,
+        12959391693,
+        5361717208,
+        5361717209,
+        5361717210,
+        5361717211,
+        5361717212,
+        5361717213,
+        12959391692,
+        5361717204
+      ],
+      "tags": {
+        "addr:block_number": "34",
+        "addr:city": "那覇市",
+        "addr:housenumber": "21",
+        "addr:postcode": "901-0151",
+        "addr:province": "沖縄県",
+        "addr:quarter": "鏡原町",
+        "alt_name:en": "Co-op",
+        "branch": "おろく",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "brand:wikipedia": "ja:日本生活協同組合連合会",
+        "building": "yes",
+        "building:levels": "2",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "official_name:ja": "日本生活協同組合連合会",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "operator": "コープおきなわ",
+        "phone": "+81 98 857 0069",
+        "shop": "supermarket",
+        "website": "https://www.okinawa.coop/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 556346989,
+      "center": {
+        "lat": 26.20167,
+        "lon": 127.6964532
+      },
+      "nodes": [
+        5366809286,
+        5366809287,
+        5366809288,
+        5366809289,
+        5366809290,
+        5366809291,
+        5366809292,
+        5366809293,
+        5366809286
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "サンエー",
+        "name:en": "San-A V21 Yogi Food Hall",
+        "name:ja": "サンエーV21よぎ食品館",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 557072156,
+      "center": {
+        "lat": 26.1869184,
+        "lon": 127.7747414
+      },
+      "nodes": [
+        5372936043,
+        5372936044,
+        5372936045,
+        6211828743,
+        5372936046,
+        5372936043
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ビッグエクスプレス佐敷店",
+        "name:en": "AEON BIG Express Sashiki Store",
+        "operator": "AEON",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 557072158,
+      "center": {
+        "lat": 26.1798154,
+        "lon": 127.7742263
+      },
+      "nodes": [
+        5372936047,
+        5372936048,
+        5372936049,
+        5372936050,
+        5372936051,
+        5372936052,
+        5372936053,
+        5372936054,
+        5372936055,
+        5372936047
+      ],
+      "tags": {
+        "addr:block_number": "1006",
+        "addr:city": "南城市",
+        "addr:neighbourhood": "津波古",
+        "addr:postcode": "901-1414",
+        "addr:province": "沖縄県",
+        "addr:quarter": "佐敷",
+        "addr:street": "国道331号",
+        "branch": "佐敷店",
+        "building": "yes",
+        "name": "かねひで",
+        "name:en": "Town Plaza Kanehide Sashiki Store",
+        "name:ja": "タウンプラザかねひで佐敷店",
+        "phone": "+81 98 947 4141",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "way",
+      "id": 557072191,
+      "center": {
+        "lat": 26.1807079,
+        "lon": 127.7156449
+      },
+      "nodes": [
+        5372936398,
+        5372936399,
+        5372936400,
+        5372936401,
+        5372936402,
+        5372936403,
+        5379947552,
+        5372936398
+      ],
+      "tags": {
+        "addr:housenumber": "南風原町津嘉山１７２０−４",
+        "addr:postcode": "901-1117",
+        "addr:street": "国道507号",
+        "building": "yes",
+        "name": "かねひで",
+        "name:en": "Town Plaza Kanehide Tsukayama Store",
+        "name:ja": "タウンプラザかねひで津嘉山店",
+        "phone": "098-889-2201",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "way",
+      "id": 558339530,
+      "center": {
+        "lat": 26.2580139,
+        "lon": 127.7135608
+      },
+      "nodes": [
+        5384098040,
+        5384098041,
+        5384098042,
+        5384098043,
+        5384098044,
+        5384098045,
+        5384098049,
+        5384098046,
+        5384098048,
+        5384098047,
+        5384098040
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ビッグワン",
+        "opening_hours": "Mo-Su 09:00-24:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 559495313,
+      "center": {
+        "lat": 26.327684,
+        "lon": 127.8138651
+      },
+      "nodes": [
+        5396188698,
+        5396188699,
+        5396188700,
+        5396188701,
+        5396188698
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "Maxvalue Takahara store",
+        "name:ja": "マックスバリュ高原店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 560788660,
+      "center": {
+        "lat": 26.3137506,
+        "lon": 127.8290245
+      },
+      "nodes": [
+        5407899415,
+        5407899416,
+        5407899417,
+        5407899418,
+        5407899419,
+        5407899420,
+        5407899621,
+        5407899622,
+        5407899623,
+        5407899415
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "サンエー",
+        "name:en": "San-A V21 Awase food hall",
+        "name:ja": "サンエーV21あわせ食品館",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 564158789,
+      "center": {
+        "lat": 26.2054575,
+        "lon": 127.680447
+      },
+      "nodes": [
+        5436366284,
+        5436366285,
+        5436366286,
+        5436366287,
+        5436366288,
+        5436366289,
+        5436366284
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "エープライス",
+        "opening_hours": "Mo-Su 10:00-19:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 565104415,
+      "center": {
+        "lat": 26.2304054,
+        "lon": 127.700235
+      },
+      "nodes": [
+        5443323026,
+        5443323027,
+        5443323028,
+        5443323029,
+        5443323030,
+        5443323031,
+        5443323032,
+        5443323026
+      ],
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "brunch": "新都心めかる店",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 587568986,
+      "center": {
+        "lat": 26.3261172,
+        "lon": 127.774119
+      },
+      "nodes": [
+        5612396769,
+        5612396770,
+        5612396771,
+        5612396772,
+        5612396773,
+        5612396774,
+        5612396769
+      ],
+      "tags": {
+        "building": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 588222359,
+      "center": {
+        "lat": 26.2210244,
+        "lon": 127.6735989
+      },
+      "nodes": [
+        5618373423,
+        11230919862,
+        5618373424,
+        5618373425,
+        12467036793,
+        5618373426,
+        12467036794,
+        5618373423
+      ],
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 588768618,
+      "center": {
+        "lat": 26.2662546,
+        "lon": 127.7291851
+      },
+      "nodes": [
+        5622812879,
+        5622812880,
+        5622812881,
+        5622812882,
+        5622812879
+      ],
+      "tags": {
+        "addr:housenumber": "沖縄県浦添市牧港４丁目１２−１",
+        "addr:postcode": "901-2131",
+        "building": "yes",
+        "name": "サンエー",
+        "name:en": "San-A V21 Makiminato food hall",
+        "name:ja": "サンエーV21まきみなと食品館",
+        "phone": "098-871-3000",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 593948572,
+      "center": {
+        "lat": 26.1607582,
+        "lon": 127.7218564
+      },
+      "nodes": [
+        5665083801,
+        5665083802,
+        5665083803,
+        5665083804,
+        5665083805,
+        5665083806,
+        5665083807,
+        5665083808,
+        5665083809,
+        5665083810,
+        5665083811,
+        5665083812,
+        5665083801
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "タウンプラザかねひで東風平店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 602707370,
+      "center": {
+        "lat": 26.1762168,
+        "lon": 127.681521
+      },
+      "nodes": [
+        5723905828,
+        5723905829,
+        5723905830,
+        5723905831,
+        5723905832,
+        5723905833,
+        5723905834,
+        8933574034,
+        8933574035,
+        5723905835,
+        8933574029,
+        8933574028,
+        5723905836,
+        5723905828
+      ],
+      "tags": {
+        "brand": "エーコープ",
+        "brand:en": "A-COOP",
+        "brand:ja": "エーコープ",
+        "brand:wikidata": "Q11291524",
+        "brand:wikipedia": "ja:エーコープ",
+        "building": "yes",
+        "building:levels": "2",
+        "level": "1",
+        "name": "エーコープ",
+        "name:en": "A-COOP",
+        "name:ja": "エーコープ",
+        "organic": "only",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 602707371,
+      "center": {
+        "lat": 26.1771999,
+        "lon": 127.6761705
+      },
+      "nodes": [
+        5723905837,
+        5723905838,
+        5723905839,
+        5723905840,
+        5723905841,
+        5723905842,
+        5723905843,
+        5723905844,
+        5723905837
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "サンエーV21ぎぼ食品館",
+        "name:en": "San-A V21 Gibo Food Hall",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 605679389,
+      "center": {
+        "lat": 26.2426108,
+        "lon": 127.6973751
+      },
+      "nodes": [
+        5744059267,
+        5744059268,
+        5744059269,
+        5744059270,
+        5744059271,
+        5744059272,
+        5744059273,
+        5744059274,
+        5744059267
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "丸大",
+        "name:en": "Marudai",
+        "name:ja": "丸大",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 611763782,
+      "center": {
+        "lat": 26.2786067,
+        "lon": 127.7781966
+      },
+      "nodes": [
+        5791821706,
+        5791821707,
+        5791821708,
+        5791821709,
+        5791821710,
+        5791821711,
+        5791821712,
+        5791821713,
+        5791821706
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ユニオン",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 616028933,
+      "center": {
+        "lat": 26.4039513,
+        "lon": 127.7250632
+      },
+      "nodes": [
+        5824611721,
+        5824611722,
+        5824611723,
+        5824611724,
+        5824611721
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "丸大読谷波平店",
+        "name:en": "Marudai Yomitan Namihira Branch",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 617012926,
+      "center": {
+        "lat": 26.244939,
+        "lon": 127.7030447
+      },
+      "nodes": [
+        5832980057,
+        5832980058,
+        5832980059,
+        5832980060,
+        5832980061,
+        5832980062,
+        5832980057
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "サンエー",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 651572696,
+      "center": {
+        "lat": 26.2150544,
+        "lon": 127.6688242
+      },
+      "nodes": [
+        6109743512,
+        6109743513,
+        6109743514,
+        6109743515,
+        6109743512
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "りうぼう",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 656569364,
+      "center": {
+        "lat": 26.217162,
+        "lon": 127.7079466
+      },
+      "nodes": [
+        6150287242,
+        6150287243,
+        6150287244,
+        6150287245,
+        6150287242
+      ],
+      "tags": {
+        "alt_name:en": "Co-op",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "brand:wikipedia": "ja:日本生活協同組合連合会",
+        "building": "yes",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 660257327,
+      "center": {
+        "lat": 26.119408,
+        "lon": 127.6686103
+      },
+      "nodes": [
+        6181792722,
+        6181792723,
+        6181792724,
+        6181792725,
+        6181792726,
+        6181792727,
+        6181792722
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "かねひで",
+        "name:en": "kanehide",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 663660258,
+      "center": {
+        "lat": 26.1865012,
+        "lon": 127.7746406
+      },
+      "nodes": [
+        6211828744,
+        6211828745,
+        6211828746,
+        6211828747,
+        6211828744
+      ],
+      "tags": {
+        "building": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 674084853,
+      "center": {
+        "lat": 26.248253,
+        "lon": 127.7398794
+      },
+      "nodes": [
+        6312730585,
+        6312730586,
+        6312730587,
+        6312730588,
+        6312730589,
+        6312730590,
+        6312730591,
+        6312730592,
+        6312730585
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "サンエー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 675852859,
+      "center": {
+        "lat": 26.3169377,
+        "lon": 127.8260298
+      },
+      "nodes": [
+        6329328234,
+        6329328235,
+        6329328236,
+        6329328237,
+        6329328234
+      ],
+      "tags": {
+        "addr:block_number": "2",
+        "addr:city": "沖縄市",
+        "addr:housenumber": "2",
+        "addr:neighbourhood": "2丁目",
+        "addr:postcode": "904-2173",
+        "addr:province": "沖縄県",
+        "addr:quarter": "比屋根",
+        "branch": "比屋根市場",
+        "building": "yes",
+        "name": "タウンプラザかねひで",
+        "name:en": "Town Plaza Kanehide",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "phone": "098-923-1840",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "way",
+      "id": 690154581,
+      "center": {
+        "lat": 26.2624475,
+        "lon": 127.7419421
+      },
+      "nodes": [
+        6474858003,
+        6474858004,
+        6474858005,
+        6474858006,
+        6474858007,
+        6474858008,
+        6474858009,
+        6474858010,
+        6474858003
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "サンエー",
+        "name:en": "San-A",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 710703964,
+      "center": {
+        "lat": 26.2756667,
+        "lon": 127.7392019
+      },
+      "nodes": [
+        6681787192,
+        6681787193,
+        6681787194,
+        6681787195,
+        6681787196,
+        6681787192
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "かねひで",
+        "name:en": "Kanehide",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 711818688,
+      "center": {
+        "lat": 26.2450533,
+        "lon": 127.72744
+      },
+      "nodes": [
+        6691909797,
+        9656230222,
+        6691909798,
+        6691909799,
+        6691909800,
+        9656230224,
+        6691909801,
+        9656230223,
+        6691909802,
+        6691909803,
+        6691909804,
+        6691909805,
+        6691909797
+      ],
+      "tags": {
+        "branch": "仲間店",
+        "building": "yes",
+        "name": "ユニオン",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 715160922,
+      "center": {
+        "lat": 26.1930487,
+        "lon": 127.6767478
+      },
+      "nodes": [
+        6721688179,
+        6721688180,
+        6721688181,
+        6721688182,
+        6721688183,
+        6721688184,
+        6721728685,
+        6721728686,
+        6721688179
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "サンエーV21おろく食品館",
+        "name:en": "San-A V21 Oroku Food Hall",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 715281930,
+      "center": {
+        "lat": 24.336165,
+        "lon": 124.1703134
+      },
+      "nodes": [
+        6722659804,
+        6722659805,
+        6722659806,
+        6722659807,
+        6722659808,
+        6722659804
+      ],
+      "tags": {
+        "branch": "平真店",
+        "brand": "マックスバリュ",
+        "brand:en": "Maxvalu Tokai",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q1960109",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "Maxvalu Tokai",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 715996830,
+      "center": {
+        "lat": 24.337731,
+        "lon": 124.1695457
+      },
+      "nodes": [
+        6728450089,
+        6728450090,
+        6728450091,
+        6728450092,
+        6728450093,
+        6728450094,
+        6728450095,
+        6728450089
+      ],
+      "tags": {
+        "branch": "石垣店",
+        "building": "yes",
+        "name": "タウンプラザかねひで",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 722149830,
+      "center": {
+        "lat": 26.2222944,
+        "lon": 127.7269315
+      },
+      "nodes": [
+        6773964124,
+        6773964125,
+        6773964126,
+        6773964127,
+        6773964128,
+        6773964129,
+        6773964130,
+        10270819086,
+        10684269911,
+        6773964131,
+        10270819087,
+        9277173079,
+        9277173080,
+        6773964132,
+        6773964136,
+        9452907480,
+        9452907481,
+        9452907478,
+        9452907477,
+        9452907482,
+        6773964137,
+        6773964138,
+        6773964139,
+        9277173075,
+        6773964124
+      ],
+      "tags": {
+        "addr:block_number": "122",
+        "addr:city": "那覇市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "二丁目",
+        "addr:postcode": "903-0807",
+        "addr:province": "沖縄県",
+        "addr:quarter": "首里久場川町",
+        "building": "yes",
+        "building:levels": "2",
+        "name": "首里りうぼう",
+        "name:en": "Shuri Ryubo",
+        "shop": "supermarket",
+        "wikidata": "Q117075978",
+        "wikipedia": "ja:首里りうぼう"
+      }
+    },
+    {
+      "type": "way",
+      "id": 728736697,
+      "center": {
+        "lat": 26.2707337,
+        "lon": 127.7707905
+      },
+      "nodes": [
+        6827410960,
+        6827410961,
+        6827410962,
+        6827410963,
+        6827410960
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "タウンプラザ かねひで",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 728736708,
+      "center": {
+        "lat": 26.3211782,
+        "lon": 127.8297044
+      },
+      "nodes": [
+        6827413827,
+        6827413828,
+        6827413829,
+        6827413830,
+        6827413827
+      ],
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "yes",
+        "building:levels": "2",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 728736713,
+      "center": {
+        "lat": 26.3186879,
+        "lon": 127.8212795
+      },
+      "nodes": [
+        6827413854,
+        6827413855,
+        6827413856,
+        6827413857,
+        6827413858,
+        6827413859,
+        6827413860,
+        6827413861,
+        6827413854
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "サンエー",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 737655710,
+      "center": {
+        "lat": 26.1759597,
+        "lon": 127.7771649
+      },
+      "nodes": [
+        6906607163,
+        6906607164,
+        9120161953,
+        9120161931,
+        6906607165,
+        6906607166,
+        6906607163
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "丸大",
+        "name:en": "Marudai",
+        "name:ja": "丸大",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 737655719,
+      "center": {
+        "lat": 26.1918375,
+        "lon": 127.7708403
+      },
+      "nodes": [
+        6906607198,
+        6906607199,
+        6906607200,
+        6906607201,
+        9162074454,
+        9162074453,
+        6906607198
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "サンエー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 737655741,
+      "center": {
+        "lat": 26.2110484,
+        "lon": 127.7588346
+      },
+      "nodes": [
+        6906607290,
+        6906607291,
+        6906607292,
+        6906607293,
+        6906607294,
+        6906607295,
+        6906607290
+      ],
+      "tags": {
+        "addr:block_number": "1175",
+        "addr:city": "与那原町",
+        "addr:county": "島尻郡",
+        "addr:housenumber": "1",
+        "addr:postcode": "901-1303",
+        "addr:province": "沖縄県",
+        "addr:quarter": "与那原",
+        "addr:street": "国道329号",
+        "branch": "V21よなばる食品館",
+        "building": "yes",
+        "name": "サンエー",
+        "name:en": "San-A V21 Yonabaru Food hall",
+        "name:ja": "サンエーV21よなばる食品館",
+        "phone": "098-944-1233",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 737655754,
+      "center": {
+        "lat": 26.2218606,
+        "lon": 127.7267316
+      },
+      "nodes": [
+        6906607361,
+        6906607362,
+        6906607363,
+        6906607364,
+        9121711318,
+        9121679416,
+        9121679415,
+        9121711317,
+        6906607361
+      ],
+      "tags": {
+        "addr:block_number": "96",
+        "addr:city": "那覇市",
+        "addr:housenumber": "18",
+        "addr:neighbourhood": "二丁目",
+        "addr:postcode": "903-0807",
+        "addr:province": "沖縄県",
+        "addr:quarter": "首里久場川町",
+        "branch": "首里久場川市場",
+        "building": "yes",
+        "building:levels": "1",
+        "internet_access": "no",
+        "name": "タウンプラザかねひで",
+        "name:en": "Town Plaza Kanehide",
+        "name:ja": "タウンプラザかねひで",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "payment:cash": "yes",
+        "payment:contactless": "yes",
+        "payment:credit_cards": "yes",
+        "phone": "+81 98 884 2630",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 769108811,
+      "center": {
+        "lat": 26.3422166,
+        "lon": 127.8519618
+      },
+      "nodes": [
+        7179454663,
+        7179454664,
+        7179454665,
+        7179454666,
+        7179454667,
+        10539689304,
+        10539689303,
+        7179454668,
+        7179454663
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "かねひで",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 779595296,
+      "center": {
+        "lat": 26.362868,
+        "lon": 127.7543025
+      },
+      "nodes": [
+        7279944589,
+        7279944590,
+        7279944591,
+        7279944592,
+        7279944593,
+        7279944589
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "サンエー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 813388231,
+      "center": {
+        "lat": 26.1907317,
+        "lon": 127.6931706
+      },
+      "nodes": [
+        7597860380,
+        7597860381,
+        7597860382,
+        7597860383,
+        7597860384,
+        7597910785,
+        7597910786,
+        7597910787,
+        7597860380
+      ],
+      "tags": {
+        "addr:block_number": "314",
+        "addr:city": "豊見城市",
+        "addr:province": "沖縄県",
+        "addr:quarter": "真玉橋",
+        "building": "yes",
+        "building:levels": "2",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 815680601,
+      "center": {
+        "lat": 26.1391538,
+        "lon": 127.6629915
+      },
+      "nodes": [
+        7617981208,
+        7617981209,
+        7617981210,
+        7617981211,
+        7617981208
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "サンエー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 815680621,
+      "center": {
+        "lat": 26.1535416,
+        "lon": 127.671053
+      },
+      "nodes": [
+        7617981345,
+        7617981346,
+        7617981347,
+        7617981348,
+        7617981349,
+        7617981350,
+        9462784260,
+        7617981345
+      ],
+      "tags": {
+        "building": "yes",
+        "building:levels": "3",
+        "name": "サンエー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 837029642,
+      "center": {
+        "lat": 26.3402929,
+        "lon": 126.8086208
+      },
+      "nodes": [
+        7812013794,
+        7812013795,
+        7812172799,
+        7812172800,
+        7812013796,
+        7812205977,
+        7812013797,
+        7812013794
+      ],
+      "tags": {
+        "building": "yes",
+        "building:levels": "1",
+        "name": "山里商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 843185784,
+      "center": {
+        "lat": 26.1834458,
+        "lon": 127.7139356
+      },
+      "nodes": [
+        7865638661,
+        7865638662,
+        12691057423,
+        12691057424,
+        7865638663,
+        7865638664,
+        7865638661
+      ],
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q105687460",
+        "brand:wikipedia": "ja:神戸物産",
+        "building": "yes",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 843190772,
+      "center": {
+        "lat": 26.2013303,
+        "lon": 127.7521311
+      },
+      "nodes": [
+        7865654124,
+        7865654125,
+        7865654126,
+        7865654127,
+        7865654128,
+        7865654129,
+        7865654130,
+        7865654131,
+        7865654124
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "エープライス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 844773310,
+      "center": {
+        "lat": 26.392618,
+        "lon": 127.7455777
+      },
+      "nodes": [
+        7881265724,
+        1716066240,
+        7881265726,
+        7881265728,
+        7881265730,
+        7881265731,
+        7881265729,
+        7881265727,
+        7881265724
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "読谷ファーマーズマーケット「ゆんた市場」",
+        "name:en": "Yomitan Farmers' Market Yunta Ichiba",
+        "name:ja": "読谷ファーマーズマーケット「ゆんた市場」",
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "operator": "JA おきなわ",
+        "phone": "+81 98 958 1124",
+        "shop": "supermarket",
+        "website": "https://www.ja-okinawa.or.jp/farmersmarket/detail.php?id=540"
+      }
+    },
+    {
+      "type": "way",
+      "id": 848214245,
+      "center": {
+        "lat": 26.1880921,
+        "lon": 127.709362
+      },
+      "nodes": [
+        7914430523,
+        7914430524,
+        7914430525,
+        7914430526,
+        7914430527,
+        7914430528,
+        7914430523
+      ],
+      "tags": {
+        "branch": "つかざん店",
+        "brand": "ザ・ビッグ",
+        "brand:en": "THE BIG",
+        "brand:ja": "ザ・ビッグ",
+        "brand:wikidata": "Q11306676",
+        "building": "yes",
+        "name": "ザ・ビッグ",
+        "name:en": "THE BIG",
+        "name:ja": "ザ・ビッグ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 857763652,
+      "center": {
+        "lat": 26.2266059,
+        "lon": 127.762183
+      },
+      "nodes": [
+        7996858527,
+        7996858528,
+        7996858529,
+        7996858530,
+        7996858527
+      ],
+      "tags": {
+        "branch": "西原店",
+        "brand": "ザ・ビッグ エクスプレス",
+        "brand:en": "THE BIG Express",
+        "brand:ja": "ザ・ビッグ エクスプレス",
+        "brand:wikidata": "Q11306676",
+        "building": "yes",
+        "name": "ザ・ビッグ エクスプレス",
+        "name:en": "THE BIG Express",
+        "name:ja": "ザ・ビッグ エクスプレス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 876577937,
+      "center": {
+        "lat": 26.2212384,
+        "lon": 127.7290938
+      },
+      "nodes": [
+        8158327799,
+        9281827669,
+        8158327800,
+        9203466508,
+        9203466506,
+        9203466504,
+        9203466507,
+        8158327801,
+        8158327802,
+        9203466510,
+        8158327803,
+        13109859131,
+        8158327804,
+        8158327805,
+        9203466501,
+        8158327799
+      ],
+      "tags": {
+        "alt_name:en": "Co-op",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "brand:wikipedia": "ja:日本生活協同組合連合会",
+        "building": "yes",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 880025321,
+      "center": {
+        "lat": 26.2069949,
+        "lon": 127.6851879
+      },
+      "nodes": [
+        8185954804,
+        8185954805,
+        8185954806,
+        8185954807,
+        8185954808,
+        8185954809,
+        8185954810,
+        8185954811,
+        8185954812,
+        8185954813,
+        8185954814,
+        8185954815,
+        8185954816,
+        8185982517,
+        8185954804
+      ],
+      "tags": {
+        "branch": "V21じょうがく食品館",
+        "building": "yes",
+        "building:levels": "1.5",
+        "name": "サンエー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 881280245,
+      "center": {
+        "lat": 26.2465709,
+        "lon": 127.7098752
+      },
+      "nodes": [
+        8196493439,
+        8196493440,
+        8196493441,
+        8196493442,
+        9400800931,
+        8196493439
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "りうぼう",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 883780232,
+      "center": {
+        "lat": 26.1503627,
+        "lon": 127.6730566
+      },
+      "nodes": [
+        8219501587,
+        8219501588,
+        8219501589,
+        8219501590,
+        8219501591,
+        8219501592,
+        8219501587
+      ],
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q11590183",
+        "brand:wikipedia": "ja:神戸物産",
+        "building": "yes",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 883780233,
+      "center": {
+        "lat": 26.1500972,
+        "lon": 127.6730604
+      },
+      "nodes": [
+        8219501593,
+        8219501594,
+        8219501595,
+        8219501596,
+        8219501593
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "エープライス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 884614428,
+      "center": {
+        "lat": 26.3389051,
+        "lon": 127.8120819
+      },
+      "nodes": [
+        8226624112,
+        11108929980,
+        8226624113,
+        11108929981,
+        11108929982,
+        8226624114,
+        11108929985,
+        8226624115,
+        8226624117,
+        11108929984,
+        8226624118,
+        8226624119,
+        8226624120,
+        8226624121,
+        11108929978,
+        11108929979,
+        11108929983,
+        8226624112
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "かねひで",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 889009638,
+      "center": {
+        "lat": 26.2558505,
+        "lon": 127.7411828
+      },
+      "nodes": [
+        8265019643,
+        8265019644,
+        8265019645,
+        8265019646,
+        8265019647,
+        8265019648,
+        8265019643
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "かねひで",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 889009648,
+      "center": {
+        "lat": 26.2556914,
+        "lon": 127.7583767
+      },
+      "nodes": [
+        8265020419,
+        8265020420,
+        8265020421,
+        8265020422,
+        8265020423,
+        8265020424,
+        8265020419
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "サンエー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 909125066,
+      "center": {
+        "lat": 26.3254325,
+        "lon": 127.7575454
+      },
+      "nodes": [
+        8441208581,
+        8441208582,
+        12550996144,
+        12550996143,
+        8441208583,
+        9197433605,
+        12550996146,
+        12550996145,
+        8441208581
+      ],
+      "tags": {
+        "addr:block_number": "2",
+        "addr:city": "北谷町",
+        "addr:county": "中頭郡",
+        "addr:neighbourhood": "140番地",
+        "addr:postcode": "904-0120",
+        "addr:province": "沖縄県",
+        "addr:quarter": "字伊平",
+        "branch": "北谷サンセット市場",
+        "building": "yes",
+        "building:levels": "1",
+        "name": "タウンプラザかねひで",
+        "shop": "supermarket",
+        "smoking": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 914792638,
+      "center": {
+        "lat": 26.2282991,
+        "lon": 127.7308989
+      },
+      "nodes": [
+        8497789228,
+        9177940475,
+        8497789234,
+        9177940470,
+        9177951375,
+        9177951341,
+        9177951344,
+        9177940493,
+        9177940494,
+        8497789235,
+        9177951366,
+        9177951319,
+        8497789229,
+        9177951374,
+        8497789230,
+        8497789231,
+        9177951334,
+        9177951358,
+        8497789232,
+        9177940486,
+        8497789233,
+        9177951372,
+        9177940492,
+        9177951373,
+        9177951350,
+        8497789228
+      ],
+      "tags": {
+        "addr:block_number": "7",
+        "addr:city": "那覇市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "四丁目",
+        "addr:postcode": "903-0804",
+        "addr:province": "沖縄県",
+        "addr:quarter": "首里石嶺町",
+        "branch": "首里石嶺店",
+        "branch:en": "Shuri-Ishimine Store",
+        "brand": "エーコープ",
+        "brand:en": "A-COOP",
+        "brand:ja": "エーコープ",
+        "brand:wikidata": "Q11291524",
+        "brand:wikipedia": "ja:エーコープ",
+        "building": "yes",
+        "building:levels": "2",
+        "building:levels:underground": "-1",
+        "name": "エーコープ",
+        "name:en": "A-COOP",
+        "name:ja": "エーコープ",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "organic": "only",
+        "phone": "+81 98 887 7884",
+        "shop": "supermarket",
+        "website": "https://www.ja-okinawa.or.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 914792643,
+      "center": {
+        "lat": 26.2406808,
+        "lon": 127.7255139
+      },
+      "nodes": [
+        8497789279,
+        8497789280,
+        9286369192,
+        9286369193,
+        8497789281,
+        8497789282,
+        12582226848,
+        12582226847,
+        8497789279
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ユニオン",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 925585424,
+      "center": {
+        "lat": 26.3298997,
+        "lon": 127.7803663
+      },
+      "nodes": [
+        8589880806,
+        8589880807,
+        8589880813,
+        8589880814,
+        8589880808,
+        8589880809,
+        8589880810,
+        8589880811,
+        8589880812,
+        8589880806
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "かねひで",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 927188335,
+      "center": {
+        "lat": 26.1986724,
+        "lon": 127.765147
+      },
+      "nodes": [
+        8602805650,
+        8602805651,
+        8602805652,
+        8602805653,
+        8602805650
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "丸大",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 938251333,
+      "center": {
+        "lat": 26.252898,
+        "lon": 127.7726734
+      },
+      "nodes": [
+        8692246358,
+        8692246359,
+        8692246360,
+        8692246361,
+        8692246362,
+        8692246363,
+        8692246358
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ユニオン",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 965363081,
+      "center": {
+        "lat": 26.1216455,
+        "lon": 127.7424457
+      },
+      "nodes": [
+        8930571765,
+        9436981671,
+        9436981672,
+        8930571766,
+        8930571767,
+        8930571768,
+        8930571769,
+        8930571770,
+        8930571771,
+        8930571772,
+        8930571765
+      ],
+      "tags": {
+        "addr:block_number": "659",
+        "addr:city": "八重瀬町",
+        "addr:county": "島尻郡",
+        "addr:postcode": "9010512",
+        "addr:province": "沖縄県",
+        "addr:quarter": "字具志頭",
+        "building": "yes",
+        "name": "JAマート ぐしちゃん",
+        "name:en": "JA Mart Gushichan",
+        "shop": "supermarket",
+        "website": "http://yaese-station.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 967278898,
+      "center": {
+        "lat": 26.2832685,
+        "lon": 127.7647959
+      },
+      "nodes": [
+        8948879257,
+        8948879258,
+        8948879259,
+        8948879260,
+        8948879261,
+        8948879262,
+        8948879263,
+        8948879264,
+        8948879265,
+        8948879266,
+        8948879267,
+        8948879268,
+        8948879269,
+        8948879270,
+        8948879257
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "サンエー",
+        "name:en": "San-A",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 971405021,
+      "center": {
+        "lat": 26.1889185,
+        "lon": 127.6645781
+      },
+      "nodes": [
+        8990523812,
+        8990523813,
+        8990523814,
+        8990523815,
+        8990523816,
+        8990546017,
+        8990523812
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "かねひでジップマート",
+        "opening_hours": "Mo-Su 07:00-22:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 973261088,
+      "center": {
+        "lat": 26.211103,
+        "lon": 127.7611147
+      },
+      "nodes": [
+        9008017828,
+        9008017829,
+        9008017830,
+        9008017831,
+        9008017832,
+        9008017833,
+        9008017834,
+        9008017835,
+        9008017836,
+        9008017837,
+        9008017838,
+        9008017839,
+        9008017828
+      ],
+      "tags": {
+        "addr:block_number": "1104",
+        "addr:city": "与那原町",
+        "addr:county": "島尻郡",
+        "addr:postcode": "901-1303",
+        "addr:province": "沖縄県",
+        "addr:quarter": "与那原",
+        "branch": "よなばる市場",
+        "branch:en": "Yonabaru Ichiba",
+        "building": "yes",
+        "name": "タウンプラザかねひで",
+        "name:en": "Town Plaza Kanehide",
+        "name:ja": "タウンプラザかねひで",
+        "opening_hours": "09:00-24:00",
+        "phone": "+81 98 988 1216",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 973261094,
+      "center": {
+        "lat": 26.2169923,
+        "lon": 127.764162
+      },
+      "nodes": [
+        9008017867,
+        9008017868,
+        9008017869,
+        9008017870,
+        9008017871,
+        9008017872,
+        9008017867
+      ],
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "Maxvalu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q1960109",
+        "brand:wikipedia": "en:MaxValu",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "Maxvalu",
+        "name:ja": "マックスバリュ",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 977512049,
+      "center": {
+        "lat": 26.1903997,
+        "lon": 127.6787145
+      },
+      "nodes": [
+        9045001266,
+        9045001267,
+        9045001270,
+        12466835987,
+        12466835988,
+        9045001272,
+        9045001266
+      ],
+      "tags": {
+        "addr:block_number": "1285",
+        "addr:city": "那覇市",
+        "addr:postcode": "098-901-0152",
+        "addr:province": "沖縄県",
+        "addr:quarter": "小禄",
+        "branch": "小禄店",
+        "building": "yes",
+        "name": "タウンプラザかねひで",
+        "name:en": "Town Plaza Kanehide",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "phone": "098-858-1154",
+        "shop": "supermarket",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "way",
+      "id": 991365567,
+      "center": {
+        "lat": 26.2106501,
+        "lon": 127.7122599
+      },
+      "nodes": [
+        9159673703,
+        9159673704,
+        9159673705,
+        9159673706,
+        9159673707,
+        9159673708,
+        9159673709,
+        9159673710,
+        9159673711,
+        9159673712,
+        9159673713,
+        9159673714,
+        9159673715,
+        9159673703
+      ],
+      "tags": {
+        "addr:block_number": "17",
+        "addr:city": "那覇市",
+        "addr:housenumber": "15",
+        "addr:neighbourhood": "二丁目",
+        "addr:postcode": "902-0071",
+        "addr:province": "沖縄県",
+        "addr:quarter": "繁多川",
+        "branch": "繁多川店",
+        "building": "yes",
+        "name": "サンエーV21食品館",
+        "name:en": "San-A V21 Food Market",
+        "name:ja": "サンエーV21食品館",
+        "opening_hours": "09:00-23:00",
+        "phone": "+81 98 833 9000",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 992435365,
+      "center": {
+        "lat": 26.1532753,
+        "lon": 127.6720982
+      },
+      "nodes": [
+        9169402607,
+        9169402608,
+        9462784245,
+        9462784244,
+        9169402609,
+        9169402610,
+        9462784242,
+        9462784243,
+        9169402611,
+        9462784246,
+        9169402612,
+        9169402607
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "丸大",
+        "name:en": "Marudai",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1004193939,
+      "center": {
+        "lat": 26.2334783,
+        "lon": 127.7283349
+      },
+      "nodes": [
+        9265493722,
+        9265493723,
+        9265493724,
+        9265493725,
+        9265493726,
+        9265493727,
+        9265493728,
+        9265493729,
+        9265493730,
+        9265493731,
+        9265493732,
+        9265493722
+      ],
+      "tags": {
+        "branch": "石嶺店",
+        "building": "yes",
+        "building:levels": "2",
+        "name": "サンエー",
+        "name:en": "San-A",
+        "name:ja": "サンエー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1009353400,
+      "center": {
+        "lat": 26.2748889,
+        "lon": 127.7416516
+      },
+      "nodes": [
+        9312894602,
+        9497736949,
+        9497736957,
+        9312894603,
+        9312894604,
+        9497736952,
+        9497736955,
+        9497736951,
+        9497736954,
+        9312894605,
+        9312894602
+      ],
+      "tags": {
+        "addr:block_number": "22",
+        "addr:city": "宜野湾市",
+        "addr:housenumber": "5",
+        "addr:neighbourhood": "二丁目",
+        "addr:quarter": "大山",
+        "building": "yes",
+        "name": "Jimmy's",
+        "opening_hours": "09:00-21:30",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1015743095,
+      "center": {
+        "lat": 26.8082621,
+        "lon": 128.2342193
+      },
+      "nodes": [
+        10660683972,
+        9369223941,
+        9369223942,
+        9415490816,
+        9369223943,
+        10660683973,
+        10660683972
+      ],
+      "tags": {
+        "building": "yes",
+        "building:levels": "1",
+        "name": "宇嘉共同スーパー",
+        "name:en": "Uka Shared Store",
+        "name:ja": "宇嘉共同スーパー",
+        "payment:cash": "yes",
+        "phone": "0980-41-5145",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1025153067,
+      "center": {
+        "lat": 26.4306839,
+        "lon": 127.8244534
+      },
+      "nodes": [
+        9452446002,
+        9452446001,
+        9452445996,
+        9452445995,
+        9452445994,
+        9452445993,
+        9452445992,
+        9452445990,
+        9452445989,
+        9452445991,
+        9452445988,
+        9452445987,
+        9452446000,
+        9452445997,
+        9452445998,
+        9452445999,
+        9452445982,
+        9452445983,
+        9452445984,
+        9452445985,
+        9452445986,
+        9452446002
+      ],
+      "tags": {
+        "addr:housenumber": "沖縄県うるま市石川1-16-1",
+        "addr:postcode": "904-1106",
+        "addr:street": "国道329号 (石川バイパス)",
+        "branch": "石川店",
+        "brand": "MaxValu",
+        "building": "yes",
+        "internet_access": "wlan",
+        "name": "マックスバリュ石川店",
+        "name:en": "MaxValu Ishikawa Store",
+        "name:ja": "マックスバリュ",
+        "name:ja_rm": "Makkusubaryu",
+        "opening_hours": "24/7",
+        "phone": "098-964-4521",
+        "shop": "supermarket",
+        "source": "survey",
+        "survey:date": "2012-10-01",
+        "website": "https://www.aeonretail.jp/maxvalu/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1025676806,
+      "center": {
+        "lat": 26.2394354,
+        "lon": 127.7306132
+      },
+      "nodes": [
+        9456724108,
+        12603924395,
+        12603924390,
+        9456724109,
+        12603924394,
+        9456724110,
+        12603924389,
+        9456724111,
+        9456724112,
+        9456724113,
+        9456724108
+      ],
+      "tags": {
+        "addr:postcode": "901-2501",
+        "building": "yes",
+        "building:levels": "1",
+        "name": "かねひで",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1036286817,
+      "center": {
+        "lat": 26.3256837,
+        "lon": 127.7821914
+      },
+      "nodes": [
+        9547351742,
+        9547351743,
+        9547351744,
+        9547351745,
+        9547351746,
+        9547351747,
+        9547351742
+      ],
+      "tags": {
+        "alt_name:en": "Co-op",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "brand:wikipedia": "ja:日本生活協同組合連合会",
+        "building": "yes",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "official_name:ja": "日本生活協同組合連合会",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1054690573,
+      "center": {
+        "lat": 26.1981876,
+        "lon": 127.6892191
+      },
+      "nodes": [
+        9691925267,
+        12691013846,
+        12691013845,
+        9691925268,
+        9691925269,
+        9691925270,
+        9691925267
+      ],
+      "tags": {
+        "branch": "古波蔵中前市場",
+        "building": "yes",
+        "name": "かねひで",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1067268290,
+      "center": {
+        "lat": 26.2602806,
+        "lon": 127.7498195
+      },
+      "nodes": [
+        9799470916,
+        9799478217,
+        9799478218,
+        9799478219,
+        9799478220,
+        9799478221,
+        9799478222,
+        9799478223,
+        9799478224,
+        9799478225,
+        9799478226,
+        9799478227,
+        9799478228,
+        9799478229,
+        9799478230,
+        9799470916
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "サンエー",
+        "name:en": "San-A",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1077394804,
+      "center": {
+        "lat": 26.3709246,
+        "lon": 127.8523811
+      },
+      "nodes": [
+        9878530709,
+        9878530710,
+        9878530711,
+        9878530712,
+        9878530713,
+        9878530709
+      ],
+      "tags": {
+        "building": "yes",
+        "building:levels": "1",
+        "name": "かねひで",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1077394815,
+      "center": {
+        "lat": 26.3782238,
+        "lon": 127.8575079
+      },
+      "nodes": [
+        9878620550,
+        9878620551,
+        9878620552,
+        9878620553,
+        9878620550
+      ],
+      "tags": {
+        "building": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1122663606,
+      "center": {
+        "lat": 26.2602517,
+        "lon": 127.7020105
+      },
+      "nodes": [
+        10267684253,
+        10267684250,
+        10267684270,
+        10267684273,
+        10267684253
+      ],
+      "tags": {
+        "building": "yes",
+        "building:levels": "1",
+        "internet_access": "no",
+        "name": "Camp Kinser Commissary",
+        "payment:american_express": "yes",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:discover_card": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1127804342,
+      "center": {
+        "lat": 26.1966362,
+        "lon": 127.747902
+      },
+      "nodes": [
+        10310868508,
+        10310897468,
+        10310897469,
+        10310897470,
+        10310897471,
+        10310897472,
+        10310897473,
+        10310868508
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "サンエー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1136697857,
+      "center": {
+        "lat": 26.58741,
+        "lon": 127.9874994
+      },
+      "nodes": [
+        10596200603,
+        10596200604,
+        12157447645,
+        12157447646,
+        10596200605,
+        10596200606,
+        12157447644,
+        12157447643,
+        10596200603
+      ],
+      "tags": {
+        "branch": "名護城市場",
+        "building": "yes",
+        "name": "かねひで",
+        "shop": "supermarket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1149502974,
+      "center": {
+        "lat": 26.7436944,
+        "lon": 128.1763979
+      },
+      "nodes": [
+        10693686817,
+        10693686818,
+        10693686819,
+        10693686820,
+        10693686821,
+        10693686822,
+        10693686823,
+        10693686824,
+        10693686825,
+        10693686826,
+        10693686827,
+        10693686828,
+        10693686829,
+        10693686830,
+        10693686817
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "国頭スーパー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1164671329,
+      "center": {
+        "lat": 26.2395981,
+        "lon": 127.748498
+      },
+      "nodes": [
+        10831965938,
+        10831965939,
+        10831965940,
+        10831965941,
+        10831965938
+      ],
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket",
+        "source": "GSImaps/std;GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1190847570,
+      "center": {
+        "lat": 26.2824665,
+        "lon": 127.7806509
+      },
+      "nodes": [
+        11056910790,
+        11770339862,
+        11770339861,
+        11056910791,
+        11770339863,
+        11770339864,
+        11770339867,
+        11056910792,
+        11770339866,
+        11056910793,
+        11056910794,
+        11770339865,
+        11056910795,
+        11056910790
+      ],
+      "tags": {
+        "branch": "のだけ市場",
+        "building": "yes",
+        "name": "かねひで",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1201685870,
+      "center": {
+        "lat": 26.2680066,
+        "lon": 127.7766601
+      },
+      "nodes": [
+        11141142486,
+        11141142487,
+        11141142488,
+        11141142489,
+        11141142490,
+        11141142491,
+        11141142486
+      ],
+      "tags": {
+        "building": "yes",
+        "organic": "only",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1208297558,
+      "center": {
+        "lat": 26.6011126,
+        "lon": 127.9967556
+      },
+      "nodes": [
+        11196004983,
+        11196004984,
+        1993573546,
+        11196004985,
+        11196004986,
+        11196004987,
+        11196004988,
+        11196004989,
+        11196004990,
+        11196004991,
+        11196004983
+      ],
+      "tags": {
+        "addr:block_number": "2",
+        "addr:city": "名護市",
+        "addr:housenumber": "78",
+        "addr:neighbourhood": "大北三丁目",
+        "addr:postcode": "905-0019",
+        "addr:province": "沖縄県",
+        "addr:street": "県道71号",
+        "building": "yes",
+        "name": "タウンプラザかねひで",
+        "name:en": "Town Plaza Kanehide okita",
+        "name:ja": "タウンプラザかねひで大北店",
+        "name:ja_kana": "かねひで",
+        "phone": "098-054-1738",
+        "shop": "supermarket",
+        "source": "survey",
+        "survey:date": "2012-10-01",
+        "website": "http://kanehideshj.com"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1212264626,
+      "center": {
+        "lat": 26.352027,
+        "lon": 127.8189357
+      },
+      "nodes": [
+        11231369216,
+        11231369217,
+        11231369218,
+        11231369219,
+        11231369216
+      ],
+      "tags": {
+        "alt_name:en": "Co-op",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "building": "yes",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1236188222,
+      "center": {
+        "lat": 26.4353745,
+        "lon": 127.8353496
+      },
+      "nodes": [
+        11477698610,
+        11477698611,
+        11477698612,
+        11477698613,
+        11477698610
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ビッグワン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1236188238,
+      "center": {
+        "lat": 26.4035598,
+        "lon": 127.7359325
+      },
+      "nodes": [
+        11477698715,
+        11477698716,
+        11477698717,
+        11477698718,
+        11477698715
+      ],
+      "tags": {
+        "addr:block_number": "205",
+        "addr:city": "読谷村",
+        "addr:county": "中頭郡",
+        "addr:housenumber": "1",
+        "addr:postcode": "934-0321",
+        "addr:province": "沖縄県",
+        "addr:quarter": "上地",
+        "branch": "マックスバリュ座喜味店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "opening_hours": "24/7",
+        "phone": "098-923-3027",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1240093552,
+      "center": {
+        "lat": 26.2892321,
+        "lon": 127.780815
+      },
+      "nodes": [
+        11521299730,
+        11521299731,
+        11521299732,
+        11521299733,
+        11521299734,
+        11521299735,
+        11521299736,
+        11521299737,
+        11521299730
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フレッシュプラザユニオン普天間店",
+        "operator": "ユニオン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1248005573,
+      "center": {
+        "lat": 26.6060832,
+        "lon": 127.9470739
+      },
+      "nodes": [
+        11601416286,
+        11601416287,
+        11601416288,
+        11601416289,
+        11601416290,
+        11601416291,
+        11601416292,
+        11601416293,
+        11601416294,
+        11601416295,
+        11601416296,
+        11601416286
+      ],
+      "tags": {
+        "name": "Seven Eleven",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1267286660,
+      "center": {
+        "lat": 26.7091884,
+        "lon": 127.8027209
+      },
+      "nodes": [
+        11770396157,
+        11770396175,
+        11770396158,
+        11770396159,
+        11770396160,
+        11770396161,
+        11770396162,
+        11770396157
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マルイストアー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1269162274,
+      "center": {
+        "lat": 26.2849978,
+        "lon": 127.7679008
+      },
+      "nodes": [
+        11787989289,
+        11787989290,
+        11787989291,
+        11787989292,
+        11787989293,
+        11787989294,
+        11787989289
+      ],
+      "tags": {
+        "branch": "新城店",
+        "building": "yes",
+        "name": "ユニオン",
+        "opening_hours": "24/7",
+        "payment:cash": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1288047382,
+      "center": {
+        "lat": 26.2431441,
+        "lon": 127.7410624
+      },
+      "nodes": [
+        11945083784,
+        11945083785,
+        12198565852,
+        11945083786,
+        11945083787,
+        12198565845,
+        12198565847,
+        12198565846,
+        12198565844,
+        12198565841,
+        12198565843,
+        12198565842,
+        12198565840,
+        11945083784
+      ],
+      "tags": {
+        "addr:block_number": "19",
+        "addr:city": "浦添市",
+        "addr:housenumber": "40",
+        "addr:neighbourhood": "三丁目",
+        "addr:postcode": "9012102",
+        "addr:province": "沖縄県",
+        "addr:quarter": "前田",
+        "branch": "てだこ浦西駅前",
+        "building": "yes",
+        "building:levels": "2",
+        "name": "イオンスタイル",
+        "opening_date": "2024-09",
+        "opening_hours": "Mo-Su 08:00-23:00",
+        "operator": "イオン琉球",
+        "phone": "+81 98 870 5171",
+        "shop": "supermarket",
+        "start_date": "2024-09-24",
+        "toilets": "yes",
+        "website": "https://www.aeon-ryukyu.jp/store/aeon/tedako_uranishi/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1323472794,
+      "center": {
+        "lat": 26.316717,
+        "lon": 127.8248327
+      },
+      "nodes": [
+        12246884321,
+        12246884322,
+        12246884323,
+        12246884324,
+        12246884321
+      ],
+      "tags": {
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "building": "yes",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1347579710,
+      "center": {
+        "lat": 25.8303314,
+        "lon": 131.2310021
+      },
+      "nodes": [
+        12465354848,
+        12465354845,
+        12465354846,
+        12465354847,
+        12465354848
+      ],
+      "tags": {
+        "building": "retail",
+        "building:levels": "1",
+        "name": "与儀商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1433579171,
+      "center": {
+        "lat": 26.3341429,
+        "lon": 127.8330335
+      },
+      "nodes": [
+        13175429127,
+        13175429128,
+        13175429129,
+        13175429130,
+        13175429131,
+        13175429132,
+        13175429133,
+        13175429134,
+        13175429135,
+        13175429136,
+        13175429137,
+        13175429138,
+        13175429127
+      ],
+      "tags": {
+        "addr:block_number": "16",
+        "addr:city": "沖縄市",
+        "addr:housenumber": "23",
+        "addr:neighbourhood": "2",
+        "addr:postcode": "904-2161",
+        "addr:province": "沖縄県",
+        "addr:quarter": "古謝",
+        "branch": "V21食品館 古謝店",
+        "building": "yes",
+        "name": "サンエー",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "payment:au_pay": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:d払い": "yes",
+        "payment:edy": "yes",
+        "payment:merpay": "yes",
+        "payment:paypay": "yes",
+        "payment:rakuten_pay": "yes",
+        "payment:ゆうちょpay": "yes",
+        "phone": "+81-98-929-3332",
+        "shop": "supermarket",
+        "website": "https://www.san-a.co.jp/store/684/"
+      }
+    }
+  ]
+}

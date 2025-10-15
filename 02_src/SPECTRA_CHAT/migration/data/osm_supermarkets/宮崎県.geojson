@@ -1,0 +1,3245 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.8 e802775f",
+  "osm3s": {
+    "timestamp_osm_base": "2025-10-15T12:33:28Z",
+    "timestamp_areas_base": "2025-10-15T04:02:15Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 1044342851,
+      "lat": 31.6143556,
+      "lon": 131.3714915,
+      "tags": {
+        "name": "タイヨー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1156330545,
+      "lat": 31.9807384,
+      "lon": 131.4469671,
+      "tags": {
+        "name": "Max Value",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2391114658,
+      "lat": 32.0474929,
+      "lon": 130.8654666,
+      "tags": {
+        "branch": "いいの店",
+        "brand": "エーコープ",
+        "brand:en": "A-COOP",
+        "brand:ja": "エーコープ",
+        "brand:wikidata": "Q11291524",
+        "name": "エーコープ",
+        "name:en": "A-COOP",
+        "name:ja": "エーコープ",
+        "organic": "only",
+        "shop": "supermarket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2912258901,
+      "lat": 31.919306,
+      "lon": 131.430234,
+      "tags": {
+        "addr:city": "宮崎市",
+        "addr:province": "宮崎県",
+        "addr:quarter": "錦町",
+        "branch": "グラード錦町店",
+        "brand": "タイヨー",
+        "brand:en": "Taiyo",
+        "brand:ja": "タイヨー",
+        "brand:wikidata": "Q11315815",
+        "name": "タイヨー",
+        "name:en": "Taiyo",
+        "name:ja": "タイヨー",
+        "operator": "タイヨー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2912616701,
+      "lat": 31.91329,
+      "lon": 131.421344,
+      "tags": {
+        "branch": "本店",
+        "name": "La Dish",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3666499286,
+      "lat": 31.9904713,
+      "lon": 131.3323959,
+      "tags": {
+        "branch": "国富店",
+        "name": "コメリ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3666499287,
+      "lat": 31.990198,
+      "lon": 131.333017,
+      "tags": {
+        "name": "サンリッチ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3686553123,
+      "lat": 31.7217888,
+      "lon": 131.0996162,
+      "tags": {
+        "name": "マルショク エル 一万城店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3889210391,
+      "lat": 31.8955341,
+      "lon": 131.4193215,
+      "tags": {
+        "branch": "南宮崎店",
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3918434862,
+      "lat": 32.7070908,
+      "lon": 131.3035416,
+      "tags": {
+        "name": "コスモス",
+        "name:en": "Cosmos",
+        "opening_hours": "10:00-21:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4269727395,
+      "lat": 32.4238674,
+      "lon": 131.6514719,
+      "tags": {
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4269760896,
+      "lat": 32.4263559,
+      "lon": 131.6267578,
+      "tags": {
+        "name": "TRIAL",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4269765394,
+      "lat": 32.4134589,
+      "lon": 131.6205044,
+      "tags": {
+        "branch": "比良店",
+        "brand": "エーコープ",
+        "brand:en": "A-COOP",
+        "brand:ja": "エーコープ",
+        "brand:wikidata": "Q11291524",
+        "name": "エーコープ",
+        "name:en": "A-COOP",
+        "name:ja": "エーコープ",
+        "organic": "only",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4269823292,
+      "lat": 32.41388,
+      "lon": 131.6299824,
+      "tags": {
+        "name": "生活協同組合コープ みやざき",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4269831292,
+      "lat": 32.406999,
+      "lon": 131.6318507,
+      "tags": {
+        "name": "サウスタウン 日向 ショッピングセンター",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4269859489,
+      "lat": 32.4045051,
+      "lon": 131.6240315,
+      "tags": {
+        "name": "マルイチ ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4274580690,
+      "lat": 32.4134291,
+      "lon": 131.6333226,
+      "tags": {
+        "name": "ディスカウントドラッグ コスモス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4274580990,
+      "lat": 32.4272941,
+      "lon": 131.6399259,
+      "tags": {
+        "name": "ドラッグストアモリ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4275523389,
+      "lat": 32.4222286,
+      "lon": 131.6226223,
+      "tags": {
+        "name": "ディスカウントドラッグコスモス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4275536193,
+      "lat": 32.430925,
+      "lon": 131.6287204,
+      "tags": {
+        "name": "ディスカウントドラッグコスモス日向店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4281754089,
+      "lat": 32.4465029,
+      "lon": 131.6412471,
+      "tags": {
+        "name": "ミスターマックス 日向店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4281754090,
+      "lat": 32.4313306,
+      "lon": 131.6259694,
+      "tags": {
+        "name": "マルミヤストア下川富高店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4281768089,
+      "lat": 32.4398427,
+      "lon": 131.6282192,
+      "tags": {
+        "name": "マルイチ 大王店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4283196906,
+      "lat": 32.4240643,
+      "lon": 131.6265935,
+      "tags": {
+        "name": "ながの屋",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4289515389,
+      "lat": 32.4037058,
+      "lon": 131.6243508,
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "ドラッグストアモリ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4661422400,
+      "lat": 31.9983904,
+      "lon": 131.2546732,
+      "tags": {
+        "branch": "綾店",
+        "brand": "エーコープ",
+        "brand:en": "A-COOP",
+        "brand:ja": "エーコープ",
+        "brand:wikidata": "Q11291524",
+        "brand:wikipedia": "ja:エーコープ",
+        "name": "エーコープ",
+        "name:en": "A-COOP",
+        "name:ja": "エーコープ",
+        "organic": "only",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4757163374,
+      "lat": 31.7610571,
+      "lon": 131.1116702,
+      "tags": {
+        "branch": "三股店",
+        "name": "アタックス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4757163379,
+      "lat": 31.759474,
+      "lon": 131.0915217,
+      "tags": {
+        "branch": "都北店",
+        "name": "HERTYながやま",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4757163380,
+      "lat": 31.7637582,
+      "lon": 131.0856455,
+      "tags": {
+        "alt_name:en": "Co-op",
+        "branch": "都北店",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "brand:wikipedia": "ja:日本生活協同組合連合会",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "official_name:ja": "日本生活協同組合連合会",
+        "operator": "コープみやざき",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4757163381,
+      "lat": 31.7660934,
+      "lon": 131.0892933,
+      "tags": {
+        "branch": "都北店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "brand:wikipedia": "en:MaxValu",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4757176427,
+      "lat": 31.7410491,
+      "lon": 131.0885436,
+      "tags": {
+        "branch": "都城郡元店",
+        "brand": "タイヨー",
+        "brand:en": "Taiyo",
+        "brand:ja": "タイヨー",
+        "brand:wikidata": "Q11315815",
+        "name": "タイヨー",
+        "name:en": "Taiyo",
+        "name:ja": "タイヨー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4757176431,
+      "lat": 31.7360583,
+      "lon": 131.0899932,
+      "tags": {
+        "branch": "都城店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "brand:wikipedia": "en:MaxValu",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4757176434,
+      "lat": 31.7417077,
+      "lon": 131.1046871,
+      "tags": {
+        "name": "じゃんぼ児玉",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4757176440,
+      "lat": 31.7313222,
+      "lon": 131.1209696,
+      "tags": {
+        "branch": "三股駅前店",
+        "name": "ミートショップながやま",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4757176447,
+      "lat": 31.7333178,
+      "lon": 131.1025024,
+      "tags": {
+        "branch": "三股店",
+        "name": "HERTYながやま",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4757176456,
+      "lat": 31.7262761,
+      "lon": 131.0853559,
+      "tags": {
+        "branch": "花繰店",
+        "name": "コープみやざき",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4757176457,
+      "lat": 31.7258416,
+      "lon": 131.0829555,
+      "tags": {
+        "name": "鮮ど市場 花繰店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4757342697,
+      "lat": 31.7256027,
+      "lon": 131.0368499,
+      "tags": {
+        "name": "モールひろせ 鷹尾店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4757342699,
+      "lat": 31.7222717,
+      "lon": 131.0410127,
+      "tags": {
+        "name": "スーパー大浦 パシオたかお",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4757386199,
+      "lat": 31.8053909,
+      "lon": 131.1246728,
+      "tags": {
+        "branch": "高城店",
+        "brand": "タイヨー",
+        "brand:en": "Taiyo",
+        "brand:ja": "タイヨー",
+        "brand:wikidata": "Q11315815",
+        "name": "タイヨー",
+        "name:en": "Taiyo",
+        "name:ja": "タイヨー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4757386200,
+      "lat": 31.8125914,
+      "lon": 131.0964911,
+      "tags": {
+        "name": "スーパー大浦 志和池店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4757386204,
+      "lat": 31.8696333,
+      "lon": 131.0713101,
+      "tags": {
+        "branch": "高崎店",
+        "brand": "エーコープ",
+        "brand:en": "A-COOP",
+        "brand:ja": "エーコープ",
+        "brand:wikidata": "Q11291524",
+        "brand:wikipedia": "ja:エーコープ",
+        "name": "エーコープ",
+        "name:en": "A-COOP",
+        "name:ja": "エーコープ",
+        "organic": "only",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4757562646,
+      "lat": 31.7859672,
+      "lon": 131.1545768,
+      "tags": {
+        "name": "パシオ 山之口",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4757562655,
+      "lat": 31.8344994,
+      "lon": 131.3025765,
+      "tags": {
+        "name": "MVくらし館 田野店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4878487376,
+      "lat": 32.5508933,
+      "lon": 131.6754329,
+      "tags": {
+        "addr:city": "延岡市",
+        "addr:province": "宮崎県",
+        "addr:quarter": "平原町",
+        "name": "やまとセンター",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5017529307,
+      "lat": 32.5563671,
+      "lon": 131.6763117,
+      "tags": {
+        "addr:city": "延岡市",
+        "addr:neighbourhood": "２丁目",
+        "addr:postcode": "882-0867",
+        "addr:province": "宮崎県",
+        "addr:quarter": "構口町",
+        "name": "ザ・ダイソー 南延岡店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5017529308,
+      "lat": 32.5572545,
+      "lon": 131.6763546,
+      "tags": {
+        "addr:city": "延岡市",
+        "addr:neighbourhood": "２丁目",
+        "addr:postcode": "882-0867",
+        "addr:province": "宮崎県",
+        "addr:quarter": "構口町",
+        "name": "マックスバリュ 南延岡店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5087030698,
+      "lat": 32.7092121,
+      "lon": 131.2919861,
+      "tags": {
+        "name": "奈須スーパー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5087204177,
+      "lat": 32.7339459,
+      "lon": 131.348666,
+      "tags": {
+        "name": "Aコープ 岩戸店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5087204202,
+      "lat": 32.7335676,
+      "lon": 131.3484965,
+      "tags": {
+        "name": "矢野商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5142040122,
+      "lat": 32.416828,
+      "lon": 131.6189664,
+      "tags": {
+        "name": "アタックス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5219666430,
+      "lat": 31.7979634,
+      "lon": 131.4686626,
+      "tags": {
+        "name": "Bon Délice",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5518019125,
+      "lat": 32.77772,
+      "lon": 131.2554462,
+      "tags": {
+        "name": "Aコープ田原",
+        "name:ja": "Aコープ田原店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5920004637,
+      "lat": 31.6255886,
+      "lon": 131.3540386,
+      "tags": {
+        "name": "スーパーとむら",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5923298415,
+      "lat": 31.9151385,
+      "lon": 131.428776,
+      "tags": {
+        "level": "0",
+        "name": "発酵食品館 里山ガーデン籾木",
+        "organic": "only",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6019343032,
+      "lat": 31.7542213,
+      "lon": 131.0788071,
+      "tags": {
+        "name": "はなまるマーケット",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6054690206,
+      "lat": 31.5478869,
+      "lon": 131.3791126,
+      "tags": {
+        "name": "365",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6060323336,
+      "lat": 31.5109144,
+      "lon": 131.2484355,
+      "tags": {
+        "name": "Aコープ串間大束店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6060332239,
+      "lat": 31.4529412,
+      "lon": 131.215273,
+      "tags": {
+        "name": "ミネサキ串間店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6060332242,
+      "lat": 31.4577684,
+      "lon": 131.2207934,
+      "tags": {
+        "name": "スーパーよしだ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6060356101,
+      "lat": 31.45602,
+      "lon": 131.213647,
+      "tags": {
+        "name": "四季彩館ほりぐち西浜店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6060356104,
+      "lat": 31.4713986,
+      "lon": 131.2333956,
+      "tags": {
+        "name": "四季彩館ほりぐち本店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6533391733,
+      "lat": 32.585815,
+      "lon": 131.6519776,
+      "tags": {
+        "name": "コスモス　松山店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6756014085,
+      "lat": 32.7156808,
+      "lon": 131.312053,
+      "tags": {
+        "name": "Azuro Supermarket",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6756949585,
+      "lat": 32.7156219,
+      "lon": 131.3120231,
+      "tags": {
+        "name": "Azuro Supermarket",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7040726080,
+      "lat": 32.4673953,
+      "lon": 131.1576484,
+      "tags": {
+        "branch": "椎葉店",
+        "name": "Aコープ",
+        "name:en": "A-Coop",
+        "phone": "+81 982-67-3014",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8084212393,
+      "lat": 32.6846403,
+      "lon": 131.1993724,
+      "tags": {
+        "name": "Ａコープ五ケ瀬店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8447664154,
+      "lat": 32.7047945,
+      "lon": 131.8196658,
+      "tags": {
+        "name": "きたうらら海市場",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10132529441,
+      "lat": 32.5720235,
+      "lon": 131.6702154,
+      "tags": {
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10298247502,
+      "lat": 31.733401,
+      "lon": 131.1278088,
+      "tags": {
+        "name": "去川ストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10747102706,
+      "lat": 31.9509066,
+      "lon": 131.4383711,
+      "tags": {
+        "name": "タイヨー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11771913984,
+      "lat": 32.1007565,
+      "lon": 131.4026891,
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11771914000,
+      "lat": 32.0991475,
+      "lon": 131.4073234,
+      "tags": {
+        "name": "スーパーセンタートライアル西都店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11771914062,
+      "lat": 32.1116748,
+      "lon": 131.4112774,
+      "tags": {
+        "name": "うめこうじ 西都店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11772686840,
+      "lat": 32.0478026,
+      "lon": 131.4386869,
+      "tags": {
+        "name": "Foodaly (フーデリー) 佐土原店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11773238468,
+      "lat": 32.1007846,
+      "lon": 131.400134,
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11773254983,
+      "lat": 31.7244305,
+      "lon": 131.0576939,
+      "tags": {
+        "name": "Good foods",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11811590582,
+      "lat": 32.1280099,
+      "lon": 131.5117272,
+      "tags": {
+        "branch": "高鍋",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12109670087,
+      "lat": 31.916088,
+      "lon": 131.4227813,
+      "tags": {
+        "branch": "宮崎橘通店",
+        "brand": "ドン・キホーテ",
+        "brand:en": "Don Quijote",
+        "brand:ja": "ドン・キホーテ",
+        "brand:wikidata": "Q1185381",
+        "name": "MEGAドン・キホーテ",
+        "name:en": "MEGA Don Quijote",
+        "name:ja": "MEGAドン・キホーテ",
+        "opening_hours": "24/7",
+        "shop": "supermarket",
+        "short_name": "MEGAドンキ",
+        "short_name:en": "MegaDonki",
+        "short_name:ja": "MEGAドンキ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12109670088,
+      "lat": 31.9163194,
+      "lon": 131.4222646,
+      "tags": {
+        "branch": "宮崎橘通店",
+        "brand": "ドン・キホーテ",
+        "brand:en": "Don Quijote",
+        "brand:ja": "ドン・キホーテ",
+        "brand:wikidata": "Q1185381",
+        "name": "MEGAドン・キホーテ",
+        "name:en": "MEGA Don Quijote",
+        "name:ja": "MEGAドン・キホーテ",
+        "opening_hours": "24/7",
+        "shop": "supermarket",
+        "short_name": "MEGAドンキ",
+        "short_name:en": "MegaDonki",
+        "short_name:ja": "MEGAドンキ"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12125544759,
+      "lat": 31.9234405,
+      "lon": 131.454556,
+      "tags": {
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "level": "0",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 87823163,
+      "center": {
+        "lat": 31.9185385,
+        "lon": 131.4320801
+      },
+      "nodes": [
+        1020970463,
+        1020970218,
+        1020970677,
+        1020970199,
+        12154622932,
+        12154622933,
+        12154622934,
+        12154622935,
+        12154622936,
+        12154622937,
+        1020970463
+      ],
+      "tags": {
+        "addr:city": "宮崎市",
+        "addr:province": "宮崎県",
+        "branch": "宮崎駅前店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "retail",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "opening_hours": "24/7",
+        "shop": "supermarket",
+        "source": "Bing,2010-11-17"
+      }
+    },
+    {
+      "type": "way",
+      "id": 197125808,
+      "center": {
+        "lat": 32.0253481,
+        "lon": 131.4780504
+      },
+      "nodes": [
+        2074211216,
+        2074211280,
+        2074211259,
+        2074211261,
+        2074211244,
+        2074211240,
+        2074211220,
+        2074211228,
+        2074211166,
+        2074211100,
+        2074211133,
+        2074211119,
+        2074211142,
+        2074211131,
+        2074211151,
+        2074211156,
+        2074211196,
+        2074211202,
+        2074211216
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ウメコウジ 佐土原本店",
+        "shop": "supermarket",
+        "source": "bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 208503004,
+      "center": {
+        "lat": 32.7128612,
+        "lon": 131.3081108
+      },
+      "nodes": [
+        2187931397,
+        2187931356,
+        2187931416,
+        2187931421,
+        2187931367,
+        2187931380,
+        2187931391,
+        2187931377,
+        2187931357,
+        2187931397
+      ],
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 287665656,
+      "center": {
+        "lat": 31.9188338,
+        "lon": 131.4226372
+      },
+      "nodes": [
+        2912359590,
+        2912359588,
+        2912359585,
+        2912359583,
+        2912359573,
+        2912359575,
+        2912359590
+      ],
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "retail",
+        "building:levels": "1",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket",
+        "source": "GSI/KIBAN 2500;NARO",
+        "source_ref": "http://wiki.osm.org/wiki/GSI_KIBAN"
+      }
+    },
+    {
+      "type": "way",
+      "id": 391864533,
+      "center": {
+        "lat": 32.0727466,
+        "lon": 131.4437962
+      },
+      "nodes": [
+        3951279105,
+        3951279102,
+        3951279086,
+        3951279088,
+        3951279105
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "Aコープ 新田店",
+        "operator": "JA児湯",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 392074465,
+      "center": {
+        "lat": 32.0755239,
+        "lon": 131.4967155
+      },
+      "nodes": [
+        3953463055,
+        3953463051,
+        3953463053,
+        3953463054,
+        3953463058,
+        3953463056,
+        3953463059,
+        3953463057,
+        3953463048,
+        3953463046,
+        3953463052,
+        3953463047,
+        3953463031,
+        3953463040,
+        3953463036,
+        3953463039,
+        3953463055
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "ながの屋 新富店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 392325042,
+      "center": {
+        "lat": 32.0743016,
+        "lon": 131.4991615
+      },
+      "nodes": [
+        3955588030,
+        3955588032,
+        3955588024,
+        3955588025,
+        3955588030
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "いのうえフード",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 392441042,
+      "center": {
+        "lat": 32.1014493,
+        "lon": 131.4464666
+      },
+      "nodes": [
+        3956599240,
+        3956599268,
+        3956599267,
+        3956599263,
+        3956599254,
+        3956599264,
+        3956599251,
+        3956599242,
+        3956599243,
+        3968686777,
+        3956599236,
+        3956599239,
+        3956599228,
+        3956599230,
+        3956599233,
+        3956599240
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "Aコープ 上新田店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 393647711,
+      "center": {
+        "lat": 32.0687455,
+        "lon": 131.4924367
+      },
+      "nodes": [
+        3950152612,
+        3950152609,
+        3968581572,
+        3968581570,
+        3968581571,
+        3968581573,
+        3968581574,
+        3950152621,
+        3950152623,
+        3950152612
+      ],
+      "tags": {
+        "branch": "新富店",
+        "brand": "エーコープ",
+        "brand:en": "A-COOP",
+        "brand:ja": "エーコープ",
+        "brand:wikidata": "Q11291524",
+        "brand:wikipedia": "ja:エーコープ",
+        "name": "エーコープ",
+        "name:en": "A-COOP",
+        "name:ja": "エーコープ",
+        "operator": "エーコープみやざき",
+        "organic": "only",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 394282343,
+      "center": {
+        "lat": 32.0689866,
+        "lon": 131.4909668
+      },
+      "nodes": [
+        3950069739,
+        3950069728,
+        3950069715,
+        3972973035,
+        3972973048,
+        3972973044,
+        3972973051,
+        3972974175,
+        3950070353,
+        3950070399,
+        3972974234,
+        3972974233,
+        3950070394,
+        3950070333,
+        3950070325,
+        3950070319,
+        3972974174,
+        3972973056,
+        3950069739
+      ],
+      "tags": {
+        "name": "マルショク 新富店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 401151326,
+      "center": {
+        "lat": 32.0796859,
+        "lon": 131.4238376
+      },
+      "nodes": [
+        4036037721,
+        4036037716,
+        4036037700,
+        4036037704,
+        4036037710,
+        4036037714,
+        4036037721
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "寺原商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 417773820,
+      "center": {
+        "lat": 31.8542916,
+        "lon": 131.399801
+      },
+      "nodes": [
+        4182613806,
+        4182613803,
+        4182613791,
+        4182613789,
+        4182613790,
+        4182613802,
+        4182613806
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "タイヨー 清武店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 441545762,
+      "center": {
+        "lat": 31.9269906,
+        "lon": 131.4372154
+      },
+      "nodes": [
+        4392928357,
+        4392928358,
+        4392928359,
+        4392928360,
+        4392928357
+      ],
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 509458312,
+      "center": {
+        "lat": 31.7341579,
+        "lon": 131.104992
+      },
+      "nodes": [
+        4986832249,
+        4986832250,
+        4986832251,
+        4986832252,
+        4986832249
+      ],
+      "tags": {
+        "branch": "三股店",
+        "brand": "トライアル",
+        "brand:en": "Trial",
+        "brand:ja": "トライアル",
+        "brand:wikidata": "Q11321723",
+        "brand:wikipedia": "ja:トライアルカンパニー",
+        "building": "yes",
+        "name": "トライアル",
+        "name:en": "Trial",
+        "name:ja": "トライアル",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 513236600,
+      "center": {
+        "lat": 32.5572017,
+        "lon": 131.6764043
+      },
+      "nodes": [
+        5017529234,
+        5017529235,
+        5017529236,
+        5017529237,
+        5017529238,
+        5017529239,
+        5017529240,
+        5017529234
+      ],
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 528265843,
+      "center": {
+        "lat": 31.8563202,
+        "lon": 131.3878969
+      },
+      "nodes": [
+        5134210357,
+        5134210358,
+        5134210359,
+        5134210360,
+        5134210361,
+        5134210357
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "Aコープ清武店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 529399810,
+      "center": {
+        "lat": 31.8787642,
+        "lon": 131.4071756
+      },
+      "nodes": [
+        5142674459,
+        5142674460,
+        5142674461,
+        5142674462,
+        5142674459
+      ],
+      "tags": {
+        "addr:block_number": "346",
+        "addr:housenumber": "1",
+        "building": "retail",
+        "name": "マルショク加納店",
+        "opening_hours": "Mo-Su,PH 09:00-22:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 559433070,
+      "center": {
+        "lat": 32.5848031,
+        "lon": 131.6665171
+      },
+      "nodes": [
+        5395672385,
+        5395672388,
+        5395672389,
+        5395672394,
+        5395672385
+      ],
+      "tags": {
+        "alt_name:en": "Co-op",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "building": "yes",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "official_name:ja": "日本生活協同組合連合会",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 601905738,
+      "center": {
+        "lat": 31.9097171,
+        "lon": 131.4308939
+      },
+      "nodes": [
+        5719168213,
+        5719168214,
+        5719168215,
+        5719168216,
+        5719168213
+      ],
+      "tags": {
+        "branch": "瀬頭店",
+        "building": "yes",
+        "name": "ながの屋",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 609107808,
+      "center": {
+        "lat": 31.9262485,
+        "lon": 131.4329288
+      },
+      "nodes": [
+        5769599875,
+        5769599876,
+        5769599877,
+        5769599878,
+        5769599875
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "鮮ど市場 柳丸店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 645179396,
+      "center": {
+        "lat": 32.100795,
+        "lon": 131.4026811
+      },
+      "nodes": [
+        6065521348,
+        6065521349,
+        6065521350,
+        6065521351,
+        6065521348
+      ],
+      "tags": {
+        "branch": "西都店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "retail",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 645179400,
+      "center": {
+        "lat": 32.099146,
+        "lon": 131.4073286
+      },
+      "nodes": [
+        6065521368,
+        6065521369,
+        6065521370,
+        6065521371,
+        6065521372,
+        6065521373,
+        6065521368
+      ],
+      "tags": {
+        "brand": "トライアル",
+        "brand:en": "Trial",
+        "brand:ja": "トライアル",
+        "brand:wikidata": "Q11321723",
+        "building": "yes",
+        "name": "トライアル",
+        "name:en": "Trial",
+        "name:ja": "トライアル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 699054951,
+      "center": {
+        "lat": 31.9287747,
+        "lon": 131.4360754
+      },
+      "nodes": [
+        6564495603,
+        6564495604,
+        6564495605,
+        6564495606,
+        6564495607,
+        6564495608,
+        6564495609,
+        6564495610,
+        6564495611,
+        6564495612,
+        6564495613,
+        6564495614,
+        6564495615,
+        6564495616,
+        6564495603
+      ],
+      "tags": {
+        "addr:city": "宮崎市",
+        "addr:province": "宮崎県",
+        "addr:quarter": "柳丸町",
+        "alt_name:en": "Co-op",
+        "branch": "柳丸店",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "building": "retail",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "operator": "コープみやざき",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 702079431,
+      "center": {
+        "lat": 31.9154435,
+        "lon": 131.4370966
+      },
+      "nodes": [
+        6593171033,
+        6593171034,
+        6593171035,
+        6593171036,
+        6593171037,
+        6593171038,
+        6593171039,
+        6593171040,
+        6593171033
+      ],
+      "tags": {
+        "branch": "宮脇店",
+        "building": "yes",
+        "name": "コープみやざき",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 706105185,
+      "center": {
+        "lat": 31.8888509,
+        "lon": 131.4239177
+      },
+      "nodes": [
+        6634712868,
+        6634712869,
+        6634712870,
+        6634712871,
+        6905328393,
+        6634712873,
+        6634712874,
+        6634712875,
+        6634712868
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "スーパーセンタートライアル宮崎恒久店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 706887147,
+      "center": {
+        "lat": 31.8964668,
+        "lon": 131.4215813
+      },
+      "nodes": [
+        6642764798,
+        6642764799,
+        6642764800,
+        6642764801,
+        6642764798
+      ],
+      "tags": {
+        "branch": "南宮崎店",
+        "building": "yes",
+        "name": "鮮ど市場",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 708390214,
+      "center": {
+        "lat": 31.9282402,
+        "lon": 131.4387838
+      },
+      "nodes": [
+        6656611879,
+        6656611880,
+        6656611881,
+        6656611882,
+        6656611883,
+        6656611884,
+        6656611879
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ながの屋浮の城店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 708390243,
+      "center": {
+        "lat": 31.9280819,
+        "lon": 131.4381028
+      },
+      "nodes": [
+        6656629106,
+        6656629107,
+        6656635525,
+        6656635526,
+        6656629108,
+        6656629109,
+        6656629110,
+        6656629111,
+        6656629106
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "プロの食材の店A-プライス宮崎店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 718240937,
+      "center": {
+        "lat": 31.8788627,
+        "lon": 131.4287609
+      },
+      "nodes": [
+        6745036739,
+        6745036740,
+        6745036741,
+        6745036742,
+        6745036743,
+        6745036744,
+        6745036745,
+        6745036739
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "タイヨー赤江店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 722389233,
+      "center": {
+        "lat": 31.919526,
+        "lon": 131.4346975
+      },
+      "nodes": [
+        6776060468,
+        6776060469,
+        6776060470,
+        6776060471,
+        6776060468
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フーデリー青葉店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 732495108,
+      "center": {
+        "lat": 31.9010702,
+        "lon": 131.3997828
+      },
+      "nodes": [
+        6859280026,
+        6859280027,
+        6859280028,
+        6859280029,
+        6859280030,
+        6859280026
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "タイヨー　花山手店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 747491242,
+      "center": {
+        "lat": 31.9038246,
+        "lon": 131.3747809
+      },
+      "nodes": [
+        6994327346,
+        6994327347,
+        6994327348,
+        6994327349,
+        6994327350,
+        6994327346
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "山形屋ストア生目台カリヨン店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 754638773,
+      "center": {
+        "lat": 32.4268145,
+        "lon": 131.6272083
+      },
+      "nodes": [
+        4270653173,
+        7049903755,
+        7049903754,
+        7049903753,
+        7049903752,
+        7049903751,
+        4270653173
+      ],
+      "tags": {
+        "branch": "日向店",
+        "building": "retail",
+        "name": "TRIAL",
+        "opening_hours": "24/7",
+        "phone": "+81 982 50 1377",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 762248668,
+      "center": {
+        "lat": 31.8861585,
+        "lon": 131.4142917
+      },
+      "nodes": [
+        7122281636,
+        7122281637,
+        7122281638,
+        7122281639,
+        7122281640,
+        7122281641,
+        7122281636
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "Aコープ オランヴェル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 865632959,
+      "center": {
+        "lat": 32.047314,
+        "lon": 130.7685858
+      },
+      "nodes": [
+        8068612751,
+        8068612752,
+        8068612753,
+        8068612754,
+        8068612751
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "プラッセだいわ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1108501920,
+      "center": {
+        "lat": 32.5240114,
+        "lon": 131.6788682
+      },
+      "nodes": [
+        10142522559,
+        10142522560,
+        10142522561,
+        10142522562,
+        10142522559
+      ],
+      "tags": {
+        "brand": "エーコープ",
+        "brand:en": "A-COOP",
+        "brand:ja": "エーコープ",
+        "brand:wikidata": "Q11291524",
+        "building": "yes",
+        "name": "エーコープ",
+        "name:en": "A-COOP",
+        "name:ja": "エーコープ",
+        "organic": "only",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1108525854,
+      "center": {
+        "lat": 32.5329328,
+        "lon": 131.6733707
+      },
+      "nodes": [
+        10142710849,
+        10142710850,
+        10142710851,
+        10142710852,
+        10142710849
+      ],
+      "tags": {
+        "building": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1108534256,
+      "center": {
+        "lat": 32.5598333,
+        "lon": 131.6817335
+      },
+      "nodes": [
+        10142793036,
+        10154666844,
+        10154666845,
+        10142793037,
+        10142793038,
+        10142793039,
+        10142793040,
+        10142793041,
+        10142793042,
+        10142793043,
+        10154666843,
+        10154666842,
+        10142793036
+      ],
+      "tags": {
+        "alt_name:en": "Co-op",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "building": "yes",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1108534265,
+      "center": {
+        "lat": 32.5616367,
+        "lon": 131.67892
+      },
+      "nodes": [
+        10142793094,
+        10142793095,
+        10142793096,
+        10142793097,
+        10142793094
+      ],
+      "tags": {
+        "building": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1108556914,
+      "center": {
+        "lat": 32.5953861,
+        "lon": 131.6717986
+      },
+      "nodes": [
+        10142970840,
+        10142970841,
+        10142970842,
+        10142970843,
+        10142970844,
+        10142970845,
+        10142970846,
+        10142970847,
+        10142970840
+      ],
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1108929037,
+      "center": {
+        "lat": 32.5668713,
+        "lon": 131.6595891
+      },
+      "nodes": [
+        10146552670,
+        10162092419,
+        10146552671,
+        10162092418,
+        10162092417,
+        10162086116,
+        10146552672,
+        10162086115,
+        10162086114,
+        10162086113,
+        10162086112,
+        10162086111,
+        10162086110,
+        10162086109,
+        10146552673,
+        10162092426,
+        10162092428,
+        10162092427,
+        10162092425,
+        10162092424,
+        10162092423,
+        10162092422,
+        10162092421,
+        10162092420,
+        10146552670
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マルミヤストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1108988805,
+      "center": {
+        "lat": 32.5708603,
+        "lon": 131.6817894
+      },
+      "nodes": [
+        10147091172,
+        10147091173,
+        10147091174,
+        10147091175,
+        10147091172
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マミーズマーケット",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1108988810,
+      "center": {
+        "lat": 32.5469728,
+        "lon": 131.6762943
+      },
+      "nodes": [
+        10147091201,
+        10147091202,
+        10147091203,
+        10147091204,
+        10147091205,
+        10147091206,
+        10147091201
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "A-プライス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1109470297,
+      "center": {
+        "lat": 32.6012472,
+        "lon": 131.6803799
+      },
+      "nodes": [
+        10150180578,
+        10150180579,
+        10150180580,
+        10150180581,
+        10150180582,
+        10150180583,
+        10150180584,
+        10150180585,
+        10150180578
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マルイチ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1109470320,
+      "center": {
+        "lat": 32.6046701,
+        "lon": 131.6846521
+      },
+      "nodes": [
+        10150551689,
+        10150551690,
+        10150551691,
+        10150551692,
+        10150551693,
+        10150551694,
+        10150551695,
+        10150551696,
+        10150551697,
+        10150551698,
+        10150551699,
+        10150551700,
+        10150551701,
+        10150551702,
+        10150551703,
+        10150551704,
+        10150551705,
+        10150551689
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "サンフレッシュむしか",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1109611031,
+      "center": {
+        "lat": 32.584121,
+        "lon": 131.6403329
+      },
+      "nodes": [
+        10151351556,
+        10151351557,
+        10151351558,
+        10151351559,
+        10151351560,
+        10151351561,
+        10151351562,
+        10151351563,
+        10151351564,
+        10151351565,
+        10151351556
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マルショク",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1109611032,
+      "center": {
+        "lat": 32.5842552,
+        "lon": 131.6411157
+      },
+      "nodes": [
+        10151351566,
+        10151351567,
+        10151351568,
+        10151351569,
+        10151351570,
+        10151351571,
+        10151351572,
+        10151351573,
+        10151351566
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マルミヤストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1109617830,
+      "center": {
+        "lat": 32.5740466,
+        "lon": 131.6640085
+      },
+      "nodes": [
+        10151357884,
+        10151357885,
+        10151357886,
+        10151357887,
+        10151357884
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マルイチ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1110568507,
+      "center": {
+        "lat": 32.5613015,
+        "lon": 131.6842534
+      },
+      "nodes": [
+        10159732932,
+        10159732933,
+        10159732934,
+        10159732935,
+        10159732936,
+        10159732937,
+        10159732938,
+        10159732939,
+        10159732940,
+        10159732941,
+        10159732942,
+        10159732943,
+        10159732944,
+        10159732945,
+        10159732932
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "鮮度市場",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1112205718,
+      "center": {
+        "lat": 32.6877225,
+        "lon": 131.6938559
+      },
+      "nodes": [
+        10175031878,
+        10175031879,
+        10175031880,
+        10175031881,
+        10175031878
+      ],
+      "tags": {
+        "brand": "エーコープ",
+        "brand:en": "A-COOP",
+        "brand:ja": "エーコープ",
+        "brand:wikidata": "Q11291524",
+        "building": "yes",
+        "name": "エーコープ",
+        "name:en": "A-COOP",
+        "name:ja": "エーコープ",
+        "organic": "only",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1113271453,
+      "center": {
+        "lat": 32.4789838,
+        "lon": 131.6542861
+      },
+      "nodes": [
+        10185298764,
+        10185298765,
+        10185298766,
+        10185298767,
+        10185298768,
+        10185298769,
+        10185298770,
+        10185298771,
+        10185298772,
+        10185298773,
+        10185298774,
+        10185298775,
+        10185298764
+      ],
+      "tags": {
+        "building": "commercial",
+        "name": "サンシールさの",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1113369582,
+      "center": {
+        "lat": 32.4746513,
+        "lon": 131.6471902
+      },
+      "nodes": [
+        10186098786,
+        10186098787,
+        10186098788,
+        10186098789,
+        10186098790,
+        10186098791,
+        10186098792,
+        10186098793,
+        10186098794,
+        10186098795,
+        10186098796,
+        10186098797,
+        10186098798,
+        10186098799,
+        10186098800,
+        10186098801,
+        10186098802,
+        10186098803,
+        10186098804,
+        10186098805,
+        10186098786
+      ],
+      "tags": {
+        "brand": "エーコープ",
+        "brand:en": "A-COOP",
+        "brand:ja": "エーコープ",
+        "brand:wikidata": "Q11291524",
+        "building": "yes",
+        "name": "エーコープ",
+        "name:en": "A-COOP",
+        "name:ja": "エーコープ",
+        "organic": "only",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1117303942,
+      "center": {
+        "lat": 32.008132,
+        "lon": 131.4734608
+      },
+      "nodes": [
+        10219113404,
+        10219113405,
+        10219113406,
+        10219113407,
+        10219113408,
+        10219113409,
+        10219113410,
+        10219113411,
+        10219113412,
+        10219113413,
+        10219113414,
+        10219113415,
+        10219113416,
+        10219128517,
+        10219128518,
+        10219113404
+      ],
+      "tags": {
+        "alt_name:en": "Co-op",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "building": "yes",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1144317746,
+      "center": {
+        "lat": 32.0504844,
+        "lon": 130.8273617
+      },
+      "nodes": [
+        10651450852,
+        10651450853,
+        10651450854,
+        10651450855,
+        10651450852
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "松栄",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1202536564,
+      "center": {
+        "lat": 31.8515246,
+        "lon": 131.4357697
+      },
+      "nodes": [
+        11148221732,
+        11148221733,
+        11148221734,
+        11148221735,
+        11148221736,
+        11148221737,
+        11148221738,
+        11148221739,
+        11148221732
+      ],
+      "tags": {
+        "alt_name:en": "Co-op",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "building": "retail",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "operator": "コープみやざき",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1219269069,
+      "center": {
+        "lat": 31.9131298,
+        "lon": 131.4174958
+      },
+      "nodes": [
+        11297465056,
+        12578318258,
+        12578318259,
+        12578318260,
+        12578318261,
+        12578318257,
+        11297465050,
+        11297465049,
+        11297465048,
+        11297465047,
+        11297465046,
+        11297465045,
+        11297465044,
+        11297465043,
+        11297465042,
+        11297465041,
+        11297465040,
+        11297465039,
+        11297465038,
+        11297465037,
+        11297465036,
+        11297465035,
+        11297465034,
+        11297465033,
+        11297465032,
+        11297465031,
+        11297465030,
+        11297465029,
+        11297465028,
+        11297465056
+      ],
+      "tags": {
+        "branch": "元宮店",
+        "brand": "鮮ど市場",
+        "building": "yes",
+        "building:levels": "1",
+        "name": "鮮ど市場",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1226920823,
+      "center": {
+        "lat": 31.9207402,
+        "lon": 131.418857
+      },
+      "nodes": [
+        11377495548,
+        11377495547,
+        11377495546,
+        11377495545,
+        11377495544,
+        11377495543,
+        11377495542,
+        12137583954,
+        12137583955,
+        11377495541,
+        11377495540,
+        11377495539,
+        11377495538,
+        11377495537,
+        11377495548
+      ],
+      "tags": {
+        "branch": "西池店",
+        "building": "yes",
+        "name": "まつの",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1237409395,
+      "center": {
+        "lat": 31.8959748,
+        "lon": 131.4177114
+      },
+      "nodes": [
+        11493063499,
+        11493063498,
+        11493063497,
+        11493063496,
+        11493063499
+      ],
+      "tags": {
+        "addr:city": "宮崎市",
+        "addr:neighbourhood": "3",
+        "addr:province": "宮崎県",
+        "addr:quarter": "中村東",
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q105687460",
+        "building": "yes",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1265783015,
+      "center": {
+        "lat": 31.7106558,
+        "lon": 131.0578304
+      },
+      "nodes": [
+        11757912905,
+        11757912906,
+        11757912907,
+        11757912908,
+        11757912909,
+        11757912910,
+        11757912905
+      ],
+      "tags": {
+        "branch": "都城店",
+        "brand": "タイヨー",
+        "brand:en": "Taiyo",
+        "brand:ja": "タイヨー",
+        "brand:wikidata": "Q11315815",
+        "building": "retail",
+        "name": "タイヨー",
+        "name:en": "Taiyo",
+        "name:ja": "タイヨー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1267486977,
+      "center": {
+        "lat": 32.111672,
+        "lon": 131.4112842
+      },
+      "nodes": [
+        11771914054,
+        11771914055,
+        11771914056,
+        11771914057,
+        11771914058,
+        11771914059,
+        11771914060,
+        11771914061,
+        11771914054
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "うめこうじ 西都店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1267583837,
+      "center": {
+        "lat": 32.0477966,
+        "lon": 131.4387213
+      },
+      "nodes": [
+        11772686828,
+        11772686829,
+        11772686839,
+        11772686830,
+        11772686838,
+        11772686837,
+        11772686836,
+        11772686835,
+        11772686834,
+        11772686831,
+        11772686833,
+        11772686832,
+        11772686828
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "Foodaly (フーデリー) 佐土原店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1267586187,
+      "center": {
+        "lat": 32.1019929,
+        "lon": 131.4041175
+      },
+      "nodes": [
+        11772697384,
+        11772697385,
+        11772697386,
+        11772697396,
+        11772697397,
+        11772697395,
+        11772697394,
+        11772697393,
+        11772697392,
+        11772697391,
+        11772697387,
+        11772697388,
+        11772697389,
+        11772697400,
+        11772697399,
+        11772697398,
+        11772697390,
+        11772697384
+      ],
+      "tags": {
+        "branch": "さいと店",
+        "brand": "エーコープ",
+        "brand:en": "A-COOP",
+        "brand:ja": "エーコープ",
+        "brand:wikidata": "Q11291524",
+        "building": "yes",
+        "name": "エーコープ",
+        "name:en": "A-COOP",
+        "name:ja": "エーコープ",
+        "organic": "only",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1285844609,
+      "center": {
+        "lat": 31.9026039,
+        "lon": 131.4409546
+      },
+      "nodes": [
+        11927577483,
+        12577176851,
+        12577176849,
+        12577176848,
+        12577176850,
+        11927577484,
+        11927577485,
+        12577176852,
+        12577176846,
+        12577176845,
+        12577176853,
+        11927577486,
+        12577176844,
+        12577176847,
+        12577176843,
+        12577176842,
+        12577176841,
+        12577176840,
+        12577176839,
+        12577176838,
+        11927577483
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "まえだストアー",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "phone": "0985882000",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1288397915,
+      "center": {
+        "lat": 31.9751258,
+        "lon": 131.4391926
+      },
+      "nodes": [
+        11948005896,
+        11948005897,
+        11948005945,
+        11948005944,
+        11948005898,
+        11948005946,
+        11948005899,
+        11948005896
+      ],
+      "tags": {
+        "branch": "新名爪店",
+        "building": "yes",
+        "name": "マルショク",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1301778639,
+      "center": {
+        "lat": 32.1634234,
+        "lon": 131.4745325
+      },
+      "nodes": [
+        12057379460,
+        12057379461,
+        12057379462,
+        12057379463,
+        12057379460
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "スーパー やまだ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1301778643,
+      "center": {
+        "lat": 32.1590027,
+        "lon": 131.46861
+      },
+      "nodes": [
+        12057445386,
+        12057445387,
+        12057445388,
+        12057445389,
+        12057445386
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "スーパー ウチヤマダ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1301811091,
+      "center": {
+        "lat": 32.1331778,
+        "lon": 131.5072811
+      },
+      "nodes": [
+        12057733383,
+        12057733384,
+        12057733385,
+        12057733386,
+        12057733383
+      ],
+      "tags": {
+        "alt_name:en": "Co-op",
+        "branch": "高鍋",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "building": "yes",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1365868198,
+      "center": {
+        "lat": 31.7142881,
+        "lon": 131.0709212
+      },
+      "nodes": [
+        7124902185,
+        12648813501,
+        12648813502,
+        12648813503,
+        12648813504,
+        12648813505,
+        12648813506,
+        12648813507,
+        12648813508,
+        12648813509,
+        7124902185
+      ],
+      "tags": {
+        "addr:block_number": "1508",
+        "addr:city": "都城市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "早鈴町",
+        "addr:postcode": "885-0055",
+        "building": "yes",
+        "name": "スーパー大浦 パシオ早鈴",
+        "opening_hours": "Mo-Su 09:30-23:00",
+        "phone": "+81-986-46-8655",
+        "shop": "supermarket",
+        "website": "http://www.pasio.net/store/hayasuzu.html"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1366986947,
+      "center": {
+        "lat": 31.7217034,
+        "lon": 131.083404
+      },
+      "nodes": [
+        4757176461,
+        12659535769,
+        12659535770,
+        12659535771,
+        12659535772,
+        12659535773,
+        4757176461
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "HEARTYながやま 若葉店",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1366986949,
+      "center": {
+        "lat": 31.7202333,
+        "lon": 131.0831748
+      },
+      "nodes": [
+        4757176462,
+        12659535777,
+        12659535778,
+        12659535779,
+        12659535780,
+        12659535781,
+        12659535782,
+        12659535783,
+        4757176462
+      ],
+      "tags": {
+        "branch": "若葉店",
+        "building": "yes",
+        "name": "スーパーキッド",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1367518818,
+      "center": {
+        "lat": 31.7468858,
+        "lon": 131.0788663
+      },
+      "nodes": [
+        4757163398,
+        12664960744,
+        12664960745,
+        12664960746,
+        4757163398
+      ],
+      "tags": {
+        "branch": "都城店",
+        "brand": "ドン・キホーテ",
+        "brand:en": "Don Quijote",
+        "brand:ja": "ドン・キホーテ",
+        "brand:wikidata": "Q1185381",
+        "brand:wikipedia": "ja:ドン・キホーテ (企業)",
+        "building": "retail",
+        "name": "MEGAドン・キホーテ",
+        "name:en": "MEGA Don Quijote",
+        "name:ja": "MEGAドン・キホーテ",
+        "opening_hours": "24/7",
+        "shop": "supermarket",
+        "short_name": "MEGAドンキ",
+        "short_name:en": "MegaDonki",
+        "short_name:ja": "MEGAドンキ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1376963991,
+      "center": {
+        "lat": 31.8722159,
+        "lon": 131.3922227
+      },
+      "nodes": [
+        12749701154,
+        12749701155,
+        12749701156,
+        12749701157,
+        12749701158,
+        12749701159,
+        12749701154
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "マルミヤストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1376963999,
+      "center": {
+        "lat": 31.8785443,
+        "lon": 131.4055384
+      },
+      "nodes": [
+        12749701705,
+        12749701706,
+        12749701707,
+        12749701708,
+        12749701705
+      ],
+      "tags": {
+        "brand": "トライアル",
+        "brand:en": "Trial",
+        "brand:ja": "トライアル",
+        "brand:wikidata": "Q11321723",
+        "building": "retail",
+        "name": "トライアル",
+        "name:en": "Trial",
+        "name:ja": "トライアル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1376982722,
+      "center": {
+        "lat": 31.7396144,
+        "lon": 131.0707754
+      },
+      "nodes": [
+        4757163405,
+        12749896559,
+        12749896560,
+        12749896561,
+        4757163405
+      ],
+      "tags": {
+        "branch": "川東店",
+        "brand": "タイヨー",
+        "brand:en": "Taiyo",
+        "brand:ja": "タイヨー",
+        "brand:wikidata": "Q11315815",
+        "building": "retail",
+        "name": "タイヨー",
+        "name:en": "Taiyo",
+        "name:ja": "タイヨー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1382266524,
+      "center": {
+        "lat": 31.7336834,
+        "lon": 131.0323765
+      },
+      "nodes": [
+        12797580204,
+        12797580202,
+        12797580201,
+        12797580200,
+        12797580199,
+        12797580203,
+        12797580204
+      ],
+      "tags": {
+        "branch": "蓑原店",
+        "building": "retail",
+        "name": "スーパーキッド",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1382266525,
+      "center": {
+        "lat": 31.734583,
+        "lon": 131.0322805
+      },
+      "nodes": [
+        12797580210,
+        12797580207,
+        12797580206,
+        12797580205,
+        12797580209,
+        12797580208,
+        12797580210
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "スーパー大浦 鮮ど市場 たかお店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1385061629,
+      "center": {
+        "lat": 31.9512762,
+        "lon": 131.4306874
+      },
+      "nodes": [
+        12823363140,
+        12823363141,
+        12823363142,
+        12823363143,
+        12823363144,
+        12823363145,
+        12823363146,
+        12823363140
+      ],
+      "tags": {
+        "addr:city": "宮崎市",
+        "addr:province": "宮崎県",
+        "addr:quarter": "花ケ島町",
+        "alt_name:en": "Co-op",
+        "branch": "花ヶ島店",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "building": "retail",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "official_name:ja": "日本生活協同組合連合会",
+        "operator": "コープみやざき",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1430779655,
+      "center": {
+        "lat": 31.7238973,
+        "lon": 131.0458687
+      },
+      "nodes": [
+        5810123918,
+        13152030987,
+        13152030988,
+        13152030989,
+        5810123918
+      ],
+      "tags": {
+        "branch": "鷹尾店",
+        "brand": "タイヨー",
+        "brand:en": "Taiyo",
+        "brand:ja": "タイヨー",
+        "brand:wikidata": "Q11315815",
+        "building": "retail",
+        "name": "タイヨー",
+        "name:en": "Taiyo",
+        "name:ja": "タイヨー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1434048302,
+      "center": {
+        "lat": 31.7733415,
+        "lon": 131.0204361
+      },
+      "nodes": [
+        13180550140,
+        13180550137,
+        13180550138,
+        13180550139,
+        13180550140
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "スーパー大浦 庄内店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1434411017,
+      "center": {
+        "lat": 31.7287417,
+        "lon": 131.0324215
+      },
+      "nodes": [
+        13184435959,
+        13184435958,
+        13184435957,
+        13184435956,
+        13184435954,
+        13184435955,
+        13184435952,
+        13184435951,
+        13184435950,
+        13184435949,
+        13184435953,
+        13184435959
+      ],
+      "tags": {
+        "brand": "タイヨー",
+        "brand:en": "Taiyo",
+        "brand:ja": "タイヨー",
+        "brand:wikidata": "Q11315815",
+        "building": "retail",
+        "name": "タイヨー",
+        "name:en": "Taiyo",
+        "name:ja": "タイヨー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1441858098,
+      "center": {
+        "lat": 31.7409948,
+        "lon": 131.0524132
+      },
+      "nodes": [
+        13230207249,
+        13230207248,
+        13230207247,
+        13230207251,
+        13230207252,
+        13230207250,
+        13230207249
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "ミートショップながやま",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1441888333,
+      "center": {
+        "lat": 31.7276058,
+        "lon": 131.0354399
+      },
+      "nodes": [
+        13230448498,
+        13230448497,
+        13230448496,
+        13230448492,
+        13230388593,
+        13230448493,
+        13230448500,
+        13230448499,
+        13230448495,
+        13230448494,
+        13230448506,
+        13230388595,
+        13230448505,
+        13230448504,
+        13230448501,
+        13230448502,
+        13230448503,
+        13230388594,
+        13230448508,
+        13230448507,
+        13230448498
+      ],
+      "tags": {
+        "branch": "鷹尾店",
+        "building": "retail",
+        "name": "HERTYながやま",
+        "shop": "supermarket"
+      }
+    }
+  ]
+}

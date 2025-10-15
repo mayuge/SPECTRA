@@ -1,0 +1,3938 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.8 e802775f",
+  "osm3s": {
+    "timestamp_osm_base": "2025-10-15T12:10:59Z",
+    "timestamp_areas_base": "2025-10-15T04:02:15Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 471029934,
+      "lat": 39.3982139,
+      "lon": 141.1075928,
+      "tags": {
+        "name": "アルテ マルカン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 656180688,
+      "lat": 39.7050353,
+      "lon": 141.0729139,
+      "tags": {
+        "name": "土日ジャンボ市",
+        "name:ja": "土日ジャンボ市",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 656180734,
+      "lat": 39.7483186,
+      "lon": 141.1036332,
+      "tags": {
+        "name": "ビッグハウス国分店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 656180751,
+      "lat": 39.744789,
+      "lon": 141.1257837,
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q11590183",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "name:ja_rm": "Gyomu Supa",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 663646489,
+      "lat": 39.6895308,
+      "lon": 141.1188751,
+      "tags": {
+        "name": "ビッグハウス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 675689620,
+      "lat": 39.0874588,
+      "lon": 141.7092704,
+      "tags": {
+        "addr:street": "大船渡市盛町字町10-1110-11",
+        "name": "ジョイス",
+        "shop": "supermarket",
+        "source": "NRPB of MLIT Japan.",
+        "temporary": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 700889028,
+      "lat": 39.4724631,
+      "lon": 141.2790767,
+      "tags": {
+        "name": "みずかみ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 769906291,
+      "lat": 39.2193949,
+      "lon": 141.1013329,
+      "tags": {
+        "addr:city": "金ケ崎町",
+        "addr:county": "胆沢郡",
+        "addr:neighbourhood": "荒巻",
+        "addr:province": "岩手県",
+        "addr:quarter": "三ヶ尻",
+        "branch": "金ケ崎店",
+        "brand": "AEON SUPERCENTER",
+        "brand:en": "AEON SUPERCENTER",
+        "brand:ja": "イオンスーパーセンター",
+        "brand:wikidata": "Q11285970",
+        "name": "イオンスーパーセンター",
+        "name:en": "Aeon Supercenter",
+        "name:ja": "イオンスーパーセンター",
+        "operator": "イオン東北",
+        "shop": "supermarket",
+        "website": "https://aeontohoku.co.jp/stores/suc_kanegasaki",
+        "wikidata": "Q111949452",
+        "wikipedia": "ja:イオン金ケ崎ショッピングセンター"
+      }
+    },
+    {
+      "type": "node",
+      "id": 769906459,
+      "lat": 39.2932336,
+      "lon": 141.0931234,
+      "tags": {
+        "addr:city": "北上市",
+        "addr:province": "岩手県",
+        "addr:quarter": "北鬼柳",
+        "branch": "江釣子店",
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "brand:wikipedia": "ja:イオン (店舗ブランド)",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "operator": "江釣子ショッピングセンター",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 789828336,
+      "lat": 39.7294825,
+      "lon": 141.1614452,
+      "tags": {
+        "name": "JOIS 球場前店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 792647064,
+      "lat": 40.1950194,
+      "lon": 141.7662391,
+      "tags": {
+        "name": "JOIS 久慈中の橋店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 801979448,
+      "lat": 39.6321986,
+      "lon": 141.9419619,
+      "tags": {
+        "name": "マリンコープDORA",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1213350798,
+      "lat": 39.6344935,
+      "lon": 141.9165156,
+      "tags": {
+        "name": "ジョイス宮古千徳店",
+        "shop": "supermarket",
+        "source": "NRPB of MLIT Japan."
+      }
+    },
+    {
+      "type": "node",
+      "id": 1749420128,
+      "lat": 39.3543489,
+      "lon": 141.8941221,
+      "tags": {
+        "name": "大槌マスト店",
+        "shop": "supermarket",
+        "source": "knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1749765943,
+      "lat": 39.2671122,
+      "lon": 141.8533753,
+      "tags": {
+        "addr:street": "上中島町",
+        "name": "ショッピングセンターサンパルク",
+        "shop": "supermarket",
+        "source": "knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1754611864,
+      "lat": 39.3401164,
+      "lon": 141.8517004,
+      "tags": {
+        "name": "寺前ストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1825898072,
+      "lat": 39.2645402,
+      "lon": 141.8461988,
+      "tags": {
+        "contact:phone": "0193-23-2551",
+        "name": "JOIS　釜石店",
+        "shop": "supermarket",
+        "source": "survey; knowledge; Bing,"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1897269082,
+      "lat": 39.3655557,
+      "lon": 141.9011097,
+      "tags": {
+        "name": "JOIS",
+        "opening_hours": "Mo-Sa 10:00-21:00; Su 09:00-21:00",
+        "shop": "supermarket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2985518787,
+      "lat": 39.3399134,
+      "lon": 141.5292223,
+      "tags": {
+        "name": "キクコーストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2985522003,
+      "lat": 39.3408951,
+      "lon": 141.5331891,
+      "tags": {
+        "name": "ACUTE",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2985559078,
+      "lat": 39.3308516,
+      "lon": 141.5323409,
+      "tags": {
+        "name": "キクコーストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3040515686,
+      "lat": 39.334083,
+      "lon": 141.5503844,
+      "tags": {
+        "name": "ビッグハウス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3079632834,
+      "lat": 39.0708415,
+      "lon": 141.7168009,
+      "tags": {
+        "name": "千葉誠",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3079740676,
+      "lat": 39.0765126,
+      "lon": 141.7180085,
+      "tags": {
+        "addr:block_number": "2-20",
+        "addr:city": "大船渡市",
+        "addr:neighbourhood": "字砂森",
+        "addr:postcode": "0228602",
+        "addr:province": "岩手県",
+        "addr:quarter": "大船渡町",
+        "name": "橋爪商事(株)",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3231571193,
+      "lat": 39.336986,
+      "lon": 141.5461285,
+      "tags": {
+        "name": "キクコーストアバイパス店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3365899338,
+      "lat": 39.3834467,
+      "lon": 141.2313114,
+      "tags": {
+        "name": "Ａコープとうわ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3589370298,
+      "lat": 39.0752998,
+      "lon": 141.7157348,
+      "tags": {
+        "name": "アベや　ひゃくせん",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3658396389,
+      "lat": 40.4097919,
+      "lon": 141.7156238,
+      "tags": {
+        "name": "ファミリーマート フジモリ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3790833852,
+      "lat": 39.6410518,
+      "lon": 141.9460138,
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4005056644,
+      "lat": 39.0232253,
+      "lon": 141.6481559,
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4082279833,
+      "lat": 39.8473014,
+      "lon": 141.1694497,
+      "tags": {
+        "name": "ヤマゴン啄木店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4269871018,
+      "lat": 39.6979142,
+      "lon": 141.1611452,
+      "tags": {
+        "name": "マルイチ 中ノ橋通店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4493791061,
+      "lat": 39.6394393,
+      "lon": 141.096355,
+      "tags": {
+        "addr:city": "盛岡市",
+        "addr:housenumber": "3-11",
+        "addr:postcode": "020-0844",
+        "addr:street": "湯沢東一丁目",
+        "name": "Aコープ ゆざわ",
+        "opening_hours": "10:00-20:00",
+        "operator": "Aコープ北東北",
+        "phone": "019-638-5123",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4586876121,
+      "lat": 38.9704876,
+      "lon": 141.1174673,
+      "tags": {
+        "addr:city": "平泉町",
+        "addr:county": "西磐井郡",
+        "addr:neighbourhood": "字高田",
+        "addr:province": "岩手県",
+        "addr:quarter": "平泉",
+        "branch": "平泉店",
+        "name": "ジョイス",
+        "operator": "ベルジョイス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4753322313,
+      "lat": 39.6544889,
+      "lon": 141.1483329,
+      "tags": {
+        "name": "業務スーパー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4820090034,
+      "lat": 38.9316096,
+      "lon": 141.1359395,
+      "tags": {
+        "name": "コロ兵衛くん",
+        "name:en": "Korobeikun",
+        "name:ja": "コロ兵衛くん",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4824642623,
+      "lat": 38.9244024,
+      "lon": 141.1459734,
+      "tags": {
+        "name": "ジョイス 三関店",
+        "name:en": "Jois",
+        "name:ja": "ジョイス 三関店",
+        "phone": "+81 191 21 2472",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4830664231,
+      "lat": 38.9507905,
+      "lon": 141.1307168,
+      "tags": {
+        "name": "山崎食料品店",
+        "name:ja": "山崎食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4893160173,
+      "lat": 39.0703796,
+      "lon": 141.716836,
+      "tags": {
+        "name": "包装用品タツヨシ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5002888021,
+      "lat": 39.3848832,
+      "lon": 141.2271058,
+      "tags": {
+        "name:en": "Belle Plus",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5146350821,
+      "lat": 39.7738703,
+      "lon": 141.1286909,
+      "tags": {
+        "name:en": "U",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5158476825,
+      "lat": 38.9284995,
+      "lon": 141.1314631,
+      "tags": {
+        "name": "まやま食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5181003177,
+      "lat": 39.6910405,
+      "lon": 141.1331985,
+      "tags": {
+        "name": "マルイチ　本宮店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5181109257,
+      "lat": 39.6831649,
+      "lon": 141.1271905,
+      "tags": {
+        "addr:block_number": "1",
+        "addr:city": "盛岡市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "本宮七丁目",
+        "addr:postcode": "0200866",
+        "addr:province": "岩手県",
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "operator": "イオン東北",
+        "shop": "supermarket",
+        "website": "https://aeontohoku.co.jp/stores/moriokaminami"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5439299547,
+      "lat": 39.2868408,
+      "lon": 141.1057073,
+      "tags": {
+        "name": "小松冨之助商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5439299563,
+      "lat": 39.2893859,
+      "lon": 141.1161922,
+      "tags": {
+        "name": "伝統美味 仁右衛門",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5458654940,
+      "lat": 39.4913161,
+      "lon": 141.1502965,
+      "tags": {
+        "name": "照宗ストアー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5730154123,
+      "lat": 40.2667094,
+      "lon": 141.291921,
+      "tags": {
+        "name": "ユニバース荷渡店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5738546026,
+      "lat": 39.1413445,
+      "lon": 141.1857878,
+      "tags": {
+        "name": "フードショップ まさの",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5744972236,
+      "lat": 39.1407863,
+      "lon": 141.1411601,
+      "tags": {
+        "name": "マルイチ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5757555724,
+      "lat": 39.1403292,
+      "lon": 141.1348074,
+      "tags": {
+        "name": "ユニバース 水沢日高店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5757555728,
+      "lat": 39.1429765,
+      "lon": 141.1265977,
+      "tags": {
+        "name": "高豊 日高店",
+        "name:en": "Takatoyo",
+        "opening_hours": "Mo-Su 09:00-20:00",
+        "phone": "+81 197 23 5511",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5764908156,
+      "lat": 39.1289153,
+      "lon": 141.1339442,
+      "tags": {
+        "name": "Kマート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5774332354,
+      "lat": 39.1301088,
+      "lon": 141.1522854,
+      "tags": {
+        "name": "神文ストア 原中店",
+        "name:en": "Kambun Store",
+        "opening_hours": "Mo-Su 10:00-21:00",
+        "phone": "+81 197 51 2000",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6121752777,
+      "lat": 39.7386427,
+      "lon": 141.14407,
+      "tags": {
+        "addr:block_number": "10",
+        "addr:city": "盛岡市",
+        "addr:housenumber": "24",
+        "addr:neighbourhood": "緑が丘四丁目",
+        "addr:postcode": "020-0117",
+        "addr:province": "岩手県",
+        "branch": "緑が丘店",
+        "name": "マルイチ",
+        "opening_hours": "Mo-Su 09:00-23:00",
+        "operator": "株式会社マルイチ",
+        "payment:cash": "yes",
+        "payment:cogca": "yes",
+        "payment:credit_cards": "yes",
+        "payment:qr_code": "yes",
+        "phone": "+81-19-664-9600",
+        "shop": "supermarket",
+        "source": "survey;website",
+        "website": "https://www.super-maruichi.co.jp/store_list/midorigaoka/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6123153188,
+      "lat": 39.6711978,
+      "lon": 141.1553695,
+      "tags": {
+        "name": "ビッグハウス川久保店",
+        "opening_hours": "PH,Mo-Su 09:00-22:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6310979613,
+      "lat": 38.9276386,
+      "lon": 141.1252849,
+      "tags": {
+        "addr:city": "一関市",
+        "addr:housenumber": "８番１５号",
+        "addr:neighbourhood": "末広一丁目",
+        "addr:province": "岩手県",
+        "name": "ＪＡファーマーズいわて平泉",
+        "operator": "(株)Ａコープ東北",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6324769989,
+      "lat": 39.7254856,
+      "lon": 141.1382948,
+      "tags": {
+        "name": "だいこく屋",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6324776386,
+      "lat": 39.7314599,
+      "lon": 141.1408167,
+      "tags": {
+        "addr:block_number": "1",
+        "addr:city": "盛岡市",
+        "addr:housenumber": "48",
+        "addr:neighbourhood": "緑が丘二丁目",
+        "addr:postcode": "020-0117",
+        "addr:province": "岩手県",
+        "branch": "盛岡緑が丘店",
+        "name": "ジョイス",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "operator": "株式会社ベルジョイス",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:id": "yes",
+        "payment:qr_code": "yes",
+        "payment:quicpay": "yes",
+        "phone": "+81-19-663-3710",
+        "shop": "supermarket",
+        "source": "survey;website",
+        "website": "https://www.beljois.co.jp/store/detail/103000058.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6349940724,
+      "lat": 40.1897706,
+      "lon": 141.7652769,
+      "tags": {
+        "name": "越戸商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6359336700,
+      "lat": 39.6463302,
+      "lon": 141.9459173,
+      "tags": {
+        "name": "いわて生協 BELF魚菜市場",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6367287455,
+      "lat": 39.4649154,
+      "lon": 141.9516528,
+      "tags": {
+        "name": "びはん",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6599944376,
+      "lat": 40.1127108,
+      "lon": 141.8186428,
+      "tags": {
+        "name": "マミーストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6599944378,
+      "lat": 40.1151313,
+      "lon": 141.8192329,
+      "tags": {
+        "name": "お魚センター",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6746051633,
+      "lat": 39.641491,
+      "lon": 141.9177612,
+      "tags": {
+        "name": "いわて生協 コープ西ヶ丘",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7829612269,
+      "lat": 39.4436174,
+      "lon": 140.7561858,
+      "tags": {
+        "name": "猿橋商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7849808540,
+      "lat": 39.4259477,
+      "lon": 140.7480122,
+      "tags": {
+        "name": "六戸商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8320691992,
+      "lat": 38.9208601,
+      "lon": 141.3429233,
+      "tags": {
+        "name": "神文ストア　せんまや店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8329324815,
+      "lat": 38.9241566,
+      "lon": 141.3416578,
+      "tags": {
+        "addr:block_number": "22",
+        "addr:city": "一関市",
+        "addr:neighbourhood": "字構井田",
+        "addr:postcode": "029-0803",
+        "addr:province": "岩手県",
+        "addr:quarter": "千厩町千厩",
+        "name": "フードパワーセンター バリュー千厩店",
+        "phone": "+81 0191 2451",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8393162096,
+      "lat": 38.9129808,
+      "lon": 141.3299866,
+      "tags": {
+        "name": "マイヤ千厩店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8398607875,
+      "lat": 38.9066746,
+      "lon": 141.3271113,
+      "tags": {
+        "name": "ベルプラス せんまや店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8485175417,
+      "lat": 40.4191658,
+      "lon": 141.6992155,
+      "tags": {
+        "addr:housenumber": "洋野町種市第３２地割９５−１",
+        "addr:postcode": "028-7912",
+        "addr:street": "種市バイパス",
+        "name": "たねいち産直ふれあい広場",
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "phone": "0194-65-3910",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8485365118,
+      "lat": 40.4133278,
+      "lon": 141.715044,
+      "tags": {
+        "name": "ユニバース 種市店",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "phone": "0194-65-5114",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8554380232,
+      "lat": 39.7470894,
+      "lon": 141.1094183,
+      "tags": {
+        "name": "いわて生協ベルフ牧野林",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8554380238,
+      "lat": 39.739729,
+      "lon": 141.0848237,
+      "tags": {
+        "name": "マイヤ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8554380277,
+      "lat": 39.7292626,
+      "lon": 141.1145103,
+      "tags": {
+        "name": "いわて生協ベルフ青山",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8554380278,
+      "lat": 39.6840718,
+      "lon": 141.1493877,
+      "tags": {
+        "name": "いわて生協ベルフ仙北",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8665887405,
+      "lat": 38.9416781,
+      "lon": 141.1435317,
+      "tags": {
+        "addr:block_number": "76",
+        "addr:city": "一関市",
+        "addr:neighbourhood": "字神明",
+        "addr:postcode": "021-0002",
+        "addr:province": "岩手県",
+        "addr:quarter": "中里",
+        "name": "ドン・キホーテ一関店",
+        "opening_hours": "09:00-00:00",
+        "phone": "0570-099-311",
+        "shop": "supermarket",
+        "website": "https://www.donki.com/store/shop_detail.php?add=1&shop_id=610"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9531323951,
+      "lat": 39.7116404,
+      "lon": 141.1000258,
+      "tags": {
+        "addr:block_number": "7",
+        "addr:city": "盛岡市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "前潟四丁目",
+        "addr:postcode": "0200148",
+        "addr:province": "岩手県",
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "brand:wikipedia": "ja:イオン (店舗ブランド)",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "opening_hours": "Mo-Su 07:00-23:00",
+        "operator": "イオン東北",
+        "shop": "supermarket",
+        "website": "https://aeontohoku.co.jp/stores/morioka"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9827331357,
+      "lat": 39.7381444,
+      "lon": 141.9721121,
+      "tags": {
+        "name": "デイリーヤマザキ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9827331358,
+      "lat": 39.7380495,
+      "lon": 141.9720853,
+      "tags": {
+        "name": "山長商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10160346003,
+      "lat": 39.2884211,
+      "lon": 141.1218452,
+      "tags": {
+        "addr:city": "北上市",
+        "addr:neighbourhood": "一丁目",
+        "addr:province": "岩手県",
+        "addr:quarter": "花園町",
+        "branch": "北上花園町店",
+        "name": "ユニバース",
+        "operator": "ユニバース",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10740679852,
+      "lat": 39.6907591,
+      "lon": 141.156842,
+      "tags": {
+        "name": "ユニバース鉈屋町店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10740773328,
+      "lat": 39.7052621,
+      "lon": 141.1261965,
+      "tags": {
+        "name": "マルイチ　城西店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10740947360,
+      "lat": 39.7122387,
+      "lon": 141.1494934,
+      "tags": {
+        "name": "ビックハウス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10758541168,
+      "lat": 39.7122665,
+      "lon": 141.1181531,
+      "tags": {
+        "name": "マルイチ　天昌寺店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10758541408,
+      "lat": 39.7082985,
+      "lon": 141.1182727,
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10759172854,
+      "lat": 39.7251988,
+      "lon": 141.1143969,
+      "tags": {
+        "name": "ユニバース　青山店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10759327349,
+      "lat": 39.7209812,
+      "lon": 141.1130269,
+      "tags": {
+        "name": "マイヤ　青山店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10759327495,
+      "lat": 39.7336041,
+      "lon": 141.1154096,
+      "tags": {
+        "brand": "トライアル",
+        "brand:en": "Trial",
+        "brand:ja": "トライアル",
+        "brand:wikidata": "Q11321723",
+        "name": "トライアル",
+        "name:en": "Trial",
+        "name:ja": "トライアル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10840856262,
+      "lat": 39.7452073,
+      "lon": 141.1248469,
+      "tags": {
+        "name": "マルイチ　ウイングみたけ店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10840926664,
+      "lat": 39.742833,
+      "lon": 141.1233495,
+      "tags": {
+        "name": "ユニバース　盛岡みたけ店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11190450916,
+      "lat": 39.4372806,
+      "lon": 141.1309558,
+      "tags": {
+        "name": "フレッシュタモリ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11340433471,
+      "lat": 38.9290897,
+      "lon": 141.1370006,
+      "tags": {
+        "check_date": "2023-11-11",
+        "name": "おおまち",
+        "name:ja": "おおまち",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11378100730,
+      "lat": 39.6767228,
+      "lon": 141.1659732,
+      "tags": {
+        "name": "マルイチ　東安庭店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11378100731,
+      "lat": 39.6768599,
+      "lon": 141.1658724,
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q11590183",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11578507071,
+      "lat": 39.681454,
+      "lon": 141.1635523,
+      "tags": {
+        "name": "ジョイス　盛岡東安庭店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11691233170,
+      "lat": 39.6924212,
+      "lon": 141.1719495,
+      "tags": {
+        "name": "ユニバース",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11922189323,
+      "lat": 39.70809,
+      "lon": 141.1377671,
+      "tags": {
+        "name": "マルイチ材木町店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12041832758,
+      "lat": 39.7208536,
+      "lon": 141.1378496,
+      "tags": {
+        "alt_name:en": "Co-op",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12504394667,
+      "lat": 39.2713288,
+      "lon": 141.8818219,
+      "tags": {
+        "branch": "釜石店",
+        "brand": "AEON SUPERCENTER",
+        "brand:en": "AEON SUPERCENTER",
+        "brand:ja": "イオンスーパーセンター",
+        "brand:wikidata": "Q11285970",
+        "name": "イオンスーパーセンター",
+        "name:en": "Aeon Supercenter",
+        "name:ja": "イオンスーパーセンター",
+        "operator": "イオン東北",
+        "shop": "supermarket",
+        "website": "https://aeontohoku.co.jp/stores/suc_kamaishi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12911625345,
+      "lat": 39.8465808,
+      "lon": 141.797301,
+      "tags": {
+        "name": "HAGIYA",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12916854602,
+      "lat": 39.6553657,
+      "lon": 141.9542639,
+      "tags": {
+        "name": "はこいし",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12982819666,
+      "lat": 39.6256357,
+      "lon": 141.9605529,
+      "tags": {
+        "branch": "宮古磯鶏店",
+        "name": "マイヤ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12984945156,
+      "lat": 39.5496439,
+      "lon": 141.1643277,
+      "tags": {
+        "name": "NACSフレッシュたもり",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 52868045,
+      "center": {
+        "lat": 39.3899361,
+        "lon": 141.1041464
+      },
+      "nodes": [
+        670125441,
+        670125438,
+        670125437,
+        670125440,
+        670125441
+      ],
+      "tags": {
+        "name": "サンライフ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 103645624,
+      "center": {
+        "lat": 39.2735965,
+        "lon": 141.869181
+      },
+      "nodes": [
+        1196732218,
+        1196732014,
+        1196732039,
+        1196732185,
+        1196732082,
+        1196732163,
+        1196732218
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "マイヤ釜石店",
+        "shop": "supermarket",
+        "source": "Bing, Apr/2008"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104079494,
+      "center": {
+        "lat": 39.6409972,
+        "lon": 141.9460294
+      },
+      "nodes": [
+        1201124643,
+        1201124649,
+        1201124642,
+        4087542520,
+        2459921553,
+        2459921552,
+        1201124654,
+        2459921547,
+        2459921542,
+        1201124617,
+        2459921549,
+        1201124648,
+        1201124615,
+        1201124647,
+        1201124646,
+        1201124634,
+        1201124643
+      ],
+      "tags": {
+        "addr:housename": "QUATRE MIYAKO",
+        "addr:postcode": "027-0076",
+        "addr:street": "岩手県宮古市栄町3-35",
+        "building": "retail",
+        "int_name": "QUATRE MIYAKO",
+        "name": "キャトル宮古",
+        "shop": "supermarket",
+        "source": "image,2013-09;Bing,2012-02-15"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104079500,
+      "center": {
+        "lat": 39.6411872,
+        "lon": 141.9455861
+      },
+      "nodes": [
+        1201124622,
+        1201124650,
+        1201124628,
+        1201124640,
+        1201124622
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "綜合食品セキカワ",
+        "shop": "supermarket",
+        "source": "bing,2008-04"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104112315,
+      "center": {
+        "lat": 39.6397648,
+        "lon": 141.9296508
+      },
+      "nodes": [
+        1201355970,
+        1201355967,
+        1201355968,
+        1201355971,
+        1201355970
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "スーパーマルフジ千徳店",
+        "shop": "supermarket",
+        "source": "bing, 2008-04"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104112361,
+      "center": {
+        "lat": 39.6386241,
+        "lon": 141.9301189
+      },
+      "nodes": [
+        1201356157,
+        1201356163,
+        1207054495,
+        1207055188,
+        1201356162,
+        1201356160,
+        1201356157
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "ダイソー",
+        "shop": "supermarket",
+        "source": "bing, 2008-04"
+      }
+    },
+    {
+      "type": "way",
+      "id": 105825963,
+      "center": {
+        "lat": 39.7509257,
+        "lon": 141.1983293
+      },
+      "nodes": [
+        1218567377,
+        1218567376,
+        1218567366,
+        1218567372,
+        1218567377
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "マート桜台",
+        "shop": "supermarket",
+        "source": "Bing, 2008-07"
+      }
+    },
+    {
+      "type": "way",
+      "id": 106407394,
+      "center": {
+        "lat": 39.2571884,
+        "lon": 141.8254184
+      },
+      "nodes": [
+        1224374569,
+        1224374572,
+        1224374575,
+        1224374577,
+        1224374569
+      ],
+      "tags": {
+        "addr:city": "釜石市",
+        "addr:neighbourhood": "二丁目",
+        "addr:province": "岩手県",
+        "addr:quarter": "野田町",
+        "branch": "野田店",
+        "building": "retail",
+        "name": "マイヤ",
+        "operator": "マイヤ",
+        "shop": "supermarket",
+        "source": "Bing, 2008-04"
+      }
+    },
+    {
+      "type": "way",
+      "id": 180069773,
+      "center": {
+        "lat": 39.0310314,
+        "lon": 141.6177148
+      },
+      "nodes": [
+        1905046773,
+        1905046772,
+        1905046775,
+        1905046774,
+        1905046773
+      ],
+      "tags": {
+        "addr:postcode": "0292203",
+        "addr:street": "陸前高田市竹駒町滝の里1番地",
+        "building": "retail",
+        "name": "薬王堂滝の里店",
+        "shop": "supermarket",
+        "source": "survey",
+        "website": "https://www.maiya.co.jp/tenpo_takinosato.html"
+      }
+    },
+    {
+      "type": "way",
+      "id": 291570490,
+      "center": {
+        "lat": 40.192106,
+        "lon": 141.7716914
+      },
+      "nodes": [
+        2950330909,
+        2950330914,
+        2950330918,
+        2950330924,
+        2950330921,
+        2950330909
+      ],
+      "tags": {
+        "branch": "久慈川崎町店",
+        "building": "retail",
+        "name": "ユニバース",
+        "name:ja": "ユニバース",
+        "shop": "supermarket",
+        "source": "MLIT JAPAN",
+        "source:ja": "国土画像情報（オルソ化空中写真）国土交通省"
+      }
+    },
+    {
+      "type": "way",
+      "id": 315736551,
+      "center": {
+        "lat": 40.1872219,
+        "lon": 141.7847714
+      },
+      "nodes": [
+        3218664591,
+        3218664592,
+        3218664593,
+        3218664594,
+        3218664595,
+        11307443745,
+        11307443746,
+        3218664596,
+        3218664591
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ジョイス久慈長内店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 327568065,
+      "center": {
+        "lat": 39.386273,
+        "lon": 141.1369014
+      },
+      "nodes": [
+        3343768403,
+        5338847278,
+        3343768404,
+        3365922838,
+        3343768406,
+        7367384406,
+        7367384407,
+        3343768403
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ジョイス 花巻高木店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 361120415,
+      "center": {
+        "lat": 38.9271967,
+        "lon": 141.1353403
+      },
+      "nodes": [
+        3656397090,
+        3656397091,
+        3656397092,
+        3656397093,
+        3656397090
+      ],
+      "tags": {
+        "addr:city": "一関市",
+        "addr:housenumber": "2-54",
+        "addr:street": "大町",
+        "building": "yes",
+        "name": "丸江スーパー駅前店",
+        "operator": "株式会社丸江",
+        "shop": "supermarket",
+        "source": "GSImaps/std"
+      }
+    },
+    {
+      "type": "way",
+      "id": 377429072,
+      "center": {
+        "lat": 39.1162147,
+        "lon": 141.1618245
+      },
+      "nodes": [
+        3807987429,
+        3807987430,
+        3807987431,
+        3807987432,
+        3807987433,
+        3807987434,
+        3807987429
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "トライアル水沢上姉体店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 384397341,
+      "center": {
+        "lat": 38.9395777,
+        "lon": 141.1535675
+      },
+      "nodes": [
+        3876968359,
+        3876968360,
+        3876968361,
+        3876968362,
+        3876968363,
+        3876968364,
+        3876968365,
+        3876968366,
+        3876968359
+      ],
+      "tags": {
+        "addr:block_number": "11",
+        "addr:city": "一関市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "字石ノ瀬",
+        "addr:province": "岩手県",
+        "addr:quarter": "狐禅寺",
+        "branch": "一関店",
+        "brand": "AEON SUPERCENTER",
+        "brand:en": "AEON SUPERCENTER",
+        "brand:ja": "イオンスーパーセンター",
+        "brand:wikidata": "Q11285970",
+        "brand:wikipedia": "ja:イオン (店舗ブランド)",
+        "building": "retail",
+        "name": "イオンスーパーセンター",
+        "name:en": "Aeon Supercenter",
+        "name:ja": "イオンスーパーセンター",
+        "operator": "イオン東北",
+        "shop": "supermarket",
+        "website": "https://aeontohoku.co.jp/stores/suc_ichinoseki",
+        "wikidata": "Q11285972",
+        "wikipedia": "ja:イオンスーパーセンター一関店"
+      }
+    },
+    {
+      "type": "way",
+      "id": 384463733,
+      "center": {
+        "lat": 38.9380007,
+        "lon": 141.1327828
+      },
+      "nodes": [
+        3877528062,
+        3877528063,
+        3877528064,
+        3877528065,
+        3877528066,
+        3877528067,
+        3877528068,
+        3877528069,
+        6846174837,
+        3877528070,
+        3877528071,
+        3877528062
+      ],
+      "tags": {
+        "addr:city": "一関市",
+        "addr:province": "岩手県",
+        "addr:quarter": "石畑",
+        "building": "retail",
+        "name": "コープ一関コルザ",
+        "name:en": "Colza COOP",
+        "operator": "いわて生協",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 397228866,
+      "center": {
+        "lat": 38.9970402,
+        "lon": 141.2732486
+      },
+      "nodes": [
+        4000458680,
+        4000458677,
+        4000458673,
+        4000458674,
+        4000458680
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "季節館",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 401344422,
+      "center": {
+        "lat": 39.1976634,
+        "lon": 141.1133048
+      },
+      "nodes": [
+        4037823742,
+        5149778123,
+        4037823744,
+        4037823745,
+        4037823742
+      ],
+      "tags": {
+        "addr:city": "金ケ崎町",
+        "addr:county": "胆沢郡",
+        "addr:province": "岩手県",
+        "branch": "金ケ崎店",
+        "building": "retail",
+        "name": "ビッグハウス",
+        "name:en": "Big house",
+        "operator": "ベルジョイス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 405060310,
+      "center": {
+        "lat": 39.4763293,
+        "lon": 141.9529834
+      },
+      "nodes": [
+        4072848007,
+        4072848008,
+        7803611219,
+        7803611218,
+        4072848007
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "キクコウストア山田IC店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 426725248,
+      "center": {
+        "lat": 40.0641789,
+        "lon": 141.2309655
+      },
+      "nodes": [
+        4259922670,
+        4259922671,
+        4259922672,
+        4259922673,
+        4259922674,
+        4259922675,
+        4259922676,
+        4259922677,
+        4259922678,
+        4259922679,
+        4259922670
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "いなり百貨店（いなりスポーツ）",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 440441472,
+      "center": {
+        "lat": 39.8460537,
+        "lon": 141.7972982
+      },
+      "nodes": [
+        4381803228,
+        4381803201,
+        4381803195,
+        4381803205,
+        4381803214,
+        4381803228
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "松屋商店",
+        "organic": "only",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 444594579,
+      "center": {
+        "lat": 38.9340415,
+        "lon": 141.1275149
+      },
+      "nodes": [
+        4420598956,
+        4420598957,
+        4420598951,
+        4420598950,
+        4420598956
+      ],
+      "tags": {
+        "building": "yes",
+        "shop": "supermarket",
+        "source": "GSImaps/std"
+      }
+    },
+    {
+      "type": "way",
+      "id": 445156761,
+      "center": {
+        "lat": 38.9367403,
+        "lon": 141.1128708
+      },
+      "nodes": [
+        4426287912,
+        4426287913,
+        4426287914,
+        4426287915,
+        4426287916,
+        4426287918,
+        6645675376,
+        6645675377,
+        4426287912
+      ],
+      "tags": {
+        "addr:city": "一関市",
+        "addr:province": "岩手県",
+        "addr:quarter": "山目",
+        "branch": "一関店",
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "brand:wikipedia": "ja:イオン (店舗ブランド)",
+        "building": "yes",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 463039260,
+      "center": {
+        "lat": 38.9215254,
+        "lon": 141.1100043
+      },
+      "nodes": [
+        4583558775,
+        6447128376,
+        6447128377,
+        4583558776,
+        4583558777,
+        4583558778,
+        4583558779,
+        4583558780,
+        4583558781,
+        6447128375,
+        6447128374,
+        4583558782,
+        4583558775
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "エコー",
+        "operator": "(株)丸江",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 463039262,
+      "center": {
+        "lat": 38.9219758,
+        "lon": 141.1121877
+      },
+      "nodes": [
+        4583559689,
+        4583559690,
+        4583559691,
+        6447128378,
+        6447128379,
+        4583559692,
+        4583573275,
+        5875323571,
+        5875323570,
+        4583559689
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "神文ストア　萩荘バイパス店",
+        "operator": "株式会社神文ストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 464718301,
+      "center": {
+        "lat": 38.9394707,
+        "lon": 141.1430715
+      },
+      "nodes": [
+        4598017146,
+        4598017147,
+        4598017148,
+        4598017149,
+        4598017146
+      ],
+      "tags": {
+        "addr:block_number": "50",
+        "addr:city": "一関市",
+        "addr:neighbourhood": "字雲南",
+        "addr:province": "岩手県",
+        "addr:quarter": "中里",
+        "building": "yes",
+        "name": "ピックハウス 一関店",
+        "operator": "ベルジョイス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 485992141,
+      "center": {
+        "lat": 40.0638126,
+        "lon": 141.2292942
+      },
+      "nodes": [
+        4787516397,
+        4787516398,
+        4787516399,
+        4787516400,
+        4787516397
+      ],
+      "tags": {
+        "addr:city": "一戸町",
+        "addr:county": "二戸郡",
+        "addr:neighbourhood": "大塚",
+        "addr:province": "岩手県",
+        "addr:quarter": "中山",
+        "building": "yes",
+        "name": "てるいストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 491076166,
+      "center": {
+        "lat": 39.0593044,
+        "lon": 141.7212421
+      },
+      "nodes": [
+        4832349371,
+        4832349351,
+        7233496336,
+        2984007067,
+        7233496338,
+        4832349385,
+        7233496339,
+        7233496340,
+        4832349397,
+        4832349389,
+        4832349371
+      ],
+      "tags": {
+        "addr:city": "大船渡市",
+        "addr:province": "岩手県",
+        "branch": "大船渡店",
+        "building": "yes",
+        "name": "マイヤ",
+        "shop": "supermarket",
+        "wikidata": "Q11339796",
+        "wikipedia": "ja:マイヤ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 503921130,
+      "center": {
+        "lat": 40.2151526,
+        "lon": 141.3067377
+      },
+      "nodes": [
+        4941633474,
+        4941633475,
+        4941633476,
+        4941633477,
+        4941633478,
+        4941633479,
+        4941633480,
+        4941633481,
+        4941633482,
+        4941633483,
+        4941633484,
+        4941633474
+      ],
+      "tags": {
+        "addr:city": "一戸町",
+        "addr:county": "二戸郡",
+        "addr:neighbourhood": "北舘",
+        "addr:postcode": "028-5312",
+        "addr:province": "岩手県",
+        "addr:quarter": "一戸",
+        "building": "yes",
+        "name": "とりごえスーパー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 545854845,
+      "center": {
+        "lat": 39.2951056,
+        "lon": 141.1356437
+      },
+      "nodes": [
+        5275378381,
+        5275378382,
+        9500953559,
+        9500953558,
+        765735524,
+        5275378383,
+        5275378381
+      ],
+      "tags": {
+        "addr:city": "北上市",
+        "addr:postcode": "024-0033",
+        "addr:province": "岩手県",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "brand:wikipedia": "en:MaxValu",
+        "building": "retail",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "name:ja_rm": "Makkusubaryu",
+        "operator": "イオン東北",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 553552808,
+      "center": {
+        "lat": 39.6949167,
+        "lon": 140.9757295
+      },
+      "nodes": [
+        4712598180,
+        5343070207,
+        5343070208,
+        5343070209,
+        4712598180
+      ],
+      "tags": {
+        "addr:city": "雫石町",
+        "addr:county": "岩手郡",
+        "addr:housenumber": "78-4",
+        "addr:postcode": "020-0541",
+        "addr:province": "岩手県",
+        "addr:quarter": "千刈田",
+        "branch": "雫石店",
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q11590183",
+        "building": "yes",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "opening_hours": "09:00-20:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 553552811,
+      "center": {
+        "lat": 39.696129,
+        "lon": 140.9776405
+      },
+      "nodes": [
+        5343070215,
+        5343070216,
+        5343070217,
+        5343070218,
+        5343070219,
+        4712598160,
+        9702106763,
+        5343070220,
+        5343070215
+      ],
+      "tags": {
+        "addr:city": "雫石町",
+        "addr:county": "岩手郡",
+        "addr:housenumber": "95-1",
+        "addr:postcode": "020-0541",
+        "addr:province": "岩手県",
+        "addr:quarter": "千刈田",
+        "branch": "雫石店",
+        "building": "yes",
+        "building:levels": "1",
+        "name": "ジョイス",
+        "opening_hours": "09:00-21:00",
+        "operator": "ベルジョイス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 561396475,
+      "center": {
+        "lat": 40.2959608,
+        "lon": 141.3029436
+      },
+      "nodes": [
+        5413445369,
+        5413445370,
+        5413445371,
+        5413445372,
+        5413445373,
+        5413445374,
+        5413445375,
+        5413445376,
+        5413445377,
+        5413445378,
+        5413445379,
+        5413445380,
+        5413445381,
+        5413445369
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ユニバース二戸堀野店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 577037239,
+      "center": {
+        "lat": 39.0115503,
+        "lon": 141.6708903
+      },
+      "nodes": [
+        5532949251,
+        5532949252,
+        5532949253,
+        10162232792,
+        5532949254,
+        10162232791,
+        5532949251
+      ],
+      "tags": {
+        "addr:city": "陸前高田市",
+        "addr:neighbourhood": "字道の上",
+        "addr:province": "岩手県",
+        "addr:quarter": "米崎町",
+        "branch": "アップルロード店",
+        "building": "yes",
+        "name": "マイヤ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 617145350,
+      "center": {
+        "lat": 38.8595089,
+        "lon": 141.348743
+      },
+      "nodes": [
+        5834067177,
+        5834067178,
+        5834067179,
+        5834067180,
+        5834067181,
+        5834067182,
+        5834067177
+      ],
+      "tags": {
+        "addr:city": "一関市",
+        "addr:neighbourhood": "字町裏",
+        "addr:province": "岩手県",
+        "addr:quarter": "藤沢町藤沢",
+        "branch": "ふじさわ店",
+        "brand": "エーコープ",
+        "brand:en": "A-COOP",
+        "brand:ja": "エーコープ",
+        "brand:wikidata": "Q11291524",
+        "building": "retail",
+        "name": "エーコープ",
+        "name:en": "A-COOP",
+        "name:ja": "エーコープ",
+        "operator": "Aコープ東日本",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 617145351,
+      "center": {
+        "lat": 38.8589901,
+        "lon": 141.3480604
+      },
+      "nodes": [
+        5834067183,
+        5834067184,
+        5834067385,
+        5834067386,
+        5834067183
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "キリンヤスーパー藤沢店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 621342220,
+      "center": {
+        "lat": 39.8466053,
+        "lon": 141.7920812
+      },
+      "nodes": [
+        5869703125,
+        5869703126,
+        5869703127,
+        5869703128,
+        5869703129,
+        5869703130,
+        5869703125
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "たけや",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 622362257,
+      "center": {
+        "lat": 39.5569242,
+        "lon": 141.1607322
+      },
+      "nodes": [
+        5878791972,
+        5878792287,
+        5878792288,
+        5878791971,
+        5878792292,
+        5878792291,
+        5878792289,
+        5878792290,
+        5878791973,
+        5878792294,
+        5878792293,
+        5878791972
+      ],
+      "tags": {
+        "building": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 637193432,
+      "center": {
+        "lat": 39.7541395,
+        "lon": 141.1633334
+      },
+      "nodes": [
+        6007526456,
+        6007526455,
+        6007526454,
+        6007526453,
+        6007526450,
+        6007526456
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "いわて生協 ベルフまつぞの",
+        "shop": "supermarket",
+        "source": "GSImaps/ort"
+      }
+    },
+    {
+      "type": "way",
+      "id": 645958686,
+      "center": {
+        "lat": 40.2945556,
+        "lon": 141.2982237
+      },
+      "nodes": [
+        6070661278,
+        6070661530,
+        6070661279,
+        6070661531,
+        6070661532,
+        6070661529,
+        6070661528,
+        6070661527,
+        6070661278
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マルホンカウボーイ二戸店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 655931332,
+      "center": {
+        "lat": 39.7062203,
+        "lon": 141.1332301
+      },
+      "nodes": [
+        6145021120,
+        6145021119,
+        6145020495,
+        6145020492,
+        6145021118,
+        6145021117,
+        6145020493,
+        6145020496,
+        6145021122,
+        6145021123,
+        8940299893,
+        8940299894,
+        8940299895,
+        8940299896,
+        6145021126,
+        6145020490,
+        6145021115,
+        6145021116,
+        6145020491,
+        6145021127,
+        6145021124,
+        8940373070,
+        6145021120
+      ],
+      "tags": {
+        "addr:city": "盛岡市",
+        "addr:province": "岩手県",
+        "branch": "盛岡駅前北通店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "brand:wikipedia": "en:MaxValu",
+        "building": "retail",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 669745187,
+      "center": {
+        "lat": 38.8301087,
+        "lon": 141.1864563
+      },
+      "nodes": [
+        5703993923,
+        6272044063,
+        6272044064,
+        6272044065,
+        5703993923
+      ],
+      "tags": {
+        "addr:city": "一関市",
+        "addr:neighbourhood": "字二ノ町",
+        "addr:province": "岩手県",
+        "addr:quarter": "花泉町涌津",
+        "branch": "花泉店",
+        "building": "yes",
+        "name": "マイヤ",
+        "operator": "マイヤ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 672193288,
+      "center": {
+        "lat": 39.0150898,
+        "lon": 141.4008597
+      },
+      "nodes": [
+        6294665236,
+        6294665237,
+        6294665238,
+        6294665239,
+        6294665240,
+        6294665241,
+        6294665242,
+        6294665243,
+        6294665236
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "神文ストア 大原店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 680331908,
+      "center": {
+        "lat": 39.4604405,
+        "lon": 141.9552577
+      },
+      "nodes": [
+        6370135302,
+        6370135301,
+        6370135300,
+        6370135299,
+        6370135298,
+        6370135297,
+        6370135296,
+        6370135302
+      ],
+      "tags": {
+        "landuse": "retail",
+        "name": "薬王堂",
+        "opening_hours": "08:00-22:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 681305405,
+      "center": {
+        "lat": 39.1244941,
+        "lon": 141.1235223
+      },
+      "nodes": [
+        6380114577,
+        6380114578,
+        6380114579,
+        6380114580,
+        6380114581,
+        6380114582,
+        6380114583,
+        6380114584,
+        6380114585,
+        6380114586,
+        6380114587,
+        6380114588,
+        6380114589,
+        6380114590,
+        6380114591,
+        6380114592,
+        6380114593,
+        6380114594,
+        6380114595,
+        6380114596,
+        6380114577
+      ],
+      "tags": {
+        "branch": "水沢桜屋敷店",
+        "brand": "AEON SUPERCENTER",
+        "brand:en": "AEON SUPERCENTER",
+        "brand:ja": "イオンスーパーセンター",
+        "brand:wikidata": "Q11285970",
+        "building": "yes",
+        "name": "イオンスーパーセンター",
+        "name:en": "Aeon Supercenter",
+        "name:ja": "イオンスーパーセンター",
+        "operator": "イオン東北",
+        "shop": "supermarket",
+        "website": "https://aeontohoku.co.jp/stores/suc_mizusawasakurayashiki"
+      }
+    },
+    {
+      "type": "way",
+      "id": 682695081,
+      "center": {
+        "lat": 38.8433481,
+        "lon": 141.1785747
+      },
+      "nodes": [
+        6393930926,
+        6393930927,
+        6393930928,
+        6393930929,
+        6393930926
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "カンブン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 688093961,
+      "center": {
+        "lat": 39.2840246,
+        "lon": 141.1037825
+      },
+      "nodes": [
+        6451308816,
+        6451308817,
+        6451308818,
+        6451308819,
+        7855564527,
+        7855564528,
+        7855564529,
+        7855564530,
+        6451308816
+      ],
+      "tags": {
+        "addr:block_number": "11",
+        "addr:city": "北上市",
+        "addr:neighbourhood": "31地割",
+        "addr:province": "岩手県",
+        "addr:quarter": "北鬼柳",
+        "branch": "北上店",
+        "building": "yes",
+        "name": "マルイチ",
+        "operator": "マルイチ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 688093964,
+      "center": {
+        "lat": 39.2822819,
+        "lon": 141.1082454
+      },
+      "nodes": [
+        6451308828,
+        6451308829,
+        6451308831,
+        6451308832,
+        6451308828
+      ],
+      "tags": {
+        "addr:city": "北上市",
+        "addr:neighbourhood": "三丁目",
+        "addr:province": "岩手県",
+        "addr:quarter": "九年橋",
+        "branch": "北上店",
+        "brand": "SUPER ARCS",
+        "brand:en": "SUPER ARCS",
+        "brand:ja": "スーパーアークス",
+        "brand:wikidata": "Q17190570",
+        "building": "yes",
+        "name": "スーパーアークス",
+        "name:en": "Super Arcs",
+        "name:ja": "スーパーアークス",
+        "operator": "ベルジョイス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 688588175,
+      "center": {
+        "lat": 39.3131211,
+        "lon": 141.0994319
+      },
+      "nodes": [
+        6457511995,
+        6457511996,
+        6457511997,
+        6457511998,
+        6457511995
+      ],
+      "tags": {
+        "addr:block_number": "8",
+        "addr:city": "北上市",
+        "addr:housenumber": "1",
+        "addr:province": "岩手県",
+        "addr:quarter": "流通センター",
+        "building": "yes",
+        "name": "スーパーオセン 北上店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 694910863,
+      "center": {
+        "lat": 38.9315191,
+        "lon": 141.1218614
+      },
+      "nodes": [
+        6526496492,
+        6526496491,
+        6526496490,
+        6526496489,
+        6526496488,
+        6526496487,
+        6526496492
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フードパワーセンター バリュー一関店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 701067872,
+      "center": {
+        "lat": 38.9001968,
+        "lon": 141.2733478
+      },
+      "nodes": [
+        6583972598,
+        6583958840,
+        6583958841,
+        6583958842,
+        6583972598
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "サングリーンフレッシュ旭屋",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 741662786,
+      "center": {
+        "lat": 39.3425928,
+        "lon": 140.772431
+      },
+      "nodes": [
+        5733814833,
+        6943049225,
+        6943049236,
+        6943049248,
+        6943049196,
+        6943049208,
+        6943049240,
+        6943049200,
+        6943049212,
+        6943049222,
+        6943049233,
+        6943049193,
+        6943049215,
+        6943049224,
+        6943049235,
+        5733814833
+      ],
+      "tags": {
+        "addr:city": "西和賀町",
+        "addr:county": "和賀郡",
+        "addr:province": "岩手県",
+        "branch": "湯本本店",
+        "building": "yes",
+        "name": "スーパーオセン",
+        "operator": "小専商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 745531747,
+      "center": {
+        "lat": 39.0524625,
+        "lon": 141.1296835
+      },
+      "nodes": [
+        6978647232,
+        6978647229,
+        820616133,
+        6978647231,
+        6978647232
+      ],
+      "tags": {
+        "addr:city": "奥州市",
+        "addr:province": "岩手県",
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "brand:wikipedia": "ja:イオン (店舗ブランド)",
+        "building": "retail",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "operator": "イオン東北",
+        "shop": "supermarket",
+        "source": "bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 745608536,
+      "center": {
+        "lat": 39.4436003,
+        "lon": 140.7561799
+      },
+      "nodes": [
+        6979014974,
+        6979014975,
+        6979014972,
+        6979014976,
+        6979014974
+      ],
+      "tags": {
+        "name": "猿橋商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 776708864,
+      "center": {
+        "lat": 39.1025758,
+        "lon": 141.7112362
+      },
+      "nodes": [
+        7247053736,
+        7247053737,
+        12628259569,
+        12628259568,
+        7247053738,
+        7247053739,
+        7247053740,
+        12628259565,
+        12628259566,
+        7247053741,
+        12628259564,
+        12628259563,
+        7247053736
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マイヤ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 784243761,
+      "center": {
+        "lat": 39.0138384,
+        "lon": 141.6572534
+      },
+      "nodes": [
+        7325926290,
+        7325926291,
+        7325926292,
+        7325926293,
+        7325926294,
+        7325926295,
+        7325926298,
+        7325926296,
+        7325926297,
+        7325926290
+      ],
+      "tags": {
+        "addr:city": "陸前高田市",
+        "addr:neighbourhood": "字川崎",
+        "addr:province": "岩手県",
+        "addr:quarter": "米崎町",
+        "branch": "陸前高田店",
+        "brand": "AEON SUPERCENTER",
+        "brand:en": "AEON SUPERCENTER",
+        "brand:ja": "イオンスーパーセンター",
+        "brand:wikidata": "Q11285970",
+        "building": "yes",
+        "name": "イオンスーパーセンター",
+        "name:en": "Aeon Supercenter",
+        "name:ja": "イオンスーパーセンター",
+        "operator": "イオン東北",
+        "shop": "supermarket",
+        "website": "https://aeontohoku.co.jp/stores/suc_rikuzentakata"
+      }
+    },
+    {
+      "type": "way",
+      "id": 785507656,
+      "center": {
+        "lat": 39.3983195,
+        "lon": 141.1077339
+      },
+      "nodes": [
+        7342354874,
+        7342354875,
+        7342354876,
+        7342354877,
+        7342354878,
+        7342354879,
+        7342354880,
+        7342354881,
+        7342354882,
+        7342354883,
+        7342354889,
+        7342354885,
+        7342354884,
+        7342354874
+      ],
+      "tags": {
+        "building": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 786455023,
+      "center": {
+        "lat": 38.9389568,
+        "lon": 141.4535897
+      },
+      "nodes": [
+        1272962352,
+        7353545505,
+        7353545506,
+        7353545507,
+        7353545508,
+        7353545509,
+        7353545510,
+        7353545511,
+        7353545512,
+        7353545513,
+        1272962352
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "すずまーと・サンショップ (Suzumart)",
+        "name:en": "Suzumart",
+        "name:ja": "すずまーと・サンショップ",
+        "name:ja_kana": "すずまーと・サンショップ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 836104971,
+      "center": {
+        "lat": 39.4828017,
+        "lon": 141.9697235
+      },
+      "nodes": [
+        7803955977,
+        7803955980,
+        7803955983,
+        7803955982,
+        7803955981,
+        7803955976,
+        7803955979,
+        7803955978,
+        7803955977
+      ],
+      "tags": {
+        "addr:city": "山田町",
+        "addr:county": "下閉伊郡",
+        "addr:neighbourhood": "第2地割",
+        "addr:province": "岩手県",
+        "addr:quarter": "大沢",
+        "branch": "山田店",
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q11590183",
+        "building": "yes",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 837270706,
+      "center": {
+        "lat": 39.3023327,
+        "lon": 141.0652711
+      },
+      "nodes": [
+        7814197874,
+        7814197875,
+        7814197876,
+        7814197877,
+        7814197878,
+        7814197879,
+        7814197874
+      ],
+      "tags": {
+        "addr:city": "北上市",
+        "addr:province": "岩手県",
+        "branch": "江釣子店",
+        "brand": "SUPER ARCS",
+        "brand:en": "SUPER ARCS",
+        "brand:ja": "スーパーアークス",
+        "brand:wikidata": "Q17190570",
+        "building": "yes",
+        "name": "スーパーアークス",
+        "name:en": "Super Arcs",
+        "name:ja": "スーパーアークス",
+        "operator": "ベルジョイス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 839072211,
+      "center": {
+        "lat": 39.314396,
+        "lon": 140.7769545
+      },
+      "nodes": [
+        5733623921,
+        7830072177,
+        7830072178,
+        7830072179,
+        5733623921
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "湯川屋",
+        "phone": "+81 197 82 2241",
+        "shop": "supermarket",
+        "source": "GSImap/air"
+      }
+    },
+    {
+      "type": "way",
+      "id": 839072212,
+      "center": {
+        "lat": 39.3143403,
+        "lon": 140.7768651
+      },
+      "nodes": [
+        5733623821,
+        7830072180,
+        7830072181,
+        7830072182,
+        5733623821
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "高忠商店",
+        "phone": "+81 197 82 2008",
+        "shop": "supermarket",
+        "source": "GSImap/air"
+      }
+    },
+    {
+      "type": "way",
+      "id": 841671635,
+      "center": {
+        "lat": 39.4259184,
+        "lon": 140.7480564
+      },
+      "nodes": [
+        7852749646,
+        7852749637,
+        7852749643,
+        7852749639,
+        7852749645,
+        7852749641,
+        7852749646
+      ],
+      "tags": {
+        "building": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 844138350,
+      "center": {
+        "lat": 39.6116294,
+        "lon": 141.1521571
+      },
+      "nodes": [
+        5450207722,
+        7874340824,
+        7874340825,
+        7874340826,
+        7874340348,
+        7874340827,
+        7874340351,
+        7874340828,
+        7874340358,
+        7874340829,
+        7874340830,
+        7874340359,
+        5450207722
+      ],
+      "tags": {
+        "addr:city": "矢巾町",
+        "addr:county": "紫波郡",
+        "addr:housenumber": "413",
+        "addr:neighbourhood": "第7地割",
+        "addr:postcode": "028-3615",
+        "addr:province": "岩手県",
+        "addr:quarter": "大字南矢幅",
+        "branch": "矢巾",
+        "brand": "イオンスタイル",
+        "brand:en": "AEON STYLE",
+        "brand:ja": "イオンスタイル",
+        "building": "yes",
+        "name": "イオンスタイル",
+        "name:en": "AEON STYLE",
+        "name:ja": "イオンスタイル",
+        "not:brand:wikidata": "Q11285951",
+        "note": "2024-04-25まではマックスバリュ矢巾店\n04-26よりイオンスタイルとしてリニューアル",
+        "opening_hours": "07:00-23:00",
+        "operator": "イオン東北",
+        "phone": "+81 19 697 1700",
+        "shop": "supermarket",
+        "start_date": "2024-04-26",
+        "website": "https://aeontohoku.co.jp/stores/yahaba"
+      }
+    },
+    {
+      "type": "way",
+      "id": 844138467,
+      "center": {
+        "lat": 39.6147287,
+        "lon": 141.1660106
+      },
+      "nodes": [
+        7874340476,
+        7874341159,
+        7874341158,
+        7874341157,
+        7874340477,
+        7874341155,
+        7874341154,
+        7874341156,
+        7874340476
+      ],
+      "tags": {
+        "addr:block_number": "4",
+        "addr:city": "矢巾町",
+        "addr:county": "紫波郡",
+        "addr:housenumber": "16",
+        "addr:neighbourhood": "2丁目",
+        "addr:postcode": "028-3609",
+        "addr:province": "岩手県",
+        "addr:quarter": "医大通",
+        "building": "yes",
+        "name": "スーパーアークス 矢巾店",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "phone": "+81 19 698 1151",
+        "shop": "supermarket",
+        "website": "https://www.arcs-g.co.jp/group/beljois/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 844138554,
+      "center": {
+        "lat": 39.6123621,
+        "lon": 141.1705078
+      },
+      "nodes": [
+        7874340483,
+        7874341709,
+        7874341708,
+        7874341707,
+        7874341710,
+        7874340482,
+        7874341706,
+        7874341705,
+        7874340483
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "スーパーマルイチ 矢巾店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 893874843,
+      "center": {
+        "lat": 39.0870929,
+        "lon": 141.7177461
+      },
+      "nodes": [
+        8307928236,
+        8307928237,
+        8307928238,
+        8307928239,
+        8307928236
+      ],
+      "tags": {
+        "addr:city": "大船渡市",
+        "addr:province": "岩手県",
+        "building": "yes",
+        "name": "マイヤ 赤崎店",
+        "operator": "マイヤ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 917062894,
+      "center": {
+        "lat": 39.1440147,
+        "lon": 141.5710725
+      },
+      "nodes": [
+        8517856873,
+        8517856874,
+        8517856875,
+        8517856876,
+        8517856873
+      ],
+      "tags": {
+        "addr:block_number": "33",
+        "addr:city": "住田町",
+        "addr:county": "気仙郡",
+        "addr:housenumber": "3",
+        "addr:neighbourhood": "字川向",
+        "addr:province": "岩手県",
+        "addr:quarter": "世田米",
+        "building": "yes",
+        "name": "スーパーマーケット八兆屋",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 920003043,
+      "center": {
+        "lat": 39.3053225,
+        "lon": 141.1172908
+      },
+      "nodes": [
+        8543124199,
+        8543124200,
+        8543124201,
+        8543124202,
+        8543124203,
+        8543124204,
+        8543124205,
+        8543124206,
+        8543124207,
+        8543124208,
+        8543124209,
+        8543124210,
+        8543124199
+      ],
+      "tags": {
+        "addr:block_number": "35",
+        "addr:city": "北上市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "19地割",
+        "addr:province": "岩手県",
+        "addr:quarter": "藤沢",
+        "branch": "北上アピア店",
+        "building": "yes",
+        "name": "ジョイス",
+        "operator": "ベルジョイス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 948378447,
+      "center": {
+        "lat": 39.7129237,
+        "lon": 141.1772175
+      },
+      "nodes": [
+        8778540267,
+        8778540268,
+        8778540269,
+        8778540270,
+        8778540267
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マルイチ　浅岸店",
+        "operator": "株式会社マルイチ",
+        "shop": "supermarket",
+        "wikidata": "Q11313891",
+        "wikipedia": "ja:マルイチ (岩手県)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 951357700,
+      "center": {
+        "lat": 39.7154936,
+        "lon": 141.1693407
+      },
+      "nodes": [
+        8806087048,
+        8806087049,
+        8806087050,
+        8806087051,
+        8806087052,
+        8806087053,
+        8806087054,
+        8806087055,
+        8806087056,
+        8806087057,
+        8806087058,
+        8806087059,
+        8806087048
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "いわて生協　ベルフ山岸",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "operator": "いわて生活協同組合",
+        "shop": "supermarket",
+        "wikidata": "Q17193714",
+        "wikipedia": "ja:いわて生活協同組合"
+      }
+    },
+    {
+      "type": "way",
+      "id": 958621482,
+      "center": {
+        "lat": 39.6532048,
+        "lon": 141.1486461
+      },
+      "nodes": [
+        8869829573,
+        8869829574,
+        8869829575,
+        8869829576,
+        8869829577,
+        8869829578,
+        8869829579,
+        8869829580,
+        8869829581,
+        8869829582,
+        8869829583,
+        8869829584,
+        8869829585,
+        8869829586,
+        8869829587,
+        8869829588,
+        8869829589,
+        8869829573
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "Aコープ飯岡駅前",
+        "opening_hours": "Mo-Sa 10:00-21:00",
+        "shop": "supermarket",
+        "website": "https://www.acoop-east-t.jp/store/list/store_43.html"
+      }
+    },
+    {
+      "type": "way",
+      "id": 958663654,
+      "center": {
+        "lat": 39.6755664,
+        "lon": 141.1378352
+      },
+      "nodes": [
+        8870223591,
+        8870223592,
+        8870223593,
+        8870223594,
+        8870223595,
+        8870223596,
+        8870223597,
+        8870223598,
+        8870223599,
+        8870223600,
+        8870223601,
+        8870223602,
+        8870223603,
+        8870223604,
+        8870223591
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ジョイス 盛岡南バイパス店",
+        "operator": "株式会社ベルジョイス",
+        "shop": "supermarket",
+        "website": "https://www.arcs-g.co.jp/group/beljois/shop/?id=494"
+      }
+    },
+    {
+      "type": "way",
+      "id": 964822509,
+      "center": {
+        "lat": 39.7078412,
+        "lon": 141.1543201
+      },
+      "nodes": [
+        655436469,
+        8925336089,
+        8925336090,
+        8925336091,
+        8925336092,
+        8925336093,
+        8925336094,
+        8925336095,
+        8925336096,
+        8925336097,
+        655436469
+      ],
+      "tags": {
+        "addr:city": "盛岡市",
+        "addr:neighbourhood": "一丁目",
+        "addr:province": "岩手県",
+        "addr:quarter": "本町通",
+        "branch": "本町店",
+        "building": "yes",
+        "name": "ジョイス",
+        "name:ja": "ジョイス",
+        "operator": "ベルジョイス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 972891423,
+      "center": {
+        "lat": 39.1364385,
+        "lon": 141.1535444
+      },
+      "nodes": [
+        9004615951,
+        9004615952,
+        9004615953,
+        9004615954,
+        9004615955,
+        9004615956,
+        9004615951
+      ],
+      "tags": {
+        "addr:city": "奥州市",
+        "addr:province": "岩手県",
+        "addr:quarter": "水沢太日通り",
+        "branch": "水沢原中店",
+        "building": "yes",
+        "name": "ジョイス",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "operator": "ベルジョイス",
+        "phone": "+81 197 24 9603",
+        "shop": "supermarket",
+        "website": "https://www.arcs-g.co.jp/group/beljois/shop/?id=474"
+      }
+    },
+    {
+      "type": "way",
+      "id": 993372736,
+      "center": {
+        "lat": 39.9717337,
+        "lon": 141.2228086
+      },
+      "nodes": [
+        9177474223,
+        9177474224,
+        9177474225,
+        9535891709,
+        9177474226,
+        9177474227,
+        9177474228,
+        9535936703,
+        9177474229,
+        9196643992,
+        9177474230,
+        9177474223
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ふじきん",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 995989059,
+      "center": {
+        "lat": 39.3375486,
+        "lon": 141.1098663
+      },
+      "nodes": [
+        9196842116,
+        9196854717,
+        9196854718,
+        9196854719,
+        9196854720,
+        9196854721,
+        9196842116
+      ],
+      "tags": {
+        "addr:city": "北上市",
+        "addr:neighbourhood": "19地割",
+        "addr:province": "岩手県",
+        "addr:quarter": "村崎野",
+        "branch": "村崎野店",
+        "building": "yes",
+        "name": "ロッキー",
+        "operator": "ベルジョイス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1004645573,
+      "center": {
+        "lat": 39.2738966,
+        "lon": 141.100003
+      },
+      "nodes": [
+        9269332923,
+        9269332924,
+        9269332925,
+        9269332926,
+        9269332927,
+        9269332928,
+        9269332929,
+        9269332930,
+        9269332931,
+        9269332932,
+        9269332933,
+        9269332934,
+        9269332923
+      ],
+      "tags": {
+        "addr:city": "北上市",
+        "addr:neighbourhood": "都鳥",
+        "addr:province": "岩手県",
+        "addr:quarter": "鬼柳町",
+        "branch": "北上鬼柳店",
+        "building": "yes",
+        "name": "ジョイス",
+        "operator": "ベルジョイス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1019973043,
+      "center": {
+        "lat": 40.321237,
+        "lon": 141.4755852
+      },
+      "nodes": [
+        9407239388,
+        9407292946,
+        9407292947,
+        9407239387,
+        9407292943,
+        9407292942,
+        9407292944,
+        9407292945,
+        9407239388
+      ],
+      "tags": {
+        "addr:city": "軽米町",
+        "addr:county": "九戸郡",
+        "addr:neighbourhood": "第15地割",
+        "addr:province": "岩手県",
+        "addr:quarter": "上舘",
+        "branch": "軽米店",
+        "building": "yes",
+        "name": "ユニバース",
+        "operator": "ユニバース",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1053243660,
+      "center": {
+        "lat": 39.3893026,
+        "lon": 141.0574962
+      },
+      "nodes": [
+        9679232031,
+        9679232030,
+        9679232029,
+        3103661788,
+        9679232031
+      ],
+      "tags": {
+        "addr:city": "花巻市",
+        "addr:province": "岩手県",
+        "building": "retail",
+        "name": "Aコープゆぐち",
+        "name:en": "A-COOP Yuguchi",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1055876839,
+      "center": {
+        "lat": 39.9479913,
+        "lon": 141.0926324
+      },
+      "nodes": [
+        9702128236,
+        9702128237,
+        9702128238,
+        9702128239,
+        9702128240,
+        9702128241,
+        9702128242,
+        9702128243,
+        9702128236
+      ],
+      "tags": {
+        "addr:city": "八幡平市",
+        "addr:neighbourhood": "第9地割",
+        "addr:province": "岩手県",
+        "addr:quarter": "平舘",
+        "branch": "西根店",
+        "building": "yes",
+        "name": "ユニバース",
+        "operator": "ユニバース",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1056665706,
+      "center": {
+        "lat": 39.501941,
+        "lon": 141.1542745
+      },
+      "nodes": [
+        5463502540,
+        9709566630,
+        9709566631,
+        9709566632,
+        5463502540
+      ],
+      "tags": {
+        "addr:city": "花巻市",
+        "addr:neighbourhood": "三丁目",
+        "addr:province": "岩手県",
+        "addr:quarter": "石鳥谷町上口",
+        "branch": "石鳥谷店",
+        "building": "retail",
+        "name": "キクコーストア",
+        "operator": "キクコーストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1056665717,
+      "center": {
+        "lat": 39.4825434,
+        "lon": 141.1470736
+      },
+      "nodes": [
+        7784350985,
+        9709566739,
+        9709566740,
+        9709566741,
+        7784350985
+      ],
+      "tags": {
+        "addr:city": "花巻市",
+        "addr:neighbourhood": "第3地割",
+        "addr:province": "岩手県",
+        "addr:quarter": "石鳥谷町八幡",
+        "brand": "マックスバリュ",
+        "brand:en": "Maxvalu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q1960109",
+        "building": "retail",
+        "name": "マックスバリュ",
+        "name:en": "Maxvalu",
+        "name:ja": "マックスバリュ",
+        "operator": "イオン東北",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1182142104,
+      "center": {
+        "lat": 39.7606216,
+        "lon": 141.172134
+      },
+      "nodes": [
+        10978001564,
+        10978001575,
+        10978001574,
+        10978001573,
+        10978001571,
+        10978001570,
+        10978001568,
+        10978001567,
+        10978001566,
+        10978001569,
+        10978001572,
+        10978001565,
+        10978001562,
+        10978001563,
+        10978001564
+      ],
+      "tags": {
+        "atm": "yes",
+        "building": "retail",
+        "name": "ユニバースサンタウン松園店",
+        "name:ja": "ユニバースサンタウン松園店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1280084468,
+      "center": {
+        "lat": 39.3815964,
+        "lon": 141.0939723
+      },
+      "nodes": [
+        11882891344,
+        11882891345,
+        11882891346,
+        11882891347,
+        11882891348,
+        11882891349,
+        11882891350,
+        11882891351,
+        11882891352,
+        11882891353,
+        11882891354,
+        11882891355,
+        11882891344
+      ],
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1298756053,
+      "center": {
+        "lat": 39.4724156,
+        "lon": 141.2786913
+      },
+      "nodes": [
+        12030952879,
+        12030952880,
+        12030952881,
+        12030952882,
+        12030952879
+      ],
+      "tags": {
+        "building": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1303692655,
+      "center": {
+        "lat": 39.9360482,
+        "lon": 141.0941942
+      },
+      "nodes": [
+        12073468174,
+        12073468175,
+        12073468176,
+        12073468177,
+        12073468178,
+        12073468179,
+        12073468180,
+        12073468181,
+        12073468182,
+        12073468183,
+        12073468174
+      ],
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "operator": "イオン東北",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1303697044,
+      "center": {
+        "lat": 39.4066807,
+        "lon": 141.1259155
+      },
+      "nodes": [
+        5434712328,
+        12073509117,
+        12073509118,
+        12073509119,
+        12073509120,
+        12073509121,
+        12073509122,
+        12073509123,
+        5434712328
+      ],
+      "tags": {
+        "branch": "花巻店",
+        "building": "yes",
+        "name": "ベルジョイス ビッグハウス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1342400404,
+      "center": {
+        "lat": 39.5758333,
+        "lon": 141.1611218
+      },
+      "nodes": [
+        12419544562,
+        12419544563,
+        12419544564,
+        12419544565,
+        12419544562
+      ],
+      "tags": {
+        "building": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1342400418,
+      "center": {
+        "lat": 39.5678523,
+        "lon": 141.1645087
+      },
+      "nodes": [
+        12419554519,
+        12419554520,
+        12419554521,
+        12419554522,
+        12419554519
+      ],
+      "tags": {
+        "building": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1356707695,
+      "center": {
+        "lat": 39.4031454,
+        "lon": 141.0992889
+      },
+      "nodes": [
+        12556757154,
+        12556757155,
+        12556757156,
+        12556757157,
+        12556757158,
+        12556757159,
+        12556757160,
+        12556757161,
+        12556757162,
+        12556757163,
+        12556757154
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "コープ花巻あうる",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1364494443,
+      "center": {
+        "lat": 38.995553,
+        "lon": 141.3273526
+      },
+      "nodes": [
+        12635873064,
+        12635873065,
+        12635873066,
+        12635873067,
+        12635873068,
+        12635873069,
+        12635873070,
+        12635873071,
+        12635873064
+      ],
+      "tags": {
+        "addr:block_number": "38",
+        "addr:city": "一関市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "字石倉",
+        "addr:postcode": "0290523",
+        "addr:province": "岩手県",
+        "addr:quarter": "大東町摺沢",
+        "building": "retail",
+        "name": "神文ストア 摺沢店",
+        "opening_hours": "Mo-Su 10:00-21:00",
+        "phone": "0191-75-3466",
+        "shop": "supermarket",
+        "website": "https://www.kanbun-store.jp/store"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1394512077,
+      "center": {
+        "lat": 39.8499524,
+        "lon": 141.1728021
+      },
+      "nodes": [
+        12909212583,
+        12909212584,
+        12909212585,
+        12909212586,
+        12909212587,
+        12909212588,
+        12909212589,
+        12909212590,
+        12909212591,
+        12909212592,
+        12909212593,
+        12909212594,
+        12909212595,
+        12909212596,
+        12909212597,
+        12909212606,
+        12909212603,
+        12909212605,
+        12909212604,
+        12909212598,
+        12909212599,
+        12909212600,
+        12909212601,
+        12909212602,
+        12909212583
+      ],
+      "tags": {
+        "branch": "盛岡渋民店",
+        "brand": "AEON SUPERCENTER",
+        "brand:en": "AEON SUPERCENTER",
+        "brand:ja": "イオンスーパーセンター",
+        "brand:wikidata": "Q11285970",
+        "building": "yes",
+        "name": "イオンスーパーセンター",
+        "name:en": "Aeon Supercenter",
+        "name:ja": "イオンスーパーセンター",
+        "name:ja_rm": "Ion",
+        "operator": "イオン東北",
+        "shop": "supermarket",
+        "source": "Bing",
+        "website": "https://aeontohoku.co.jp/stores/suc_moriokashibutami",
+        "wikidata": "Q11286303",
+        "wikipedia": "ja:イオン盛岡渋民ショッピングセンター"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1412956495,
+      "center": {
+        "lat": 39.536814,
+        "lon": 141.1700934
+      },
+      "nodes": [
+        12984945176,
+        12984945177,
+        12984945178,
+        12984945179,
+        12984945176
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "マックスバリュ紫波店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1429442478,
+      "center": {
+        "lat": 39.6557393,
+        "lon": 141.1543487
+      },
+      "nodes": [
+        13140348363,
+        13140348364,
+        13140348365,
+        13140348366,
+        13140348363
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "都南プラザ",
+        "shop": "supermarket"
+      }
+    }
+  ]
+}

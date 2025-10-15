@@ -1,0 +1,5674 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.8 e802775f",
+  "osm3s": {
+    "timestamp_osm_base": "2025-10-15T12:10:59Z",
+    "timestamp_areas_base": "2025-10-15T04:02:15Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 993559106,
+      "lat": 40.7640976,
+      "lon": 140.4422566,
+      "tags": {
+        "name": "スーパーストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1185887846,
+      "lat": 40.8066218,
+      "lon": 140.7533028,
+      "tags": {
+        "branch": "青森店",
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "brand:wikipedia": "ja:イオン (店舗ブランド)",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "phone": "+81-17-723-4131",
+        "shop": "supermarket",
+        "website": "http://shop.aeon.jp/store/01/0109130/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2987385050,
+      "lat": 40.6491057,
+      "lon": 140.5951503,
+      "tags": {
+        "name": "ユニバース",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3013602334,
+      "lat": 40.85606,
+      "lon": 140.680819,
+      "tags": {
+        "name": "Coop",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3013603734,
+      "lat": 40.830967,
+      "lon": 140.702461,
+      "tags": {
+        "name": "Cub Center",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3015763733,
+      "lat": 40.6115901,
+      "lon": 140.4692277,
+      "tags": {
+        "name": "ひろさき新鮮組",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3092300098,
+      "lat": 41.291289,
+      "lon": 141.1919,
+      "tags": {
+        "name": "業務スーパー",
+        "name:ja_kana": "ぎょうみよすーぱー",
+        "name:ja_rm": "gyōmiyosūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3092300099,
+      "lat": 41.28668,
+      "lon": 141.18467,
+      "tags": {
+        "name": "さとちょう",
+        "name:ja_kana": ":",
+        "name:ja_rm": ":",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3092300106,
+      "lat": 41.5236721,
+      "lon": 140.9061401,
+      "tags": {
+        "name": "マエダストア 大間店",
+        "name:en": "Maeda",
+        "name:ja_kana": "まえだ",
+        "name:ja_rm": "maeda",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3092300107,
+      "lat": 41.292736,
+      "lon": 141.2078,
+      "tags": {
+        "name": "マエダ本店",
+        "name:en": "Maeda",
+        "name:ja_kana": "まえだほんてん",
+        "name:ja_rm": "maedahonten",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3093365863,
+      "lat": 40.868941,
+      "lon": 141.13111,
+      "tags": {
+        "name": "Seiseikan",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3093365886,
+      "lat": 40.815574,
+      "lon": 140.73523,
+      "tags": {
+        "name": "マエダ",
+        "name:en": "Maeda",
+        "name:ja_kana": "まえだ",
+        "name:ja_rm": "maeda",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3103661794,
+      "lat": 41.5244282,
+      "lon": 140.9178232,
+      "tags": {
+        "branch": "大間店",
+        "name": "ファミリーマートさとう",
+        "name:en": "Satou",
+        "name:ja": "サトウ",
+        "name:ja-Hira": "さとう",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3555562606,
+      "lat": 40.4867354,
+      "lon": 141.4644892,
+      "tags": {
+        "branch": "ニュータウン店",
+        "check_date": "2024-05-12",
+        "name": "ユニバース",
+        "opening_hours": "09:00-23:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+81 178701281",
+        "shop": "supermarket",
+        "toilets": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3557218944,
+      "lat": 40.4898362,
+      "lon": 141.4800322,
+      "tags": {
+        "check_date": "2024-05-03",
+        "name": "トライアル",
+        "opening_hours": "24/7",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3557258570,
+      "lat": 40.5057706,
+      "lon": 141.4756171,
+      "tags": {
+        "name": "ユニバース根城店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3557258576,
+      "lat": 40.4917587,
+      "lon": 141.5092658,
+      "tags": {
+        "branch": "八戸田向店",
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "brand:wikipedia": "ja:イオン (店舗ブランド)",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3557314386,
+      "lat": 40.4986577,
+      "lon": 141.4488476,
+      "tags": {
+        "check_date": "2024-05-11",
+        "name": "よこまちストア田面木店",
+        "opening_hours": "09:00-21:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+81 178275155",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3557314391,
+      "lat": 40.5083522,
+      "lon": 141.4379434,
+      "tags": {
+        "check_date": "2024-05-11",
+        "name": "よこまちストア一番町店",
+        "opening_hours": "09:00-21:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+81 178233000",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3557315308,
+      "lat": 40.4978223,
+      "lon": 141.5174442,
+      "tags": {
+        "check_date": "2024-05-11",
+        "name": "よこまちストア新井田店",
+        "opening_hours": "09:00-21:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+81 178258877",
+        "shop": "supermarket",
+        "toilets": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4032225419,
+      "lat": 41.0845613,
+      "lon": 141.2467055,
+      "tags": {
+        "name": "すがぬま",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4239863290,
+      "lat": 40.5875356,
+      "lon": 140.4212382,
+      "tags": {
+        "name": "石岡商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4764360524,
+      "lat": 40.825709,
+      "lon": 140.7361,
+      "tags": {
+        "name:en": "Furukawa market",
+        "opening_hours": "We-Mo 07:00-16:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5029764922,
+      "lat": 40.6993212,
+      "lon": 141.1688574,
+      "tags": {
+        "branch": "七戸店",
+        "name": "マエダ",
+        "name:ja": "マエダ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5052897437,
+      "lat": 40.8214194,
+      "lon": 140.7090923,
+      "tags": {
+        "branch": "三内店",
+        "name": "ユニバース",
+        "name:en": "Universe",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5406680647,
+      "lat": 40.5018321,
+      "lon": 141.4548982,
+      "tags": {
+        "name": "むつ食品",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5406792340,
+      "lat": 40.5021366,
+      "lon": 141.4829532,
+      "tags": {
+        "name": "夏坂商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5409345526,
+      "lat": 40.5153186,
+      "lon": 141.4844354,
+      "tags": {
+        "name": "さだて商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5409447645,
+      "lat": 40.5130519,
+      "lon": 141.4941237,
+      "tags": {
+        "name": "野田食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5409447648,
+      "lat": 40.5114785,
+      "lon": 141.4937735,
+      "tags": {
+        "name": "エリナ八戸",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5409466231,
+      "lat": 40.5121185,
+      "lon": 141.4949349,
+      "tags": {
+        "name": "山勝商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5411825358,
+      "lat": 40.5129337,
+      "lon": 141.4982356,
+      "tags": {
+        "name": "森山食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5419698623,
+      "lat": 40.5190787,
+      "lon": 141.4870508,
+      "tags": {
+        "name": "やお商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5419775644,
+      "lat": 40.5102997,
+      "lon": 141.4939281,
+      "tags": {
+        "name": "マイマート たねいち",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5421931236,
+      "lat": 40.5047404,
+      "lon": 141.4938093,
+      "tags": {
+        "name": "高米商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5421931924,
+      "lat": 40.4983917,
+      "lon": 141.5015307,
+      "tags": {
+        "name": "かなや食糧品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5422045926,
+      "lat": 40.5059373,
+      "lon": 141.5109745,
+      "tags": {
+        "name": "元木商店 八戸店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5422046740,
+      "lat": 40.4962517,
+      "lon": 141.5226232,
+      "tags": {
+        "name": "マルエーストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5423723352,
+      "lat": 40.5225124,
+      "lon": 141.5035568,
+      "tags": {
+        "name": "情熱食品",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5426230740,
+      "lat": 40.5219611,
+      "lon": 141.5221162,
+      "tags": {
+        "name": "佐々木商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5426231744,
+      "lat": 40.5094352,
+      "lon": 141.5130836,
+      "tags": {
+        "name": "レモンマート やまむら",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5426428852,
+      "lat": 40.5292385,
+      "lon": 141.4951275,
+      "tags": {
+        "branch": "シンフォニープラザ店",
+        "check_date": "2024-05-06",
+        "name": "パワーズU",
+        "opening_hours": "09:00-21:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5428527543,
+      "lat": 40.5547462,
+      "lon": 141.4477146,
+      "tags": {
+        "check_date": "2024-05-12",
+        "name": "ユニバース 桔梗野店",
+        "opening_hours": "09:00-22:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+81 178202211",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5428664128,
+      "lat": 40.5337864,
+      "lon": 141.4777328,
+      "tags": {
+        "name": "ユニバース 下長店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5432838351,
+      "lat": 40.5132313,
+      "lon": 141.4515664,
+      "tags": {
+        "name": "カブセンター 長苗代店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5432838531,
+      "lat": 41.5231253,
+      "lon": 140.9017552,
+      "tags": {
+        "name": "高橋商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5432838551,
+      "lat": 41.4306347,
+      "lon": 140.8575995,
+      "tags": {
+        "name": "千葉商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5444759829,
+      "lat": 40.5098284,
+      "lon": 141.4765161,
+      "tags": {
+        "name": "櫻家",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5444759846,
+      "lat": 40.509368,
+      "lon": 141.472998,
+      "tags": {
+        "name": "やまはる 売市店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5447319033,
+      "lat": 40.4757923,
+      "lon": 141.4046687,
+      "tags": {
+        "name": "島守小三郎商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5447542447,
+      "lat": 40.3806388,
+      "lon": 141.2586852,
+      "tags": {
+        "name": "松尾商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5447544675,
+      "lat": 40.3979093,
+      "lon": 141.2636469,
+      "tags": {
+        "name": "マックスバリュ 三戸店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5447547142,
+      "lat": 40.3822447,
+      "lon": 141.2588389,
+      "tags": {
+        "name": "味彩館",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5449463047,
+      "lat": 40.377442,
+      "lon": 141.253741,
+      "tags": {
+        "branch": "三戸八日町店",
+        "name": "ユニバース 三戸八日町店",
+        "name:en": "Universe",
+        "phone": "+81 179 22 3838",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5449463054,
+      "lat": 40.3744297,
+      "lon": 141.248804,
+      "tags": {
+        "name": "田向商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5504870437,
+      "lat": 40.9014896,
+      "lon": 140.4540866,
+      "tags": {
+        "name": "田村食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5504957529,
+      "lat": 40.905252,
+      "lon": 140.4471384,
+      "tags": {
+        "branch": "金木タウンセンター店",
+        "name": "スーパーストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5539942569,
+      "lat": 41.0845713,
+      "lon": 141.2481533,
+      "tags": {
+        "name": "鳥山勝利商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5539942604,
+      "lat": 40.8604085,
+      "lon": 141.1279437,
+      "tags": {
+        "name": "マエダストア 野辺地店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5541792356,
+      "lat": 40.8660208,
+      "lon": 141.1117144,
+      "tags": {
+        "name": "マックスバリュ 野辺地店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5549153741,
+      "lat": 40.9276827,
+      "lon": 140.9594721,
+      "tags": {
+        "name": "遠島魚菜店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6353532491,
+      "lat": 41.2855227,
+      "lon": 141.2104278,
+      "tags": {
+        "name": "マエダ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6702684934,
+      "lat": 40.7288149,
+      "lon": 141.2618283,
+      "tags": {
+        "name": "マルト",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6984202558,
+      "lat": 40.6825398,
+      "lon": 141.3644706,
+      "tags": {
+        "name": "沼田丸",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6984207196,
+      "lat": 40.6819986,
+      "lon": 141.3742553,
+      "tags": {
+        "name": "美野原米穀販売所",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6984207229,
+      "lat": 40.6801987,
+      "lon": 141.3685712,
+      "tags": {
+        "name": "藤田食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6984208460,
+      "lat": 40.687811,
+      "lon": 141.3701167,
+      "tags": {
+        "name": "田中食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6984208461,
+      "lat": 40.687742,
+      "lon": 141.3704334,
+      "tags": {
+        "name": "木村商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6991766400,
+      "lat": 40.4725859,
+      "lon": 141.5759248,
+      "tags": {
+        "name": "中屋敷商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6991766412,
+      "lat": 40.4618147,
+      "lon": 141.5770891,
+      "tags": {
+        "name": "むつ食品 階上石鉢店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7012933714,
+      "lat": 40.8257739,
+      "lon": 140.742632,
+      "tags": {
+        "name": "Beny Mart",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7140687941,
+      "lat": 40.6158068,
+      "lon": 141.2004503,
+      "tags": {
+        "name": "山田商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7140692308,
+      "lat": 40.6128605,
+      "lon": 141.1975438,
+      "tags": {
+        "name": "マックスバリュ 北園店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7142415326,
+      "lat": 40.6051354,
+      "lon": 141.1887353,
+      "tags": {
+        "name": "スーパーカケモ 西金崎店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7142415329,
+      "lat": 40.5998579,
+      "lon": 141.2065425,
+      "tags": {
+        "name": "後沢商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7142415993,
+      "lat": 40.615586,
+      "lon": 141.2131455,
+      "tags": {
+        "name": "現金屋食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7142416207,
+      "lat": 40.6055437,
+      "lon": 141.206191,
+      "tags": {
+        "name": "笠石商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7142416210,
+      "lat": 40.6040903,
+      "lon": 141.2013593,
+      "tags": {
+        "name": "ユニバース 十和田西店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7142416591,
+      "lat": 40.6129317,
+      "lon": 141.2116307,
+      "tags": {
+        "name": "苫米地米穀店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7142421990,
+      "lat": 40.6081811,
+      "lon": 141.2110764,
+      "tags": {
+        "name": "スーパーカケモ 切田通り店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7142422387,
+      "lat": 40.606833,
+      "lon": 141.2209876,
+      "tags": {
+        "name": "パワーズU 十和田店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7148544604,
+      "lat": 40.6178048,
+      "lon": 141.2286038,
+      "tags": {
+        "name": "スーパーセンター トライアル 十和田店",
+        "name:en": "Trial",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7148549590,
+      "lat": 40.6192019,
+      "lon": 141.2301217,
+      "tags": {
+        "name": "笹川商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7150561991,
+      "lat": 40.6123893,
+      "lon": 141.2157208,
+      "tags": {
+        "name": "高村食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7150565595,
+      "lat": 40.6212572,
+      "lon": 141.1974618,
+      "tags": {
+        "name": "福村精米店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7168766505,
+      "lat": 40.7777499,
+      "lon": 141.2147088,
+      "tags": {
+        "name": "中勇商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7168766509,
+      "lat": 40.7794465,
+      "lon": 141.2129589,
+      "tags": {
+        "name": "高村ストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7168774888,
+      "lat": 40.660661,
+      "lon": 141.1964597,
+      "tags": {
+        "name": "沢尻商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7168774890,
+      "lat": 40.5993634,
+      "lon": 141.2278254,
+      "tags": {
+        "name": "マックスバリュ 十和田南店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7168774896,
+      "lat": 40.7332407,
+      "lon": 141.2672068,
+      "tags": {
+        "name": "ユニバース 上北町店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7168775287,
+      "lat": 40.6001902,
+      "lon": 141.2167244,
+      "tags": {
+        "name": "荒屋敷食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7168779390,
+      "lat": 40.615001,
+      "lon": 141.1921687,
+      "tags": {
+        "name": "マルトモ商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7168781488,
+      "lat": 40.7316331,
+      "lon": 141.2640165,
+      "tags": {
+        "name": "千葉商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7168788692,
+      "lat": 40.7834037,
+      "lon": 141.2144662,
+      "tags": {
+        "name": "山田商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7168789794,
+      "lat": 40.8911309,
+      "lon": 140.8613276,
+      "tags": {
+        "name": "ゆーさ市場",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7168789804,
+      "lat": 40.8005276,
+      "lon": 140.7392929,
+      "tags": {
+        "name": "カブセンター 大野店",
+        "name:en": "Cub Center",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178552391,
+      "lat": 40.8016535,
+      "lon": 140.7406289,
+      "tags": {
+        "name": "立田米穀商",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178553501,
+      "lat": 40.8033245,
+      "lon": 140.7553648,
+      "tags": {
+        "description": "ベニーマート 観光通り店",
+        "name": "ベニーマート 観光通り店",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7178553733,
+      "lat": 40.8056608,
+      "lon": 140.7548199,
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q11590183",
+        "brand:wikipedia": "ja:神戸物産",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7187346879,
+      "lat": 40.5876002,
+      "lon": 140.4602232,
+      "tags": {
+        "addr:block_number": "10",
+        "addr:city": "弘前市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "5",
+        "addr:postcode": "036-8228",
+        "addr:province": "青森県",
+        "addr:quarter": "大字樹木",
+        "branch": "樹木店",
+        "name": "さとちょう",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "operator": "有限会社ヱスヱス商事　樹木店",
+        "phone": "0172-31-4422",
+        "shop": "supermarket",
+        "website": "https://satoucho.co.jp/tenpo-051kik.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7226622118,
+      "lat": 40.816829,
+      "lon": 140.7628363,
+      "tags": {
+        "name": "生協あじさい館",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7226623907,
+      "lat": 40.827877,
+      "lon": 140.759226,
+      "tags": {
+        "name": "佐藤米穀・灯油店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7226660393,
+      "lat": 40.8274628,
+      "lon": 140.7452691,
+      "tags": {
+        "name": "中村食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7226660423,
+      "lat": 40.8270783,
+      "lon": 140.7398189,
+      "tags": {
+        "name": "新改商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7226679102,
+      "lat": 40.8245616,
+      "lon": 140.736164,
+      "tags": {
+        "name": "アカヒラストアー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7226679402,
+      "lat": 40.8219138,
+      "lon": 140.7318345,
+      "tags": {
+        "name": "小笠原米穀店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7226681097,
+      "lat": 40.8255786,
+      "lon": 140.7362502,
+      "tags": {
+        "name": "長内くだもの店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7226681098,
+      "lat": 40.8259738,
+      "lon": 140.7361061,
+      "tags": {
+        "name": "村上商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7226681110,
+      "lat": 40.8276374,
+      "lon": 140.7351933,
+      "tags": {
+        "name": "嶋中商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7241640391,
+      "lat": 40.8273778,
+      "lon": 140.7339504,
+      "tags": {
+        "name": "マルシェ アサムボン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7241640396,
+      "lat": 40.8164644,
+      "lon": 140.7348215,
+      "tags": {
+        "name": "いちいサカイ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7241643102,
+      "lat": 40.8159131,
+      "lon": 140.7265445,
+      "tags": {
+        "name": "スーパー藤原 浪館店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7241643113,
+      "lat": 40.8153044,
+      "lon": 140.7113376,
+      "tags": {
+        "name": "青森県民生協 あやめ館",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7241643130,
+      "lat": 40.8115021,
+      "lon": 140.7197445,
+      "tags": {
+        "name": "木立清栄・雑穀店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7241643309,
+      "lat": 40.8203709,
+      "lon": 140.7068049,
+      "tags": {
+        "name": "八戸米穀店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7241649000,
+      "lat": 40.8085398,
+      "lon": 140.7245878,
+      "tags": {
+        "name": "青森県民生協 金沢店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7241663498,
+      "lat": 40.8021797,
+      "lon": 140.7281037,
+      "tags": {
+        "name": "ユニバース 大野店",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7252214991,
+      "lat": 40.8097929,
+      "lon": 140.7422263,
+      "tags": {
+        "name": "スーパー福や 大野店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7273447187,
+      "lat": 40.8132175,
+      "lon": 140.7416384,
+      "tags": {
+        "name": "須田米穀店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7273453288,
+      "lat": 40.8203791,
+      "lon": 140.7408127,
+      "tags": {
+        "name": "赤平米穀店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7514215403,
+      "lat": 40.8312892,
+      "lon": 140.7278441,
+      "tags": {
+        "name": "青森県民生協 アカシア館",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7562196001,
+      "lat": 40.8295845,
+      "lon": 140.7190335,
+      "tags": {
+        "name": "マエダストア 富田店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7562196002,
+      "lat": 40.8330217,
+      "lon": 140.7158673,
+      "tags": {
+        "name": "石川米穀店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7562210003,
+      "lat": 40.8341162,
+      "lon": 140.7226133,
+      "tags": {
+        "name": "棟方米穀店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7562259804,
+      "lat": 40.8320435,
+      "lon": 140.7136386,
+      "tags": {
+        "name": "さとちょう 青森富田店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7562259813,
+      "lat": 40.8331997,
+      "lon": 140.7099127,
+      "tags": {
+        "name": "青森県民生協 コスモス館",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7562259826,
+      "lat": 40.8564312,
+      "lon": 140.6939734,
+      "tags": {
+        "name": "工藤食品マート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7562259828,
+      "lat": 40.8560157,
+      "lon": 140.6931463,
+      "tags": {
+        "name": "細井食料品店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7562259991,
+      "lat": 40.8348057,
+      "lon": 140.7265573,
+      "tags": {
+        "name": "ユニバース 沖館店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7562272090,
+      "lat": 40.8561231,
+      "lon": 140.6863654,
+      "tags": {
+        "name": "名古屋商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7562272098,
+      "lat": 40.8523163,
+      "lon": 140.6981023,
+      "tags": {
+        "name": "キタッコ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7602249613,
+      "lat": 40.8263962,
+      "lon": 140.6828959,
+      "tags": {
+        "name": "大坂屋 工藤商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7761474091,
+      "lat": 40.5758714,
+      "lon": 140.448547,
+      "tags": {
+        "branch": "大原店",
+        "name": "さとちょう",
+        "opening_hours": "Mo-Su 09:00-20:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8186356022,
+      "lat": 40.6000423,
+      "lon": 140.4739926,
+      "tags": {
+        "name": "中土手魚菜センター",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8266178652,
+      "lat": 40.5836202,
+      "lon": 140.4707682,
+      "tags": {
+        "branch": "西弘店",
+        "description": "弘前市大字中野1-13-1",
+        "name": "コープあおもり",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8303371587,
+      "lat": 40.6271454,
+      "lon": 140.488173,
+      "tags": {
+        "addr:block_number": "378",
+        "addr:city": "弘前市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "字神田",
+        "addr:postcode": "036-8052",
+        "addr:province": "青森県",
+        "addr:quarter": "大字堅田",
+        "branch": "弘前堅田店",
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q11590183",
+        "brand:wikipedia": "ja:神戸物産",
+        "fax": "0172-40-2159",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "opening_hours": "Mo-Su 09:00-20:00",
+        "phone": "0172-40-2158",
+        "shop": "supermarket",
+        "website": "https://www.gyomusuper.jp/shop/detail.php?sh_id=528"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8968501422,
+      "lat": 40.7762632,
+      "lon": 140.2202407,
+      "tags": {
+        "name": "スーパーとびしま",
+        "phone": "0173-72-2141",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9073707025,
+      "lat": 40.7988513,
+      "lon": 140.413638,
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q11590183",
+        "brand:wikipedia": "ja:神戸物産",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "opening_hours": "Mo-Su 09:30-20:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9199634352,
+      "lat": 40.4683185,
+      "lon": 141.3870579,
+      "tags": {
+        "branch": "福地店",
+        "check_date": "2024-05-12",
+        "name": "ユニバース",
+        "opening_hours": "24/7",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+81 178601577",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9502625206,
+      "lat": 40.6332254,
+      "lon": 140.5883882,
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q11590183",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9808269766,
+      "lat": 40.9621669,
+      "lon": 140.4323486,
+      "tags": {
+        "branch": "中泊ベル店",
+        "name": "スーパーストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10208912666,
+      "lat": 40.8278302,
+      "lon": 140.8000443,
+      "tags": {
+        "branch": "東バイパス店",
+        "name": "ユニバース",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10316546718,
+      "lat": 40.7997815,
+      "lon": 140.7822092,
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q11590183",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10688512652,
+      "lat": 40.6031509,
+      "lon": 141.2568933,
+      "tags": {
+        "branch": "十和田店",
+        "brand": "AEON SUPERCENTER",
+        "brand:en": "AEON SUPERCENTER",
+        "brand:ja": "イオンスーパーセンター",
+        "brand:wikidata": "Q11285970",
+        "name": "イオンスーパーセンター",
+        "name:en": "Aeon Supercenter",
+        "name:ja": "イオンスーパーセンター",
+        "operator": "イオン東北",
+        "shop": "supermarket",
+        "website": "https://aeontohoku.co.jp/stores/suc_towada"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10697008633,
+      "lat": 40.7982946,
+      "lon": 140.7585676,
+      "tags": {
+        "addr:block_number": "196",
+        "addr:city": "青森市",
+        "addr:housenumber": "10",
+        "addr:neighbourhood": "字玉川",
+        "addr:postcode": "0300843",
+        "addr:province": "青森県",
+        "addr:quarter": "大字浜田",
+        "branch": "浜田店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "opening_hours": "24/7",
+        "operator": "イオン東北",
+        "phone": "+81 17 724 2345",
+        "shop": "supermarket",
+        "website": "https://aeontohoku.co.jp/stores/hamada",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11065468039,
+      "lat": 40.8208596,
+      "lon": 140.7423476,
+      "tags": {
+        "name": "スーパー丸大",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11071765789,
+      "lat": 40.8293203,
+      "lon": 140.8094776,
+      "tags": {
+        "addr:block_number": "45",
+        "addr:city": "青森市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "字弥生田",
+        "addr:postcode": "030-0936",
+        "addr:province": "青森県",
+        "addr:quarter": "大字矢田前",
+        "branch": "青森東店",
+        "brand": "ザ・ビッグ",
+        "brand:en": "THE BIG",
+        "brand:ja": "ザ・ビッグ",
+        "brand:wikidata": "Q11306676",
+        "name": "ザ・ビッグ",
+        "name:en": "THE BIG",
+        "name:ja": "ザ・ビッグ",
+        "opening_hours": "Mo-Su 07:00-21:00",
+        "operator": "イオン東北",
+        "phone": "+81 17 726 1461",
+        "shop": "supermarket",
+        "website": "https://aeontohoku.co.jp/stores/aomorihigasi"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11099158361,
+      "lat": 40.9078497,
+      "lon": 140.4499192,
+      "tags": {
+        "addr:block_number": "216",
+        "addr:city": "五所川原市",
+        "addr:housenumber": "9",
+        "addr:neighbourhood": "芦野",
+        "addr:postcode": "037-0202",
+        "addr:province": "青森県",
+        "addr:quarter": "金木町",
+        "branch": "金木本店",
+        "name": "食祭館 中谷",
+        "phone": "+81 173 52 3473",
+        "shop": "supermarket",
+        "website": "https://www.nakaya-shokuhin.shop/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11225105012,
+      "lat": 41.2821126,
+      "lon": 141.192841,
+      "tags": {
+        "alt_name:en": "Co-op",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11226102170,
+      "lat": 41.2965417,
+      "lon": 141.2144472,
+      "tags": {
+        "name": "さとちょう　むつ松木屋店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11277807673,
+      "lat": 40.826086,
+      "lon": 140.7369997,
+      "tags": {
+        "name": "CELEST",
+        "shop": "supermarket",
+        "website": "https://www.three-aomori.jp/floor/celest/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11882779346,
+      "lat": 40.5177098,
+      "lon": 141.4858968,
+      "tags": {
+        "addr:postcode": "031-0072",
+        "branch": "城下店",
+        "check_date": "2024-05-06",
+        "name": "ユニバース",
+        "opening_hours": "09:00-22:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+81 178516646",
+        "shop": "supermarket",
+        "source": "local knowledge",
+        "toilets": "yes",
+        "website": "https://www.universe.co.jp/store/detail/102001069.html?recordno=133"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11882982507,
+      "lat": 40.5218274,
+      "lon": 141.5049519,
+      "tags": {
+        "check_date": "2024-05-06",
+        "name": "カブ・マルシェ江陽店",
+        "opening_hours": "09:00-21:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11883636459,
+      "lat": 40.6745383,
+      "lon": 141.3631595,
+      "tags": {
+        "name": "スーパーシティアサヒ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12099905859,
+      "lat": 40.7994839,
+      "lon": 140.4533777,
+      "tags": {
+        "brand": "ロピア",
+        "brand:en": "Lopia",
+        "brand:ja": "ロピア",
+        "brand:wikidata": "Q11350624",
+        "name": "ロピア",
+        "name:en": "Lopia",
+        "name:ja": "ロピア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12099905862,
+      "lat": 40.7979331,
+      "lon": 140.4537062,
+      "tags": {
+        "name": "ELM新鮮市場",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12149526992,
+      "lat": 41.077681,
+      "lon": 141.2571985,
+      "tags": {
+        "name": "ぷちマート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12393853236,
+      "lat": 40.7030077,
+      "lon": 140.4595181,
+      "tags": {
+        "branch": "板柳店",
+        "name": "いとく",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12785580517,
+      "lat": 40.528425,
+      "lon": 141.49742,
+      "tags": {
+        "branch": "八戸沼館",
+        "name": "イオンスタイル",
+        "name:en": "AEON STYLE",
+        "name:ja": "イオンスタイル",
+        "operator": "イオン東北",
+        "shop": "supermarket",
+        "start_date": "2025-04-25",
+        "website": "https://aeontohoku.co.jp/stores/hachinohenumadate"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12809068494,
+      "lat": 41.04484,
+      "lon": 140.6430533,
+      "tags": {
+        "check_date": "2025-05-04",
+        "name": "マツオスーパー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 90341296,
+      "center": {
+        "lat": 40.6019347,
+        "lon": 140.4435484
+      },
+      "nodes": [
+        1048142646,
+        1048142618,
+        1048142641,
+        1048142644,
+        3713234247,
+        1048142646
+      ],
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "Maxvalu Tokai",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q1960109",
+        "brand:wikipedia": "en:MaxValu",
+        "building": "retail",
+        "name": "マックスバリュ",
+        "name:en": "Maxvalu Tokai",
+        "name:ja": "マックスバリュ",
+        "name:ja_rm": "Makkusubaryu",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 137218828,
+      "center": {
+        "lat": 40.8114313,
+        "lon": 140.7822637
+      },
+      "nodes": [
+        1505218605,
+        1505218609,
+        1505218606,
+        1505218607,
+        1505218608,
+        1505218611,
+        3657376764,
+        3657376765,
+        3657376767,
+        3657376766,
+        3657376771,
+        3657376773,
+        11677051505,
+        1505218615,
+        3657376763,
+        1505218617,
+        1505218605
+      ],
+      "tags": {
+        "addr:city": "青森市",
+        "addr:housenumber": "16-2",
+        "addr:neighbourhood": "字増田",
+        "addr:postcode": "030-0916",
+        "addr:province": "青森県",
+        "addr:quarter": "大字田屋敷",
+        "branch": "東青森店",
+        "building": "yes",
+        "name": "ユニバース",
+        "opening_hours": "10:00-23:00",
+        "phone": "+81 17 765 7100",
+        "shop": "supermarket",
+        "source": "Bing,2006-09",
+        "website": "https://www.universe.co.jp/store/detail/102021030.html"
+      }
+    },
+    {
+      "type": "way",
+      "id": 151490370,
+      "center": {
+        "lat": 41.2817129,
+        "lon": 141.1620224
+      },
+      "nodes": [
+        1643043787,
+        1643043776,
+        1643043779,
+        1643043792,
+        1643043787
+      ],
+      "tags": {
+        "building": "commercial",
+        "name": "マエダストア",
+        "opening_hours": "9:00-20:00",
+        "shop": "supermarket",
+        "source": "Bing,2011-04-29"
+      }
+    },
+    {
+      "type": "way",
+      "id": 295242277,
+      "center": {
+        "lat": 40.6450981,
+        "lon": 140.6015394
+      },
+      "nodes": [
+        2989474315,
+        2989474311,
+        2989474325,
+        10115720835,
+        10115720836,
+        2989474571,
+        2989474315
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "Max Valu",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 295479729,
+      "center": {
+        "lat": 40.6763382,
+        "lon": 141.380591
+      },
+      "nodes": [
+        2992133443,
+        2992133479,
+        2992133436,
+        2992133468,
+        2992133470,
+        2992133463,
+        2992133488,
+        2992133482,
+        2992132932,
+        2992133464,
+        2992133443
+      ],
+      "tags": {
+        "building": "supermarket",
+        "name": "ユニバース",
+        "name:en": "Universe",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 298984687,
+      "center": {
+        "lat": 40.5133937,
+        "lon": 141.5490249
+      },
+      "nodes": [
+        3029090803,
+        3029090804,
+        3029090805,
+        3029090806,
+        3029090803
+      ],
+      "tags": {
+        "branch": "大久保店",
+        "building": "retail",
+        "name": "マエダストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 299202569,
+      "center": {
+        "lat": 40.7814239,
+        "lon": 140.3587926
+      },
+      "nodes": [
+        3031476141,
+        8977410372,
+        3031476142,
+        8977410371,
+        8977410370,
+        8977410369,
+        8977410368,
+        8977410367,
+        3031476143,
+        8977410366,
+        8977410365,
+        8977410363,
+        8977410364,
+        8977410362,
+        8977410361,
+        3031476144,
+        8977410374,
+        8977410373,
+        3031476141
+      ],
+      "tags": {
+        "addr:block_number": "17",
+        "addr:city": "つがる市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "字新田",
+        "addr:province": "青森県",
+        "addr:quarter": "大字山田",
+        "addr:suburb": "森田町",
+        "branch": "森田店",
+        "brand": "トライアル",
+        "brand:en": "Trial",
+        "brand:ja": "トライアル",
+        "brand:wikidata": "Q11321723",
+        "building": "yes",
+        "building:levels": "1",
+        "name": "トライアル",
+        "name:en": "Trial",
+        "name:ja": "トライアル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 317110600,
+      "center": {
+        "lat": 40.6651098,
+        "lon": 141.3665081
+      },
+      "nodes": [
+        3233351680,
+        3233351516,
+        3233351692,
+        3233351755,
+        3233351688,
+        3233351527,
+        3233351680
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マエダストア",
+        "name:en": "Maeda Store",
+        "name:ja": "マエダストア",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 317110624,
+      "center": {
+        "lat": 40.677268,
+        "lon": 141.3600144
+      },
+      "nodes": [
+        3233351543,
+        3233351754,
+        3233351753,
+        3233351690,
+        3233351543
+      ],
+      "tags": {
+        "branch": "三沢大町店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "name:ja_rm": "Makkusubaryu",
+        "opening_hours": "-22:00",
+        "operator": "イオン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 345282565,
+      "center": {
+        "lat": 40.8114858,
+        "lon": 140.7945875
+      },
+      "nodes": [
+        3519680937,
+        3519680943,
+        3519680947,
+        3519680939,
+        12017380626,
+        12017380627,
+        3519680937
+      ],
+      "tags": {
+        "addr:block_number": "15",
+        "addr:city": "青森市",
+        "addr:housenumber": "1",
+        "addr:postcode": "030-0948",
+        "addr:province": "青森県",
+        "addr:quarter": "虹ヶ丘一丁目",
+        "branch": "虹ヶ丘店",
+        "brand": "マエダ",
+        "brand:en": "Maeda",
+        "brand:ja": "マエダ",
+        "brand:wikidata": "Q11339896",
+        "building": "retail",
+        "name": "マエダストア",
+        "name:en": "Maeda",
+        "name:ja": "マエダストア",
+        "operator": "マエダ",
+        "phone": "+81 17 765 1011",
+        "shop": "supermarket",
+        "website": "https://i-maeda.jp/store.html?id=10"
+      }
+    },
+    {
+      "type": "way",
+      "id": 345282628,
+      "center": {
+        "lat": 40.817128,
+        "lon": 140.7846591
+      },
+      "nodes": [
+        3519680975,
+        11190334372,
+        3519680977,
+        11190334371,
+        3519680981,
+        3519680978,
+        3519680975
+      ],
+      "tags": {
+        "branch": "つくだ店",
+        "building": "yes",
+        "name": "青森県民生協",
+        "shop": "supermarket",
+        "website": "http://www.aomoriken-coop.or.jp/info/office_dtl?id=1"
+      }
+    },
+    {
+      "type": "way",
+      "id": 350272621,
+      "center": {
+        "lat": 40.4990401,
+        "lon": 141.5423091
+      },
+      "nodes": [
+        3560158725,
+        3560158726,
+        3560158727,
+        3560158728,
+        3560158729,
+        3560158730,
+        3560158725
+      ],
+      "tags": {
+        "branch": "旭ヶ丘店",
+        "building": "yes",
+        "check_date": "2024-05-11",
+        "name": "よこまちストア",
+        "opening_hours": "09:00-21:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+81 178351122",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 350275190,
+      "center": {
+        "lat": 40.5038036,
+        "lon": 141.5078226
+      },
+      "nodes": [
+        3560172931,
+        3560172932,
+        6919620502,
+        3560172933,
+        6919620499,
+        6919620501,
+        6919620500,
+        3560172935,
+        3560172936,
+        6919620503,
+        3560172931
+      ],
+      "tags": {
+        "branch": "るいけ店",
+        "building": "yes",
+        "check_date": "2024-05-11",
+        "name": "コープあおもり",
+        "opening_hours": "09:00-21:30",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 350275193,
+      "center": {
+        "lat": 40.5026419,
+        "lon": 141.5060224
+      },
+      "nodes": [
+        3560172946,
+        3560172947,
+        7536615774,
+        7536615775,
+        3560172948,
+        3560172949,
+        3560172946
+      ],
+      "tags": {
+        "branch": "南類家店",
+        "building": "yes",
+        "check_date": "2024-05-06",
+        "name": "ユニバース",
+        "opening_hours": "09:00-23:30",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 350275195,
+      "center": {
+        "lat": 40.4956469,
+        "lon": 141.4982845
+      },
+      "nodes": [
+        6283724943,
+        6283724942,
+        6283724941,
+        3560172955,
+        3560172956,
+        3560172957,
+        3560172954,
+        6283724940,
+        6283724943
+      ],
+      "tags": {
+        "branch": "吹上店",
+        "building": "yes",
+        "check_date": "2024-05-11",
+        "name": "よこまちストア",
+        "opening_hours": "09:00-21:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+81 178471234",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 351309980,
+      "center": {
+        "lat": 40.5250348,
+        "lon": 141.4736901
+      },
+      "nodes": [
+        3570881997,
+        3570881998,
+        3570881999,
+        3570882000,
+        3570882001,
+        3570882002,
+        3570881997
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "Jois",
+        "name:ja": "ジョイス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 389203812,
+      "center": {
+        "lat": 41.2966718,
+        "lon": 141.1872222
+      },
+      "nodes": [
+        3923581424,
+        3923581421,
+        3923581416,
+        3923581420,
+        3923581424
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "Maedaむつ中央店",
+        "name:en": "Maeda",
+        "name:ja_kana": "まえだむつちゅうおうてん",
+        "name:ja_rm": "maedamutsuchūōten",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 390554179,
+      "center": {
+        "lat": 40.5922887,
+        "lon": 140.4871028
+      },
+      "nodes": [
+        3937112005,
+        3937112007,
+        3937112006,
+        3937112009,
+        3937112010,
+        3937112008,
+        3937112004,
+        3937112003,
+        3937112002,
+        3937111989,
+        3937111988,
+        3937112005
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ユニバース南大町店",
+        "shop": "supermarket",
+        "source": "GSImaps/std"
+      }
+    },
+    {
+      "type": "way",
+      "id": 390555111,
+      "center": {
+        "lat": 40.6148544,
+        "lon": 140.420405
+      },
+      "nodes": [
+        3937122003,
+        3937121980,
+        3937121840,
+        3937121838,
+        3937121821,
+        3937121830,
+        3937121839,
+        3937121843,
+        3937122003
+      ],
+      "tags": {
+        "branch": "岩木店",
+        "building": "yes",
+        "name": "さとちょう",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "shop": "supermarket",
+        "source": "GSImaps/std"
+      }
+    },
+    {
+      "type": "way",
+      "id": 413080156,
+      "center": {
+        "lat": 40.5990702,
+        "lon": 140.4892779
+      },
+      "nodes": [
+        4239718789,
+        4144103654,
+        4144103634,
+        4144103629,
+        7996594555,
+        7996594557,
+        7996594558,
+        7996594556,
+        4239718789
+      ],
+      "tags": {
+        "addr:block_number": "2",
+        "addr:city": "弘前市",
+        "addr:housenumber": "2",
+        "addr:neighbourhood": "1",
+        "addr:postcode": "036-8324",
+        "addr:province": "青森県",
+        "addr:quarter": "大字城東中央",
+        "branch": "城東店",
+        "building": "yes",
+        "name": "さとちょう",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "phone": "0172-26-3388",
+        "shop": "supermarket",
+        "website": "https://satoucho.co.jp/tenpo-013jou.html",
+        "wikidata": "Q11384523",
+        "wikipedia": "ja:佐藤長 (スーパーマーケット)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 437544910,
+      "center": {
+        "lat": 40.4985084,
+        "lon": 141.5210118
+      },
+      "nodes": [
+        4353550755,
+        4353550756,
+        4353550767,
+        4353550757,
+        4353550758,
+        4353550759,
+        4353550760,
+        4353550761,
+        4353550762,
+        4353550763,
+        4353550764,
+        4353550765,
+        4353550766,
+        4353550755
+      ],
+      "tags": {
+        "building": "yes",
+        "check_date": "2024-05-12",
+        "name": "ユニバース新井田店",
+        "opening_hours": "09:00-23:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+81 178302135",
+        "shop": "supermarket",
+        "toilets": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 451497822,
+      "center": {
+        "lat": 40.689463,
+        "lon": 141.3670258
+      },
+      "nodes": [
+        4483288066,
+        4483288067,
+        4483288068,
+        4483288069,
+        4483288070,
+        4483288071,
+        4483288072,
+        4483288060,
+        4483288073,
+        4483288066
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "Commissary",
+        "operator": "DECA",
+        "payment:credit_cards": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 454470366,
+      "center": {
+        "lat": 40.7644292,
+        "lon": 140.4415058
+      },
+      "nodes": [
+        4510302363,
+        8171403946,
+        8171403947,
+        8171403948,
+        8171403949,
+        8171403950,
+        4510302364,
+        8171403951,
+        8171403952,
+        4510302365,
+        4510302366,
+        8171403945,
+        8171403943,
+        8171403944,
+        4510302363
+      ],
+      "tags": {
+        "building": "yes",
+        "building:levels": "1",
+        "name": "スーパーストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 454478818,
+      "center": {
+        "lat": 40.8051469,
+        "lon": 140.4183802
+      },
+      "nodes": [
+        4510364929,
+        4510364930,
+        4510364931,
+        12033685432,
+        4510364932,
+        12033685433,
+        4510364929
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マルエー電気",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 454478821,
+      "center": {
+        "lat": 40.8035808,
+        "lon": 140.4159916
+      },
+      "nodes": [
+        4510364941,
+        10776078761,
+        10776078760,
+        10776078759,
+        10776078758,
+        10776078757,
+        10776078756,
+        4510364942,
+        10776078755,
+        10776078768,
+        10776078754,
+        7056206496,
+        7056206495,
+        10776075871,
+        7056206494,
+        10776078762,
+        10776078763,
+        4510364943,
+        10776078764,
+        10776078765,
+        10776078769,
+        10776078766,
+        10776078767,
+        4510364944,
+        10776078771,
+        10776078770,
+        4510364941
+      ],
+      "tags": {
+        "branch": "つがる柏店",
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "building": "yes",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 476125321,
+      "center": {
+        "lat": 40.5851274,
+        "lon": 140.4992503
+      },
+      "nodes": [
+        4697711303,
+        4425313206,
+        4697711330,
+        4425313205,
+        4425313204,
+        4697711304,
+        4697711303
+      ],
+      "tags": {
+        "branch": "アルカディア店",
+        "building": "yes",
+        "name": "いとく",
+        "shop": "supermarket",
+        "wikidata": "Q11379368",
+        "wikipedia": "ja:伊徳"
+      }
+    },
+    {
+      "type": "way",
+      "id": 477780253,
+      "center": {
+        "lat": 40.5853587,
+        "lon": 140.5678127
+      },
+      "nodes": [
+        4710848055,
+        4710848058,
+        4710848059,
+        4710848056,
+        4710848061,
+        4710848060,
+        4710848053,
+        4710848057,
+        4710848054,
+        4710848062,
+        4710848064,
+        4710848063,
+        4710848055
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "いとく",
+        "shop": "supermarket",
+        "source": "GSI/KIBAN 2500; NARO"
+      }
+    },
+    {
+      "type": "way",
+      "id": 538898091,
+      "center": {
+        "lat": 40.5177979,
+        "lon": 141.513707
+      },
+      "nodes": [
+        5215490931,
+        5215490932,
+        5215490933,
+        5215490934,
+        5215490935,
+        5215490936,
+        5215490931
+      ],
+      "tags": {
+        "branch": "小中野店",
+        "building": "yes",
+        "check_date": "2024-05-12",
+        "name": "ユニバース",
+        "opening_hours": "09:00-23:30",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+81 178225550",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 538905555,
+      "center": {
+        "lat": 40.5161968,
+        "lon": 141.5320531
+      },
+      "nodes": [
+        5215533373,
+        5215533374,
+        5215533375,
+        5215533376,
+        5215533377,
+        5215533378,
+        5215533379,
+        5215533380,
+        5215533381,
+        5215533382,
+        5215533373
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ビッグハウス　湊店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 545794634,
+      "center": {
+        "lat": 40.5948918,
+        "lon": 141.4262
+      },
+      "nodes": [
+        5274831215,
+        5274831214,
+        5274831213,
+        5274831212,
+        5274831211,
+        5274831210,
+        5274831209,
+        5274831208,
+        5274831207,
+        5274831215
+      ],
+      "tags": {
+        "branch": "百石店",
+        "building": "yes",
+        "check_date": "2024-05-12",
+        "name": "ユニバース",
+        "opening_hours": "09:00-22:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+81 178523737",
+        "shop": "supermarket",
+        "source": "GSI/KIBAN 2500; NARO"
+      }
+    },
+    {
+      "type": "way",
+      "id": 548930770,
+      "center": {
+        "lat": 41.5280386,
+        "lon": 140.9060814
+      },
+      "nodes": [
+        5302769757,
+        5302769758,
+        5302769759,
+        5302769760,
+        5302769757
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "グリーンストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 549061453,
+      "center": {
+        "lat": 41.4063812,
+        "lon": 141.1667893
+      },
+      "nodes": [
+        5303966821,
+        5303966822,
+        5303966823,
+        5303966824,
+        5303966821
+      ],
+      "tags": {
+        "branch": "大畑店",
+        "building": "yes",
+        "name": "マエダストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 550369066,
+      "center": {
+        "lat": 41.488225,
+        "lon": 140.9952265
+      },
+      "nodes": [
+        5315878085,
+        5315878086,
+        5315878087,
+        5315878088,
+        5315878085
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "横浜商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 554657341,
+      "center": {
+        "lat": 40.5221909,
+        "lon": 141.5491417
+      },
+      "nodes": [
+        5352666131,
+        5352666147,
+        5352666146,
+        5352666134,
+        5352666135,
+        5352666136,
+        5352666137,
+        5352666138,
+        5352666139,
+        5352666140,
+        5352666145,
+        5352666132,
+        5352666144,
+        5352666143,
+        5352666133,
+        5352666130,
+        5352666141,
+        5352666142,
+        5352666131
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ユニバース 白銀店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 555727339,
+      "center": {
+        "lat": 40.602366,
+        "lon": 141.4363819
+      },
+      "nodes": [
+        5361083511,
+        5361083646,
+        5361083645,
+        5361083512,
+        5361083647,
+        5361083648,
+        5361083641,
+        5361083643,
+        5361083644,
+        5361083642,
+        5361083649,
+        5361083650,
+        5361083639,
+        5361083652,
+        5361083653,
+        5361083651,
+        5361083654,
+        5361083640,
+        5361083511
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "青森県民生協 おいらせ店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 556679960,
+      "center": {
+        "lat": 40.6167988,
+        "lon": 141.2277191
+      },
+      "nodes": [
+        5369755766,
+        5369755767,
+        5369755768,
+        5369755769,
+        5369755770,
+        5369755771,
+        5369755766
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "スーパーカケモ･三小通り店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 556731061,
+      "center": {
+        "lat": 40.5992115,
+        "lon": 141.2278042
+      },
+      "nodes": [
+        5370134677,
+        5370134678,
+        5370134679,
+        5370134680,
+        5370134681,
+        5370134682,
+        5370134677
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "マックスバリュ　十和田南店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 556777840,
+      "center": {
+        "lat": 40.5405096,
+        "lon": 141.4771774
+      },
+      "nodes": [
+        10963626557,
+        10963626565,
+        10963626564,
+        10963626563,
+        10963626556,
+        10963626562,
+        10963626561,
+        10963626555,
+        10963626560,
+        10963626554,
+        10963626558,
+        10963626559,
+        10963626557
+      ],
+      "tags": {
+        "branch": "日計店",
+        "building": "yes",
+        "name": "マエダストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 557003632,
+      "center": {
+        "lat": 40.5190568,
+        "lon": 141.4833471
+      },
+      "nodes": [
+        5372373902,
+        5372373910,
+        5372373903,
+        5372373909,
+        5372373900,
+        5372373908,
+        5372373901,
+        5372373904,
+        5372373905,
+        5372373906,
+        5372373907,
+        5372373899,
+        5372373911,
+        5372373913,
+        5372373912,
+        5372373902
+      ],
+      "tags": {
+        "addr:block_number": "2",
+        "addr:city": "八戸市",
+        "addr:housenumber": "11",
+        "addr:neighbourhood": "城下",
+        "addr:postcode": "0310072",
+        "addr:province": "青森県",
+        "branch": "八戸城下",
+        "building": "yes",
+        "building:levels": "1",
+        "name": "イオンスタイル",
+        "opening_hours": "Mo-Su 09:00-19:00",
+        "operator": "イオン東北",
+        "phone": "+81-178-41-2131",
+        "shop": "supermarket",
+        "website": "https://aeontohoku.co.jp/stores/hachinoheshiroshita",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 557348716,
+      "center": {
+        "lat": 40.6193707,
+        "lon": 141.2164953
+      },
+      "nodes": [
+        5375353213,
+        5375353214,
+        5375353215,
+        5375353216,
+        5375353217,
+        5375353218,
+        5375353219,
+        5375353220,
+        5375353621,
+        5375353622,
+        5375353624,
+        5375353623,
+        5375353213
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "（株)ヤマヨ　十和田店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 557983406,
+      "center": {
+        "lat": 40.4978098,
+        "lon": 141.535994
+      },
+      "nodes": [
+        5380671137,
+        5380671134,
+        5380671135,
+        5380671136,
+        5380671137
+      ],
+      "tags": {
+        "branch": "旭ヶ丘店",
+        "building": "yes",
+        "name": "やまはる",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 558198972,
+      "center": {
+        "lat": 40.5243932,
+        "lon": 141.3076425
+      },
+      "nodes": [
+        5382541285,
+        5382541284,
+        5382541283,
+        5382541282,
+        5382541281,
+        5382541280,
+        5382541279,
+        5382541278,
+        5382541285
+      ],
+      "tags": {
+        "building": "supermarket",
+        "name": "よこまちストア 五戸店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 558198976,
+      "center": {
+        "lat": 40.5263783,
+        "lon": 141.3099957
+      },
+      "nodes": [
+        5382541339,
+        5382541338,
+        5382541337,
+        5382541336,
+        5382541339
+      ],
+      "tags": {
+        "building": "supermarket",
+        "name": "マエダストア 五戸店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 561029978,
+      "center": {
+        "lat": 40.5113737,
+        "lon": 141.5371772
+      },
+      "nodes": [
+        5410093714,
+        5410093713,
+        5410093712,
+        5410093711,
+        5410093714
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "レモンマートやまむら湊高台店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 561029979,
+      "center": {
+        "lat": 40.509007,
+        "lon": 141.5429966
+      },
+      "nodes": [
+        5410093740,
+        5410093736,
+        5410093718,
+        5410093723,
+        5410093724,
+        5410093735,
+        5410093715,
+        5410093734,
+        5410093733,
+        5410093716,
+        5410093737,
+        5410093717,
+        5410093738,
+        5410093739,
+        5410093740
+      ],
+      "tags": {
+        "branch": "湊高台店",
+        "building": "yes",
+        "check_date": "2024-05-12",
+        "name": "ユニバース湊高台店",
+        "opening_hours": "09:00-24:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 565812215,
+      "center": {
+        "lat": 40.6761702,
+        "lon": 141.364705
+      },
+      "nodes": [
+        5448248039,
+        5448248038,
+        5448248037,
+        5448248036,
+        5448248039
+      ],
+      "tags": {
+        "branch": "松園町店",
+        "building": "yes",
+        "name": "ユニバース",
+        "name:en": "Universe",
+        "name:ja": "ユニバース",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 573641414,
+      "center": {
+        "lat": 40.4535039,
+        "lon": 141.6184351
+      },
+      "nodes": [
+        5508687080,
+        5508687113,
+        5508687112,
+        5508687111,
+        5508687110,
+        5508687079,
+        5508687109,
+        5508687108,
+        5508687080
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ユニバース 階上店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 589480813,
+      "center": {
+        "lat": 40.8092228,
+        "lon": 140.4467224
+      },
+      "nodes": [
+        5628916568,
+        5628916565,
+        5628916566,
+        5628916567,
+        5628916568
+      ],
+      "tags": {
+        "addr:block_number": "1",
+        "addr:city": "五所川原市",
+        "addr:housenumber": "6",
+        "addr:postcode": "037-0063",
+        "addr:province": "青森県",
+        "addr:quarter": "大町",
+        "building": "yes",
+        "name": "わによし",
+        "opening_hours": "Mo-Sa 08:30-17:30",
+        "phone": "0173-34-2141",
+        "shop": "supermarket",
+        "website": "https://twany.cloud-line.com/gaiyou/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 589868970,
+      "center": {
+        "lat": 40.5228422,
+        "lon": 140.5676617
+      },
+      "nodes": [
+        5632634542,
+        5632634532,
+        5632634535,
+        5632634537,
+        5632634538,
+        5632634533,
+        5632634534,
+        5632634531,
+        5632634541,
+        5632634540,
+        5632634536,
+        5632634539,
+        5632634542
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 610211791,
+      "center": {
+        "lat": 40.575602,
+        "lon": 140.4924692
+      },
+      "nodes": [
+        5779202340,
+        5779202341,
+        5779202342,
+        5779202343,
+        5779202344,
+        5779202345,
+        5779202346,
+        5779202347,
+        5779202348,
+        5779202349,
+        5966350299,
+        5966350300,
+        5779202340
+      ],
+      "tags": {
+        "addr:block_number": "4",
+        "addr:city": "弘前市",
+        "addr:housenumber": "5",
+        "addr:neighbourhood": "1",
+        "addr:postcode": "036-8164",
+        "addr:province": "青森県",
+        "addr:quarter": "大字泉野",
+        "branch": "安原店",
+        "brand": "マックスバリュ",
+        "brand:en": "Maxvalu Tokai",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q1960109",
+        "brand:wikipedia": "en:MaxValu",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "Maxvalu Tokai",
+        "name:ja": "マックスバリュ",
+        "opening_hours": "24/7",
+        "phone": "0172-89-2620",
+        "shop": "supermarket",
+        "website": "http://www.mv-tohoku.co.jp/shop/yasuhara/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 622939402,
+      "center": {
+        "lat": 40.7735723,
+        "lon": 141.2107215
+      },
+      "nodes": [
+        5883433878,
+        5883434102,
+        5883434100,
+        7769649098,
+        7769649097,
+        5883433884,
+        5883434086,
+        5883433879,
+        5883433878
+      ],
+      "tags": {
+        "building": "supermarket",
+        "name": "マエダストア乙供店",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "shop": "supermarket",
+        "toilets": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 626351561,
+      "center": {
+        "lat": 40.782527,
+        "lon": 141.2270593
+      },
+      "nodes": [
+        5913250183,
+        5913250172,
+        5913250991,
+        5913250168,
+        5913250173,
+        5913250183
+      ],
+      "tags": {
+        "name": "あぐりサービス（株）Aコープとうほく店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 634752423,
+      "center": {
+        "lat": 40.6222916,
+        "lon": 140.4842996
+      },
+      "nodes": [
+        5989202438,
+        7156484710,
+        7156484709,
+        7156484708,
+        7156484707,
+        7156484706,
+        7156484705,
+        5989202439,
+        5989202440,
+        7156484704,
+        7156484715,
+        7156484714,
+        7156484713,
+        5989202441,
+        7156484712,
+        7156484711,
+        5989202442,
+        5989202443,
+        5989202438
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ユニバース 堅田店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 640177783,
+      "center": {
+        "lat": 40.6069278,
+        "lon": 140.4572005
+      },
+      "nodes": [
+        6031045030,
+        6031045031,
+        6031045032,
+        6031045033,
+        6031045034,
+        7204858159,
+        7204858158,
+        6031045035,
+        7204858161,
+        7204858160,
+        6031045036,
+        6031045037,
+        6031045030
+      ],
+      "tags": {
+        "branch": "下町店",
+        "building": "yes",
+        "name": "さとちょう",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 644421317,
+      "center": {
+        "lat": 40.6878697,
+        "lon": 141.389897
+      },
+      "nodes": [
+        6060774761,
+        6060774997,
+        6060774999,
+        6060774998,
+        6060774995,
+        6060774996,
+        6060774761
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マエダストア",
+        "name:en": "Maeda Store",
+        "payment:credit_cards": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 650097076,
+      "center": {
+        "lat": 40.8261017,
+        "lon": 140.687474
+      },
+      "nodes": [
+        6100151905,
+        6100151887,
+        6100151902,
+        6100151901,
+        6100151903,
+        6100151889,
+        6100151890,
+        6100151891,
+        6100151892,
+        6100151888,
+        6100151904,
+        6100151900,
+        6100151905
+      ],
+      "tags": {
+        "branch": "新城店",
+        "building": "yes",
+        "name": "青森県民生協",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 651526478,
+      "center": {
+        "lat": 40.8316285,
+        "lon": 140.787869
+      },
+      "nodes": [
+        6109383497,
+        6109383498,
+        6109383499,
+        6109383493,
+        6109383494,
+        6109383497
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マエダストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 651699659,
+      "center": {
+        "lat": 40.7956567,
+        "lon": 140.7662711
+      },
+      "nodes": [
+        6110835439,
+        6110835442,
+        6110835433,
+        6110835434,
+        6110830303,
+        6110830301,
+        6110835432,
+        6110835431,
+        6110830302,
+        6110835438,
+        6110835441,
+        6110830300,
+        6110835429,
+        6110835430,
+        6110835440,
+        6110830304,
+        6110835435,
+        6110830298,
+        6110835437,
+        6110835436,
+        6110835439
+      ],
+      "tags": {
+        "branch": "筒井店",
+        "building": "yes",
+        "name": "ユニバース",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 651989059,
+      "center": {
+        "lat": 40.8205014,
+        "lon": 140.4453264
+      },
+      "nodes": [
+        6113216432,
+        6113217687,
+        8305072937,
+        8305072938,
+        8305072939,
+        8305072936,
+        8305072933,
+        8305072934,
+        8305072935,
+        8305072932,
+        6113217686,
+        6113216420,
+        8305072931,
+        8305072930,
+        6113217678,
+        8305072929,
+        6113217680,
+        6113217681,
+        6113217679,
+        6113216429,
+        6113217689,
+        6113217688,
+        8305072941,
+        8305072940,
+        6113216432
+      ],
+      "tags": {
+        "addr:city": "五所川原市",
+        "addr:housenumber": "171-19",
+        "addr:neighbourhood": "字幾世森",
+        "addr:postcode": "037-0065",
+        "addr:province": "青森県",
+        "branch": "五所川原新宮店",
+        "brand": "トライアル",
+        "brand:en": "Trial",
+        "brand:ja": "トライアル",
+        "brand:wikidata": "Q11321723",
+        "building": "yes",
+        "name": "トライアル",
+        "name:en": "Trial",
+        "name:ja": "トライアル",
+        "opening_hours": "09:00-21:00",
+        "phone": "+81 173 38 5656",
+        "shop": "supermarket",
+        "type": "multipolygon",
+        "website": "https://www.trial-net.co.jp/shops/605/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 651989061,
+      "center": {
+        "lat": 40.8207436,
+        "lon": 140.4462258
+      },
+      "nodes": [
+        6113217705,
+        6113217704,
+        6113217703,
+        6113217694,
+        6113217695,
+        6113216448,
+        6113217701,
+        6113216449,
+        6113217697,
+        6113217696,
+        6113216442,
+        6113216447,
+        6113217698,
+        6113217699,
+        6113216451,
+        6113217702,
+        6113217705
+      ],
+      "tags": {
+        "addr:block_number": "175",
+        "addr:city": "五所川原市",
+        "addr:housenumber": "1",
+        "addr:postcode": "037-0065",
+        "addr:province": "青森県",
+        "addr:quarter": "幾世森",
+        "building": "yes",
+        "name": "薬王堂　五所川原新宮店",
+        "opening_hours": "08:00-21:45",
+        "payment:cash": "yes",
+        "phone": "0173-33-0890",
+        "shop": "supermarket",
+        "source": "survey",
+        "website": "https://www.yakuodo.co.jp/shop/shopdetail.html?id=107"
+      }
+    },
+    {
+      "type": "way",
+      "id": 651989072,
+      "center": {
+        "lat": 40.8013185,
+        "lon": 140.4631253
+      },
+      "nodes": [
+        6113216529,
+        6113217891,
+        6113217892,
+        6113217894,
+        6113217893,
+        6113217890,
+        6113217896,
+        6113217895,
+        6113216533,
+        6113217889,
+        6113216529
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ユニバース",
+        "shop": "supermarket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "way",
+      "id": 651989184,
+      "center": {
+        "lat": 40.7975104,
+        "lon": 140.4612914
+      },
+      "nodes": [
+        6113211083,
+        6113218760,
+        6113218761,
+        6113216288,
+        6113218763,
+        6113218762,
+        6113218765,
+        6113218764,
+        6113216287,
+        6113218759,
+        6113211083
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "コメリパワー",
+        "shop": "supermarket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "way",
+      "id": 652859431,
+      "center": {
+        "lat": 40.8006313,
+        "lon": 140.4143711
+      },
+      "nodes": [
+        6119399785,
+        6119400245,
+        6119399799,
+        6119399800,
+        6119400249,
+        6119399795,
+        6119400246,
+        6119400247,
+        6119400250,
+        6119400251,
+        6119400254,
+        6119400248,
+        6119400244,
+        6119400242,
+        6119400253,
+        6119400252,
+        6119400241,
+        6119400243,
+        6119399785
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "カブセンター",
+        "opening_hours": "Mo-Su 09:00-20:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 654257396,
+      "center": {
+        "lat": 40.7813034,
+        "lon": 140.7837341
+      },
+      "nodes": [
+        6130814997,
+        6130816616,
+        6130816617,
+        6130814996,
+        6130816611,
+        6130816612,
+        6130814995,
+        6130816618,
+        6130816615,
+        6130816613,
+        6130816614,
+        6130814997
+      ],
+      "tags": {
+        "branch": "幸畑店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 654467166,
+      "center": {
+        "lat": 40.7984577,
+        "lon": 140.8037158
+      },
+      "nodes": [
+        6132608546,
+        6132608545,
+        6132606769,
+        6132608541,
+        6132608542,
+        6132606770,
+        6132608544,
+        6132608543,
+        6132608546
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "スーパーふじわら",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 663821036,
+      "center": {
+        "lat": 40.6025586,
+        "lon": 140.51487
+      },
+      "nodes": [
+        6213409590,
+        6213409586,
+        7146369788,
+        7146369787,
+        6213409591,
+        4239200691,
+        6213409590
+      ],
+      "tags": {
+        "branch": "城東店",
+        "building": "yes",
+        "name": "ユニバース",
+        "opening_hours": "09:00-22:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 664096952,
+      "center": {
+        "lat": 40.5985013,
+        "lon": 140.5091433
+      },
+      "nodes": [
+        4239197795,
+        6215873852,
+        6215873853,
+        6215873854,
+        4239197795
+      ],
+      "tags": {
+        "branch": "弘前店",
+        "building": "yes",
+        "name": "カブセンター",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 683318162,
+      "center": {
+        "lat": 41.0485836,
+        "lon": 140.632494
+      },
+      "nodes": [
+        6400250873,
+        6400250874,
+        6400250875,
+        6400250876,
+        6400250877,
+        6400250878,
+        6400250879,
+        6400250880,
+        6400250873
+      ],
+      "tags": {
+        "branch": "蟹田店",
+        "building": "yes",
+        "name": "マエダストア",
+        "shop": "supermarket",
+        "website": "https://www.i-maeda.co.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 695006692,
+      "center": {
+        "lat": 40.8249184,
+        "lon": 140.7751657
+      },
+      "nodes": [
+        6528403172,
+        11032130027,
+        11032130030,
+        11032130029,
+        11032130028,
+        6528431802,
+        11032130026,
+        11032130025,
+        11032130035,
+        11032130036,
+        11032130037,
+        11032130034,
+        11032130032,
+        11032130033,
+        11032130031,
+        6528431799,
+        6528403168,
+        6528431805,
+        6528431806,
+        6528431807,
+        6528403172
+      ],
+      "tags": {
+        "addr:block_number": "23",
+        "addr:city": "青森市",
+        "addr:housenumber": "10",
+        "addr:neighbourhood": "花園二丁目",
+        "addr:postcode": "030-0966",
+        "addr:province": "青森県",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "opening_hours": "Mo-Su 08:00-21:00",
+        "operator": "イオン東北",
+        "phone": "+81 17 743 8885",
+        "shop": "supermarket",
+        "website": "https://aeontohoku.co.jp/stores/namiuchi"
+      }
+    },
+    {
+      "type": "way",
+      "id": 714742676,
+      "center": {
+        "lat": 40.5049779,
+        "lon": 141.4832323
+      },
+      "nodes": [
+        6718348259,
+        6718348254,
+        6718348255,
+        6718348252,
+        6718348260,
+        6718348261,
+        6718348253,
+        6718348257,
+        6718348256,
+        6718348258,
+        6718348259
+      ],
+      "tags": {
+        "building": "yes",
+        "check_date": "2024-05-12",
+        "name": "マックスバリュー八戸上組",
+        "opening_hours": "08:00-23:00",
+        "phone": "+81 178223455",
+        "shop": "supermarket",
+        "toilets": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 735224086,
+      "center": {
+        "lat": 40.530944,
+        "lon": 141.5570881
+      },
+      "nodes": [
+        6124666554,
+        6124666559,
+        6124666560,
+        6124663603,
+        6124666553,
+        6124666552,
+        6124663604,
+        6124666557,
+        6124666555,
+        6124666554
+      ],
+      "tags": {
+        "branch": "鮫店",
+        "building": "yes",
+        "name": "マエダストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 752983402,
+      "center": {
+        "lat": 40.6232572,
+        "lon": 141.2144852
+      },
+      "nodes": [
+        7035863725,
+        7035863722,
+        7035863723,
+        7035863719,
+        7035863724,
+        7035863725
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ユニバース 十和田東店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 757781294,
+      "center": {
+        "lat": 40.5117653,
+        "lon": 141.4725931
+      },
+      "nodes": [
+        9610344590,
+        7076983420,
+        7076983419,
+        9610344592,
+        9610344593,
+        9610344591,
+        9610344594,
+        9610344595,
+        9610344590
+      ],
+      "tags": {
+        "building": "retail",
+        "check_date": "2024-05-13",
+        "name": "マエダストア 売市店",
+        "opening_hours": "09:00-22:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "phone": "+81 178471926",
+        "shop": "supermarket",
+        "website": "https://i-maeda.jp/store.html?id=35",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 759381870,
+      "center": {
+        "lat": 40.5876789,
+        "lon": 140.4958558
+      },
+      "nodes": [
+        7093230275,
+        7093230276,
+        7093230277,
+        7093230278,
+        10839200665,
+        10839200666,
+        7093230279,
+        7093230280,
+        7093230281,
+        7093230282,
+        7093230283,
+        7093230284,
+        10839200664,
+        10839200663,
+        7093230275
+      ],
+      "tags": {
+        "addr:block_number": "4",
+        "addr:city": "弘前市",
+        "addr:housenumber": "13",
+        "addr:neighbourhood": "4",
+        "addr:postcode": "036-8102",
+        "addr:province": "青森県",
+        "addr:quarter": "小比内",
+        "branch": "小比内店",
+        "building": "yes",
+        "name": "エコさとちょう",
+        "opening_hours": "24/7",
+        "phone": "0172-27-0808",
+        "shop": "supermarket",
+        "wikidata": "Q11384523",
+        "wikipedia": "ja:佐藤長 (スーパーマーケット)"
+      }
+    },
+    {
+      "type": "way",
+      "id": 770859533,
+      "center": {
+        "lat": 40.4196612,
+        "lon": 141.4916526
+      },
+      "nodes": [
+        7195255586,
+        7195255585,
+        7195255584,
+        7195255583,
+        7195255586
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "さかもとストア",
+        "shop": "supermarket",
+        "source": "GSImaps/std"
+      }
+    },
+    {
+      "type": "way",
+      "id": 772410985,
+      "center": {
+        "lat": 40.5931412,
+        "lon": 140.46326
+      },
+      "nodes": [
+        7211554825,
+        7211554826,
+        7211554827,
+        7211554829,
+        7211554832,
+        7211554831,
+        7211554830,
+        7211554828,
+        7211554825
+      ],
+      "tags": {
+        "addr:block_number": "11",
+        "addr:city": "弘前市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "2",
+        "addr:postcode": "036-8227",
+        "addr:province": "青森県",
+        "addr:quarter": "大字桔梗野",
+        "branch": "桔梗野店",
+        "building": "yes",
+        "name": "Uマート",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "phone": "0172-31-2727",
+        "shop": "supermarket",
+        "website": "https://www.universe.co.jp/store/49.html"
+      }
+    },
+    {
+      "type": "way",
+      "id": 797595466,
+      "center": {
+        "lat": 40.6263122,
+        "lon": 140.4865188
+      },
+      "nodes": [
+        7459557849,
+        7459557850,
+        7459557851,
+        7459557852,
+        7459557853,
+        7459557854,
+        7459557849
+      ],
+      "tags": {
+        "addr:block_number": "2",
+        "addr:city": "弘前市",
+        "addr:housenumber": "8",
+        "addr:neighbourhood": "3",
+        "addr:postcode": "036-8061",
+        "addr:province": "青森県",
+        "addr:quarter": "大字神田",
+        "branch": "神田店",
+        "building": "yes",
+        "fax": "0172-31-0203",
+        "name": "カブセンター",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "operator": "紅屋商事株式会社",
+        "phone": "0172-31-0201",
+        "shop": "supermarket",
+        "website": "https://www.beny.co.jp/store_info/hirosaki/cub_kanda/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 803350432,
+      "center": {
+        "lat": 40.7749393,
+        "lon": 140.2225831
+      },
+      "nodes": [
+        7514765669,
+        7514765666,
+        9174829839,
+        9174829838,
+        7514765667,
+        7514765668,
+        7514765669
+      ],
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "retail",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "operator": "イオン東北",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 804886594,
+      "center": {
+        "lat": 41.2855726,
+        "lon": 141.2102048
+      },
+      "nodes": [
+        7528775147,
+        7528789191,
+        7528789192,
+        7528789190,
+        7528775148,
+        7528789189,
+        7528789188,
+        7528789187,
+        7528775147
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "Maeda",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 813376186,
+      "center": {
+        "lat": 41.2962235,
+        "lon": 141.1863062
+      },
+      "nodes": [
+        7597772124,
+        7597772114,
+        7597772116,
+        7597772117,
+        7597772115,
+        7597772113,
+        7597772119,
+        7597772118,
+        7597772112,
+        7597772120,
+        7597772110,
+        7597772123,
+        3092300105,
+        7597772111,
+        7597772122,
+        7597772121,
+        7597772124
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "ファミリーマートさとう",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 820361335,
+      "center": {
+        "lat": 40.5763125,
+        "lon": 140.4777959
+      },
+      "nodes": [
+        7660209306,
+        7660209307,
+        7660209308,
+        7660209309,
+        7660209310,
+        7660209311,
+        7660209312,
+        7660209306
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ユニバース",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 826552214,
+      "center": {
+        "lat": 40.6219172,
+        "lon": 140.4575536
+      },
+      "nodes": [
+        7717274418,
+        7717274419,
+        7717274420,
+        7717274421,
+        7717274422,
+        7717274423,
+        7717274424,
+        7717274418
+      ],
+      "tags": {
+        "addr:block_number": "1",
+        "addr:city": "弘前市",
+        "addr:housenumber": "3",
+        "addr:neighbourhood": "3",
+        "addr:postcode": "036-8324",
+        "addr:province": "青森県",
+        "addr:quarter": "大字浜の町西",
+        "branch": "浜の町店",
+        "building": "yes",
+        "name": "さとちょう",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "operator": "株式会社佐藤長",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 867901693,
+      "center": {
+        "lat": 40.5750966,
+        "lon": 140.4773461
+      },
+      "nodes": [
+        8089869046,
+        8089869047,
+        8089869050,
+        8089869052,
+        8089869053,
+        8089869051,
+        8089869048,
+        8089869049,
+        8089869046
+      ],
+      "tags": {
+        "addr:block_number": "4",
+        "addr:city": "弘前市",
+        "addr:housenumber": "9",
+        "addr:neighbourhood": "4",
+        "addr:postcode": "036-8155",
+        "addr:province": "青森県",
+        "addr:quarter": "大字中野",
+        "branch": "松原店",
+        "building": "yes",
+        "fax": "0172-87-4446",
+        "name": "ベニーマート",
+        "opening_hours": "Mo-Su 09:00-21:45",
+        "operator": "紅屋商事株式会社",
+        "phone": "0172-87-4451",
+        "shop": "supermarket",
+        "website": "https://www.beny.co.jp/store_info/hirosaki/benymart_matsubara/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 871569103,
+      "center": {
+        "lat": 40.8084683,
+        "lon": 140.4527738
+      },
+      "nodes": [
+        8118175996,
+        8118175997,
+        8118175998,
+        10866631733,
+        10866631734,
+        10866631736,
+        10866631735,
+        8118175999,
+        8118175996
+      ],
+      "tags": {
+        "addr:block_number": "547",
+        "addr:city": "五所川原市",
+        "addr:housenumber": "5",
+        "addr:postcode": "037-0016",
+        "addr:province": "青森県",
+        "addr:quarter": "一ツ谷",
+        "branch": "五所川原北店",
+        "building": "yes",
+        "name": "マエダストア",
+        "opening_hours": "09:00-22:00",
+        "phone": "0173-38-1233",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 871775508,
+      "center": {
+        "lat": 40.807597,
+        "lon": 140.4531631
+      },
+      "nodes": [
+        8119897019,
+        8119897020,
+        8119897021,
+        8119897022,
+        8173133336,
+        8119897023,
+        8119897024,
+        8119897025,
+        8119897026,
+        8119897027,
+        8119897028,
+        8119897029,
+        8119897030,
+        8119897031,
+        8119897032,
+        8119897019
+      ],
+      "tags": {
+        "addr:block_number": "519",
+        "addr:city": "五所川原市",
+        "addr:housenumber": "1",
+        "addr:province": "青森県",
+        "addr:quarter": "字鎌谷町",
+        "branch": "松島店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "brand:wikipedia": "en:MaxValu",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "opening_hours": "07:00-23:30",
+        "phone": "0173-34-9337",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 875354889,
+      "center": {
+        "lat": 40.8139902,
+        "lon": 140.4468918
+      },
+      "nodes": [
+        8147791198,
+        8147791199,
+        8147791200,
+        8147791201,
+        8305023754,
+        8147791202,
+        8147791203,
+        8305023758,
+        8147791204,
+        8305023759,
+        8147791205,
+        8147791207,
+        8147791208,
+        8305023760,
+        8147791209,
+        8147791210,
+        8147791198
+      ],
+      "tags": {
+        "addr:block_number": "34",
+        "addr:city": "五所川原市",
+        "addr:postcode": "037-0067",
+        "addr:province": "青森県",
+        "addr:quarter": "字敷島町",
+        "building": "yes",
+        "name": "成長ストア",
+        "opening_hours": "Mo-Su 08:00-18:00",
+        "phone": "0173-34-2867",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 878346178,
+      "center": {
+        "lat": 40.7867741,
+        "lon": 140.4660253
+      },
+      "nodes": [
+        8171381987,
+        8171381986,
+        8171381985,
+        8171381984,
+        8171381983,
+        8171381982,
+        8171381981,
+        8171381980,
+        8171381979,
+        8171381978,
+        8171381987
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マエダ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 878346223,
+      "center": {
+        "lat": 40.9038398,
+        "lon": 140.4538898
+      },
+      "nodes": [
+        8171405126,
+        8171405125,
+        8171405124,
+        8171405123,
+        8171405126
+      ],
+      "tags": {
+        "addr:city": "五所川原市",
+        "addr:housenumber": "446-5",
+        "addr:neighbourhood": "朝日山",
+        "addr:postcode": "037-0202",
+        "addr:province": "青森県",
+        "addr:quarter": "金木町",
+        "branch": "金木店",
+        "brand": "トライアル",
+        "brand:en": "Trial",
+        "brand:ja": "トライアル",
+        "brand:wikidata": "Q11321723",
+        "building": "yes",
+        "name": "トライアル",
+        "name:en": "Trial",
+        "name:ja": "トライアル",
+        "phone": "+81 173 54 2570",
+        "shop": "supermarket",
+        "website": "https://www.trial-net.co.jp/shops/606/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 880064821,
+      "center": {
+        "lat": 40.6571585,
+        "lon": 140.5014614
+      },
+      "nodes": [
+        8186355811,
+        8186355879,
+        8186355664,
+        8186355736,
+        11099715266,
+        11099715267,
+        11099715268,
+        11099715273,
+        8186355646,
+        11099715274,
+        8186355734,
+        8186355798,
+        8186355944,
+        8186355663,
+        8186355801,
+        8186355870,
+        11099715269,
+        11099715270,
+        11099715271,
+        11099715272,
+        8186355653,
+        8186355727,
+        8186355811
+      ],
+      "tags": {
+        "addr:block_number": "7",
+        "addr:city": "藤崎町",
+        "addr:county": "南津軽郡",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "一丁目",
+        "addr:postcode": "038-3803",
+        "addr:province": "青森県",
+        "addr:quarter": "大字西豊田",
+        "branch": "藤崎店",
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "building": "yes",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "operator": "イオン東北",
+        "phone": "+81 172 75 3300",
+        "shop": "supermarket",
+        "website": "https://www.aeon.com/store/%E3%82%A4%E3%82%AA%E3%83%B3/%E3%82%A4%E3%82%AA%E3%83%B3%E8%97%A4%E5%B4%8E%E5%BA%97/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 880064836,
+      "center": {
+        "lat": 40.6302614,
+        "lon": 140.454995
+      },
+      "nodes": [
+        8186355956,
+        8186355747,
+        8186355819,
+        8186355739,
+        8186355750,
+        8186355899,
+        8186355964,
+        8186355813,
+        8186355882,
+        8186355834,
+        8186355907,
+        8186355689,
+        8186355762,
+        8186355961,
+        8186355674,
+        8186355824,
+        8186355896,
+        8186355678,
+        8186355956
+      ],
+      "tags": {
+        "branch": "弘前石渡店",
+        "brand": "マックスバリュ",
+        "brand:en": "Maxvalu Tokai",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q1960109",
+        "brand:wikipedia": "en:MaxValu",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "Maxvalu Tokai",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 884241033,
+      "center": {
+        "lat": 40.8098211,
+        "lon": 140.4457253
+      },
+      "nodes": [
+        8223353903,
+        8223353904,
+        8223353905,
+        8223353906,
+        8223353907,
+        8223353908,
+        8223353910,
+        8223353911,
+        8223353903
+      ],
+      "tags": {
+        "addr:block_number": "34",
+        "addr:city": "五所川原市",
+        "addr:housenumber": "4",
+        "addr:postcode": "037-0063",
+        "addr:province": "青森県",
+        "addr:quarter": "大町",
+        "building": "yes",
+        "name": "五所川原駅前市場",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 954677767,
+      "center": {
+        "lat": 40.667044,
+        "lon": 140.5999848
+      },
+      "nodes": [
+        8836415479,
+        8836415478,
+        8836415477,
+        8836415476,
+        8836415475,
+        8836415474,
+        8836415473,
+        8836415472,
+        8836415479
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ユニバース",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 958818174,
+      "center": {
+        "lat": 40.8282573,
+        "lon": 140.6764053
+      },
+      "nodes": [
+        8871916883,
+        8871916882,
+        8871916881,
+        8871916880,
+        8871916879,
+        8871916878,
+        8871916883
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マエダストア 新城店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 964598166,
+      "center": {
+        "lat": 40.7470596,
+        "lon": 140.4271245
+      },
+      "nodes": [
+        8922507766,
+        8922507767,
+        8922507768,
+        8922507769,
+        8922507766
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マエダ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 966206916,
+      "center": {
+        "lat": 40.7567944,
+        "lon": 140.4330944
+      },
+      "nodes": [
+        8939057940,
+        8939057941,
+        8939057942,
+        8939057943,
+        8939057944,
+        8939057945,
+        8939057940
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "スーパー玉井",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 966896470,
+      "center": {
+        "lat": 40.781338,
+        "lon": 140.4676799
+      },
+      "nodes": [
+        8945533521,
+        8945533522,
+        8945533523,
+        8945533524,
+        8945533525,
+        8945533521
+      ],
+      "tags": {
+        "addr:city": "五所川原市",
+        "addr:housenumber": "10-6",
+        "addr:neighbourhood": "字榊森",
+        "addr:postcode": "037-0023",
+        "addr:province": "青森県",
+        "addr:quarter": "大字広田",
+        "branch": "広田店",
+        "brand": "トライアル",
+        "brand:en": "Trial",
+        "brand:ja": "トライアル",
+        "brand:wikidata": "Q11321723",
+        "building": "yes",
+        "name": "トライアル",
+        "name:en": "Trial",
+        "name:ja": "トライアル",
+        "phone": "+81 173 38 1266",
+        "shop": "supermarket",
+        "website": "https://www.trial-net.co.jp/shops/604/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 968091825,
+      "center": {
+        "lat": 40.7998408,
+        "lon": 140.4659745
+      },
+      "nodes": [
+        8956368753,
+        11555940176,
+        11555940179,
+        11555940178,
+        11555940177,
+        8956368754,
+        8956368755,
+        11555940175,
+        11555940174,
+        11555940173,
+        11555940172,
+        11555890167,
+        11555890166,
+        11555940170,
+        11555940171,
+        11555940169,
+        11555890168,
+        8956368756,
+        8956368753
+      ],
+      "tags": {
+        "addr:block_number": "692",
+        "addr:city": "五所川原市",
+        "addr:housenumber": "2",
+        "addr:neighbourhood": "字藤巻",
+        "addr:postcode": "037-0004",
+        "addr:province": "青森県",
+        "addr:quarter": "大字唐笠柳",
+        "building": "yes",
+        "name": "カブセンター 五所川原店",
+        "opening_hours": "Mo-Su 09:00-21:30",
+        "phone": "0173-38-4500",
+        "shop": "supermarket",
+        "website": "https://www.beny.co.jp/store_info/goshogawara/cubcenter-goshogawara/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 968681929,
+      "center": {
+        "lat": 40.7066928,
+        "lon": 140.4549332
+      },
+      "nodes": [
+        8962072374,
+        8962072375,
+        8962072376,
+        8962072377,
+        8962072378,
+        8962072379,
+        8962072374
+      ],
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "Maxvalu Tokai",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q1960109",
+        "brand:wikipedia": "en:MaxValu",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "Maxvalu Tokai",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 970117308,
+      "center": {
+        "lat": 40.8059372,
+        "lon": 140.3818478
+      },
+      "nodes": [
+        8977410483,
+        8977410482,
+        8977410481,
+        8977410480,
+        8977410479,
+        8977410478,
+        8977410477,
+        8977410476,
+        8977410475,
+        8977410474,
+        8977410473,
+        8977410472,
+        8977410471,
+        8977410470,
+        8977410483
+      ],
+      "tags": {
+        "name": "さとちょう",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 971576890,
+      "center": {
+        "lat": 40.8141214,
+        "lon": 140.3937633
+      },
+      "nodes": [
+        8992311995,
+        11593715554,
+        11593715555,
+        8992311996,
+        8992311997,
+        11593715553,
+        11593715552,
+        8992311998,
+        11593715551,
+        11593715550,
+        8992311999,
+        8992312000,
+        8992311995
+      ],
+      "tags": {
+        "addr:city": "つがる市",
+        "addr:housenumber": "181-1",
+        "addr:neighbourhood": "木造赤根",
+        "addr:postcode": "038-3142",
+        "addr:province": "青森県",
+        "brand": "マエダ",
+        "brand:en": "Maeda",
+        "brand:ja": "マエダ",
+        "brand:wikidata": "Q11339896",
+        "building": "retail",
+        "name": "マエダストア",
+        "name:en": "Maeda",
+        "name:ja": "マエダストア",
+        "phone": "+81 173 42 5050",
+        "shop": "supermarket",
+        "website": "https://i-maeda.jp/store.html?id=19"
+      }
+    },
+    {
+      "type": "way",
+      "id": 986961137,
+      "center": {
+        "lat": 40.6560011,
+        "lon": 139.9388419
+      },
+      "nodes": [
+        9122714633,
+        9122714632,
+        9122714621,
+        9122714616,
+        9122714615,
+        9122714620,
+        9122714619,
+        9122714614,
+        9122714613,
+        9122714618,
+        9122714617,
+        9122714612,
+        9122714631,
+        9122714630,
+        9122714629,
+        9122714628,
+        9122714627,
+        9122714626,
+        9122714625,
+        9122714623,
+        9122714622,
+        9122714624,
+        9122714633
+      ],
+      "tags": {
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "operator": "イオン東北",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1004428678,
+      "center": {
+        "lat": 40.6607549,
+        "lon": 140.4350899
+      },
+      "nodes": [
+        9267480367,
+        9267480366,
+        9267480365,
+        9267480364,
+        9267480363,
+        9267480362,
+        9267480367
+      ],
+      "tags": {
+        "branch": "高杉店",
+        "building": "retail",
+        "name": "さとちょう",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1008888669,
+      "center": {
+        "lat": 40.5877966,
+        "lon": 140.4135084
+      },
+      "nodes": [
+        9308771988,
+        9308771987,
+        9308771986,
+        9308771985,
+        9308771984,
+        9308771983,
+        9308771982,
+        9308771981,
+        9308771980,
+        9308771979,
+        9308771978,
+        9308771977,
+        9308771988
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "さとちょう",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1017486264,
+      "center": {
+        "lat": 40.4233402,
+        "lon": 141.3344171
+      },
+      "nodes": [
+        11882800522,
+        9384908106,
+        9384908104,
+        9384908107,
+        9384908108,
+        9384908100,
+        9384908103,
+        9384908102,
+        11882800522
+      ],
+      "tags": {
+        "branch": "名久井店",
+        "building": "supermarket",
+        "check_date": "2024-05-03",
+        "name": "マエダストア",
+        "opening_hours": "09:00-21:00",
+        "phone": "+81 178807010",
+        "shop": "supermarket",
+        "website": "https://i-maeda.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1026025538,
+      "center": {
+        "lat": 40.832989,
+        "lon": 140.7026238
+      },
+      "nodes": [
+        9459753082,
+        4373883014,
+        9459781375,
+        4373883015,
+        4373883016,
+        9459673321,
+        4373883017,
+        9459753081,
+        9459753082
+      ],
+      "tags": {
+        "addr:block_number": "3",
+        "addr:city": "青森市",
+        "addr:housenumber": "19",
+        "addr:neighbourhood": "三好二丁目",
+        "addr:postcode": "038-0006",
+        "addr:province": "青森県",
+        "branch": "ガーラタウン青森店",
+        "brand": "ドン・キホーテ",
+        "brand:en": "Don Quijote",
+        "brand:ja": "ドン・キホーテ",
+        "brand:wikidata": "Q1185381",
+        "building": "retail",
+        "name": "MEGAドン・キホーテ",
+        "name:en": "MEGA Don Quijote",
+        "name:ja": "MEGAドン・キホーテ",
+        "opening_hours": "24/7",
+        "phone": "+81 570 008 252",
+        "shop": "supermarket",
+        "short_name": "MEGAドンキ",
+        "short_name:en": "MegaDonki",
+        "short_name:ja": "MEGAドンキ",
+        "website": "https://www.donki.com/store/shop_detail.php?add=1&shop_id=675&pref=2&area=&pre=shop_list&parts=menu_detail"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1046219560,
+      "center": {
+        "lat": 40.5912266,
+        "lon": 140.5662721
+      },
+      "nodes": [
+        9621271383,
+        11500529104,
+        11500529097,
+        9621271380,
+        9621271378,
+        11500529098,
+        3713061775,
+        3713061780,
+        11500529101,
+        11500529103,
+        11500529102,
+        11500529100,
+        9621271383
+      ],
+      "tags": {
+        "addr:city": "平川市",
+        "addr:housenumber": "193-1",
+        "addr:neighbourhood": "上松岡",
+        "addr:postcode": "036-0111",
+        "addr:province": "青森県",
+        "addr:quarter": "小和森",
+        "branch": "平賀店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "retail",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "operator": "イオン東北",
+        "phone": "+81 172 44 0198",
+        "shop": "supermarket",
+        "website": "https://aeontohoku.co.jp/stores/hiraka"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1075556847,
+      "center": {
+        "lat": 40.8203399,
+        "lon": 140.7551075
+      },
+      "nodes": [
+        9864103461,
+        9864103462,
+        9864103463,
+        9864103464,
+        9864103465,
+        9864103466,
+        9864103461
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "スーパートーエー 平和公園通り店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1105417841,
+      "center": {
+        "lat": 40.6372981,
+        "lon": 140.5983612
+      },
+      "nodes": [
+        10115720630,
+        10115720629,
+        10115720627,
+        10115720626,
+        10115720628,
+        10115720625,
+        10115720623,
+        10115720624,
+        10115720630
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ベニーマート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1115981040,
+      "center": {
+        "lat": 40.8193687,
+        "lon": 140.7631623
+      },
+      "nodes": [
+        10207169473,
+        10207169474,
+        10207169475,
+        10207169476,
+        10207169473
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ひとり まるかんのお店",
+        "organic": "only",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1117739021,
+      "center": {
+        "lat": 40.7236393,
+        "lon": 140.5945906
+      },
+      "nodes": [
+        10222913705,
+        10222913716,
+        10222913715,
+        10222913711,
+        10222913712,
+        10222913713,
+        10222913714,
+        10222939717,
+        10222913710,
+        10222913707,
+        10222913708,
+        10222913709,
+        10222913706,
+        10222913704,
+        10222913705
+      ],
+      "tags": {
+        "addr:block_number": "15",
+        "addr:city": "青森市",
+        "addr:neighbourhood": "字松嶋",
+        "addr:province": "青森県",
+        "addr:quarter": "浪岡大字浪岡",
+        "branch": "浪岡店",
+        "building": "yes",
+        "name": "ザ・ビッグ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1120013983,
+      "center": {
+        "lat": 40.5819839,
+        "lon": 140.5680727
+      },
+      "nodes": [
+        10243783001,
+        10243782995,
+        10243782994,
+        10243783005,
+        10243783004,
+        10243783002,
+        10243782999,
+        10243783000,
+        10243782996,
+        10243782993,
+        10243782998,
+        10243782997,
+        10243783001
+      ],
+      "tags": {
+        "addr:city": "平川市",
+        "addr:housenumber": "110-1",
+        "addr:neighbourhood": "東田",
+        "addr:postcode": "036-0104",
+        "addr:province": "青森県",
+        "addr:quarter": "柏木町",
+        "branch": "平賀店",
+        "brand": "トライアル",
+        "brand:en": "Trial",
+        "brand:ja": "トライアル",
+        "brand:wikidata": "Q11321723",
+        "building": "yes",
+        "name": "トライアル",
+        "name:en": "Trial",
+        "name:ja": "トライアル",
+        "operator": "青森トライアル",
+        "phone": "+81 172 44 0422",
+        "shop": "supermarket",
+        "website": "https://www.trial-net.co.jp/shops/624/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1121376322,
+      "center": {
+        "lat": 40.8261182,
+        "lon": 140.7588307
+      },
+      "nodes": [
+        10256902105,
+        10256902106,
+        10256902107,
+        10256902108,
+        10256902109,
+        10256902110,
+        10256902111,
+        10256902112,
+        10256902113,
+        10256902114,
+        10256902105
+      ],
+      "tags": {
+        "branch": "青柳店",
+        "building": "yes",
+        "name": "ユニバース",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1128886914,
+      "center": {
+        "lat": 40.8092111,
+        "lon": 140.7703626
+      },
+      "nodes": [
+        10359781040,
+        10359781041,
+        10359781042,
+        10359781043,
+        10359781040
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "生協さくら館",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1131203147,
+      "center": {
+        "lat": 40.8316974,
+        "lon": 140.7900112
+      },
+      "nodes": [
+        10543464780,
+        10543464781,
+        10543464782,
+        10543464783,
+        10543464784,
+        10543464785,
+        12049470207,
+        12049470206,
+        10543464786,
+        10543464787,
+        10543464780
+      ],
+      "tags": {
+        "branch": "八重田店",
+        "building": "yes",
+        "name": "青森県民生協",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1157347082,
+      "center": {
+        "lat": 41.3043406,
+        "lon": 141.2181322
+      },
+      "nodes": [
+        10763059579,
+        10763059573,
+        10763059578,
+        10763059572,
+        10763059577,
+        10763059576,
+        10763059575,
+        10763059574,
+        10763059580,
+        10763059456,
+        10763059579
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ユニバース むつ柳町店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1206197005,
+      "center": {
+        "lat": 40.788157,
+        "lon": 140.7529229
+      },
+      "nodes": [
+        11177190820,
+        11177190821,
+        11177190822,
+        11177190823,
+        11177190820
+      ],
+      "tags": {
+        "branch": "問屋町店",
+        "building": "yes",
+        "name": "マエダストア",
+        "shop": "supermarket",
+        "website": "https://i-maeda.jp/store.html?id=46"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1211601649,
+      "center": {
+        "lat": 41.2799144,
+        "lon": 141.1941195
+      },
+      "nodes": [
+        11225104985,
+        11225104986,
+        11225104987,
+        11225104988,
+        11225104989,
+        11225104990,
+        11225104985
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マエダストア　仲町店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1234910820,
+      "center": {
+        "lat": 40.7162505,
+        "lon": 140.5913749
+      },
+      "nodes": [
+        11462827807,
+        11462827808,
+        11462827809,
+        11462827810,
+        11462827811,
+        11462827812,
+        11462827813,
+        11462827814,
+        11462827807
+      ],
+      "tags": {
+        "addr:city": "青森市",
+        "addr:housenumber": "75-3",
+        "addr:neighbourhood": "字淋城",
+        "addr:postcode": "038-1311",
+        "addr:province": "青森県",
+        "addr:quarter": "浪岡大字浪岡",
+        "branch": "浪岡店",
+        "brand": "トライアル",
+        "brand:en": "Trial",
+        "brand:ja": "トライアル",
+        "brand:wikidata": "Q11321723",
+        "building": "yes",
+        "name": "トライアルGO",
+        "name:en": "Trial GO",
+        "name:ja": "トライアルGO",
+        "operator": "青森トライアル",
+        "phone": "+81 120 033 559",
+        "shop": "supermarket",
+        "website": "https://www.trial-net.co.jp/shops/622/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1234916093,
+      "center": {
+        "lat": 40.6177994,
+        "lon": 140.580155
+      },
+      "nodes": [
+        11462889397,
+        11462889398,
+        11462889399,
+        11462889400,
+        11462889401,
+        11462889402,
+        11462889403,
+        11462889404,
+        11462889405,
+        11462889406,
+        11462889407,
+        11462889408,
+        11462889409,
+        11462889410,
+        11462889411,
+        11462889412,
+        11462889397
+      ],
+      "tags": {
+        "addr:city": "平川市",
+        "addr:housenumber": "128",
+        "addr:neighbourhood": "栄松",
+        "addr:postcode": "036-0212",
+        "addr:province": "青森県",
+        "addr:quarter": "尾上",
+        "branch": "平川尾上店",
+        "brand": "トライアル",
+        "brand:en": "Trial",
+        "brand:ja": "トライアル",
+        "brand:wikidata": "Q11321723",
+        "building": "yes",
+        "name": "トライアル",
+        "name:en": "Trial",
+        "name:ja": "トライアル",
+        "operator": "青森トライアル",
+        "phone": "+81 172 57 5533",
+        "shop": "supermarket",
+        "website": "https://www.trial-net.co.jp/shops/623/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1280174423,
+      "center": {
+        "lat": 40.6506554,
+        "lon": 141.3744525
+      },
+      "nodes": [
+        11883637087,
+        11883637088,
+        11883637089,
+        11883637090,
+        11883637091,
+        11883637092,
+        11883637093,
+        11883637094,
+        11883637095,
+        11883637096,
+        11883637087
+      ],
+      "tags": {
+        "brand": "トライアル",
+        "brand:en": "Trial",
+        "brand:ja": "トライアル",
+        "brand:wikidata": "Q11321723",
+        "building": "yes",
+        "name": "トライアル",
+        "name:en": "Trial",
+        "name:ja": "トライアル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1304976836,
+      "center": {
+        "lat": 40.9209069,
+        "lon": 140.9468468
+      },
+      "nodes": [
+        12086642018,
+        12086642019,
+        12086642020,
+        12086642021,
+        12086642022,
+        12086642023,
+        12086642018
+      ],
+      "tags": {
+        "branch": "平内店",
+        "brand": "マックスバリュ",
+        "brand:en": "MaxValu",
+        "brand:ja": "マックスバリュ",
+        "brand:wikidata": "Q11340427",
+        "building": "yes",
+        "name": "マックスバリュ",
+        "name:en": "MaxValu",
+        "name:ja": "マックスバリュ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1312589125,
+      "center": {
+        "lat": 41.077681,
+        "lon": 141.2572278
+      },
+      "nodes": [
+        12149526988,
+        12149526989,
+        12149526990,
+        12149526991,
+        12149526988
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ぷちマート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1335022002,
+      "center": {
+        "lat": 40.6891475,
+        "lon": 141.3712529
+      },
+      "nodes": [
+        12350856893,
+        12350856894,
+        12350856895,
+        12350856896,
+        12350856897,
+        12350856898,
+        12350856899,
+        12350856900,
+        12350887201,
+        12350887202,
+        12350856893
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "よこまちストア岡三沢店",
+        "name:en": "Yokomachi Supermarket",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1339830669,
+      "center": {
+        "lat": 40.6103789,
+        "lon": 140.5039956
+      },
+      "nodes": [
+        12393705274,
+        12393705275,
+        12393705276,
+        12393705277,
+        12393705278,
+        12393705279,
+        12393705280,
+        12393705281,
+        12393705282,
+        12393705283,
+        12393705274
+      ],
+      "tags": {
+        "branch": "弘前東店",
+        "building": "retail",
+        "name": "いとく",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1339844347,
+      "center": {
+        "lat": 40.6173832,
+        "lon": 140.4587742
+      },
+      "nodes": [
+        12393815165,
+        12393815166,
+        12393815167,
+        12393815168,
+        12393815169,
+        12393815170,
+        12393815171,
+        12393815172,
+        12393815173,
+        12393815174,
+        12393815165
+      ],
+      "tags": {
+        "branch": "浜の町店",
+        "building": "retail",
+        "name": "いとく",
+        "shop": "supermarket",
+        "source": "GSImaps/std;GSImaps/ort"
+      }
+    },
+    {
+      "type": "relation",
+      "id": 12102843,
+      "center": {
+        "lat": 40.5989284,
+        "lon": 140.4817478
+      },
+      "members": [
+        {
+          "type": "way",
+          "ref": 274159867,
+          "role": "outer"
+        }
+      ],
+      "tags": {
+        "building": "yes",
+        "operator": "弘前食料品市場",
+        "shop": "supermarket",
+        "type": "multipolygon"
+      }
+    }
+  ]
+}

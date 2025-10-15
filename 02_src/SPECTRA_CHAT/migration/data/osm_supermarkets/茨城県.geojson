@@ -1,0 +1,8793 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.8 e802775f",
+  "osm3s": {
+    "timestamp_osm_base": "2025-10-15T12:12:01Z",
+    "timestamp_areas_base": "2025-10-15T04:02:15Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+    {
+      "type": "node",
+      "id": 745397173,
+      "lat": 36.0391275,
+      "lon": 140.2147713,
+      "tags": {
+        "brand": "カスミ",
+        "name": "カスミ",
+        "name:en": "KASUMI",
+        "name:ja": "カスミ",
+        "name:ja_rm": "Kasumi",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 974417154,
+      "lat": 36.4742101,
+      "lon": 140.3895083,
+      "tags": {
+        "branch": "城里店",
+        "name": "エコス",
+        "name:en": "Ecos",
+        "opening_hours": "Mo-Sa 09:30-21:45, Su 09:00-21:45",
+        "phone": "+81 29 255 7050",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1093767759,
+      "lat": 36.5017014,
+      "lon": 140.6054729,
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1126444344,
+      "lat": 36.135259,
+      "lon": 140.242154,
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "name:ja_rm": "Kasumi",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1272876930,
+      "lat": 36.0415243,
+      "lon": 140.1638003,
+      "tags": {
+        "branch": "Nakamura",
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1272876945,
+      "lat": 36.0320504,
+      "lon": 140.1609678,
+      "tags": {
+        "name": "マルヘイ",
+        "name:en": "Maruhei",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1545260688,
+      "lat": 35.9419424,
+      "lon": 139.9788915,
+      "tags": {
+        "name": "Acrosmall Moriya",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1676972929,
+      "lat": 36.0359094,
+      "lon": 140.1777315,
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1676972939,
+      "lat": 36.0412318,
+      "lon": 140.1776456,
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1694871274,
+      "lat": 35.8937744,
+      "lon": 140.0786196,
+      "tags": {
+        "brand": "ヤオコー",
+        "brand:en": "Yaoko",
+        "brand:ja": "ヤオコー",
+        "brand:wikidata": "Q11344967",
+        "name": "ヤオコー",
+        "name:en": "Yaoko",
+        "name:ja": "ヤオコー",
+        "name:ja_rm": "Yaoko",
+        "shop": "supermarket",
+        "source": "Bing,2010-07"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1694871352,
+      "lat": 35.8906193,
+      "lon": 140.0784693,
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "name:ja_rm": "Kasumi",
+        "shop": "supermarket",
+        "source": "Bing,2010-07"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1699227749,
+      "lat": 35.8934436,
+      "lon": 140.0738604,
+      "tags": {
+        "name": "マスダ",
+        "shop": "supermarket",
+        "source": "Bing,2010-07"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1744227406,
+      "lat": 35.9305927,
+      "lon": 140.1342026,
+      "tags": {
+        "addr:housenumber": "竜ヶ崎市小通幸谷町松ノ下201-1",
+        "addr:postcode": "301-0034",
+        "name": "ヤオコー竜ヶ崎佐貫店",
+        "shop": "supermarket",
+        "website": "https://www.yaoko-net.com/store/detail.php?id=50"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1772140116,
+      "lat": 36.1214037,
+      "lon": 140.2427952,
+      "tags": {
+        "name": "スーパー　丸茂",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1783227730,
+      "lat": 36.1208361,
+      "lon": 140.2365996,
+      "tags": {
+        "name": "FOOD  OFF ストッカー",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1783233637,
+      "lat": 36.1149816,
+      "lon": 140.2386324,
+      "tags": {
+        "name": "ヤマウチ　神立店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1799321259,
+      "lat": 36.194874,
+      "lon": 139.708697,
+      "tags": {
+        "brand": "コモディイイダ",
+        "brand:en": "Comodi-iida",
+        "brand:ja": "コモディイイダ",
+        "brand:wikidata": "Q11302699",
+        "name": "コモディイイダ",
+        "name:en": "Comodi-iida",
+        "name:ja": "コモディイイダ",
+        "shop": "supermarket",
+        "source": "Bing; knowledge"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1803560393,
+      "lat": 36.1071958,
+      "lon": 140.2155036,
+      "tags": {
+        "name": "とりせん木田余店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1941580576,
+      "lat": 36.6281064,
+      "lon": 140.4002971,
+      "tags": {
+        "brand": "エコス",
+        "brand:en": "Ecos",
+        "brand:ja": "エコス",
+        "brand:wikidata": "Q11289886",
+        "name": "エコス",
+        "name:en": "Ecos",
+        "name:ja": "エコス",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1941598260,
+      "lat": 36.4947326,
+      "lon": 140.4472942,
+      "tags": {
+        "brand": "カスミ",
+        "name": "カスミ",
+        "name:en": "KASUMI",
+        "name:ja": "カスミ",
+        "name:ja_rm": "Kasumi",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1942605546,
+      "lat": 36.2508756,
+      "lon": 140.2893562,
+      "tags": {
+        "addr:city": "小美玉市",
+        "addr:full": "茨城県小美玉市羽鳥2737",
+        "addr:housenumber": "羽鳥2737番地",
+        "addr:postcode": "319-0123",
+        "addr:province": "茨城県",
+        "branch": "羽鳥東店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "name:ja_rm": "York Benimaru",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "phone": "+81-299-463515",
+        "shop": "supermarket",
+        "source": "Bing 2010;(URL)",
+        "website": "https://www.yorkbeni.co.jp/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1942896972,
+      "lat": 36.1682115,
+      "lon": 139.9676367,
+      "tags": {
+        "name": "フードオフストッカー",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1942936533,
+      "lat": 36.1123617,
+      "lon": 139.9520122,
+      "tags": {
+        "name": "キングストア石下店",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1945858348,
+      "lat": 36.0511188,
+      "lon": 139.8852854,
+      "tags": {
+        "name": "とりせん",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1945883276,
+      "lat": 36.305998,
+      "lon": 139.8684189,
+      "tags": {
+        "addr:city": "結城市",
+        "addr:full": "茨城県結城市大字結城11839-1",
+        "addr:housenumber": "結城11839番地1",
+        "addr:postcode": "307-0001",
+        "addr:province": "茨城県",
+        "branch": "結城四ツ京店",
+        "brand": "ヨークベニマル",
+        "name": "ヨークベニマル 結城四ツ京店",
+        "name:en": "YorkBenimaru",
+        "name:ja": "ヨークベニマル四ツ京店",
+        "name:ja_rm": "Yorkbenimaru",
+        "opening_hours": "Mo-Su 09:30-22:00",
+        "operator": "ヨークベニマル",
+        "phone": "+81-296-347781",
+        "shop": "supermarket",
+        "source": "Bing 2010;(URL)",
+        "website": "https://www.yorkbeni.co.jp/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1945898789,
+      "lat": 36.1934962,
+      "lon": 139.8112322,
+      "tags": {
+        "name": "マスダ",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1945904767,
+      "lat": 36.1994439,
+      "lon": 139.8235467,
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "name:ja_rm": "Kasumi",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1945914521,
+      "lat": 36.1751427,
+      "lon": 139.7318018,
+      "tags": {
+        "name": "マルヤ",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1946079868,
+      "lat": 36.2766099,
+      "lon": 140.0941651,
+      "tags": {
+        "name": "エコス",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1946219819,
+      "lat": 36.112326,
+      "lon": 140.1165477,
+      "tags": {
+        "name": "スーパーまるも",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1946228574,
+      "lat": 36.072718,
+      "lon": 140.094672,
+      "tags": {
+        "addr:full": "つくば市松代1-4-6",
+        "addr:postcode": "305-0035",
+        "branch": "つくば松代",
+        "level": "0",
+        "name": "ウエルシア",
+        "name:en": "Drug Terashima",
+        "name:ja": "ドラッグてらしま",
+        "name:ja_rm": "Doragu Terashima",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "operator": "寺島薬局",
+        "phone": "+81-29-8552881",
+        "shop": "supermarket",
+        "source": "Bing 2010;(URL)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1947186392,
+      "lat": 36.0503734,
+      "lon": 140.1375072,
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "name:ja_rm": "Kasumi",
+        "shop": "supermarket",
+        "source": "Bing 2010",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1947670258,
+      "lat": 36.005791,
+      "lon": 140.164217,
+      "tags": {
+        "addr:block_number": "1",
+        "addr:city": "牛久市",
+        "addr:housenumber": "2",
+        "addr:neighbourhood": "ひたち野東四丁目",
+        "addr:postcode": "300-1207",
+        "addr:province": "茨城県",
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "name:ja_rm": "Kasumi",
+        "opening_hours": "Mo-Su 09:00-24:00",
+        "operator": "株式会社カスミ",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:qr_code": "yes",
+        "payment:scan&go": "yes",
+        "payment:waon": "yes",
+        "phone": "+81-29-870-5003",
+        "shop": "supermarket",
+        "source": "Bing 2010;website;survey",
+        "website": "https://www.kasumi.co.jp/tenpotop/ibaraki-south/ushiku/275/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1947670269,
+      "lat": 36.0089855,
+      "lon": 140.1601358,
+      "tags": {
+        "brand": "西友",
+        "brand:en": "Seiyu",
+        "brand:ja": "西友",
+        "brand:wikidata": "Q3108542",
+        "name": "西友",
+        "name:en": "Seiyu",
+        "name:ja": "西友",
+        "name:ja_rm": "Seiyu",
+        "opening_hours": "24/7",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1947700232,
+      "lat": 35.9365495,
+      "lon": 139.9959519,
+      "tags": {
+        "brand": "西友",
+        "brand:en": "Seiyu",
+        "brand:wikidata": "Q3108542",
+        "brand:wikipedia": "en:Seiyu Group",
+        "name": "西友",
+        "name:en": "Seiyu",
+        "name:ja": "西友",
+        "name:ja_rm": "Seiyu",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1948064094,
+      "lat": 36.088776,
+      "lon": 140.2049393,
+      "tags": {
+        "name": "サンキ",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1948064095,
+      "lat": 36.0928871,
+      "lon": 140.2043161,
+      "tags": {
+        "name": "タイヨー土浦店",
+        "opening_hours": "Mo-Su 09:00-21:45",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1948088846,
+      "lat": 36.087337,
+      "lon": 140.1871778,
+      "tags": {
+        "name": "フードオフストッカー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1948135422,
+      "lat": 36.1836932,
+      "lon": 140.3054864,
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1948158833,
+      "lat": 36.0313469,
+      "lon": 140.1727089,
+      "tags": {
+        "name": "エコス",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1954918873,
+      "lat": 36.1010813,
+      "lon": 140.41565,
+      "tags": {
+        "brand": "ベイシア",
+        "brand:en": "Beisia",
+        "brand:ja": "ベイシア",
+        "brand:wikidata": "Q11336776",
+        "name": "ベイシア",
+        "name:en": "Beisia",
+        "name:ja": "ベイシア",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1956017730,
+      "lat": 36.1176156,
+      "lon": 139.7985696,
+      "tags": {
+        "brand": "カスミ",
+        "name": "カスミ",
+        "name:en": "KASUMI",
+        "name:ja": "カスミ",
+        "name:ja_rm": "Kasumi",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1956024894,
+      "lat": 36.4712209,
+      "lon": 140.5657545,
+      "tags": {
+        "brand": "カスミ",
+        "name": "カスミ",
+        "name:en": "KASUMI",
+        "name:ja": "カスミ",
+        "name:ja_rm": "Kasumi",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1957070172,
+      "lat": 36.0949549,
+      "lon": 140.3350277,
+      "tags": {
+        "name": "セイミヤ",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1957079930,
+      "lat": 35.9284777,
+      "lon": 140.0134546,
+      "tags": {
+        "name": "マスダ",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1957103639,
+      "lat": 35.9958392,
+      "lon": 140.0399635,
+      "tags": {
+        "brand": "カスミ",
+        "name": "カスミ",
+        "name:en": "KASUMI",
+        "name:ja": "カスミ",
+        "name:ja_rm": "Kasumi",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1959987439,
+      "lat": 36.0723979,
+      "lon": 140.2033001,
+      "tags": {
+        "name": "コープつちうら",
+        "opening_hours": "PH,Mo-Su 09:30-23:00",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1960004486,
+      "lat": 36.0611968,
+      "lon": 140.2009992,
+      "tags": {
+        "name": "スーパーマーケットハリガエ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1960014890,
+      "lat": 36.0643722,
+      "lon": 140.1879227,
+      "tags": {
+        "name": "やまや",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1960014891,
+      "lat": 36.0655625,
+      "lon": 140.1881668,
+      "tags": {
+        "brand": "カスミ",
+        "name": "カスミ",
+        "name:en": "KASUMI",
+        "name:ja": "カスミ",
+        "name:ja_rm": "Kasumi",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1960271884,
+      "lat": 36.1961147,
+      "lon": 140.2983534,
+      "tags": {
+        "brand": "業務スーパー",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー石岡店",
+        "name:ja_rm": "Gyomu Supa",
+        "opening_hours": "Mo-Su 09:00-20:00",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1960306373,
+      "lat": 36.1939713,
+      "lon": 140.2843632,
+      "tags": {
+        "brand": "カスミ",
+        "name": "カスミ",
+        "name:en": "KASUMI",
+        "name:ja": "カスミ",
+        "name:ja_rm": "Kasumi",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1962590575,
+      "lat": 35.9648794,
+      "lon": 140.642587,
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q11590183",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Hira": "ぎょうむすーぱー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1962955031,
+      "lat": 35.8964541,
+      "lon": 140.6458644,
+      "tags": {
+        "name": "スーパータイヨー",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1963026736,
+      "lat": 35.7497794,
+      "lon": 140.8231182,
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "name:ja_rm": "Kasumi",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1963106397,
+      "lat": 36.214497,
+      "lon": 140.476994,
+      "tags": {
+        "name": "セイミヤ",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1963138372,
+      "lat": 36.0179475,
+      "lon": 140.4986824,
+      "tags": {
+        "name": "セイミヤ",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1963210257,
+      "lat": 35.912441,
+      "lon": 140.6409682,
+      "tags": {
+        "name": "セイミヤ",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1972573780,
+      "lat": 36.3120061,
+      "lon": 140.4416128,
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "name:ja_rm": "Kasumi",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2016792212,
+      "lat": 35.9658565,
+      "lon": 140.6467364,
+      "tags": {
+        "name": "タイヨー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2019288843,
+      "lat": 35.8660033,
+      "lon": 140.6959627,
+      "tags": {
+        "name": "シャトレーゼ",
+        "organic": "only",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2349087897,
+      "lat": 36.4268835,
+      "lon": 140.5354747,
+      "tags": {
+        "name": "丸八青果店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2349094661,
+      "lat": 36.3971163,
+      "lon": 140.5421101,
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "name:ja_rm": "Kasumi",
+        "shop": "supermarket",
+        "website": "https://www.kasumi.co.jp/"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2352996287,
+      "lat": 35.8903734,
+      "lon": 140.0749544,
+      "tags": {
+        "name": "Mr.MAX",
+        "shop": "supermarket",
+        "source": "Bing,2010-07"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2381942527,
+      "lat": 36.4060581,
+      "lon": 140.5839916,
+      "tags": {
+        "name": "サンユーストアー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3015874833,
+      "lat": 36.291053,
+      "lon": 139.869635,
+      "tags": {
+        "name": "JAきたつくば農産物直売所 きらいち",
+        "shop": "supermarket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3017456833,
+      "lat": 36.2939885,
+      "lon": 139.9310743,
+      "tags": {
+        "name": "megastore TRIAL",
+        "shop": "supermarket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3168121762,
+      "lat": 36.0228524,
+      "lon": 140.1776902,
+      "tags": {
+        "name": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3215296659,
+      "lat": 36.4487402,
+      "lon": 140.5029055,
+      "tags": {
+        "branch": "那珂店",
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3261302661,
+      "lat": 36.2972027,
+      "lon": 139.9410761,
+      "tags": {
+        "brand": "とりせん",
+        "brand:en": "Torisen",
+        "brand:ja": "とりせん",
+        "brand:wikidata": "Q11273505",
+        "name": "とりせん",
+        "name:en": "Torisen",
+        "name:ja": "とりせん",
+        "shop": "supermarket",
+        "source": "Survey "
+      }
+    },
+    {
+      "type": "node",
+      "id": 3261335862,
+      "lat": 36.294779,
+      "lon": 139.935893,
+      "tags": {
+        "name": "グラントマト筑西店",
+        "shop": "supermarket",
+        "source": "Survey "
+      }
+    },
+    {
+      "type": "node",
+      "id": 3276920191,
+      "lat": 36.3815897,
+      "lon": 140.4606678,
+      "tags": {
+        "branch": "まちなか大工町店",
+        "name": "サンユー",
+        "shop": "supermarket",
+        "source": "水戸中心商店街マップ14"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3591769622,
+      "lat": 36.0339391,
+      "lon": 140.6299686,
+      "tags": {
+        "name": "中央スーパー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3597978320,
+      "lat": 36.0879068,
+      "lon": 140.2056956,
+      "tags": {
+        "name": "ケーズデンキ",
+        "opening_hours": "PH,Mo-Su 10:00-21:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3598092265,
+      "lat": 36.7863122,
+      "lon": 140.3589537,
+      "tags": {
+        "name": "エコス",
+        "shop": "supermarket",
+        "source": "survey;Bing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3659163038,
+      "lat": 36.2994267,
+      "lon": 139.8721108,
+      "tags": {
+        "name": "コモディ・イイダ",
+        "name:en": "Comodi Iida",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3686456125,
+      "lat": 36.3658466,
+      "lon": 140.4984379,
+      "tags": {
+        "branch": "浜田店",
+        "name": "たいらや",
+        "name:en": "Tairaya",
+        "opening_hours": "10:00-09:00",
+        "phone": "+81 29 227 5320",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3705505417,
+      "lat": 36.468315,
+      "lon": 140.5752027,
+      "tags": {
+        "addr:city": "Tokai-Mura",
+        "addr:housenumber": "1-12-1",
+        "addr:street": "Muramatsu Kita",
+        "name": "ステーションコ (STATION COM)",
+        "name:ja": "ステーションコム (STATION COM)",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3705526992,
+      "lat": 36.4653719,
+      "lon": 140.5811844,
+      "tags": {
+        "addr:city": "Tokai-Mura",
+        "addr:housenumber": "2-7-53",
+        "addr:postcode": "319-1108",
+        "addr:street": "Muramatsu Kita",
+        "name": "Food Off ストッ カー (Food Off Stocker)",
+        "opening_hours": "9:00-21:00",
+        "operator": "Kasumi",
+        "shop": "supermarket",
+        "source": "https://www.kasumi.co.jp/tenpo/kenhoku/tokai.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3780706695,
+      "lat": 36.339442,
+      "lon": 140.4510675,
+      "tags": {
+        "branch": "SC笠原店",
+        "level": "0",
+        "name": "マルト",
+        "name:en": "Maruto",
+        "opening_hours": "09:00-23:00",
+        "phone": "+81 29 241 5000",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3790819637,
+      "lat": 35.973852,
+      "lon": 140.1345003,
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3939122528,
+      "lat": 36.0854618,
+      "lon": 140.083456,
+      "tags": {
+        "branch": "つくばスタイル店",
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "level": "0",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4161551301,
+      "lat": 36.0658061,
+      "lon": 140.1170293,
+      "tags": {
+        "amenity": "pharmacy",
+        "name": "クスリのアオキ",
+        "name:en": "Aoki",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4210147395,
+      "lat": 35.9253532,
+      "lon": 140.1404031,
+      "tags": {
+        "name": "フードオフストッカー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4512990804,
+      "lat": 36.457409,
+      "lon": 140.5012743,
+      "tags": {
+        "name": "カワチ薬品　那珂店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4591748123,
+      "lat": 36.5221235,
+      "lon": 140.4309016,
+      "tags": {
+        "addr:city": "常陸大宮市",
+        "addr:postcode": "319-2131",
+        "name": "イオン常陸大宮店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4597555418,
+      "lat": 35.9168489,
+      "lon": 140.1168731,
+      "tags": {
+        "branch": "藤代店",
+        "brand": "ヤオコー",
+        "brand:en": "Yaoko",
+        "brand:ja": "ヤオコー",
+        "brand:wikidata": "Q11344967",
+        "name": "ヤオコー",
+        "name:en": "Yaoko",
+        "name:ja": "ヤオコー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4622882091,
+      "lat": 35.9676108,
+      "lon": 139.9743802,
+      "tags": {
+        "name": "カスミ",
+        "name:en": "KASUMI",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4628195169,
+      "lat": 36.4297895,
+      "lon": 140.5124525,
+      "tags": {
+        "branch": "FOOD OFFストッカーサンモリノ那珂店",
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "name:ja_kana": "かすみ",
+        "name:ja_rm": "Kasumi",
+        "operator": "カスミ",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4647130574,
+      "lat": 36.0097191,
+      "lon": 140.1562942,
+      "tags": {
+        "addr:city": "牛久市",
+        "addr:neighbourhood": "ひたち野西三丁目29番地16",
+        "addr:postcode": "300-1206",
+        "addr:province": "茨城県",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4704755852,
+      "lat": 36.1022127,
+      "lon": 139.7973522,
+      "tags": {
+        "name": "ドン・キホーテ 境大橋店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4730341859,
+      "lat": 36.474005,
+      "lon": 140.3880832,
+      "tags": {
+        "branch": "城里ショッピングプラザ店",
+        "name": "セリア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4867325421,
+      "lat": 36.1758856,
+      "lon": 140.0891778,
+      "tags": {
+        "name": "kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4875282422,
+      "lat": 35.85598,
+      "lon": 140.1494497,
+      "tags": {
+        "name": "ヤオコー利根店",
+        "name:vi": "sieu thi",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4885265009,
+      "lat": 36.2466958,
+      "lon": 140.1956848,
+      "tags": {
+        "name": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4907470467,
+      "lat": 36.3266794,
+      "lon": 140.4148801,
+      "tags": {
+        "name": "ビッグハウス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5119616421,
+      "lat": 36.3575427,
+      "lon": 140.4184499,
+      "tags": {
+        "name": "ドンキホーテ水戸店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5281189121,
+      "lat": 36.0186418,
+      "lon": 139.9884389,
+      "tags": {
+        "name": "カスミ水海道店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5381267228,
+      "lat": 36.0190875,
+      "lon": 140.4978206,
+      "tags": {
+        "name": "カワチ",
+        "opening_hours": "Mo-Su 08:00-20:00",
+        "payment:coins": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5551519288,
+      "lat": 35.931031,
+      "lon": 140.203657,
+      "tags": {
+        "name": "フードスクエアカスミ龍ケ崎中里",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5554716825,
+      "lat": 36.0625127,
+      "lon": 140.1427864,
+      "tags": {
+        "check_date:opening_hours": "2022-08-01",
+        "name": "タイラヤ",
+        "opening_hours": "PH,Mo-Su 10:00-21:00+",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5604540509,
+      "lat": 36.1828287,
+      "lon": 139.9767678,
+      "tags": {
+        "branch": "FOOD SQUARE",
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5609233109,
+      "lat": 36.1816127,
+      "lon": 139.9524536,
+      "tags": {
+        "branch": "FOOD SQUARE",
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5663370725,
+      "lat": 35.9277235,
+      "lon": 140.1335093,
+      "tags": {
+        "name": "ドン・キホーテ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5868768804,
+      "lat": 36.0837916,
+      "lon": 140.1889948,
+      "tags": {
+        "addr:city": "土浦市",
+        "addr:neighbourhood": "9-31",
+        "addr:postcode": "300-0047",
+        "addr:province": "茨城県",
+        "addr:suburb": "生田町",
+        "name": "ヨークベニマル土浦生田町店",
+        "opening_hours": "Mo-Su 09:30-22:00",
+        "operator": "株式会社ヨークベニマル",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5952596187,
+      "lat": 35.9975791,
+      "lon": 140.0355938,
+      "tags": {
+        "branch": "みらい平店",
+        "brand": "とりせん",
+        "brand:en": "Torisen",
+        "brand:ja": "とりせん",
+        "brand:wikidata": "Q11273505",
+        "name": "とりせん",
+        "name:en": "Torisen",
+        "name:ja": "とりせん",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5985675273,
+      "lat": 36.5972202,
+      "lon": 140.6532511,
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6004115191,
+      "lat": 36.2047053,
+      "lon": 140.2883776,
+      "tags": {
+        "name": "ヨークベニマル　石岡西店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6012380191,
+      "lat": 36.4157811,
+      "lon": 140.5285798,
+      "tags": {
+        "addr:housenumber": "東石川3614番地１",
+        "addr:postcode": "312-0052",
+        "addr:province": "茨城県",
+        "branch": "ひたちなか店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "brand:wikipedia": "ja:ヨークベニマル",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6012381300,
+      "lat": 36.3406078,
+      "lon": 140.437029,
+      "tags": {
+        "addr:city": "水戸市",
+        "addr:housenumber": "字新山2582番地2",
+        "addr:postcode": "301-0914",
+        "addr:province": "茨城県",
+        "addr:quarter": "小吹町",
+        "branch": "水戸笠原店",
+        "name": "ヨークベニマル",
+        "name:en": "York-Benimaru",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6026256492,
+      "lat": 36.0993327,
+      "lon": 140.1034471,
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6052597373,
+      "lat": 36.6276386,
+      "lon": 140.6696464,
+      "tags": {
+        "branch": "フードオフストッカー田尻店",
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:wikidata": "Q11294160",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "operator": "株式会社カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6240726583,
+      "lat": 36.1982317,
+      "lon": 139.7235441,
+      "tags": {
+        "addr:city": "古河市",
+        "addr:neighbourhood": "１丁目１４",
+        "addr:postcode": "306-0012",
+        "addr:province": "茨城県",
+        "addr:quarter": "旭町",
+        "name": "たいらや",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6288109603,
+      "lat": 36.539609,
+      "lon": 140.4131246,
+      "tags": {
+        "name": "かわねや",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6337115738,
+      "lat": 36.1008138,
+      "lon": 140.0777356,
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "opening_hours": "-24:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6516461378,
+      "lat": 36.707107,
+      "lon": 140.7106378,
+      "tags": {
+        "branch": "高萩店",
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6611345890,
+      "lat": 35.9168854,
+      "lon": 140.6369053,
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:wikidata": "Q11590183",
+        "brand:wikipedia": "ja:神戸物産",
+        "name": "業務スーパー",
+        "name:en": "Gyōmu sūpā",
+        "name:ja": "業務スーパー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6725665785,
+      "lat": 35.9448741,
+      "lon": 139.9890275,
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6805605685,
+      "lat": 36.0427632,
+      "lon": 139.8908931,
+      "tags": {
+        "name": "マルエツ",
+        "name:en": "Maruetsu",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7055849647,
+      "lat": 36.1889544,
+      "lon": 140.2723776,
+      "tags": {
+        "name": "タイヨー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7152665912,
+      "lat": 36.189539,
+      "lon": 139.9903815,
+      "tags": {
+        "branch": "下妻店",
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "brand:wikipedia": "ja:イオン (店舗ブランド)",
+        "name": "AEON",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7171687746,
+      "lat": 36.1798362,
+      "lon": 139.9672714,
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q105687460",
+        "brand:wikipedia": "ja:神戸物産",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7187350142,
+      "lat": 36.1854028,
+      "lon": 139.9669268,
+      "tags": {
+        "name": "FOOD OFF ストッカー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7196685974,
+      "lat": 36.1826374,
+      "lon": 139.975976,
+      "tags": {
+        "name": "平間商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7448097833,
+      "lat": 36.388288,
+      "lon": 140.5264932,
+      "tags": {
+        "branch": "SC春日店",
+        "level": "0",
+        "name": "マルト",
+        "name:en": "Maruto",
+        "opening_hours": "09:00-20:00",
+        "phone": "+81 29 219 8181",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7474819652,
+      "lat": 36.3451953,
+      "lon": 140.5819452,
+      "tags": {
+        "branch": "那珂湊店",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "opening_hours": "09:00-21:00",
+        "phone": "+81 29 263 5323",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7660061867,
+      "lat": 36.0720248,
+      "lon": 140.0944994,
+      "tags": {
+        "name": "キャスティング　つくば店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7660063368,
+      "lat": 36.0706358,
+      "lon": 140.0956031,
+      "tags": {
+        "name": "オリモト　松代店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7660081843,
+      "lat": 36.0709393,
+      "lon": 140.0954207,
+      "tags": {
+        "name": "スーパーマーケット",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7892988885,
+      "lat": 36.2970648,
+      "lon": 140.2796353,
+      "tags": {
+        "name": "スーパー辰己屋",
+        "phone": "0299-45-3317",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8101789204,
+      "lat": 36.0775714,
+      "lon": 140.1153306,
+      "tags": {
+        "brand": "西友",
+        "brand:en": "Seiyu",
+        "brand:ja": "西友",
+        "brand:wikidata": "Q3108542",
+        "brand:wikipedia": "en:Seiyu Group",
+        "level": "0",
+        "name": "西友",
+        "name:en": "Seiyu",
+        "name:ja": "西友",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8597021626,
+      "lat": 36.1747717,
+      "lon": 139.7498571,
+      "tags": {
+        "name": "ベルク",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8630514018,
+      "lat": 36.3217918,
+      "lon": 139.9700123,
+      "tags": {
+        "name": "ディスカウントスーパーヒーロー下館店",
+        "opening_hours": "Mo-Su 09:00-20:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8630514019,
+      "lat": 35.9238534,
+      "lon": 140.0011694,
+      "tags": {
+        "name": "業務スーパー守谷店",
+        "opening_hours": "Mo-Su 09:00-20:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8864825224,
+      "lat": 36.3953697,
+      "lon": 140.5793025,
+      "tags": {
+        "addr:housenumber": "茨城県ひたちなか市馬渡８４６",
+        "addr:postcode": "312-0012",
+        "name": "ほしいも処 森内ふぁ～む",
+        "name:en": "Moriuchi Farm",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8864825537,
+      "lat": 36.346103,
+      "lon": 140.5846953,
+      "tags": {
+        "addr:housenumber": "ひたちなか市釈迦町１８−３８",
+        "addr:postcode": "311-1225",
+        "name": "ほしいも専門店 大丸屋",
+        "name:en": "Daimaruya",
+        "opening_hours": "Mo-Sa 10:00-17:00; Su 09:00-17:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8875371917,
+      "lat": 36.3733078,
+      "lon": 140.3582946,
+      "tags": {
+        "name": "イオンモール水戸内原",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8945860755,
+      "lat": 35.8960539,
+      "lon": 140.0623217,
+      "tags": {
+        "brand": "西友",
+        "brand:en": "Seiyu",
+        "brand:wikidata": "Q3108542",
+        "brand:wikipedia": "en:Seiyu Group",
+        "level": "0",
+        "name": "西友",
+        "name:en": "Seiyu",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 8946044238,
+      "lat": 35.8963666,
+      "lon": 140.0631256,
+      "tags": {
+        "brand": "成城石井",
+        "brand:en": "Seijo Ishii",
+        "brand:ja": "成城石井",
+        "brand:wikidata": "Q11495410",
+        "brand:wikipedia": "ja:成城石井",
+        "level": "2",
+        "name": "成城石井",
+        "name:en": "Seijo Ishii",
+        "name:ja": "成城石井",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9416122972,
+      "lat": 36.1226194,
+      "lon": 140.229585,
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q11590183",
+        "brand:wikipedia": "ja:神戸物産",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9631410794,
+      "lat": 36.0355674,
+      "lon": 140.1340712,
+      "tags": {
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "brand:wikipedia": "ja:イオン (店舗ブランド)",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "operator": "イオンリテール",
+        "phone": "+81 29 839 1200",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9706313218,
+      "lat": 36.0906199,
+      "lon": 140.0731619,
+      "tags": {
+        "name:en": "Sanki",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9983158018,
+      "lat": 36.2945371,
+      "lon": 139.8637634,
+      "tags": {
+        "name": "ジェーソン結城店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9992417023,
+      "lat": 36.2923805,
+      "lon": 139.8589649,
+      "tags": {
+        "name": "ベイシアフードコート結城店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 9992418618,
+      "lat": 36.2977485,
+      "lon": 139.8622244,
+      "tags": {
+        "name": "業務スーパーグラントマト",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10129954597,
+      "lat": 35.9850134,
+      "lon": 140.6407815,
+      "tags": {
+        "addr:block_number": "4769",
+        "addr:city": "鹿嶋市",
+        "addr:housenumber": "3",
+        "addr:postcode": "314-0006",
+        "addr:province": "茨城県",
+        "addr:quarter": "宮津台",
+        "name": "マルヘイ鹿嶋食品館",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "phone": "0299-90-3660",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10130012655,
+      "lat": 35.9835321,
+      "lon": 140.6386022,
+      "tags": {
+        "addr:block_number": "4783",
+        "addr:city": "鹿嶋市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "角内附",
+        "addr:postcode": "314-0031",
+        "addr:province": "茨城県",
+        "addr:quarter": "宮中字",
+        "branch": "鹿嶋スタジアム店",
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "opening_hours": "Mo-Su 09:00-21:45",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "phone": "+81-299-95-6705",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10132661262,
+      "lat": 36.0310778,
+      "lon": 140.2206613,
+      "tags": {
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10139089445,
+      "lat": 36.080463,
+      "lon": 140.1123017,
+      "tags": {
+        "branch": "トナリエクレオ店",
+        "brand": "ロピア",
+        "brand:en": "Lopia",
+        "brand:ja": "ロピア",
+        "brand:wikidata": "Q11350624",
+        "level": "0",
+        "name": "ロピア",
+        "name:en": "Lopia",
+        "name:ja": "ロピア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10542448344,
+      "lat": 36.0315187,
+      "lon": 139.9902761,
+      "tags": {
+        "name": "(常総DRR)高水位ステッカー（森下町スーパー）",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10784515540,
+      "lat": 36.5401581,
+      "lon": 140.5306979,
+      "tags": {
+        "name": "かわねや　フェスタ店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11046052170,
+      "lat": 36.1324857,
+      "lon": 140.2272294,
+      "tags": {
+        "brand": "トライアル",
+        "brand:en": "Trial",
+        "brand:ja": "トライアル",
+        "brand:wikidata": "Q11321723",
+        "name": "トライアル",
+        "name:en": "Trial",
+        "name:ja": "トライアル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11224575561,
+      "lat": 35.8992653,
+      "lon": 140.6364794,
+      "tags": {
+        "name": "タイヨーオークビレッジ店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11622415281,
+      "lat": 36.1946006,
+      "lon": 139.7445459,
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11669711023,
+      "lat": 36.1181113,
+      "lon": 140.2369648,
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11786331953,
+      "lat": 36.1085098,
+      "lon": 139.9795835,
+      "tags": {
+        "check_date": "2024-04-04",
+        "name": "カワチ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11826416512,
+      "lat": 36.0184794,
+      "lon": 139.9918126,
+      "tags": {
+        "check_date": "2025-01-09",
+        "name": "TK STORE",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12233634749,
+      "lat": 35.9167423,
+      "lon": 140.0450162,
+      "tags": {
+        "name": "TAIRAYA",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12247910384,
+      "lat": 36.4188471,
+      "lon": 140.5439557,
+      "tags": {
+        "alt_name:en": "Co-op",
+        "brand": "コープ",
+        "brand:en": "CO・OP",
+        "brand:ja": "コープ",
+        "brand:wikidata": "Q11508615",
+        "name": "コープ",
+        "name:en": "CO・OP",
+        "name:ja": "コープ",
+        "official_name": "日本生活協同組合連合会",
+        "official_name:en": "Japanese Consumers' Co-operative Union",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12303530574,
+      "lat": 36.3054341,
+      "lon": 139.9780671,
+      "tags": {
+        "check_date": "2024-11-01",
+        "name": "Cho Viet",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12630455556,
+      "lat": 36.5426083,
+      "lon": 140.531582,
+      "tags": {
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12749298257,
+      "lat": 36.180973,
+      "lon": 139.965618,
+      "tags": {
+        "name": "LÊ CHIẾN MART - GA SHIMOTSUMA 2",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12751381141,
+      "lat": 36.073438,
+      "lon": 140.1027505,
+      "tags": {
+        "brand": "ベルク",
+        "brand:en": "Belc",
+        "brand:ja": "ベルク",
+        "brand:wikidata": "Q11337090",
+        "name": "ベルク",
+        "name:en": "Belc",
+        "name:ja": "ベルク",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12755637647,
+      "lat": 36.0380896,
+      "lon": 140.1654698,
+      "tags": {
+        "name": "ジャパンミート 荒川沖店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12756730675,
+      "lat": 36.1218656,
+      "lon": 139.972187,
+      "tags": {
+        "check_date": "2025-04-15",
+        "name": "たいらや",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12756730677,
+      "lat": 36.1181956,
+      "lon": 139.9727776,
+      "tags": {
+        "check_date": "2025-04-15",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12758850022,
+      "lat": 36.1103176,
+      "lon": 139.9719749,
+      "tags": {
+        "check_date": "2025-04-15",
+        "name": "ケーエス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12855259408,
+      "lat": 36.0238984,
+      "lon": 139.994758,
+      "tags": {
+        "check_date": "2025-05-21",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12912348452,
+      "lat": 36.0747021,
+      "lon": 139.9838627,
+      "tags": {
+        "check_date": "2025-06-13",
+        "name": "船張商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13022374862,
+      "lat": 35.9409824,
+      "lon": 140.5491335,
+      "tags": {
+        "name": "セイミヤ潮来店",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13044613330,
+      "lat": 36.37042,
+      "lon": 140.476132,
+      "tags": {
+        "branch": "水戸エクセル店",
+        "level": "1",
+        "name": "ジュピター",
+        "name:en": "Jupiter",
+        "phone": "+81 29 233 3911",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13044741098,
+      "lat": 36.371157,
+      "lon": 140.4756586,
+      "tags": {
+        "branch": "水戸エクセル店",
+        "name": "Beマート",
+        "name:en": "Be mart",
+        "opening_hours": "10:00-20:30",
+        "phone": "+81 224 8825",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13098354348,
+      "lat": 36.1811096,
+      "lon": 139.9625494,
+      "tags": {
+        "name": "chợ việt shimotsuma",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 61743216,
+      "center": {
+        "lat": 36.4632381,
+        "lon": 140.5667558
+      },
+      "nodes": [
+        769319167,
+        9419369094,
+        769319168,
+        9419369095,
+        9419369096,
+        769319164,
+        9419369097,
+        769319163,
+        769319161,
+        769319165,
+        769319167
+      ],
+      "tags": {
+        "branch": "東海店",
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "landuse": "retail",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "shop": "supermarket",
+        "website": "https://www.aeon.com/store/イオン/イオン東海店/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 90027268,
+      "center": {
+        "lat": 36.3241962,
+        "lon": 140.3196557
+      },
+      "nodes": [
+        1043505572,
+        1043505510,
+        1043505235,
+        1079950967,
+        1079951030,
+        1079951153,
+        1043505572
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "ディスカウントヒーロー (Discount HERO)",
+        "name:en": "Discount HERO",
+        "name:ja": "ディスカウントヒーロー",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 90027305,
+      "center": {
+        "lat": 36.3465845,
+        "lon": 140.3096666
+      },
+      "nodes": [
+        1043505640,
+        1043505491,
+        1043505804,
+        1043505869,
+        1043505640
+      ],
+      "tags": {
+        "brand": "カスミ",
+        "building": "retail",
+        "name": "カスミ",
+        "name:en": "KASUMI",
+        "name:ja": "カスミ",
+        "name:ja_rm": "Kasumi",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 91566176,
+      "center": {
+        "lat": 35.9568171,
+        "lon": 140.3178426
+      },
+      "nodes": [
+        1063794651,
+        1063794826,
+        1063794854,
+        1063794733,
+        1063794673,
+        1063794547,
+        1063794508,
+        1063794802,
+        1063794737,
+        1063794767,
+        1063794700,
+        1063794645,
+        1063794584,
+        1063794833,
+        1063794771,
+        1063794703,
+        1063794651
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "タイヨー",
+        "name:en": "Taiyo",
+        "name:ja": "タイヨー",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 93051740,
+      "center": {
+        "lat": 35.9355132,
+        "lon": 140.2040658
+      },
+      "nodes": [
+        1078610134,
+        11578974098,
+        11578974097,
+        11578974096,
+        11578974095,
+        1078609927,
+        11578974102,
+        11578974104,
+        11578974103,
+        11578974101,
+        1078610124,
+        1078609826,
+        1078610044,
+        11578974100,
+        11578974099,
+        1078610181,
+        1078610134
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "ランドローム",
+        "name:en": "Landrome",
+        "name:ja": "ランドローム",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 93051787,
+      "center": {
+        "lat": 35.9387507,
+        "lon": 140.197069
+      },
+      "nodes": [
+        1078610024,
+        1078610101,
+        1078609799,
+        1078610019,
+        1078610024
+      ],
+      "tags": {
+        "brand": "カスミ",
+        "building": "retail",
+        "name": "カスミ",
+        "name:en": "KASUMI",
+        "name:ja": "カスミ",
+        "name:ja_rm": "Kasumi",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 93094407,
+      "center": {
+        "lat": 35.9070504,
+        "lon": 140.1732872
+      },
+      "nodes": [
+        1079081492,
+        1079080078,
+        1079081960,
+        1079082324,
+        1079081492
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "タイヨー",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 93094481,
+      "center": {
+        "lat": 35.9067772,
+        "lon": 140.173018
+      },
+      "nodes": [
+        1079080520,
+        1079080404,
+        1079080965,
+        1079080159,
+        1079080520
+      ],
+      "tags": {
+        "building": "retail",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 93235729,
+      "center": {
+        "lat": 36.345884,
+        "lon": 140.3124039
+      },
+      "nodes": [
+        1080753306,
+        1080753674,
+        1080754350,
+        1080755131,
+        1080753713,
+        1080754203,
+        1080754917,
+        1080753541,
+        1080753306
+      ],
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q11590183",
+        "building": "yes",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 93348467,
+      "center": {
+        "lat": 36.3495015,
+        "lon": 140.3127169
+      },
+      "nodes": [
+        1082372769,
+        1082373247,
+        1082372326,
+        1082373681,
+        1082372808,
+        1082372552,
+        1082374532,
+        1082372737,
+        1082374733,
+        1082374431,
+        1082373626,
+        1082372129,
+        1082372769
+      ],
+      "tags": {
+        "branch": "友部店",
+        "building": "retail",
+        "name": "TAIRAYA",
+        "name:en": "Tairaya",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 94166292,
+      "center": {
+        "lat": 36.4924886,
+        "lon": 140.6155386
+      },
+      "nodes": [
+        9936455393,
+        1094539415,
+        1094541948,
+        9936455396,
+        9936455397,
+        1094536547,
+        9936455398,
+        9936455399,
+        1094538784,
+        9936455400,
+        9936455403,
+        9936455402,
+        9936455401,
+        1094541463,
+        9936455393
+      ],
+      "tags": {
+        "building": "retail",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 96773624,
+      "center": {
+        "lat": 36.0063787,
+        "lon": 140.3020077
+      },
+      "nodes": [
+        1120728804,
+        1120729261,
+        1120728878,
+        1120729212,
+        1120728810,
+        1120729169,
+        1120729321,
+        1120729115,
+        1120729283,
+        1120729052,
+        1120729235,
+        1120728985,
+        1120729198,
+        1120728919,
+        1120728778,
+        1120728804
+      ],
+      "tags": {
+        "addr:city": "美浦村大字",
+        "addr:county": "稲敷郡",
+        "addr:housenumber": "受領1552-1",
+        "addr:postcode": "300-0424",
+        "addr:province": "茨城県",
+        "branch": "美浦店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "building": "retail",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104449026,
+      "center": {
+        "lat": 36.8394164,
+        "lon": 140.7836134
+      },
+      "nodes": [
+        1205081478,
+        1205081467,
+        6387136388,
+        6387136389,
+        6387136390,
+        6387136391,
+        6387136396,
+        6387136395,
+        6387136394,
+        6387136393,
+        6387136392,
+        1205081410,
+        1205081450,
+        1205081458,
+        6387136397,
+        6387136398,
+        6387136399,
+        1205081483,
+        1205081504,
+        6387136400,
+        6387136401,
+        1205081478
+      ],
+      "tags": {
+        "branch": "大津店",
+        "building": "retail",
+        "name": "サンユーストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104453884,
+      "center": {
+        "lat": 36.7763649,
+        "lon": 140.7321714
+      },
+      "nodes": [
+        1205141243,
+        1205141388,
+        1205141193,
+        1205141146,
+        1205141361,
+        1205141243
+      ],
+      "tags": {
+        "addr:block_number": "2834番地",
+        "addr:city": "北茨城市",
+        "addr:neighbourhood": "字細谷",
+        "addr:postcode": "319-1559",
+        "addr:province": "茨城県",
+        "addr:quarter": "中郷町上桜井",
+        "branch": "中郷店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "brand:wikipedia": "ja:ヨークベニマル",
+        "building": "retail",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "shop": "supermarket",
+        "source": "Bing, 2011-03"
+      }
+    },
+    {
+      "type": "way",
+      "id": 104453892,
+      "center": {
+        "lat": 36.7782657,
+        "lon": 140.7339262
+      },
+      "nodes": [
+        1205141184,
+        1205141009,
+        1205141060,
+        1205141270,
+        1205141184
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "サンユーストア",
+        "shop": "supermarket",
+        "source": "Bing, 2011-03"
+      }
+    },
+    {
+      "type": "way",
+      "id": 105231752,
+      "center": {
+        "lat": 36.665988,
+        "lon": 140.6909554
+      },
+      "nodes": [
+        1212695295,
+        1212695406,
+        1212695426,
+        1212695289,
+        1212695291,
+        1212695295
+      ],
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "building": "retail",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket",
+        "source": "Bing 11-03"
+      }
+    },
+    {
+      "type": "way",
+      "id": 106155212,
+      "center": {
+        "lat": 36.6766552,
+        "lon": 140.6850626
+      },
+      "nodes": [
+        1222164672,
+        1222164477,
+        1222164676,
+        1222164302,
+        1222164632,
+        1222164337,
+        1222164392,
+        1222164134,
+        1222164672
+      ],
+      "tags": {
+        "branch": "十王店",
+        "building": "retail",
+        "name": "セイブ",
+        "shop": "supermarket",
+        "source": "Bing 11-03"
+      }
+    },
+    {
+      "type": "way",
+      "id": 106234890,
+      "center": {
+        "lat": 36.7283453,
+        "lon": 140.716083
+      },
+      "nodes": [
+        1223025102,
+        1223025084,
+        1223025113,
+        1223024986,
+        1223025073,
+        1223025118,
+        1223025120,
+        1223025153,
+        1223025089,
+        1223025002,
+        1223024993,
+        1223025004,
+        1223025051,
+        1223025057,
+        1223025016,
+        1223025157,
+        1223025065,
+        1223025145,
+        1223025138,
+        1223025102
+      ],
+      "tags": {
+        "branch": "高萩モール店",
+        "brand": "ベイシア",
+        "brand:en": "Beisia",
+        "brand:ja": "ベイシア",
+        "brand:wikidata": "Q11336776",
+        "brand:wikipedia": "ja:ベイシア",
+        "building": "retail",
+        "name": "ベイシア",
+        "name:en": "Beisia",
+        "name:ja": "ベイシア",
+        "opening_hours": "Mo-Su 09:00-20:00",
+        "shop": "supermarket",
+        "source": "Bing 11-03"
+      }
+    },
+    {
+      "type": "way",
+      "id": 111051431,
+      "center": {
+        "lat": 36.080127,
+        "lon": 140.1808906
+      },
+      "nodes": [
+        1266136445,
+        11801934407,
+        9383422989,
+        11801934406,
+        11801934405,
+        11801934404,
+        1266136416,
+        1266136412,
+        9383422996,
+        1266136452,
+        11057939730,
+        11057939731,
+        1266136454,
+        1266136460,
+        1266136457,
+        1266136433,
+        4583968644,
+        4583968645,
+        1266136462,
+        1266136409,
+        1266136429,
+        1266136445
+      ],
+      "tags": {
+        "addr:block_number": "367",
+        "addr:city": "土浦市",
+        "addr:country": "JP",
+        "addr:housename": "イオンモール土浦",
+        "addr:postcode": "300-0811",
+        "addr:province": "茨城県",
+        "addr:quarter": "上高津",
+        "branch": "土浦",
+        "branch:en": "Tsuchiura",
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "building": "retail",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "shop": "supermarket",
+        "website": "https://www.aeon.jp/sc/tsuchiura/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 138322703,
+      "center": {
+        "lat": 36.1351128,
+        "lon": 140.083509
+      },
+      "nodes": [
+        8709949568,
+        1517751332,
+        2189669278,
+        8709949569,
+        1516539808,
+        8709949567,
+        8709949568
+      ],
+      "tags": {
+        "building": "commercial",
+        "name": "Food Square Kasumi",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 138417129,
+      "center": {
+        "lat": 36.1338287,
+        "lon": 140.080538
+      },
+      "nodes": [
+        1517751202,
+        1517751197,
+        1517751176,
+        1517751174,
+        1517751172,
+        1517751153,
+        1517751157,
+        1517751155,
+        1517751170,
+        1517751202
+      ],
+      "tags": {
+        "building": "commercial",
+        "name": "TAIRAYAつくば大穂店",
+        "opening_hours": "09:00-21:00",
+        "shop": "supermarket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "way",
+      "id": 162842571,
+      "center": {
+        "lat": 36.0398255,
+        "lon": 140.095332
+      },
+      "nodes": [
+        1746557892,
+        1746557893,
+        1746557886,
+        1746557884,
+        1746557885,
+        1746557883,
+        1746557888,
+        1746557889,
+        1746557892
+      ],
+      "tags": {
+        "addr:block_number": "2380",
+        "addr:city": "つくば市",
+        "addr:housenumber": "22",
+        "addr:neighbourhood": "上横場",
+        "addr:postcode": "305-0854",
+        "addr:province": "茨城県",
+        "branch": "谷田部店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "building": "retail",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 183394610,
+      "center": {
+        "lat": 36.1322477,
+        "lon": 140.0792283
+      },
+      "nodes": [
+        1937662648,
+        1937662639,
+        1937662633,
+        1937662640,
+        1937662642,
+        1937662643,
+        1937662644,
+        1937662647,
+        1937662649,
+        1937662645,
+        1937662648
+      ],
+      "tags": {
+        "building": "commercial",
+        "name": "カワチ薬品つくば大穂店",
+        "phone": "+81-29-8790271",
+        "shop": "supermarket",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "way",
+      "id": 223414380,
+      "center": {
+        "lat": 36.3156436,
+        "lon": 140.5672182
+      },
+      "nodes": [
+        2323128808,
+        2323128709,
+        2323128824,
+        2323128820,
+        2323128840,
+        2323128836,
+        2323128852,
+        2323128871,
+        2323128856,
+        2323128822,
+        2323128808
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "TAIRAYA 大洗店",
+        "shop": "supermarket",
+        "source": "GSI/KIBAN 2500",
+        "source_ref": "http://wiki.osm.org/wiki/GSI_KIBAN"
+      }
+    },
+    {
+      "type": "way",
+      "id": 226048338,
+      "center": {
+        "lat": 36.5182123,
+        "lon": 140.6170494
+      },
+      "nodes": [
+        2349081472,
+        2349081473,
+        2349081474,
+        6072814483,
+        2349081475,
+        2349081472
+      ],
+      "tags": {
+        "branch": "森山店",
+        "building": "retail",
+        "name": "マルト",
+        "name:en": "maruto",
+        "name:ko": "마루토",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 226049549,
+      "center": {
+        "lat": 36.538968,
+        "lon": 140.6241758
+      },
+      "nodes": [
+        2349093420,
+        2349093421,
+        2349093422,
+        2349093423,
+        2349093424,
+        2349093425,
+        2349093420
+      ],
+      "tags": {
+        "branch": "東金沢店",
+        "building": "retail",
+        "name": "マルト",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 264410637,
+      "center": {
+        "lat": 35.9600547,
+        "lon": 140.6439404
+      },
+      "nodes": [
+        2700957806,
+        2700957808,
+        2700957810,
+        2700957812,
+        2700957814,
+        2700957816,
+        2700957818,
+        2700957820,
+        2700957822,
+        2700957825,
+        2700957806
+      ],
+      "tags": {
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "brand:wikipedia": "ja:イオン (店舗ブランド)",
+        "building": "yes",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 264418098,
+      "center": {
+        "lat": 35.8972813,
+        "lon": 140.6411804
+      },
+      "nodes": [
+        2701014092,
+        2701014093,
+        2701014094,
+        2701014095,
+        2701014096,
+        2701014097,
+        2701014098,
+        2701014099,
+        2701014092
+      ],
+      "tags": {
+        "building": "retail",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 264442804,
+      "center": {
+        "lat": 35.8825257,
+        "lon": 140.7156816
+      },
+      "nodes": [
+        2701207707,
+        2701207708,
+        2701207709,
+        2701207710,
+        2701207711,
+        2701207712,
+        2701207713,
+        2701207714,
+        2701207715,
+        2701207716,
+        2701207707
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "タイヨー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 264447430,
+      "center": {
+        "lat": 35.985482,
+        "lon": 140.1567308
+      },
+      "nodes": [
+        2701244072,
+        2701244076,
+        2701244077,
+        2701244078,
+        2701244079,
+        2701244080,
+        2701244074,
+        2701244075,
+        2701244072
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "スーパーヤマウチ牛久店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 264447449,
+      "center": {
+        "lat": 35.9790286,
+        "lon": 140.148676
+      },
+      "nodes": [
+        2701244222,
+        2701244223,
+        2701244224,
+        5715149026,
+        2701244225,
+        2701244226,
+        2701244227,
+        2701244228,
+        2701244229,
+        2701244230,
+        2701244231,
+        2701244232,
+        2701244222
+      ],
+      "tags": {
+        "branch": "FOOD OFFストッカー牛久柏田店",
+        "building": "retail",
+        "name": "カスミ",
+        "name:ja": "ストッカー牛久柏田店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 264456571,
+      "center": {
+        "lat": 35.986656,
+        "lon": 140.155131
+      },
+      "nodes": [
+        2701407252,
+        2701407254,
+        2701407255,
+        2701407257,
+        2701407252
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ヨークベニマル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 265195382,
+      "center": {
+        "lat": 35.8813623,
+        "lon": 140.7081554
+      },
+      "nodes": [
+        2708599283,
+        2708599284,
+        2708599285,
+        2708599286,
+        2708599283
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "ハピネ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 308016843,
+      "center": {
+        "lat": 36.0957786,
+        "lon": 140.0867376
+      },
+      "nodes": [
+        3133019840,
+        3133019841,
+        3133019842,
+        5542499802,
+        3133019832,
+        5542499801,
+        5542499803,
+        5542499799,
+        5542499800,
+        3133019843,
+        5542499798,
+        5542499796,
+        5542499795,
+        5542499797,
+        3133019840
+      ],
+      "tags": {
+        "addr:block_number": "12",
+        "addr:city": "つくば市",
+        "addr:housenumber": "6",
+        "addr:neighbourhood": "三丁目",
+        "addr:postcode": "305-0816",
+        "addr:province": "茨城県",
+        "addr:quarter": "学園の森",
+        "branch": "つくば学園都市店",
+        "brand": "トライアル",
+        "brand:en": "Trial",
+        "brand:ja": "トライアル",
+        "brand:wikidata": "Q11321723",
+        "building": "yes",
+        "name": "トライアル",
+        "name:en": "Trial",
+        "name:ja": "トライアル",
+        "name:ja-Latn": "Sūpāsentā Toraiaru",
+        "opening_hours": "24/7",
+        "operator": "トライアルカンパニー",
+        "payment:cash": "yes",
+        "phone": "+81-29-860-5301",
+        "shop": "supermarket",
+        "source": "survey 14 October 2014"
+      }
+    },
+    {
+      "type": "way",
+      "id": 315412849,
+      "center": {
+        "lat": 36.6339504,
+        "lon": 140.5468201
+      },
+      "nodes": [
+        3215283692,
+        3215283693,
+        3215283694,
+        3215283695,
+        3215283692
+      ],
+      "tags": {
+        "building": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 315413943,
+      "center": {
+        "lat": 36.4510498,
+        "lon": 140.5010425
+      },
+      "nodes": [
+        3215296660,
+        3215296761,
+        7630650977,
+        7630650976,
+        3215296660
+      ],
+      "tags": {
+        "branch": "那珂店",
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "building": "yes",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 324472829,
+      "center": {
+        "lat": 36.3211981,
+        "lon": 140.5804591
+      },
+      "nodes": [
+        3311879978,
+        3311879987,
+        3311879982,
+        3311879986,
+        3311879978
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マルハン水産",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 324482779,
+      "center": {
+        "lat": 36.296726,
+        "lon": 140.272963
+      },
+      "nodes": [
+        3311954665,
+        3311953024,
+        3311953054,
+        3311953031,
+        3311954665
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "カスミ 岩間店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 342519210,
+      "center": {
+        "lat": 36.393114,
+        "lon": 140.5274723
+      },
+      "nodes": [
+        3495025825,
+        3495025856,
+        4416467117,
+        4416467118,
+        4416467119,
+        3495025846,
+        4416467116,
+        3495025847,
+        3495025825
+      ],
+      "tags": {
+        "brand": "ドン・キホーテ",
+        "brand:en": "Don Quijote",
+        "brand:ja": "ドン・キホーテ",
+        "brand:wikidata": "Q1185381",
+        "brand:wikipedia": "ja:ドン・キホーテ (企業)",
+        "building": "retail",
+        "name": "MEGAドン・キホーテ",
+        "name:en": "MEGA Don Quijote",
+        "name:ja": "MEGAドン・キホーテ",
+        "opening_hours": "24/7",
+        "shop": "supermarket",
+        "short_name": "MEGAドンキ",
+        "short_name:en": "MegaDonki",
+        "short_name:ja": "MEGAドンキ"
+      }
+    },
+    {
+      "type": "way",
+      "id": 344021939,
+      "center": {
+        "lat": 36.7058794,
+        "lon": 140.7080915
+      },
+      "nodes": [
+        3507904766,
+        6516461366,
+        3507904769,
+        3507904767,
+        3507904742,
+        6516461368,
+        6516461369,
+        6516461370,
+        6516461371,
+        3507904756,
+        6516461367,
+        3507904768,
+        3507904766
+      ],
+      "tags": {
+        "branch": "高萩店",
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "building": "retail",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 351128556,
+      "center": {
+        "lat": 36.3539624,
+        "lon": 140.4439567
+      },
+      "nodes": [
+        3568552795,
+        3568552796,
+        3568552797,
+        3568552798,
+        3568552799,
+        3568552800,
+        3568552795
+      ],
+      "tags": {
+        "branch": "千波店",
+        "building": "yes",
+        "name": "サンユーストアー",
+        "name:en": "Sanyu Store",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 361442000,
+      "center": {
+        "lat": 36.300097,
+        "lon": 139.8748044
+      },
+      "nodes": [
+        3659162973,
+        3659162974,
+        3659162975,
+        3659162976,
+        3659162977,
+        3659162978,
+        3659162979,
+        3659162980,
+        3659162981,
+        3659162982,
+        3659162983,
+        3659162973
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "うおとみ",
+        "name:en": "Uotomi",
+        "name:ja": "うおとみ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 361454353,
+      "center": {
+        "lat": 36.290972,
+        "lon": 139.8694925
+      },
+      "nodes": [
+        3015874833,
+        3659276836,
+        3659276837,
+        3659276838,
+        3659276839,
+        3015874833
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "JA北つくば結城農産物直売所きらいち",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 361916185,
+      "center": {
+        "lat": 36.2872047,
+        "lon": 139.8689586
+      },
+      "nodes": [
+        3663215709,
+        3663215710,
+        3663215711,
+        3663215712,
+        3663215713,
+        3663215714,
+        3663215715,
+        3663215716,
+        3663215717,
+        3663215718,
+        3663215709
+      ],
+      "tags": {
+        "brand": "とりせん",
+        "brand:en": "Torisen",
+        "brand:ja": "とりせん",
+        "brand:wikidata": "Q11273505",
+        "building": "yes",
+        "name": "とりせん",
+        "name:en": "Torisen",
+        "name:ja": "とりせん",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 361916703,
+      "center": {
+        "lat": 36.2868186,
+        "lon": 139.8759721
+      },
+      "nodes": [
+        3663219573,
+        3663219574,
+        3663219575,
+        3663219576,
+        3663219577,
+        3663219578,
+        3663219573
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 370585567,
+      "center": {
+        "lat": 36.3740597,
+        "lon": 140.4938879
+      },
+      "nodes": [
+        3742827559,
+        3742827554,
+        3742827556,
+        3742827557,
+        3742827558,
+        3742827563,
+        3742827561,
+        3742827560,
+        3742827559
+      ],
+      "tags": {
+        "branch": "城東店",
+        "building": "retail",
+        "name": "セイブ",
+        "name:en": "SEIBU",
+        "opening_hours": "09:00-21:00",
+        "phone": "+81 29 224 2223",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 377400088,
+      "center": {
+        "lat": 36.0872114,
+        "lon": 140.2070044
+      },
+      "nodes": [
+        3807746980,
+        3807746981,
+        3807746982,
+        4608996584,
+        4608996583,
+        3807746983,
+        3807746980
+      ],
+      "tags": {
+        "addr:city": "土浦市",
+        "addr:housenumber": "真鍋新町20-19",
+        "addr:postcode": "300-0053",
+        "addr:province": "茨城県",
+        "branch": "土浦真鍋店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "building": "retail",
+        "building:levels": "1",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "opening_hours": "PH,Mo-Su 09:30-21:30",
+        "roof:levels": "0",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 380080447,
+      "center": {
+        "lat": 35.9305564,
+        "lon": 140.1342631
+      },
+      "nodes": [
+        3834286160,
+        3834286161,
+        3834286162,
+        3834286163,
+        3834286164,
+        3834286160
+      ],
+      "tags": {
+        "brand": "ヤオコー",
+        "brand:en": "Yaoko",
+        "brand:ja": "ヤオコー",
+        "brand:wikidata": "Q11344967",
+        "building": "yes",
+        "name": "ヤオコー",
+        "name:en": "Yaoko",
+        "name:ja": "ヤオコー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 380080624,
+      "center": {
+        "lat": 35.9294879,
+        "lon": 140.1347674
+      },
+      "nodes": [
+        3834283769,
+        3834283770,
+        3834283771,
+        3834283772,
+        3834283773,
+        3834283774,
+        3834283775,
+        3834283776,
+        3834283769
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ビバホーム",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 381195426,
+      "center": {
+        "lat": 36.0770006,
+        "lon": 140.1192453
+      },
+      "nodes": [
+        3844349911,
+        3844349912,
+        3844349907,
+        3844349906,
+        3844349895,
+        3844349896,
+        3844349894,
+        3844349893,
+        3844349892,
+        3844349891,
+        3844349890,
+        3844349888,
+        3844349889,
+        3844349884,
+        3844349887,
+        3844349886,
+        3844349882,
+        3844349880,
+        3844349885,
+        3844349883,
+        3844349879,
+        3844349877,
+        3844349881,
+        3844349876,
+        3844349897,
+        3844349898,
+        3844349899,
+        3844349902,
+        3844349900,
+        3844349903,
+        3844349901,
+        3844349904,
+        3844349905,
+        3844349910,
+        3844349908,
+        3844349909,
+        3844349911
+      ],
+      "tags": {
+        "branch": "学園店",
+        "branch:en": "Gakuen",
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "building": "supermarket",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "phone": "+81 29 851 2631",
+        "shop": "supermarket",
+        "source": "Bing 2010",
+        "wheelchair": "limited"
+      }
+    },
+    {
+      "type": "way",
+      "id": 381428426,
+      "center": {
+        "lat": 35.9702393,
+        "lon": 140.1428727
+      },
+      "nodes": [
+        3846292457,
+        3846292458,
+        3846292459,
+        3846292460,
+        3846292457
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "coop茨城生協",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 383369332,
+      "center": {
+        "lat": 36.0606319,
+        "lon": 140.0597492
+      },
+      "nodes": [
+        3866210332,
+        5439080099,
+        5439080098,
+        5439080096,
+        5439080097,
+        3866210333,
+        3866210334,
+        5439080100,
+        5439080101,
+        3866210335,
+        3866210332
+      ],
+      "tags": {
+        "brand": "カスミ",
+        "building": "supermarket",
+        "name": "カスミ",
+        "name:en": "KASUMI",
+        "name:ja": "カスミ",
+        "name:ja_rm": "Kasumi",
+        "opening_hours": "Mo-Su 09:00-00:00",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "way",
+      "id": 384964406,
+      "center": {
+        "lat": 36.1015363,
+        "lon": 139.7998353
+      },
+      "nodes": [
+        4704756207,
+        3883166526,
+        4704756236,
+        3883166527,
+        4704755802,
+        4704756207
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "ワンダーグー 境FiSS店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 386725736,
+      "center": {
+        "lat": 36.3839759,
+        "lon": 140.245542
+      },
+      "nodes": [
+        3900792884,
+        3900792871,
+        3900792881,
+        3900792890,
+        3900792891,
+        3900792892,
+        3900792888,
+        3900792893,
+        3900792884
+      ],
+      "tags": {
+        "branch": "笠間店",
+        "brand": "KASUMI",
+        "building": "retail",
+        "name": "カスミ",
+        "name:en": "KASUMI",
+        "name:ja_rm": "Kasumi",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 388186461,
+      "center": {
+        "lat": 36.3506047,
+        "lon": 140.4728169
+      },
+      "nodes": [
+        3914064574,
+        4598114535,
+        4598114534,
+        3914064575,
+        3914064576,
+        3914064577,
+        3914064578,
+        3914064579,
+        3914064574
+      ],
+      "tags": {
+        "branch": "元吉田店",
+        "building": "retail",
+        "name": "FOOD OFFストッカー",
+        "name:en": "Food off stocker",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 389126942,
+      "center": {
+        "lat": 35.9739214,
+        "lon": 140.1343361
+      },
+      "nodes": [
+        3922899118,
+        4571754389,
+        3922899128,
+        3922899129,
+        4009256439,
+        4009256442,
+        4009256441,
+        4009256440,
+        3922899130,
+        3922899118
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 406875448,
+      "center": {
+        "lat": 36.3290193,
+        "lon": 140.3238586
+      },
+      "nodes": [
+        4089256229,
+        4089256230,
+        4089256231,
+        4089256232,
+        13075329149,
+        13075329150,
+        13075329151,
+        13075329152,
+        13075329153,
+        13075329154,
+        13075329155,
+        13075329156,
+        4089256233,
+        4089256234,
+        4089256229
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "トライアル (Trial)",
+        "name:en": "Trial",
+        "name:ja": "トライアル",
+        "opening_hours": "24/7",
+        "phone": "0296-71-2161",
+        "shop": "supermarket",
+        "source": "Knowledge",
+        "website": "http://www.trial-net.co.jp"
+      }
+    },
+    {
+      "type": "way",
+      "id": 413972587,
+      "center": {
+        "lat": 36.3655023,
+        "lon": 140.3546633
+      },
+      "nodes": [
+        4151734437,
+        7533324412,
+        7533324411,
+        7533324410,
+        7533324409,
+        4151734438,
+        7533324408,
+        7533324407,
+        7533324406,
+        7533324405,
+        4151734440,
+        4151734439,
+        7533324414,
+        7533324413,
+        4151734437
+      ],
+      "tags": {
+        "branch": "食彩館内原店",
+        "building": "retail",
+        "name": "セイブ",
+        "name:en": "SEIBU",
+        "opening_hours": "09:00-21:00",
+        "phone": "+81 29 259 5961",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 413975356,
+      "center": {
+        "lat": 36.3333672,
+        "lon": 140.4859996
+      },
+      "nodes": [
+        4151757514,
+        4151757512,
+        7533300290,
+        7533300289,
+        4151757513,
+        4151757516,
+        4151757514
+      ],
+      "tags": {
+        "branch": "食彩館けやき台店",
+        "building": "retail",
+        "name": "セイブ",
+        "name:en": "SEIBU",
+        "opening_hours": "Mo-Fr 09:30-22:00; Sa,Su 09:00-22:00",
+        "phone": "+81 29 246 9211",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 421761028,
+      "center": {
+        "lat": 36.1971237,
+        "lon": 139.7202178
+      },
+      "nodes": [
+        4215066996,
+        4215066997,
+        4215066998,
+        4215066999,
+        4215066996
+      ],
+      "tags": {
+        "branch": "古河店",
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "building": "yes",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 421761552,
+      "center": {
+        "lat": 36.1828722,
+        "lon": 139.7170081
+      },
+      "nodes": [
+        4215073037,
+        9084122052,
+        9084122051,
+        4215073038,
+        4215073039,
+        4215073040,
+        4215073041,
+        4215073042,
+        4215073043,
+        4215073044,
+        4215073045,
+        4215073046,
+        4215073047,
+        4215073037
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ベイシア 古河総和店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 422205728,
+      "center": {
+        "lat": 36.3066342,
+        "lon": 139.9814331
+      },
+      "nodes": [
+        4219258761,
+        4219258762,
+        4219258763,
+        4219258764,
+        4219258765,
+        4219258766,
+        4219258767,
+        4219258761
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "かましん下館店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 422207582,
+      "center": {
+        "lat": 36.2996913,
+        "lon": 139.9779771
+      },
+      "nodes": [
+        4219277494,
+        4219277495,
+        4219277496,
+        4219277497,
+        4219277498,
+        4219277499,
+        4219277500,
+        4219277494
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "カスミ フードスクエア下館南店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 430127828,
+      "center": {
+        "lat": 36.3534336,
+        "lon": 140.4539408
+      },
+      "nodes": [
+        4293910533,
+        4293910532,
+        4293910531,
+        4293910528,
+        4293910529,
+        4293910527,
+        4293910530,
+        7533317403,
+        7533317402,
+        4293910534,
+        4293910533
+      ],
+      "tags": {
+        "branch": "食彩館千波店",
+        "building": "retail",
+        "name": "セイブ",
+        "name:en": "SEIBU",
+        "opening_hours": "09:00-24:00",
+        "phone": "+81 29 241 1561",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 430127937,
+      "center": {
+        "lat": 36.3478281,
+        "lon": 140.4778352
+      },
+      "nodes": [
+        4293911392,
+        5872902971,
+        5872902970,
+        5872902969,
+        5872902968,
+        4293911390,
+        5872902967,
+        4293910888,
+        4293911389,
+        4293910887,
+        5872902973,
+        5872902972,
+        4293911391,
+        4293911392
+      ],
+      "tags": {
+        "branch": "食彩館元吉田店",
+        "building": "retail",
+        "name": "セイブ",
+        "name:en": "SEIBU",
+        "opening_hours": "09:00-22:00",
+        "phone": "+81 29 247 0021",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 432562139,
+      "center": {
+        "lat": 36.3192497,
+        "lon": 140.5832853
+      },
+      "nodes": [
+        4315671182,
+        4315671181,
+        4315671169,
+        4315671168,
+        4315671172,
+        4315671179,
+        4315671178,
+        4315671180,
+        4315671182
+      ],
+      "tags": {
+        "name": "セイブ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 457404388,
+      "center": {
+        "lat": 36.5415586,
+        "lon": 140.6196252
+      },
+      "nodes": [
+        4535573925,
+        4535573926,
+        4535573927,
+        4535573928,
+        4535573925
+      ],
+      "tags": {
+        "branch": "金沢店",
+        "brand": "エコス",
+        "brand:en": "Ecos",
+        "brand:ja": "エコス",
+        "brand:wikidata": "Q11289886",
+        "brand:wikipedia": "ja:エコス",
+        "building": "yes",
+        "name": "エコス",
+        "name:en": "Ecos",
+        "name:ja": "エコス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 462981626,
+      "center": {
+        "lat": 35.9204898,
+        "lon": 140.0049413
+      },
+      "nodes": [
+        4583022222,
+        6907702402,
+        4583022223,
+        4583022224,
+        4583022225,
+        6907702383,
+        4583022222
+      ],
+      "tags": {
+        "brand": "ヤオコー",
+        "brand:en": "Yaoko",
+        "brand:ja": "ヤオコー",
+        "brand:wikidata": "Q11344967",
+        "brand:wikipedia": "ja:ヤオコー",
+        "building": "yes",
+        "name": "ヤオコー",
+        "name:en": "Yaoko",
+        "name:ja": "ヤオコー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 463195892,
+      "center": {
+        "lat": 36.3619478,
+        "lon": 140.4954328
+      },
+      "nodes": [
+        4584902473,
+        4584902472,
+        4584902471,
+        4584902470,
+        4584902469,
+        4584902468,
+        4584902467,
+        4584902466,
+        4584902465,
+        4584902464,
+        4584902463,
+        4584902462,
+        4584902461,
+        4584902460,
+        4584902473
+      ],
+      "tags": {
+        "addr:city": "水戸市",
+        "addr:full": "茨城県水戸市浜田1-2-30",
+        "addr:neighbourhood": "浜田一丁目2番30号",
+        "addr:postcode": "310-0812",
+        "addr:province": "茨城県",
+        "branch": "水戸浜田店",
+        "brand": "ヨークベニマル",
+        "building": "retail",
+        "name": "ヨークベニマル",
+        "name:en": "York-Benimaru",
+        "opening_hours": "Mo-Su 09:30-22:00",
+        "operator": "ヨークベニマル",
+        "phone": "+81-29-3032831",
+        "shop": "supermarket",
+        "source": "GSImaps/ort",
+        "website": "https://www.yorkbeni.co.jp/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 463214481,
+      "center": {
+        "lat": 36.3911097,
+        "lon": 140.4341831
+      },
+      "nodes": [
+        4585080455,
+        4585080454,
+        4585080453,
+        4585080452,
+        4585080451,
+        4585080450,
+        4585080449,
+        4585080448,
+        4585080447,
+        4585080455
+      ],
+      "tags": {
+        "addr:city": "水戸市",
+        "addr:full": "茨城県水戸市新原1-3078-62",
+        "addr:housenumber": "新原1-3078-62",
+        "addr:postcode": "310-0045",
+        "addr:province": "茨城県",
+        "branch": "新原店",
+        "brand": "ヨークベニマル",
+        "building": "retail",
+        "name": "ヨークベニマル　新原店",
+        "name:en": "York Benimaru",
+        "opening_hours": "Mo-Su 09:00-21:30",
+        "phone": "+81-29-3095025",
+        "shop": "supermarket",
+        "source": "Bing 2010;(URL)",
+        "website": "https://www.yorkbeni.co.jp/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 464251762,
+      "center": {
+        "lat": 35.9529724,
+        "lon": 140.0516364
+      },
+      "nodes": [
+        4593860398,
+        10123835203,
+        4593860399,
+        4593860400,
+        4593860401,
+        4593860402,
+        10123835202,
+        10123835200,
+        10123835201,
+        10123835199,
+        4593860398
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 464720864,
+      "center": {
+        "lat": 36.3921881,
+        "lon": 140.402496
+      },
+      "nodes": [
+        1973767252,
+        4598039370,
+        4598039369,
+        4598039368,
+        4598039367,
+        4598039366,
+        1973767252
+      ],
+      "tags": {
+        "addr:city": "水戸市",
+        "addr:full": "茨城県水戸市双葉台4-648-1",
+        "addr:neighbourhood": "双葉台四丁目648番地1",
+        "addr:postcode": "311-4145",
+        "addr:province": "茨城県",
+        "branch": "双葉台店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "building": "retail",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "phone": "+81-29-2552525",
+        "shop": "supermarket",
+        "source": "GSImaps/ort",
+        "website": "https://www.yorkbeni.co.jp/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 465876917,
+      "center": {
+        "lat": 36.3429224,
+        "lon": 140.5041672
+      },
+      "nodes": [
+        1941670744,
+        4607822183,
+        4607822182,
+        4607822181,
+        4607822180,
+        4607822179,
+        4607822178,
+        4607822177,
+        1941670744
+      ],
+      "tags": {
+        "addr:full": "茨城県水戸市百合が丘町8-3",
+        "addr:postcode": "311-1134",
+        "branch": "百合が丘店",
+        "brand": "ヨークベニマル",
+        "building": "retail",
+        "name": "ヨークベニマル",
+        "name:en": "York-Benimaru",
+        "opening_hours": "Mo-Su 09:30-22:00",
+        "phone": "+81 29 304 1035",
+        "shop": "supermarket",
+        "website": "https://www.yorkbeni.co.jp/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 465884817,
+      "center": {
+        "lat": 36.1240413,
+        "lon": 140.2314054
+      },
+      "nodes": [
+        4607879455,
+        4607879454,
+        4607879453,
+        4607879452,
+        4607879451,
+        4607879450,
+        4607879449,
+        4607879448,
+        4607879447,
+        4607879446,
+        4607879445,
+        4607879444,
+        4607879455
+      ],
+      "tags": {
+        "addr:city": "かすみがうら市",
+        "addr:full": "茨城県かすみがうら市下稲吉字逆西2633-7",
+        "addr:housenumber": "下稲吉字逆西2633-7",
+        "addr:postcode": "315-0052",
+        "addr:province": "茨城県",
+        "branch": "千代田モール店",
+        "brand": "ヨークベニマル",
+        "building": "yes",
+        "name": "ヨークベニマル　千代田モール店",
+        "name:en": "York Benimaru",
+        "opening_hours": "Mo-Su 09:30-22:00",
+        "phone": "+81-29-8341755",
+        "shop": "supermarket",
+        "source": "Bing 2016;(URL)",
+        "website": "https://www.yorkbeni.co.jp/",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 466002198,
+      "center": {
+        "lat": 36.3306469,
+        "lon": 140.0391571
+      },
+      "nodes": [
+        4608972512,
+        4608972511,
+        4608972510,
+        4608972509,
+        4608972508,
+        4608972507,
+        4608972506,
+        4608972505,
+        4608972512
+      ],
+      "tags": {
+        "branch": "協和店",
+        "building": "retail",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "shop": "supermarket",
+        "source": "Bing 2016"
+      }
+    },
+    {
+      "type": "way",
+      "id": 466003933,
+      "center": {
+        "lat": 36.2489857,
+        "lon": 140.2996732
+      },
+      "nodes": [
+        4608983570,
+        4608983569,
+        4608983568,
+        4608983567,
+        4608983566,
+        4608983565,
+        4608983564,
+        4608983563,
+        4608983562,
+        4608983561,
+        4608983560,
+        4608983559,
+        4608983558,
+        4608983557,
+        4608983556,
+        4608983570
+      ],
+      "tags": {
+        "branch": "美野里店",
+        "building": "retail",
+        "name": "TAIRAYA",
+        "name:en": "TAIRAYA",
+        "name:ja": "TAIRAYA",
+        "shop": "supermarket",
+        "source": "Bing 2016"
+      }
+    },
+    {
+      "type": "way",
+      "id": 466410395,
+      "center": {
+        "lat": 36.347914,
+        "lon": 140.3150252
+      },
+      "nodes": [
+        4612095363,
+        4612095362,
+        4612095361,
+        4612095360,
+        4612095359,
+        4612095358,
+        4612095357,
+        4612095356,
+        4612095355,
+        4612095354,
+        4612095353,
+        4612095352,
+        4612095351,
+        4612095350,
+        4612095349,
+        4612095348,
+        4612095363
+      ],
+      "tags": {
+        "addr:city": "笠間市",
+        "addr:full": "茨城県笠間市東平3-1-45",
+        "addr:neighbourhood": "東平三丁目1番45号",
+        "addr:postcode": "309-1705",
+        "addr:province": "茨城県",
+        "branch": "友部東平店",
+        "brand": "ヨークベニマル",
+        "building": "retail",
+        "name": "ヨークベニマル　友部東平店",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル　友部店",
+        "name:ja_rm": "Yorkbenimaru",
+        "opening_hours": "Mo-Su 09:30-21:30",
+        "operator": "ヨークベニマル　友部店",
+        "phone": "+81-296-712131",
+        "shop": "supermarket",
+        "source": "Bing 2010;(URL)",
+        "website": "https://www.yorkbeni.co.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 467090387,
+      "center": {
+        "lat": 36.5314644,
+        "lon": 140.4248133
+      },
+      "nodes": [
+        4617651535,
+        4617651534,
+        4617651533,
+        4617651532,
+        4617651531,
+        4617651530,
+        4617651529,
+        4617651528,
+        4617651535
+      ],
+      "tags": {
+        "addr:city": "常陸大宮市",
+        "addr:housenumber": "泉521番地1",
+        "addr:postcode": "319-2144",
+        "addr:province": "茨城県",
+        "building": "yes",
+        "name": "ヨークベニマル　常陸大宮店",
+        "shop": "supermarket",
+        "source": "GSI/KIBAN 2500;NARO"
+      }
+    },
+    {
+      "type": "way",
+      "id": 467113722,
+      "center": {
+        "lat": 36.5410942,
+        "lon": 140.4772914
+      },
+      "nodes": [
+        4617810991,
+        4617810990,
+        4617810989,
+        4617810488,
+        4617810487,
+        4617810486,
+        4617810991
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "セイブ",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 467318043,
+      "center": {
+        "lat": 36.5609478,
+        "lon": 140.4072156
+      },
+      "nodes": [
+        4619674640,
+        4619674639,
+        4619674638,
+        4619674637,
+        4619674636,
+        4619674635,
+        4619674634,
+        4619674633,
+        4619674632,
+        4619674631,
+        4619674630,
+        4619674629,
+        4619674628,
+        4619674627,
+        4619674626,
+        4619674625,
+        4619674640
+      ],
+      "tags": {
+        "branch": "カスミ常陸大宮店",
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "building": "retail",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "name:ja_kana": "かすみ",
+        "name:ja_rm": "Kasumi",
+        "operator": "カスミ",
+        "shop": "supermarket",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 468587561,
+      "center": {
+        "lat": 36.4486245,
+        "lon": 140.5029799
+      },
+      "nodes": [
+        4631041088,
+        4631041087,
+        4631041086,
+        4631041085,
+        4631041084,
+        4631041083,
+        4631041082,
+        4631041081,
+        4631041088
+      ],
+      "tags": {
+        "brand": "イオン",
+        "brand:en": "AEON",
+        "brand:ja": "イオン",
+        "brand:wikidata": "Q11285951",
+        "building": "retail",
+        "name": "イオン",
+        "name:en": "AEON",
+        "name:ja": "イオン",
+        "shop": "supermarket",
+        "source": "GSI/KIBAN 2500; NARO"
+      }
+    },
+    {
+      "type": "way",
+      "id": 469350057,
+      "center": {
+        "lat": 36.341715,
+        "lon": 140.4641537
+      },
+      "nodes": [
+        4636903254,
+        4640128408,
+        4640128407,
+        4640128406,
+        4636903255,
+        4636903256,
+        4636903258,
+        4640128409,
+        4636903254
+      ],
+      "tags": {
+        "branch": "コープ水戸店",
+        "building": "retail",
+        "name": "いばらきコープ",
+        "opening_hours": "Mo-Su 09:30-22:00",
+        "phone": "+81 29 246 1421",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 469350078,
+      "center": {
+        "lat": 36.3286703,
+        "lon": 140.4581544
+      },
+      "nodes": [
+        4636903497,
+        4636903498,
+        4636903499,
+        4636903500,
+        4636903497
+      ],
+      "tags": {
+        "landuse": "retail",
+        "name": "しまむら",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 469350080,
+      "center": {
+        "lat": 36.3293779,
+        "lon": 140.457914
+      },
+      "nodes": [
+        4636903501,
+        9042108625,
+        4636903502,
+        4636903503,
+        4636903504,
+        4636903505,
+        4636903506,
+        4636903507,
+        4636903508,
+        4636903509,
+        4636903510,
+        4663257662,
+        4663257663,
+        4636903501
+      ],
+      "tags": {
+        "landuse": "retail",
+        "name": "サンキ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 469350090,
+      "center": {
+        "lat": 36.3350285,
+        "lon": 140.4416842
+      },
+      "nodes": [
+        4662892589,
+        4636903531,
+        4636903532,
+        4662892086,
+        4662892087,
+        4662892088,
+        9740802199,
+        9740802200,
+        9740802201,
+        9740802202,
+        9740802203,
+        9740802204,
+        4662892589
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 469390844,
+      "center": {
+        "lat": 36.5423406,
+        "lon": 140.5305287
+      },
+      "nodes": [
+        4637174581,
+        4637174579,
+        4637174578,
+        4637174577,
+        4637174576,
+        4637174575,
+        4637174574,
+        4637174580,
+        4637174581
+      ],
+      "tags": {
+        "branch": "常陸太田店",
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "building": "retail",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "name:ja_kana": "かすみ",
+        "name:ja_rm": "Kasumi",
+        "operator": "カスミ",
+        "shop": "supermarket",
+        "source": "survey;Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 470541518,
+      "center": {
+        "lat": 36.0097271,
+        "lon": 140.1563105
+      },
+      "nodes": [
+        4647124782,
+        4647130572,
+        4647124783,
+        4647130573,
+        4647124784,
+        4647124785,
+        4647124786,
+        4647124787,
+        4647124782
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ヨークベニマル　ひたち野うしく店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 471721978,
+      "center": {
+        "lat": 35.9155772,
+        "lon": 140.6398429
+      },
+      "nodes": [
+        4658775943,
+        4658775944,
+        4658775945,
+        4658775946,
+        4658775943
+      ],
+      "tags": {
+        "addr:block_number": "1",
+        "addr:city": "神栖市",
+        "addr:housenumber": "41",
+        "addr:neighbourhood": "4",
+        "addr:province": "茨城県",
+        "addr:quarter": "大野原",
+        "building": "yes",
+        "building:levels": "1",
+        "name": "フードスクエアカスミライフガーデン神栖店",
+        "opening_hours": "Mo-Su 09:00-24:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:jcb": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "phone": "0299-90-1370",
+        "shop": "supermarket",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 475858079,
+      "center": {
+        "lat": 36.3927043,
+        "lon": 140.5166239
+      },
+      "nodes": [
+        2381941897,
+        4695453531,
+        4695453530,
+        4695453529,
+        2381941897
+      ],
+      "tags": {
+        "branch": "堀口店",
+        "building": "retail",
+        "name": "サンユーストアー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 477064163,
+      "center": {
+        "lat": 36.1014427,
+        "lon": 139.7961302
+      },
+      "nodes": [
+        4704756047,
+        4704755830,
+        6894632442,
+        6894632444,
+        6894632443,
+        6894632441,
+        4704756244,
+        6894632311,
+        6894630414,
+        6894630415,
+        4704756265,
+        4704756047
+      ],
+      "tags": {
+        "branch": "境大橋店",
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "building": "retail",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 477069301,
+      "center": {
+        "lat": 36.1142188,
+        "lon": 139.7986529
+      },
+      "nodes": [
+        4704780282,
+        4704780045,
+        4704780206,
+        4704780281,
+        4704780023,
+        4704780327,
+        4704780301,
+        4704780294,
+        4704780263,
+        4704780039,
+        4704780282
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "エコス 境SC店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 478368363,
+      "center": {
+        "lat": 36.1988322,
+        "lon": 139.7129382
+      },
+      "nodes": [
+        4715943488,
+        4715943451,
+        4715943423,
+        4715943453,
+        4715943507,
+        4715943519,
+        4715943528,
+        4715943526,
+        4715943391,
+        4715943401,
+        4715943533,
+        4715943502,
+        4715943566,
+        4715943592,
+        7794682388,
+        4715943561,
+        4715943349,
+        4715943577,
+        4715943381,
+        4715943454,
+        4715943590,
+        4715943446,
+        4715943432,
+        4715943536,
+        4715943558,
+        4715943393,
+        4715943444,
+        4715943452,
+        4715943345,
+        4715943564,
+        4715943600,
+        4715943554,
+        4715943488
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "わくわく広場あかやまJOY店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 478371743,
+      "center": {
+        "lat": 36.1938827,
+        "lon": 139.7359647
+      },
+      "nodes": [
+        4715978163,
+        4715978092,
+        4715978241,
+        4715977859,
+        4715978433,
+        4715977717,
+        4715978090,
+        4715977761,
+        4715978163
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ジャパンミート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 478439954,
+      "center": {
+        "lat": 36.0585222,
+        "lon": 140.1970944
+      },
+      "nodes": [
+        4716556814,
+        4716556815,
+        4716556816,
+        4716556817,
+        4716556818,
+        4716556819,
+        4652786284,
+        4716556820,
+        4716556814
+      ],
+      "tags": {
+        "addr:city": "土浦市",
+        "addr:housenumber": "５−２８",
+        "addr:neighbourhood": "１丁目",
+        "addr:postcode": "300-0834",
+        "addr:province": "茨城県",
+        "addr:quarter": "小岩田東",
+        "building": "yes",
+        "name": "業務スーパー 土浦店",
+        "opening_hours": "9:00-20:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 479989480,
+      "center": {
+        "lat": 36.4805189,
+        "lon": 140.3725565
+      },
+      "nodes": [
+        4730180223,
+        4730180221,
+        4730180222,
+        4730180226,
+        4730180225,
+        4730180224,
+        4730180223
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "Aコープ城北",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 480006634,
+      "center": {
+        "lat": 36.4729719,
+        "lon": 140.3880671
+      },
+      "nodes": [
+        4730341827,
+        4730341826,
+        4730341825,
+        4730341824,
+        4730341827
+      ],
+      "tags": {
+        "branch": "常北店",
+        "building": "retail",
+        "name": "コメリ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 480006635,
+      "center": {
+        "lat": 36.4713499,
+        "lon": 140.3912388
+      },
+      "nodes": [
+        4730341831,
+        4730341830,
+        4730341829,
+        4730341828,
+        4730341831
+      ],
+      "tags": {
+        "branch": "城里店",
+        "building": "retail",
+        "name": "カワチ薬品",
+        "name:en": "Cawachi",
+        "opening_hours": "10:00-20:00",
+        "phone": "+81 29 288 7470",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 480017464,
+      "center": {
+        "lat": 36.4012615,
+        "lon": 140.4363478
+      },
+      "nodes": [
+        4730446715,
+        4730446714,
+        4730446713,
+        4730446712,
+        4730446715
+      ],
+      "tags": {
+        "branch": "フードスクエア 水戸堀町店",
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "building": "retail",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 485443203,
+      "center": {
+        "lat": 36.153813,
+        "lon": 140.4967244
+      },
+      "nodes": [
+        11363511490,
+        4782130398,
+        4782130397,
+        4782130396,
+        4782130395,
+        11363511495,
+        11363511494,
+        11363511493,
+        11363511492,
+        4782130394,
+        4782130393,
+        4782130392,
+        4782130391,
+        4782130390,
+        4782130389,
+        4782130388,
+        11363511491,
+        4782130387,
+        11363511490
+      ],
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "building:part": "yes",
+        "ele": "0.8",
+        "height": "8",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket",
+        "source": "MLIT_PLATEAU bldg_358d03e3-b5b3-4264-a515-9256d178b43f"
+      }
+    },
+    {
+      "type": "way",
+      "id": 494791963,
+      "center": {
+        "lat": 36.3997531,
+        "lon": 140.5608087
+      },
+      "nodes": [
+        4865446640,
+        7524825508,
+        7524825506,
+        7524825507,
+        4865446641,
+        4865446642,
+        4865446643,
+        4865446640
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "セイミヤ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 497793529,
+      "center": {
+        "lat": 36.1855193,
+        "lon": 139.8885614
+      },
+      "nodes": [
+        4893087142,
+        4893087141,
+        4893087140,
+        4893087139,
+        4893087138,
+        4893087137,
+        4893087136,
+        4893087135,
+        4893087134,
+        4893087133,
+        4893087132,
+        4893087131,
+        4893087130,
+        4893087129,
+        4893087128,
+        4893087127,
+        4893087142
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 497793532,
+      "center": {
+        "lat": 36.1859274,
+        "lon": 139.8874985
+      },
+      "nodes": [
+        4893087176,
+        4893087175,
+        4893087174,
+        4893087173,
+        4893087176
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "ドラッグストアクラモチ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 497866200,
+      "center": {
+        "lat": 36.1674041,
+        "lon": 139.7678691
+      },
+      "nodes": [
+        4893688236,
+        4893688235,
+        4893688234,
+        4893688233,
+        4893688232,
+        4893688231,
+        4893688230,
+        4893688229,
+        4893688228,
+        4893688227,
+        4893688226,
+        4893688225,
+        4893688224,
+        4893688223,
+        4893688236
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "とりせん",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 501116407,
+      "center": {
+        "lat": 35.9660769,
+        "lon": 140.6436671
+      },
+      "nodes": [
+        4920084249,
+        4920084250,
+        4920084257,
+        4920084260,
+        4920084259,
+        4920084258,
+        4920084251,
+        4920084252,
+        4920084253,
+        4920084254,
+        4920084255,
+        4920084256,
+        4920084249
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "セイミヤ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 516923227,
+      "center": {
+        "lat": 36.0781585,
+        "lon": 140.120348
+      },
+      "nodes": [
+        5045565419,
+        5045565420,
+        5045565721,
+        2855408807,
+        5045565726,
+        5045565723,
+        5045565724,
+        5045565725,
+        10211585700,
+        10211585701,
+        10211585702,
+        10211585703,
+        5045565419
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ジェーソン",
+        "name:ja": "ジェーソン",
+        "shop": "supermarket",
+        "source": "survey",
+        "source:geometry": "GSImaps/ort",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 537310435,
+      "center": {
+        "lat": 36.2100946,
+        "lon": 139.7083844
+      },
+      "nodes": [
+        5203718547,
+        5203450911,
+        5203450912,
+        5203450913,
+        5203450914,
+        5203450915,
+        5203450916,
+        5203450917,
+        5203450918,
+        5203450919,
+        5203450920,
+        5203451324,
+        5203451321,
+        5203451325,
+        5203451322,
+        5203451326,
+        5203451323,
+        5203718547
+      ],
+      "tags": {
+        "brand": "ヤオコー",
+        "brand:en": "Yaoko",
+        "brand:ja": "ヤオコー",
+        "brand:wikidata": "Q11344967",
+        "building": "yes",
+        "building:levels": "yellow",
+        "name": "ヤオコー",
+        "name:en": "Yaoko",
+        "name:ja": "ヤオコー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 544049973,
+      "center": {
+        "lat": 36.2919849,
+        "lon": 140.4249553
+      },
+      "nodes": [
+        5259120764,
+        5259120763,
+        5259120762,
+        5259120761,
+        5259120760,
+        5259120759,
+        5259120764
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "エコス長岡店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 544287255,
+      "center": {
+        "lat": 36.3808421,
+        "lon": 140.6192426
+      },
+      "nodes": [
+        5261585320,
+        5261585521,
+        5261585522,
+        5261585523,
+        5261585320
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "大和田食品マート",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 546791181,
+      "center": {
+        "lat": 36.0841018,
+        "lon": 140.084706
+      },
+      "nodes": [
+        5283714889,
+        5283714893,
+        5283714896,
+        5283714890,
+        5283714891,
+        5283714888,
+        5283714892,
+        6580038924,
+        6580038925,
+        6580038927,
+        6580038926,
+        6580038928,
+        6580038929,
+        5283714895,
+        5283714889
+      ],
+      "tags": {
+        "branch": "研究学園店",
+        "building": "yes",
+        "contact:phone": "029-850-2039",
+        "name": "とりせん",
+        "name:en": "Torisen",
+        "opening_hours": "Mo-Su 09:00-00:00",
+        "shop": "supermarket",
+        "source": "GSImaps/std",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 550420946,
+      "center": {
+        "lat": 36.1017317,
+        "lon": 140.4129512
+      },
+      "nodes": [
+        5316334817,
+        5316334816,
+        5316334815,
+        5316334814,
+        5316334817
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ジェーソン行方店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 550626539,
+      "center": {
+        "lat": 36.1979992,
+        "lon": 140.3057857
+      },
+      "nodes": [
+        5318256843,
+        5318256842,
+        5318256841,
+        5318256840,
+        5318256839,
+        5318256838,
+        5318256837,
+        5318256836,
+        5318256835,
+        5318256834,
+        5318256833,
+        5318256832,
+        5318256831,
+        5318256830,
+        5318256829,
+        5318256828,
+        5318256827,
+        5318256826,
+        5318256825,
+        5318256824,
+        5318256843
+      ],
+      "tags": {
+        "addr:city": "石岡市",
+        "addr:housenumber": "東大橋字中峯1937番地1",
+        "addr:postcode": "315-0031",
+        "addr:province": "茨城県",
+        "building": "yes",
+        "name": "ヨークベニマル　石岡店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 556234672,
+      "center": {
+        "lat": 36.231084,
+        "lon": 140.2103151
+      },
+      "nodes": [
+        5365713390,
+        5365713389,
+        5365713388,
+        5365713387,
+        5365713386,
+        5365713385,
+        5365713384,
+        5365713383,
+        5365713382,
+        5365713381,
+        5365713380,
+        5365713390
+      ],
+      "tags": {
+        "addr:city": "石岡市",
+        "addr:full": "茨城県石岡市下林282",
+        "addr:housenumber": "下林282",
+        "addr:postcode": "315-0131",
+        "addr:province": "茨城県",
+        "branch": "八郷店",
+        "building": "retail",
+        "name": "ヨークベニマル　八郷店",
+        "name:en": "YorkBenimaru",
+        "opening_hours": "Mo-Su 09:00-21:00",
+        "operator": "ヨークベニマル八郷店",
+        "phone": "+81 299 36 4555",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 558421483,
+      "center": {
+        "lat": 36.1129737,
+        "lon": 140.1144395
+      },
+      "nodes": [
+        5385111988,
+        5385111989,
+        5438757145,
+        5438757141,
+        5438757140,
+        5438757142,
+        5438757143,
+        5438757144,
+        5385111990,
+        5438757146,
+        5438757147,
+        5385111991,
+        5385111988
+      ],
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "building": "retail",
+        "building:levels": "1",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "name:ja_rm": "Kasumi",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "way",
+      "id": 562198620,
+      "center": {
+        "lat": 36.2508193,
+        "lon": 140.2893457
+      },
+      "nodes": [
+        5420009163,
+        5420009162,
+        5420009161,
+        5420009160,
+        5420009159,
+        5420009158,
+        5420009157,
+        5420009156,
+        5420009155,
+        5420009154,
+        5420009153,
+        5420009152,
+        5420009151,
+        5420009150,
+        5420009149,
+        5420009163
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ヨークベニマル　羽鳥東店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 566963697,
+      "center": {
+        "lat": 35.9749559,
+        "lon": 140.14992
+      },
+      "nodes": [
+        5458762033,
+        5458762034,
+        5458762035,
+        5458762036,
+        5458762037,
+        5458762038,
+        5458762039,
+        5458762040,
+        5458762033
+      ],
+      "tags": {
+        "addr:city": "牛久南",
+        "addr:neighbourhood": "2丁目12番地14",
+        "addr:postcode": "300-1222",
+        "addr:province": "茨城県",
+        "branch": "牛久南店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "building": "yes",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 570484272,
+      "center": {
+        "lat": 36.3128806,
+        "lon": 140.4437345
+      },
+      "nodes": [
+        5484704302,
+        5484704301,
+        5484704300,
+        5484704299,
+        5484704298,
+        5484704297,
+        5484704302
+      ],
+      "tags": {
+        "addr:county": "東茨城郡",
+        "addr:housenumber": "長岡字中丸原",
+        "addr:postcode": "311-3116",
+        "addr:province": "茨城県",
+        "addr:quarter": "茨城町大字",
+        "branch": "茨城町店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "building": "retail",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 587206506,
+      "center": {
+        "lat": 36.1809074,
+        "lon": 139.9691454
+      },
+      "nodes": [
+        5609231013,
+        5609231014,
+        5609231015,
+        5609231016,
+        5609231013
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "BANGLA-BAZAR HALAL FOOD",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 589143116,
+      "center": {
+        "lat": 36.5457612,
+        "lon": 140.4091717
+      },
+      "nodes": [
+        5626023726,
+        5626023727,
+        5626023728,
+        5626023729,
+        5626023730,
+        5626023731,
+        5626023732,
+        5626023733,
+        5626023734,
+        5626023735,
+        5626023726
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "スーパーヒロセヤ常陸大宮店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 590719823,
+      "center": {
+        "lat": 36.0939338,
+        "lon": 140.0758571
+      },
+      "nodes": [
+        5639293199,
+        6304750214,
+        5639293198,
+        6335257533,
+        6335257572,
+        5639293197,
+        5639293196,
+        5639293195,
+        5639293194,
+        5639293193,
+        5639293192,
+        5639293199
+      ],
+      "tags": {
+        "addr:block_number": "14",
+        "addr:county": "つくば市",
+        "addr:housenumber": "3",
+        "addr:neighbourhood": "2",
+        "addr:postcode": "305-0816",
+        "addr:province": "茨城県",
+        "addr:quarter": "学園の森",
+        "brand": "タイヨー",
+        "building": "yes",
+        "name": "タイヨー",
+        "name:en": "Taiyo",
+        "name:ja": "タイヨー",
+        "name:ja-Latn": "Taiyō",
+        "opening_hours": "Mo-Su 08:00-22:00",
+        "operator": "タイヨー",
+        "phone": "+81 29 896 7881",
+        "shop": "supermarket",
+        "website": "http://www.taiyo-otoku.com/shop/detail.php?id=gakuenmori"
+      }
+    },
+    {
+      "type": "way",
+      "id": 601521424,
+      "center": {
+        "lat": 36.5396066,
+        "lon": 140.4131696
+      },
+      "nodes": [
+        5716826723,
+        5716826724,
+        5716826725,
+        5716826726,
+        5716826727,
+        5716826728,
+        5716826729,
+        5716826730,
+        5716826731,
+        5716826732,
+        5716826723
+      ],
+      "tags": {
+        "building": "yes",
+        "shop": "supermarket",
+        "source": "GSImaps/std"
+      }
+    },
+    {
+      "type": "way",
+      "id": 605787055,
+      "center": {
+        "lat": 36.5686308,
+        "lon": 140.6478412
+      },
+      "nodes": [
+        5744850725,
+        5744850726,
+        5744850727,
+        5744850728,
+        5744850729,
+        5744850730,
+        5744850725
+      ],
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "building": "yes",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 605794700,
+      "center": {
+        "lat": 36.5627173,
+        "lon": 140.6411085
+      },
+      "nodes": [
+        5744907797,
+        5744907798,
+        5744907799,
+        5744907800,
+        5744907801,
+        5744907802,
+        5744907797
+      ],
+      "tags": {
+        "branch": "鮎川店",
+        "building": "yes",
+        "name": "サンユーストアー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 606400542,
+      "center": {
+        "lat": 36.5836979,
+        "lon": 140.6430543
+      },
+      "nodes": [
+        5749466655,
+        5749466656,
+        5749466657,
+        5749466658,
+        5749466659,
+        5749466660,
+        5749466661,
+        5749466662,
+        5749466663,
+        5749466664,
+        5749466655
+      ],
+      "tags": {
+        "addr:block_number": "14番",
+        "addr:city": "日立市",
+        "addr:housenumber": "1号",
+        "addr:neighbourhood": "四丁目",
+        "addr:postcode": "317-0076",
+        "addr:province": "茨城県",
+        "addr:quarter": "会瀬町",
+        "branch": "日立会瀬店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "brand:wikipedia": "ja:ヨークベニマル",
+        "building": "yes",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 606419822,
+      "center": {
+        "lat": 36.5647745,
+        "lon": 140.6264861
+      },
+      "nodes": [
+        5749606374,
+        5749606375,
+        5749606376,
+        5749606377,
+        5749606378,
+        5749606379,
+        5749606380,
+        5749606381,
+        5749606374
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マルト",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 607828715,
+      "center": {
+        "lat": 36.3110792,
+        "lon": 139.9682317
+      },
+      "nodes": [
+        5759683872,
+        5759683871,
+        5759683870,
+        5759683869,
+        5759683868,
+        5759683867,
+        5759683866,
+        5759683865,
+        5759683864,
+        5759683863,
+        5759683862,
+        5759683861,
+        5759683860,
+        5759683859,
+        5759683858,
+        5759683872
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "カワチ薬品",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 608183468,
+      "center": {
+        "lat": 36.2473308,
+        "lon": 140.0415002
+      },
+      "nodes": [
+        5762681436,
+        5762681435,
+        5762681434,
+        5762681433,
+        5762681436
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ドラッグストアクラモチ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 625956781,
+      "center": {
+        "lat": 36.5193321,
+        "lon": 140.6314246
+      },
+      "nodes": [
+        5909754816,
+        5909754812,
+        5909754819,
+        5909754817,
+        5909754818,
+        5909754813,
+        5909754814,
+        5909754815,
+        5909754816
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "藤屋商店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 626060283,
+      "center": {
+        "lat": 36.5045275,
+        "lon": 140.6070079
+      },
+      "nodes": [
+        5910654876,
+        5910654873,
+        5910654874,
+        5910654875,
+        5910654876
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "かわねや",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 626674463,
+      "center": {
+        "lat": 36.5488341,
+        "lon": 140.6425939
+      },
+      "nodes": [
+        5916169415,
+        5916169412,
+        5916169413,
+        5916169414,
+        5916169415
+      ],
+      "tags": {
+        "addr:city": "日立市",
+        "addr:neighbourhood": "1丁目4番1号",
+        "addr:postcode": "316-0005",
+        "addr:province": "茨城県",
+        "addr:quarter": "河原子町",
+        "branch": "日立河原子町店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "brand:wikipedia": "ja:ヨークベニマル",
+        "building": "yes",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 627555325,
+      "center": {
+        "lat": 36.5456186,
+        "lon": 140.6223145
+      },
+      "nodes": [
+        5924008991,
+        5924008988,
+        5924008989,
+        5924008990,
+        5924008991
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マルト",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 629232680,
+      "center": {
+        "lat": 36.5987537,
+        "lon": 140.646763
+      },
+      "nodes": [
+        5940830950,
+        5940830947,
+        5940830948,
+        10555350677,
+        10555350676,
+        5940830949,
+        5940830950
+      ],
+      "tags": {
+        "branch": "SC平沢店",
+        "building": "yes",
+        "name": "マルト",
+        "shop": "supermarket",
+        "source": "GSImaps/std"
+      }
+    },
+    {
+      "type": "way",
+      "id": 633864122,
+      "center": {
+        "lat": 36.7889352,
+        "lon": 140.7413803
+      },
+      "nodes": [
+        5982842589,
+        5982842590,
+        5982842591,
+        5982842592,
+        5982842593,
+        5982842594,
+        5982842595,
+        5982842596,
+        5982842589
+      ],
+      "tags": {
+        "branch": "磯原店",
+        "building": "retail",
+        "name": "マルト",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 634990188,
+      "center": {
+        "lat": 36.3657051,
+        "lon": 140.4909161
+      },
+      "nodes": [
+        5991104073,
+        5991104072,
+        11238421421,
+        11238421420,
+        5991104071,
+        11238421419,
+        11238421418,
+        5991104070,
+        5991104073
+      ],
+      "tags": {
+        "branch": "水戸下市店",
+        "building": "retail",
+        "building:levels": "1",
+        "name": "イオンスタイル",
+        "name:en": "Aeon Style",
+        "phone": "+81 29 302 2222",
+        "shop": "supermarket",
+        "source": "GSImaps/ort;Esri;Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 636701487,
+      "center": {
+        "lat": 36.4059988,
+        "lon": 140.5300591
+      },
+      "nodes": [
+        6003861145,
+        6003861146,
+        6003861147,
+        6003861148,
+        6003861149,
+        7528274661,
+        7528274660,
+        6003861150,
+        6003861151,
+        6003861152,
+        6003861145
+      ],
+      "tags": {
+        "addr:city": "ひたちなか市",
+        "addr:neighbourhood": "東大島2丁目13番15号",
+        "addr:postcode": "312-0042",
+        "addr:province": "茨城県",
+        "branch": "東大島店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "brand:wikipedia": "ja:ヨークベニマル",
+        "building": "yes",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 636702608,
+      "center": {
+        "lat": 36.4256985,
+        "lon": 140.5430185
+      },
+      "nodes": [
+        6003861047,
+        6003861048,
+        6003861049,
+        6003861050,
+        6003861051,
+        6003861052,
+        7474924038,
+        6003861053,
+        6003861054,
+        6003861047
+      ],
+      "tags": {
+        "addr:city": "ひたちなか市",
+        "addr:housenumber": "高場1484",
+        "addr:postcode": "312-0062",
+        "addr:province": "茨城県",
+        "branch": "佐和店",
+        "building": "yes",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 636707171,
+      "center": {
+        "lat": 36.4232414,
+        "lon": 140.5165228
+      },
+      "nodes": [
+        6003899857,
+        6003899858,
+        6003899859,
+        6003899860,
+        6003899861,
+        6003899862,
+        6003899857
+      ],
+      "tags": {
+        "addr:city": "ひたちなか市",
+        "addr:housenumber": "田彦1003番地1",
+        "addr:postcode": "312-0063",
+        "addr:province": "茨城県",
+        "branch": "田彦西店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "brand:wikipedia": "ja:ヨークベニマル",
+        "building": "retail",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 636707441,
+      "center": {
+        "lat": 36.3837609,
+        "lon": 140.5343014
+      },
+      "nodes": [
+        6003900700,
+        6003900701,
+        6003900702,
+        7502918086,
+        7502918087,
+        6003900703,
+        6003900704,
+        6003900705,
+        6003900700
+      ],
+      "tags": {
+        "addr:city": "ひたちなか市",
+        "addr:housenumber": "大成町11番6号",
+        "addr:postcode": "312-0055",
+        "addr:province": "茨城県",
+        "branch": "大成店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "brand:wikipedia": "ja:ヨークベニマル",
+        "building": "yes",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "phone": "+81 29 354 2222",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 636708695,
+      "center": {
+        "lat": 36.3171475,
+        "lon": 139.994669
+      },
+      "nodes": [
+        6003909772,
+        6003909773,
+        6003909774,
+        6003909775,
+        6003909776,
+        6003909777,
+        12073456436,
+        12073456435,
+        6003909772
+      ],
+      "tags": {
+        "addr:city": "築西市",
+        "addr:housenumber": "横島830番地1",
+        "addr:postcode": "308-0802",
+        "addr:province": "茨城県",
+        "branch": "筑西横島店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "building": "yes",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 636711245,
+      "center": {
+        "lat": 36.6608189,
+        "lon": 140.6884596
+      },
+      "nodes": [
+        6003924519,
+        6003924520,
+        6003924521,
+        6003924522,
+        6003924523,
+        6003924524,
+        6003924525,
+        6003924526,
+        6003924519
+      ],
+      "tags": {
+        "addr:block_number": "3番",
+        "addr:city": "日立市",
+        "addr:housenumber": "13号",
+        "addr:neighbourhood": "七丁目",
+        "addr:postcode": "319-1411",
+        "addr:province": "茨城県",
+        "addr:quarter": "川尻町",
+        "branch": "日立川尻町店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "brand:wikipedia": "ja:ヨークベニマル",
+        "building": "yes",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 636726651,
+      "center": {
+        "lat": 36.8414887,
+        "lon": 140.7825269
+      },
+      "nodes": [
+        6004019776,
+        6004019777,
+        6673030001,
+        6673030002,
+        6004019778,
+        6673030005,
+        6673030007,
+        6673030008,
+        6673030006,
+        6673030009,
+        6673030010,
+        6673030003,
+        6673030004,
+        6004019780,
+        6004019776
+      ],
+      "tags": {
+        "addr:block_number": "3241番地",
+        "addr:city": "北茨城市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "北町",
+        "addr:province": "茨城県",
+        "addr:quarter": "大津町",
+        "branch": "大津店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "brand:wikipedia": "ja:ヨークベニマル",
+        "building": "retail",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 636728688,
+      "center": {
+        "lat": 36.3061159,
+        "lon": 139.8684008
+      },
+      "nodes": [
+        6004036598,
+        6004036599,
+        6004036600,
+        6004036601,
+        6004036602,
+        6004036619,
+        6004036603,
+        6004036604,
+        6004036605,
+        6004036606,
+        6004036607,
+        6004036598
+      ],
+      "tags": {
+        "building": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 636729675,
+      "center": {
+        "lat": 36.0379994,
+        "lon": 139.8896386
+      },
+      "nodes": [
+        6004042115,
+        6004042116,
+        6004042117,
+        6004042118,
+        6004042119,
+        6004042120,
+        6004042121,
+        6004042122,
+        6004042123,
+        7836306882,
+        6004042115
+      ],
+      "tags": {
+        "addr:city": "坂東市",
+        "addr:housenumber": "辺田1104番地1",
+        "addr:postcode": "306-0632",
+        "addr:province": "茨城県",
+        "branch": "坂東店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "building": "yes",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 636736789,
+      "center": {
+        "lat": 36.100284,
+        "lon": 140.0467706
+      },
+      "nodes": [
+        6004081383,
+        6004081803,
+        11898135466,
+        6004081384,
+        6004081785,
+        6004081786,
+        6004081787,
+        6004081788,
+        11898135465,
+        11898135464,
+        6004081383
+      ],
+      "tags": {
+        "addr:block_number": "1",
+        "addr:city": "つくば市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "豊里の杜二丁目",
+        "addr:postcode": "300-2648",
+        "addr:province": "茨城県",
+        "branch": "豊里店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "building": "yes",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 636737882,
+      "center": {
+        "lat": 35.9760899,
+        "lon": 139.9731702
+      },
+      "nodes": [
+        6004091474,
+        6004091475,
+        6004091476,
+        6004091477,
+        6004091478,
+        6004091479,
+        6004091480,
+        6004091481,
+        6004091482,
+        6004091483,
+        6004091474
+      ],
+      "tags": {
+        "branch": "つくばみらい店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "building": "retail",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "phone": "+81 297 25 3181",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 636741059,
+      "center": {
+        "lat": 35.9575796,
+        "lon": 139.9924518
+      },
+      "nodes": [
+        6004111198,
+        6004111191,
+        6004110684,
+        6004111190,
+        6004111185,
+        6004111186,
+        6004111199,
+        6004111198
+      ],
+      "tags": {
+        "addr:city": "守谷市",
+        "addr:housenumber": "松並青葉一丁目11番地2",
+        "addr:postcode": "302-0132",
+        "addr:province": "茨城県",
+        "building": "yes",
+        "name": "ヨークベニマル　守谷店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 636741231,
+      "center": {
+        "lat": 36.0838687,
+        "lon": 140.1890305
+      },
+      "nodes": [
+        6004111326,
+        10203735392,
+        10203735393,
+        10203735394,
+        10203735391,
+        6004111330,
+        10203735387,
+        10203735388,
+        10203735389,
+        10203735390,
+        6004111331,
+        10203735384,
+        10203735383,
+        6004111332,
+        10203735386,
+        10203735385,
+        6004111326
+      ],
+      "tags": {
+        "branch": "土浦生田町店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "building": "yes",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 636741478,
+      "center": {
+        "lat": 36.2047139,
+        "lon": 140.2884004
+      },
+      "nodes": [
+        6004115079,
+        6004115080,
+        6004115081,
+        6004115082,
+        6004115079
+      ],
+      "tags": {
+        "addr:city": "石岡市",
+        "addr:housenumber": "石岡字水久保12886番",
+        "addr:postcode": "315-0001",
+        "addr:province": "茨城県",
+        "building": "yes",
+        "name": "ヨークベニマル　石岡西店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 637480072,
+      "center": {
+        "lat": 36.381722,
+        "lon": 140.4181426
+      },
+      "nodes": [
+        6009776954,
+        6009776955,
+        6009776956,
+        6009776957,
+        7482535304,
+        6009776958,
+        7482535303,
+        7482535302,
+        6009776959,
+        6009776953,
+        6009776954
+      ],
+      "tags": {
+        "addr:city": "水戸市",
+        "addr:housenumber": "姫子二丁目30番地",
+        "addr:province": "茨城県",
+        "branch": "赤塚店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "brand:wikipedia": "ja:ヨークベニマル",
+        "building": "yes",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 637825901,
+      "center": {
+        "lat": 36.349004,
+        "lon": 140.580878
+      },
+      "nodes": [
+        6012415008,
+        6012415009,
+        6012415010,
+        6012415011,
+        7537883358,
+        6012415012,
+        6012415013,
+        6012415008
+      ],
+      "tags": {
+        "addr:city": "ひたちなか市",
+        "addr:housenumber": "田中後4-20",
+        "addr:postcode": "311-1235",
+        "addr:province": "茨城県",
+        "branch": "那珂湊店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "building": "retail",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 638081274,
+      "center": {
+        "lat": 36.0807429,
+        "lon": 140.1170171
+      },
+      "nodes": [
+        6014362058,
+        6014362059,
+        6014362060,
+        8101789210,
+        8101789211,
+        8101789212,
+        8101789213,
+        8101789214,
+        8118215895,
+        6014362061,
+        6014362054,
+        6014362055,
+        8101815717,
+        8101789216,
+        8101789215,
+        8101815718,
+        6014362058
+      ],
+      "tags": {
+        "addr:block_number": "3",
+        "addr:city": "つくば市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "竹園一丁目",
+        "addr:postcode": "305-0032",
+        "addr:province": "茨城県",
+        "branch": "つくば竹園店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "building": "yes",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "opening_hours": "Mo-Su 09:00-21:30",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 638697260,
+      "center": {
+        "lat": 36.4925754,
+        "lon": 140.6045545
+      },
+      "nodes": [
+        6019116565,
+        6019116566,
+        6019116567,
+        6019116563,
+        6019116565
+      ],
+      "tags": {
+        "brand": "ベイシア",
+        "brand:en": "Beisia",
+        "brand:ja": "ベイシア",
+        "brand:wikidata": "Q11336776",
+        "brand:wikipedia": "ja:ベイシア",
+        "building": "yes",
+        "name": "ベイシア",
+        "name:en": "Beisia",
+        "name:ja": "ベイシア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 643052930,
+      "center": {
+        "lat": 36.6250837,
+        "lon": 140.6832296
+      },
+      "nodes": [
+        6052395008,
+        6052395009,
+        6052395010,
+        6052395011,
+        6052395012,
+        5985675211,
+        6052395013,
+        6052395014,
+        5985675210,
+        6052395015,
+        6052395008
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マルト",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 643077991,
+      "center": {
+        "lat": 36.6072905,
+        "lon": 140.6672368
+      },
+      "nodes": [
+        6052587610,
+        6052587611,
+        6052587612,
+        6052587613,
+        6052587614,
+        6052587610
+      ],
+      "tags": {
+        "branch": "日立本宮店",
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:wikidata": "Q11590183",
+        "brand:wikipedia": "ja:神戸物産",
+        "building": "yes",
+        "name": "業務スーパー",
+        "name:en": "Gyōmu sūpā",
+        "name:ja": "業務スーパー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 645413544,
+      "center": {
+        "lat": 36.6158099,
+        "lon": 140.6713603
+      },
+      "nodes": [
+        6067149855,
+        6067149856,
+        6067149857,
+        6067149858,
+        6067149859,
+        6067149860,
+        6067149861,
+        6067149862,
+        6067149863,
+        6067149864,
+        6067149865,
+        6067149866,
+        6067149867,
+        6067149868,
+        6067149869,
+        6067149870,
+        6067149871,
+        6067149872,
+        6067149873,
+        6067149874,
+        6067149875,
+        6067149876,
+        6067149877,
+        6067149855
+      ],
+      "tags": {
+        "branch": "SC滑川店",
+        "building": "yes",
+        "name": "マルト",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 655224742,
+      "center": {
+        "lat": 36.5995254,
+        "lon": 140.6682723
+      },
+      "nodes": [
+        6139232241,
+        6139232242,
+        6139232243,
+        6139232244,
+        6139232245,
+        6139232246,
+        6139232241
+      ],
+      "tags": {
+        "branch": "日立東町店",
+        "building": "yes",
+        "name": "サンユーストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 667984373,
+      "center": {
+        "lat": 36.2755393,
+        "lon": 140.094213
+      },
+      "nodes": [
+        6254949920,
+        6254949919,
+        6254949918,
+        6254949917,
+        6254949916,
+        6254949915,
+        6254949914,
+        6254949913,
+        6254949920
+      ],
+      "tags": {
+        "branch": "真壁飯塚店",
+        "building": "retail",
+        "name": "ウエルシア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 681583059,
+      "center": {
+        "lat": 36.547129,
+        "lon": 140.634842
+      },
+      "nodes": [
+        6382981372,
+        6382981376,
+        6382982887,
+        6382982886,
+        6382982885,
+        6382981384,
+        6382981383,
+        6382981382,
+        6382981381,
+        6382981378,
+        6382981373,
+        6382981374,
+        6382981380,
+        6382981375,
+        6382981379,
+        6382981377,
+        6382981372
+      ],
+      "tags": {
+        "branch": "東金沢店",
+        "building": "yes",
+        "name": "サンユーストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 685166671,
+      "center": {
+        "lat": 36.4082399,
+        "lon": 140.4336126
+      },
+      "nodes": [
+        6420120091,
+        6420120092,
+        6420120093,
+        6420120094,
+        6420120091
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "サンユーストアー渡里店",
+        "opening_hours": "09:30-20:45",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 691222354,
+      "center": {
+        "lat": 36.0946314,
+        "lon": 140.0761221
+      },
+      "nodes": [
+        6485753029,
+        6485753050,
+        6485753014,
+        6485753075,
+        6485753029
+      ],
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q11590183",
+        "brand:wikipedia": "ja:神戸物産",
+        "building": "yes",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 708928568,
+      "center": {
+        "lat": 36.3099319,
+        "lon": 140.5699132
+      },
+      "nodes": [
+        6661342276,
+        6661342277,
+        6661342278,
+        6661342279,
+        6661342276
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "セイミヤ",
+        "name:en": "Seimiya",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 727624213,
+      "center": {
+        "lat": 36.2068845,
+        "lon": 139.7584969
+      },
+      "nodes": [
+        6818665223,
+        6818665224,
+        6818665225,
+        6818665226,
+        6818665227,
+        4715922940,
+        6818665228,
+        6818665229,
+        6818665230,
+        6818665231,
+        6818665232,
+        6818665223
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "とりせん",
+        "opening_hours": "Mo-Su 09:00-22:00",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 738988964,
+      "center": {
+        "lat": 36.7919875,
+        "lon": 140.7423394
+      },
+      "nodes": [
+        6919369513,
+        6919369514,
+        6919369515,
+        6919369516,
+        6919369517,
+        6919369518,
+        6919369513
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "サンユーストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 744175573,
+      "center": {
+        "lat": 35.7959506,
+        "lon": 140.7796661
+      },
+      "nodes": [
+        6964731744,
+        6964731745,
+        6964731746,
+        6964731747,
+        6964731748,
+        6964731749,
+        6964731744
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "タイヨーフーデリア店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 753328799,
+      "center": {
+        "lat": 36.3892004,
+        "lon": 140.4438406
+      },
+      "nodes": [
+        7038739507,
+        7038739508,
+        7038739509,
+        7038739510,
+        7038739507
+      ],
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "building": "yes",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 755558088,
+      "center": {
+        "lat": 36.1106903,
+        "lon": 140.186214
+      },
+      "nodes": [
+        7057361160,
+        7057361159,
+        11235274308,
+        11235274317,
+        11235274309,
+        11235274310,
+        11235274315,
+        11235274316,
+        11235274314,
+        11235274311,
+        11235274313,
+        11235274312,
+        7057361158,
+        9363854192,
+        7057361157,
+        11235274318,
+        11235274319,
+        11235274320,
+        11235274321,
+        11235274322,
+        11235274324,
+        11235274323,
+        7057361160
+      ],
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "building": "yes",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 757477236,
+      "center": {
+        "lat": 35.9205382,
+        "lon": 140.1134477
+      },
+      "nodes": [
+        7074009954,
+        7074009953,
+        7074009952,
+        7074009951,
+        7074009954
+      ],
+      "tags": {
+        "branch": "藤代店",
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "building": "yes",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 757570301,
+      "center": {
+        "lat": 36.1076722,
+        "lon": 140.0154351
+      },
+      "nodes": [
+        7074776062,
+        7074776061,
+        7074776060,
+        7074776059,
+        7074776062
+      ],
+      "tags": {
+        "addr:city": "つくば市",
+        "addr:housenumber": "1669",
+        "addr:neighbourhood": "上郷",
+        "addr:postcode": "3002645",
+        "addr:province": "茨城県",
+        "building": "retail",
+        "name": "シティーマーケット うおまつ 上郷店",
+        "opening_hours": "09:00-20:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "shop": "supermarket",
+        "source": "survey",
+        "website": "https://www.uomatsu.jp/uomatsu-kamigo.html"
+      }
+    },
+    {
+      "type": "way",
+      "id": 760457581,
+      "center": {
+        "lat": 36.3925569,
+        "lon": 140.5442764
+      },
+      "nodes": [
+        7103990964,
+        7103990963,
+        7103990962,
+        7103990961,
+        7103990960,
+        7103990959,
+        7103990964
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "サンユーストア",
+        "name:en": "Sanyu Store",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 803807044,
+      "center": {
+        "lat": 36.3810367,
+        "lon": 140.4127898
+      },
+      "nodes": [
+        3597958119,
+        3597958120,
+        7518940534,
+        7518940535,
+        7518940536,
+        7518940539,
+        3597958119
+      ],
+      "tags": {
+        "building": "retail",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 804485700,
+      "center": {
+        "lat": 36.3418858,
+        "lon": 140.5344074
+      },
+      "nodes": [
+        7524765482,
+        7524765481,
+        7524765480,
+        7524765479,
+        7524765482
+      ],
+      "tags": {
+        "branch": "FOOD OFFストッカー常澄店",
+        "building": "retail",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "opening_hours": "09:00-21:00",
+        "phone": "+81 29 269 1234",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 804492977,
+      "center": {
+        "lat": 36.407644,
+        "lon": 140.566674
+      },
+      "nodes": [
+        7524825537,
+        7524825536,
+        7524825535,
+        7524825534,
+        7524825533,
+        7524825532,
+        7524825531,
+        7524825530,
+        7524825529,
+        7524825537
+      ],
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "building": "retail",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 805405408,
+      "center": {
+        "lat": 36.3727578,
+        "lon": 140.4324147
+      },
+      "nodes": [
+        7532796205,
+        7532796204,
+        7532796203,
+        7532796202,
+        7532796205
+      ],
+      "tags": {
+        "branch": "見川店",
+        "building": "yes",
+        "name": "パワーマート",
+        "name:en": "PowerMart",
+        "opening_hours": "Mo-Fr 10:00-20:00; Sa,Su 09:00-20:00; PH 09:00-20:00",
+        "phone": "+81 255 1129",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 805405410,
+      "center": {
+        "lat": 36.3415749,
+        "lon": 140.4685557
+      },
+      "nodes": [
+        7532796221,
+        7532796220,
+        7532796219,
+        7532796218,
+        7532796217,
+        7532796216,
+        7532796221
+      ],
+      "tags": {
+        "branch": "住吉店",
+        "building": "retail",
+        "name": "パワーマート",
+        "name:en": "PowerMart",
+        "opening_hours": "Mo-Sa 10:00-21:00; Su 9:30-21:00; PH 10:00-21:00",
+        "phone": "+81 29 304 1129",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 805468662,
+      "center": {
+        "lat": 36.3749812,
+        "lon": 140.4385794
+      },
+      "nodes": [
+        7533310285,
+        7533292584,
+        7533292583,
+        7533292582,
+        7533292581,
+        7533292580,
+        7533292579,
+        7533310285
+      ],
+      "tags": {
+        "branch": "フードスクエア水戸見川店",
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "building": "retail",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "opening_hours": "09:00-24:00",
+        "phone": "+81 29 257 3132",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 807684709,
+      "center": {
+        "lat": 36.1745846,
+        "lon": 139.7070304
+      },
+      "nodes": [
+        7553032708,
+        7553032709,
+        7553032710,
+        7553032711,
+        7553032712,
+        7553032713,
+        7553032714,
+        7553032715,
+        7553032716,
+        7553032717,
+        7553032718,
+        7553032719,
+        7553032708
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "スーパーフレッシュ 古河店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 820348842,
+      "center": {
+        "lat": 36.0706206,
+        "lon": 140.0956047
+      },
+      "nodes": [
+        7660078798,
+        7660078799,
+        7660078800,
+        7660078801,
+        7660078798
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "オリモト",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 827865727,
+      "center": {
+        "lat": 36.2809942,
+        "lon": 140.1071224
+      },
+      "nodes": [
+        7728635046,
+        10613404226,
+        10613404229,
+        10613404230,
+        10613404228,
+        7728635047,
+        10613404234,
+        10613404233,
+        7728635048,
+        7728635049,
+        7728635050,
+        7728635051,
+        7728635052,
+        10613404225,
+        10613404232,
+        10613404231,
+        10613404227,
+        7728635046
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "フードオフストッカー",
+        "name:ja": "フードオフストッカー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 829051459,
+      "center": {
+        "lat": 36.5331947,
+        "lon": 140.5239347
+      },
+      "nodes": [
+        7738769947,
+        10784492203,
+        7738769948,
+        7738769951,
+        7738769952,
+        7738769954,
+        10784492202,
+        10784492201,
+        7738769955,
+        10784492204,
+        7738769947
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "かわねや 木崎本店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 831247140,
+      "center": {
+        "lat": 36.3327199,
+        "lon": 140.4868166
+      },
+      "nodes": [
+        7761458403,
+        7761458404,
+        7761458405,
+        9741092904,
+        9741092905,
+        7761458406,
+        7761458403
+      ],
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:wikidata": "Q11590183",
+        "brand:wikipedia": "ja:神戸物産",
+        "building": "yes",
+        "name": "業務スーパー",
+        "name:en": "Gyōmu sūpā",
+        "name:ja": "業務スーパー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 833128700,
+      "center": {
+        "lat": 36.199122,
+        "lon": 139.7063855
+      },
+      "nodes": [
+        7777464604,
+        7777464605,
+        7777464606,
+        7777464607,
+        7777464604
+      ],
+      "tags": {
+        "building": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 834236432,
+      "center": {
+        "lat": 36.1962401,
+        "lon": 139.7093779
+      },
+      "nodes": [
+        7787556185,
+        7787556190,
+        7787556186,
+        7787556187,
+        7787556188,
+        7787556189,
+        7787556185
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "スーパー越後屋",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 834236442,
+      "center": {
+        "lat": 36.1946449,
+        "lon": 139.7098078
+      },
+      "nodes": [
+        7787556231,
+        7787556232,
+        7787556233,
+        7787556234,
+        7787556231
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "米銀",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 835240451,
+      "center": {
+        "lat": 36.1809881,
+        "lon": 139.7076627
+      },
+      "nodes": [
+        7796403995,
+        7796403996,
+        7796403997,
+        7796403998,
+        7796403999,
+        7796403995
+      ],
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:wikidata": "Q11590183",
+        "brand:wikipedia": "ja:神戸物産",
+        "building": "yes",
+        "name": "業務スーパー",
+        "name:en": "Gyōmu sūpā",
+        "name:ja": "業務スーパー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 835275822,
+      "center": {
+        "lat": 36.1888322,
+        "lon": 139.7038362
+      },
+      "nodes": [
+        7796716475,
+        7796716476,
+        7796716477,
+        7796716478,
+        7796716475
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "SAVINCO SPICE",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 839770978,
+      "center": {
+        "lat": 36.1019849,
+        "lon": 139.8960901
+      },
+      "nodes": [
+        7836254340,
+        7836254339,
+        7836254338,
+        7836254337,
+        7836254336,
+        7836254335,
+        7836254334,
+        7836254333,
+        7836254332,
+        7836254331,
+        7836254330,
+        7836254329,
+        7836254328,
+        7836254327,
+        7836254326,
+        7836254325,
+        7836254324,
+        7836254323,
+        7836254322,
+        7836254321,
+        7836254320,
+        7836254319,
+        7836254340
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "エコス",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 849636784,
+      "center": {
+        "lat": 36.6180152,
+        "lon": 140.6775306
+      },
+      "nodes": [
+        7926815740,
+        10560194058,
+        7926815741,
+        10560194059,
+        10560194060,
+        10560194061,
+        10560194062,
+        10560194063,
+        10560194064,
+        10560194065,
+        7926815742,
+        7926815752,
+        7926815743,
+        7926815744,
+        10560194066,
+        10560194067,
+        7926815745,
+        10560194068,
+        10560194069,
+        7926815740
+      ],
+      "tags": {
+        "branch": "日立滑川店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "brand:wikipedia": "ja:ヨークベニマル",
+        "building": "retail",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 959182518,
+      "center": {
+        "lat": 36.1059275,
+        "lon": 140.1264139
+      },
+      "nodes": [
+        8875603025,
+        8875603026,
+        8875603027,
+        8875603028,
+        8875603025
+      ],
+      "tags": {
+        "addr:block_number": "25",
+        "addr:city": "つくば市",
+        "addr:housenumber": "5",
+        "addr:postcode": "305-0019",
+        "addr:province": "茨城県",
+        "addr:quarter": "さくらの森",
+        "branch": "つくばさくらの杜店",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "brand:wikipedia": "ja:ヨークベニマル",
+        "building": "yes",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 966359157,
+      "center": {
+        "lat": 35.9281161,
+        "lon": 140.0379247
+      },
+      "nodes": [
+        8940463700,
+        8940463701,
+        8940463702,
+        8940463703,
+        8940463704,
+        8940463705,
+        8940463706,
+        8940463707,
+        8940463700
+      ],
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "building": "yes",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 966359160,
+      "center": {
+        "lat": 35.9159034,
+        "lon": 140.0439513
+      },
+      "nodes": [
+        8940463716,
+        8940463717,
+        8940463718,
+        8940463719,
+        8940463720,
+        8940463721,
+        8940463716
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ジェーソン",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 966359161,
+      "center": {
+        "lat": 35.9167576,
+        "lon": 140.0450998
+      },
+      "nodes": [
+        8940463722,
+        8940463723,
+        8940463724,
+        8940463725,
+        8940463726,
+        8940463727,
+        8940463728,
+        8940463729,
+        8940463722
+      ],
+      "tags": {
+        "building": "yes",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 966359170,
+      "center": {
+        "lat": 35.9225637,
+        "lon": 140.0031278
+      },
+      "nodes": [
+        8940463808,
+        8940463809,
+        8940463810,
+        8940463811,
+        8940463812,
+        8940463813,
+        8940463814,
+        8940463815,
+        8940463816,
+        8940463817,
+        8940463818,
+        8940463819,
+        8940463808
+      ],
+      "tags": {
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "brand:wikipedia": "ja:ヨークベニマル",
+        "building": "yes",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 966369690,
+      "center": {
+        "lat": 35.9270479,
+        "lon": 140.0224882
+      },
+      "nodes": [
+        8940574967,
+        8940574968,
+        8940574969,
+        8940574970,
+        8940574967
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "中村ストア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 996522620,
+      "center": {
+        "lat": 35.7933889,
+        "lon": 140.7716998
+      },
+      "nodes": [
+        9201411785,
+        9201411769,
+        9201411776,
+        9201411780,
+        9201411778,
+        9201411782,
+        9201411786,
+        9201411783,
+        9201411785
+      ],
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "building": "yes",
+        "name": "カスミ土合店",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1000070019,
+      "center": {
+        "lat": 35.7516342,
+        "lon": 140.8154327
+      },
+      "nodes": [
+        9231374180,
+        9231403835,
+        9231374194,
+        9231403852,
+        9231374175,
+        9231403854,
+        9231374214,
+        9231403844,
+        9231403865,
+        9231374181,
+        9231403850,
+        9231374196,
+        9231403827,
+        9231403851,
+        9231403853,
+        9231403845,
+        9231403843,
+        9231403846,
+        9231374189,
+        9231403848,
+        9231403830,
+        9231403831,
+        9231403866,
+        9231403818,
+        9231374193,
+        9231374178,
+        9231374180
+      ],
+      "tags": {
+        "branch": "波崎店",
+        "brand": "タイヨー",
+        "brand:en": "Taiyo",
+        "brand:ja": "タイヨー",
+        "brand:wikidata": "Q11315814",
+        "building": "yes",
+        "name": "タイヨー",
+        "name:en": "Taiyo",
+        "name:ja": "タイヨー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1020342942,
+      "center": {
+        "lat": 36.104464,
+        "lon": 140.2057829
+      },
+      "nodes": [
+        9410792687,
+        9410792688,
+        9410792689,
+        11144086510,
+        11144086512,
+        11144086513,
+        11144086511,
+        9410792690,
+        9410792687
+      ],
+      "tags": {
+        "branch": "ベストリカー土浦北店",
+        "brand": "タイヨー",
+        "brand:en": "Taiyo",
+        "brand:ja": "タイヨー",
+        "brand:wikidata": "Q11315814",
+        "building": "yes",
+        "name": "タイヨー",
+        "name:en": "Taiyo",
+        "name:ja": "タイヨー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1067079031,
+      "center": {
+        "lat": 36.0631196,
+        "lon": 140.1440498
+      },
+      "nodes": [
+        9797956723,
+        9797956724,
+        9797956725,
+        9797956726,
+        9797956723
+      ],
+      "tags": {
+        "addr:block_number": "3",
+        "addr:city": "つくば市",
+        "addr:housenumber": "2",
+        "addr:neighbourhood": "並木四丁目",
+        "addr:postcode": "305-0044",
+        "addr:province": "茨城県",
+        "branch": "つくば並木店",
+        "building": "yes",
+        "name": "BLΛNDE",
+        "name:en": "BLΛNDE",
+        "name:ja": "BLΛNDE",
+        "opening_hours": "Mo-Su 10:00-21:00",
+        "phone": "+81 29 875 5232",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1084140868,
+      "center": {
+        "lat": 35.9473444,
+        "lon": 140.565894
+      },
+      "nodes": [
+        9934790212,
+        9934790203,
+        9934799075,
+        9934799037,
+        9934799034,
+        9934799058,
+        9934799059,
+        9934799040,
+        9934799020,
+        9934799046,
+        9934799023,
+        9934799042,
+        9934790212
+      ],
+      "tags": {
+        "branch": "潮来店",
+        "brand": "ベイシア",
+        "brand:en": "Beisia",
+        "brand:ja": "ベイシア",
+        "brand:wikidata": "Q11336776",
+        "brand:wikipedia": "ja:ベイシア",
+        "building": "yes",
+        "name": "ベイシア",
+        "name:en": "Beisia",
+        "name:ja": "ベイシア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1109898500,
+      "center": {
+        "lat": 36.0381219,
+        "lon": 140.0855075
+      },
+      "nodes": [
+        10153720139,
+        2411689844,
+        10153720137,
+        10153720134,
+        12999190361,
+        12999190350,
+        10153720132,
+        12999190358,
+        12999190357,
+        10153720127,
+        10153720126,
+        10153720139
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "うおまつ",
+        "name:ja": "うおまつ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1109908047,
+      "center": {
+        "lat": 35.9522473,
+        "lon": 139.9994838
+      },
+      "nodes": [
+        10153830752,
+        10153830751,
+        10153830750,
+        10153830749,
+        10153830748,
+        10153830747,
+        10153830752
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ウエルシア",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1132119564,
+      "center": {
+        "lat": 36.4328938,
+        "lon": 140.4983788
+      },
+      "nodes": [
+        10555977901,
+        10555977902,
+        10555977903,
+        10555977904,
+        10555977901
+      ],
+      "tags": {
+        "brand": "業務スーパー",
+        "brand:en": "Gyomu Super",
+        "brand:ja": "業務スーパー",
+        "brand:ja-Latn": "Gyōmu sūpā",
+        "brand:wikidata": "Q11590183",
+        "building": "yes",
+        "name": "業務スーパー",
+        "name:en": "Gyomu Super",
+        "name:ja": "業務スーパー",
+        "name:ja-Latn": "Gyōmu sūpā",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1138572377,
+      "center": {
+        "lat": 36.3658215,
+        "lon": 140.1060359
+      },
+      "nodes": [
+        1946109095,
+        10613404308,
+        10613404309,
+        10613404310,
+        10613404311,
+        10613404312,
+        10613404313,
+        10613404314,
+        10613404315,
+        10613404316,
+        10613404317,
+        10613404318,
+        10613404319,
+        10613404320,
+        10613404321,
+        10613404322,
+        10613404323,
+        10613404324,
+        10613404325,
+        10613404326,
+        10613404327,
+        10613404328,
+        1946109095
+      ],
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "brand:wikipedia": "ja:カスミ",
+        "building": "yes",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "name:ja_rm": "Kasumi",
+        "shop": "supermarket",
+        "source": "Bing 2010"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1191989245,
+      "center": {
+        "lat": 36.5598681,
+        "lon": 140.6276548
+      },
+      "nodes": [
+        11066331549,
+        11066331548,
+        11066331547,
+        11066331546,
+        11066331545,
+        11066331544,
+        11066331549
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "ツルハドラッグ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1193334749,
+      "center": {
+        "lat": 36.0044287,
+        "lon": 140.0334007
+      },
+      "nodes": [
+        11077007764,
+        11077007765,
+        11077007766,
+        11077007767,
+        11077007768,
+        11077007769,
+        11077007770,
+        11077007771,
+        11077007772,
+        11077007773,
+        11077007774,
+        11077007775,
+        11077007776,
+        11077007777,
+        11077007764
+      ],
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "building": "yes",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1196914573,
+      "center": {
+        "lat": 36.0900002,
+        "lon": 140.0742508
+      },
+      "nodes": [
+        11105983619,
+        11105983615,
+        11105983617,
+        11105983616,
+        11105983618,
+        11105983613,
+        11105983627,
+        11105983624,
+        11105983621,
+        11105983622,
+        11105983623,
+        11105983625,
+        11105983612,
+        11105983626,
+        11105983620,
+        11105983614,
+        11105983619
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "BLANDE",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1196999000,
+      "center": {
+        "lat": 36.6665491,
+        "lon": 140.6912972
+      },
+      "nodes": [
+        11107070164,
+        11107070163,
+        11107070162,
+        11107070161,
+        11107070160,
+        11107070159,
+        11107070158,
+        11107070157,
+        11107070156,
+        11107070155,
+        11107070164
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "マツモトキヨシ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1228804482,
+      "center": {
+        "lat": 36.185736,
+        "lon": 139.7174165
+      },
+      "nodes": [
+        11395640532,
+        11395640531,
+        11395640530,
+        11395640529,
+        11395640528,
+        11395640527,
+        11395640526,
+        11395640525,
+        11395640524,
+        11395640523,
+        11395640532
+      ],
+      "tags": {
+        "branch": "Koga Oozutsumi",
+        "brand": "ヤオコー",
+        "brand:en": "Yaoko",
+        "brand:ja": "ヤオコー",
+        "brand:wikidata": "Q11344967",
+        "building": "commercial",
+        "contact:website": "https://www.yaoko-net.com/store/store04/204.html",
+        "name": "ヤオコー",
+        "name:en": "Yaoko",
+        "name:ja": "ヤオコー",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1249373009,
+      "center": {
+        "lat": 36.0513343,
+        "lon": 140.6056689
+      },
+      "nodes": [
+        11612509051,
+        11612509052,
+        11612509053,
+        11612509054,
+        11612509055,
+        11612509056,
+        11612509051
+      ],
+      "tags": {
+        "addr:block_number": "784",
+        "addr:city": "鹿嶋市",
+        "addr:housenumber": "1",
+        "addr:postcode": "311-2215",
+        "addr:province": "茨城県",
+        "addr:quarter": "和",
+        "building": "yes",
+        "name": "ホームプラザナフコ 北鹿嶋店",
+        "name:en": "Home Plaza Nafco Kitakashima",
+        "name:ja": "ホームプラザナフコ 北鹿嶋店",
+        "opening_hours": "Mo-Su 08:30-19:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "phone": "0299-90-9321",
+        "shop": "supermarket",
+        "website": "https://www.nafco.life/hc/shop_list/4190/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1254590498,
+      "center": {
+        "lat": 35.9881591,
+        "lon": 139.9775853
+      },
+      "nodes": [
+        11662837805,
+        11662837806,
+        11662837807,
+        11662837808,
+        11662837809,
+        11662837810,
+        11662837805
+      ],
+      "tags": {
+        "addr:block_number": "1368",
+        "addr:city": "つくばみらい市",
+        "addr:province": "茨城県",
+        "addr:quarter": "小絹",
+        "addr:street": "常総ふれあい道路",
+        "building": "yes",
+        "name": "サンキ 小絹 店 ファブリック館",
+        "name:en": "SANKI Kokinu Fabric shop",
+        "phone": "0297-52-5892",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1261381673,
+      "center": {
+        "lat": 36.2972335,
+        "lon": 139.9410843
+      },
+      "nodes": [
+        11722010679,
+        11722010680,
+        11722010681,
+        11722010682,
+        11722010683,
+        11722010684,
+        11722010679
+      ],
+      "tags": {
+        "brand": "とりせん",
+        "brand:en": "Torisen",
+        "brand:ja": "とりせん",
+        "brand:wikidata": "Q11273505",
+        "building": "yes",
+        "name": "とりせん",
+        "name:en": "Torisen",
+        "name:ja": "とりせん",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1288361008,
+      "center": {
+        "lat": 36.460432,
+        "lon": 140.5719623
+      },
+      "nodes": [
+        11947795718,
+        11947795719,
+        11947795720,
+        11947795721,
+        11947795718
+      ],
+      "tags": {
+        "branch": "東海中央店",
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "building": "commercial",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1321422442,
+      "center": {
+        "lat": 36.3972147,
+        "lon": 140.5421386
+      },
+      "nodes": [
+        12227865418,
+        12227865419,
+        12227865420,
+        12227865421,
+        12227865418
+      ],
+      "tags": {
+        "brand": "カスミ",
+        "brand:en": "Kasumi",
+        "brand:ja": "カスミ",
+        "brand:wikidata": "Q11294160",
+        "building": "yes",
+        "name": "カスミ",
+        "name:en": "Kasumi",
+        "name:ja": "カスミ",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1323618344,
+      "center": {
+        "lat": 36.3986226,
+        "lon": 140.5279501
+      },
+      "nodes": [
+        12248308306,
+        12248308307,
+        12248308308,
+        12248308309,
+        12248308306
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "セイブ食彩館",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1361059190,
+      "center": {
+        "lat": 36.3189798,
+        "lon": 140.3291865
+      },
+      "nodes": [
+        12599873651,
+        12599873652,
+        12599873653,
+        12599873654,
+        12599873651
+      ],
+      "tags": {
+        "addr:block_number": "1365",
+        "addr:city": "笠間市",
+        "addr:housenumber": "1",
+        "addr:neighbourhood": "住吉",
+        "addr:postcode": "309-1716",
+        "addr:province": "茨城県",
+        "brand": "ヨークベニマル",
+        "brand:en": "York Benimaru",
+        "brand:ja": "ヨークベニマル",
+        "brand:wikidata": "Q11346199",
+        "building": "yes",
+        "building:levels": "1",
+        "fax": "+81-296-71-4212",
+        "name": "ヨークベニマル",
+        "name:en": "York Benimaru",
+        "name:ja": "ヨークベニマル",
+        "opening_hours": "Mo-Su 09:00-21:30",
+        "operator": "ヨークベニマル",
+        "phone": "+81-296-71-4210",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1375198060,
+      "center": {
+        "lat": 36.449711,
+        "lon": 140.4571225
+      },
+      "nodes": [
+        12732782907,
+        12732782904,
+        12732782905,
+        12732782902,
+        12732782903,
+        12732782906,
+        12732782907
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "スーパーヒロセヤ 那珂店",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1378912900,
+      "center": {
+        "lat": 36.360777,
+        "lon": 140.4806001
+      },
+      "nodes": [
+        12768589072,
+        12768589071,
+        12768589070,
+        12768589069,
+        12768589068,
+        12768589067,
+        12768589066,
+        12768589065,
+        12768589064,
+        12768589063,
+        12768589062,
+        12768589061,
+        12768589072
+      ],
+      "tags": {
+        "branch": "元吉田店",
+        "building": "retail",
+        "building:levels": "1",
+        "name": "マルト",
+        "name:en": "Maruto",
+        "phone": "+81 353 7575",
+        "shop": "supermarket"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1434241135,
+      "center": {
+        "lat": 36.1940277,
+        "lon": 139.9625026
+      },
+      "nodes": [
+        13182429501,
+        13182429502,
+        13182429503,
+        13182429504,
+        13182429505,
+        13182429506,
+        13182429507,
+        13189918805,
+        13182429508,
+        13182429509,
+        13182429510,
+        13182429501
+      ],
+      "tags": {
+        "brand": "とりせん",
+        "brand:en": "Torisen",
+        "brand:ja": "とりせん",
+        "brand:wikidata": "Q11273505",
+        "building": "yes",
+        "name": "とりせん",
+        "name:en": "Torisen",
+        "name:ja": "とりせん",
+        "shop": "supermarket"
+      }
+    }
+  ]
+}
