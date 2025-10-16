@@ -25,6 +25,30 @@ class TrainRepository:
                 geojson = json.loads(geojson)
             return geojson  # ← dictで返す
 
+    async def get_all_stations_buffer(self, meter: int, request: Request):
+      """すべての駅を指定半径のバッファ付きGeoJSONで返す"""
+      query = """
+      SELECT jsonb_build_object(
+          'type', 'Feature',
+          'geometry', ST_AsGeoJSON(ST_Buffer(geometry::geography, $1)::geometry)::jsonb,
+          'properties', to_jsonb(row) - 'geometry'
+      ) AS geojson
+      FROM unkohonsu2024_rosen_eki row
+      """
+      
+      async with request.app.state.pool.acquire() as conn:
+          rows = await conn.fetch(query, meter)
+          if not rows:
+              return {"type": "FeatureCollection", "features": []}
+
+          features = []
+          for r in rows:
+              geojson = r["geojson"]
+              if geojson:
+                  features.append(json.loads(geojson))
+
+          return {"type": "FeatureCollection", "features": features}
+        
     async def get_station_by_name(self, station_name: str, request: Request):
         query = """
         SELECT jsonb_build_object(

@@ -11,6 +11,7 @@ dependencies = [
     "mcp[cli]>=1.12.2",
     "google-genai>=1.28.0",
     "fastapi-mcp>=0.4.0",
+    "jageocoder>=2.2.0"
 ]
 
 [tool.uv]
