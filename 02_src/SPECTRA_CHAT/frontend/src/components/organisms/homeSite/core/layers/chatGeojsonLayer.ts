@@ -10,6 +10,7 @@ import type { Feature, FeatureCollection, Geometry } from "geojson"
 import bbox from "@turf/bbox"
 
 type GeojsonType = Feature<Geometry> | FeatureCollection<Geometry>
+
 function getRandomRichColor(): string {
   const r = Math.floor(Math.random() * 128) + 64
   const g = Math.floor(Math.random() * 128) + 64
@@ -32,7 +33,6 @@ export function addAllGeojsonLayers(map: maplibregl.Map) {
         data: geojson,
       }
       map.addSource(sourceId, source)
-      //displayLayerStoreに登録
       useDisplayLayerStore.getState().addDisplayLayer(sourceId, true)
     } else {
       const existingSource = map.getSource(sourceId) as maplibregl.GeoJSONSource
@@ -84,7 +84,34 @@ export function addAllGeojsonLayers(map: maplibregl.Map) {
         map.addLayer(layer)
       }
 
-      // ← 新規レイヤー追加後にズーム
+      // ポップアップを追加
+      map.on("click", layerId, (e) => {
+        const feature = e.features?.[0]
+        if (!feature) return
+
+        const popupContent = feature.properties
+          ? `<pre>${JSON.stringify(feature.properties, null, 2)}</pre>`
+          : "No properties"
+
+        new maplibregl.Popup()
+          .setLngLat(
+            "geometry" in feature && feature.geometry.type === "Point"
+              ? (feature.geometry.coordinates as [number, number])
+              : e.lngLat
+          )
+          .setHTML(popupContent)
+          .addTo(map)
+      })
+
+      // ポインターを変更（ハンドカーソル）
+      map.on("mouseenter", layerId, () => {
+        map.getCanvas().style.cursor = "pointer"
+      })
+      map.on("mouseleave", layerId, () => {
+        map.getCanvas().style.cursor = ""
+      })
+
+      // ズーム
       const [minX, minY, maxX, maxY] = bbox(geojson)
       map.fitBounds(
         [
@@ -96,11 +123,9 @@ export function addAllGeojsonLayers(map: maplibregl.Map) {
     }
   }
 
-  // 初回描画
   const geojsonList: GeojsonType[] = useGeojsonStateStore.getState().geojsonList
   geojsonList.forEach((geojson, idx) => addLayer(geojson, idx))
 
-  // store 更新時に自動描画
   useGeojsonStateStore.subscribe((state) => {
     const updatedList: GeojsonType[] = state.geojsonList
     updatedList.forEach((geojson, idx) => addLayer(geojson, idx))
