@@ -91,3 +91,14 @@ class CycleRepository:
 
         geojson = {"type": "FeatureCollection", "features": features}
         return geojson
+    
+    async def get_all_cycle_ports(self, request: Request):
+        #上の2つの関数の結果を結合して返す
+        docomo_data = await self.get_docomo_bike_share_status(request)
+        hello_data = await self.get_hello_cycle_port_status(request)
+        combined_features = docomo_data["features"] + hello_data["features"]
+        return {"type": "FeatureCollection", "features": combined_features}
+    
+    
+
+

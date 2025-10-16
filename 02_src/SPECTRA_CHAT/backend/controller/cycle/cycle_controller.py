@@ -13,3 +13,9 @@ async def get_hello_cycle_port_status(request: Request):
 async def get_docomo_bike_share_status(request: Request):
     """ドコモバイクシェアのステーション情報とステータスをGeoJSON形式で取得"""
     return await cycle_repository.get_docomo_bike_share_status(request)
+
+@router.get("/cycle")
+async def get_all_cycle_ports(request: Request):
+    """全てのレンタサイクルポート情報をGeoJSON形式で取得"""
+    return await cycle_repository.get_all_cycle_ports(request)
+
