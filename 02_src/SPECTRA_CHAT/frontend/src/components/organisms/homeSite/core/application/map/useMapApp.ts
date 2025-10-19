@@ -14,34 +14,22 @@ import { addTrainStationLayer } from "@/components/organisms/homeSite/core/layer
 import { addAllGeojsonLayers } from "@/components/organisms/homeSite/core/layers/chatGeojsonLayer"
 import { addHelloCycleStationLayer } from "@/components/organisms/homeSite/core/layers/helloCycleStationLayer"
 import { addDocomoBikeShareStationLayer } from "@/components/organisms/homeSite/core/layers/docomoBikeShareStationLayer"
-import useDisplayLayerStore from "@/infrastructure/stores/useDisplayLayerStore"
-
-const INITIAL_VIEW_STATE = {
-  longitude: 139.6917,
-  latitude: 35.6,
-  zoom: 9,
-  pitch: 0,
-  maxPitch: 85,
-  bearing: 0,
-  maxZoom: 20,
-  minZoom: 5,
-}
+import { useDisplayLayerStoreAdapter } from "@/infrastructure/adapters/storeAdapters"
+import { INITIAL_VIEW_STATE } from "@/domain/params/mapConfig"
 
 export const useMapApp = () => {
   const mapContainerRef = useRef<HTMLDivElement | null>(null)
   const mapRef = useRef<maplibregl.Map | null>(null)
   const [viewState, setViewState] = useState(INITIAL_VIEW_STATE)
 
-  // ✅ displayLayerStore を監視
-  const displayLayers = useDisplayLayerStore((state) => state.layersObj)
-
+  const displayLayers = useDisplayLayerStoreAdapter().layersObj
   useEffect(() => {
     if (mapRef.current) return
     if (!mapContainerRef.current) return
 
     const map = new maplibregl.Map({
       container: mapContainerRef.current!,
-      style: "./map/style.json",
+      style: INITIAL_VIEW_STATE.style,
       center: [INITIAL_VIEW_STATE.longitude, INITIAL_VIEW_STATE.latitude],
       zoom: INITIAL_VIEW_STATE.zoom,
       pitch: INITIAL_VIEW_STATE.pitch,
@@ -49,9 +37,7 @@ export const useMapApp = () => {
       bearing: INITIAL_VIEW_STATE.bearing,
       maxZoom: INITIAL_VIEW_STATE.maxZoom,
       minZoom: INITIAL_VIEW_STATE.minZoom,
-      attributionControl: false,
-      renderWorldCopies: false,
-      localIdeographFontFamily: "sans-serif",
+      localIdeographFontFamily: INITIAL_VIEW_STATE.localIdeographFontFamily,
     })
     mapRef.current = map
 
@@ -102,11 +88,13 @@ export const useMapApp = () => {
         longitude: center.lng,
         latitude: center.lat,
         zoom: map.getZoom(),
+        style: INITIAL_VIEW_STATE.style,
         pitch: map.getPitch(),
         maxPitch: INITIAL_VIEW_STATE.maxPitch,
         bearing: map.getBearing(),
         maxZoom: INITIAL_VIEW_STATE.maxZoom,
         minZoom: INITIAL_VIEW_STATE.minZoom,
+        localIdeographFontFamily: INITIAL_VIEW_STATE.localIdeographFontFamily,
       })
     })
 

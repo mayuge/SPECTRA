@@ -1,7 +1,7 @@
-import useDisplayLayerStore from "@/infrastructure/stores/useDisplayLayerStore"
+import { useDisplayLayerStoreAdapter } from "@/infrastructure/adapters/storeAdapters"
 
 export const useLayerControlApp = () => {
-  const { toggleDisplayLayer, getDisplayLayer } = useDisplayLayerStore()
+  const { toggleDisplayLayer, getDisplayLayer } = useDisplayLayerStoreAdapter()
 
   // UIで使うtoggle関数
   const toggleTrainLayer = () => {
