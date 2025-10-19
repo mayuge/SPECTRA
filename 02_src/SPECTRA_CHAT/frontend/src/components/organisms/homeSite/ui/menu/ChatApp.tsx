@@ -13,7 +13,10 @@ type ChatListProps = {
 }
 
 const ChatList: React.FC<ChatListProps> = ({ chatList }) => {
-  const { toggleDisplayLayer, getDisplayLayer } = useDisplayLayerStore()
+  const toggleDisplayLayer = useDisplayLayerStore((s) => s.toggleDisplayLayer)
+  const getDisplayLayer = useDisplayLayerStore((s) => s.getDisplayLayer)
+  const layersObj = useDisplayLayerStore((s) => s.layersObj) // ✅ 状態を購読！
+
   let responseCount = 0 // response のみカウント
 
   return (
@@ -23,9 +26,7 @@ const ChatList: React.FC<ChatListProps> = ({ chatList }) => {
         const isError = chat.type === "error"
         const isResponse = chat.type === "response"
 
-        // response のみカウントして layerId に使用
         const layerId = isResponse ? `geojson-layer-${responseCount}` : undefined
-
         if (isResponse) responseCount += 1
 
         return (
@@ -45,15 +46,14 @@ const ChatList: React.FC<ChatListProps> = ({ chatList }) => {
               </div>
             </div>
 
-            {/* response のときだけ「表示切替」ボタン */}
             {isResponse && layerId && (
               <div
-                className="flex items-center w-[80%] bg-gray-20 gap-1 px-2 rounded-b-lg"
+                className="flex items-center w-[80%] bg-gray-20 gap-1 px-2 rounded-b-lg cursor-pointer"
                 onClick={() => toggleDisplayLayer(layerId)}
               >
                 <Button
                   variant="btn-text-white"
-                  iconLeft={getDisplayLayer(layerId) === false ? "visibility_off" : "visibility"}
+                  iconLeft={layersObj[layerId] ?? true ? "visibility" : "visibility_off"}
                   size="mini"
                 />
                 <TextLabel text="表示切替" size="small" isBlack={false} />

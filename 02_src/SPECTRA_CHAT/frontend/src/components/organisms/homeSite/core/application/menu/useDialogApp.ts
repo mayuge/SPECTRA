@@ -21,7 +21,7 @@ const useDialogApp = () => {
       isdata: false,
     }
     addChatMessage(chatMessage)
-    console.log(getChatMessageList())
+
     try {
       const responseStr = await sendChatMessage(message)
 
@@ -31,7 +31,7 @@ const useDialogApp = () => {
         setGeojson(geojson)
         const successMessage: ChatType = {
           type: "response",
-          message: "表示しました",
+          message: `【表示結果】${message}`,
           isdata: true,
         }
         addChatMessage(successMessage)
