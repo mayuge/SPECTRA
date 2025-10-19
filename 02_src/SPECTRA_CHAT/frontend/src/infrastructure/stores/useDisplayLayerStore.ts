@@ -10,12 +10,16 @@ const useDisplayLayerStore = create<IDisplayLayerState>((set, get) => ({
     "docomo-bike-share-station-layer": true,
   },
   toggleDisplayLayer: (name) =>
-    set((state) => ({
-      layersObj: {
-        ...state.layersObj,
-        [name]: !(state.layersObj[name] ?? false),
-      },
-    })),
+    set((state) => {
+      const current = state.layersObj[name]
+      const next = current === undefined ? false : !current // ← 初回は false にする
+      return {
+        layersObj: {
+          ...state.layersObj,
+          [name]: next,
+        },
+      }
+    }),
   addDisplayLayer: (name, visible = true) =>
     set((state) => ({
       layersObj: {
