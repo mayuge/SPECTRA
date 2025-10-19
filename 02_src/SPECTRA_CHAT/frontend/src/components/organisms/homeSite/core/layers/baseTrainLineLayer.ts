@@ -16,6 +16,7 @@ export const addTrainLineLayer = async (map: maplibregl.Map) => {
   const source: GeoJSONSourceSpecification = {
     type: "geojson",
     data: geojson,
+    attribution: "西澤明",
   }
 
   const layer: LineLayerSpecification = {

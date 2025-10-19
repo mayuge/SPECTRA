@@ -1,28 +1,24 @@
-import { useState } from "react"
+import { create } from "zustand"
 import type { ChatType } from "@/domain/types/chatType"
 import type { IChatState } from "@/domain/interfaces/IChatState"
 
-const useChatStateStore = (): IChatState => {
-  const [chatMessages, setChatMessages] = useState<ChatType[]>([])
+const useChatStateStore = create<IChatState>((set, get) => ({
+  chatMessages: [],
 
-  // チャットメッセージのゲッター
-  const getChatMessageList = (): ChatType[] => chatMessages
+  // チャットメッセージ一覧を取得
+  getChatMessageList: () => get().chatMessages,
 
-  // チャットメッセージを追加する関数
-  const addChatMessage = (message: ChatType): void => {
-    setChatMessages((prev) => [...prev, message])
-  }
+  // チャットメッセージを追加
+  addChatMessage: (message: ChatType) => {
+    set((state) => ({
+      chatMessages: [...state.chatMessages, message],
+    }))
+  },
 
-  // isDataがtrueのメッセージをフィルタリングし、lengthを取得する
-  const getDataMessageLength = (): number => {
-    return chatMessages.filter((msg) => msg.isdata).length
-  }
+  // isData が true のメッセージ数を取得
+  getDataMessageLength: () => {
+    return get().chatMessages.filter((msg) => msg.isdata).length
+  },
+}))
 
-  return {
-    chatMessages,
-    getChatMessageList,
-    addChatMessage,
-    getDataMessageLength,
-  }
-}
 export default useChatStateStore
