@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from "react"
 import DialogHeader from "@/components/molecules/header/DialogHeader"
-import ChatList from "@/components/organisms/homeSite/ui/menu/ChatApp"
+import ChatList from "@/components/molecules/frames/Chat"
 import Button from "@/components/atoms/buttons/Button"
 import Textarea from "@/components/atoms/inputs/Textarea"
 import PullTab from "@/components/atoms/buttons/PullTab"
