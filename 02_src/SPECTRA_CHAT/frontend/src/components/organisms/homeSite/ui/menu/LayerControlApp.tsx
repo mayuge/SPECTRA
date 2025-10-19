@@ -6,8 +6,8 @@ import { useLayerControlApp } from "@/components/organisms/homeSite/core/applica
 const LayerControlApp: React.FC = () => {
   const { toggleTrainLayer, toggleCycleLayer, getDisplayLayer } = useLayerControlApp()
   return (
-    <div className="absolute top-20 right-16 z-10 bg-gray-30 px-4 py-3 rounded-full">
-      <div className="px-2 pb-2">
+    <div className="absolute top-20 right-16 z-10 bg-gray-30 px-4 py-3">
+      <div className="pb-2">
         <TextLabel text="レイヤー切替" size="small" isBlack={false} />
       </div>
 
@@ -15,17 +15,17 @@ const LayerControlApp: React.FC = () => {
         <Button
           variant={getDisplayLayer("base-train-station-layer") ? "btn-light" : "btn-dark"}
           size="small"
-          shape="circle"
+          shape="square"
           iconLeft="train"
-          text={getDisplayLayer("base-train-station-layer") ? "鉄道" : ""}
+          text="鉄道"
           onClick={toggleTrainLayer}
         />
         <Button
           variant={getDisplayLayer("docomo-bike-share-station-layer") ? "btn-light" : "btn-dark"}
           size="small"
-          shape="circle"
+          shape="square"
           iconLeft="directions_bike"
-          text={getDisplayLayer("docomo-bike-share-station-layer") ? "サイクル" : ""}
+          text="サイクル"
           onClick={toggleCycleLayer}
         />
       </div>

@@ -4,6 +4,31 @@ from fastapi import HTTPException, Request
 
 
 class TrainRepository:
+    async def get_all_stations_by_frequency(self, frequency: int, request: Request):
+        query = """
+        SELECT jsonb_build_object(
+          'type', 'FeatureCollection',
+          'features', jsonb_agg(
+            jsonb_build_object(
+              'type', 'Feature',
+              'geometry', ST_AsGeoJSON(geometry)::jsonb,
+              'properties', to_jsonb(row) - 'geometry'
+            )
+          )
+        ) AS geojson
+        FROM (
+          SELECT *
+          FROM unkohonsu2024_rosen_eki
+          WHERE COALESCE("発数1",0) + COALESCE("発数2",0) + COALESCE("着数1",0) + COALESCE("着数2",0) >= $1
+        ) row
+        """
+        async with request.app.state.pool.acquire() as conn:
+            result = await conn.fetchrow(query, frequency)
+            geojson = result["geojson"]
+            if isinstance(geojson, str):
+                geojson = json.loads(geojson)
+            return geojson
+        
     async def get_all_stations(self, request: Request):
         query = """
         SELECT jsonb_build_object(
@@ -107,3 +132,28 @@ class TrainRepository:
             features = [json.loads(r["geojson"]) for r in rows]
 
             return {"type": "FeatureCollection", "features": features}
+      
+    async def get_all_lines_by_frequency(self, frequency: int, request: Request):
+        query = """
+        SELECT jsonb_build_object(
+          'type', 'FeatureCollection',
+          'features', jsonb_agg(
+            jsonb_build_object(
+              'type', 'Feature',
+              'geometry', ST_AsGeoJSON(geometry)::jsonb,
+              'properties', to_jsonb(row) - 'geometry'
+            )
+          )
+        ) AS geojson
+        FROM (
+          SELECT *
+          FROM unkohonsu2024_rosen_kukan
+          WHERE COALESCE("逆方向運行本数2024",0) + COALESCE("順方向運行本数2024",0) >= $1
+        ) row
+        """
+        async with request.app.state.pool.acquire() as conn:
+            result = await conn.fetchrow(query, frequency)
+            geojson = result["geojson"]
+            if isinstance(geojson, str):
+                geojson = json.loads(geojson)
+            return geojson
