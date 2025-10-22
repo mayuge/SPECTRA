@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        headfont: ["Oswald", "sans-serif"],
+      },
       colors: {
         primary: "#C0F354",
         primaryDark: "#C3FF4B",

@@ -62,7 +62,7 @@ const ImageButton: React.FC<ImageButtonProps> = ({
       onClick={onClick}
     >
       {iconLeft && <span className="material-icons">{iconLeft}</span>}
-      {path && <Image alt="Image" src={path} width={48} height={48} />}
+      {path && <Image alt="Image" src={path} width={36} height={36} />}
       {text}
       {iconRight && <span className="material-icons">{iconRight}</span>}
     </button>

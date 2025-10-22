@@ -17,7 +17,8 @@ const useDialogApp = () => {
     if (!message.trim()) return
 
     // ✅ 記号の使用禁止（許可文字: 日本語・英数字・スペース・。、！？）
-    const invalidCharPattern = /[^a-zA-Z0-9ぁ-んァ-ン一-龯々。、！？\s]/u
+    const invalidCharPattern =
+      /[^a-zA-Z0-9ぁ-んァ-ヶ一-龯々ー・－〜～、。！？「」『』（）()【】［］\s]/u
     if (invalidCharPattern.test(message)) {
       const errorMessage: ChatType = {
         type: "error",

@@ -12,9 +12,9 @@ const HeaderApp: React.FC = () => {
         shape="square"
         path="/image/app/logoBlack.svg"
       />
-      <div className="pl-2">
-        <TextLabel text="SPECTRA CHAT" size="large" bold={true} />
-      </div>
+      <header className="pl-1 font-headfont text-2xl">
+        <h1>SPECTRA CHAT</h1>
+      </header>
     </div>
   )
 }

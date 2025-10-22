@@ -16,6 +16,10 @@ export default function RootLayout({
     <html lang="ja">
       <head>
         <title>SPECTRA PROJECT</title>
+        <link
+          href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Oswald:wght@200..700&display=swap"
+          rel="stylesheet"
+        ></link>
         {/* Google Material Icons は next/font では未対応なので link のまま */}
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
       </head>

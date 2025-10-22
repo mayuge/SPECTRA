@@ -137,6 +137,14 @@ const DialogApp: React.FC = () => {
                     }}
                   />
                   <Badge
+                    text="すべての駅"
+                    variant="badge-secondary"
+                    shape="square"
+                    onClick={() => {
+                      manageChatMessage("すべての駅")
+                    }}
+                  />
+                  <Badge
                     text="駅から800m圏内"
                     variant="badge-secondary"
                     shape="square"
@@ -150,6 +158,14 @@ const DialogApp: React.FC = () => {
                     shape="square"
                     onClick={() => {
                       manageChatMessage("山手線")
+                    }}
+                  />
+                  <Badge
+                    text="すべての鉄道路線"
+                    variant="badge-secondary"
+                    shape="square"
+                    onClick={() => {
+                      manageChatMessage("すべての鉄道路線")
                     }}
                   />
                   <Badge
