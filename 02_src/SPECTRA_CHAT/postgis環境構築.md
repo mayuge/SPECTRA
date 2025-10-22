@@ -31,6 +31,8 @@ docker exec -it postgis_container psql -U docker -d postgres
 \dt
 ```
 
+## python 自動インデント
+
 ```
 uv run ruff format
 ```

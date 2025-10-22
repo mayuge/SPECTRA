@@ -5,7 +5,7 @@ import TextLabel from "@/components/atoms/labels/TextLabel"
 
 const HeaderApp: React.FC = () => {
   return (
-    <div className="absolute z-[20] flex items-center bg-primary/90 p-2 w-[100svw]">
+    <div className="absolute z-[20] flex items-center bg-primary p-2 w-[100svw]">
       <ImageButton
         size="mini"
         variant="btn-primary"

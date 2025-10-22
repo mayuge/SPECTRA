@@ -5,12 +5,12 @@ type BadgeProps = {
   text?: string // バッジテキスト
   shape?: BadgeShapeType //バッジの形状を文字列で指定
   variant: BadgeVariantType // バッジのスタイル badge-primary, badge-secondary, badge-danger, badge-warning, badge-success のいずれかを指定
+  onClick?: () => void // クリック時のコールバック関数
 }
 
 const variantStyles: Record<BadgeVariantType, string> = {
   "badge-primary": "bg-primary text-white border-[1px] border-primary",
-  "badge-secondary":
-    "bg-white text-primary border-[1px] border-primary shadow-[inset_0_0_0_1px_var(--primary-color)]",
+  "badge-secondary": "bg-secondary text-white border-[1px] border-secondary",
   "badge-danger": "bg-danger text-white border-[1px] border-danger",
   "badge-warning": "bg-warning text-white border-[1px] border-warning",
   "badge-success": "bg-success text-white border-[1px] border-success",
@@ -27,13 +27,15 @@ const Badge: React.FC<BadgeProps> = ({
   text = "",
   shape = "square",
   variant = "badge-primary",
+  onClick,
 }: BadgeProps) => {
   const badgeVariant = variantStyles[variant] ?? variantStyles["badge-primary"]
   const cornerShape = shapeStyles[shape] ?? shapeStyles["square"]
 
   return (
     <div
-      className={`${badgeVariant} ${cornerShape} inline-flex items-center gap-1 text-[8px] px-[4px] py-[4px]`}
+      className={`${badgeVariant} ${cornerShape} inline-flex items-center gap-1 text-[9px] px-[4px] py-[4px]`}
+      onClick={onClick}
     >
       {text}
     </div>

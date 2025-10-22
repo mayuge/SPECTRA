@@ -38,7 +38,7 @@ const ChatList: React.FC<ChatListProps> = ({ chatList }) => {
                   isError
                     ? "bg-danger/90 text-white rounded-lg w-[60%]"
                     : isUser
-                    ? "bg-secondary text-black rounded-lg w-[60%]"
+                    ? "bg-secondary text-white rounded-lg w-[60%]"
                     : "bg-gray-200 text-gray-900 rounded-t-lg w-[80%]"
                 }`}
               >
