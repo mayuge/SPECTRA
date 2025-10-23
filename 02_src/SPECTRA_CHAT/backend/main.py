@@ -14,6 +14,7 @@ from controller.cycle.cycle_controller import router as cycle_router
 from controller.osm.osm_controller import router as osm_router
 from controller.supermarket.supermarket_controller import router as supermarket_router
 from controller.geocoding.geocoding_controller import router as geocoding_router  
+from controller.landprice.landprice_controller import router as landprice_router 
 
 app = FastAPI()
 
@@ -57,6 +58,7 @@ app.include_router(cycle_router)
 app.include_router(osm_router)
 app.include_router(supermarket_router)
 app.include_router(geocoding_router)
+app.include_router(landprice_router)
 
 mcp = FastApiMCP(app)
 mcp.mount()

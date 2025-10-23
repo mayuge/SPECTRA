@@ -11,5 +11,5 @@ async def get_all_supermarkets(request: Request):
 
 @router.get("/supermarket/buffer/{meter}")
 async def get_all_supermarkets_buffer(meter: int, request: Request):
-    """スーパーマーケットの半径メートル圏内を表示 単位がkmのときはmeterに1000をかけた値を入れてください。"""
+    """スーパーマーケットの半径メートル圏内を表示 単位がkmのときはmeterに1000をかけた値を入れてください。単位が徒歩の場合は80をかけた値を入れてください。"""
     return await supermarket_repository.get_all_supermarkets_buffer(meter, request)

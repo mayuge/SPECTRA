@@ -16,24 +16,30 @@ const useDialogApp = () => {
     // ✅ 空文字の時は何もしない
     if (!message.trim()) return
 
-    // ✅ 記号の使用禁止（許可文字: 日本語・英数字・スペース・。、！？）
-    const invalidCharPattern =
-      /[^a-zA-Z0-9ぁ-んァ-ヶ一-龯々ー・－〜～、。！？「」『』（）()【】［］\s]/u
+    // ✅ 特定の危険文字のみ禁止
+    const invalidCharPattern = /[\u0000-\u001F\u007F\uFEFF'"<>!\/\\;|&`$%^@]/u
+
     if (invalidCharPattern.test(message)) {
+      const chatMessage: ChatType = {
+        type: "request",
+        message,
+        isdata: false,
+      }
+      addChatMessage(chatMessage)
       const errorMessage: ChatType = {
         type: "error",
-        message: "記号は使用できません。日本語または英数字のみで入力してください。",
+        message: "使用できない記号（BOM・クォーテーション・< > ! / など）が含まれています。",
         isdata: false,
       }
       addChatMessage(errorMessage)
       return
     }
 
-    // ✅ 文字数制限（例：最大300文字）
-    if (message.length > 300) {
+    // ✅ 文字数制限（例：最大255文字）
+    if (message.length > 255) {
       const errorMessage: ChatType = {
         type: "error",
-        message: "メッセージが長すぎます。300文字以内で入力してください。",
+        message: "メッセージが長すぎます。255文字以内で入力してください。",
         isdata: false,
       }
       addChatMessage(errorMessage)

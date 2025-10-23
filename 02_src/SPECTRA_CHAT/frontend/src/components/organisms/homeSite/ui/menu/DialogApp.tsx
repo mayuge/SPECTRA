@@ -145,11 +145,11 @@ const DialogApp: React.FC = () => {
                     }}
                   />
                   <Badge
-                    text="駅から800m圏内"
+                    text="駅から徒歩10分圏内"
                     variant="badge-secondary"
                     shape="square"
                     onClick={() => {
-                      manageChatMessage("駅から800m圏内")
+                      manageChatMessage("駅から徒歩10分圏内")
                     }}
                   />
                   <Badge

@@ -14,7 +14,7 @@ async def get_all_stations_by_frequency(frequency: int, request: Request):
 
 @router.get("/station/buffer/{meter}")
 async def get_all_stations_buffer(meter: int, request: Request):
-    """駅の半径メートル圏内を取得します。単位がkmのときはmeterに1000をかけた値を入れてください。"""
+    """駅の半径メートル圏内を取得します。単位がkmのときはmeterに1000をかけた値を入れてください。単位が徒歩の場合は80をかけた値を入れてください。"""
     return await train_repository.get_all_stations_buffer(meter, request)
 
 @router.get("/station/{station_name}")
