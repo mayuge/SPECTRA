@@ -1,0 +1,64 @@
+# main.py
+
+import os
+
+import asyncpg
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi_mcp import FastApiMCP
+
+from controller.chat.chat_controller import router as chat_router
+from controller.train.train_controller import router as train_router
+from controller.city.city_controller import router as city_router
+from controller.cycle.cycle_controller import router as cycle_router
+from controller.osm.osm_controller import router as osm_router
+from controller.supermarket.supermarket_controller import router as supermarket_router
+from controller.geocoding.geocoding_controller import router as geocoding_router  
+from controller.landprice.landprice_controller import router as landprice_router 
+
+app = FastAPI()
+
+# CORS設定
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # 本番は適切に制限してください
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+# DB接続プール
+@app.on_event("startup")
+async def startup():
+    app.state.pool = await asyncpg.create_pool(
+        host=os.getenv("PGHOST", "localhost"),
+        user=os.getenv("PGUSER", "postgres"),
+        password=os.getenv("PGPASSWORD", "password"),
+        database=os.getenv("PGDATABASE", "postgres"),
+        port=int(os.getenv("PGPORT", 5432)),
+    )
+
+
+@app.on_event("shutdown")
+async def shutdown():
+    await app.state.pool.close()
+
+
+@app.get("/")
+async def root():
+    return {"message": "hello"}
+
+
+# ルーター登録
+app.include_router(train_router)
+app.include_router(city_router)
+app.include_router(chat_router)
+app.include_router(cycle_router)
+app.include_router(osm_router)
+app.include_router(supermarket_router)
+app.include_router(geocoding_router)
+app.include_router(landprice_router)
+
+mcp = FastApiMCP(app)
+mcp.mount()
