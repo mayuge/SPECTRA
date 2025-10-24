@@ -6,5 +6,5 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["src/**/*", "tailwind.config.ts"]
+  "include": ["src/**/*"]
 }
