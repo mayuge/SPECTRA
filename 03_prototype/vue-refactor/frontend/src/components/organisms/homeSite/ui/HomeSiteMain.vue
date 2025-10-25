@@ -1,6 +1,6 @@
 <template>
-  <Button text="click me" variant="btn-primary" size="normal" shape="round" />
+  <MapApp />
 </template>
 <script setup lang="ts">
-import Button from "@/components/atoms/buttons/Button.vue"
+import MapApp from "@/components/organisms/homeSite/ui/map/MapApp.vue"
 </script>
