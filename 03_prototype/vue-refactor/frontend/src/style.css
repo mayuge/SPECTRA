@@ -1,28 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import "tailwindcss";
-
 @theme {
-  --font-noto: "NotoSanJp", sans-serif;
+  --font-noto: "Noto Sans JP", sans-serif;
   --font-oswald: "Oswald", sans-serif;
+
   --color-primary: #c0f354;
   --color-secondary: #ff6f61;
   --color-success: #52c41a;
   --color-warning: #faad14;
   --color-danger: #ff4d4f;
-  --color-gray-10: "#1A1A1A";
-  --color-gray-20: "#333333";
-  --color-gray-30: "#4D4D4D";
-  --color-gray-40: "#666666";
-  --color-gray-50: "#808080";
-  --color-gray-60: "#999999";
-  --color-gray-70: "#B3B3B3";
-  --color-gray-80: "#CCCCCC";
-  --color-gray-90: "#E6E6E6";
+
+  --color-gray-10: #1a1a1a;
+  --color-gray-20: #333333;
+  --color-gray-30: #4d4d4d;
+  --color-gray-40: #666666;
+  --color-gray-50: #808080;
+  --color-gray-60: #999999;
+  --color-gray-70: #b3b3b3;
+  --color-gray-80: #cccccc;
+  --color-gray-90: #e6e6e6;
 }
 
 * {
-  margin: 0;
-  padding: 0;
   font-family: var(--font-noto);
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  display: inline-block;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
 }
