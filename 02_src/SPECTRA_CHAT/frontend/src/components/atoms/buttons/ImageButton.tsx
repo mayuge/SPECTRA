@@ -7,7 +7,7 @@ type ImageButtonProps = {
   iconLeft?: string
   iconRight?: string
   isShadow?: boolean
-  shape?: ButtonShapeType // Button.tsxと同じ型に変更
+  shape?: ButtonShapeType
   size?: ButtonSizeType
   variant?: ButtonVariantType
   path: string

@@ -26,6 +26,9 @@
 * {
   font-family: var(--font-noto);
 }
+.font-oswald {
+  font-family: var(--font-oswald);
+}
 
 .material-icons {
   font-family: "Material Icons";
