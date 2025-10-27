@@ -17,18 +17,8 @@
 
 <script lang="ts" setup>
 import { computed } from "vue"
+import type { ButtonVariantType } from "@/domain/types/atomsType"
 
-type ButtonVariantType =
-  | "btn-primary"
-  | "btn-secondary"
-  | "btn-danger"
-  | "btn-warning"
-  | "btn-success"
-  | "btn-dark"
-  | "btn-light"
-  | "btn-text-black"
-  | "btn-text-gray"
-  | "btn-text-white"
 
 type ButtonShapeType = "round" | "square" | "circle"
 type ButtonSizeType = "mini" | "small" | "normal" | "large"
