@@ -1,7 +1,7 @@
 <template>
   <div
     :class="[headerVariant, headerShape, headerShadow, paddingClass, 'w-full flex flex-col']"
-    @click="onClick"
+    @click="headerClicked"
   >
     <div v-if="isPullIcon" class="absolute top-1 left-1/2 -translate-x-1/2">
       <div class="h-1 w-10 bg-gray-50 rounded-full"></div>
@@ -32,10 +32,15 @@ interface Props {
   shape?: 'circle' | 'square'
   isPullIcon?: boolean
   isShadow?: boolean
-  onClick?: () => void
 }
 
 const props = defineProps<Props>()
+
+const emit = defineEmits(['header-clicked'])
+
+const headerClicked = () => {
+  emit("header-clicked")
+}
 
 const headerVariants: Record<HeaderVariantType, string> = {
   'header-primary': 'bg-primary text-white',

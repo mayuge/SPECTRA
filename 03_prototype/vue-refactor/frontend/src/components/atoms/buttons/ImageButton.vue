@@ -7,7 +7,7 @@
       isShadow ? 'shadow-md shadow-black' : '',
       'flex items-center gap-1 text-xs md:text-base'
     ]"
-    @click="onClick"
+    @click="buttonClicked"
   >
     <span v-if="iconLeft" class="material-icons">{{ iconLeft }}</span>
     <img v-if="path" :src="path" alt="Image" class="w-9 h-9 md:w-9 md:h-9" />
@@ -42,15 +42,19 @@ interface ImageButtonProps {
   size?: ButtonSizeType
   variant?: ButtonVariantType
   path: string
-  onClick?: () => void
 }
 
 const props = defineProps<ImageButtonProps>()
 
+const emit = defineEmits(['button-clicked'])
+
+const buttonClicked = () => {
+  emit('button-clicked')
+}
+
 const variantStyles: Record<ButtonVariantType, string> = {
   'btn-primary': 'bg-primary text-white hover:bg-primaryDark',
-  'btn-secondary':
-    'bg-white text-primary border-2 border-primary shadow-[inset_0_0_0_2px_var(--primary-color)]',
+  'btn-secondary':'bg-secondary text-black',
   'btn-danger': 'bg-danger text-white',
   'btn-warning': 'bg-warning text-white',
   'btn-success': 'bg-success text-white',
@@ -74,5 +78,5 @@ const paddingSize: Record<ButtonSizeType, string> = {
   large: 'md:p-6 p-4',
 }
 
-const { text = '', size = 'normal', shape = 'round', variant = 'btn-primary', iconLeft = '', iconRight = '', isShadow = false, path, onClick } = props
+const { text = '', size = 'normal', shape = 'round', variant = 'btn-primary', iconLeft = '', iconRight = '', isShadow = false, path } = props
 </script>

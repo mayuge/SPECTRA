@@ -7,7 +7,7 @@
       shadowClass,
       'flex items-center justify-center'
     ]"
-    @click="onClick"
+    @click="buttonClicked"
   >
     <span v-if="icon" class="material-icons">{{ icon }}</span>
   </button>
@@ -33,16 +33,19 @@ interface Props {
   isShadow?: boolean
   size?: PullTabSizeType
   variant?: PullTabVariantType
-  onClick?: () => void
 }
 
 const props = defineProps<Props>()
 
-// --- 各スタイル定義 ---
+const emit = defineEmits(['button-clicked'])
+
+const buttonClicked = () => {
+  emit('button-clicked')
+}
+
 const variantStyles: Record<PullTabVariantType, string> = {
   "pullTab-primary": "bg-primary text-white hover:bg-primaryDark",
-  "pullTab-secondary":
-    "bg-white text-primary border-2 border-primary shadow-[inset_0_0_0_2px_var(--color-primary)]",
+  "pullTab-secondary":"bg-secondary text-white",
   "pullTab-danger": "bg-danger text-white",
   "pullTab-warning": "bg-warning text-white",
   "pullTab-success": "bg-success text-white",
@@ -64,7 +67,6 @@ const positionShape: Record<PullTabPositionType, string> = {
   bottom: "rounded-t-lg px-2",
 }
 
-// --- computed で動的クラスを構築 ---
 const variantClasses = computed(() => variantStyles[props.variant ?? "pullTab-primary"])
 const paddingClasses = computed(() => paddingSize[props.size ?? "normal"])
 const shapeClasses = computed(() => positionShape[props.position])

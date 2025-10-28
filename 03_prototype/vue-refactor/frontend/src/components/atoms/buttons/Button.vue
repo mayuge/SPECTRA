@@ -7,7 +7,7 @@
       shadowClass,
       'flex items-center gap-1 md:text-base text-xs leading-none'
     ]"
-    @click="onClick"
+    @click="buttonClicked"
   >
     <span v-if="iconLeft" class="material-icons">{{ iconLeft }}</span>
     <span v-if="text" :style="{ position: 'relative', top: '-1px' }">{{ text }}</span>
@@ -31,10 +31,15 @@ interface Props {
   shape?: ButtonShapeType
   size: ButtonSizeType
   variant: ButtonVariantType
-  onClick?: () => void
 }
 
 const props = defineProps<Props>()
+
+const emit = defineEmits(['button-clicked'])
+
+const buttonClicked = () => {
+  emit("button-clicked")
+}
 
 const variantStyles: Record<ButtonVariantType, string> = {
   "btn-primary": "bg-primary text-gray-20 hover:bg-primaryDark",
