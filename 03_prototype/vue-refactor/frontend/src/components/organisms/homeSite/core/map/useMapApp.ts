@@ -1,6 +1,6 @@
-import type { ICreateMap } from "@/domain/interfaces/ICreateMap"
-const useMapApp = (createMap: ICreateMap) => {
-  const { getMapInstance } = createMap
+import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
+const useMapApp = (mapInstance: IMapInstance) => {
+  const { getMapInstance } = mapInstance
   const onMountedCallback = () => {
     getMapInstance()
   }
