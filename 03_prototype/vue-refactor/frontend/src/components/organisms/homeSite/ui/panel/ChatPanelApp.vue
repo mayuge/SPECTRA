@@ -33,16 +33,25 @@
 
 <script setup lang="ts">
 import type { IDialogState } from '@/domain/interfaces/IDialogState'
+import type { IReqChatApi } from '@/domain/interfaces/IReqChatApi'
+import type { IMapInstance } from '@/domain/interfaces/IMapInstance'
+import type { IMapLayer } from '@/domain/interfaces/IMapLayer'
+
 import { useDialogStateStore } from '@/infrastructure/stores/dialogStateStore'
-import useChatPanelApp from '@/components/organisms/homeSite/core/panel/useChatPanelApp'
+import useReqChatApi from '@/infrastructure/axios/chat/reqChatApi'
+import useMapInstance from '@/infrastructure/map/mapInstance'
+import useMapLayer from '@/infrastructure/map/mapLayer'
+
 import PullTab from '@/components/atoms/buttons/PullTab.vue'
 import DialogHeader from '@/components/molecules/header/DialogHeader.vue'
 import Submit from '@/components/molecules/input/Submit.vue'
+import useChatPanelApp from '@/components/organisms/homeSite/core/panel/useChatPanelApp'
 
-const { getMainPanelOpen, toggleMainPanel, getPullTabIcon } =
-  useChatPanelApp(useDialogStateStore() as IDialogState)
-
-  const submitButtonClicked = (inputValue: string) => {
-    console.log("Submit button clicked with input:", inputValue)
-  }
+const { getMainPanelOpen, toggleMainPanel, getPullTabIcon, submitButtonClicked } =
+  useChatPanelApp(
+    useDialogStateStore() as IDialogState,
+    useReqChatApi() as IReqChatApi,
+    useMapInstance() as IMapInstance,
+    useMapLayer() as IMapLayer
+  )
 </script>

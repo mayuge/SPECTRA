@@ -8,7 +8,7 @@ export const useReqTrainApi = (): IReqTrainApi => {
    * @returns {geojson} 駅の情報
    */
   const getAllStation = async () => {
-    const url = process.env.NEXT_PUBLIC_TRAIN_STATION_URL
+    const url = import.meta.env.VITE_TRAIN_STATION_URL
     const config = {
       method: "GET",
       url: `${url}`,
@@ -27,7 +27,7 @@ export const useReqTrainApi = (): IReqTrainApi => {
    * @returns {geojson} 駅の情報
    */
   const getStationByName = async (stationName: string) => {
-    const url = process.env.NEXT_PUBLIC_TRAIN_STATION_DETAIL_URL
+    const url = import.meta.env.VITE_TRAIN_STATION_DETAIL_URL
     const config = {
       method: "GET",
       url: `${url}${stationName}`,
@@ -45,7 +45,7 @@ export const useReqTrainApi = (): IReqTrainApi => {
    * @returns {geojson} 鉄道路線の情報
    */
   const getAllTrainLine = async () => {
-    const url = process.env.NEXT_PUBLIC_TRAIN_LINE_URL
+    const url = import.meta.env.VITE_TRAIN_LINE_URL
     const config = {
       method: "GET",
       url: `${url}`,
@@ -64,7 +64,7 @@ export const useReqTrainApi = (): IReqTrainApi => {
    * @returns {geojson} 鉄道路線の情報
    */
   const getTrainLineByName = async (lineName: string) => {
-    const url = process.env.NEXT_PUBLIC_TRAIN_LINE_DETAIL_URL
+    const url = import.meta.env.VITE_TRAIN_LINE_DETAIL_URL
     const config = {
       method: "GET",
       url: `${url}${lineName}`,

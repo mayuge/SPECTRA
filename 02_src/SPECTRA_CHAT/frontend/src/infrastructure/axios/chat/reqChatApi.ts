@@ -24,7 +24,7 @@ const useReqTrainApi = (): IReqChatApi => {
     if (res.status === 200) {
       // res.data がすでにオブジェクトである前提ならこのままでOK
       console.log("Response from chat API:", res.data.response)
-      return res.data.response
+      return JSON.parse(res.data.response)
     } else {
       throw new Error("Failed to send chat message")
     }

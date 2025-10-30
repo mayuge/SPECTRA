@@ -7,6 +7,7 @@ import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
 import useMapInstance from "@/infrastructure/map/mapInstance"
 import { onMounted } from "vue"
 import useMapApp from "@/components/organisms/homeSite/core/map/useMapApp"
+
 onMounted(() => {
   const { onMountedCallback } = useMapApp( useMapInstance() as IMapInstance)
   onMountedCallback()

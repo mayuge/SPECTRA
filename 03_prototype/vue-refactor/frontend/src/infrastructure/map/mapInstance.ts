@@ -1,13 +1,20 @@
 import type { IMapInstance } from "@/domain/interfaces/IMapInstance.ts"
-import { Map } from "maplibre-gl"
+import maplibregl, { type Map } from "maplibre-gl"
 import { INITIAL_VIEW_STATE } from "@/domain/params/mapConfig"
 import "maplibre-gl/dist/maplibre-gl.css"
+import { ref } from "vue"
+
+const mapInstance = ref<Map | null>(null)
 
 const useMapInstance = (): IMapInstance => {
-  const mapInstance = new Map(INITIAL_VIEW_STATE)
   const getMapInstance = () => {
-    return mapInstance
+    if (mapInstance.value) {
+      return mapInstance.value
+    }
+    mapInstance.value = new maplibregl.Map(INITIAL_VIEW_STATE)
+    return mapInstance.value
   }
+
   return { getMapInstance }
 }
 
