@@ -10,7 +10,7 @@
     @click="buttonClicked"
   >
     <span v-if="iconLeft" class="material-icons">{{ iconLeft }}</span>
-    <img v-if="path" :src="path" alt="Image" class="w-9 h-9 md:w-9 md:h-9" />
+    <img v-if="path" :src="path" alt="Image" class="w-8 h-8 md:w-7 md:h-7" />
     <span v-if="text">{{ text }}</span>
     <span v-if="iconRight" class="material-icons">{{ iconRight }}</span>
   </button>

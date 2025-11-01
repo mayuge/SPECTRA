@@ -3,13 +3,17 @@
 </template>
 
 <script setup lang="ts">
-import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
-import useMapInstance from "@/infrastructure/map/mapInstance"
 import { onMounted } from "vue"
 import useMapApp from "@/components/organisms/homeSite/core/map/useMapApp"
 
+import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
+import type { IMapPlugin } from "@/domain/interfaces/IMapPlugin"
+
+import useMapInstance from "@/infrastructure/map/mapInstance"
+import useMapPlugin from "@/infrastructure/map/mapPlugin"
+
 onMounted(() => {
-  const { onMountedCallback } = useMapApp( useMapInstance() as IMapInstance)
+  const { onMountedCallback } = useMapApp( useMapInstance() as IMapInstance, useMapPlugin() as IMapPlugin)
   onMountedCallback()
 })
 </script>

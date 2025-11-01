@@ -3,7 +3,7 @@ import type { IReqChatApi } from "@/domain/interfaces/IReqChatApi"
 import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
 import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
 import type { DialogNameType } from "@/domain/types/dialogNameType"
-
+import type { Feature, FeatureCollection } from "geojson"
 const useChatPanelApp = (
   dialogState: IDialogState,
   reqChatApi: IReqChatApi,
@@ -40,13 +40,15 @@ const useChatPanelApp = (
    * 送信ボタン押下
    */
   const submitButtonClicked = async (inputValue: string) => {
-    const geojsonFeatureOrCollection = await sendChatMessage(inputValue)
+    const geojsonFeatureOrCollection: Feature | FeatureCollection | null =
+      await sendChatMessage(inputValue)
     if (!geojsonFeatureOrCollection) return
 
-    const geojson: GeoJSON.FeatureCollection =
+    // Feature なら FeatureCollection に変換
+    const geojson: FeatureCollection =
       geojsonFeatureOrCollection.type === "FeatureCollection"
         ? geojsonFeatureOrCollection
-        : { type: "FeatureCollection", features: [geojsonFeatureOrCollection] }
+        : { type: "FeatureCollection", features: [geojsonFeatureOrCollection as Feature] }
 
     const map = getMapInstance()
     if (map.loaded()) {

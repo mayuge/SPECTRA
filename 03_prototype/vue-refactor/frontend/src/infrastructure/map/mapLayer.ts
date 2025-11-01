@@ -1,5 +1,8 @@
 import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
-import type { FeatureCollection, Feature } from "geojson"
+import type { FeatureCollection, Feature, Geometry } from "geojson"
+import bbox from "@turf/bbox"
+
+type MapInstance = any // maplibre-gl.Map など、具体的型に置き換えてOK
 
 const useMapLayer = (): IMapLayer => {
   let layerCounter = 0
@@ -21,134 +24,128 @@ const useMapLayer = (): IMapLayer => {
     return colorMap.get(layerId)!
   }
 
-  const addPointLayer = (map: any, layerId: string, feature: Feature, sharedColor: string) => {
+  const addLayer = (
+    map: MapInstance,
+    layerId: string,
+    featureCollection: FeatureCollection<Geometry>,
+    type: "Point" | "LineString" | "Polygon",
+    sharedColor: string
+  ) => {
     const color = getLayerColor(layerId, sharedColor)
+
     if (map.getSource(layerId)) {
-      ;(map.getSource(layerId) as any).setData(feature)
-    } else {
-      map.addSource(layerId, { type: "geojson", data: feature })
-      map.addLayer({
-        id: layerId,
-        type: "circle",
-        source: layerId,
-        paint: {
-          "circle-radius": 6,
-          "circle-color": color,
-          "circle-stroke-opacity": 0.4,
-          "circle-stroke-color": color,
-          "circle-stroke-width": 4,
-        },
-      })
+      ;(map.getSource(layerId) as any).setData(featureCollection)
+      return
+    }
+
+    map.addSource(layerId, { type: "geojson", data: featureCollection })
+
+    switch (type) {
+      case "Point":
+        map.addLayer({
+          id: layerId,
+          type: "circle",
+          source: layerId,
+          paint: {
+            "circle-color": color,
+            "circle-radius": 6,
+            "circle-stroke-width": 2,
+            "circle-stroke-color": color,
+            "circle-stroke-opacity": 0.5,
+          },
+        })
+        break
+      case "LineString":
+        map.addLayer({
+          id: layerId,
+          type: "line",
+          source: layerId,
+          paint: {
+            "line-color": color,
+            "line-width": 3,
+          },
+        })
+        break
+      case "Polygon":
+        map.addLayer({
+          id: layerId,
+          type: "fill",
+          source: layerId,
+          paint: {
+            "fill-color": color,
+            "fill-opacity": 0.4,
+            "fill-outline-color": color,
+          },
+        })
+        break
     }
   }
 
-  const addLineLayer = (map: any, layerId: string, feature: Feature, sharedColor: string) => {
-    const color = getLayerColor(layerId, sharedColor)
-    if (map.getSource(layerId)) {
-      ;(map.getSource(layerId) as any).setData(feature)
-    } else {
-      map.addSource(layerId, { type: "geojson", data: feature })
-      map.addLayer({
-        id: layerId,
-        type: "line",
-        source: layerId,
-        paint: { "line-width": 4, "line-color": color },
-      })
+  const fitMapToGeoJson = (map: MapInstance, geoJsonData: FeatureCollection<Geometry>) => {
+    try {
+      const [minX, minY, maxX, maxY] = bbox(geoJsonData)
+      map.fitBounds(
+        [
+          [minX, minY],
+          [maxX, maxY],
+        ],
+        { padding: 50, duration: 1000 }
+      )
+    } catch (e) {
+      console.warn("bbox calculation failed", e)
     }
   }
 
-  const addPolygonLayer = (map: any, layerId: string, feature: Feature, sharedColor: string) => {
-    const color = getLayerColor(layerId, sharedColor)
-    if (map.getSource(layerId)) {
-      ;(map.getSource(layerId) as any).setData(feature)
-    } else {
-      map.addSource(layerId, { type: "geojson", data: feature })
-      map.addLayer({
-        id: layerId,
-        type: "fill",
-        source: layerId,
-        paint: { "fill-color": color, "fill-opacity": 0.4 },
-      })
-    }
-  }
-
-  /**
-   * FeatureCollectionを追加
-   * → 呼び出し単位で sharedColor を固定
-   */
-  const addGeoJsonLayer = (mapInstance: any, geoJsonData: FeatureCollection) => {
+  const addGeoJsonLayer = (map: MapInstance, geoJsonData: FeatureCollection<Geometry>) => {
     if (!geoJsonData?.features?.length) return
 
-    const sharedColor = generateRandomColor() // 同タイミングの色を固定
+    const sharedColor = generateRandomColor()
+
+    // ジオメトリごとにまとめる
+    const points: Feature<Geometry>[] = []
+    const lines: Feature<Geometry>[] = []
+    const polygons: Feature<Geometry>[] = []
 
     geoJsonData.features.forEach((feature) => {
-      const layerId = generateLayerId()
-      const type = feature.geometry?.type
-      if (!type) return
-
-      switch (type) {
-        case "Point":
-        case "MultiPoint":
-          addPointLayer(mapInstance, layerId, feature, sharedColor)
-          break
-        case "LineString":
-        case "MultiLineString":
-          addLineLayer(mapInstance, layerId, feature, sharedColor)
-          break
-        case "Polygon":
-        case "MultiPolygon":
-          addPolygonLayer(mapInstance, layerId, feature, sharedColor)
-          break
-      }
-      const bounds = getBoundingBox(geoJsonData)
-      if (bounds && bounds.length === 2) {
-        mapInstance.fitBounds(bounds, { padding: 50, duration: 1000 })
-      }
-    })
-  }
-
-  const getBoundingBox = (geoJsonData: FeatureCollection) => {
-    const coordinates = geoJsonData.features.flatMap((feature) => {
-      const geom = feature.geometry
-      if (!geom) return []
-      switch (geom.type) {
-        case "Point":
-          return [geom.coordinates as number[]]
-        case "MultiPoint":
-          return geom.coordinates as number[][]
-        case "LineString":
-          return geom.coordinates as number[][]
-        case "MultiLineString":
-          return (geom.coordinates as number[][][]).flat()
-        case "Polygon":
-          return (geom.coordinates as number[][][]).flat()
-
-        case "MultiPolygon":
-          return (geom.coordinates as number[][][][]).flat(2)
-        default:
-          return []
-      }
+      const geomType = feature.geometry?.type
+      if (!geomType) return
+      if (geomType === "Point" || geomType === "MultiPoint") points.push(feature)
+      else if (geomType === "LineString" || geomType === "MultiLineString") lines.push(feature)
+      else if (geomType === "Polygon" || geomType === "MultiPolygon") polygons.push(feature)
     })
 
-    const lats = coordinates.map((coord) => coord[1])
-    const lngs = coordinates.map((coord) => coord[0])
-    const minLat = Math.min(...lats)
-    const maxLat = Math.max(...lats)
-    const minLng = Math.min(...lngs)
-    const maxLng = Math.max(...lngs)
-    return [
-      [minLng, minLat],
-      [maxLng, maxLat],
-    ]
+    if (points.length)
+      addLayer(
+        map,
+        generateLayerId(),
+        { type: "FeatureCollection", features: points },
+        "Point",
+        sharedColor
+      )
+    if (lines.length)
+      addLayer(
+        map,
+        generateLayerId(),
+        { type: "FeatureCollection", features: lines },
+        "LineString",
+        sharedColor
+      )
+    if (polygons.length)
+      addLayer(
+        map,
+        generateLayerId(),
+        { type: "FeatureCollection", features: polygons },
+        "Polygon",
+        sharedColor
+      )
+
+    // bbox でズーム
+    fitMapToGeoJson(map, geoJsonData)
   }
 
-  const toggleLayer = (mapInstance: any, layerId: string) => {
-    const visibility = mapInstance.getLayoutProperty(layerId, "visibility")
-    mapInstance.setLayoutProperty(
-      layerId,
-      "visibility",
-      visibility === "visible" ? "none" : "visible"
-    )
+  const toggleLayer = (map: MapInstance, layerId: string) => {
+    const visibility = map.getLayoutProperty(layerId, "visibility")
+    map.setLayoutProperty(layerId, "visibility", visibility === "visible" ? "none" : "visible")
   }
 
   return { addGeoJsonLayer, toggleLayer }

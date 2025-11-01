@@ -1,8 +1,11 @@
 import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
-const useMapApp = (mapInstance: IMapInstance) => {
+import type { IMapPlugin } from "@/domain/interfaces/IMapPlugin"
+const useMapApp = (mapInstance: IMapInstance, useMapPlugin: IMapPlugin) => {
   const { getMapInstance } = mapInstance
+  const { setAllPlugins } = useMapPlugin
   const onMountedCallback = () => {
-    getMapInstance()
+    const map = getMapInstance()
+    setAllPlugins(map)
   }
   return {
     onMountedCallback,
