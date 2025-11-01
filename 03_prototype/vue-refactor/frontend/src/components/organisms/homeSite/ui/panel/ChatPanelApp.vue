@@ -1,6 +1,6 @@
 <template>
   <div
-    class="fixed bottom-0 md:left-0 z-50 w-full md:w-auto md:h-screen bg-transparent flex flex-col md:flex-row"
+    class="fixed bottom-0 md:left-0 z-50 w-full md:w-auto md:h-screen bg-transparent flex flex-col md:flex-row select-none"
   >
     <div class="md:hidden sticky top-0">
       <DialogHeader

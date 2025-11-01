@@ -40,16 +40,18 @@ const useChatPanelApp = (
    * 送信ボタン押下
    */
   const submitButtonClicked = async (inputValue: string) => {
-    const geojsonFeature = await sendChatMessage(inputValue)
-    if (!geojsonFeature) return
+    const geojsonFeatureOrCollection = await sendChatMessage(inputValue)
+    if (!geojsonFeatureOrCollection) return
 
-    const geojson: GeoJSON.FeatureCollection = {
-      type: "FeatureCollection",
-      features: [geojsonFeature],
-    }
+    const geojson: GeoJSON.FeatureCollection =
+      geojsonFeatureOrCollection.type === "FeatureCollection"
+        ? geojsonFeatureOrCollection
+        : { type: "FeatureCollection", features: [geojsonFeatureOrCollection] }
 
     const map = getMapInstance()
-    addGeoJsonLayer(map, geojson)
+    if (map.loaded()) {
+      addGeoJsonLayer(map, geojson)
+    }
   }
 
   return {
