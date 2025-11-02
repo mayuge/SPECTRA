@@ -1,5 +1,6 @@
 import maplibregl, { Map } from "maplibre-gl"
 import "maplibre-gl/dist/maplibre-gl.css"
+import { Protocol } from "pmtiles"
 import {
   MaplibreExportControl,
   Size,
@@ -58,6 +59,11 @@ const useMapPlugin = (): IMapPlugin => {
     )
   }
 
+  const pmtilesPlugin = () => {
+    let protocol = new Protocol()
+    maplibregl.addProtocol("pmtiles", protocol.tile)
+  }
+
   const setAllPlugins = (map: Map) => {
     compassPlugin(map)
     scalePlugin(map)
@@ -65,6 +71,7 @@ const useMapPlugin = (): IMapPlugin => {
     fullscreenPlugin(map)
     imgExportPlugin(map)
     terrainPlugin(map)
+    pmtilesPlugin()
   }
   return {
     compassPlugin,

@@ -4,13 +4,13 @@
   "metadata": {
     "mapbox:autocomposite": false,
     "mapbox:groups": {
-      "1444849242106.713": {"collapsed": false, "name": "Places"},
-      "1444849334699.1902": {"collapsed": true, "name": "Bridges"},
-      "1444849345966.4436": {"collapsed": false, "name": "Roads"},
-      "1444849354174.1904": {"collapsed": true, "name": "Tunnels"},
-      "1444849364238.8171": {"collapsed": false, "name": "Buildings"},
-      "1444849382550.77": {"collapsed": false, "name": "Water"},
-      "1444849388993.3071": {"collapsed": false, "name": "Land"}
+      "1444849242106.713": { "collapsed": false, "name": "Places" },
+      "1444849334699.1902": { "collapsed": true, "name": "Bridges" },
+      "1444849345966.4436": { "collapsed": false, "name": "Roads" },
+      "1444849354174.1904": { "collapsed": true, "name": "Tunnels" },
+      "1444849364238.8171": { "collapsed": false, "name": "Buildings" },
+      "1444849382550.77": { "collapsed": false, "name": "Water" },
+      "1444849388993.3071": { "collapsed": false, "name": "Land" }
     },
     "mapbox:type": "template",
     "openmaptiles:mapbox:owner": "openmaptiles",
@@ -38,6 +38,15 @@
       "encoding": "mapbox",
       "attribution": "<a href=\"https://tiles.gsj.jp/tiles/elev/tiles.html\">産総研 陸地統合DEM</a>"
     },
+    "dem": {
+      "type": "raster-dem",
+      "tiles": [
+        "https://gbank.gsj.jp/seamless/elev/terrainRGB/land/{z}/{y}/{x}.png"
+      ],
+      "tileSize": 256,
+      "encoding": "mapbox",
+      "attribution": "<a href=\"https://tiles.gsj.jp/tiles/elev/tiles.html\">産総研 陸地統合DEM</a>"
+    },
     "takeshima": {
       "type": "vector",
       "url": "https://tile.openstreetmap.jp/data/takeshima.json",
@@ -51,11 +60,20 @@
   },
   "sprite": "https://protomaps.github.io/basemaps-assets/sprites/v4/light",
   "glyphs": "https://tile.openstreetmap.jp/fonts/{fontstack}/{range}.pbf",
+  "sky": {
+    "sky-color": "#199EF3",
+    "sky-horizon-blend": 0.7,
+    "horizon-color": "#f0f8ff",
+    "horizon-fog-blend": 0.8,
+    "fog-color": "#2c7fb8",
+    "fog-ground-blend": 0.9,
+    "atmosphere-blend": ["interpolate", ["linear"], ["zoom"], 0, 1, 12, 0]
+  },
   "layers": [
     {
       "id": "background",
       "type": "background",
-      "paint": {"background-color": "#cccccc"}
+      "paint": { "background-color": "#cccccc" }
     },
     {
       "id": "earth",
@@ -63,7 +81,7 @@
       "source": "osm",
       "source-layer": "earth",
       "filter": ["==", "$type", "Polygon"],
-      "paint": {"fill-color": "#e2dfda"}
+      "paint": { "fill-color": "#e2dfda" }
     },
     {
       "id": "landcover",
@@ -165,7 +183,7 @@
       "source": "osm",
       "source-layer": "landuse",
       "filter": ["in", "kind", "allotments", "village_green", "playground"],
-      "paint": {"fill-color": "#9cd3b4", "fill-opacity": 0.7}
+      "paint": { "fill-color": "#9cd3b4", "fill-opacity": 0.7 }
     },
     {
       "id": "landuse_hospital",
@@ -173,7 +191,7 @@
       "source": "osm",
       "source-layer": "landuse",
       "filter": ["==", "kind", "hospital"],
-      "paint": {"fill-color": "#e4dad9"}
+      "paint": { "fill-color": "#e4dad9" }
     },
     {
       "id": "landuse_industrial",
@@ -181,7 +199,7 @@
       "source": "osm",
       "source-layer": "landuse",
       "filter": ["==", "kind", "industrial"],
-      "paint": {"fill-color": "#d1dde1"}
+      "paint": { "fill-color": "#d1dde1" }
     },
     {
       "id": "landuse_school",
@@ -189,7 +207,7 @@
       "source": "osm",
       "source-layer": "landuse",
       "filter": ["in", "kind", "school", "university", "college"],
-      "paint": {"fill-color": "#e4ded7"}
+      "paint": { "fill-color": "#e4ded7" }
     },
     {
       "id": "landuse_beach",
@@ -197,7 +215,7 @@
       "source": "osm",
       "source-layer": "landuse",
       "filter": ["in", "kind", "beach"],
-      "paint": {"fill-color": "#e8e4d0"}
+      "paint": { "fill-color": "#e8e4d0" }
     },
     {
       "id": "landuse_zoo",
@@ -205,7 +223,7 @@
       "source": "osm",
       "source-layer": "landuse",
       "filter": ["in", "kind", "zoo"],
-      "paint": {"fill-color": "#c6dcdc"}
+      "paint": { "fill-color": "#c6dcdc" }
     },
     {
       "id": "landuse_aerodrome",
@@ -213,7 +231,7 @@
       "source": "osm",
       "source-layer": "landuse",
       "filter": ["in", "kind", "aerodrome"],
-      "paint": {"fill-color": "#dadbdf"}
+      "paint": { "fill-color": "#dadbdf" }
     },
     {
       "id": "roads_runway",
@@ -264,7 +282,7 @@
       "source": "osm",
       "source-layer": "landuse",
       "filter": ["any", ["in", "kind", "runway", "taxiway"]],
-      "paint": {"fill-color": "#e9e9ed"}
+      "paint": { "fill-color": "#e9e9ed" }
     },
     {
       "id": "water",
@@ -272,7 +290,7 @@
       "source": "osm",
       "source-layer": "water",
       "filter": ["==", "$type", "Polygon"],
-      "paint": {"fill-color": "#80deea"}
+      "paint": { "fill-color": "#80deea" }
     },
     {
       "id": "water_stream",
@@ -281,7 +299,7 @@
       "source-layer": "water",
       "minzoom": 14,
       "filter": ["in", "kind", "stream"],
-      "paint": {"line-color": "#80deea", "line-width": 0.5}
+      "paint": { "line-color": "#80deea", "line-width": 0.5 }
     },
     {
       "id": "water_river",
@@ -311,7 +329,7 @@
       "source": "osm",
       "source-layer": "landuse",
       "filter": ["in", "kind", "pedestrian", "dam"],
-      "paint": {"fill-color": "#e3e0d4"}
+      "paint": { "fill-color": "#e3e0d4" }
     },
     {
       "id": "landuse_pier",
@@ -319,7 +337,7 @@
       "source": "osm",
       "source-layer": "landuse",
       "filter": ["==", "kind", "pier"],
-      "paint": {"fill-color": "#e0e0e0"}
+      "paint": { "fill-color": "#e0e0e0" }
     },
     {
       "id": "roads_tunnels_other_casing",
@@ -600,7 +618,7 @@
       "id": "terrain-layer",
       "type": "hillshade",
       "source": "terrain",
-      "layout": {"visibility": "visible"},
+      "layout": { "visibility": "visible" },
       "paint": {
         "hillshade-illumination-anchor": "map",
         "hillshade-method": "igor",
@@ -613,7 +631,7 @@
       "source": "osm",
       "source-layer": "buildings",
       "filter": ["in", "kind", "building", "building_part"],
-      "paint": {"fill-color": "#cccccc", "fill-opacity": 0.5}
+      "paint": { "fill-color": "#cccccc", "fill-opacity": 0.5 }
     },
     {
       "id": "roads_pier",
@@ -5458,12 +5476,12 @@
     {
       "id": "island-hoppo",
       "type": "fill",
-      "metadata": {"mapbox:group": "1444849388993.3071"},
+      "metadata": { "mapbox:group": "1444849388993.3071" },
       "source": "hoppo",
       "source-layer": "island",
       "minzoom": 0,
-      "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "#fff", "fill-opacity": 1}
+      "layout": { "visibility": "visible" },
+      "paint": { "fill-color": "#fff", "fill-opacity": 1 }
     },
     {
       "id": "island-hoppo-name",
@@ -5472,7 +5490,12 @@
       "source-layer": "island",
       "layout": {
         "text-field": "{name}",
-        "text-size": {"stops": [[10, 14], [15, 24]]},
+        "text-size": {
+          "stops": [
+            [10, 14],
+            [15, 24]
+          ]
+        },
         "visibility": "visible"
       },
       "paint": {
@@ -5484,12 +5507,12 @@
     {
       "id": "island-takeshima",
       "type": "fill",
-      "metadata": {"mapbox:group": "1444849388993.3071"},
+      "metadata": { "mapbox:group": "1444849388993.3071" },
       "source": "takeshima",
       "source-layer": "island",
       "minzoom": 0,
-      "layout": {"visibility": "visible"},
-      "paint": {"fill-color": "#fff", "fill-opacity": 1}
+      "layout": { "visibility": "visible" },
+      "paint": { "fill-color": "#fff", "fill-opacity": 1 }
     },
     {
       "id": "island-takeshima-name",
@@ -5498,7 +5521,12 @@
       "source-layer": "island",
       "layout": {
         "text-field": "{name}",
-        "text-size": {"stops": [[10, 14], [15, 24]]},
+        "text-size": {
+          "stops": [
+            [10, 14],
+            [15, 24]
+          ]
+        },
         "visibility": "visible"
       },
       "paint": {
@@ -5515,7 +5543,12 @@
       "layout": {
         "text-field": "{name}",
         "text-font": ["migu2m-regular"],
-        "text-size": {"stops": [[10, 14], [15, 24]]}
+        "text-size": {
+          "stops": [
+            [10, 14],
+            [15, 24]
+          ]
+        }
       },
       "paint": {
         "text-color": "#333",
@@ -5524,5 +5557,9 @@
       }
     }
   ],
+  "terrain": {
+    "source": "dem",
+    "exaggeration": 1.0
+  },
   "id": "qs6a52f"
 }

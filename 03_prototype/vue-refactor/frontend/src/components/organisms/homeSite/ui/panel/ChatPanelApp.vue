@@ -10,13 +10,19 @@
         size="large"
         @header-clicked="toggleMainPanel()"
       />
+      <ChatSuggestGroup
+        v-if="!getMainPanelOpen()"
+        :textList="CHAT_SUGGEST_LIST"
+        @badge-clicked="submitButtonClicked"
+      />
       <Submit v-if="!getMainPanelOpen()" @submit-button-clicked="submitButtonClicked" />
     </div>
     <div
       v-if="getMainPanelOpen()"
-      class="bg-white w-full md:w-[400px] h-[50svh] md:h-screen shadow-lg flex flex-col"
+      class="bg-white justify-bottom w-full md:w-[400px] h-[50svh] md:h-screen shadow-lg flex flex-col"
     >
-      <div class="flex-1 overflow-y-auto p-2"></div>
+      <div class="flex-1"></div>
+      <ChatSuggestGroup :textList="CHAT_SUGGEST_LIST" @badge-clicked="submitButtonClicked" />
       <Submit @submit-button-clicked="submitButtonClicked" />
     </div>
     <div class="hidden md:flex items-center">
@@ -45,6 +51,8 @@ import useMapLayer from '@/infrastructure/map/mapLayer'
 import PullTab from '@/components/atoms/buttons/PullTab.vue'
 import DialogHeader from '@/components/molecules/header/DialogHeader.vue'
 import Submit from '@/components/molecules/input/Submit.vue'
+import ChatSuggestGroup from '@/components/molecules/group/ChatSuggestGroup.vue'
+import { CHAT_SUGGEST_LIST } from '@/domain/params/chatSuggest'
 import useChatPanelApp from '@/components/organisms/homeSite/core/panel/useChatPanelApp'
 
 const { getMainPanelOpen, toggleMainPanel, getPullTabIcon, submitButtonClicked } =

@@ -63,6 +63,7 @@ const useMapLayer = (): IMapLayer => {
           paint: {
             "line-color": color,
             "line-width": 3,
+            "line-gap-width": 5,
           },
         })
         break
