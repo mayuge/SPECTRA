@@ -2,19 +2,24 @@ import type { IDialogState } from "@/domain/interfaces/IDialogState"
 import type { IReqChatApi } from "@/domain/interfaces/IReqChatApi"
 import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
 import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
+import type { IChatState } from "@/domain/interfaces/IChatState"
+
 import type { DialogNameType } from "@/domain/types/dialogNameType"
+import type { ChatType } from "@/domain/types/chatType"
 import type { Feature, FeatureCollection } from "geojson"
+
 const useChatPanelApp = (
   dialogState: IDialogState,
   reqChatApi: IReqChatApi,
   mapInstance: IMapInstance,
-  mapLayer: IMapLayer
+  mapLayer: IMapLayer,
+  chatState: IChatState
 ) => {
   const { getDialogState, toggleDialogState } = dialogState
   const { sendChatMessage } = reqChatApi
   const { addGeoJsonLayer } = mapLayer
   const { getMapInstance } = mapInstance
-
+  const { addChatMessage, getChatMessageList } = chatState
   /**
    * メインパネルの開閉状態
    */
@@ -40,19 +45,48 @@ const useChatPanelApp = (
    * 送信ボタン押下
    */
   const submitButtonClicked = async (inputValue: string) => {
-    const geojsonFeatureOrCollection: Feature | FeatureCollection | null =
-      await sendChatMessage(inputValue)
-    if (!geojsonFeatureOrCollection) return
+    const requestMessage: ChatType = {
+      type: "request",
+      message: inputValue,
+      isdata: false,
+    }
 
-    // Feature なら FeatureCollection に変換
-    const geojson: FeatureCollection =
-      geojsonFeatureOrCollection.type === "FeatureCollection"
-        ? geojsonFeatureOrCollection
-        : { type: "FeatureCollection", features: [geojsonFeatureOrCollection as Feature] }
+    addChatMessage(requestMessage)
 
-    const map = getMapInstance()
-    if (map.loaded()) {
-      addGeoJsonLayer(map, geojson)
+    try {
+      //メッセージをchatのapiへ送信
+      const chatGeojson: Feature | FeatureCollection | null = await sendChatMessage(inputValue)
+
+      //レスポンスがなければ終了
+      if (!chatGeojson) {
+        return
+      }
+
+      const responseMessage: ChatType = {
+        type: "response",
+        message: `【表示結果】${inputValue}`,
+        isdata: true,
+      }
+
+      addChatMessage(responseMessage)
+
+      console.log(getChatMessageList())
+      // すべてのgeojsonをFeatureCollectionとみなし、データ型を定義
+      let geojson: FeatureCollection
+      if (chatGeojson.type === "FeatureCollection") {
+        geojson = chatGeojson as FeatureCollection
+      } else {
+        geojson = { type: "FeatureCollection", features: [chatGeojson as Feature] }
+      }
+
+      const map = getMapInstance()
+
+      if (map && map.loaded()) {
+        addGeoJsonLayer(map, geojson)
+      }
+    } catch (error) {
+      const errorMessage: ChatType = { type: "error", message: error, isdata: false }
+      addChatMessage(errorMessage)
     }
   }
 
