@@ -1,10 +1,10 @@
 <template>
   <div class="flex flex-col justify-start w-full p-2 text-xs">
-    <div class="bg-gray-80 flex justify-center text-black rounded-t-md px-2 py-4  w-[50%] ">
+    <div class="bg-gray-80 flex justify-center text-black rounded-t-md px-2 py-4  w-[60%] ">
       {{ text }}
     </div>
     <div
-      class="flex items-center bg-gray-20 w-[50%] rounded-b-md px-2 gap-2 text-white"
+      class="flex items-center bg-gray-20 w-[60%] rounded-b-md px-2 gap-2 text-white"
       @click="toggleClicked()"
     >
       <Button

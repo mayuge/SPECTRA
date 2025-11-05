@@ -3,6 +3,7 @@ import type { IReqChatApi } from "@/domain/interfaces/IReqChatApi"
 import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
 import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
 import type { IChatState } from "@/domain/interfaces/IChatState"
+import type { IGeojsonState } from "@/domain/interfaces/IGeojsonState"
 
 import type { DialogNameType } from "@/domain/types/dialogNameType"
 import type { ChatType } from "@/domain/types/chatType"
@@ -13,13 +14,15 @@ const useChatPanelApp = (
   reqChatApi: IReqChatApi,
   mapInstance: IMapInstance,
   mapLayer: IMapLayer,
-  chatState: IChatState
+  chatState: IChatState,
+  geojsonState: IGeojsonState
 ) => {
   const { getDialogState, toggleDialogState } = dialogState
   const { sendChatMessage } = reqChatApi
   const { addGeoJsonLayer } = mapLayer
   const { getMapInstance } = mapInstance
-  const { addChatMessage, getChatMessageList } = chatState
+  const { addChatMessage } = chatState
+  const { setGeojson, getLastGeojson } = geojsonState
   /**
    * メインパネルの開閉状態
    */
@@ -65,10 +68,12 @@ const useChatPanelApp = (
         geojson = { type: "FeatureCollection", features: [chatGeojson as Feature] }
       }
 
+      setGeojson(geojson)
+
       const map = getMapInstance()
 
       if (map && map.loaded()) {
-        addGeoJsonLayer(map, geojson)
+        addGeoJsonLayer(map, getLastGeojson())
       }
 
       const responseMessage: ChatType = {

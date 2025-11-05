@@ -1,5 +1,6 @@
-import type { AllGeoJsonType } from "@/domain/types/geoJsonType"
+import type { FeatureCollection } from "geojson"
+
 export interface IGeojsonState {
-  setGeojson: (geojson: AllGeoJsonType) => void
-  getGeojson: () => AllGeoJsonType[]
+  setGeojson: (geojson: FeatureCollection) => void
+  getLastGeojson: () => FeatureCollection
 }
