@@ -10,7 +10,7 @@ const useChatApp = (chatState: IChatState, mapInstance: IMapInstance, mapLayer: 
   const toggleResponseLayer = (index: number) => {
     const map = getMapInstance()
     const layerId = `geojson-layer-${index}`
-    console.log("toggle", layerId)
+    console.log("toggle", layerId, "map ready?", !!map, "has layer?", map?.getLayer(layerId))
     toggleLayer(map, layerId)
   }
 

@@ -57,20 +57,6 @@ const useChatPanelApp = (
       //メッセージをchatのapiへ送信
       const chatGeojson: Feature | FeatureCollection | null = await sendChatMessage(inputValue)
 
-      //レスポンスがなければ終了
-      if (!chatGeojson) {
-        return
-      }
-
-      const responseMessage: ChatType = {
-        type: "response",
-        message: `【表示結果】${inputValue}`,
-        isdata: true,
-      }
-
-      addChatMessage(responseMessage)
-
-      console.log(getChatMessageList())
       // すべてのgeojsonをFeatureCollectionとみなし、データ型を定義
       let geojson: FeatureCollection
       if (chatGeojson.type === "FeatureCollection") {
@@ -84,6 +70,14 @@ const useChatPanelApp = (
       if (map && map.loaded()) {
         addGeoJsonLayer(map, geojson)
       }
+
+      const responseMessage: ChatType = {
+        type: "response",
+        message: `【表示結果】${inputValue}`,
+        isdata: true,
+      }
+
+      addChatMessage(responseMessage)
     } catch (error) {
       const errorMessage: ChatType = { type: "error", message: error, isdata: false }
       addChatMessage(errorMessage)

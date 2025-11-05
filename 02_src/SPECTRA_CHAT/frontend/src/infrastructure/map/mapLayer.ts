@@ -53,6 +53,7 @@ const useMapLayer = (): IMapLayer => {
             "circle-stroke-color": color,
             "circle-stroke-opacity": 0.5,
           },
+          layout: { visibility: "visible" },
         })
         break
       case "LineString":
@@ -65,6 +66,7 @@ const useMapLayer = (): IMapLayer => {
             "line-width": 3,
             "line-gap-width": 5,
           },
+          layout: { visibility: "visible" },
         })
         break
       case "Polygon":
@@ -77,6 +79,7 @@ const useMapLayer = (): IMapLayer => {
             "fill-opacity": 0.4,
             "fill-outline-color": color,
           },
+          layout: { visibility: "visible" },
         })
         break
     }

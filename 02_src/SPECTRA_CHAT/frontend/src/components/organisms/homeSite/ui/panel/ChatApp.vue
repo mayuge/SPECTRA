@@ -5,14 +5,14 @@
       v-else-if="obj.type === 'response'"
       :text="obj.message"
       :responseId="getResponseIndex(index)"
-      @toggle-clicked="() => toggleResponseLayer(getResponseIndex(index))"
+      @toggle-clicked="toggleResponseLayer(getResponseIndex(index))"
     />
     <ErrorChat v-else-if="obj.type === 'error'" :text="obj.message" />
   </div>
 </template>
 
 <script setup lang="ts">
-import { nextTick, computed  } from "vue"
+import { computed  } from "vue"
 import type { IChatState } from "@/domain/interfaces/IChatState"
 import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
 import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
