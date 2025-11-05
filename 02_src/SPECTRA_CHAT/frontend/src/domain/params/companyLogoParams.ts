@@ -1,6 +1,3 @@
-import { Jaro } from "next/font/google"
-import path from "path"
-
 export const companyLogoParams = {
   //東京メトロ
   東京地下鉄: {

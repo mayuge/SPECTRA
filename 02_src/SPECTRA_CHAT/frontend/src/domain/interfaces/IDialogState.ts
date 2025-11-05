@@ -1,8 +1,6 @@
+import type { DialogNameType } from "@/domain/types/dialogNameType"
 export interface IDialogState {
-  //メインパネルの開閉状態
-  isMainPanelOpen: boolean
-  //メインパネルのセッター
-  setMainPanelOpen: (isOpen: boolean) => void
-  //メインパネルのゲッター
-  getMainPanelOpen: () => boolean
+  toggleDialogState: (dialogName: keyof DialogNameType) => void
+  setDialogState: (dialogName: keyof DialogNameType, isOpen: boolean) => void
+  getDialogState: (dialogName: keyof DialogNameType) => boolean
 }

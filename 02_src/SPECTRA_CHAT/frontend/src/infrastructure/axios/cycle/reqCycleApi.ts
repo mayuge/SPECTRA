@@ -1,5 +1,5 @@
 import { getInstance } from "@/infrastructure/axios/api"
-import type { IReqCycleApi } from "@/domain/interfaces/IReqCycleApi"
+import type { IReqCycleApi } from "@/domain/interfaces/IReqCycleApi.ts"
 export const useReqCycleApi = (): IReqCycleApi => {
   const httpInstance = getInstance()
 
@@ -8,7 +8,7 @@ export const useReqCycleApi = (): IReqCycleApi => {
    * @returns {geojson}
    */
   const getHelloCycleStation = async () => {
-    const url = process.env.NEXT_PUBLIC_HELLO_CYCLE_STATION_URL
+    const url = import.meta.env.VITE_HELLO_CYCLE_STATION_URL
     const config = {
       method: "GET",
       url: `${url}`,
@@ -25,7 +25,7 @@ export const useReqCycleApi = (): IReqCycleApi => {
    * @returns {geojson}
    */
   const getDocomoBikeShareStation = async () => {
-    const url = process.env.NEXT_PUBLIC_DOCOMO_BIKE_SHARE_STATION_URL
+    const url = import.meta.env.VITE_DOCOMO_BIKE_SHARE_STATION_URL
     const config = {
       method: "GET",
       url: `${url}`,

@@ -1,6 +1,6 @@
 export const INITIAL_VIEW_STATE = {
-  longitude: 139.6917,
-  latitude: 35.6,
+  container: "map",
+  center: [139.6917, 35.6] as [number, number],
   style: "./map/style.json",
   zoom: 9,
   pitch: 0,

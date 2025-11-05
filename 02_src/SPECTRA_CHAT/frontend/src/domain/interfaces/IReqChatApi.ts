@@ -1,3 +1,3 @@
 export interface IReqChatApi {
-  sendChatMessage: (message: string) => Promise<string>
+  sendChatMessage: (message: string) => Promise<any>
 }
