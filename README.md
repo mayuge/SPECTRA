@@ -16,7 +16,9 @@
 ## アプリケーション全体のアーキテクチャ
 
 - モノリシックなソフトウェア構成
+- Dockerコンテナごとに分けて実装
 - 要素間は port 番号を指定して通信する
+- backendは、http://localhost:4000/docsにてアクセスをswaggerで検証できる
 
 ```mermaid
 flowchart TD
