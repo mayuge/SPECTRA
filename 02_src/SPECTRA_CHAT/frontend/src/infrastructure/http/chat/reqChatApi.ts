@@ -1,4 +1,4 @@
-import { getInstance } from "@/infrastructure/axios/api"
+import { getInstance } from "@/infrastructure/http/api"
 import type { IReqChatApi } from "@/domain/interfaces/IReqChatApi"
 
 const useReqChatApi = (): IReqChatApi => {

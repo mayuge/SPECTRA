@@ -1,4 +1,4 @@
-import { getInstance } from "@/infrastructure/axios/api"
+import { getInstance } from "@/infrastructure/http/api"
 import type { IReqCycleApi } from "@/domain/interfaces/IReqCycleApi.ts"
 export const useReqCycleApi = (): IReqCycleApi => {
   const httpInstance = getInstance()

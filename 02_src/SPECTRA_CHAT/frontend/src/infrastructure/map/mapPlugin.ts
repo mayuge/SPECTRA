@@ -11,10 +11,16 @@ import {
 import "@watergis/maplibre-gl-export/dist/maplibre-gl-export.css"
 import type { IMapPlugin } from "@/domain/interfaces/IMapPlugin"
 
+//TODO グローバル変数にインスタンスを宣言
+
 const useMapPlugin = (): IMapPlugin => {
   const compassPlugin = (map: Map) => {
     map.addControl(
-      new maplibregl.NavigationControl({ showCompass: true, showZoom: true }),
+      new maplibregl.NavigationControl({
+        showCompass: true,
+        showZoom: false,
+        visualizePitch: true,
+      }),
       "top-right"
     )
   }

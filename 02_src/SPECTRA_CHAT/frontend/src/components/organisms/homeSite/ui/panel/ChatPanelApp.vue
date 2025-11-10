@@ -48,7 +48,7 @@ import type { IChatState } from '@/domain/interfaces/IChatState'
 import type { IGeojsonState } from '@/domain/interfaces/IGeojsonState'
 
 import { useDialogStateStore } from '@/infrastructure/stores/dialogStateStore'
-import useReqChatApi from '@/infrastructure/axios/chat/reqChatApi'
+import useReqChatApi from '@/infrastructure/http/chat/reqChatApi'
 import useMapInstance from '@/infrastructure/map/mapInstance'
 import useMapLayer from '@/infrastructure/map/mapLayer'
 import { useChatStateStore } from '@/infrastructure/stores/chatStateStore'

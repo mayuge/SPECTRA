@@ -1,4 +1,4 @@
-import { getInstance } from "@/infrastructure/axios/api"
+import { getInstance } from "@/infrastructure/http/api"
 import type { IReqTrainApi } from "@/domain/interfaces/IReqTrainApi"
 export const useReqTrainApi = (): IReqTrainApi => {
   const httpInstance = getInstance()

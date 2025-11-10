@@ -1,14 +1,22 @@
 <template>
-  <div className="absolute top-20 right-16 z-10 bg-gray-30 px-4 py-3">
+  <div className="absolute top-19 right-16 z-10 bg-gray-30 px-4 py-3">
     <div className="pb-2 text-xs text-white">レイヤー切替</div>
     <div className="flex items-center gap-2">
-      <Button variant="btn-light" size="small" shape="square" iconLeft="train" text="鉄道" />
+      <Button
+        variant="btn-light"
+        size="small"
+        shape="square"
+        iconLeft="train"
+        text="鉄道"
+        @button-clicked="toggleTrainLayer"
+      />
       <Button
         variant="btn-light"
         size="small"
         shape="square"
         iconLeft="directions_bike"
         text="サイクル"
+        @button-clicked="toggleCycleLayer"
       />
     </div>
   </div>
