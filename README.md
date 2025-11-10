@@ -3,15 +3,67 @@
 ## 主な使用技術
 
 <p>
-<img src="https://img.shields.io/badge/-TypeScript-007ACC.svg?logo=typescript&style=flat">
-<img src="https://img.shields.io/badge/-Vue-4FC08D.svg?logo=vuedotjs&style=flat">
-<img src="https://img.shields.io/badge/-tailwindCSS-06B6D4.svg?logo=tailwindcss&style=flat">
-<img src="https://img.shields.io/badge/-Maplibre-396CB2.svg?logo=maplibre&style=flat">
-<img src="https://img.shields.io/badge/-axios-5A29E4.svg?logo=axios&style=flat">
-<img src="https://img.shields.io/badge/-pinia-FFD859.svg?logo=pinia&style=flat">
-<img src="https://img.shields.io/badge/-FastAPI-009688.svg?logo=fastapi&style=flat">
-<img src="https://img.shields.io/badge/-Google Gemini-8E75B2.svg?logo=googlegemini&style=flat">
+    <img src="https://img.shields.io/badge/-TypeScript-007ACC.svg?logo=typescript&style=flat">
+    <img src="https://img.shields.io/badge/-Vue-4FC08D.svg?logo=vuedotjs&style=flat">
+    <img src="https://img.shields.io/badge/-tailwindCSS-06B6D4.svg?logo=tailwindcss&style=flat">
+    <img src="https://img.shields.io/badge/-Maplibre-396CB2.svg?logo=maplibre&style=flat">
+    <img src="https://img.shields.io/badge/-axios-5A29E4.svg?logo=axios&style=flat">
+    <img src="https://img.shields.io/badge/-pinia-FFD859.svg?logo=pinia&style=flat">
+    <img src="https://img.shields.io/badge/-FastAPI-009688.svg?logo=fastapi&style=flat">
+    <img src="https://img.shields.io/badge/-PostGIS-4169E1.svg?logo=postgresql&style=flat">
+    <img src="https://img.shields.io/badge/-Google Gemini-8E75B2.svg?logo=googlegemini&style=flat">
 </p>
+
+## 環境構築
+
+- ### docker 環境を準備
+  [docker 公式スタートガイドページ](https://www.docker.com/get-started/)
+- ### node 環境を準備
+
+  - node のバージョン管理は [volta](https://docs.volta.sh/guide/getting-started) がおすすめ。指定バージョンの node 環境、パッケージマネージャーを用意してください
+
+  ```
+  node v22.21.0
+  ```
+
+  ```
+  yarn v1.22.22
+  ```
+
+- ### 初期データ取得
+
+  [こちら](https://drive.google.com/drive/folders/1ASBWmogy64pGH4hvqwTM9xYL0mg-w1hO)から取得したものを`02_src\SPECTRA_CHAT\migration`に配置
+
+- ### env ファイル追加
+
+  - 02_src\SPECTRA_CHAT\backend 直下に`.env`ファイルを追加。このとき、.env ファイルの形式は、`env.txt`を参考にすること。
+
+  ```
+  //.envの例
+  GEMINI_API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  ```
+
+- ### アプリケーションを立ち上げる方法
+
+  - 02_src\SPECTRA_CHAT に移動
+
+  ```
+  docker compose up -d --build
+  ```
+
+  ```
+  python pipeline.py
+  ```
+
+  - 02_src\SPECTRA_CHAT\frontend に移動
+
+  ```
+  yarn dev
+  ```
+
+  [`http://localhost:3000/`](http://localhost:3000/)をブラウザで開く
+
+## ディレクトリ構成
 
 ```
 .
@@ -56,14 +108,14 @@
 - モノリシックなソフトウェア構成
 - Docker コンテナごとに分けて実装
 - 要素間は port 番号を指定して通信する
-- backend は、`http://localhost:4000/docs`にてアクセスを swagger で検証できる
+- backend は、[`http://localhost:4000/docs`](http://localhost:4000/docs)にてアクセスを swagger で検証できる
 
 ```mermaid
 flowchart TD
 compose[エントリーポイント <br>compose.yaml]
 frontend[frontendコンテナ Vue <br>port3000]
 backend[backendコンテナ FastAPI <br>port4000]
-postgis[postGISコンテナ（DB） FastAPI <br>port5432]
+postgis[postGISコンテナ（DB） PostGIS <br>port5432]
 pipeline[pipeline.py <br>postGISにmigrationフォルダ内データを一括投入するスクリプト]
 
 compose --> frontend
@@ -77,6 +129,7 @@ pipeline --> postgis
 - DI(依存性の注入)によって、依存性逆転の原則を保つ
 - usecase（純粋な内部ロジック）と infrastructure（外部ロジック）がインターフェースを介してやり取りを行うことで、内部ロジックをクリーンに保つことができる。
 - テストコードには vitest を用いる
+- インデントには prettier を、ビルドチェックに eslint を用いる
 
 ```mermaid
 flowchart TD
@@ -147,6 +200,7 @@ flowchart TD
 ## 　バックエンドのアーキテクチャ
 
 - 基本的にはフロントエンドと同じ。
+- ruff コマンドを使ってインデントを修正できる
 
 ```mermaid
 flowchart TD
