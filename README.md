@@ -58,6 +58,10 @@
   - 02_src\SPECTRA_CHAT\frontend に移動
 
   ```
+  //package.jsonの中身を適用
+  yarn install
+  ```
+  ```
   yarn dev
   ```
 
