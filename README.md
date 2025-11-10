@@ -13,12 +13,50 @@
 <img src="https://img.shields.io/badge/-Google Gemini-8E75B2.svg?logo=googlegemini&style=flat">
 </p>
 
+```
+.
+├── 01_docs //主に資料をここに置く
+├── 02_src　//本番プロジェクトをここに置く
+│   └── SPECTRA_CHAT //アプリケーションディレクトリ
+│       ├── frontend
+│       │   ├── src
+│       │   │   ├── components
+│       │   │   │   ├── atoms //最小単位のUIコンポーネント　htmlのタグと対応　どのページでも使い回す
+│       │   │   │   ├── molecules //atomsを組み合わせたもの　どのページでも使い回す
+│       │   │   │   ├── organisms　// ページ単位でに管理するUIコンポーネント
+│       │   │   │   │   └── homeSite //　【ページ名】Site
+│       │   │   │   │       ├── __tests__ //テストコード格納フォルダ use【機能名】App.test.ts
+│       │   │   │   │       ├── core　//usecase アプリケーションロジック　use【機能名】App.ts
+│       │   │   │   │       └── ui //ロジック(機能)と接続するUI　【ページ名】SiteMain.vue、【機能名】App.vue
+│       │   │   │   └── templates　//ロジック接続後のUI　基本的にページを表示するだけ 【ページ名】
+│       │   │   ├── domain
+│       │   │   │   ├── interfaces　// インターフェイスをまとめて保存
+│       │   │   │   ├── types　//型をまとめて保存
+│       │   │   │   └── params //固定値をまとめて保存
+│       │   │   ├── infrastructure
+│       │   │   │   └── stores //状態管理ストア
+│       │   │   ├── App.vue // UIのエントリポイント　AtomicDesignのPagesにあたる
+│       │   │   ├── main.ts　//ロジックのエントリポイント
+│       │   │   └── style.css //CSSのエントリポイント
+│       │   ├── public //画像、アイコン、素材を置く
+│       │   └── package.json //フロントエンドで使用しているライブラリの管理を行う
+│       ├── backend
+│       │   ├── main.py //エントリポイント
+│       │   ├── controller //httpのエンドポイント兼MCP
+│       │   ├── infrastructure　//外部ライブラリを使用したロジックを隔離
+│       │   └── domain //抽象基底クラスを保管
+│       ├── migration //DBに初期投入するデータを保管
+│       ├── pipeline.py //DBに初期投入するスクリプト
+│       └── compose.yaml //アプリケーション全体のエントリポイント
+└── 03_prototype　//プロトタイププロジェクトをここに置く
+```
+
 ## アプリケーション全体のアーキテクチャ
 
 - モノリシックなソフトウェア構成
-- Dockerコンテナごとに分けて実装
+- Docker コンテナごとに分けて実装
 - 要素間は port 番号を指定して通信する
-- backendは、http://localhost:4000/docsにてアクセスをswaggerで検証できる
+- backend は、`http://localhost:4000/docs`にてアクセスを swagger で検証できる
 
 ```mermaid
 flowchart TD
@@ -38,6 +76,7 @@ pipeline --> postgis
 
 - DI(依存性の注入)によって、依存性逆転の原則を保つ
 - usecase（純粋な内部ロジック）と infrastructure（外部ロジック）がインターフェースを介してやり取りを行うことで、内部ロジックをクリーンに保つことができる。
+- テストコードには vitest を用いる
 
 ```mermaid
 flowchart TD
@@ -69,6 +108,7 @@ flowchart TD
 ## AtomicDesign による UI コンポーネントマネジメント
 
 - コンポーネントを階層的に管理することで、UI の拡張性を高める
+- コンポーネントは storybook で管理する
 
 ```mermaid
 flowchart TD
