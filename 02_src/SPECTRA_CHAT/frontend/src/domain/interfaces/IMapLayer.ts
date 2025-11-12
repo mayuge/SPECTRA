@@ -1,4 +1,4 @@
 export interface IMapLayer {
-  addGeoJsonLayer: (mapInstance: any, geoJsonData: any) => void
-  toggleLayer: (mapInstance: any, layerId: string) => void
+  addGeoJsonLayer: (geoJsonData: any) => void
+  toggleLayer: (layerId: string) => void
 }

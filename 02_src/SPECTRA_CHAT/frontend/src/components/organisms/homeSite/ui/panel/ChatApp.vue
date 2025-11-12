@@ -14,11 +14,9 @@
 <script setup lang="ts">
 import { computed  } from "vue"
 import type { IChatState } from "@/domain/interfaces/IChatState"
-import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
 import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
 
 import { useChatStateStore } from "@/infrastructure/stores/chatStateStore"
-import useMapInstance from "@/infrastructure/map/mapInstance"
 import useMapLayer from "@/infrastructure/map/mapLayer"
 import useChatApp from "@/components/organisms/homeSite/core/panel/useChatApp"
 
@@ -32,7 +30,6 @@ const {
   toggleResponseLayer,
 } = useChatApp(
   useChatStateStore() as IChatState,
-  useMapInstance() as IMapInstance,
   useMapLayer() as IMapLayer
 )
 

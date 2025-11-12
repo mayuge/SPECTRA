@@ -73,7 +73,7 @@ const useChatPanelApp = (
       const map = getMapInstance()
 
       if (map && map.loaded()) {
-        addGeoJsonLayer(map, getLastGeojson())
+        addGeoJsonLayer(getLastGeojson())
       }
 
       const responseMessage: ChatType = {

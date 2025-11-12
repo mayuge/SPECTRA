@@ -48,7 +48,7 @@
   - 02_src\SPECTRA_CHAT に移動
 
   ```
-  docker compose up -d --build
+  docker compose up --build
   ```
 
   ```
@@ -61,6 +61,7 @@
   //package.jsonの中身を適用
   yarn install
   ```
+
   ```
   yarn dev
   ```

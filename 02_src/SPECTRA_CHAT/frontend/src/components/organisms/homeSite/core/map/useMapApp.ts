@@ -4,8 +4,8 @@ const useMapApp = (mapInstance: IMapInstance, useMapPlugin: IMapPlugin) => {
   const { getMapInstance } = mapInstance
   const { setAllPlugins } = useMapPlugin
   const onMountedCallback = () => {
-    const map = getMapInstance()
-    setAllPlugins(map)
+    getMapInstance()
+    setAllPlugins()
   }
   return {
     onMountedCallback,

@@ -1,17 +1,13 @@
 import type { IChatState } from "@/domain/interfaces/IChatState"
-import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
 import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
 
-const useChatApp = (chatState: IChatState, mapInstance: IMapInstance, mapLayer: IMapLayer) => {
+const useChatApp = (chatState: IChatState, mapLayer: IMapLayer) => {
   const { getChatMessageList } = chatState
-  const { getMapInstance } = mapInstance
   const { toggleLayer } = mapLayer
 
   const toggleResponseLayer = (index: number) => {
-    const map = getMapInstance()
     const layerId = `geojson-layer-${index}`
-    console.log("toggle", layerId, "map ready?", !!map, "has layer?", map?.getLayer(layerId))
-    toggleLayer(map, layerId)
+    toggleLayer(layerId)
   }
 
   /**
