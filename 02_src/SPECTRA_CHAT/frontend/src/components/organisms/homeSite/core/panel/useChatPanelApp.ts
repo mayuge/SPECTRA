@@ -23,8 +23,9 @@ const useChatPanelApp = (
   const { getMapInstance } = mapInstance
   const { addChatMessage } = chatState
   const { setGeojson, getLastGeojson } = geojsonState
+
   /**
-   * メインパネルの開閉状態
+   * メインパネルの開閉状態取得
    */
   const getMainPanelOpen = () => {
     return getDialogState("mainPanel" as keyof DialogNameType)
@@ -38,7 +39,8 @@ const useChatPanelApp = (
   }
 
   /**
-   * プルタブのアイコン
+   * プルタブのアイコンを取得
+   * @returns "arrow_left" | "arrow_right"
    */
   const getPullTabIcon = () => {
     return getDialogState("mainPanel" as keyof DialogNameType) ? "arrow_left" : "arrow_right"
@@ -46,6 +48,7 @@ const useChatPanelApp = (
 
   /**
    * 送信ボタン押下
+   * @param inputValue string
    */
   const submitButtonClicked = async (inputValue: string) => {
     const requestMessage: ChatType = {
@@ -54,6 +57,7 @@ const useChatPanelApp = (
       isdata: false,
     }
 
+    //requestタイプのチャットをストアに追加
     addChatMessage(requestMessage)
 
     try {
@@ -68,11 +72,13 @@ const useChatPanelApp = (
         geojson = { type: "FeatureCollection", features: [chatGeojson as Feature] }
       }
 
+      //結果をgeojsonStoreに格納
       setGeojson(geojson)
 
       const map = getMapInstance()
 
       if (map && map.loaded()) {
+        //格納されたgeojsonを呼び出して表示
         addGeoJsonLayer(getLastGeojson())
       }
 
@@ -82,9 +88,12 @@ const useChatPanelApp = (
         isdata: true,
       }
 
+      //responseタイプのチャットをストアに追加
       addChatMessage(responseMessage)
     } catch (error) {
       const errorMessage: ChatType = { type: "error", message: error, isdata: false }
+
+      //エラー発生時、errorタイプのチャットをストアに追加
       addChatMessage(errorMessage)
     }
   }

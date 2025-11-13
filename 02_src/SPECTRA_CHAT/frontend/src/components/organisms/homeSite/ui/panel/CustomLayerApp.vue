@@ -21,9 +21,23 @@
     </div>
   </div>
 </template>
-<script setup="ts">
+
+<script setup lang="ts">
+import { onMounted } from 'vue'
 import Button from '@/components/atoms/buttons/Button.vue'
 import useCustomLayerApp from '@/components/organisms/homeSite/core/panel/useCustomLayerApp'
 
-const { toggleTrainLayer, toggleCycleLayer } = useCustomLayerApp
+import type { IReqTrainApi } from '@/domain/interfaces/IReqTrainApi'
+import type { ICustomLayerState } from '@/domain/interfaces/ICustomLayerState'
+import type { IMapCustomLayer } from '@/domain/interfaces/IMapCustomLayer'
+
+import useReqTrainApi from '@/infrastructure/http/train/reqTrainApi'
+import { useCustomLayerStore } from '@/infrastructure/stores/customLayerStateStore'
+import useMapCustomLayer from '@/infrastructure/map/mapCustomLayer'
+
+onMounted(() => {
+  onMountedCallback()
+})
+
+const { onMountedCallback, toggleTrainLayer, toggleCycleLayer } = useCustomLayerApp( useReqTrainApi() as IReqTrainApi, useCustomLayerStore() as ICustomLayerState, useMapCustomLayer() as IMapCustomLayer)
 </script>

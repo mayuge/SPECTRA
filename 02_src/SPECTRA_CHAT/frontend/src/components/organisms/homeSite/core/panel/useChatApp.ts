@@ -5,13 +5,17 @@ const useChatApp = (chatState: IChatState, mapLayer: IMapLayer) => {
   const { getChatMessageList } = chatState
   const { toggleLayer } = mapLayer
 
+  /**
+   * 連番のidからgeojsonレイヤーを特定し、トグルする
+   * @param index number
+   */
   const toggleResponseLayer = (index: number) => {
     const layerId = `geojson-layer-${index}`
     toggleLayer(layerId)
   }
 
   /**
-   * response の通し番号を返す純粋関数
+   * response の通し番号を取得
    * @param index number
    */
   const getResponseIndex = (index: number): number => {

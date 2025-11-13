@@ -7,7 +7,7 @@ export const useReqTrainApi = (): IReqTrainApi => {
    * 駅一覧を取得
    * @returns {geojson} 駅の情報
    */
-  const getAllStation = async () => {
+  const getAllTrainStation = async () => {
     const url = import.meta.env.VITE_TRAIN_STATION_URL
     const config = {
       method: "GET",
@@ -26,7 +26,7 @@ export const useReqTrainApi = (): IReqTrainApi => {
    * @param stationName {string} 駅名
    * @returns {geojson} 駅の情報
    */
-  const getStationByName = async (stationName: string) => {
+  const getTrainStationByName = async (stationName: string) => {
     const url = import.meta.env.VITE_TRAIN_STATION_DETAIL_URL
     const config = {
       method: "GET",
@@ -79,8 +79,8 @@ export const useReqTrainApi = (): IReqTrainApi => {
   }
 
   return {
-    getAllStation,
-    getStationByName,
+    getAllTrainStation,
+    getTrainStationByName,
     getAllTrainLine,
     getTrainLineByName,
   }
