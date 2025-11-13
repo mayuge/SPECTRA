@@ -105,6 +105,7 @@ const useMapLayer = (): IMapLayer => {
   }
 
   const addGeoJsonLayer = (geoJsonData: FeatureCollection<Geometry>) => {
+    console.log("追加")
     if (!geoJsonData?.features?.length) return
 
     const sharedColor = generateRandomColor()
