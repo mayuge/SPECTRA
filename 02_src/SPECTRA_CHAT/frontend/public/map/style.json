@@ -21,8 +21,8 @@
   "sources": {
     "osm": {
       "type": "vector",
-      "url": "https://api.protomaps.com/tiles/v4.json?key=d828297496b11844",
-      "attribution": "© <a href=\"https://openstreetmap.org\">OpenStreetMap</a> <a href=\"https://protomaps.com/\">Protomaps</a>"
+      "url": "https://tiles.kmproj.com/osm-japan.json",
+      "attribution": "© <a href=\"https://openstreetmap.org\">OpenStreetMap</a> ©<a href=\"https://tiles.kmproj.com/basemaps/\"> 2025 KotobaMedia, Inc.</a> <a href=\"\">Protomaps</a>"
     },
     "openmaptiles": {
       "type": "vector",
