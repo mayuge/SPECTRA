@@ -72,6 +72,7 @@ const useMapCustomLayer = (): IMapCustomLayer => {
     }
 
     map.addLayer(layer)
+    addHoverPopup(layerId)
   }
 
   const trainLineLayer = (geojson: FeatureCollection) => {
@@ -102,14 +103,60 @@ const useMapCustomLayer = (): IMapCustomLayer => {
         "line-color": [
           "case",
           ["has", ["get", "事業者名"], ["literal", trainParams]],
-          ["get", ["get", "路線名"], ["get", ["get", "事業者名"], ["literal", trainParams]]],
-          "#808080",
+          [
+            "coalesce",
+            ["get", ["get", "路線名"], ["get", ["get", "事業者名"], ["literal", trainParams]]],
+            "#808080", // 路線名が存在しない場合のデフォルト色
+          ],
+          "#808080", // 事業者名が存在しない場合
         ],
+
         "line-width": ["interpolate", ["linear"], ["zoom"], 10, 1, 15, 10],
       },
     }
-
     map.addLayer(layer)
+    addHoverPopup(layerId)
+  }
+
+  const addHoverPopup = (layerId: string) => {
+    const { getMapInstance } = useMapInstance() as IMapInstance
+    const map = getMapInstance()
+    if (!map) return
+    const popup = new maplibregl.Popup({
+      closeButton: false,
+      closeOnClick: false,
+      maxWidth: "1000px",
+    })
+
+    map.on("mousemove", layerId, (e) => {
+      const feature = e.features?.[0]
+      if (!feature) return
+
+      const props = feature.properties ?? {}
+
+      const rows = Object.entries(props)
+        .map(
+          ([key, value]) =>
+            `<tr>
+         <th style="border:1px solid #ccc; padding:2px 4px; background:#f5f5f5;">${key}</th>
+         <td style="border:1px solid #ccc; padding:2px 4px;">${value}</td>
+       </tr>`
+        )
+        .join("")
+
+      popup
+        .setLngLat(e.lngLat)
+        .setHTML(
+          `<table style="font-size:12px; border-collapse:collapse; background:white;">
+      ${rows}
+   </table>`
+        )
+        .addTo(map)
+    })
+
+    map.on("mouseleave", layerId, () => {
+      popup.remove()
+    })
   }
 
   return {

@@ -42,6 +42,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
+.maplibregl-popup-content {
+  padding: 12px;
+}
+
 .maplibregl-ctrl-top-right {
   top: 64px !important;
   width: 200px;
