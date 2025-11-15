@@ -30,14 +30,16 @@ import useCustomLayerApp from '@/components/organisms/homeSite/core/panel/useCus
 import type { IReqTrainApi } from '@/domain/interfaces/IReqTrainApi'
 import type { ICustomLayerState } from '@/domain/interfaces/ICustomLayerState'
 import type { IMapCustomLayer } from '@/domain/interfaces/IMapCustomLayer'
+import type { IMapLayer } from '@/domain/interfaces/IMapLayer'
 
 import useReqTrainApi from '@/infrastructure/http/train/reqTrainApi'
 import { useCustomLayerStore } from '@/infrastructure/stores/customLayerStateStore'
 import useMapCustomLayer from '@/infrastructure/map/mapCustomLayer'
+import useMapLayer from '@/infrastructure/map/mapLayer'
 
 onMounted(() => {
   onMountedCallback()
 })
 
-const { onMountedCallback, toggleTrainLayer, toggleCycleLayer } = useCustomLayerApp( useReqTrainApi() as IReqTrainApi, useCustomLayerStore() as ICustomLayerState, useMapCustomLayer() as IMapCustomLayer)
+const { onMountedCallback, toggleTrainLayer, toggleCycleLayer } = useCustomLayerApp( useReqTrainApi() as IReqTrainApi, useCustomLayerStore() as ICustomLayerState, useMapCustomLayer() as IMapCustomLayer, useMapLayer() as IMapLayer)
 </script>

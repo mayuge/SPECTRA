@@ -17,7 +17,7 @@ const useChatPanelApp = (
   chatState: IChatState,
   geojsonState: IGeojsonState
 ) => {
-  const { getDialogState, toggleDialogState } = dialogState
+  const { getDialogState, setDialogState, toggleDialogState } = dialogState
   const { sendChatMessage } = reqChatApi
   const { addGeoJsonLayer } = mapLayer
   const { getMapInstance } = mapInstance
@@ -29,6 +29,13 @@ const useChatPanelApp = (
    */
   const getMainPanelOpen = () => {
     return getDialogState("mainPanel" as keyof DialogNameType)
+  }
+
+  /**
+   * メインパネルを開く
+   */
+  const openMainPanel = () => {
+    setDialogState("mainPanel" as keyof DialogNameType, true)
   }
 
   /**
@@ -51,6 +58,42 @@ const useChatPanelApp = (
    * @param inputValue string
    */
   const submitButtonClicked = async (inputValue: string) => {
+    // ✅ 空文字の時は何もしない
+    if (!inputValue.trim()) return
+
+    // ✅ 特定の危険文字のみ禁止
+    const invalidCharPattern = /[\u0000-\u001F\u007F\uFEFF'"<>!\/\\;|&`$%^@]/u
+
+    if (invalidCharPattern.test(inputValue)) {
+      const chatMessage: ChatType = {
+        type: "request",
+        message: inputValue,
+        isdata: false,
+      }
+      addChatMessage(chatMessage)
+      const errorMessage: ChatType = {
+        type: "error",
+        message: "使用できない記号（BOM・クォーテーション・< > ! / など）が含まれています。",
+        isdata: false,
+      }
+      addChatMessage(errorMessage)
+      return
+    }
+
+    // ✅ 文字数制限（例：最大255文字）
+    if (inputValue.length > 255) {
+      const errorMessage: ChatType = {
+        type: "error",
+        message: "メッセージが長すぎます。255文字以内で入力してください。",
+        isdata: false,
+      }
+      addChatMessage(errorMessage)
+      return
+    }
+
+    // メッセージ送信後にメインパネルを開く
+    openMainPanel()
+
     const requestMessage: ChatType = {
       type: "request",
       message: inputValue,
@@ -77,9 +120,11 @@ const useChatPanelApp = (
 
       const map = getMapInstance()
 
-      if (map && map.loaded()) {
-        //格納されたgeojsonを呼び出して表示
-        addGeoJsonLayer(getLastGeojson())
+      if (map) {
+        // 地図がIdle（完全描画後）になるのを待つ
+        map.once("idle", () => {
+          addGeoJsonLayer(getLastGeojson())
+        })
       }
 
       const responseMessage: ChatType = {

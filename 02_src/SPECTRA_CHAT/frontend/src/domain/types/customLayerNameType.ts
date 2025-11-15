@@ -1,2 +1,2 @@
-import { TRAIN_STATION, TRAIN_LINE } from "@/domain/params/customLayerName"
-export type CustomLayerNameType = typeof TRAIN_STATION | typeof TRAIN_LINE
+import { TRAIN_STATION_LAYER, TRAIN_LINE_LAYER } from "@/domain/params/customLayerName"
+export type CustomLayerNameType = typeof TRAIN_STATION_LAYER | typeof TRAIN_LINE_LAYER

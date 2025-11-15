@@ -97,7 +97,7 @@ const useMapCustomLayer = (): IMapCustomLayer => {
       id: layerId,
       type: "line",
       source: sourceId,
-      layout: { "line-cap": "round", "line-join": "round" },
+      layout: { "line-cap": "round", "line-join": "round", visibility: "visible" },
       paint: {
         // JSONから動的に線色を取得
         "line-color": [

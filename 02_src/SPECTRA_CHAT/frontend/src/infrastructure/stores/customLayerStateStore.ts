@@ -8,11 +8,11 @@ export const useCustomLayerStore = defineStore<"customLayerStateStore", ICustomL
   "customLayerStateStore",
   () => {
     const customLayerGeojson = ref<{ [key in CustomLayerNameType]: FeatureCollection }>({
-      trainStation: {
+      "train-station-layer": {
         type: "FeatureCollection",
         features: [],
       },
-      trainLine: {
+      "train-line-layer": {
         type: "FeatureCollection",
         features: [],
       },
