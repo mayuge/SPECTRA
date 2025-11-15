@@ -8,6 +8,7 @@ import maplibregl, {
   type SymbolLayerSpecification,
 } from "maplibre-gl"
 import trainParams from "@/domain/params/trainParams.json"
+import { TRAIN_STATION_LAYER, TRAIN_LINE_LAYER } from "@/domain/params/customLayerName"
 
 const useMapCustomLayer = (): IMapCustomLayer => {
   const loadCompanyIcons = async (map: maplibregl.Map) => {
@@ -33,8 +34,8 @@ const useMapCustomLayer = (): IMapCustomLayer => {
     const map = getMapInstance()
     if (!map) return
 
-    const sourceId = "train-station"
-    const layerId = "train-station-layer"
+    const sourceId = TRAIN_STATION_LAYER
+    const layerId = TRAIN_STATION_LAYER
 
     const source: GeoJSONSourceSpecification = { type: "geojson", data: geojson }
 
@@ -80,8 +81,8 @@ const useMapCustomLayer = (): IMapCustomLayer => {
     const map = getMapInstance()
     if (!map) return
 
-    const sourceId = "train-line"
-    const layerId = "train-line-layer"
+    const sourceId = TRAIN_LINE_LAYER
+    const layerId = TRAIN_LINE_LAYER
 
     const source: GeoJSONSourceSpecification = { type: "geojson", data: geojson }
 

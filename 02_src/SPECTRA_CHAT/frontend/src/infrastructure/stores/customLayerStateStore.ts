@@ -1,6 +1,7 @@
 import type { ICustomLayerState } from "@/domain/interfaces/ICustomLayerState"
 import type { CustomLayerNameType } from "@/domain/types/customLayerNameType"
 import type { FeatureCollection } from "geojson"
+
 import { defineStore } from "pinia"
 import { ref } from "vue"
 

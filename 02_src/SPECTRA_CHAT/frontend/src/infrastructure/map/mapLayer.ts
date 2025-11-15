@@ -4,7 +4,7 @@ import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
 import maplibregl from "maplibre-gl"
 import useMapInstance from "@/infrastructure/map/mapInstance"
 
-import bbox from "@turf/bbox"
+import { bbox } from "@turf/turf"
 
 const useMapLayer = (): IMapLayer => {
   let layerCounter = 0

@@ -27,7 +27,7 @@
   ```
 
   ```
-  yarn v1.22.22
+  pnpm v10.22.0
   ```
 
 - ### 初期データ取得
@@ -59,11 +59,17 @@
 
   ```
   //package.jsonの中身を適用
-  yarn install
+  pnpm install
   ```
 
   ```
-  yarn dev
+  //開発サーバーを立ち上げ
+   pnpm run dev
+  ```
+
+  ```
+  //ローカルネットワーク経由で開発サーバーを確認できます。フロント側の`.env`ファイルを`localhost`から一時的に変更してください。
+  pnpm run dev --host
   ```
 
   [`http://localhost:3000/`](http://localhost:3000/)をブラウザで開く
