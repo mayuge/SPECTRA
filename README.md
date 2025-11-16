@@ -33,6 +33,8 @@
   pnpm v10.22.0
   ```
 
+  - ビルドする際、ファイルの大文字小文字の区別をしっかりと管理しないと表示されない場合があるので注意してください
+
 - ### 初期データ取得
 
   [こちら](https://drive.google.com/drive/folders/1ASBWmogy64pGH4hvqwTM9xYL0mg-w1hO)から取得したものを`02_src\SPECTRA_CHAT\migration`に配置
