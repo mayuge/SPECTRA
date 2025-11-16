@@ -5,6 +5,7 @@
 @theme {
   --font-noto: "Noto Sans JP", sans-serif;
   --font-oswald: "Oswald", sans-serif;
+  --size-screen: 100dvh;
 
   --color-primary: #c0f354;
   --color-secondary: #8843e1;
