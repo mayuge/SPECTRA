@@ -1,18 +1,26 @@
-import useMapInstance from "@/infrastructure/map/mapInstance"
-import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
-import type { IMapCustomLayer } from "@/domain/interfaces/IMapCustomLayer"
-import type { FeatureCollection } from "geojson"
 import maplibregl, {
   type GeoJSONSourceSpecification,
   type LineLayerSpecification,
   type SymbolLayerSpecification,
 } from "maplibre-gl"
+import useMapInstance from "@/infrastructure/map/mapInstance"
+import useMapPopup from "@/infrastructure/map/mapPopup"
+
+import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
+import type { IMapPopup } from "@/domain/interfaces/IMapPopup"
+import type { IMapCustomLayer } from "@/domain/interfaces/IMapCustomLayer"
+import type { FeatureCollection } from "geojson"
+
 import trainParams from "@/domain/params/trainParams.json"
 import { TRAIN_STATION_LAYER, TRAIN_LINE_LAYER } from "@/domain/params/customLayerName"
 
 const useMapCustomLayer = (): IMapCustomLayer => {
+  const { getMapInstance } = useMapInstance() as IMapInstance
+  const { addHoverPopup, addTrainStationHoverPopup } = useMapPopup() as IMapPopup
   const loadCompanyIcons = async (map: maplibregl.Map) => {
-    const promises = Object.entries(trainParams).map(async ([company, { path }]) => {
+    const promises = Object.entries(trainParams).map(async ([company, value]) => {
+      const path = (value as any).path ?? "default"
+
       const iconId = `${company}-icon`
       const iconUrl = `/image/companyLogo/${path}.webp`
 
@@ -30,7 +38,6 @@ const useMapCustomLayer = (): IMapCustomLayer => {
   }
 
   const trainStationLayer = async (geojson: FeatureCollection) => {
-    const { getMapInstance } = useMapInstance() as IMapInstance
     const map = getMapInstance()
     if (!map) return
 
@@ -73,11 +80,10 @@ const useMapCustomLayer = (): IMapCustomLayer => {
     }
 
     map.addLayer(layer)
-    addHoverPopup(layerId)
+    addTrainStationHoverPopup(layerId)
   }
 
   const trainLineLayer = (geojson: FeatureCollection) => {
-    const { getMapInstance } = useMapInstance() as IMapInstance
     const map = getMapInstance()
     if (!map) return
 
@@ -117,47 +123,6 @@ const useMapCustomLayer = (): IMapCustomLayer => {
     }
     map.addLayer(layer)
     addHoverPopup(layerId)
-  }
-
-  const addHoverPopup = (layerId: string) => {
-    const { getMapInstance } = useMapInstance() as IMapInstance
-    const map = getMapInstance()
-    if (!map) return
-    const popup = new maplibregl.Popup({
-      closeButton: false,
-      closeOnClick: false,
-      maxWidth: "1000px",
-    })
-
-    map.on("mousemove", layerId, (e) => {
-      const feature = e.features?.[0]
-      if (!feature) return
-
-      const props = feature.properties ?? {}
-
-      const rows = Object.entries(props)
-        .map(
-          ([key, value]) =>
-            `<tr>
-         <th style="border:1px solid #ccc; padding:2px 4px; background:#f5f5f5;">${key}</th>
-         <td style="border:1px solid #ccc; padding:2px 4px;">${value}</td>
-       </tr>`
-        )
-        .join("")
-
-      popup
-        .setLngLat(e.lngLat)
-        .setHTML(
-          `<table style="font-size:12px; border-collapse:collapse; background:white;">
-      ${rows}
-   </table>`
-        )
-        .addTo(map)
-    })
-
-    map.on("mouseleave", layerId, () => {
-      popup.remove()
-    })
   }
 
   return {

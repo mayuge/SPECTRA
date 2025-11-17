@@ -1,10 +1,13 @@
 import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
 import type { FeatureCollection, Feature, Geometry } from "geojson"
 import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
+import type { IMapPopup } from "@/domain/interfaces/IMapPopup"
+
 import maplibregl from "maplibre-gl"
 import useMapInstance from "@/infrastructure/map/mapInstance"
 
 import { bbox } from "@turf/turf"
+import useMapPopup from "./mapPopup"
 
 const useMapLayer = (): IMapLayer => {
   let layerCounter = 0
@@ -33,6 +36,7 @@ const useMapLayer = (): IMapLayer => {
     sharedColor: string
   ) => {
     const { getMapInstance } = useMapInstance() as IMapInstance
+    const { addHoverPopup } = useMapPopup() as IMapPopup
     const mapInstance = getMapInstance()
     const color = getLayerColor(layerId, sharedColor)
 
@@ -160,47 +164,6 @@ const useMapLayer = (): IMapLayer => {
       "visibility",
       visibility === "visible" ? "none" : "visible"
     )
-  }
-
-  const addHoverPopup = (layerId: string) => {
-    const { getMapInstance } = useMapInstance() as IMapInstance
-    const map = getMapInstance()
-    if (!map) return
-    const popup = new maplibregl.Popup({
-      closeButton: false,
-      closeOnClick: false,
-      maxWidth: "1000px",
-    })
-
-    map.on("mousemove", layerId, (e) => {
-      const feature = e.features?.[0]
-      if (!feature) return
-
-      const props = feature.properties ?? {}
-
-      const rows = Object.entries(props)
-        .map(
-          ([key, value]) =>
-            `<tr>
-         <th style="border:1px solid #ccc; padding:2px 4px; background:#f5f5f5;">${key}</th>
-         <td style="border:1px solid #ccc; padding:2px 4px;">${value}</td>
-       </tr>`
-        )
-        .join("")
-
-      popup
-        .setLngLat(e.lngLat)
-        .setHTML(
-          `<table style="font-size:12px; border-collapse:collapse; background:white;">
-      ${rows}
-   </table>`
-        )
-        .addTo(map)
-    })
-
-    map.on("mouseleave", layerId, () => {
-      popup.remove()
-    })
   }
 
   return { addGeoJsonLayer, toggleLayer }
