@@ -7,6 +7,7 @@ const useMapApp = (mapInstance: IMapInstance, useMapPlugin: IMapPlugin) => {
 
   /**
    * マウント時のコールバック
+   * @remarks 
    */
   const onMountedCallback = () => {
     getMapInstance()

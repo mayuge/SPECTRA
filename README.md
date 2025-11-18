@@ -245,3 +245,15 @@ flowchart TD
     Usecase -->|継承元| Domain
     Infrastructure -->|継承元| Domain
 ```
+
+## 開発支援ツール
+
+- frontend ディレクトリに移動
+
+```
+pnpm run docs
+```
+
+- TSDoc 形式で書かれた ts ファイルのコメントが反映される
+- [TSDoc 形式とは](https://dev.classmethod.jp/articles/jsdoc-cheatsheet/)
+- 自動でドキュメントを生成する
