@@ -251,7 +251,7 @@ flowchart TD
 - frontend ディレクトリに移動
 
 ```
-pnpm run docs
+ pnpm typedoc
 ```
 
 - TSDoc 形式で書かれた ts ファイルのコメントが反映される

@@ -6,13 +6,13 @@
   "entryPointStrategy": "expand",
 
   "exclude": ["**/*.vue"],
-
+  "readme": "README.md",
   "excludeExternals": true,
   "excludePrivate": true,
   "excludeProtected": true,
 
   "tsconfig": "./tsconfig.json",
   "skipErrorChecking": true,
-
+  "plugin": ["typedoc-plugin-rename-defaults"],
   "out": "typedoc"
 }
