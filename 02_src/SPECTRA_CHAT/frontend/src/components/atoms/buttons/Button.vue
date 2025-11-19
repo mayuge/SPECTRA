@@ -17,11 +17,7 @@
 
 <script lang="ts" setup>
 import { computed } from "vue"
-import type { ButtonVariantType } from "@/domain/types/atomsType"
-
-
-type ButtonShapeType = "round" | "square" | "circle"
-type ButtonSizeType = "mini" | "small" | "normal" | "large"
+import type { ButtonVariantType, ButtonSizeType, ButtonShapeType } from "@/domain/types/atomsType"
 
 interface Props {
   text?: string
@@ -33,7 +29,12 @@ interface Props {
   variant: ButtonVariantType
 }
 
-const props = defineProps<Props>()
+const props = withDefaults(defineProps<Props>(), {
+  shape: "round",
+  size: "normal",
+  variant: "btn-primary",
+  isShadow: false,
+})
 
 const emit = defineEmits(['button-clicked'])
 

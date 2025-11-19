@@ -3,3 +3,6 @@
 N03-20250101.geojson
 #用途地域
 UrbanArea_Japan_2022.geojson
+*storybook.log
+storybook-static
+/node_modules
