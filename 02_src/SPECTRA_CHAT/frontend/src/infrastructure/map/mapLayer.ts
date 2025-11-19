@@ -29,7 +29,13 @@ const useMapLayer = (): IMapLayer => {
     return colorMap.get(layerId)!
   }
 
-  const addLayer = (
+  const waitForSource = (map: maplibregl.Map, sourceId: string) =>
+    new Promise<void>((resolve) => {
+      if (map.getSource(sourceId)) return resolve()
+      map.once("sourcedata", () => resolve())
+    })
+
+  const addLayer = async (
     layerId: string,
     featureCollection: FeatureCollection<Geometry>,
     type: "Point" | "LineString" | "Polygon",
@@ -46,7 +52,7 @@ const useMapLayer = (): IMapLayer => {
     }
 
     mapInstance.addSource(layerId, { type: "geojson", data: featureCollection })
-
+    await waitForSource(mapInstance, layerId)
     switch (type) {
       case "Point":
         mapInstance.addLayer({
@@ -111,7 +117,6 @@ const useMapLayer = (): IMapLayer => {
   }
 
   const addGeoJsonLayer = (geoJsonData: FeatureCollection<Geometry>) => {
-    console.log("追加")
     if (!geoJsonData?.features?.length) return
 
     const sharedColor = generateRandomColor()

@@ -118,8 +118,67 @@ const useMapPopup = (): IMapPopup => {
     })
   }
 
+  const addTrainLineHoverPopup = (layerId: string) => {
+    const map = getMapInstance()
+    if (!map) return
+    const popup = new maplibregl.Popup({
+      closeButton: false,
+      closeOnClick: false,
+      maxWidth: "1000px",
+    })
+
+    map.on("mousemove", layerId, (e) => {
+      const feature = e.features?.[0]
+      if (!feature) return
+
+      const props = feature.properties ?? {}
+
+      popup
+        .setLngLat(e.lngLat)
+        .setHTML(
+          `
+          <div class="flex items-center gap-2 mt-2">
+        
+        <!-- 路線色バー -->
+        <div
+          class="h-14 w-2 rounded-full"
+          style="background-color:${trainParams[props.事業者名]?.[props.路線名] ?? "#808080"}"
+        ></div>
+
+        <!-- 会社ロゴ -->
+        <img
+          class="w-6 h-6"
+          src="/image/companyLogo/${trainParams[props.事業者名].path}.webp"
+        />
+
+        <!-- 駅名 -->
+        <div class="flex flex-col leading-tight">
+            <div class="font-bold text-base">
+            ${props.路線名}
+            </div>
+            <div class="text-xs text-gray-500">
+            ${props.事業者名} ${props.路線名}
+            </div>
+            <div class="text-xs text-gray-500">
+            運行本数：${props.順方向運行本数2024 + props.逆方向運行本数2024}本
+            </div>
+        </div>
+
+      </div>
+          
+`
+        )
+        .addTo(map)
+    })
+
+    map.on("mouseleave", layerId, () => {
+      popup.remove()
+    })
+  }
+
   return {
     addTrainStationHoverPopup,
+    addTrainLineHoverPopup,
     addHoverPopup,
   }
 }

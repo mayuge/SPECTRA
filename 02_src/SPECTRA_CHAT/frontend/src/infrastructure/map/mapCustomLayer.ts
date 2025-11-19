@@ -16,7 +16,7 @@ import { TRAIN_STATION_LAYER, TRAIN_LINE_LAYER } from "@/domain/params/customLay
 
 const useMapCustomLayer = (): IMapCustomLayer => {
   const { getMapInstance } = useMapInstance() as IMapInstance
-  const { addHoverPopup, addTrainStationHoverPopup } = useMapPopup() as IMapPopup
+  const { addTrainLineHoverPopup, addTrainStationHoverPopup } = useMapPopup() as IMapPopup
   const loadCompanyIcons = async (map: maplibregl.Map) => {
     const promises = Object.entries(trainParams).map(async ([company, value]) => {
       const path = (value as any).path ?? "default"
@@ -122,7 +122,7 @@ const useMapCustomLayer = (): IMapCustomLayer => {
       },
     }
     map.addLayer(layer)
-    addHoverPopup(layerId)
+    addTrainLineHoverPopup(layerId)
   }
 
   return {

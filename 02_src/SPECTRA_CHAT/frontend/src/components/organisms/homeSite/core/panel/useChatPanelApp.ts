@@ -120,11 +120,8 @@ const useChatPanelApp = (
 
       const map = getMapInstance()
 
-      if (map) {
-        // 地図がIdle（完全描画後）になるのを待つ
-        map.once("idle", () => {
-          addGeoJsonLayer(getLastGeojson())
-        })
+      if (map.isStyleLoaded()) {
+        addGeoJsonLayer(getLastGeojson())
       }
 
       const responseMessage: ChatType = {
