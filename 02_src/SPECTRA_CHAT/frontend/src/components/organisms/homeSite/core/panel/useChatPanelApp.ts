@@ -118,11 +118,7 @@ const useChatPanelApp = (
       //結果をgeojsonStoreに格納
       setGeojson(geojson)
 
-      const map = getMapInstance()
-
-      if (map.isStyleLoaded()) {
-        addGeoJsonLayer(getLastGeojson())
-      }
+      addGeoJsonLayer(getLastGeojson())
 
       const responseMessage: ChatType = {
         type: "response",

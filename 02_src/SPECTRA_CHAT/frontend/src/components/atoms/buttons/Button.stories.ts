@@ -1,3 +1,4 @@
+//@ts-ignore
 import type { Meta, StoryObj } from "@storybook/vue3"
 import Button from "./Button.vue"
 import type { ButtonVariantType } from "@/domain/types/atomsType"
