@@ -28,19 +28,22 @@ import Button from '@/components/atoms/buttons/Button.vue'
 import useCustomLayerApp from '@/components/organisms/homeSite/core/panel/useCustomLayerApp'
 
 import type { IReqTrainApi } from '@/domain/interfaces/IReqTrainApi'
+import type { IReqCycleApi } from '@/domain/interfaces/IReqCycleApi'
 import type { ICustomLayerState } from '@/domain/interfaces/ICustomLayerState'
 import type { IMapCustomLayer } from '@/domain/interfaces/IMapCustomLayer'
 import type { IMapLayer } from '@/domain/interfaces/IMapLayer'
 
 import useReqTrainApi from '@/infrastructure/http/train/reqTrainApi'
+import useReqCycleApi from '@/infrastructure/http/cycle/reqCycleApi'
 import { useCustomLayerStore } from '@/infrastructure/stores/customLayerStateStore'
 import useMapCustomLayer from '@/infrastructure/map/mapCustomLayer'
 import useMapLayer from '@/infrastructure/map/mapLayer'
 
 import { onMounted } from 'vue'
+
 onMounted(() => {
   onMountedCallback()
 })
 
-const { onMountedCallback, toggleTrainLayer, toggleCycleLayer } = useCustomLayerApp( useReqTrainApi() as IReqTrainApi, useCustomLayerStore() as ICustomLayerState, useMapCustomLayer() as IMapCustomLayer, useMapLayer() as IMapLayer)
+const { onMountedCallback, toggleTrainLayer, toggleCycleLayer } = useCustomLayerApp( useReqTrainApi() as IReqTrainApi, useReqCycleApi() as IReqCycleApi, useCustomLayerStore() as ICustomLayerState, useMapCustomLayer() as IMapCustomLayer, useMapLayer() as IMapLayer)
 </script>

@@ -17,6 +17,14 @@ export const useCustomLayerStore = defineStore<"customLayerStateStore", ICustomL
         type: "FeatureCollection",
         features: [],
       },
+      "hello-cycle-layer": {
+        type: "FeatureCollection",
+        features: [],
+      },
+      "docomo-bike-share-layer": {
+        type: "FeatureCollection",
+        features: [],
+      },
     })
 
     const setCustomLayerGeojson = (

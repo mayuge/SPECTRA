@@ -1,18 +1,32 @@
 import type { IReqTrainApi } from "@/domain/interfaces/IReqTrainApi"
+import type { IReqCycleApi } from "@/domain/interfaces/IReqCycleApi"
 import type { ICustomLayerState } from "@/domain/interfaces/ICustomLayerState"
 import type { CustomLayerNameType } from "@/domain/types/customLayerNameType"
 import type { IMapCustomLayer } from "@/domain/interfaces/IMapCustomLayer"
 import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
-import { TRAIN_STATION_LAYER, TRAIN_LINE_LAYER } from "@/domain/params/customLayerName"
+import {
+  TRAIN_STATION_LAYER,
+  TRAIN_LINE_LAYER,
+  HELLO_CYCLE_LAYER,
+  DOCOMO_BIKE_SHARE_LAYER,
+} from "@/domain/params/customLayerName"
 const useCustomLayerApp = (
   reqTrainApi: IReqTrainApi,
+  reqCycleApi: IReqCycleApi,
   customLayerState: ICustomLayerState,
   mapCustomerLayer: IMapCustomLayer,
   mapLayer: IMapLayer
 ) => {
   const { getAllTrainStation, getAllTrainLine } = reqTrainApi
+  const { getHelloCycleStation, getDocomoBikeShareStation } = reqCycleApi
   const { setCustomLayerGeojson, getCustomLayerGeojson } = customLayerState
-  const { trainStationLayer, trainLineLayer } = mapCustomerLayer
+  const {
+    trainStationLayer,
+    trainLineLayer,
+    helloCycleLayer,
+    docomoBikeShareLayer,
+    toggleCycleLayer,
+  } = mapCustomerLayer
   const { toggleLayer } = mapLayer
   /**
    * マウント時のコールバック
@@ -22,9 +36,36 @@ const useCustomLayerApp = (
     try {
       await setTrainLineLayer()
       await setTrainStationLayer()
+      await setHelloCycleLayer()
+      await setDocomoBikeShareLayer()
     } catch (error) {
       console.error(error)
     }
+  }
+
+  /**
+   * ドコモ・バイクシェアレイヤーをセット
+   */
+  const setDocomoBikeShareLayer = async () => {
+    const docomoBikeShareStation = await getDocomoBikeShareStation()
+    setCustomLayerGeojson(
+      DOCOMO_BIKE_SHARE_LAYER as keyof CustomLayerNameType,
+      docomoBikeShareStation
+    )
+    const docomoBikeShareGeojson = getCustomLayerGeojson(
+      DOCOMO_BIKE_SHARE_LAYER as keyof CustomLayerNameType
+    )
+    docomoBikeShareLayer(docomoBikeShareGeojson)
+  }
+
+  /**
+   * ハローサイクルレイヤーをセット
+   */
+  const setHelloCycleLayer = async () => {
+    const helloCycleStation = await getHelloCycleStation()
+    setCustomLayerGeojson(HELLO_CYCLE_LAYER as keyof CustomLayerNameType, helloCycleStation)
+    const helloCycleGeojson = getCustomLayerGeojson(HELLO_CYCLE_LAYER as keyof CustomLayerNameType)
+    helloCycleLayer(helloCycleGeojson)
   }
 
   /**
@@ -55,8 +96,6 @@ const useCustomLayerApp = (
     toggleLayer(TRAIN_STATION_LAYER)
     toggleLayer(TRAIN_LINE_LAYER)
   }
-
-  const toggleCycleLayer = () => {}
 
   return { onMountedCallback, toggleTrainLayer, toggleCycleLayer }
 }
