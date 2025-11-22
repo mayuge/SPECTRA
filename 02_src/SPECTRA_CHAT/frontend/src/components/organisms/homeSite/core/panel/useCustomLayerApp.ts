@@ -21,10 +21,10 @@ const useCustomLayerApp = (
   const { getHelloCycleStation, getDocomoBikeShareStation } = reqCycleApi
   const { setCustomLayerGeojson, getCustomLayerGeojson } = customLayerState
   const {
-    trainStationLayer,
-    trainLineLayer,
-    helloCycleLayer,
-    docomoBikeShareLayer,
+    addTrainStationLayer,
+    addTrainLineLayer,
+    addHelloCycleLayer,
+    addDocomoBikeShareLayer,
     toggleCycleLayer,
   } = mapCustomerLayer
   const { toggleLayer } = mapLayer
@@ -55,7 +55,7 @@ const useCustomLayerApp = (
     const docomoBikeShareGeojson = getCustomLayerGeojson(
       DOCOMO_BIKE_SHARE_LAYER as keyof CustomLayerNameType
     )
-    docomoBikeShareLayer(docomoBikeShareGeojson)
+    addDocomoBikeShareLayer(docomoBikeShareGeojson)
   }
 
   /**
@@ -65,7 +65,7 @@ const useCustomLayerApp = (
     const helloCycleStation = await getHelloCycleStation()
     setCustomLayerGeojson(HELLO_CYCLE_LAYER as keyof CustomLayerNameType, helloCycleStation)
     const helloCycleGeojson = getCustomLayerGeojson(HELLO_CYCLE_LAYER as keyof CustomLayerNameType)
-    helloCycleLayer(helloCycleGeojson)
+    addHelloCycleLayer(helloCycleGeojson)
   }
 
   /**
@@ -75,7 +75,7 @@ const useCustomLayerApp = (
     const allTrainLine = await getAllTrainLine()
     setCustomLayerGeojson(TRAIN_LINE_LAYER as keyof CustomLayerNameType, allTrainLine)
     const trainLineGeojson = getCustomLayerGeojson(TRAIN_LINE_LAYER as keyof CustomLayerNameType)
-    trainLineLayer(trainLineGeojson)
+    addTrainLineLayer(trainLineGeojson)
   }
 
   /**
@@ -87,7 +87,7 @@ const useCustomLayerApp = (
     const trainStationGeojson = getCustomLayerGeojson(
       TRAIN_STATION_LAYER as keyof CustomLayerNameType
     )
-    trainStationLayer(trainStationGeojson)
+    addTrainStationLayer(trainStationGeojson)
   }
   /**
    * 駅・鉄道路線レイヤーをトグルする

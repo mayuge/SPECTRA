@@ -18,6 +18,7 @@ import {
   HELLO_CYCLE_LAYER,
   DOCOMO_BIKE_SHARE_LAYER,
 } from "@/domain/params/customLayerName"
+import { i } from "node_modules/vite/dist/node/chunks/moduleRunnerTransport"
 
 const useMapCustomLayer = (): IMapCustomLayer => {
   const mapInstance = useMapInstance() as IMapInstance
@@ -141,6 +142,9 @@ const useMapCustomLayer = (): IMapCustomLayer => {
     const map = mapInstance.getMapInstance()
     if (!map) return
 
+    // すでにレイヤーが存在する場合は何もしない（重複追加を防ぐ）
+    if (map.getLayer(layerId)) return
+
     const iconImage = new Image()
     iconImage.src = iconUrl
 
@@ -148,20 +152,29 @@ const useMapCustomLayer = (): IMapCustomLayer => {
       id: layerId,
       type: "custom",
       renderingMode: "2d",
-      onAdd: (map, gl) => {
+
+      onAdd: (map) => {
         const canvasElement = document.createElement("canvas")
+        canvasElement.id = layerId // ★ これがトグルに必須
         canvasElement.width = map.getCanvas().width
         canvasElement.height = map.getCanvas().height
         canvasElement.style.position = "absolute"
         canvasElement.style.top = "0"
         canvasElement.style.left = "0"
+        canvasElement.style.pointerEvents = "none" // ★ マップ操作を邪魔しない
         map.getCanvasContainer().appendChild(canvasElement)
 
         const canvasContext = canvasElement.getContext("2d")
         if (!canvasContext) return
 
+        const resizeCanvas = () => {
+          canvasElement.width = map.getCanvas().width
+          canvasElement.height = map.getCanvas().height
+        }
+
         const drawCanvas = () => {
-          // レイヤーが非表示の場合は描画しない
+          // レイヤー非表示なら描画しない
+          if (canvasElement.style.display === "none") return
 
           canvasContext.clearRect(0, 0, canvasElement.width, canvasElement.height)
 
@@ -170,45 +183,51 @@ const useMapCustomLayer = (): IMapCustomLayer => {
           const bounds = map.getBounds()
 
           geojson.features.forEach((feature) => {
+            //@ts-ignore
             const coordinates = feature.geometry.coordinates as [number, number]
             if (!bounds.contains(coordinates)) return
 
-            const properties = feature.properties ?? {}
-            const numberOfBikesAvailable = Number(properties.num_bikes_available ?? 0)
-            const numberOfDocksAvailable = Number(properties.num_docks_available ?? 0)
-            const totalNumberOfUnits = numberOfBikesAvailable + numberOfDocksAvailable
-            if (totalNumberOfUnits === 0) return
+            const props = feature.properties ?? {}
+            const bikes = Number(props.num_bikes_available ?? 0)
+            const docks = Number(props.num_docks_available ?? 0)
+            const total = bikes + docks
+            if (total === 0) {
+              return
+            }
 
-            const screenPosition = map.project(coordinates)
-            const radius = 15
+            const pos = map.project(coordinates)
+            const radius = 18
+            const iconSize = radius * 1.2
+            // 円グラフ
+            let startAngle = -Math.PI / 2
+            const segments = [bikes, docks]
+            const colors = ["#00ff00", "#808080"]
 
-            let startAngle = -0.5 * Math.PI
-            const segmentValues = [numberOfBikesAvailable, numberOfDocksAvailable]
-            const segmentColors = ["#00ff00", "#808080"]
-            segmentValues.forEach((segmentValue, index) => {
-              const endAngle = startAngle + (segmentValue / totalNumberOfUnits) * 2 * Math.PI
+            segments.forEach((value, i) => {
+              const endAngle = startAngle + (value / total) * Math.PI * 2
               canvasContext.beginPath()
-              canvasContext.moveTo(screenPosition.x, screenPosition.y)
-              canvasContext.arc(screenPosition.x, screenPosition.y, radius, startAngle, endAngle)
+              canvasContext.moveTo(pos.x, pos.y)
+              canvasContext.arc(pos.x, pos.y, radius, startAngle, endAngle)
               canvasContext.closePath()
-              canvasContext.fillStyle = segmentColors[index]
+              canvasContext.fillStyle = colors[i]
               canvasContext.fill()
               startAngle = endAngle
             })
 
+            // アイコン
             if (iconImage.complete) {
-              const iconSize = radius * 0.6
               canvasContext.drawImage(
                 iconImage,
-                screenPosition.x - iconSize,
-                screenPosition.y - iconSize,
-                iconSize * 2,
-                iconSize * 2
+                pos.x - iconSize / 2,
+                pos.y - iconSize / 2,
+                iconSize,
+                iconSize
               )
             }
           })
         }
 
+        // 画像読み込み後に描画
         iconImage.onload = () => {
           drawCanvas()
           map.triggerRepaint()
@@ -216,56 +235,55 @@ const useMapCustomLayer = (): IMapCustomLayer => {
 
         map.on("move", drawCanvas)
         map.on("moveend", drawCanvas)
+        map.on("resize", () => {
+          resizeCanvas()
+          drawCanvas()
+        })
       },
+
       render: () => {},
     }
 
     map.addLayer(canvasLayer)
   }
 
-  const helloCycleLayer = async (geojson: FeatureCollection) => {
-    createCycleCanvasLayer(HELLO_CYCLE_LAYER, geojson, "/image/cycle/yellowBike.webp", 13)
+  const addHelloCycleLayer = async (geojson: FeatureCollection) => {
+    createCycleCanvasLayer(HELLO_CYCLE_LAYER, geojson, "/image/cycle/yellowBike.webp")
     mapPopup.addHoverPopup(HELLO_CYCLE_LAYER)
   }
 
-  const docomoBikeShareLayer = async (geojson: FeatureCollection) => {
-    createCycleCanvasLayer(DOCOMO_BIKE_SHARE_LAYER, geojson, "/image/cycle/redBike.webp", 13)
+  const addDocomoBikeShareLayer = async (geojson: FeatureCollection) => {
+    createCycleCanvasLayer(DOCOMO_BIKE_SHARE_LAYER, geojson, "/image/cycle/redBike.webp")
     mapPopup.addHoverPopup(DOCOMO_BIKE_SHARE_LAYER)
   }
 
   const toggleCycleLayer = () => {
-    const { getMapInstance } = mapInstance as IMapInstance
-    const map = getMapInstance()
+    const map = mapInstance.getMapInstance()
     if (!map) return
     ;[HELLO_CYCLE_LAYER, DOCOMO_BIKE_SHARE_LAYER].forEach((layerId) => {
-      const layer = map.getLayer(layerId)
-      if (!layer) return
+      const canvasContainer = map.getCanvasContainer()
 
-      if (layer.type === "custom") {
-        // canvas 要素を取得して display を切り替え
-        const canvasContainer = map.getCanvasContainer()
-        const canvasElement = Array.from(canvasContainer.children).find(
-          (el) => (el as HTMLCanvasElement).id === layerId
-        ) as HTMLCanvasElement | undefined
+      // 追加した canvas を取得
+      const canvasElement = Array.from(canvasContainer.children).find(
+        (el) => (el as HTMLCanvasElement).id === layerId
+      ) as HTMLCanvasElement | undefined
 
-        if (canvasElement) {
-          canvasElement.style.display = canvasElement.style.display === "none" ? "block" : "none"
-          map.triggerRepaint()
-        }
-      } else {
-        // 通常の Mapbox/MapLibre レイヤー
-        const currentVisibility = map.getLayoutProperty(layerId, "visibility") ?? "visible"
-        const newVisibility = currentVisibility === "visible" ? "none" : "visible"
-        map.setLayoutProperty(layerId, "visibility", newVisibility)
-      }
+      if (!canvasElement) return
+
+      // display 切り替え
+      const isHidden = canvasElement.style.display === "none"
+      canvasElement.style.display = isHidden ? "block" : "none"
+
+      // 再描画
+      map.triggerRepaint()
     })
   }
 
   return {
-    trainStationLayer: addTrainStationLayer,
-    trainLineLayer: addTrainLineLayer,
-    helloCycleLayer,
-    docomoBikeShareLayer,
+    addTrainStationLayer,
+    addTrainLineLayer,
+    addHelloCycleLayer,
+    addDocomoBikeShareLayer,
     toggleCycleLayer,
   }
 }
