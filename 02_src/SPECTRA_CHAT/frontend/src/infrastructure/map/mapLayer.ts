@@ -1,8 +1,13 @@
 import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
 import type { FeatureCollection, Feature, Geometry } from "geojson"
-import bbox from "@turf/bbox"
+import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
+import type { IMapPopup } from "@/domain/interfaces/IMapPopup"
 
-type MapInstance = any // maplibre-gl.Map など、具体的型に置き換えてOK
+import maplibregl from "maplibre-gl"
+import useMapInstance from "@/infrastructure/map/mapInstance"
+
+import { bbox } from "@turf/turf"
+import useMapPopup from "./mapPopup"
 
 const useMapLayer = (): IMapLayer => {
   let layerCounter = 0
@@ -24,25 +29,33 @@ const useMapLayer = (): IMapLayer => {
     return colorMap.get(layerId)!
   }
 
-  const addLayer = (
-    map: MapInstance,
+  const waitForSource = (map: maplibregl.Map, sourceId: string) =>
+    new Promise<void>((resolve) => {
+      if (map.getSource(sourceId)) return resolve()
+      map.once("sourcedata", () => resolve())
+    })
+
+  const addLayer = async (
     layerId: string,
     featureCollection: FeatureCollection<Geometry>,
     type: "Point" | "LineString" | "Polygon",
     sharedColor: string
   ) => {
+    const { getMapInstance } = useMapInstance() as IMapInstance
+    const { addHoverPopup } = useMapPopup() as IMapPopup
+    const mapInstance = getMapInstance()
     const color = getLayerColor(layerId, sharedColor)
 
-    if (map.getSource(layerId)) {
-      ;(map.getSource(layerId) as any).setData(featureCollection)
+    if (mapInstance.getSource(layerId)) {
+      ;(mapInstance.getSource(layerId) as any).setData(featureCollection)
       return
     }
 
-    map.addSource(layerId, { type: "geojson", data: featureCollection })
-
+    mapInstance.addSource(layerId, { type: "geojson", data: featureCollection })
+    await waitForSource(mapInstance, layerId)
     switch (type) {
       case "Point":
-        map.addLayer({
+        mapInstance.addLayer({
           id: layerId,
           type: "circle",
           source: layerId,
@@ -57,7 +70,7 @@ const useMapLayer = (): IMapLayer => {
         })
         break
       case "LineString":
-        map.addLayer({
+        mapInstance.addLayer({
           id: layerId,
           type: "line",
           source: layerId,
@@ -70,7 +83,7 @@ const useMapLayer = (): IMapLayer => {
         })
         break
       case "Polygon":
-        map.addLayer({
+        mapInstance.addLayer({
           id: layerId,
           type: "fill",
           source: layerId,
@@ -83,12 +96,15 @@ const useMapLayer = (): IMapLayer => {
         })
         break
     }
+    addHoverPopup(layerId)
   }
 
-  const fitMapToGeoJson = (map: MapInstance, geoJsonData: FeatureCollection<Geometry>) => {
+  const fitMapToGeoJson = (geoJsonData: FeatureCollection<Geometry>) => {
     try {
       const [minX, minY, maxX, maxY] = bbox(geoJsonData)
-      map.fitBounds(
+      const { getMapInstance } = useMapInstance() as IMapInstance
+      const mapInstance = getMapInstance()
+      mapInstance.fitBounds(
         [
           [minX, minY],
           [maxX, maxY],
@@ -100,7 +116,7 @@ const useMapLayer = (): IMapLayer => {
     }
   }
 
-  const addGeoJsonLayer = (map: MapInstance, geoJsonData: FeatureCollection<Geometry>) => {
+  const addGeoJsonLayer = (geoJsonData: FeatureCollection<Geometry>) => {
     if (!geoJsonData?.features?.length) return
 
     const sharedColor = generateRandomColor()
@@ -120,7 +136,6 @@ const useMapLayer = (): IMapLayer => {
 
     if (points.length)
       addLayer(
-        map,
         generateLayerId(),
         { type: "FeatureCollection", features: points },
         "Point",
@@ -128,7 +143,6 @@ const useMapLayer = (): IMapLayer => {
       )
     if (lines.length)
       addLayer(
-        map,
         generateLayerId(),
         { type: "FeatureCollection", features: lines },
         "LineString",
@@ -136,7 +150,6 @@ const useMapLayer = (): IMapLayer => {
       )
     if (polygons.length)
       addLayer(
-        map,
         generateLayerId(),
         { type: "FeatureCollection", features: polygons },
         "Polygon",
@@ -144,13 +157,34 @@ const useMapLayer = (): IMapLayer => {
       )
 
     // bbox でズーム
-    fitMapToGeoJson(map, geoJsonData)
+    fitMapToGeoJson(geoJsonData)
   }
 
-  const toggleLayer = (map: MapInstance, layerId: string) => {
-    const visibility = map.getLayoutProperty(layerId, "visibility")
-    map.setLayoutProperty(layerId, "visibility", visibility === "visible" ? "none" : "visible")
+const toggleLayer = (layerId: string) => {
+  const { getMapInstance } = useMapInstance() as IMapInstance
+  const map = getMapInstance()
+  if (!map) return
+
+  const layer = map.getLayer(layerId)
+  if (!layer) return
+
+  // 通常レイヤーか Canvas カスタムレイヤーかを判定
+  const isCanvasLayer = layer.type === "custom" && typeof (layer as any).render === "function"
+
+  if (isCanvasLayer) {
+    // Canvas レイヤーの場合は visibility プロパティで制御する
+    const currentVisibility = map.getLayoutProperty(layerId, "visibility")
+    const newVisibility = currentVisibility === "visible" ? "none" : "visible"
+    map.setLayoutProperty(layerId, "visibility", newVisibility)
+    // Canvas レイヤーの再描画を強制
+    map.triggerRepaint()
+  } else {
+    // 通常の MapLibre レイヤー
+    const currentVisibility = map.getLayoutProperty(layerId, "visibility")
+    const newVisibility = currentVisibility === "visible" ? "none" : "visible"
+    map.setLayoutProperty(layerId, "visibility", newVisibility)
   }
+}
 
   return { addGeoJsonLayer, toggleLayer }
 }

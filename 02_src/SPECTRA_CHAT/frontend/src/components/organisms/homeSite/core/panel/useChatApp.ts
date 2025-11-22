@@ -1,21 +1,21 @@
 import type { IChatState } from "@/domain/interfaces/IChatState"
-import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
 import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
 
-const useChatApp = (chatState: IChatState, mapInstance: IMapInstance, mapLayer: IMapLayer) => {
+const useChatApp = (chatState: IChatState, mapLayer: IMapLayer) => {
   const { getChatMessageList } = chatState
-  const { getMapInstance } = mapInstance
   const { toggleLayer } = mapLayer
 
+  /**
+   * 連番のidからgeojsonレイヤーを特定し、トグルする
+   * @param index number
+   */
   const toggleResponseLayer = (index: number) => {
-    const map = getMapInstance()
     const layerId = `geojson-layer-${index}`
-    console.log("toggle", layerId, "map ready?", !!map, "has layer?", map?.getLayer(layerId))
-    toggleLayer(map, layerId)
+    toggleLayer(layerId)
   }
 
   /**
-   * response の通し番号を返す純粋関数
+   * response の通し番号を取得
    * @param index number
    */
   const getResponseIndex = (index: number): number => {

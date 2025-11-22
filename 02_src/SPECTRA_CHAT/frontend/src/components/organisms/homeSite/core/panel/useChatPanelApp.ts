@@ -17,17 +17,25 @@ const useChatPanelApp = (
   chatState: IChatState,
   geojsonState: IGeojsonState
 ) => {
-  const { getDialogState, toggleDialogState } = dialogState
+  const { getDialogState, setDialogState, toggleDialogState } = dialogState
   const { sendChatMessage } = reqChatApi
   const { addGeoJsonLayer } = mapLayer
   const { getMapInstance } = mapInstance
   const { addChatMessage } = chatState
   const { setGeojson, getLastGeojson } = geojsonState
+
   /**
-   * メインパネルの開閉状態
+   * メインパネルの開閉状態取得
    */
   const getMainPanelOpen = () => {
     return getDialogState("mainPanel" as keyof DialogNameType)
+  }
+
+  /**
+   * メインパネルを開く
+   */
+  const openMainPanel = () => {
+    setDialogState("mainPanel" as keyof DialogNameType, true)
   }
 
   /**
@@ -38,7 +46,8 @@ const useChatPanelApp = (
   }
 
   /**
-   * プルタブのアイコン
+   * プルタブのアイコンを取得
+   * @returns "arrow_left" | "arrow_right"
    */
   const getPullTabIcon = () => {
     return getDialogState("mainPanel" as keyof DialogNameType) ? "arrow_left" : "arrow_right"
@@ -46,14 +55,52 @@ const useChatPanelApp = (
 
   /**
    * 送信ボタン押下
+   * @param inputValue string
    */
   const submitButtonClicked = async (inputValue: string) => {
+    // ✅ 空文字の時は何もしない
+    if (!inputValue.trim()) return
+
+    // ✅ 特定の危険文字のみ禁止
+    const invalidCharPattern = /[\u0000-\u001F\u007F\uFEFF'"<>!\/\\;|&`$%^@]/u
+
+    if (invalidCharPattern.test(inputValue)) {
+      const chatMessage: ChatType = {
+        type: "request",
+        message: inputValue,
+        isdata: false,
+      }
+      addChatMessage(chatMessage)
+      const errorMessage: ChatType = {
+        type: "error",
+        message: "使用できない記号（BOM・クォーテーション・< > ! / など）が含まれています。",
+        isdata: false,
+      }
+      addChatMessage(errorMessage)
+      return
+    }
+
+    // ✅ 文字数制限（例：最大255文字）
+    if (inputValue.length > 255) {
+      const errorMessage: ChatType = {
+        type: "error",
+        message: "メッセージが長すぎます。255文字以内で入力してください。",
+        isdata: false,
+      }
+      addChatMessage(errorMessage)
+      return
+    }
+
+    // メッセージ送信後にメインパネルを開く
+    openMainPanel()
+
     const requestMessage: ChatType = {
       type: "request",
       message: inputValue,
       isdata: false,
     }
 
+    //requestタイプのチャットをストアに追加
     addChatMessage(requestMessage)
 
     try {
@@ -68,13 +115,10 @@ const useChatPanelApp = (
         geojson = { type: "FeatureCollection", features: [chatGeojson as Feature] }
       }
 
+      //結果をgeojsonStoreに格納
       setGeojson(geojson)
 
-      const map = getMapInstance()
-
-      if (map && map.loaded()) {
-        addGeoJsonLayer(map, getLastGeojson())
-      }
+      addGeoJsonLayer(getLastGeojson())
 
       const responseMessage: ChatType = {
         type: "response",
@@ -82,9 +126,12 @@ const useChatPanelApp = (
         isdata: true,
       }
 
+      //responseタイプのチャットをストアに追加
       addChatMessage(responseMessage)
     } catch (error) {
       const errorMessage: ChatType = { type: "error", message: error, isdata: false }
+
+      //エラー発生時、errorタイプのチャットをストアに追加
       addChatMessage(errorMessage)
     }
   }

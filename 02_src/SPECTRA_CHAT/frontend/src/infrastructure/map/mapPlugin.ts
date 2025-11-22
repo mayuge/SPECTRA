@@ -1,4 +1,4 @@
-import maplibregl, { Map } from "maplibre-gl"
+import maplibregl from "maplibre-gl"
 import "maplibre-gl/dist/maplibre-gl.css"
 import { Protocol } from "pmtiles"
 import {
@@ -10,17 +10,26 @@ import {
 } from "@watergis/maplibre-gl-export"
 import "@watergis/maplibre-gl-export/dist/maplibre-gl-export.css"
 import type { IMapPlugin } from "@/domain/interfaces/IMapPlugin"
+import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
+import useMapInstance from "@/infrastructure/map/mapInstance"
 
 const useMapPlugin = (): IMapPlugin => {
-  const compassPlugin = (map: Map) => {
-    map.addControl(
-      new maplibregl.NavigationControl({ showCompass: true, showZoom: true }),
+  const { getMapInstance } = useMapInstance() as IMapInstance
+  const mapInstance = getMapInstance()
+
+  const compassPlugin = () => {
+    mapInstance.addControl(
+      new maplibregl.NavigationControl({
+        showCompass: true,
+        showZoom: false,
+        visualizePitch: true,
+      }),
       "top-right"
     )
   }
 
-  const locatePlugin = (map: Map) => {
-    map.addControl(
+  const locatePlugin = () => {
+    mapInstance.addControl(
       new maplibregl.GeolocateControl({
         positionOptions: { enableHighAccuracy: true },
         trackUserLocation: true,
@@ -29,15 +38,18 @@ const useMapPlugin = (): IMapPlugin => {
     )
   }
 
-  const scalePlugin = (map: Map) => {
-    map.addControl(new maplibregl.ScaleControl({ maxWidth: 200, unit: "metric" }), "bottom-right")
+  const scalePlugin = () => {
+    mapInstance.addControl(
+      new maplibregl.ScaleControl({ maxWidth: 200, unit: "metric" }),
+      "bottom-right"
+    )
   }
 
-  const fullscreenPlugin = (map: Map) => {
-    map.addControl(new maplibregl.FullscreenControl(), "top-right")
+  const fullscreenPlugin = () => {
+    mapInstance.addControl(new maplibregl.FullscreenControl(), "top-right")
   }
 
-  const imgExportPlugin = (map: Map) => {
+  const imgExportPlugin = () => {
     const exportControl = new MaplibreExportControl({
       PageSize: Size.A4,
       PageOrientation: PageOrientation.Landscape,
@@ -49,11 +61,12 @@ const useMapPlugin = (): IMapPlugin => {
       attributionOptions: { visibility: "none" },
       northIconOptions: { visibility: "none" },
     })
-    map.addControl(exportControl, "top-right")
+    //@ts-ignore
+    mapInstance.addControl(exportControl, "top-right")
   }
 
-  const terrainPlugin = (map: Map) => {
-    map.addControl(
+  const terrainPlugin = () => {
+    mapInstance.addControl(
       new maplibregl.TerrainControl({ source: "terrain", exaggeration: 1.0 }),
       "top-right"
     )
@@ -64,13 +77,13 @@ const useMapPlugin = (): IMapPlugin => {
     maplibregl.addProtocol("pmtiles", protocol.tile)
   }
 
-  const setAllPlugins = (map: Map) => {
-    compassPlugin(map)
-    scalePlugin(map)
-    locatePlugin(map)
-    fullscreenPlugin(map)
-    imgExportPlugin(map)
-    terrainPlugin(map)
+  const setAllPlugins = () => {
+    scalePlugin()
+    fullscreenPlugin()
+    imgExportPlugin()
+    terrainPlugin()
+    locatePlugin()
+    compassPlugin()
     pmtilesPlugin()
   }
   return {

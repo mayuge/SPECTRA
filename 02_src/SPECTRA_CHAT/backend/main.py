@@ -5,7 +5,9 @@ import os
 import asyncpg
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.gzip import GZipMiddleware
 from fastapi_mcp import FastApiMCP
+
 
 from controller.chat.chat_controller import router as chat_router
 from controller.train.train_controller import router as train_router
@@ -18,11 +20,13 @@ from controller.landprice.landprice_controller import router as landprice_router
 
 app = FastAPI()
 
+# GZipミドルウェア設定
+app.add_middleware(GZipMiddleware, minimum_size=500)
 # CORS設定
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # 本番は適切に制限してください
-    allow_credentials=True,
+    # allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )

@@ -5,6 +5,7 @@
 @theme {
   --font-noto: "Noto Sans JP", sans-serif;
   --font-oswald: "Oswald", sans-serif;
+  --size-screen: 100dvh;
 
   --color-primary: #c0f354;
   --color-secondary: #8843e1;
@@ -42,6 +43,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
+.maplibregl-popup-content {
+  padding: 12px;
+}
+
 .maplibregl-ctrl-top-right {
   top: 64px !important;
   width: 200px;
@@ -50,16 +55,16 @@
 .maplibregl-ctrl-group {
   background: transparent !important;
   box-shadow: none !important;
-} /* ★ アイコンのサイズと表示を正しく設定 */
+}
 .maplibregl-ctrl-geolocate .maplibregl-ctrl-icon,
 .maplibregl-ctrl-fullscreen .maplibregl-ctrl-icon,
 .maplibregl-ctrl-zoom-in .maplibregl-ctrl-icon,
 .maplibregl-ctrl-zoom-out .maplibregl-ctrl-icon,
 .maplibregl-ctrl-compass .maplibregl-ctrl-icon {
-  background-size: 40px 40px !important; /* ★ これが重要！ */
+  background-size: 40px 40px !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
-} /* ジオロケーションコントロールのボタン */
+}
 .maplibregl-ctrl-geolocate,
 .maplibregl-export-control,
 .maplibregl-ctrl-fullscreen,
@@ -95,7 +100,7 @@
   transition: all 0.2s ease !important;
 }
 .maplibregl-ctrl-compass {
-  border-radius: 0 0 50% 50% !important;
+  border-radius: 50% !important;
   width: 40px !important;
   height: 40px !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
