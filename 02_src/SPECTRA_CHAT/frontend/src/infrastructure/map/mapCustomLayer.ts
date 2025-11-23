@@ -18,15 +18,14 @@ import {
   HELLO_CYCLE_LAYER,
   DOCOMO_BIKE_SHARE_LAYER,
 } from "@/domain/params/customLayerName"
-import { i } from "node_modules/vite/dist/node/chunks/moduleRunnerTransport"
 
 const useMapCustomLayer = (): IMapCustomLayer => {
   const mapInstance = useMapInstance() as IMapInstance
   const mapPopup = useMapPopup() as IMapPopup
 
-  const loadCompanyIcons = async (map: maplibregl.Map) => {
+  const loadCompanyIcons = async (map: maplibregl.Map) => { 
     const promises = Object.entries(trainParams).map(async ([companyName, companyData]) => {
-      const iconPath = (companyData as any).path ?? "default"
+      const iconPath = (companyData as any).path ?? "trainLogo"
       const iconId = `${companyName}-icon`
       const iconUrl = `/image/companyLogo/${iconPath}.webp`
 
