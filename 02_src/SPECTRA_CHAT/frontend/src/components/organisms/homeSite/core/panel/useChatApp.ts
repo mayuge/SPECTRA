@@ -1,6 +1,10 @@
 import type { IChatState } from "@/domain/interfaces/IChatState"
 import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
 
+/**
+ * チャットアプリ全体を管理するコアロジック
+ * @source
+ */
 const useChatApp = (chatState: IChatState, mapLayer: IMapLayer) => {
   const { getChatMessageList } = chatState
   const { toggleLayer } = mapLayer

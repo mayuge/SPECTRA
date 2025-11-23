@@ -9,6 +9,10 @@ import useMapInstance from "@/infrastructure/map/mapInstance"
 import { bbox } from "@turf/turf"
 import useMapPopup from "./mapPopup"
 
+/**
+ * 地図レイヤー管理のインフラストラクチャ
+ * @returns レイヤー管理関数
+ */
 const useMapLayer = (): IMapLayer => {
   let layerCounter = 0
   const colorMap = new Map<string, string>() // layerId → color

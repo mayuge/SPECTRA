@@ -9,10 +9,14 @@ import type { DialogNameType } from "@/domain/types/dialogNameType"
 import type { ChatType } from "@/domain/types/chatType"
 import type { Feature, FeatureCollection } from "geojson"
 
+/**
+ * チャットパネル内を管理するコアロジック
+ * @source
+ */
+
 const useChatPanelApp = (
   dialogState: IDialogState,
   reqChatApi: IReqChatApi,
-  mapInstance: IMapInstance,
   mapLayer: IMapLayer,
   chatState: IChatState,
   geojsonState: IGeojsonState
@@ -20,7 +24,6 @@ const useChatPanelApp = (
   const { getDialogState, setDialogState, toggleDialogState } = dialogState
   const { sendChatMessage } = reqChatApi
   const { addGeoJsonLayer } = mapLayer
-  const { getMapInstance } = mapInstance
   const { addChatMessage } = chatState
   const { setGeojson, getLastGeojson } = geojsonState
 

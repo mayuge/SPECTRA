@@ -120,7 +120,10 @@ const useMapPopup = (): IMapPopup => {
           ></iframe>
           <div class="flex items-center gap-2 mt-2">
             <div class="h-14 w-2 rounded-full" style="background-color:${lineColor}"></div>
-            <img class="w-6 h-6" src="/image/companyLogo/${companyLogoPath}.webp" />
+            <img class="w-6 h-6" 
+            src="/image/companyLogo/${companyLogoPath}.webp" 
+            onerror="this.onerror=null; this.src='/image/companyLogo/trainLogo.webp';" 
+            />
             <div class="flex flex-col leading-tight">
               <div class="font-bold text-base">${stationName}</div>
               <div class="text-xs text-gray-500">${companyName} ${lineName}</div>
@@ -169,7 +172,10 @@ const useMapPopup = (): IMapPopup => {
           `
           <div class="flex items-center gap-2 mt-2">
             <div class="h-14 w-2 rounded-full" style="background-color:${lineColor}"></div>
-            <img class="w-6 h-6" src="/image/companyLogo/${companyLogoPath}.webp" />
+            <img class="w-6 h-6"
+              src="/image/companyLogo/${companyLogoPath}.webp"
+              onerror="this.onerror=null; this.src='/image/companyLogo/trainLogo.webp';" 
+            />
             <div class="flex flex-col leading-tight">
               <div class="font-bold text-base">${lineName}</div>
               <div class="text-xs text-gray-500">${companyName} ${lineName}</div>

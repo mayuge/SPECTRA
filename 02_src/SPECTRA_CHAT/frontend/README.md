@@ -2,19 +2,31 @@
 
 ## 主な使用技術/プラグイン
 
+### フロントエンド
+
 <p>
-    <img src="https://img.shields.io/badge/-pnpm-F69220.svg?logo=pnpm&style=flat">
-    <img src="https://img.shields.io/badge/-prettier-F7B93E.svg?logo=prettier&style=flat">
     <img src="https://img.shields.io/badge/-TypeScript-007ACC.svg?logo=typescript&style=flat">
     <img src="https://img.shields.io/badge/-Vue-4FC08D.svg?logo=vuedotjs&style=flat">
     <img src="https://img.shields.io/badge/-tailwindCSS-06B6D4.svg?logo=tailwindcss&style=flat">
     <img src="https://img.shields.io/badge/-Maplibre-396CB2.svg?logo=maplibre&style=flat">
     <img src="https://img.shields.io/badge/-axios-5A29E4.svg?logo=axios&style=flat">
     <img src="https://img.shields.io/badge/-pinia-FFD859.svg?logo=pinia&style=flat">
-    <img src="https://img.shields.io/badge/-uv-DE5FE9.svg?logo=uv&style=flat">
+</p>
+
+### バックエンド
+
+<p>
     <img src="https://img.shields.io/badge/-FastAPI-009688.svg?logo=fastapi&style=flat">
     <img src="https://img.shields.io/badge/-PostGIS-4169E1.svg?logo=postgresql&style=flat">
     <img src="https://img.shields.io/badge/-Google Gemini-8E75B2.svg?logo=googlegemini&style=flat">
+</p>
+
+### その他プラグイン
+
+<p>
+    <img src="https://img.shields.io/badge/-pnpm-F69220.svg?logo=pnpm&style=flat">
+    <img src="https://img.shields.io/badge/-prettier-F7B93E.svg?logo=prettier&style=flat">
+    <img src="https://img.shields.io/badge/-uv-DE5FE9.svg?logo=uv&style=flat">
 </p>
 
 ## 環境構築
@@ -215,7 +227,6 @@ flowchart TD
 
 - 基本的にはフロントエンドと同じ。
 - ruff コマンドを使ってインデントを修正できる
-- backend は、[`http://localhost:4000/docs`](http://localhost:4000/docs)にてアクセスを swagger で検証できる
 
 ```mermaid
 flowchart TD

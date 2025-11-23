@@ -12,6 +12,10 @@ import {
 import { BUTTON_DARK, BUTTON_LIGHT } from "@/domain/params/atoms"
 import type { ButtonVariantType } from "@/domain/types/atomsType"
 
+/**
+ * カスタムレイヤーを管理するコアロジック
+ * @source
+ */
 const useCustomLayerApp = (
   reqTrainApi: IReqTrainApi,
   reqCycleApi: IReqCycleApi,

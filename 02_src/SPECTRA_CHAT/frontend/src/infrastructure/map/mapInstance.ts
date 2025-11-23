@@ -6,6 +6,10 @@ import { ref } from "vue"
 
 const mapInstance = ref<Map | null>(null)
 
+/**
+ * 地図インスタンス管理のインフラストラクチャ
+ * @returns
+ */
 const useMapInstance = (): IMapInstance => {
   const getMapInstance = () => {
     if (mapInstance.value) {

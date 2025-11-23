@@ -1,18 +1,29 @@
 {
   "$schema": "https://typedoc.org/schema.json",
 
-  "entryPoints": ["src/**/*.ts"],
+  "entryPoints": ["src"],
 
   "entryPointStrategy": "expand",
-
+  "tsconfig": "tsconfig.json",
   "exclude": ["**/*.vue"],
   "readme": "README.md",
+  "projectDocuments": ["./*.md"],
   "excludeExternals": true,
   "excludePrivate": true,
   "excludeProtected": true,
 
-  "tsconfig": "./tsconfig.json",
   "skipErrorChecking": true,
-  "plugin": ["typedoc-plugin-rename-defaults"],
+  "plugin": ["typedoc-plugin-rename-defaults", "typedoc-plugin-inline-sources"],
+  "blockTags": [
+    "@returns",
+    "@return",
+    "@param",
+    "@typeParam",
+    "@see",
+    "@example",
+    "@remarks",
+    "@source"
+  ],
+  "highlightLanguages": ["typescript", "javascript", "json", "bash"],
   "out": "typedoc"
 }

@@ -1,0 +1,207 @@
+<!DOCTYPE html><html class="default" lang="en" data-base="../"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>README | spectra-chat</title><meta name="description" content="Documentation for spectra-chat"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><a href="../index.html" class="title">spectra-chat</a><div id="tsd-toolbar-links"></div><button id="tsd-search-trigger" class="tsd-widget" aria-label="Search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-search"></use></svg></button><dialog id="tsd-search" aria-label="Search"><input role="combobox" id="tsd-search-input" aria-controls="tsd-search-results" aria-autocomplete="list" aria-expanded="true" autocapitalize="off" autocomplete="off" placeholder="Search the docs" maxLength="100"/><ul role="listbox" id="tsd-search-results"></ul><div id="tsd-search-status" aria-live="polite" aria-atomic="true"><div>Preparing search index...</div></div></dialog><a href="#" class="tsd-widget menu" id="tsd-toolbar-menu-trigger" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-menu"></use></svg></a></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><ul class="tsd-breadcrumb" aria-label="Breadcrumb"><li><a href="" aria-current="page">README</a></li></ul></div><div class="tsd-panel tsd-typography"><img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=SPECTRA%20CHAT&fontSize=90&animation=fadeIn&fontAlignY=38&descAlignY=51&descAlign=62"/>
+<h2 id="主な使用技術プラグイン" class="tsd-anchor-link">主な使用技術/プラグイン<a href="#主な使用技術プラグイン" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2><h3 id="フロントエンド" class="tsd-anchor-link">フロントエンド<a href="#フロントエンド" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>
+    <img src="https://img.shields.io/badge/-TypeScript-007ACC.svg?logo=typescript&style=flat">
+    <img src="https://img.shields.io/badge/-Vue-4FC08D.svg?logo=vuedotjs&style=flat">
+    <img src="https://img.shields.io/badge/-tailwindCSS-06B6D4.svg?logo=tailwindcss&style=flat">
+    <img src="https://img.shields.io/badge/-Maplibre-396CB2.svg?logo=maplibre&style=flat">
+    <img src="https://img.shields.io/badge/-axios-5A29E4.svg?logo=axios&style=flat">
+    <img src="https://img.shields.io/badge/-pinia-FFD859.svg?logo=pinia&style=flat">
+</p>
+<h3 id="バックエンド" class="tsd-anchor-link">バックエンド<a href="#バックエンド" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>
+    <img src="https://img.shields.io/badge/-FastAPI-009688.svg?logo=fastapi&style=flat">
+    <img src="https://img.shields.io/badge/-PostGIS-4169E1.svg?logo=postgresql&style=flat">
+    <img src="https://img.shields.io/badge/-Google Gemini-8E75B2.svg?logo=googlegemini&style=flat">
+</p>
+<h3 id="その他プラグイン" class="tsd-anchor-link">その他プラグイン<a href="#その他プラグイン" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>
+    <img src="https://img.shields.io/badge/-pnpm-F69220.svg?logo=pnpm&style=flat">
+    <img src="https://img.shields.io/badge/-prettier-F7B93E.svg?logo=prettier&style=flat">
+    <img src="https://img.shields.io/badge/-uv-DE5FE9.svg?logo=uv&style=flat">
+</p>
+<h2 id="環境構築" class="tsd-anchor-link">環境構築<a href="#環境構築" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li>
+<h3 id="docker-環境を準備" class="tsd-anchor-link">docker 環境を準備<a href="#docker-環境を準備" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p><a href="https://www.docker.com/get-started/">docker 公式スタートガイドページ</a></p>
+</li>
+<li>
+<h3 id="node-環境を準備" class="tsd-anchor-link">node 環境を準備<a href="#node-環境を準備" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul>
+<li>node のバージョン管理は <a href="https://docs.volta.sh/guide/getting-started">volta</a> がおすすめ。指定バージョンの node 環境、パッケージマネージャーを用意してください</li>
+</ul>
+<pre><code><span class="hl-0">node</span><span class="hl-1"> </span><span class="hl-0">v22</span><span class="hl-1">.</span><span class="hl-2">21.0</span>
+</code><button>Copy</button></pre>
+
+<pre><code><span class="hl-0">pnpm</span><span class="hl-1"> </span><span class="hl-0">v10</span><span class="hl-1">.</span><span class="hl-2">22.0</span>
+</code><button>Copy</button></pre>
+
+<ul>
+<li>ビルドする際、ファイルの大文字小文字の区別をしっかりと管理しないと表示されない場合があるので注意してください</li>
+</ul>
+</li>
+<li>
+<h3 id="初期データ取得" class="tsd-anchor-link">初期データ取得<a href="#初期データ取得" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p><a href="https://drive.google.com/drive/folders/1ASBWmogy64pGH4hvqwTM9xYL0mg-w1hO">こちら</a>から取得したものを<code>02_src\SPECTRA_CHAT\migration</code>に配置</p>
+</li>
+<li>
+<h3 id="env-ファイル追加" class="tsd-anchor-link">env ファイル追加<a href="#env-ファイル追加" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul>
+<li>02_src\SPECTRA_CHAT\backend 直下に<code>.env</code>ファイルを追加。このとき、.env ファイルの形式は、<code>env.txt</code>を参考にすること。</li>
+</ul>
+<pre><code><span class="hl-3">//.envの例</span><br/><span class="hl-4">GEMINI_API_KEY</span><span class="hl-1">=</span><span class="hl-4">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span>
+</code><button>Copy</button></pre>
+
+</li>
+<li>
+<h3 id="アプリケーションを立ち上げる方法" class="tsd-anchor-link">アプリケーションを立ち上げる方法<a href="#アプリケーションを立ち上げる方法" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul>
+<li>02_src\SPECTRA_CHAT に移動</li>
+</ul>
+<pre><code><span class="hl-0">docker</span><span class="hl-1"> </span><span class="hl-0">compose</span><span class="hl-1"> </span><span class="hl-0">up</span><span class="hl-1"> --</span><span class="hl-0">build</span>
+</code><button>Copy</button></pre>
+
+<pre><code><span class="hl-0">python</span><span class="hl-1"> </span><span class="hl-0">pipeline</span><span class="hl-1">.</span><span class="hl-0">py</span>
+</code><button>Copy</button></pre>
+
+<ul>
+<li>02_src\SPECTRA_CHAT\frontend に移動</li>
+</ul>
+<pre><code><span class="hl-3">//package.jsonの中身を適用</span><br/><span class="hl-0">pnpm</span><span class="hl-1"> </span><span class="hl-0">install</span>
+</code><button>Copy</button></pre>
+
+<pre><code><span class="hl-3">//開発サーバーを立ち上げ</span><br/><span class="hl-1"> </span><span class="hl-0">pnpm</span><span class="hl-1"> </span><span class="hl-0">run</span><span class="hl-1"> </span><span class="hl-0">dev</span>
+</code><button>Copy</button></pre>
+
+<pre><code><span class="hl-3">//ローカルネットワーク経由で開発サーバーを確認できます。フロント側の`.env`ファイルを`localhost`から一時的に変更してください。</span><br/><span class="hl-0">pnpm</span><span class="hl-1"> </span><span class="hl-0">run</span><span class="hl-1"> </span><span class="hl-0">dev</span><span class="hl-1"> --</span><span class="hl-0">host</span>
+</code><button>Copy</button></pre>
+
+<p><a href="http://localhost:3000/"><code>http://localhost:3000/</code></a>をブラウザで開く</p>
+</li>
+</ul>
+<h2 id="ディレクトリ構成" class="tsd-anchor-link">ディレクトリ構成<a href="#ディレクトリ構成" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2><pre><code><span class="hl-1">.</span><br/><span class="hl-1">├── 01</span><span class="hl-0">_docs</span><span class="hl-1"> </span><span class="hl-3">//主に資料をここに置く</span><br/><span class="hl-1">├── 02</span><span class="hl-0">_src</span><span class="hl-1">　</span><span class="hl-3">//本番プロジェクトをここに置く</span><br/><span class="hl-1">│   └── </span><span class="hl-4">SPECTRA_CHAT</span><span class="hl-1"> </span><span class="hl-3">//アプリケーションディレクトリ</span><br/><span class="hl-1">│       ├── </span><span class="hl-0">frontend</span><br/><span class="hl-1">│       │   ├── </span><span class="hl-0">src</span><br/><span class="hl-1">│       │   │   ├── </span><span class="hl-0">components</span><br/><span class="hl-1">│       │   │   │   ├── </span><span class="hl-0">atoms</span><span class="hl-1"> </span><span class="hl-3">//最小単位のUIコンポーネント　htmlのタグと対応　どのページでも使い回す</span><br/><span class="hl-1">│       │   │   │   ├── </span><span class="hl-0">molecules</span><span class="hl-1"> </span><span class="hl-3">//atomsを組み合わせたもの　どのページでも使い回す</span><br/><span class="hl-1">│       │   │   │   ├── </span><span class="hl-0">organisms</span><span class="hl-1">　</span><span class="hl-3">// ページ単位でに管理するUIコンポーネント</span><br/><span class="hl-1">│       │   │   │   │   └── </span><span class="hl-0">homeSite</span><span class="hl-1"> </span><span class="hl-3">//　【ページ名】Site</span><br/><span class="hl-1">│       │   │   │   │       ├── </span><span class="hl-0">__tests__</span><span class="hl-1"> </span><span class="hl-3">//テストコード格納フォルダ use【機能名】App.test.ts</span><br/><span class="hl-1">│       │   │   │   │       ├── </span><span class="hl-0">core</span><span class="hl-1">　</span><span class="hl-3">//usecase アプリケーションロジック　use【機能名】App.ts</span><br/><span class="hl-1">│       │   │   │   │       └── </span><span class="hl-0">ui</span><span class="hl-1"> </span><span class="hl-3">//ロジック(機能)と接続するUI　【ページ名】SiteMain.vue、【機能名】App.vue</span><br/><span class="hl-1">│       │   │   │   └── </span><span class="hl-0">templates</span><span class="hl-1">　</span><span class="hl-3">//ロジック接続後のUI　基本的にページを表示するだけ 【ページ名】</span><br/><span class="hl-1">│       │   │   ├── </span><span class="hl-0">domain</span><br/><span class="hl-1">│       │   │   │   ├── </span><span class="hl-0">interfaces</span><span class="hl-1">　</span><span class="hl-3">// インターフェイスをまとめて保存</span><br/><span class="hl-1">│       │   │   │   ├── </span><span class="hl-0">types</span><span class="hl-1">　</span><span class="hl-3">//型をまとめて保存</span><br/><span class="hl-1">│       │   │   │   └── </span><span class="hl-0">params</span><span class="hl-1"> </span><span class="hl-3">//固定値をまとめて保存</span><br/><span class="hl-1">│       │   │   ├── </span><span class="hl-0">infrastructure</span><br/><span class="hl-1">│       │   │   │   └── </span><span class="hl-0">stores</span><span class="hl-1"> </span><span class="hl-3">//状態管理ストア</span><br/><span class="hl-1">│       │   │   ├── </span><span class="hl-0">App</span><span class="hl-1">.</span><span class="hl-0">vue</span><span class="hl-1"> </span><span class="hl-3">// UIのエントリポイント　AtomicDesignのPagesにあたる</span><br/><span class="hl-1">│       │   │   ├── </span><span class="hl-0">main</span><span class="hl-1">.</span><span class="hl-0">ts</span><span class="hl-1">　</span><span class="hl-3">//ロジックのエントリポイント</span><br/><span class="hl-1">│       │   │   └── </span><span class="hl-0">style</span><span class="hl-1">.</span><span class="hl-0">css</span><span class="hl-1"> </span><span class="hl-3">//CSSのエントリポイント</span><br/><span class="hl-1">│       │   ├── </span><span class="hl-0">public</span><span class="hl-1"> </span><span class="hl-3">//画像、アイコン、素材を置く</span><br/><span class="hl-1">│       │   └── </span><span class="hl-0">package</span><span class="hl-1">.</span><span class="hl-0">json</span><span class="hl-1"> </span><span class="hl-3">//フロントエンドで使用しているライブラリの管理を行う</span><br/><span class="hl-1">│       ├── </span><span class="hl-0">backend</span><br/><span class="hl-1">│       │   ├── </span><span class="hl-0">main</span><span class="hl-1">.</span><span class="hl-0">py</span><span class="hl-1"> </span><span class="hl-3">//エントリポイント</span><br/><span class="hl-1">│       │   ├── </span><span class="hl-0">controller</span><span class="hl-1"> </span><span class="hl-3">//httpのエンドポイント兼MCP</span><br/><span class="hl-1">│       │   ├── </span><span class="hl-0">infrastructure</span><span class="hl-1">　</span><span class="hl-3">//外部ライブラリを使用したロジックを隔離</span><br/><span class="hl-1">│       │   └── </span><span class="hl-0">domain</span><span class="hl-1"> </span><span class="hl-3">//抽象基底クラスを保管</span><br/><span class="hl-1">│       ├── </span><span class="hl-0">migration</span><span class="hl-1"> </span><span class="hl-3">//DBに初期投入するデータを保管</span><br/><span class="hl-1">│       ├── </span><span class="hl-0">pipeline</span><span class="hl-1">.</span><span class="hl-0">py</span><span class="hl-1"> </span><span class="hl-3">//DBに初期投入するスクリプト</span><br/><span class="hl-1">│       └── </span><span class="hl-0">compose</span><span class="hl-1">.</span><span class="hl-0">yaml</span><span class="hl-1"> </span><span class="hl-3">//アプリケーション全体のエントリポイント</span><br/><span class="hl-1">└── 03</span><span class="hl-0">_prototype</span><span class="hl-1">　</span><span class="hl-3">//プロトタイププロジェクトをここに置く</span>
+</code><button>Copy</button></pre>
+
+<h2 id="アプリケーション全体のアーキテクチャ" class="tsd-anchor-link">アプリケーション全体のアーキテクチャ<a href="#アプリケーション全体のアーキテクチャ" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li>モノリシックなソフトウェア構成</li>
+<li>Docker コンテナごとに分けて実装</li>
+<li>要素間は port 番号を指定して通信する</li>
+<li>backend は、<a href="http://localhost:4000/docs"><code>http://localhost:4000/docs</code></a>にてアクセスを swagger で検証できる</li>
+</ul>
+<pre><code class="mermaid">flowchart TD
+compose[エントリーポイント <br>compose.yaml]
+frontend[frontendコンテナ Vue <br>port3000]
+backend[backendコンテナ FastAPI <br>port4000]
+postgis[postGISコンテナ（DB） PostGIS <br>port5432]
+pipeline[pipeline.py <br>postGISにmigrationフォルダ内データを一括投入するスクリプト]
+
+compose --> frontend
+compose --> backend
+compose --> postgis
+pipeline --> postgis
+</code><button type="button">Copy</button></pre>
+
+<h2 id="フロントエンドのアーキテクチャ" class="tsd-anchor-link">フロントエンドのアーキテクチャ<a href="#フロントエンドのアーキテクチャ" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li>DI(依存性の注入)によって、依存性逆転の原則を保つ</li>
+<li>usecase（純粋な内部ロジック）と infrastructure（外部ロジック）がインターフェースを介してやり取りを行うことで、内部ロジックをクリーンに保つことができる。</li>
+<li>コメントは TSDOC 方式を推奨</li>
+<li>テストコードには vitest を用いる</li>
+<li>インデントには prettier を、ビルドチェックに eslint を用いる</li>
+</ul>
+<pre><code class="mermaid">flowchart TD
+
+    %% --- 層の定義 ---
+    subgraph UI層["UI（プレゼンテーション層）"]
+        UI["コンポーネント / ページ"]
+    end
+
+    subgraph Usecase層["Usecase（アプリケーション層）"]
+        Usecase["ビジネスロジック / ユースケース"]
+    end
+
+    subgraph Domain層["Domain（ドメイン層 / interface定義）"]
+        Domain["IMapInstance / IDialogStateStore など"]
+    end
+
+    subgraph Infrastructure層["Infrastructure（インフラ層）"]
+        Infrastructure["地図ライブラリ / HTTP通信 / 状態管理（Pinia）など"]
+    end
+
+    %% --- 関係性の定義 ---
+    UI -->|引数にインターフェースをいれて、DIを行う| Usecase
+    Usecase -->|インターフェースに依存| Domain
+    Infrastructure -->|インターフェースを実装| Domain
+    UI ---|ユースケースの結果を描画| Usecase
+</code><button type="button">Copy</button></pre>
+
+<h2 id="atomicdesign-による-ui-コンポーネントマネジメント" class="tsd-anchor-link">AtomicDesign による UI コンポーネントマネジメント<a href="#atomicdesign-による-ui-コンポーネントマネジメント" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li>コンポーネントを階層的に管理することで、UI の拡張性を高める</li>
+<li>コンポーネントは storybook で管理する</li>
+</ul>
+<pre><code class="mermaid">flowchart TD
+
+  %% --- Atomic Design レイヤー構造 ---
+  subgraph AtomicDesign["Atomic Design によるUIコンポーネント構造"]
+
+    A[Atom<br>（UI部品の最小単位<br>例: Button, Input, Icon）]
+    B[Molecule<br>（Atomの組み合わせ<br>例: Form, Card, ModalHeader）]
+    C[Organism<br>（Atoms/Moleculesを配置し<br>ロジックを持つ単位<br>ページ相当の構成要素）]
+    D[Template<br>（状況に応じてOrganismを切り替える<br>例: デバイス別・テーマ別表示）]
+    E[Page<br>実際に表示される画面（ルーティングに対応し<br>特定のTemplateを表示する）]
+  end
+
+  %% --- 関係性 ---
+  A --> B
+  B --> C
+  C --> D
+  D --> E
+
+  %% --- ロジック・ユースケース層との関係 ---
+  subgraph Logic["ロジック層 / クリーンアーキテクチャとの接続"]
+    Usecase[UseCase<br>（ビジネスロジック / アプリケーション層）]
+    Domain[Domain<br>（インターフェース / エンティティ定義）]
+    Infra[Infrastructure<br>（HTTP / Map / DB / Store）]
+  end
+
+  %% --- 依存関係の流れ ---
+  C -->|UIイベントで呼び出し| Usecase
+  Usecase -->|インターフェースに依存| Domain
+  Infra -->|インターフェースを実装| Domain
+  C ---|UI更新| Usecase
+
+</code><button type="button">Copy</button></pre>
+
+<h2 id="バックエンドのアーキテクチャ" class="tsd-anchor-link">バックエンドのアーキテクチャ<a href="#バックエンドのアーキテクチャ" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li>基本的にはフロントエンドと同じ。</li>
+<li>ruff コマンドを使ってインデントを修正できる</li>
+</ul>
+<pre><code class="mermaid">flowchart TD
+
+    %% --- 層の定義 ---
+
+    ENTRY["エントリーポイント main.py"]
+
+
+    subgraph Usecase層["Controller（アプリケーション層）"]
+        Usecase["リクエストコントローラー"]
+    end
+
+    subgraph Domain層["Domain（ドメイン層 / 抽象基底クラス）"]
+        Domain["共通する抽象基底クラスを継承"]
+    end
+
+    subgraph Infrastructure層["Infrastructure（インフラ層）"]
+        Infrastructure["外部ロジック用リポジトリ"]
+    end
+
+    %% --- 関係性の定義 ---
+    ENTRY -->|呼び出し| Usecase
+    Usecase -->|呼び出し| Infrastructure
+    Usecase -->|継承元| Domain
+    Infrastructure -->|継承元| Domain
+</code><button type="button">Copy</button></pre>
+
+<h2 id="開発支援ツール" class="tsd-anchor-link">開発支援ツール<a href="#開発支援ツール" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li>frontend ディレクトリに移動</li>
+</ul>
+<pre><code><span class="hl-1"> </span><span class="hl-0">pnpm</span><span class="hl-1"> </span><span class="hl-0">typedoc</span>
+</code><button>Copy</button></pre>
+
+<ul>
+<li>TSDoc 形式で書かれた ts ファイルのコメントが反映される</li>
+<li><a href="https://dev.classmethod.jp/articles/jsdoc-cheatsheet/">TSDoc 形式とは</a></li>
+<li>自動でドキュメントを生成する</li>
+</ul>
+</div></div><div class="col-sidebar"><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-accordion"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><h3>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li></ul></div><div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div><details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><h3>On This Page</h3></summary><div class="tsd-accordion-details"><a href="#主な使用技術プラグイン"><span>主な使用技術/プラグイン</span></a><ul><li><a href="#フロントエンド"><span>フロントエンド</span></a></li><li><a href="#バックエンド"><span>バックエンド</span></a></li><li><a href="#その他プラグイン"><span>その他プラグイン</span></a></li></ul><a href="#環境構築"><span>環境構築</span></a><ul><li><a href="#docker-環境を準備"><span>docker 環境を準備</span></a></li><li><a href="#node-環境を準備"><span>node 環境を準備</span></a></li><li><a href="#初期データ取得"><span>初期データ取得</span></a></li><li><a href="#env-ファイル追加"><span>env ファイル追加</span></a></li><li><a href="#アプリケーションを立ち上げる方法"><span>アプリケーションを立ち上げる方法</span></a></li></ul><a href="#ディレクトリ構成"><span>ディレクトリ構成</span></a><a href="#アプリケーション全体のアーキテクチャ"><span>アプリケーション全体のアーキテクチャ</span></a><a href="#フロントエンドのアーキテクチャ"><span>フロントエンドのアーキテクチャ</span></a><a href="#atomicdesign-による-ui-コンポーネントマネジメント"><span>Atomic<wbr/>Design による <wbr/>UI コンポーネントマネジメント</span></a><a href="#バックエンドのアーキテクチャ"><span>バックエンドのアーキテクチャ</span></a><a href="#開発支援ツール"><span>開発支援ツール</span></a></div></details></div><div class="site-menu"><nav class="tsd-navigation"><a href="../modules.html">spectra-chat</a><ul class="tsd-small-nested-navigation" id="tsd-nav-container"><li>Loading...</li></ul></nav></div></div></div><footer><p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></footer><div class="overlay"></div></body></html>

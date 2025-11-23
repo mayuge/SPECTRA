@@ -25,6 +25,10 @@ import {
   DOCOMO_BIKE_SHARE_LAYER,
 } from "@/domain/params/customLayerName"
 
+/**
+ * カスタムレイヤー管理のインフラストラクチャ
+ * @returns
+ */
 const useMapCustomLayer = (): IMapCustomLayer => {
   const cycleLayerVisibility = ref<boolean>(true)
   const trainLayerVisibility = ref<boolean>(true)
