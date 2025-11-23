@@ -5,4 +5,7 @@ export interface IMapCustomLayer {
   addHelloCycleLayer: (geojson: FeatureCollection) => Promise<void>
   addDocomoBikeShareLayer: (geojson: FeatureCollection) => Promise<void>
   toggleCycleLayer: () => void
+  toggleTrainLayer: () => void
+  getCycleLayerVisibility: () => boolean
+  getTrainLayerVisibility: () => boolean
 }

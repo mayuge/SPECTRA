@@ -3,15 +3,21 @@ import maplibregl, {
   type LineLayerSpecification,
   type SymbolLayerSpecification,
 } from "maplibre-gl"
+
 import useMapInstance from "@/infrastructure/map/mapInstance"
 import useMapPopup from "@/infrastructure/map/mapPopup"
+import useMapLayer from "@/infrastructure/map/mapLayer"
 
 import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
 import type { IMapPopup } from "@/domain/interfaces/IMapPopup"
+import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
 import type { IMapCustomLayer } from "@/domain/interfaces/IMapCustomLayer"
 import type { FeatureCollection } from "geojson"
 
 import trainParams from "@/domain/params/trainParams.json"
+
+import { ref } from "vue"
+
 import {
   TRAIN_STATION_LAYER,
   TRAIN_LINE_LAYER,
@@ -20,10 +26,13 @@ import {
 } from "@/domain/params/customLayerName"
 
 const useMapCustomLayer = (): IMapCustomLayer => {
+  const cycleLayerVisibility = ref<boolean>(true)
+  const trainLayerVisibility = ref<boolean>(true)
   const mapInstance = useMapInstance() as IMapInstance
   const mapPopup = useMapPopup() as IMapPopup
+  const mapLayer = useMapLayer() as IMapLayer
 
-  const loadCompanyIcons = async (map: maplibregl.Map) => { 
+  const loadCompanyIcons = async (map: maplibregl.Map) => {
     const promises = Object.entries(trainParams).map(async ([companyName, companyData]) => {
       const iconPath = (companyData as any).path ?? "trainLogo"
       const iconId = `${companyName}-icon`
@@ -154,7 +163,7 @@ const useMapCustomLayer = (): IMapCustomLayer => {
 
       onAdd: (map) => {
         const canvasElement = document.createElement("canvas")
-        canvasElement.id = layerId // ★ これがトグルに必須
+        canvasElement.id = layerId
         canvasElement.width = map.getCanvas().width
         canvasElement.height = map.getCanvas().height
         canvasElement.style.position = "absolute"
@@ -172,57 +181,192 @@ const useMapCustomLayer = (): IMapCustomLayer => {
         }
 
         const drawCanvas = () => {
-          // レイヤー非表示なら描画しない
-          if (canvasElement.style.display === "none") return
+          // 非表示なら描画しない
+          if (canvasElement.style.display === "none") {
+            return
+          }
+          const pitch = map.getPitch()
+
+          // 水平に近い → 完全非表示
+          if (pitch > 65) {
+            canvasContext.clearRect(0, 0, canvasElement.width, canvasElement.height)
+            return
+          }
 
           canvasContext.clearRect(0, 0, canvasElement.width, canvasElement.height)
 
-          if (map.getZoom() < minimumZoomToShow) return
+          if (map.getZoom() < minimumZoomToShow) {
+            return
+          }
 
-          const bounds = map.getBounds()
+          const rawBounds = map.getBounds()
+          //表示範囲の縮小率
+          const shrinkPercentage = 0.99
 
+          const shrunkBounds = {
+            southwest: {
+              lng:
+                rawBounds.getSouthWest().lng +
+                (rawBounds.getNorthEast().lng - rawBounds.getSouthWest().lng) * shrinkPercentage,
+              lat:
+                rawBounds.getSouthWest().lat +
+                (rawBounds.getNorthEast().lat - rawBounds.getSouthWest().lat) * shrinkPercentage,
+            },
+            northeast: {
+              lng:
+                rawBounds.getNorthEast().lng -
+                (rawBounds.getNorthEast().lng - rawBounds.getSouthWest().lng) * shrinkPercentage,
+              lat:
+                rawBounds.getNorthEast().lat -
+                (rawBounds.getNorthEast().lat - rawBounds.getSouthWest().lat) * shrinkPercentage,
+            },
+            contains: (coordinate: { lng: number; lat: number }) => {
+              return (
+                coordinate.lng >= rawBounds.getSouthWest().lng &&
+                coordinate.lng <= rawBounds.getNorthEast().lng &&
+                coordinate.lat >= rawBounds.getSouthWest().lat &&
+                coordinate.lat <= rawBounds.getNorthEast().lat
+              )
+            },
+          }
+
+          //各ステーションの描画処理
           geojson.features.forEach((feature) => {
             //@ts-ignore
             const coordinates = feature.geometry.coordinates as [number, number]
-            if (!bounds.contains(coordinates)) return
 
-            const props = feature.properties ?? {}
-            const bikes = Number(props.num_bikes_available ?? 0)
-            const docks = Number(props.num_docks_available ?? 0)
-            const total = bikes + docks
-            if (total === 0) {
+            const coordinateObject = {
+              lng: coordinates[0],
+              lat: coordinates[1],
+            }
+
+            // 表示範囲外はスキップ
+            if (!shrunkBounds.contains(coordinateObject)) {
               return
             }
 
-            const pos = map.project(coordinates)
-            const radius = 18
-            const iconSize = radius * 1.2
-            // 円グラフ
-            let startAngle = -Math.PI / 2
-            const segments = [bikes, docks]
-            const colors = ["#00ff00", "#808080"]
+            const properties = feature.properties ?? {}
+            const availableBikes = Number(properties.num_bikes_available ?? 0)
+            const availableDocks = Number(properties.num_docks_available ?? 0)
+            const totalCapacity = availableBikes + availableDocks
 
-            segments.forEach((value, i) => {
-              const endAngle = startAngle + (value / total) * Math.PI * 2
+            // データが無意味な場合はスキップ
+            if (totalCapacity === 0) {
+              return
+            }
+
+            // ステーション名
+            const stationName = properties.name
+
+            // 投影座標
+            const projectedPosition = map.project(coordinates)
+
+            const pieChartRadius = 12
+            const iconDisplaySize = pieChartRadius * 1.2
+
+            //円グラフ描画
+            let currentStartAngle = -Math.PI / 2
+            const pieChartSegments = [
+              { value: availableBikes, color: "#00ff00" },
+              { value: availableDocks, color: "#808080" },
+            ]
+
+            pieChartSegments.forEach((segment) => {
+              const segmentAngle = (segment.value / totalCapacity) * Math.PI * 2
+              const nextEndAngle = currentStartAngle + segmentAngle
+
               canvasContext.beginPath()
-              canvasContext.moveTo(pos.x, pos.y)
-              canvasContext.arc(pos.x, pos.y, radius, startAngle, endAngle)
+              canvasContext.moveTo(projectedPosition.x, projectedPosition.y)
+              canvasContext.arc(
+                projectedPosition.x,
+                projectedPosition.y,
+                pieChartRadius,
+                currentStartAngle,
+                nextEndAngle
+              )
               canvasContext.closePath()
-              canvasContext.fillStyle = colors[i]
+              canvasContext.fillStyle = segment.color
               canvasContext.fill()
-              startAngle = endAngle
+
+              currentStartAngle = nextEndAngle
             })
 
-            // アイコン
+            //アイコン描画
+
             if (iconImage.complete) {
               canvasContext.drawImage(
                 iconImage,
-                pos.x - iconSize / 2,
-                pos.y - iconSize / 2,
-                iconSize,
-                iconSize
+                projectedPosition.x - iconDisplaySize / 2,
+                projectedPosition.y - iconDisplaySize / 2,
+                iconDisplaySize,
+                iconDisplaySize
               )
             }
+
+            //ステーション名（右横）
+            canvasContext.font = "10px 'Noto Sans JP'"
+            canvasContext.fillStyle = "#333333"
+            canvasContext.textAlign = "left"
+            canvasContext.textBaseline = "middle"
+
+            canvasContext.fillText(
+              stationName,
+              projectedPosition.x + pieChartRadius + 6,
+              projectedPosition.y
+            )
+
+            //ステーション名（右横・白縁取り付き）
+            canvasContext.font = "10px 'Noto Sans JP'"
+            canvasContext.textAlign = "left"
+            canvasContext.textBaseline = "middle"
+
+            // 白い縁取り
+            canvasContext.lineWidth = 3
+            canvasContext.strokeStyle = "#ffffff"
+            canvasContext.strokeText(
+              stationName,
+              projectedPosition.x + pieChartRadius + 6,
+              projectedPosition.y
+            )
+
+            // 文字本体
+            canvasContext.fillStyle = "#333333"
+            canvasContext.fillText(
+              stationName,
+              projectedPosition.x + pieChartRadius + 6,
+              projectedPosition.y
+            )
+
+            //貸出 / 返却情報（アイコン下）
+
+            canvasContext.font = "9px 'Noto Sans JP'"
+            canvasContext.textAlign = "center"
+            canvasContext.textBaseline = "top"
+
+            // --- 貸出（緑
+            const rentalText = `貸出可能: ${availableBikes}台`
+            const rentalTextY = projectedPosition.y + pieChartRadius + 6
+
+            // 白い縁取り
+            canvasContext.lineWidth = 3
+            canvasContext.strokeStyle = "#ffffff"
+            canvasContext.strokeText(rentalText, projectedPosition.x, rentalTextY)
+
+            // 緑の文字本体
+            canvasContext.fillStyle = "#00aa00"
+            canvasContext.fillText(rentalText, projectedPosition.x, rentalTextY)
+
+            // --- 返却（グレー） --- //
+            const returnText = `返却可能: ${availableDocks}台`
+            const returnTextY = projectedPosition.y + pieChartRadius + 18
+
+            // 白い縁取り
+            canvasContext.strokeStyle = "#ffffff"
+            canvasContext.strokeText(returnText, projectedPosition.x, returnTextY)
+
+            // グレーの文字本体
+            canvasContext.fillStyle = "#666666"
+            canvasContext.fillText(returnText, projectedPosition.x, returnTextY)
           })
         }
 
@@ -276,6 +420,29 @@ const useMapCustomLayer = (): IMapCustomLayer => {
       // 再描画
       map.triggerRepaint()
     })
+    //ref値をトグルする
+    cycleLayerVisibility.value = !cycleLayerVisibility.value
+  }
+
+  /**
+   * 駅・鉄道路線レイヤーをトグルする
+   */
+  const toggleTrainLayer = () => {
+    const { toggleLayer } = mapLayer
+    toggleLayer(TRAIN_STATION_LAYER)
+    toggleLayer(TRAIN_LINE_LAYER)
+    //ref値をトグルする
+    trainLayerVisibility.value = !trainLayerVisibility.value
+  }
+
+  const getCycleLayerVisibility = (): boolean => {
+    //cycleレイヤーの表示・非表示状態を返す
+    return cycleLayerVisibility.value
+  }
+
+  const getTrainLayerVisibility = (): boolean => {
+    //trainレイヤーの表示・非表示状態を返す
+    return trainLayerVisibility.value
   }
 
   return {
@@ -284,6 +451,9 @@ const useMapCustomLayer = (): IMapCustomLayer => {
     addHelloCycleLayer,
     addDocomoBikeShareLayer,
     toggleCycleLayer,
+    toggleTrainLayer,
+    getCycleLayerVisibility,
+    getTrainLayerVisibility,
   }
 }
 

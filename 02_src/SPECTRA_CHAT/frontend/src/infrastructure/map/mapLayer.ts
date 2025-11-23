@@ -160,31 +160,18 @@ const useMapLayer = (): IMapLayer => {
     fitMapToGeoJson(geoJsonData)
   }
 
-const toggleLayer = (layerId: string) => {
-  const { getMapInstance } = useMapInstance() as IMapInstance
-  const map = getMapInstance()
-  if (!map) return
+  const toggleLayer = (layerId: string) => {
+    const { getMapInstance } = useMapInstance() as IMapInstance
+    const map = getMapInstance()
+    if (!map) return
 
-  const layer = map.getLayer(layerId)
-  if (!layer) return
+    const layer = map.getLayer(layerId)
+    if (!layer) return
 
-  // 通常レイヤーか Canvas カスタムレイヤーかを判定
-  const isCanvasLayer = layer.type === "custom" && typeof (layer as any).render === "function"
-
-  if (isCanvasLayer) {
-    // Canvas レイヤーの場合は visibility プロパティで制御する
-    const currentVisibility = map.getLayoutProperty(layerId, "visibility")
-    const newVisibility = currentVisibility === "visible" ? "none" : "visible"
-    map.setLayoutProperty(layerId, "visibility", newVisibility)
-    // Canvas レイヤーの再描画を強制
-    map.triggerRepaint()
-  } else {
-    // 通常の MapLibre レイヤー
     const currentVisibility = map.getLayoutProperty(layerId, "visibility")
     const newVisibility = currentVisibility === "visible" ? "none" : "visible"
     map.setLayoutProperty(layerId, "visibility", newVisibility)
   }
-}
 
   return { addGeoJsonLayer, toggleLayer }
 }

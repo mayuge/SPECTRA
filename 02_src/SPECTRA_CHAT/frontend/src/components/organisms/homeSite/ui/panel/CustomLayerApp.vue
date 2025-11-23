@@ -3,7 +3,7 @@
     <div className="pb-2 text-xs text-white">レイヤー切替</div>
     <div className="flex items-center gap-2">
       <Button
-        variant="btn-light"
+        :variant="getTrainLayerVarient()"
         size="small"
         shape="square"
         iconLeft="train"
@@ -11,7 +11,7 @@
         @button-clicked="toggleTrainLayer"
       />
       <Button
-        variant="btn-light"
+        :variant="getCycleLayerVarient()"
         size="small"
         shape="square"
         iconLeft="directions_bike"
@@ -31,19 +31,17 @@ import type { IReqTrainApi } from '@/domain/interfaces/IReqTrainApi'
 import type { IReqCycleApi } from '@/domain/interfaces/IReqCycleApi'
 import type { ICustomLayerState } from '@/domain/interfaces/ICustomLayerState'
 import type { IMapCustomLayer } from '@/domain/interfaces/IMapCustomLayer'
-import type { IMapLayer } from '@/domain/interfaces/IMapLayer'
 
 import useReqTrainApi from '@/infrastructure/http/train/reqTrainApi'
 import useReqCycleApi from '@/infrastructure/http/cycle/reqCycleApi'
 import { useCustomLayerStore } from '@/infrastructure/stores/customLayerStateStore'
 import useMapCustomLayer from '@/infrastructure/map/mapCustomLayer'
-import useMapLayer from '@/infrastructure/map/mapLayer'
 
-import { onMounted } from 'vue'
+import { onMounted} from 'vue'
 
 onMounted(() => {
   onMountedCallback()
 })
 
-const { onMountedCallback, toggleTrainLayer, toggleCycleLayer } = useCustomLayerApp( useReqTrainApi() as IReqTrainApi, useReqCycleApi() as IReqCycleApi, useCustomLayerStore() as ICustomLayerState, useMapCustomLayer() as IMapCustomLayer, useMapLayer() as IMapLayer)
+const { onMountedCallback, toggleTrainLayer, toggleCycleLayer, getTrainLayerVarient, getCycleLayerVarient } = useCustomLayerApp( useReqTrainApi() as IReqTrainApi, useReqCycleApi() as IReqCycleApi, useCustomLayerStore() as ICustomLayerState, useMapCustomLayer() as IMapCustomLayer)
 </script>

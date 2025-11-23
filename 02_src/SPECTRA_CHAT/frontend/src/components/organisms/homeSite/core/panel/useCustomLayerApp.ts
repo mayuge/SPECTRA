@@ -3,19 +3,20 @@ import type { IReqCycleApi } from "@/domain/interfaces/IReqCycleApi"
 import type { ICustomLayerState } from "@/domain/interfaces/ICustomLayerState"
 import type { CustomLayerNameType } from "@/domain/types/customLayerNameType"
 import type { IMapCustomLayer } from "@/domain/interfaces/IMapCustomLayer"
-import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
 import {
   TRAIN_STATION_LAYER,
   TRAIN_LINE_LAYER,
   HELLO_CYCLE_LAYER,
   DOCOMO_BIKE_SHARE_LAYER,
 } from "@/domain/params/customLayerName"
+import { BUTTON_DARK, BUTTON_LIGHT } from "@/domain/params/atoms"
+import type { ButtonVariantType } from "@/domain/types/atomsType"
+
 const useCustomLayerApp = (
   reqTrainApi: IReqTrainApi,
   reqCycleApi: IReqCycleApi,
   customLayerState: ICustomLayerState,
-  mapCustomerLayer: IMapCustomLayer,
-  mapLayer: IMapLayer
+  mapCustomerLayer: IMapCustomLayer
 ) => {
   const { getAllTrainStation, getAllTrainLine } = reqTrainApi
   const { getHelloCycleStation, getDocomoBikeShareStation } = reqCycleApi
@@ -26,8 +27,11 @@ const useCustomLayerApp = (
     addHelloCycleLayer,
     addDocomoBikeShareLayer,
     toggleCycleLayer,
+    toggleTrainLayer,
+    getCycleLayerVisibility,
+    getTrainLayerVisibility,
   } = mapCustomerLayer
-  const { toggleLayer } = mapLayer
+
   /**
    * マウント時のコールバック
    */
@@ -69,6 +73,14 @@ const useCustomLayerApp = (
   }
 
   /**
+   * cycleレイヤーのボタンのバリアントを取得
+   * @return バリアント文字列
+   */
+  const getCycleLayerVarient = (): ButtonVariantType => {
+    return getCycleLayerVisibility() ? BUTTON_LIGHT : BUTTON_DARK
+  }
+
+  /**
    * 鉄道路線レイヤーをセット
    */
   const setTrainLineLayer = async () => {
@@ -76,6 +88,14 @@ const useCustomLayerApp = (
     setCustomLayerGeojson(TRAIN_LINE_LAYER as keyof CustomLayerNameType, allTrainLine)
     const trainLineGeojson = getCustomLayerGeojson(TRAIN_LINE_LAYER as keyof CustomLayerNameType)
     addTrainLineLayer(trainLineGeojson)
+  }
+
+  /**
+   * 鉄道路線レイヤーのボタンのバリアントを取得
+   * @return バリアント文字列
+   */
+  const getTrainLayerVarient = (): ButtonVariantType => {
+    return getTrainLayerVisibility() ? BUTTON_LIGHT : BUTTON_DARK
   }
 
   /**
@@ -89,15 +109,14 @@ const useCustomLayerApp = (
     )
     addTrainStationLayer(trainStationGeojson)
   }
-  /**
-   * 駅・鉄道路線レイヤーをトグルする
-   */
-  const toggleTrainLayer = () => {
-    toggleLayer(TRAIN_STATION_LAYER)
-    toggleLayer(TRAIN_LINE_LAYER)
-  }
 
-  return { onMountedCallback, toggleTrainLayer, toggleCycleLayer }
+  return {
+    onMountedCallback,
+    toggleTrainLayer,
+    toggleCycleLayer,
+    getTrainLayerVarient,
+    getCycleLayerVarient,
+  }
 }
 
 export default useCustomLayerApp
