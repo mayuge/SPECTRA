@@ -1,0 +1,2 @@
+feed_publisher_name,feed_publisher_url,feed_lang,feed_start_date,feed_end_date,feed_version
+川崎市交通局,https://www.city.kawasaki.jp/820/,ja,20251201,20261201,20251201_00000000

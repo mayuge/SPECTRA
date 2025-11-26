@@ -1,0 +1,2 @@
+feed_publisher_name,feed_publisher_url,feed_lang,feed_start_date,feed_end_date,feed_version,feed_contact_email,feed_contact_url
+株式会社ナビタイムジャパン,https://corporate.navitime.co.jp/,ja,20251117,20261231,20251118100137,,

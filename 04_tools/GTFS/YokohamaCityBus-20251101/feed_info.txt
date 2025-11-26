@@ -1,0 +1,2 @@
+feed_publisher_name,feed_publisher_url,feed_lang,feed_start_date,feed_end_date,feed_version
+横浜市交通局,https://www.city.yokohama.lg.jp/kotsu/,ja,20251101,20261031,v3.0_20251101

@@ -1,0 +1,2 @@
+feed_publisher_name,feed_publisher_url,feed_lang,feed_start_date,feed_end_date,feed_version
+NECネクサソリューションズ株式会社,https://www.nec-nexs.com,ja,20251109,20251130,20251109_20251110

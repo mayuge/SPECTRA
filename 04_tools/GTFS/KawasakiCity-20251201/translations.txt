@@ -1,0 +1,4183 @@
+table_name,field_name,language,translation,record_id,record_sub_id,field_value
+stops,stop_name,ja,ENEOS株式会社塩浜,,,ENEOS株式会社塩浜
+stops,stop_name,en,ENEOS Kabushikigaisha Shiohama,,,ENEOS株式会社塩浜
+stops,stop_name,zh-CN,引能仕株式会社 盐滨,,,ENEOS株式会社塩浜
+stops,stop_name,zh-TW,引能仕株式會社 鹽濱,,,ENEOS株式会社塩浜
+stops,stop_name,ko,ENEOS 주식회사 시오하마,,,ENEOS株式会社塩浜
+stops,stop_name,ja-Hrkt,えねおす　かぶしきがいしゃ　しおはま,,,ENEOS株式会社塩浜
+stops,stop_name,ja,posco前,,,posco前
+stops,stop_name,en,posco Mae,,,posco前
+stops,stop_name,zh-CN,posco前,,,posco前
+stops,stop_name,zh-TW,posco前,,,posco前
+stops,stop_name,ko,posco 앞,,,posco前
+stops,stop_name,ja-Hrkt,ぽすこまえ,,,posco前
+stops,stop_name,ja,いさご通り,,,いさご通り
+stops,stop_name,en,Isagodōri,,,いさご通り
+stops,stop_name,zh-CN,砂子通,,,いさご通り
+stops,stop_name,zh-TW,砂子通,,,いさご通り
+stops,stop_name,ko,이사고도오리,,,いさご通り
+stops,stop_name,ja-Hrkt,いさごどおり,,,いさご通り
+stops,stop_name,ja,おし沼,,,おし沼
+stops,stop_name,en,Oshinuma,,,おし沼
+stops,stop_name,zh-CN,鸳鸯沼,,,おし沼
+stops,stop_name,zh-TW,鴛鴦沼,,,おし沼
+stops,stop_name,ko,오시누마,,,おし沼
+stops,stop_name,ja-Hrkt,おしぬま,,,おし沼
+stops,stop_name,ja,かわさきファズ物流センター前,,,かわさきファズ物流センター前
+stops,stop_name,en,Kawasaki Faz Butsuryū Center Mae,,,かわさきファズ物流センター前
+stops,stop_name,zh-CN,川崎贸易促进区物流中心前,,,かわさきファズ物流センター前
+stops,stop_name,zh-TW,川崎貿易促進區物流中心前,,,かわさきファズ物流センター前
+stops,stop_name,ko,가와사키 FAZ 물류센터 앞,,,かわさきファズ物流センター前
+stops,stop_name,ja-Hrkt,かわさきふぁずぶつりゅうせんたーまえ,,,かわさきファズ物流センター前
+stops,stop_name,ja,かわさき南部斎苑,,,かわさき南部斎苑
+stops,stop_name,en,Kawasaki Nambu Saien,,,かわさき南部斎苑
+stops,stop_name,zh-CN,川崎南部齐苑,,,かわさき南部斎苑
+stops,stop_name,zh-TW,川崎南部齊苑,,,かわさき南部斎苑
+stops,stop_name,ko,가와사키 남부 장례식장,,,かわさき南部斎苑
+stops,stop_name,ja-Hrkt,かわさきなんぶさいえん,,,かわさき南部斎苑
+stops,stop_name,ja,かわさき記念病院前,,,かわさき記念病院前
+stops,stop_name,en,Kawasaki Memorial Hospital,,,かわさき記念病院前
+stops,stop_name,zh-CN,川崎纪念医院前,,,かわさき記念病院前
+stops,stop_name,zh-TW,川崎紀念醫院前,,,かわさき記念病院前
+stops,stop_name,ko,가와사키 기념병원 앞,,,かわさき記念病院前
+stops,stop_name,ja-Hrkt,かわさききねんびょういんまえ,,,かわさき記念病院前
+stops,stop_name,ja,くすのき公園,,,くすのき公園
+stops,stop_name,en,Kusunoki Kōen,,,くすのき公園
+stops,stop_name,zh-CN,楠木公园,,,くすのき公園
+stops,stop_name,zh-TW,楠木公園,,,くすのき公園
+stops,stop_name,ko,구스노키 공원,,,くすのき公園
+stops,stop_name,ja-Hrkt,くすのきこうえん,,,くすのき公園
+stops,stop_name,ja,さくらの丘公園入口,,,さくらの丘公園入口
+stops,stop_name,en,Sakuranooka Kōen Iriguchi,,,さくらの丘公園入口
+stops,stop_name,zh-CN,樱之丘公园入口,,,さくらの丘公園入口
+stops,stop_name,zh-TW,櫻之丘公園入口,,,さくらの丘公園入口
+stops,stop_name,ko,사쿠라노오카 공원 입구,,,さくらの丘公園入口
+stops,stop_name,ja-Hrkt,さくらのおかこうえんいりぐち,,,さくらの丘公園入口
+stops,stop_name,ja,たいら高山,,,たいら高山
+stops,stop_name,en,Taira-takayama,,,たいら高山
+stops,stop_name,zh-CN,平高山,,,たいら高山
+stops,stop_name,zh-TW,平高山,,,たいら高山
+stops,stop_name,ko,다이라 타카야마,,,たいら高山
+stops,stop_name,ja-Hrkt,たいらたかやま,,,たいら高山
+stops,stop_name,ja,たまプラーザ駅,,,たまプラーザ駅
+stops,stop_name,en,Tama-Plaza Sta.,,,たまプラーザ駅
+stops,stop_name,zh-CN,多摩广场站,,,たまプラーザ駅
+stops,stop_name,zh-TW,多摩廣場站,,,たまプラーザ駅
+stops,stop_name,ko,다마푸라자 역,,,たまプラーザ駅
+stops,stop_name,ja-Hrkt,たまぷらーざえき,,,たまプラーザ駅
+stops,stop_name,ja,とどろきアリーナ前,,,とどろきアリーナ前
+stops,stop_name,en,Todoroki Arena Mae,,,とどろきアリーナ前
+stops,stop_name,zh-CN,等等力体育馆前,,,とどろきアリーナ前
+stops,stop_name,zh-TW,等等力體育館前,,,とどろきアリーナ前
+stops,stop_name,ko,도도로키 아레나 앞,,,とどろきアリーナ前
+stops,stop_name,ja-Hrkt,とどろきありーなまえ,,,とどろきアリーナ前
+stops,stop_name,ja,とのした橋,,,とのした橋
+stops,stop_name,en,Tonoshitabashi,,,とのした橋
+stops,stop_name,zh-CN,殿下桥,,,とのした橋
+stops,stop_name,zh-TW,殿下橋,,,とのした橋
+stops,stop_name,ko,도노시타바시,,,とのした橋
+stops,stop_name,ja-Hrkt,とのしたばし,,,とのした橋
+stops,stop_name,ja,アマゾン川崎ＦＣ,,,アマゾン川崎ＦＣ
+stops,stop_name,en,Amazon Kawasaki FC,,,アマゾン川崎ＦＣ
+stops,stop_name,zh-CN,Amazon Kawasaki FC,,,アマゾン川崎ＦＣ
+stops,stop_name,zh-TW,Amazon Kawasaki FC,,,アマゾン川崎ＦＣ
+stops,stop_name,ko,Amazon Kawasaki FC,,,アマゾン川崎ＦＣ
+stops,stop_name,ja-Hrkt,あまぞんかわさきえふしい,,,アマゾン川崎ＦＣ
+stops,stop_name,ja,イノ木,,,イノ木
+stops,stop_name,en,Inoki,,,イノ木
+stops,stop_name,zh-CN,伊农木,,,イノ木
+stops,stop_name,zh-TW,伊農木,,,イノ木
+stops,stop_name,ko,이노키,,,イノ木
+stops,stop_name,ja-Hrkt,いのき,,,イノ木
+stops,stop_name,ja,カリタス学園,,,カリタス学園
+stops,stop_name,en,Caritas Gakuen,,,カリタス学園
+stops,stop_name,zh-CN,卡里塔斯学园,,,カリタス学園
+stops,stop_name,zh-TW,卡里塔斯學園,,,カリタス学園
+stops,stop_name,ko,가리타스가쿠엔,,,カリタス学園
+stops,stop_name,ja-Hrkt,かりたすがくえん,,,カリタス学園
+stops,stop_name,ja,カルッツかわさき・富士見公園,,,カルッツかわさき・富士見公園
+stops,stop_name,en,Culttz Kawasaki・Fujimi Kōen,,,カルッツかわさき・富士見公園
+stops,stop_name,zh-CN,卡尔兹川崎・富士见公园,,,カルッツかわさき・富士見公園
+stops,stop_name,zh-TW,卡爾茲川崎・富士見公園,,,カルッツかわさき・富士見公園
+stops,stop_name,ko,칼츠 가와사키・후지미 공원,,,カルッツかわさき・富士見公園
+stops,stop_name,ja-Hrkt,かるっつかわさき・ふじみこうえん,,,カルッツかわさき・富士見公園
+stops,stop_name,ja,カワサキアイランドスイート,,,カワサキアイランドスイート
+stops,stop_name,en,ＫＡＷＡＳＡＫＩ　Ｉ’Ｌａｎｄ　Ｓｕｉｔｅ,,,カワサキアイランドスイート
+stops,stop_name,zh-CN,なし,,,カワサキアイランドスイート
+stops,stop_name,zh-TW,0,,,カワサキアイランドスイート
+stops,stop_name,ko,なし,,,カワサキアイランドスイート
+stops,stop_name,ja-Hrkt,かわさきあいらんどすいーと,,,カワサキアイランドスイート
+stops,stop_name,ja,ガス橋,,,ガス橋
+stops,stop_name,en,Gasbashi,,,ガス橋
+stops,stop_name,zh-CN,煤气桥,,,ガス橋
+stops,stop_name,zh-TW,煤氣橋,,,ガス橋
+stops,stop_name,ko,가스바시,,,ガス橋
+stops,stop_name,ja-Hrkt,がすばし,,,ガス橋
+stops,stop_name,ja,コストコ　ホールセール,,,コストコ　ホールセール
+stops,stop_name,ja-Hrkt,こすとこ ほーるせーる,,,コストコ　ホールセール
+stops,stop_name,ja,サントリー前,,,サントリー前
+stops,stop_name,en,Suntory Mae,,,サントリー前
+stops,stop_name,zh-CN,三得利前,,,サントリー前
+stops,stop_name,zh-TW,三得利前,,,サントリー前
+stops,stop_name,ko,산토리 앞,,,サントリー前
+stops,stop_name,ja-Hrkt,さんとりーまえ,,,サントリー前
+stops,stop_name,ja,ゼロ・エミ工業団地,,,ゼロ・エミ工業団地
+stops,stop_name,en,Zero Emi Kōgyō Danchi,,,ゼロ・エミ工業団地
+stops,stop_name,zh-CN,零污染工业团地,,,ゼロ・エミ工業団地
+stops,stop_name,zh-TW,零污染工業團地,,,ゼロ・エミ工業団地
+stops,stop_name,ko,제로 에미 공업단지,,,ゼロ・エミ工業団地
+stops,stop_name,ja-Hrkt,ぜろ･えみこうぎょうだんち,,,ゼロ・エミ工業団地
+stops,stop_name,ja,ソリッドスクエア前,,,ソリッドスクエア前
+stops,stop_name,en,Solid Square Mae,,,ソリッドスクエア前
+stops,stop_name,zh-CN,立方广场大厦前,,,ソリッドスクエア前
+stops,stop_name,zh-TW,立方廣場大廈前,,,ソリッドスクエア前
+stops,stop_name,ko,솔리드스퀘어 앞,,,ソリッドスクエア前
+stops,stop_name,ja-Hrkt,そりっどすくえあまえ,,,ソリッドスクエア前
+stops,stop_name,ja,タカセセンター前,,,タカセセンター前
+stops,stop_name,en,Takase Center Mae,,,タカセセンター前
+stops,stop_name,zh-CN,高濑中心前,,,タカセセンター前
+stops,stop_name,zh-TW,高瀨中心前,,,タカセセンター前
+stops,stop_name,ko,다카세 센터 앞,,,タカセセンター前
+stops,stop_name,ja-Hrkt,たかせせんたーまえ,,,タカセセンター前
+stops,stop_name,ja,ダイワコーポレーション前,,,ダイワコーポレーション前
+stops,stop_name,en,Daiwa  Corporation  Mae,,,ダイワコーポレーション前
+stops,stop_name,zh-CN,大和公司前,,,ダイワコーポレーション前
+stops,stop_name,zh-TW,大和公司前,,,ダイワコーポレーション前
+stops,stop_name,ko,다이와 코퍼레이션 앞,,,ダイワコーポレーション前
+stops,stop_name,ja-Hrkt,だいわこーぽれーしょんまえ,,,ダイワコーポレーション前
+stops,stop_name,ja,ポートサイドカワサキ,,,ポートサイドカワサキ
+stops,stop_name,en,Port Side Kawasaki,,,ポートサイドカワサキ
+stops,stop_name,zh-CN,临港码头川崎,,,ポートサイドカワサキ
+stops,stop_name,zh-TW,臨港碼頭川崎,,,ポートサイドカワサキ
+stops,stop_name,ko,포토사이도가와사키,,,ポートサイドカワサキ
+stops,stop_name,ja-Hrkt,ぽーとさいどかわさき,,,ポートサイドカワサキ
+stops,stop_name,ja,三井第四住宅,,,三井第四住宅
+stops,stop_name,en,Mitsui Daiyon-jūtaku,,,三井第四住宅
+stops,stop_name,zh-CN,三井第四住宅,,,三井第四住宅
+stops,stop_name,zh-TW,三井第四住宅,,,三井第四住宅
+stops,stop_name,ko,미츠이 제4주택,,,三井第四住宅
+stops,stop_name,ja-Hrkt,みついだいよんじゅうたく,,,三井第四住宅
+stops,stop_name,ja,三田一丁目,,,三田一丁目
+stops,stop_name,en,Mita 1-chōme,,,三田一丁目
+stops,stop_name,zh-CN,三田一丁目,,,三田一丁目
+stops,stop_name,zh-TW,三田一丁目,,,三田一丁目
+stops,stop_name,ko,미타 1초메,,,三田一丁目
+stops,stop_name,ja-Hrkt,みたいっちょうめ,,,三田一丁目
+stops,stop_name,ja,三田四丁目,,,三田四丁目
+stops,stop_name,en,Mita 4-chōme,,,三田四丁目
+stops,stop_name,zh-CN,三田四丁目,,,三田四丁目
+stops,stop_name,zh-TW,三田四丁目,,,三田四丁目
+stops,stop_name,ko,미타 4초메,,,三田四丁目
+stops,stop_name,ja-Hrkt,みたよんちょうめ,,,三田四丁目
+stops,stop_name,ja,三田橋,,,三田橋
+stops,stop_name,en,Mitabashi,,,三田橋
+stops,stop_name,zh-CN,三田桥,,,三田橋
+stops,stop_name,zh-TW,三田橋,,,三田橋
+stops,stop_name,ko,미타바시,,,三田橋
+stops,stop_name,ja-Hrkt,みたばし,,,三田橋
+stops,stop_name,ja,三菱ふそう前,,,三菱ふそう前
+stops,stop_name,en,Mitsubishi Fuso Mae,,,三菱ふそう前
+stops,stop_name,zh-CN,三菱扶桑前,,,三菱ふそう前
+stops,stop_name,zh-TW,三菱扶桑前,,,三菱ふそう前
+stops,stop_name,ko,미츠비시그렇게 앞,,,三菱ふそう前
+stops,stop_name,ja-Hrkt,みつびしふそうまえ,,,三菱ふそう前
+stops,stop_name,ja,上丸子,,,上丸子
+stops,stop_name,en,Kami-maruko,,,上丸子
+stops,stop_name,zh-CN,上丸子,,,上丸子
+stops,stop_name,zh-TW,上丸子,,,上丸子
+stops,stop_name,ko,가미마루코,,,上丸子
+stops,stop_name,ja-Hrkt,かみまるこ,,,上丸子
+stops,stop_name,ja,上之橋,,,上之橋
+stops,stop_name,en,Kaminohashi,,,上之橋
+stops,stop_name,zh-CN,上之桥,,,上之橋
+stops,stop_name,zh-TW,上之橋,,,上之橋
+stops,stop_name,ko,가미노하시,,,上之橋
+stops,stop_name,ja-Hrkt,かみのはし,,,上之橋
+stops,stop_name,ja,上作団地前,,,上作団地前
+stops,stop_name,en,Kamisaku Danchi Mae,,,上作団地前
+stops,stop_name,zh-CN,上作团地前,,,上作団地前
+stops,stop_name,zh-TW,上作團地前,,,上作団地前
+stops,stop_name,ko,가미사쿠 단지 앞,,,上作団地前
+stops,stop_name,ja-Hrkt,かみさくだんちまえ,,,上作団地前
+stops,stop_name,ja,上作延,,,上作延
+stops,stop_name,en,Kamisakunobe,,,上作延
+stops,stop_name,zh-CN,上作延,,,上作延
+stops,stop_name,zh-TW,上作延,,,上作延
+stops,stop_name,ko,가미사쿠노베,,,上作延
+stops,stop_name,ja-Hrkt,かみさくのべ,,,上作延
+stops,stop_name,ja,上宮内,,,上宮内
+stops,stop_name,ja-Hrkt,かみみやうち,,,上宮内
+stops,stop_name,ja,上小田中,,,上小田中
+stops,stop_name,en,Kami-kodanaka,,,上小田中
+stops,stop_name,zh-CN,上小田中,,,上小田中
+stops,stop_name,zh-TW,上小田中,,,上小田中
+stops,stop_name,ko,가미코다나카,,,上小田中
+stops,stop_name,ja-Hrkt,かみこだなか,,,上小田中
+stops,stop_name,ja,上平間,,,上平間
+stops,stop_name,en,Kami-hirama,,,上平間
+stops,stop_name,zh-CN,上平间,,,上平間
+stops,stop_name,zh-TW,上平間,,,上平間
+stops,stop_name,ko,가미히라마,,,上平間
+stops,stop_name,ja-Hrkt,かみひらま,,,上平間
+stops,stop_name,ja,上平間住宅前,,,上平間住宅前
+stops,stop_name,en,Kami-hirama Jūtaku Mae,,,上平間住宅前
+stops,stop_name,zh-CN,上平间住宅前,,,上平間住宅前
+stops,stop_name,zh-TW,上平間住宅前,,,上平間住宅前
+stops,stop_name,ko,가미히라마 주택 앞,,,上平間住宅前
+stops,stop_name,ja-Hrkt,かみひらまじゅうたくまえ,,,上平間住宅前
+stops,stop_name,ja,上平間公社住宅前,,,上平間公社住宅前
+stops,stop_name,en,Kami-hirama Kōsha-jūtaku Mae,,,上平間公社住宅前
+stops,stop_name,zh-CN,上平间公社住宅前,,,上平間公社住宅前
+stops,stop_name,zh-TW,上平間公社住宅前,,,上平間公社住宅前
+stops,stop_name,ko,가미히라마 공사주택 앞,,,上平間公社住宅前
+stops,stop_name,ja-Hrkt,かみひらまこうしゃじゅうたくまえ,,,上平間公社住宅前
+stops,stop_name,ja,上河原,,,上河原
+stops,stop_name,en,Kamiｇawara,,,上河原
+stops,stop_name,zh-CN,上河原,,,上河原
+stops,stop_name,zh-TW,上河原,,,上河原
+stops,stop_name,ko,가미가와라,,,上河原
+stops,stop_name,ja-Hrkt,かみがわら,,,上河原
+stops,stop_name,ja,上野川,,,上野川
+stops,stop_name,en,Kami-nogawa,,,上野川
+stops,stop_name,zh-CN,上野川,,,上野川
+stops,stop_name,zh-TW,上野川,,,上野川
+stops,stop_name,ko,가미노가와,,,上野川
+stops,stop_name,ja-Hrkt,かみのがわ,,,上野川
+stops,stop_name,ja,下作住宅前,,,下作住宅前
+stops,stop_name,en,Shimosaku Jūtaku Mae,,,下作住宅前
+stops,stop_name,zh-CN,下作住宅前,,,下作住宅前
+stops,stop_name,zh-TW,下作住宅前,,,下作住宅前
+stops,stop_name,ko,시모사쿠 주택 앞,,,下作住宅前
+stops,stop_name,ja-Hrkt,しもさくじゅうたくまえ,,,下作住宅前
+stops,stop_name,ja,下平間,,,下平間
+stops,stop_name,en,Shimo-hirama,,,下平間
+stops,stop_name,zh-CN,下平间,,,下平間
+stops,stop_name,zh-TW,下平間,,,下平間
+stops,stop_name,ko,시모히라마,,,下平間
+stops,stop_name,ja-Hrkt,しもひらま,,,下平間
+stops,stop_name,ja,下平間住宅前,,,下平間住宅前
+stops,stop_name,en,Shimo-hirama Jūtaku Mae,,,下平間住宅前
+stops,stop_name,zh-CN,下平间住宅前,,,下平間住宅前
+stops,stop_name,zh-TW,下平間住宅前,,,下平間住宅前
+stops,stop_name,ko,시모히라마 주택 앞,,,下平間住宅前
+stops,stop_name,ja-Hrkt,しもひらまじゅうたくまえ,,,下平間住宅前
+stops,stop_name,ja,下新城,,,下新城
+stops,stop_name,en,Shimo-shinjō,,,下新城
+stops,stop_name,zh-CN,下新城,,,下新城
+stops,stop_name,zh-TW,下新城,,,下新城
+stops,stop_name,ko,시모신조,,,下新城
+stops,stop_name,ja-Hrkt,しもしんじょう,,,下新城
+stops,stop_name,ja,下有馬,,,下有馬
+stops,stop_name,en,Shimo-arima,,,下有馬
+stops,stop_name,zh-CN,下有马,,,下有馬
+stops,stop_name,zh-TW,下有馬,,,下有馬
+stops,stop_name,ko,시모아리마,,,下有馬
+stops,stop_name,ja-Hrkt,しもありま,,,下有馬
+stops,stop_name,ja,下枠鼻,,,下枠鼻
+stops,stop_name,en,Shimo-wakubana,,,下枠鼻
+stops,stop_name,zh-CN,下框鼻,,,下枠鼻
+stops,stop_name,zh-TW,下框鼻,,,下枠鼻
+stops,stop_name,ko,시모와쿠바나,,,下枠鼻
+stops,stop_name,ja-Hrkt,しもわくばな,,,下枠鼻
+stops,stop_name,ja,下沼部,,,下沼部
+stops,stop_name,en,Shimo-numabe,,,下沼部
+stops,stop_name,zh-CN,下沼部,,,下沼部
+stops,stop_name,zh-TW,下沼部,,,下沼部
+stops,stop_name,ko,시모누마베,,,下沼部
+stops,stop_name,ja-Hrkt,しもぬまべ,,,下沼部
+stops,stop_name,ja,下綱,,,下綱
+stops,stop_name,en,Sagezuna,,,下綱
+stops,stop_name,zh-CN,下纲,,,下綱
+stops,stop_name,zh-TW,下綱,,,下綱
+stops,stop_name,ko,사게즈나,,,下綱
+stops,stop_name,ja-Hrkt,さげづな,,,下綱
+stops,stop_name,ja,下野毛,,,下野毛
+stops,stop_name,en,Shimo-noge,,,下野毛
+stops,stop_name,zh-CN,下野毛,,,下野毛
+stops,stop_name,zh-TW,下野毛,,,下野毛
+stops,stop_name,ko,시모노게,,,下野毛
+stops,stop_name,ja-Hrkt,しものげ,,,下野毛
+stops,stop_name,ja,中ノ原住宅前,,,中ノ原住宅前
+stops,stop_name,en,Nakanohara Jūtaku Mae,,,中ノ原住宅前
+stops,stop_name,zh-CN,中之原住宅前,,,中ノ原住宅前
+stops,stop_name,zh-TW,中之原住宅前,,,中ノ原住宅前
+stops,stop_name,ko,나카노하라 주택 앞,,,中ノ原住宅前
+stops,stop_name,ja-Hrkt,なかのはらじゅうたくまえ,,,中ノ原住宅前
+stops,stop_name,ja,中ノ町住宅前,,,中ノ町住宅前
+stops,stop_name,en,Nakanochō Jūtaku Mae,,,中ノ町住宅前
+stops,stop_name,zh-CN,中之町住宅前,,,中ノ町住宅前
+stops,stop_name,zh-TW,中之町住宅前,,,中ノ町住宅前
+stops,stop_name,ko,나카노초 주택 앞,,,中ノ町住宅前
+stops,stop_name,ja-Hrkt,なかのちょうじゅうたくまえ,,,中ノ町住宅前
+stops,stop_name,ja,中丸子,,,中丸子
+stops,stop_name,en,Naka-maruko,,,中丸子
+stops,stop_name,zh-CN,中丸子,,,中丸子
+stops,stop_name,zh-TW,中丸子,,,中丸子
+stops,stop_name,ko,나카마루코,,,中丸子
+stops,stop_name,ja-Hrkt,なかまるこ,,,中丸子
+stops,stop_name,ja,中丸子商店街,,,中丸子商店街
+stops,stop_name,en,Naka-maruko Shōtengai,,,中丸子商店街
+stops,stop_name,zh-CN,中丸子商店街,,,中丸子商店街
+stops,stop_name,zh-TW,中丸子商店街,,,中丸子商店街
+stops,stop_name,ko,나카마루코 상점가,,,中丸子商店街
+stops,stop_name,ja-Hrkt,なかまるこしょうてんがい,,,中丸子商店街
+stops,stop_name,ja,中丸子神社前,,,中丸子神社前
+stops,stop_name,en,Naka-maruko Jinja Mae,,,中丸子神社前
+stops,stop_name,zh-CN,中丸子神社前,,,中丸子神社前
+stops,stop_name,zh-TW,中丸子神社前,,,中丸子神社前
+stops,stop_name,ko,나카마루코 신사 앞,,,中丸子神社前
+stops,stop_name,ja-Hrkt,なかまるこじんじゃまえ,,,中丸子神社前
+stops,stop_name,ja,中丸子西町,,,中丸子西町
+stops,stop_name,en,Naka-maruko-nishimachi,,,中丸子西町
+stops,stop_name,zh-CN,中丸子西町,,,中丸子西町
+stops,stop_name,zh-TW,中丸子西町,,,中丸子西町
+stops,stop_name,ko,나카마루코 니시마치,,,中丸子西町
+stops,stop_name,ja-Hrkt,なかまるこにしまち,,,中丸子西町
+stops,stop_name,ja,中丸子西町（川７４）,,,中丸子西町（川７４）
+stops,stop_name,ja-Hrkt,なかまるこにしまち,,,中丸子西町（川７４）
+stops,stop_name,ja,中原,,,中原
+stops,stop_name,en,Nakahara,,,中原
+stops,stop_name,zh-CN,中原,,,中原
+stops,stop_name,zh-TW,中原,,,中原
+stops,stop_name,ko,나카하라,,,中原
+stops,stop_name,ja-Hrkt,なかはら,,,中原
+stops,stop_name,ja,中原会館,,,中原会館
+stops,stop_name,en,Nakahara Kaikan,,,中原会館
+stops,stop_name,zh-CN,中原会馆,,,中原会館
+stops,stop_name,zh-TW,中原會館,,,中原会館
+stops,stop_name,ko,나카하라 회관,,,中原会館
+stops,stop_name,ja-Hrkt,なかはらかいかん,,,中原会館
+stops,stop_name,ja,中原区役所前,,,中原区役所前
+stops,stop_name,en,Nakahara Kuyakusho Mae,,,中原区役所前
+stops,stop_name,zh-CN,中原区政府前,,,中原区役所前
+stops,stop_name,zh-TW,中原區政府前,,,中原区役所前
+stops,stop_name,ko,나카하라 구청 앞,,,中原区役所前
+stops,stop_name,ja-Hrkt,なかはらくやくしょまえ,,,中原区役所前
+stops,stop_name,ja,中原老人福祉センター入口,,,中原老人福祉センター入口
+stops,stop_name,en,Nakahara Rōjin Fukushi Center Iriguchi,,,中原老人福祉センター入口
+stops,stop_name,zh-CN,中原老人福祉中心入口,,,中原老人福祉センター入口
+stops,stop_name,zh-TW,中原老人福祉中心入口,,,中原老人福祉センター入口
+stops,stop_name,ko,나카하라 노인복지센터 입구,,,中原老人福祉センター入口
+stops,stop_name,ja-Hrkt,なかはらろうじんふくしせんたーいりぐち,,,中原老人福祉センター入口
+stops,stop_name,ja,中原駅入口,,,中原駅入口
+stops,stop_name,en,Nakahara Eki Iriguchi,,,中原駅入口
+stops,stop_name,zh-CN,中原站入口,,,中原駅入口
+stops,stop_name,zh-TW,中原站入口,,,中原駅入口
+stops,stop_name,ko,나카하라역 입구,,,中原駅入口
+stops,stop_name,ja-Hrkt,なかはらえきいりぐち,,,中原駅入口
+stops,stop_name,ja,中原駅前,,,中原駅前
+stops,stop_name,en,Nakahara Sta.,,,中原駅前
+stops,stop_name,zh-CN,中原站,,,中原駅前
+stops,stop_name,zh-TW,中原站,,,中原駅前
+stops,stop_name,ko,나카하라역 ,,,中原駅前
+stops,stop_name,ja-Hrkt,なかはらえきまえ,,,中原駅前
+stops,stop_name,ja,中央療育センター前,,,中央療育センター前
+stops,stop_name,en,Chūō Ryōiku Center Mae,,,中央療育センター前
+stops,stop_name,zh-CN,中央疗育中心前,,,中央療育センター前
+stops,stop_name,zh-TW,中央療育中心前,,,中央療育センター前
+stops,stop_name,ko,추오요육센터 앞,,,中央療育センター前
+stops,stop_name,ja-Hrkt,ちゅうおうりょういくせんたーまえ,,,中央療育センター前
+stops,stop_name,ja,中島二丁目,,,中島二丁目
+stops,stop_name,en,Nakajima 2-chōme,,,中島二丁目
+stops,stop_name,zh-CN,中岛二丁目,,,中島二丁目
+stops,stop_name,zh-TW,中島二丁目,,,中島二丁目
+stops,stop_name,ko,나카지마 2초메,,,中島二丁目
+stops,stop_name,ja-Hrkt,なかじまにちょうめ,,,中島二丁目
+stops,stop_name,ja,中島交番前,,,中島交番前
+stops,stop_name,en,Nakajima Kōban Mae,,,中島交番前
+stops,stop_name,zh-CN,中岛派出所前,,,中島交番前
+stops,stop_name,zh-TW,中島派出所前,,,中島交番前
+stops,stop_name,ko,나카지마 파출소 앞,,,中島交番前
+stops,stop_name,ja-Hrkt,なかじまこうばんまえ,,,中島交番前
+stops,stop_name,ja,中幸町,,,中幸町
+stops,stop_name,en,Naka-saiwaichō,,,中幸町
+stops,stop_name,zh-CN,中幸町,,,中幸町
+stops,stop_name,zh-TW,中幸町,,,中幸町
+stops,stop_name,ko,나카사이와이초,,,中幸町
+stops,stop_name,ja-Hrkt,なかさいわいちょう,,,中幸町
+stops,stop_name,ja,中幸町三丁目,,,中幸町三丁目
+stops,stop_name,en,Naka-saiwaichō 3-chōme,,,中幸町三丁目
+stops,stop_name,zh-CN,中幸町三丁目,,,中幸町三丁目
+stops,stop_name,zh-TW,中幸町三丁目,,,中幸町三丁目
+stops,stop_name,ko,나카사이와이초 3초메,,,中幸町三丁目
+stops,stop_name,ja-Hrkt,なかさいわいちょうさんちょうめ,,,中幸町三丁目
+stops,stop_name,ja,中新城,,,中新城
+stops,stop_name,en,Naka-shinjō,,,中新城
+stops,stop_name,zh-CN,中新城,,,中新城
+stops,stop_name,zh-TW,中新城,,,中新城
+stops,stop_name,ko,나카신조,,,中新城
+stops,stop_name,ja-Hrkt,なかしんじょう,,,中新城
+stops,stop_name,ja,中有馬,,,中有馬
+stops,stop_name,en,Naka-arima,,,中有馬
+stops,stop_name,zh-CN,中有马,,,中有馬
+stops,stop_name,zh-TW,中有馬,,,中有馬
+stops,stop_name,ko,나카아리마,,,中有馬
+stops,stop_name,ja-Hrkt,なかありま,,,中有馬
+stops,stop_name,ja,中河原公園前,,,中河原公園前
+stops,stop_name,en,Nakagawara Kōen Mae,,,中河原公園前
+stops,stop_name,zh-CN,中河原公园前,,,中河原公園前
+stops,stop_name,zh-TW,中河原公園前,,,中河原公園前
+stops,stop_name,ko,나카가와라 공원 앞,,,中河原公園前
+stops,stop_name,ja-Hrkt,なかがわらこうえんまえ,,,中河原公園前
+stops,stop_name,ja,中町,,,中町
+stops,stop_name,en,Nakamachi,,,中町
+stops,stop_name,zh-CN,中町,,,中町
+stops,stop_name,zh-TW,中町,,,中町
+stops,stop_name,ko,나카마치,,,中町
+stops,stop_name,ja-Hrkt,なかまち,,,中町
+stops,stop_name,ja,中野島公社住宅前,,,中野島公社住宅前
+stops,stop_name,en,Nakanoshima Kōsha-jūtaku Mae,,,中野島公社住宅前
+stops,stop_name,zh-CN,中野岛公社住宅前,,,中野島公社住宅前
+stops,stop_name,zh-TW,中野島公社住宅前,,,中野島公社住宅前
+stops,stop_name,ko,나카노시마 공사주택 앞,,,中野島公社住宅前
+stops,stop_name,ja-Hrkt,なかのしまこうしゃじゅうたくまえ,,,中野島公社住宅前
+stops,stop_name,ja,中野島多摩川住宅,,,中野島多摩川住宅
+stops,stop_name,en,Nakanoshima Tamagawa-jūtaku,,,中野島多摩川住宅
+stops,stop_name,zh-CN,中野岛多摩川住宅,,,中野島多摩川住宅
+stops,stop_name,zh-TW,中野島多摩川住宅,,,中野島多摩川住宅
+stops,stop_name,ko,나카노시마 다마가와 주택,,,中野島多摩川住宅
+stops,stop_name,ja-Hrkt,なかのしまたまがわじゅうたく,,,中野島多摩川住宅
+stops,stop_name,ja,丸子橋,,,丸子橋
+stops,stop_name,en,marukobashi,,,丸子橋
+stops,stop_name,zh-CN,丸子桥,,,丸子橋
+stops,stop_name,zh-TW,丸子橋,,,丸子橋
+stops,stop_name,ko,마루코바시,,,丸子橋
+stops,stop_name,ja-Hrkt,まるこばし,,,丸子橋
+stops,stop_name,ja,丸子通二丁目,,,丸子通二丁目
+stops,stop_name,en,Marukodōri 2-chōme,,,丸子通二丁目
+stops,stop_name,zh-CN,丸子通二丁目,,,丸子通二丁目
+stops,stop_name,zh-TW,丸子通二丁目,,,丸子通二丁目
+stops,stop_name,ko,마루코도오리 2초메,,,丸子通二丁目
+stops,stop_name,ja-Hrkt,まるこどおりにちょうめ,,,丸子通二丁目
+stops,stop_name,ja,久地,,,久地
+stops,stop_name,en,Kuji,,,久地
+stops,stop_name,zh-CN,久地,,,久地
+stops,stop_name,zh-TW,久地,,,久地
+stops,stop_name,ko,구지,,,久地
+stops,stop_name,ja-Hrkt,くじ,,,久地
+stops,stop_name,ja,久地消防前,,,久地消防前
+stops,stop_name,en,Kuji Shōbō Mae,,,久地消防前
+stops,stop_name,zh-CN,久地消防前,,,久地消防前
+stops,stop_name,zh-TW,久地消防前,,,久地消防前
+stops,stop_name,ko,구지 소방서 앞,,,久地消防前
+stops,stop_name,ja-Hrkt,くじしょうぼうまえ,,,久地消防前
+stops,stop_name,ja,久地駅前,,,久地駅前
+stops,stop_name,en,Kuji Sta.,,,久地駅前
+stops,stop_name,zh-CN,久地站,,,久地駅前
+stops,stop_name,zh-TW,久地站,,,久地駅前
+stops,stop_name,ko,구지역,,,久地駅前
+stops,stop_name,ja-Hrkt,くじえきまえ,,,久地駅前
+stops,stop_name,ja,久末,,,久末
+stops,stop_name,en,Hisasue,,,久末
+stops,stop_name,zh-CN,久末,,,久末
+stops,stop_name,zh-TW,久末,,,久末
+stops,stop_name,ko,히사스에,,,久末
+stops,stop_name,ja-Hrkt,ひさすえ,,,久末
+stops,stop_name,ja,久末住宅前,,,久末住宅前
+stops,stop_name,en,Hisasue Jūtaku Mae,,,久末住宅前
+stops,stop_name,zh-CN,久末住宅前,,,久末住宅前
+stops,stop_name,zh-TW,久末住宅前,,,久末住宅前
+stops,stop_name,ko,히사스에 주택 앞,,,久末住宅前
+stops,stop_name,ja-Hrkt,ひさすえじゅうたくまえ,,,久末住宅前
+stops,stop_name,ja,久末団地,,,久末団地
+stops,stop_name,en,Hisasue Danchi,,,久末団地
+stops,stop_name,zh-CN,久末团地,,,久末団地
+stops,stop_name,zh-TW,久末團地,,,久末団地
+stops,stop_name,ko,히사스에 단지,,,久末団地
+stops,stop_name,ja-Hrkt,ひさすえだんち,,,久末団地
+stops,stop_name,ja,久末谷戸,,,久末谷戸
+stops,stop_name,en,Hisasueyato,,,久末谷戸
+stops,stop_name,zh-CN,久末谷户,,,久末谷戸
+stops,stop_name,zh-TW,久末谷戶,,,久末谷戸
+stops,stop_name,ko,히사스에야토,,,久末谷戸
+stops,stop_name,ja-Hrkt,ひさすえやと,,,久末谷戸
+stops,stop_name,ja,久本,,,久本
+stops,stop_name,en,Hisamoto,,,久本
+stops,stop_name,zh-CN,久本,,,久本
+stops,stop_name,zh-TW,久本,,,久本
+stops,stop_name,ko,히사모토,,,久本
+stops,stop_name,ja-Hrkt,ひさもと,,,久本
+stops,stop_name,ja,五反田橋,,,五反田橋
+stops,stop_name,en,Gotandabashi,,,五反田橋
+stops,stop_name,zh-CN,五反田桥,,,五反田橋
+stops,stop_name,zh-TW,五反田橋,,,五反田橋
+stops,stop_name,ko,고탄다바시,,,五反田橋
+stops,stop_name,ja-Hrkt,ごたんだばし,,,五反田橋
+stops,stop_name,ja,五所塚,,,五所塚
+stops,stop_name,en,Goshozuka,,,五所塚
+stops,stop_name,zh-CN,五所冢,,,五所塚
+stops,stop_name,zh-TW,五所塚,,,五所塚
+stops,stop_name,ko,고쇼즈카,,,五所塚
+stops,stop_name,ja-Hrkt,ごしょづか,,,五所塚
+stops,stop_name,ja,井田,,,井田
+stops,stop_name,en,Ida,,,井田
+stops,stop_name,zh-CN,井田,,,井田
+stops,stop_name,zh-TW,井田,,,井田
+stops,stop_name,ko,이다,,,井田
+stops,stop_name,ja-Hrkt,いだ,,,井田
+stops,stop_name,ja,井田交番前,,,井田交番前
+stops,stop_name,en,Ida Kōban Mae,,,井田交番前
+stops,stop_name,zh-CN,井田派出所前,,,井田交番前
+stops,stop_name,zh-TW,井田派出所前,,,井田交番前
+stops,stop_name,ko,이다 파출소 앞,,,井田交番前
+stops,stop_name,ja-Hrkt,いだこうばんまえ,,,井田交番前
+stops,stop_name,ja,井田営業所前,,,井田営業所前
+stops,stop_name,en,Ida Eigyōsho Mae,,,井田営業所前
+stops,stop_name,zh-CN,井田营业所前,,,井田営業所前
+stops,stop_name,zh-TW,井田營業所前,,,井田営業所前
+stops,stop_name,ko,이다 영업소 앞,,,井田営業所前
+stops,stop_name,ja-Hrkt,いだえいぎょうしょまえ,,,井田営業所前
+stops,stop_name,ja,井田小学校入口,,,井田小学校入口
+stops,stop_name,en,Ida Shōgakkō Iriguchi,,,井田小学校入口
+stops,stop_name,zh-CN,井田小学入口,,,井田小学校入口
+stops,stop_name,zh-TW,井田小學入口,,,井田小学校入口
+stops,stop_name,ko,이다 초등학교 입구,,,井田小学校入口
+stops,stop_name,ja-Hrkt,いだしょうがっこういりぐち,,,井田小学校入口
+stops,stop_name,ja,井田消防前,,,井田消防前
+stops,stop_name,en,Ida Shōbō Mae,,,井田消防前
+stops,stop_name,zh-CN,井田消防前,,,井田消防前
+stops,stop_name,zh-TW,井田消防前,,,井田消防前
+stops,stop_name,ko,이다 소방서 앞,,,井田消防前
+stops,stop_name,ja-Hrkt,いだしょうぼうまえ,,,井田消防前
+stops,stop_name,ja,井田病院,,,井田病院
+stops,stop_name,en,Ida Hospital,,,井田病院
+stops,stop_name,zh-CN,井田病院,,,井田病院
+stops,stop_name,zh-TW,井田病院,,,井田病院
+stops,stop_name,ko,이다 병원,,,井田病院
+stops,stop_name,ja-Hrkt,いだびょういん,,,井田病院
+stops,stop_name,ja,井田病院正門前,,,井田病院正門前
+stops,stop_name,en,Ida Hospital,,,井田病院正門前
+stops,stop_name,zh-CN,井田病院正门前,,,井田病院正門前
+stops,stop_name,zh-TW,井田病院正門前,,,井田病院正門前
+stops,stop_name,ko,이다 병원 정문 앞 ,,,井田病院正門前
+stops,stop_name,ja-Hrkt,いだびょういんせいもんぜん,,,井田病院正門前
+stops,stop_name,ja,京セラ前,,,京セラ前
+stops,stop_name,en,KYOCERA Mae,,,京セラ前
+stops,stop_name,zh-CN,京瓷公司前,,,京セラ前
+stops,stop_name,zh-TW,京瓷公司前,,,京セラ前
+stops,stop_name,ko,교세라 앞,,,京セラ前
+stops,stop_name,ja-Hrkt,きょうせらまえ,,,京セラ前
+stops,stop_name,ja,今井上町,,,今井上町
+stops,stop_name,en,Imai-kamichō,,,今井上町
+stops,stop_name,zh-CN,今井上町,,,今井上町
+stops,stop_name,zh-TW,今井上町,,,今井上町
+stops,stop_name,ko,이마이카미초,,,今井上町
+stops,stop_name,ja-Hrkt,いまいかみちょう,,,今井上町
+stops,stop_name,ja,元住吉,,,元住吉
+stops,stop_name,en,Motosumiyoshi,,,元住吉
+stops,stop_name,zh-CN,元住吉,,,元住吉
+stops,stop_name,zh-TW,元住吉,,,元住吉
+stops,stop_name,ko,모토스미요시,,,元住吉
+stops,stop_name,ja-Hrkt,もとすみよし,,,元住吉
+stops,stop_name,ja,元住吉駅前,,,元住吉駅前
+stops,stop_name,en,Motosumiyoshi Sta.,,,元住吉駅前
+stops,stop_name,zh-CN,元住吉站,,,元住吉駅前
+stops,stop_name,zh-TW,元住吉站,,,元住吉駅前
+stops,stop_name,ko,모토스미요시역 ,,,元住吉駅前
+stops,stop_name,ja-Hrkt,もとすみよしえきまえ,,,元住吉駅前
+stops,stop_name,ja,児童公園前,,,児童公園前
+stops,stop_name,en,Jidō Kōen Mae,,,児童公園前
+stops,stop_name,zh-CN,儿童公园前,,,児童公園前
+stops,stop_name,zh-TW,兒童公園前,,,児童公園前
+stops,stop_name,ko,어린이공원 앞,,,児童公園前
+stops,stop_name,ja-Hrkt,じどうこうえんまえ,,,児童公園前
+stops,stop_name,ja,入江崎水処理センター前,,,入江崎水処理センター前
+stops,stop_name,en,Iriezaki Mizushori Center Mae,,,入江崎水処理センター前
+stops,stop_name,zh-CN,入江崎水处理中心前,,,入江崎水処理センター前
+stops,stop_name,zh-TW,入江崎水處理中心前,,,入江崎水処理センター前
+stops,stop_name,ko,이리에자키 수처리센터 앞 ,,,入江崎水処理センター前
+stops,stop_name,ja-Hrkt,いりえざきみずしょりせんたーまえ,,,入江崎水処理センター前
+stops,stop_name,ja,入江崎温水プール前,,,入江崎温水プール前
+stops,stop_name,en,Iriezaki Onsui Pool Mae,,,入江崎温水プール前
+stops,stop_name,zh-CN,入江崎温水游泳池前,,,入江崎温水プール前
+stops,stop_name,zh-TW,入江崎溫水游泳池前,,,入江崎温水プール前
+stops,stop_name,ko,이리에자키 온수풀장 앞 ,,,入江崎温水プール前
+stops,stop_name,ja-Hrkt,いりえざきおんすいぷーるまえ,,,入江崎温水プール前
+stops,stop_name,ja,全竜寺前,,,全竜寺前
+stops,stop_name,en,Zenryūji Mae,,,全竜寺前
+stops,stop_name,zh-CN,全龙寺前,,,全竜寺前
+stops,stop_name,zh-TW,全龍寺前,,,全竜寺前
+stops,stop_name,ko,젠류지 앞,,,全竜寺前
+stops,stop_name,ja-Hrkt,ぜんりゅうじまえ,,,全竜寺前
+stops,stop_name,ja,八幡町,,,八幡町
+stops,stop_name,en,Hachimanchō,,,八幡町
+stops,stop_name,zh-CN,八幡町,,,八幡町
+stops,stop_name,zh-TW,八幡町,,,八幡町
+stops,stop_name,ko,하치만초,,,八幡町
+stops,stop_name,ja-Hrkt,はちまんちょう,,,八幡町
+stops,stop_name,ja,八幡神社前,,,八幡神社前
+stops,stop_name,en,Hachiman Jinja Mae,,,八幡神社前
+stops,stop_name,zh-CN,八幡神社前,,,八幡神社前
+stops,stop_name,zh-TW,八幡神社前,,,八幡神社前
+stops,stop_name,ko,하치만 신사 앞,,,八幡神社前
+stops,stop_name,ja-Hrkt,はちまんじんじゃまえ,,,八幡神社前
+stops,stop_name,ja,出来野,,,出来野
+stops,stop_name,en,Dekino,,,出来野
+stops,stop_name,zh-CN,出来野,,,出来野
+stops,stop_name,zh-TW,出來野,,,出来野
+stops,stop_name,ko,데키노,,,出来野
+stops,stop_name,ja-Hrkt,できの,,,出来野
+stops,stop_name,ja,切通し上,,,切通し上
+stops,stop_name,en,Kiridōshi Ue,,,切通し上
+stops,stop_name,zh-CN,切通上,,,切通し上
+stops,stop_name,zh-TW,切通上,,,切通し上
+stops,stop_name,ko,기리도시우에,,,切通し上
+stops,stop_name,ja-Hrkt,きりどおしうえ,,,切通し上
+stops,stop_name,ja,初山,,,初山
+stops,stop_name,en,Hatsuyama,,,初山
+stops,stop_name,zh-CN,初山,,,初山
+stops,stop_name,zh-TW,初山,,,初山
+stops,stop_name,ko,하츠야마,,,初山
+stops,stop_name,ja-Hrkt,はつやま,,,初山
+stops,stop_name,ja,労働会館前,,,労働会館前
+stops,stop_name,en,Rōdō Kaikan Mae,,,労働会館前
+stops,stop_name,zh-CN,劳动会馆前,,,労働会館前
+stops,stop_name,zh-TW,勞動會館前,,,労働会館前
+stops,stop_name,ko,노동회관 앞,,,労働会館前
+stops,stop_name,ja-Hrkt,ろうどうかいかんまえ,,,労働会館前
+stops,stop_name,ja,労災折り返し所,,,労災折り返し所
+stops,stop_name,ja-Hrkt,ろうさいおりかえしじょ,,,労災折り返し所
+stops,stop_name,ja,労災病院前,,,労災病院前
+stops,stop_name,en,Rōsai Hospital,,,労災病院前
+stops,stop_name,zh-CN,劳灾病院前,,,労災病院前
+stops,stop_name,zh-TW,勞災病院前,,,労災病院前
+stops,stop_name,ko,로사이 병원 앞,,,労災病院前
+stops,stop_name,ja-Hrkt,ろうさいびょういんまえ,,,労災病院前
+stops,stop_name,ja,北加瀬,,,北加瀬
+stops,stop_name,en,Kita-kase,,,北加瀬
+stops,stop_name,zh-CN,北加濑,,,北加瀬
+stops,stop_name,zh-TW,北加瀨,,,北加瀬
+stops,stop_name,ko,기타카세,,,北加瀬
+stops,stop_name,ja-Hrkt,きたかせ,,,北加瀬
+stops,stop_name,ja,北加瀬三丁目,,,北加瀬三丁目
+stops,stop_name,en,Kita-kase  3-chōme,,,北加瀬三丁目
+stops,stop_name,zh-CN,北加濑三丁目,,,北加瀬三丁目
+stops,stop_name,zh-TW,北加瀨三丁目,,,北加瀬三丁目
+stops,stop_name,ko,기타카세 3초메 ,,,北加瀬三丁目
+stops,stop_name,ja-Hrkt,きたかせさんちょうめ,,,北加瀬三丁目
+stops,stop_name,ja,北浦,,,北浦
+stops,stop_name,en,Kitaura,,,北浦
+stops,stop_name,zh-CN,北浦,,,北浦
+stops,stop_name,zh-TW,北浦,,,北浦
+stops,stop_name,ko,기타우라,,,北浦
+stops,stop_name,ja-Hrkt,きたうら,,,北浦
+stops,stop_name,ja,北見方,,,北見方
+stops,stop_name,en,Kitamikata,,,北見方
+stops,stop_name,zh-CN,北见方,,,北見方
+stops,stop_name,zh-TW,北見方,,,北見方
+stops,stop_name,ko,기타미카타,,,北見方
+stops,stop_name,ja-Hrkt,きたみかた,,,北見方
+stops,stop_name,ja,北谷町,,,北谷町
+stops,stop_name,en,Kitayachō,,,北谷町
+stops,stop_name,zh-CN,北谷町,,,北谷町
+stops,stop_name,zh-TW,北谷町,,,北谷町
+stops,stop_name,ko,기타야초,,,北谷町
+stops,stop_name,ja-Hrkt,きたやちょう,,,北谷町
+stops,stop_name,ja,北部市場前,,,北部市場前
+stops,stop_name,en,Hokubu Shijō Mae,,,北部市場前
+stops,stop_name,zh-CN,北部市场前,,,北部市場前
+stops,stop_name,zh-TW,北部市場前,,,北部市場前
+stops,stop_name,ko,북부 시장 앞,,,北部市場前
+stops,stop_name,ja-Hrkt,ほくぶしじょうまえ,,,北部市場前
+stops,stop_name,ja,千年,,,千年
+stops,stop_name,en,Chitose,,,千年
+stops,stop_name,zh-CN,千年,,,千年
+stops,stop_name,zh-TW,千年,,,千年
+stops,stop_name,ko,지토세,,,千年
+stops,stop_name,ja-Hrkt,ちとせ,,,千年
+stops,stop_name,ja,千年住宅前,,,千年住宅前
+stops,stop_name,en,Chitose Jūtaku Mae,,,千年住宅前
+stops,stop_name,zh-CN,千年住宅前,,,千年住宅前
+stops,stop_name,zh-TW,千年住宅前,,,千年住宅前
+stops,stop_name,ko,지토세 주택 앞,,,千年住宅前
+stops,stop_name,ja-Hrkt,ちとせじゅうたくまえ,,,千年住宅前
+stops,stop_name,ja,千年北浦,,,千年北浦
+stops,stop_name,en,Chitose-kitaura,,,千年北浦
+stops,stop_name,zh-CN,千年北浦,,,千年北浦
+stops,stop_name,zh-TW,千年北浦,,,千年北浦
+stops,stop_name,ko,지토세키타우라,,,千年北浦
+stops,stop_name,ja-Hrkt,ちとせきたうら,,,千年北浦
+stops,stop_name,ja,千年新町,,,千年新町
+stops,stop_name,en,Chitose-shinchō,,,千年新町
+stops,stop_name,zh-CN,千年新町,,,千年新町
+stops,stop_name,zh-TW,千年新町,,,千年新町
+stops,stop_name,ko,지토세신초,,,千年新町
+stops,stop_name,ja-Hrkt,ちとせしんちょう,,,千年新町
+stops,stop_name,ja,千鳥町,,,千鳥町
+stops,stop_name,en,Chidorichō,,,千鳥町
+stops,stop_name,zh-CN,千鸟町,,,千鳥町
+stops,stop_name,zh-TW,千鳥町,,,千鳥町
+stops,stop_name,ko,지도리초,,,千鳥町
+stops,stop_name,ja-Hrkt,ちどりちょう,,,千鳥町
+stops,stop_name,ja,千鳥町北,,,千鳥町北
+stops,stop_name,en,Chidorichō-kita,,,千鳥町北
+stops,stop_name,zh-CN,千鸟町北,,,千鳥町北
+stops,stop_name,zh-TW,千鳥町北,,,千鳥町北
+stops,stop_name,ko,지도리초 키타,,,千鳥町北
+stops,stop_name,ja-Hrkt,ちどりちょうきた,,,千鳥町北
+stops,stop_name,ja,南下平間,,,南下平間
+stops,stop_name,en,Minami-shimo-hirama,,,南下平間
+stops,stop_name,zh-CN,南下平间,,,南下平間
+stops,stop_name,zh-TW,南下平間,,,南下平間
+stops,stop_name,ko,미나미시모히라마,,,南下平間
+stops,stop_name,ja-Hrkt,みなみしもひらま,,,南下平間
+stops,stop_name,ja,南二子,,,南二子
+stops,stop_name,en,Minami-futago,,,南二子
+stops,stop_name,zh-CN,南二子,,,南二子
+stops,stop_name,zh-TW,南二子,,,南二子
+stops,stop_name,ko,미나미후타고,,,南二子
+stops,stop_name,ja-Hrkt,みなみふたご,,,南二子
+stops,stop_name,ja,南加瀬交番前,,,南加瀬交番前
+stops,stop_name,en,Minami-kase Kōban Mae,,,南加瀬交番前
+stops,stop_name,zh-CN,南加濑派出所前,,,南加瀬交番前
+stops,stop_name,zh-TW,南加瀨派出所前,,,南加瀬交番前
+stops,stop_name,ko,미나미카세 파출소 앞,,,南加瀬交番前
+stops,stop_name,ja-Hrkt,みなみかせこうばんまえ,,,南加瀬交番前
+stops,stop_name,ja,南加瀬住宅前,,,南加瀬住宅前
+stops,stop_name,en,Minami-kase Jūtaku Mae,,,南加瀬住宅前
+stops,stop_name,zh-CN,南加濑住宅前,,,南加瀬住宅前
+stops,stop_name,zh-TW,南加瀨住宅前,,,南加瀬住宅前
+stops,stop_name,ko,미나미카세 주택 앞,,,南加瀬住宅前
+stops,stop_name,ja-Hrkt,みなみかせじゅうたくまえ,,,南加瀬住宅前
+stops,stop_name,ja,南平,,,南平
+stops,stop_name,en,Nampei,,,南平
+stops,stop_name,zh-CN,南平,,,南平
+stops,stop_name,zh-TW,南平,,,南平
+stops,stop_name,ko,난페이,,,南平
+stops,stop_name,ja-Hrkt,なんぺい,,,南平
+stops,stop_name,ja,南幸町二丁目,,,南幸町二丁目
+stops,stop_name,en,Minami-saiwaichō 2-chōme,,,南幸町二丁目
+stops,stop_name,zh-CN,南幸町二丁目,,,南幸町二丁目
+stops,stop_name,zh-TW,南幸町二丁目,,,南幸町二丁目
+stops,stop_name,ko,미나미사이와이초 2초메,,,南幸町二丁目
+stops,stop_name,ja-Hrkt,みなみさいわいちょうにちょうめ,,,南幸町二丁目
+stops,stop_name,ja,南生田一丁目,,,南生田一丁目
+stops,stop_name,en,Minami-ikuta 1-chōme,,,南生田一丁目
+stops,stop_name,zh-CN,南生田一丁目,,,南生田一丁目
+stops,stop_name,zh-TW,南生田一丁目,,,南生田一丁目
+stops,stop_name,ko,미나미이쿠타 1초메,,,南生田一丁目
+stops,stop_name,ja-Hrkt,みなみいくたいっちょうめ,,,南生田一丁目
+stops,stop_name,ja,南生田三丁目,,,南生田三丁目
+stops,stop_name,en,Minami-ikuta 3-chōme,,,南生田三丁目
+stops,stop_name,zh-CN,南生田三丁目,,,南生田三丁目
+stops,stop_name,zh-TW,南生田三丁目,,,南生田三丁目
+stops,stop_name,ko,미나미이쿠타 3초메,,,南生田三丁目
+stops,stop_name,ja-Hrkt,みなみいくたさんちょうめ,,,南生田三丁目
+stops,stop_name,ja,南生田二丁目,,,南生田二丁目
+stops,stop_name,en,Minami-ikuta 2-chōme,,,南生田二丁目
+stops,stop_name,zh-CN,南生田二丁目,,,南生田二丁目
+stops,stop_name,zh-TW,南生田二丁目,,,南生田二丁目
+stops,stop_name,ko,미나미이쿠타 2초메,,,南生田二丁目
+stops,stop_name,ja-Hrkt,みなみいくたにちょうめ,,,南生田二丁目
+stops,stop_name,ja,南生田保育園前,,,南生田保育園前
+stops,stop_name,en,Minami-ikuta Hoikuen Mae,,,南生田保育園前
+stops,stop_name,zh-CN,南生田保育园前,,,南生田保育園前
+stops,stop_name,zh-TW,南生田保育園前,,,南生田保育園前
+stops,stop_name,ko,미나미이쿠타 유치원 앞,,,南生田保育園前
+stops,stop_name,ja-Hrkt,みなみいくたほいくえんまえ,,,南生田保育園前
+stops,stop_name,ja,南生田四丁目,,,南生田四丁目
+stops,stop_name,en,Minami-ikuta 4-chōme,,,南生田四丁目
+stops,stop_name,zh-CN,南生田四丁目,,,南生田四丁目
+stops,stop_name,zh-TW,南生田四丁目,,,南生田四丁目
+stops,stop_name,ko,미나미이쿠타 4초메,,,南生田四丁目
+stops,stop_name,ja-Hrkt,みなみいくたよんちょうめ,,,南生田四丁目
+stops,stop_name,ja,南生田小学校前,,,南生田小学校前
+stops,stop_name,en,Minami-ikuta Shōgakkō Mae,,,南生田小学校前
+stops,stop_name,zh-CN,南生田小学前,,,南生田小学校前
+stops,stop_name,zh-TW,南生田小學前,,,南生田小学校前
+stops,stop_name,ko,미나미이쿠타 초등학교 앞,,,南生田小学校前
+stops,stop_name,ja-Hrkt,みなみいくたしょうがっこうまえ,,,南生田小学校前
+stops,stop_name,ja,南野川,,,南野川
+stops,stop_name,en,Minami-nogawa,,,南野川
+stops,stop_name,zh-CN,南野川,,,南野川
+stops,stop_name,zh-TW,南野川,,,南野川
+stops,stop_name,ko,미나미노가와,,,南野川
+stops,stop_name,ja-Hrkt,みなみのがわ,,,南野川
+stops,stop_name,ja,卸売市場前,,,卸売市場前
+stops,stop_name,en,Oroshiuri Shijō Mae,,,卸売市場前
+stops,stop_name,zh-CN,批发市场前,,,卸売市場前
+stops,stop_name,zh-TW,批發市場前,,,卸売市場前
+stops,stop_name,ko,도매시장 앞,,,卸売市場前
+stops,stop_name,ja-Hrkt,おろしうりしじょうまえ,,,卸売市場前
+stops,stop_name,ja,原ヶ谷,,,原ヶ谷
+stops,stop_name,en,Haragayato,,,原ヶ谷
+stops,stop_name,zh-CN,原之谷,,,原ヶ谷
+stops,stop_name,zh-TW,原之谷,,,原ヶ谷
+stops,stop_name,ko,하라가야토,,,原ヶ谷
+stops,stop_name,ja-Hrkt,はらがや,,,原ヶ谷
+stops,stop_name,ja,古市場一丁目,,,古市場一丁目
+stops,stop_name,en,Furuichiba 1-chōme,,,古市場一丁目
+stops,stop_name,zh-CN,古市场一丁目,,,古市場一丁目
+stops,stop_name,zh-TW,古市場一丁目,,,古市場一丁目
+stops,stop_name,ko,후루이치바 1초메,,,古市場一丁目
+stops,stop_name,ja-Hrkt,ふるいちばいっちょうめ,,,古市場一丁目
+stops,stop_name,ja,古市場二丁目,,,古市場二丁目
+stops,stop_name,en,Furuichiba 2-chōme,,,古市場二丁目
+stops,stop_name,zh-CN,古市场二丁目,,,古市場二丁目
+stops,stop_name,zh-TW,古市場二丁目,,,古市場二丁目
+stops,stop_name,ko,후루이치바 2초메,,,古市場二丁目
+stops,stop_name,ja-Hrkt,ふるいちばにちょうめ,,,古市場二丁目
+stops,stop_name,ja,古市場交番前,,,古市場交番前
+stops,stop_name,en,Furuichiba Kōban Mae,,,古市場交番前
+stops,stop_name,zh-CN,古市场派出所前,,,古市場交番前
+stops,stop_name,zh-TW,古市場派出所前,,,古市場交番前
+stops,stop_name,ko,후루이치바 파출소 앞,,,古市場交番前
+stops,stop_name,ja-Hrkt,ふるいちばこうばんまえ,,,古市場交番前
+stops,stop_name,ja,台町,,,台町
+stops,stop_name,en,Daimachi,,,台町
+stops,stop_name,zh-CN,台町,,,台町
+stops,stop_name,zh-TW,台町,,,台町
+stops,stop_name,ko,다이마치,,,台町
+stops,stop_name,ja-Hrkt,だいまち,,,台町
+stops,stop_name,ja,向丘中学校下,,,向丘中学校下
+stops,stop_name,en,Mukaigaoka Chūgakkō Shita,,,向丘中学校下
+stops,stop_name,zh-CN,向丘中学下,,,向丘中学校下
+stops,stop_name,zh-TW,向丘中學下,,,向丘中学校下
+stops,stop_name,ko,무카이가오카 중학교 ,,,向丘中学校下
+stops,stop_name,ja-Hrkt,むかいがおかちゅうがっこうした,,,向丘中学校下
+stops,stop_name,ja,向丘出張所,,,向丘出張所
+stops,stop_name,en,Mukaigaoka Shutchōjo,,,向丘出張所
+stops,stop_name,zh-CN,向丘办事处,,,向丘出張所
+stops,stop_name,zh-TW,向丘辦事處,,,向丘出張所
+stops,stop_name,ko,무카이가오카 출장소,,,向丘出張所
+stops,stop_name,ja-Hrkt,むかいがおかしゅっちょうじょ,,,向丘出張所
+stops,stop_name,ja,向丘遊園駅入口,,,向丘遊園駅入口
+stops,stop_name,en,Mukōgaoka-Yūen Eki Iriguchi,,,向丘遊園駅入口
+stops,stop_name,zh-CN,向丘游园站入口,,,向丘遊園駅入口
+stops,stop_name,zh-TW,向丘遊園站入口,,,向丘遊園駅入口
+stops,stop_name,ko,무코가오카유엔역 입구,,,向丘遊園駅入口
+stops,stop_name,ja-Hrkt,むこうがおかゆうえんえきいりぐち,,,向丘遊園駅入口
+stops,stop_name,ja,向丘遊園駅南口,,,向丘遊園駅南口
+stops,stop_name,en,Mukōgaoka-Yūen Sta,,,向丘遊園駅南口
+stops,stop_name,zh-CN,向丘游园站,,,向丘遊園駅南口
+stops,stop_name,zh-TW,向丘遊園站,,,向丘遊園駅南口
+stops,stop_name,ko,무코가오카유엔역,,,向丘遊園駅南口
+stops,stop_name,ja-Hrkt,むこうがおかゆうえんえきみなみぐち,,,向丘遊園駅南口
+stops,stop_name,ja,向河原駅入口,,,向河原駅入口
+stops,stop_name,en,Mukaigawara Eki Iriguchi,,,向河原駅入口
+stops,stop_name,zh-CN,向河原站入口,,,向河原駅入口
+stops,stop_name,zh-TW,向河原站入口,,,向河原駅入口
+stops,stop_name,ko,무카이가와라역 입구,,,向河原駅入口
+stops,stop_name,ja-Hrkt,むかいがわらえきいりぐち,,,向河原駅入口
+stops,stop_name,ja,和泉,,,和泉
+stops,stop_name,en,Izumi,,,和泉
+stops,stop_name,zh-CN,和泉,,,和泉
+stops,stop_name,zh-TW,和泉,,,和泉
+stops,stop_name,ko,이즈미,,,和泉
+stops,stop_name,ja-Hrkt,いずみ,,,和泉
+stops,stop_name,ja,和田八幡宮下,,,和田八幡宮下
+stops,stop_name,en,Wada Hachimangū Shita,,,和田八幡宮下
+stops,stop_name,zh-CN,和田八幡宫下,,,和田八幡宮下
+stops,stop_name,zh-TW,和田八幡宮下,,,和田八幡宮下
+stops,stop_name,ko,와다하치만구 ,,,和田八幡宮下
+stops,stop_name,ja-Hrkt,わだはちまんぐうした,,,和田八幡宮下
+stops,stop_name,ja,四谷,,,四谷
+stops,stop_name,en,Yotsuya,,,四谷
+stops,stop_name,zh-CN,四谷,,,四谷
+stops,stop_name,zh-TW,四谷,,,四谷
+stops,stop_name,ko,요츠야,,,四谷
+stops,stop_name,ja-Hrkt,よつや,,,四谷
+stops,stop_name,ja,四谷上町,,,四谷上町
+stops,stop_name,en,Yotsuya-kamichō,,,四谷上町
+stops,stop_name,zh-CN,四谷上町,,,四谷上町
+stops,stop_name,zh-TW,四谷上町,,,四谷上町
+stops,stop_name,ko,요츠야카미초,,,四谷上町
+stops,stop_name,ja-Hrkt,よつやかみちょう,,,四谷上町
+stops,stop_name,ja,四谷下町,,,四谷下町
+stops,stop_name,en,Yotsuya-shimochō,,,四谷下町
+stops,stop_name,zh-CN,四谷下町,,,四谷下町
+stops,stop_name,zh-TW,四谷下町,,,四谷下町
+stops,stop_name,ko,요츠야시모초,,,四谷下町
+stops,stop_name,ja-Hrkt,よつやしもちょう,,,四谷下町
+stops,stop_name,ja,土橋,,,土橋
+stops,stop_name,en,Tsuchihashi,,,土橋
+stops,stop_name,zh-CN,土桥,,,土橋
+stops,stop_name,zh-TW,土橋,,,土橋
+stops,stop_name,ko,츠치하시,,,土橋
+stops,stop_name,ja-Hrkt,つちはし,,,土橋
+stops,stop_name,ja,土橋南公園,,,土橋南公園
+stops,stop_name,en,Tsuchihashi Minami-kōen,,,土橋南公園
+stops,stop_name,zh-CN,土桥南公园,,,土橋南公園
+stops,stop_name,zh-TW,土橋南公園,,,土橋南公園
+stops,stop_name,ko,츠치하시 미나미공원,,,土橋南公園
+stops,stop_name,ja-Hrkt,つちはしみなみこうえん,,,土橋南公園
+stops,stop_name,ja,土橋四丁目,,,土橋四丁目
+stops,stop_name,en,Tsuchihashi 4-chōme,,,土橋四丁目
+stops,stop_name,zh-CN,土桥四丁目,,,土橋四丁目
+stops,stop_name,zh-TW,土橋四丁目,,,土橋四丁目
+stops,stop_name,ko,츠치하시 4초메,,,土橋四丁目
+stops,stop_name,ja-Hrkt,つちはしよんちょうめ,,,土橋四丁目
+stops,stop_name,ja,土橋神社前,,,土橋神社前
+stops,stop_name,en,Tsuchihashi Jinja Mae,,,土橋神社前
+stops,stop_name,zh-CN,土桥神社前,,,土橋神社前
+stops,stop_name,zh-TW,土橋神社前,,,土橋神社前
+stops,stop_name,ko,츠치하시 신사 앞,,,土橋神社前
+stops,stop_name,ja-Hrkt,つちはしじんじゃまえ,,,土橋神社前
+stops,stop_name,ja,土渕,,,土渕
+stops,stop_name,en,Tsuchibuchi,,,土渕
+stops,stop_name,zh-CN,土渊,,,土渕
+stops,stop_name,zh-TW,土淵,,,土渕
+stops,stop_name,ko,츠치부치,,,土渕
+stops,stop_name,ja-Hrkt,つちぶち,,,土渕
+stops,stop_name,ja,城下,,,城下
+stops,stop_name,en,Shiroshita,,,城下
+stops,stop_name,zh-CN,城下,,,城下
+stops,stop_name,zh-TW,城下,,,城下
+stops,stop_name,ko,시로시타,,,城下
+stops,stop_name,ja-Hrkt,しろした,,,城下
+stops,stop_name,ja,堰下,,,堰下
+stops,stop_name,en,Sekishita,,,堰下
+stops,stop_name,zh-CN,堰下,,,堰下
+stops,stop_name,zh-TW,堰下,,,堰下
+stops,stop_name,ko,세키시타,,,堰下
+stops,stop_name,ja-Hrkt,せきした,,,堰下
+stops,stop_name,ja,塚戸,,,塚戸
+stops,stop_name,en,Tsukado,,,塚戸
+stops,stop_name,zh-CN,冢户,,,塚戸
+stops,stop_name,zh-TW,塚戶,,,塚戸
+stops,stop_name,ko,츠카도,,,塚戸
+stops,stop_name,ja-Hrkt,つかど,,,塚戸
+stops,stop_name,ja,塚越,,,塚越
+stops,stop_name,en,Tsukagoshi,,,塚越
+stops,stop_name,zh-CN,冢越,,,塚越
+stops,stop_name,zh-TW,塚越,,,塚越
+stops,stop_name,ko,츠카고시,,,塚越
+stops,stop_name,ja-Hrkt,つかごし,,,塚越
+stops,stop_name,ja,塚越交番前,,,塚越交番前
+stops,stop_name,en,Tsukagoshi　 Kōban Mae,,,塚越交番前
+stops,stop_name,zh-CN,冢越派出所前,,,塚越交番前
+stops,stop_name,zh-TW,塚越派出所前,,,塚越交番前
+stops,stop_name,ko,츠카고시　파출소 앞,,,塚越交番前
+stops,stop_name,ja-Hrkt,つかごしこうばんまえ,,,塚越交番前
+stops,stop_name,ja,塩浜,,,塩浜
+stops,stop_name,en,Shiohama,,,塩浜
+stops,stop_name,zh-CN,盐滨,,,塩浜
+stops,stop_name,zh-TW,鹽濱,,,塩浜
+stops,stop_name,ko,시오하마,,,塩浜
+stops,stop_name,ja-Hrkt,しおはま,,,塩浜
+stops,stop_name,ja,塩浜営業所前,,,塩浜営業所前
+stops,stop_name,en,Shiohama Eigyōsho Mae,,,塩浜営業所前
+stops,stop_name,zh-CN,盐滨营业所前,,,塩浜営業所前
+stops,stop_name,zh-TW,鹽濱營業所前,,,塩浜営業所前
+stops,stop_name,ko,시오하마 영업소 앞,,,塩浜営業所前
+stops,stop_name,ja-Hrkt,しおはまえいぎょうしょまえ,,,塩浜営業所前
+stops,stop_name,ja,多摩区役所前,,,多摩区役所前
+stops,stop_name,en,Tama Kuyakusho Mae,,,多摩区役所前
+stops,stop_name,zh-CN,多摩区政府前,,,多摩区役所前
+stops,stop_name,zh-TW,多摩區政府前,,,多摩区役所前
+stops,stop_name,ko,다마 구청 앞 ,,,多摩区役所前
+stops,stop_name,ja-Hrkt,たまくやくしょまえ,,,多摩区役所前
+stops,stop_name,ja,多摩消防署前,,,多摩消防署前
+stops,stop_name,en,Tama Shōbōsho Mae,,,多摩消防署前
+stops,stop_name,zh-CN,多摩消防署前,,,多摩消防署前
+stops,stop_name,zh-TW,多摩消防署前,,,多摩消防署前
+stops,stop_name,ko,다마 소방서 앞,,,多摩消防署前
+stops,stop_name,ja-Hrkt,たましょうぼうしょまえ,,,多摩消防署前
+stops,stop_name,ja,多摩病院前,,,多摩病院前
+stops,stop_name,en,Tama Hospital,,,多摩病院前
+stops,stop_name,zh-CN,多摩病院前,,,多摩病院前
+stops,stop_name,zh-TW,多摩病院前,,,多摩病院前
+stops,stop_name,ko,다마 병원 앞,,,多摩病院前
+stops,stop_name,ja-Hrkt,たまびょういんまえ,,,多摩病院前
+stops,stop_name,ja,多摩老人福祉センター前,,,多摩老人福祉センター前
+stops,stop_name,en,Tama Rōjin Fukushi Center Mae,,,多摩老人福祉センター前
+stops,stop_name,zh-CN,多摩老人福祉中心前,,,多摩老人福祉センター前
+stops,stop_name,zh-TW,多摩老人福祉中心前,,,多摩老人福祉センター前
+stops,stop_name,ko,다마 노인복지센터 앞,,,多摩老人福祉センター前
+stops,stop_name,ja-Hrkt,たまろうじんふくしせんたーまえ,,,多摩老人福祉センター前
+stops,stop_name,ja,多摩警察署前,,,多摩警察署前
+stops,stop_name,en,Tama Keisatsusho Mae,,,多摩警察署前
+stops,stop_name,zh-CN,多摩警察署前,,,多摩警察署前
+stops,stop_name,zh-TW,多摩警察署前,,,多摩警察署前
+stops,stop_name,ko,다마 경찰서 앞,,,多摩警察署前
+stops,stop_name,ja-Hrkt,たまけいさつしょまえ,,,多摩警察署前
+stops,stop_name,ja,夢見ヶ崎動物公園前,,,夢見ヶ崎動物公園前
+stops,stop_name,en,Yumemigasaki Dōbutsu Kōen Mae,,,夢見ヶ崎動物公園前
+stops,stop_name,zh-CN,梦见之崎动物公园前,,,夢見ヶ崎動物公園前
+stops,stop_name,zh-TW,夢見之崎動物公園前,,,夢見ヶ崎動物公園前
+stops,stop_name,ko,유메미가사키 동물공원 앞,,,夢見ヶ崎動物公園前
+stops,stop_name,ja-Hrkt,ゆめみがさきどうぶつこうえんまえ,,,夢見ヶ崎動物公園前
+stops,stop_name,ja,大ヶ谷戸,,,大ヶ谷戸
+stops,stop_name,en,Ōgayato,,,大ヶ谷戸
+stops,stop_name,zh-CN,大之谷户,,,大ヶ谷戸
+stops,stop_name,zh-TW,大之谷戶,,,大ヶ谷戸
+stops,stop_name,ko,오오가야토,,,大ヶ谷戸
+stops,stop_name,ja-Hrkt,おおがやど,,,大ヶ谷戸
+stops,stop_name,ja,大ヶ谷戸向町,,,大ヶ谷戸向町
+stops,stop_name,en,Ōgayato-mukaichō,,,大ヶ谷戸向町
+stops,stop_name,zh-CN,大之谷户向町,,,大ヶ谷戸向町
+stops,stop_name,zh-TW,大之谷戶向町,,,大ヶ谷戸向町
+stops,stop_name,ko,오오가야토무카이초,,,大ヶ谷戸向町
+stops,stop_name,ja-Hrkt,おおがやとむかいちょう,,,大ヶ谷戸向町
+stops,stop_name,ja,大原,,,大原
+stops,stop_name,en,Ōhara,,,大原
+stops,stop_name,zh-CN,大原,,,大原
+stops,stop_name,zh-TW,大原,,,大原
+stops,stop_name,ko,오오하라,,,大原
+stops,stop_name,ja-Hrkt,おおはら,,,大原
+stops,stop_name,ja,大同特殊鋼前,,,大同特殊鋼前
+stops,stop_name,en,Daido Tokushukō Mae,,,大同特殊鋼前
+stops,stop_name,zh-CN,大同特殊钢前,,,大同特殊鋼前
+stops,stop_name,zh-TW,大同特殊鋼前,,,大同特殊鋼前
+stops,stop_name,ko,다이도 특수강 앞,,,大同特殊鋼前
+stops,stop_name,ja-Hrkt,だいどうとくしゅこうまえ,,,大同特殊鋼前
+stops,stop_name,ja,大島三丁目,,,大島三丁目
+stops,stop_name,en,Ōshima 3-chōme,,,大島三丁目
+stops,stop_name,zh-CN,大岛三丁目,,,大島三丁目
+stops,stop_name,zh-TW,大島三丁目,,,大島三丁目
+stops,stop_name,ko,오오시마 3초메,,,大島三丁目
+stops,stop_name,ja-Hrkt,おおしま3ちょうめ,,,大島三丁目
+stops,stop_name,ja,大島五丁目,,,大島五丁目
+stops,stop_name,en,Ōshima 5-chōme,,,大島五丁目
+stops,stop_name,zh-CN,大岛五丁目,,,大島五丁目
+stops,stop_name,zh-TW,大島五丁目,,,大島五丁目
+stops,stop_name,ko,오오시마 5초메,,,大島五丁目
+stops,stop_name,ja-Hrkt,おおしま5ちょうめ,,,大島五丁目
+stops,stop_name,ja,大島四ツ角,,,大島四ツ角
+stops,stop_name,en,Ōshima Yotsukado,,,大島四ツ角
+stops,stop_name,zh-CN,大岛四角,,,大島四ツ角
+stops,stop_name,zh-TW,大島四角,,,大島四ツ角
+stops,stop_name,ko,오오시마요츠카도,,,大島四ツ角
+stops,stop_name,ja-Hrkt,おおしまよつかど,,,大島四ツ角
+stops,stop_name,ja,大島四丁目,,,大島四丁目
+stops,stop_name,en,Ōshima 4-chōme,,,大島四丁目
+stops,stop_name,zh-CN,大岛四丁目,,,大島四丁目
+stops,stop_name,zh-TW,大島四丁目,,,大島四丁目
+stops,stop_name,ko,오오시마 4초메,,,大島四丁目
+stops,stop_name,ja-Hrkt,おおしま4ちょうめ,,,大島四丁目
+stops,stop_name,ja,大島第２公園入口,,,大島第２公園入口
+stops,stop_name,en,Ōshima Daini Kōen Iriguchi,,,大島第２公園入口
+stops,stop_name,zh-CN,大岛第二公园入口,,,大島第２公園入口
+stops,stop_name,zh-TW,大島第2公園入口,,,大島第２公園入口
+stops,stop_name,ko,오오시마 제2공원 입구,,,大島第２公園入口
+stops,stop_name,ja-Hrkt,おおしまだいにこうえんいりぐち,,,大島第２公園入口
+stops,stop_name,ja,大師河原,,,大師河原
+stops,stop_name,en,Daishi-gawara,,,大師河原
+stops,stop_name,zh-CN,大师河原,,,大師河原
+stops,stop_name,zh-TW,大師河原,,,大師河原
+stops,stop_name,ko,다이시가와라,,,大師河原
+stops,stop_name,ja-Hrkt,だいしがわら,,,大師河原
+stops,stop_name,ja,大戸小学校前,,,大戸小学校前
+stops,stop_name,en,Ōto Shōgakkō Mae,,,大戸小学校前
+stops,stop_name,zh-CN,大户小学前,,,大戸小学校前
+stops,stop_name,zh-TW,大戶小學前,,,大戸小学校前
+stops,stop_name,ko,오오토 초등학교 앞,,,大戸小学校前
+stops,stop_name,ja-Hrkt,おおとしょうがっこうまえ,,,大戸小学校前
+stops,stop_name,ja,大戸神社前,,,大戸神社前
+stops,stop_name,en,Ōto Jinja Mae,,,大戸神社前
+stops,stop_name,zh-CN,大户神社前,,,大戸神社前
+stops,stop_name,zh-TW,大戶神社前,,,大戸神社前
+stops,stop_name,ko,오오토 신사 앞,,,大戸神社前
+stops,stop_name,ja-Hrkt,おおとじんじゃまえ,,,大戸神社前
+stops,stop_name,ja,大谷団地入口,,,大谷団地入口
+stops,stop_name,en,Ōya Danchi Iriguchi,,,大谷団地入口
+stops,stop_name,zh-CN,大谷团地入口,,,大谷団地入口
+stops,stop_name,zh-TW,大谷團地入口,,,大谷団地入口
+stops,stop_name,ko,오오야 단지 입구,,,大谷団地入口
+stops,stop_name,ja-Hrkt,おおたにだんちいりぐち,,,大谷団地入口
+stops,stop_name,ja,天満天神社前,,,天満天神社前
+stops,stop_name,en,Temmanten Jinja Mae,,,天満天神社前
+stops,stop_name,zh-CN,天满天神社前,,,天満天神社前
+stops,stop_name,zh-TW,天滿天神社前,,,天満天神社前
+stops,stop_name,ko,덴만텐 신사 앞,,,天満天神社前
+stops,stop_name,ja-Hrkt,てんまんてんじんじゃまえ,,,天満天神社前
+stops,stop_name,ja,天王下,,,天王下
+stops,stop_name,en,Tennō Shita,,,天王下
+stops,stop_name,zh-CN,天王下,,,天王下
+stops,stop_name,zh-TW,天王下,,,天王下
+stops,stop_name,ko,덴노시타,,,天王下
+stops,stop_name,ja-Hrkt,てんのうした,,,天王下
+stops,stop_name,ja,天神台,,,天神台
+stops,stop_name,en,Tenjindai,,,天神台
+stops,stop_name,zh-CN,天神台,,,天神台
+stops,stop_name,zh-TW,天神台,,,天神台
+stops,stop_name,ko,덴진다이,,,天神台
+stops,stop_name,ja-Hrkt,てんじんだい,,,天神台
+stops,stop_name,ja,妙光寺前,,,妙光寺前
+stops,stop_name,en,Myōkōji Mae,,,妙光寺前
+stops,stop_name,zh-CN,妙光寺前,,,妙光寺前
+stops,stop_name,zh-TW,妙光寺前,,,妙光寺前
+stops,stop_name,ko,묘코지 앞,,,妙光寺前
+stops,stop_name,ja-Hrkt,みょうこうじまえ,,,妙光寺前
+stops,stop_name,ja,妙法寺下,,,妙法寺下
+stops,stop_name,en,Myōhōji Shita,,,妙法寺下
+stops,stop_name,zh-CN,妙法寺下,,,妙法寺下
+stops,stop_name,zh-TW,妙法寺下,,,妙法寺下
+stops,stop_name,ko,묘호지 ,,,妙法寺下
+stops,stop_name,ja-Hrkt,みょうほうじした,,,妙法寺下
+stops,stop_name,ja,姿見台,,,姿見台
+stops,stop_name,en,Sugatamidai,,,姿見台
+stops,stop_name,zh-CN,姿见台,,,姿見台
+stops,stop_name,zh-TW,姿見台,,,姿見台
+stops,stop_name,ko,스가타미다이,,,姿見台
+stops,stop_name,ja-Hrkt,すがたみだい,,,姿見台
+stops,stop_name,ja,子の神,,,子の神
+stops,stop_name,en,Nenokami,,,子の神
+stops,stop_name,zh-CN,子之神,,,子の神
+stops,stop_name,zh-TW,子之神,,,子の神
+stops,stop_name,ko,네노카미,,,子の神
+stops,stop_name,ja-Hrkt,ねのかみ,,,子の神
+stops,stop_name,ja,子母口,,,子母口
+stops,stop_name,en,Shibokuchi,,,子母口
+stops,stop_name,zh-CN,子母口,,,子母口
+stops,stop_name,zh-TW,子母口,,,子母口
+stops,stop_name,ko,시보쿠치,,,子母口
+stops,stop_name,ja-Hrkt,しぼくち,,,子母口
+stops,stop_name,ja,子母口住宅前,,,子母口住宅前
+stops,stop_name,en,Shibokuchi Jūtaku Mae,,,子母口住宅前
+stops,stop_name,zh-CN,子母口住宅前,,,子母口住宅前
+stops,stop_name,zh-TW,子母口住宅前,,,子母口住宅前
+stops,stop_name,ko,시보쿠치 주택 앞 ,,,子母口住宅前
+stops,stop_name,ja-Hrkt,しぼくちじゅうたくまえ,,,子母口住宅前
+stops,stop_name,ja,子母口小学校入口,,,子母口小学校入口
+stops,stop_name,en,Shibokuchi Shōgakkō Iriguchi,,,子母口小学校入口
+stops,stop_name,zh-CN,子母口小学入口,,,子母口小学校入口
+stops,stop_name,zh-TW,子母口小學入口,,,子母口小学校入口
+stops,stop_name,ko,시보쿠치 초등학교 입구,,,子母口小学校入口
+stops,stop_name,ja-Hrkt,しぼくちしょうがっこういりぐち,,,子母口小学校入口
+stops,stop_name,ja,子母口新田,,,子母口新田
+stops,stop_name,en,Shibokuchi Shinden,,,子母口新田
+stops,stop_name,zh-CN,子母口新田,,,子母口新田
+stops,stop_name,zh-TW,子母口新田,,,子母口新田
+stops,stop_name,ko,시보쿠치신덴,,,子母口新田
+stops,stop_name,ja-Hrkt,しぼくちしんでん,,,子母口新田
+stops,stop_name,ja,子母口新道,,,子母口新道
+stops,stop_name,en,Shibokuchi Shindō,,,子母口新道
+stops,stop_name,zh-CN,子母口新道,,,子母口新道
+stops,stop_name,zh-TW,子母口新道,,,子母口新道
+stops,stop_name,ko,시보쿠치신도,,,子母口新道
+stops,stop_name,ja-Hrkt,しぼくちしんどう,,,子母口新道
+stops,stop_name,ja,宮ノ下,,,宮ノ下
+stops,stop_name,en,Miyanoshita,,,宮ノ下
+stops,stop_name,zh-CN,宫之下,,,宮ノ下
+stops,stop_name,zh-TW,宮之下,,,宮ノ下
+stops,stop_name,ko,미야노시타,,,宮ノ下
+stops,stop_name,ja-Hrkt,みやのした,,,宮ノ下
+stops,stop_name,ja,宮内,,,宮内
+stops,stop_name,en,Miyauchi,,,宮内
+stops,stop_name,zh-CN,宫内,,,宮内
+stops,stop_name,zh-TW,宮內,,,宮内
+stops,stop_name,ko,미야우치,,,宮内
+stops,stop_name,ja-Hrkt,みやうち,,,宮内
+stops,stop_name,ja,宮内公民館前,,,宮内公民館前
+stops,stop_name,en,Miyauchi Kōminkan Mae,,,宮内公民館前
+stops,stop_name,zh-CN,宫内公民馆前,,,宮内公民館前
+stops,stop_name,zh-TW,宮內公民館前,,,宮内公民館前
+stops,stop_name,ko,미야우치 주민회관 앞 ,,,宮内公民館前
+stops,stop_name,ja-Hrkt,みやうちこうみんかんまえ,,,宮内公民館前
+stops,stop_name,ja,宮内西,,,宮内西
+stops,stop_name,en,Miyauchi-nishi,,,宮内西
+stops,stop_name,zh-CN,宫内西,,,宮内西
+stops,stop_name,zh-TW,宮內西,,,宮内西
+stops,stop_name,ko,미야우치니시,,,宮内西
+stops,stop_name,ja-Hrkt,みやうちにし,,,宮内西
+stops,stop_name,ja,宮前,,,宮前
+stops,stop_name,en,Miyamae,,,宮前
+stops,stop_name,zh-CN,宫前,,,宮前
+stops,stop_name,zh-TW,宮前,,,宮前
+stops,stop_name,ko,미야마에,,,宮前
+stops,stop_name,ja-Hrkt,みやまえ,,,宮前
+stops,stop_name,ja,宮前区役所前,,,宮前区役所前
+stops,stop_name,en,Miyamae Kuyakusho Mae,,,宮前区役所前
+stops,stop_name,zh-CN,宫前区政府前,,,宮前区役所前
+stops,stop_name,zh-TW,宮前區政府前,,,宮前区役所前
+stops,stop_name,ko,미야마에 구청 앞,,,宮前区役所前
+stops,stop_name,ja-Hrkt,みやまえくやくしょまえ,,,宮前区役所前
+stops,stop_name,ja,宮前平駅,,,宮前平駅
+stops,stop_name,en,Miyamaedaira Sta.,,,宮前平駅
+stops,stop_name,zh-CN,宫前平站,,,宮前平駅
+stops,stop_name,zh-TW,宮前平站,,,宮前平駅
+stops,stop_name,ko,미야마에다이라역,,,宮前平駅
+stops,stop_name,ja-Hrkt,みやまえだいらえき,,,宮前平駅
+stops,stop_name,ja,宮前美しの森公園,,,宮前美しの森公園
+stops,stop_name,en,Miyamae-Utsukushinomori Kōen,,,宮前美しの森公園
+stops,stop_name,zh-CN,宫前美森公园,,,宮前美しの森公園
+stops,stop_name,zh-TW,宮前美森公園,,,宮前美しの森公園
+stops,stop_name,ko,미야마에우츠쿠시노모리 공원,,,宮前美しの森公園
+stops,stop_name,ja-Hrkt,みやまえうつくしのもりこうえん,,,宮前美しの森公園
+stops,stop_name,ja,宮前郵便局前,,,宮前郵便局前
+stops,stop_name,en,Miyamae Yūbinkyoku Mae,,,宮前郵便局前
+stops,stop_name,zh-CN,宫前邮局前,,,宮前郵便局前
+stops,stop_name,zh-TW,宮前郵局前,,,宮前郵便局前
+stops,stop_name,ko,미야마에 우체국 앞,,,宮前郵便局前
+stops,stop_name,ja-Hrkt,みやまえゆうびんきょくまえ,,,宮前郵便局前
+stops,stop_name,ja,宿河原,,,宿河原
+stops,stop_name,en,Shukugawara,,,宿河原
+stops,stop_name,zh-CN,宿河原,,,宿河原
+stops,stop_name,zh-TW,宿河原,,,宿河原
+stops,stop_name,ko,슈쿠가와라,,,宿河原
+stops,stop_name,ja-Hrkt,しゅくがわら,,,宿河原
+stops,stop_name,ja,宿河原小学校前,,,宿河原小学校前
+stops,stop_name,en,Shukugawara Shōgakkō Mae,,,宿河原小学校前
+stops,stop_name,zh-CN,宿河原小学前,,,宿河原小学校前
+stops,stop_name,zh-TW,宿河原小學前,,,宿河原小学校前
+stops,stop_name,ko,슈쿠가와라 초등학교 앞,,,宿河原小学校前
+stops,stop_name,ja-Hrkt,しゅくがわらしょうがっこうまえ,,,宿河原小学校前
+stops,stop_name,ja,宿河原駅入口,,,宿河原駅入口
+stops,stop_name,en,Shukugawara Eki Iriguchi,,,宿河原駅入口
+stops,stop_name,zh-CN,宿河原站入口,,,宿河原駅入口
+stops,stop_name,zh-TW,宿河原站入口,,,宿河原駅入口
+stops,stop_name,ko,슈쿠가와라역 입구,,,宿河原駅入口
+stops,stop_name,ja-Hrkt,しゅくがわらえきいりぐち,,,宿河原駅入口
+stops,stop_name,ja,富士見台,,,富士見台
+stops,stop_name,en,Fujimidai,,,富士見台
+stops,stop_name,zh-CN,富士见台,,,富士見台
+stops,stop_name,zh-TW,富士見台,,,富士見台
+stops,stop_name,ko,후지미다이,,,富士見台
+stops,stop_name,ja-Hrkt,ふじみだい,,,富士見台
+stops,stop_name,ja,富士見台小学校前,,,富士見台小学校前
+stops,stop_name,en,Fujimidai Shōgakkō Mae,,,富士見台小学校前
+stops,stop_name,zh-CN,富士见台小学前,,,富士見台小学校前
+stops,stop_name,zh-TW,富士見台小學前,,,富士見台小学校前
+stops,stop_name,ko,후지미다이 초등학교 앞,,,富士見台小学校前
+stops,stop_name,ja-Hrkt,ふじみだいしょうがっこうまえ,,,富士見台小学校前
+stops,stop_name,ja,富士通ゼネラル正門,,,富士通ゼネラル正門
+stops,stop_name,en,Fujitsu General Seimon,,,富士通ゼネラル正門
+stops,stop_name,zh-CN,富士通将军正门,,,富士通ゼネラル正門
+stops,stop_name,zh-TW,富士通將軍正門,,,富士通ゼネラル正門
+stops,stop_name,ko,후지츠제너럴 정문,,,富士通ゼネラル正門
+stops,stop_name,ja-Hrkt,ふじつうぜねらるせいもん,,,富士通ゼネラル正門
+stops,stop_name,ja,富士通ゼネラル西門,,,富士通ゼネラル西門
+stops,stop_name,en,Fujitsu General Nishimon,,,富士通ゼネラル西門
+stops,stop_name,zh-CN,富士通将军西门,,,富士通ゼネラル西門
+stops,stop_name,zh-TW,富士通將軍西門,,,富士通ゼネラル西門
+stops,stop_name,ko,후지츠제너럴 서문,,,富士通ゼネラル西門
+stops,stop_name,ja-Hrkt,ふじつうぜねらるにしもん,,,富士通ゼネラル西門
+stops,stop_name,ja,富士通裏門,,,富士通裏門
+stops,stop_name,en,Fujitsu Uramon,,,富士通裏門
+stops,stop_name,zh-CN,富士通后门,,,富士通裏門
+stops,stop_name,zh-TW,富士通後門,,,富士通裏門
+stops,stop_name,ko,후지츠 뒷문,,,富士通裏門
+stops,stop_name,ja-Hrkt,ふじつううらもん,,,富士通裏門
+stops,stop_name,ja,小倉,,,小倉
+stops,stop_name,en,Ogura,,,小倉
+stops,stop_name,zh-CN,小仓,,,小倉
+stops,stop_name,zh-TW,小倉,,,小倉
+stops,stop_name,ko,오구라,,,小倉
+stops,stop_name,ja-Hrkt,おぐら,,,小倉
+stops,stop_name,ja,小倉下町,,,小倉下町
+stops,stop_name,en,Ogura-shimochō,,,小倉下町
+stops,stop_name,zh-CN,小仓下町,,,小倉下町
+stops,stop_name,zh-TW,小倉下町,,,小倉下町
+stops,stop_name,ko,오구라시모초,,,小倉下町
+stops,stop_name,ja-Hrkt,おぐらしもちょう,,,小倉下町
+stops,stop_name,ja,小倉神社前,,,小倉神社前
+stops,stop_name,en,Ogura Jinja Mae,,,小倉神社前
+stops,stop_name,zh-CN,小仓神社前,,,小倉神社前
+stops,stop_name,zh-TW,小倉神社前,,,小倉神社前
+stops,stop_name,ko,오구라 신사 앞,,,小倉神社前
+stops,stop_name,ja-Hrkt,おぐらじんじゃまえ,,,小倉神社前
+stops,stop_name,ja,小倉陸橋,,,小倉陸橋
+stops,stop_name,en,Ogura Rikkyō,,,小倉陸橋
+stops,stop_name,zh-CN,小仓陆桥,,,小倉陸橋
+stops,stop_name,zh-TW,小倉陸橋,,,小倉陸橋
+stops,stop_name,ko,오구라 육교,,,小倉陸橋
+stops,stop_name,ja-Hrkt,おぐらりっきょう,,,小倉陸橋
+stops,stop_name,ja,小向,,,小向
+stops,stop_name,en,Komukai,,,小向
+stops,stop_name,zh-CN,小向,,,小向
+stops,stop_name,zh-TW,小向,,,小向
+stops,stop_name,ko,고무카이,,,小向
+stops,stop_name,ja-Hrkt,こむかい,,,小向
+stops,stop_name,ja,小向交番前,,,小向交番前
+stops,stop_name,en,Komukai Kōban Mae,,,小向交番前
+stops,stop_name,zh-CN,小向派出所前,,,小向交番前
+stops,stop_name,zh-TW,小向派出所前,,,小向交番前
+stops,stop_name,ko,고무카이 파출소 앞,,,小向交番前
+stops,stop_name,ja-Hrkt,こむかいこうばんまえ,,,小向交番前
+stops,stop_name,ja,小向西町,,,小向西町
+stops,stop_name,en,Komukai-nishimachi,,,小向西町
+stops,stop_name,zh-CN,小向西町,,,小向西町
+stops,stop_name,zh-TW,小向西町,,,小向西町
+stops,stop_name,ko,고무카이니시마치,,,小向西町
+stops,stop_name,ja-Hrkt,こむかいにしまち,,,小向西町
+stops,stop_name,ja,小島町,,,小島町
+stops,stop_name,en,Kojimachō,,,小島町
+stops,stop_name,zh-CN,小岛町,,,小島町
+stops,stop_name,zh-TW,小島町,,,小島町
+stops,stop_name,ko,고지마초,,,小島町
+stops,stop_name,ja-Hrkt,こじまちょう,,,小島町
+stops,stop_name,ja,小川町,,,小川町
+stops,stop_name,en,Ogawachō,,,小川町
+stops,stop_name,zh-CN,小川町,,,小川町
+stops,stop_name,zh-TW,小川町,,,小川町
+stops,stop_name,ko,오가와초,,,小川町
+stops,stop_name,ja-Hrkt,おがわちょう,,,小川町
+stops,stop_name,ja,小杉二丁目,,,小杉二丁目
+stops,stop_name,en,Kosugi 2-chōme,,,小杉二丁目
+stops,stop_name,zh-CN,小杉二丁目,,,小杉二丁目
+stops,stop_name,zh-TW,小杉二丁目,,,小杉二丁目
+stops,stop_name,ko,고스기 2초메 ,,,小杉二丁目
+stops,stop_name,ja-Hrkt,こすぎにちょうめ,,,小杉二丁目
+stops,stop_name,ja,小杉十字路,,,小杉十字路
+stops,stop_name,en,Kosugi Jūjiro,,,小杉十字路
+stops,stop_name,zh-CN,小杉十字路,,,小杉十字路
+stops,stop_name,zh-TW,小杉十字路,,,小杉十字路
+stops,stop_name,ko,고스기 사거리,,,小杉十字路
+stops,stop_name,ja-Hrkt,こすぎじゅうじろ,,,小杉十字路
+stops,stop_name,ja,小杉御殿町,,,小杉御殿町
+stops,stop_name,en,Kosugi-gotenchō,,,小杉御殿町
+stops,stop_name,zh-CN,小杉御殿町,,,小杉御殿町
+stops,stop_name,zh-TW,小杉御殿町,,,小杉御殿町
+stops,stop_name,ko,고스기고텐초,,,小杉御殿町
+stops,stop_name,ja-Hrkt,こすぎごてんちょう,,,小杉御殿町
+stops,stop_name,ja,小杉町,,,小杉町
+stops,stop_name,en,Kosugichō,,,小杉町
+stops,stop_name,zh-CN,小杉町,,,小杉町
+stops,stop_name,zh-TW,小杉町,,,小杉町
+stops,stop_name,ko,고스기초,,,小杉町
+stops,stop_name,ja-Hrkt,こすぎちょう,,,小杉町
+stops,stop_name,ja,小杉駅入口グランツリー前,,,小杉駅入口グランツリー前
+stops,stop_name,en,Kosugi Eki Iriguchi GRAND TREE Mae,,,小杉駅入口グランツリー前
+stops,stop_name,zh-CN,小杉站入口豪华的树前,,,小杉駅入口グランツリー前
+stops,stop_name,zh-TW,小杉站入口豪華的樹前,,,小杉駅入口グランツリー前
+stops,stop_name,ko,코스기역 입구 GRAND TREE앞,,,小杉駅入口グランツリー前
+stops,stop_name,ja-Hrkt,こすぎえきいりぐちぐらんつりーまえ,,,小杉駅入口グランツリー前
+stops,stop_name,ja,小杉駅前,,,小杉駅前
+stops,stop_name,en,Kosugi Sta.,,,小杉駅前
+stops,stop_name,zh-CN,小杉站,,,小杉駅前
+stops,stop_name,zh-TW,小杉站,,,小杉駅前
+stops,stop_name,ko,고스기역,,,小杉駅前
+stops,stop_name,ja-Hrkt,こすぎえきまえ,,,小杉駅前
+stops,stop_name,ja,小杉駅東口,,,小杉駅東口
+stops,stop_name,en,Kosugi Sta.,,,小杉駅東口
+stops,stop_name,zh-CN,小杉站,,,小杉駅東口
+stops,stop_name,zh-TW,小杉站,,,小杉駅東口
+stops,stop_name,ko,고스기역,,,小杉駅東口
+stops,stop_name,ja-Hrkt,こすぎえきひがしぐち,,,小杉駅東口
+stops,stop_name,ja,小林運送前,,,小林運送前
+stops,stop_name,en,Kobayashi Unsō Mae,,,小林運送前
+stops,stop_name,zh-CN,小林运送前,,,小林運送前
+stops,stop_name,zh-TW,小林運送前,,,小林運送前
+stops,stop_name,ko,고바야시 운송 앞,,,小林運送前
+stops,stop_name,ja-Hrkt,こばやしうんそうまえ,,,小林運送前
+stops,stop_name,ja,小田栄,,,小田栄
+stops,stop_name,en,Odasakae,,,小田栄
+stops,stop_name,zh-CN,小田荣,,,小田栄
+stops,stop_name,zh-TW,小田榮,,,小田栄
+stops,stop_name,ko,오다사카에,,,小田栄
+stops,stop_name,ja-Hrkt,おださかえ,,,小田栄
+stops,stop_name,ja,小田栄２丁目公園前,,,小田栄２丁目公園前
+stops,stop_name,en,Odasakae 2-chōme Kōen Mae,,,小田栄２丁目公園前
+stops,stop_name,zh-CN,小田栄２丁目公園前,,,小田栄２丁目公園前
+stops,stop_name,zh-TW,小田榮２丁目公園前,,,小田栄２丁目公園前
+stops,stop_name,ko,오다사카에 2초메 공원 앞,,,小田栄２丁目公園前
+stops,stop_name,ja-Hrkt,おださかえにちょうめこうえんまえ,,,小田栄２丁目公園前
+stops,stop_name,ja,尻手駅前,,,尻手駅前
+stops,stop_name,en,Shitte Sta.,,,尻手駅前
+stops,stop_name,zh-CN,尻手站,,,尻手駅前
+stops,stop_name,zh-TW,尻手站,,,尻手駅前
+stops,stop_name,ko,싯테역,,,尻手駅前
+stops,stop_name,ja-Hrkt,しってえきまえ,,,尻手駅前
+stops,stop_name,ja,山九物流センター前,,,山九物流センター前
+stops,stop_name,en,Sankyu Butsuryū Center Mae,,,山九物流センター前
+stops,stop_name,zh-CN,山九物流中心前,,,山九物流センター前
+stops,stop_name,zh-TW,山九物流中心前,,,山九物流センター前
+stops,stop_name,ko,산큐 물류센터 앞,,,山九物流センター前
+stops,stop_name,ja-Hrkt,さんきゅうぶつりゅうせんたーまえ,,,山九物流センター前
+stops,stop_name,ja,山口台中央,,,山口台中央
+stops,stop_name,en,Yamaguchidai Chūō,,,山口台中央
+stops,stop_name,zh-CN,山口台中央,,,山口台中央
+stops,stop_name,zh-TW,山口台中央,,,山口台中央
+stops,stop_name,ko,야마구치다이추오,,,山口台中央
+stops,stop_name,ja-Hrkt,やまぐちだいちゅうおう,,,山口台中央
+stops,stop_name,ja,山崎,,,山崎
+stops,stop_name,en,Yamazaki,,,山崎
+stops,stop_name,zh-CN,山崎,,,山崎
+stops,stop_name,zh-TW,山崎,,,山崎
+stops,stop_name,ko,야마자키,,,山崎
+stops,stop_name,ja-Hrkt,やまざき,,,山崎
+stops,stop_name,ja,山王町,,,山王町
+stops,stop_name,en,Sannōchō,,,山王町
+stops,stop_name,zh-CN,山王町,,,山王町
+stops,stop_name,zh-TW,山王町,,,山王町
+stops,stop_name,ko,산노초,,,山王町
+stops,stop_name,ja-Hrkt,さんのうちょう,,,山王町
+stops,stop_name,ja,山王町一丁目,,,山王町一丁目
+stops,stop_name,en,Sannōchō 1-chōme,,,山王町一丁目
+stops,stop_name,zh-CN,山王町一丁目,,,山王町一丁目
+stops,stop_name,zh-TW,山王町一丁目,,,山王町一丁目
+stops,stop_name,ko,산노초 1초메,,,山王町一丁目
+stops,stop_name,ja-Hrkt,さんのうちょういっちょうめ,,,山王町一丁目
+stops,stop_name,ja,山王町二丁目,,,山王町二丁目
+stops,stop_name,en,Sannōchō 2-chōme,,,山王町二丁目
+stops,stop_name,zh-CN,山王町二丁目,,,山王町二丁目
+stops,stop_name,zh-TW,山王町二丁目,,,山王町二丁目
+stops,stop_name,ko,산노초 2초메,,,山王町二丁目
+stops,stop_name,ja-Hrkt,さんのうちょうにちょうめ,,,山王町二丁目
+stops,stop_name,ja,岩川,,,岩川
+stops,stop_name,en,Iwakawa,,,岩川
+stops,stop_name,zh-CN,岩川,,,岩川
+stops,stop_name,zh-TW,岩川,,,岩川
+stops,stop_name,ko,이와카와,,,岩川
+stops,stop_name,ja-Hrkt,いわかわ,,,岩川
+stops,stop_name,ja,川崎マリエン前,,,川崎マリエン前
+stops,stop_name,en,Kawasaki Marien Mae,,,川崎マリエン前
+stops,stop_name,zh-CN,川崎港湾振兴会馆前,,,川崎マリエン前
+stops,stop_name,zh-TW,川崎港灣振興會館前,,,川崎マリエン前
+stops,stop_name,ko,가와사키 마리엔 앞,,,川崎マリエン前
+stops,stop_name,ja-Hrkt,かわさきまりえんまえ,,,川崎マリエン前
+stops,stop_name,ja,川崎営業所,,,川崎営業所
+stops,stop_name,ja-Hrkt,かわさきえいぎょうしょ,,,川崎営業所
+stops,stop_name,ja,川崎小学校前,,,川崎小学校前
+stops,stop_name,en,Kawasaki Shōgakkō Mae,,,川崎小学校前
+stops,stop_name,zh-CN,川崎小学前,,,川崎小学校前
+stops,stop_name,zh-TW,川崎小學前,,,川崎小学校前
+stops,stop_name,ko,가와사키 초등학교 앞,,,川崎小学校前
+stops,stop_name,ja-Hrkt,かわさきしょうがっこうまえ,,,川崎小学校前
+stops,stop_name,ja,川崎港コンテナターミナル入口,,,川崎港コンテナターミナル入口
+stops,stop_name,en,Kawasakikō Container Terminal Iriguchi,,,川崎港コンテナターミナル入口
+stops,stop_name,zh-CN,川崎港集装箱码头入口,,,川崎港コンテナターミナル入口
+stops,stop_name,zh-TW,川崎港集裝箱碼頭入口,,,川崎港コンテナターミナル入口
+stops,stop_name,ko,가와사키항 콘테이너 터미널 입구 ,,,川崎港コンテナターミナル入口
+stops,stop_name,ja-Hrkt,かわさきこうこんてなたーみなるいりぐち,,,川崎港コンテナターミナル入口
+stops,stop_name,ja,川崎港郵便局前,,,川崎港郵便局前
+stops,stop_name,en,Kawasaki Minato Yūbinkyoku Mae,,,川崎港郵便局前
+stops,stop_name,zh-CN,川崎港邮局前,,,川崎港郵便局前
+stops,stop_name,zh-TW,川崎港郵局前,,,川崎港郵便局前
+stops,stop_name,ko,가와사키항 우체국 앞,,,川崎港郵便局前
+stops,stop_name,ja-Hrkt,かわさきみなとゆうびんきょくまえ,,,川崎港郵便局前
+stops,stop_name,ja,川崎病院,,,川崎病院
+stops,stop_name,en,Kawasaki Hospital,,,川崎病院
+stops,stop_name,zh-CN,川崎病院,,,川崎病院
+stops,stop_name,zh-TW,川崎病院,,,川崎病院
+stops,stop_name,ko,가와사키 병원,,,川崎病院
+stops,stop_name,ja-Hrkt,かわさきびょういん,,,川崎病院
+stops,stop_name,ja,川崎西部地域療育センター前,,,川崎西部地域療育センター前
+stops,stop_name,en,Kawasaki Seibu Chiiki Ryōiku Center Mae,,,川崎西部地域療育センター前
+stops,stop_name,zh-CN,川崎西部地域疗育中心前,,,川崎西部地域療育センター前
+stops,stop_name,zh-TW,川崎西部地域療育中心前,,,川崎西部地域療育センター前
+stops,stop_name,ko,가와사키 서부 지역요육센터 앞 ,,,川崎西部地域療育センター前
+stops,stop_name,ja-Hrkt,かわさきせいぶちいきりょういくせんたーまえ,,,川崎西部地域療育センター前
+stops,stop_name,ja,川崎運送前,,,川崎運送前
+stops,stop_name,en,Kawasaki Unsō Mae,,,川崎運送前
+stops,stop_name,zh-CN,川崎运送前,,,川崎運送前
+stops,stop_name,zh-TW,川崎運送前,,,川崎運送前
+stops,stop_name,ko,가와사키 운송 앞,,,川崎運送前
+stops,stop_name,ja-Hrkt,かわさきうんそうまえ,,,川崎運送前
+stops,stop_name,ja,川崎駅,,,川崎駅
+stops,stop_name,en,Kawasaki Sta.,,,川崎駅
+stops,stop_name,zh-CN,川崎站,,,川崎駅
+stops,stop_name,zh-TW,川崎站,,,川崎駅
+stops,stop_name,ko,가와사키역,,,川崎駅
+stops,stop_name,ja-Hrkt,かわさきえき,,,川崎駅
+stops,stop_name,ja,川崎駅ラゾーナ広場,,,川崎駅ラゾーナ広場
+stops,stop_name,en,Kawasaki Sta.,,,川崎駅ラゾーナ広場
+stops,stop_name,zh-CN,川崎站,,,川崎駅ラゾーナ広場
+stops,stop_name,zh-TW,川崎站,,,川崎駅ラゾーナ広場
+stops,stop_name,ko,가와사키역,,,川崎駅ラゾーナ広場
+stops,stop_name,ja-Hrkt,かわさきえきらぞーなひろば,,,川崎駅ラゾーナ広場
+stops,stop_name,ja,川崎駅西口,,,川崎駅西口
+stops,stop_name,en,Kawasaki Sta.,,,川崎駅西口
+stops,stop_name,zh-CN,川崎站,,,川崎駅西口
+stops,stop_name,zh-TW,川崎站,,,川崎駅西口
+stops,stop_name,ko,가와사키역,,,川崎駅西口
+stops,stop_name,ja-Hrkt,かわさきえきにしぐち,,,川崎駅西口
+stops,stop_name,ja,市営埠頭,,,市営埠頭
+stops,stop_name,en,Shiei Futō,,,市営埠頭
+stops,stop_name,zh-CN,市营码头,,,市営埠頭
+stops,stop_name,zh-TW,市營碼頭,,,市営埠頭
+stops,stop_name,ko,시영 부두,,,市営埠頭
+stops,stop_name,ja-Hrkt,しえいふとう,,,市営埠頭
+stops,stop_name,ja,市営等々力グランド入口,,,市営等々力グランド入口
+stops,stop_name,en,Shiei Todoroki Ground Iriguchi,,,市営等々力グランド入口
+stops,stop_name,zh-CN,市营等等力运动场入口,,,市営等々力グランド入口
+stops,stop_name,zh-TW,市營等等力運動場入口,,,市営等々力グランド入口
+stops,stop_name,ko,시영 도도로키 그라운드 입구 ,,,市営等々力グランド入口
+stops,stop_name,ja-Hrkt,しえいとどろきぐらんどいりぐち,,,市営等々力グランド入口
+stops,stop_name,ja,市営等々力グランド前,,,市営等々力グランド前
+stops,stop_name,en,Shiei Todoroki Ground Mae,,,市営等々力グランド前
+stops,stop_name,zh-CN,市营等等力运动场前,,,市営等々力グランド前
+stops,stop_name,zh-TW,市營等等力運動場前,,,市営等々力グランド前
+stops,stop_name,ko,시영 도도로키 그라운드 앞,,,市営等々力グランド前
+stops,stop_name,ja-Hrkt,しえいとどろきぐらんどまえ,,,市営等々力グランド前
+stops,stop_name,ja,市役所前,,,市役所前
+stops,stop_name,en,Shiyakusho Mae,,,市役所前
+stops,stop_name,zh-CN,市政府前,,,市役所前
+stops,stop_name,zh-TW,市政府前,,,市役所前
+stops,stop_name,ko,시청 앞,,,市役所前
+stops,stop_name,ja-Hrkt,しやくしょまえ,,,市役所前
+stops,stop_name,ja,市民プラザ,,,市民プラザ
+stops,stop_name,en,Shimin Plaza,,,市民プラザ
+stops,stop_name,zh-CN,市民广场,,,市民プラザ
+stops,stop_name,zh-TW,市民廣場,,,市民プラザ
+stops,stop_name,ko,시민 플라자,,,市民プラザ
+stops,stop_name,ja-Hrkt,しみんぷらざ,,,市民プラザ
+stops,stop_name,ja,市民プラザ線溝口駅,,,市民プラザ線溝口駅
+stops,stop_name,en,Simin Plaza-sen Mizonokuchi Eki,,,市民プラザ線溝口駅
+stops,stop_name,zh-CN,市民广场线沟口站,,,市民プラザ線溝口駅
+stops,stop_name,zh-TW,市民廣場線溝口站,,,市民プラザ線溝口駅
+stops,stop_name,ko,시민 플라자선 미조노구치역 ,,,市民プラザ線溝口駅
+stops,stop_name,ja-Hrkt,しみんぷらざせんみぞのくちえき,,,市民プラザ線溝口駅
+stops,stop_name,ja,市民ミュージアム,,,市民ミュージアム
+stops,stop_name,en,Shimin Museum,,,市民ミュージアム
+stops,stop_name,zh-CN,市民展览馆,,,市民ミュージアム
+stops,stop_name,zh-TW,市民展覽館,,,市民ミュージアム
+stops,stop_name,ko,시민 뮤지엄,,,市民ミュージアム
+stops,stop_name,ja-Hrkt,しみんみゅーじあむ,,,市民ミュージアム
+stops,stop_name,ja,市民ミュージアム前,,,市民ミュージアム前
+stops,stop_name,en,Shimin Museum Mae,,,市民ミュージアム前
+stops,stop_name,zh-CN,市民展览馆前,,,市民ミュージアム前
+stops,stop_name,zh-TW,市民展覽館前,,,市民ミュージアム前
+stops,stop_name,ko,시민 뮤지엄 앞,,,市民ミュージアム前
+stops,stop_name,ja-Hrkt,しみんみゅーじあむまえ,,,市民ミュージアム前
+stops,stop_name,ja,市立川崎高校前,,,市立川崎高校前
+stops,stop_name,en,Shiritsu Kawasaki Kōkō Mae,,,市立川崎高校前
+stops,stop_name,zh-CN,市立川崎高中前,,,市立川崎高校前
+stops,stop_name,zh-TW,市立川崎高中前,,,市立川崎高校前
+stops,stop_name,ko,시립 가와사키고등학교 앞,,,市立川崎高校前
+stops,stop_name,ja-Hrkt,しりつかわさきこうこうまえ,,,市立川崎高校前
+stops,stop_name,ja,平,,,平
+stops,stop_name,en,Taira,,,平
+stops,stop_name,zh-CN,平,,,平
+stops,stop_name,zh-TW,平,,,平
+stops,stop_name,ko,다이라,,,平
+stops,stop_name,ja-Hrkt,たいら,,,平
+stops,stop_name,ja,平橋,,,平橋
+stops,stop_name,en,Tairabashi,,,平橋
+stops,stop_name,zh-CN,平桥,,,平橋
+stops,stop_name,zh-TW,平橋,,,平橋
+stops,stop_name,ko,다이라바시,,,平橋
+stops,stop_name,ja-Hrkt,たいらばし,,,平橋
+stops,stop_name,ja,平野,,,平野
+stops,stop_name,en,Hirano,,,平野
+stops,stop_name,zh-CN,平野,,,平野
+stops,stop_name,zh-TW,平野,,,平野
+stops,stop_name,ko,히라노,,,平野
+stops,stop_name,ja-Hrkt,ひらの,,,平野
+stops,stop_name,ja,平間小学校前,,,平間小学校前
+stops,stop_name,en,Hirama Shōgakkō Mae,,,平間小学校前
+stops,stop_name,zh-CN,平间小学前,,,平間小学校前
+stops,stop_name,zh-TW,平間小學前,,,平間小学校前
+stops,stop_name,ko,히라마 초등학교 앞,,,平間小学校前
+stops,stop_name,ja-Hrkt,ひらましょうがっこうまえ,,,平間小学校前
+stops,stop_name,ja,平間銀座,,,平間銀座
+stops,stop_name,en,Hirama Ginza,,,平間銀座
+stops,stop_name,zh-CN,平间银座,,,平間銀座
+stops,stop_name,zh-TW,平間銀座,,,平間銀座
+stops,stop_name,ko,히라마긴자,,,平間銀座
+stops,stop_name,ja-Hrkt,ひらまぎんざ,,,平間銀座
+stops,stop_name,ja,平間駅入口,,,平間駅入口
+stops,stop_name,en,Hirama Eki Iriguchi,,,平間駅入口
+stops,stop_name,zh-CN,平间站入口,,,平間駅入口
+stops,stop_name,zh-TW,平間站入口,,,平間駅入口
+stops,stop_name,ko,히라마역 입구,,,平間駅入口
+stops,stop_name,ja-Hrkt,ひらまえきいりぐち,,,平間駅入口
+stops,stop_name,ja,平間駅前,,,平間駅前
+stops,stop_name,en,Hirama Sta.,,,平間駅前
+stops,stop_name,zh-CN,平间站,,,平間駅前
+stops,stop_name,zh-TW,平間站,,,平間駅前
+stops,stop_name,ko,히라마역 ,,,平間駅前
+stops,stop_name,ja-Hrkt,ひらまえきまえ,,,平間駅前
+stops,stop_name,ja,幸区役所入口,,,幸区役所入口
+stops,stop_name,en,Saiwai Kuyakusho Iriguchi,,,幸区役所入口
+stops,stop_name,zh-CN,幸区政府入口,,,幸区役所入口
+stops,stop_name,zh-TW,幸區政府入口,,,幸区役所入口
+stops,stop_name,ko,사이와이 구청 입구,,,幸区役所入口
+stops,stop_name,ja-Hrkt,さいわいくやくしょいりぐち,,,幸区役所入口
+stops,stop_name,ja,幸町二丁目,,,幸町二丁目
+stops,stop_name,en,Saiwaichō 2-chōme,,,幸町二丁目
+stops,stop_name,zh-CN,幸町二丁目,,,幸町二丁目
+stops,stop_name,zh-TW,幸町二丁目,,,幸町二丁目
+stops,stop_name,ko,사이와이초 2초메 ,,,幸町二丁目
+stops,stop_name,ja-Hrkt,さいわいちょうにちょうめ,,,幸町二丁目
+stops,stop_name,ja,幸警察署前,,,幸警察署前
+stops,stop_name,en,Saiwai Keisatsusho Mae,,,幸警察署前
+stops,stop_name,zh-CN,幸警察署前,,,幸警察署前
+stops,stop_name,zh-TW,幸警察署前,,,幸警察署前
+stops,stop_name,ko,사이와이 경찰서 앞 ,,,幸警察署前
+stops,stop_name,ja-Hrkt,さいわいけいさつしょまえ,,,幸警察署前
+stops,stop_name,ja,幸高校前,,,幸高校前
+stops,stop_name,en,Saiwai Kōkō Mae,,,幸高校前
+stops,stop_name,zh-CN,幸高中前,,,幸高校前
+stops,stop_name,zh-TW,幸高中前,,,幸高校前
+stops,stop_name,ko,사이와이　고등학교 앞,,,幸高校前
+stops,stop_name,ja-Hrkt,さいわいこうこうまえ,,,幸高校前
+stops,stop_name,ja,影向寺,,,影向寺
+stops,stop_name,en,Yōgōji,,,影向寺
+stops,stop_name,zh-CN,影向寺,,,影向寺
+stops,stop_name,zh-TW,影向寺,,,影向寺
+stops,stop_name,ko,요고지,,,影向寺
+stops,stop_name,ja-Hrkt,ようごうじ,,,影向寺
+stops,stop_name,ja,御幸公園前,,,御幸公園前
+stops,stop_name,en,Miyuki Kōen Mae,,,御幸公園前
+stops,stop_name,zh-CN,御幸公园前,,,御幸公園前
+stops,stop_name,zh-TW,御幸公園前,,,御幸公園前
+stops,stop_name,ko,미유키 공원 앞,,,御幸公園前
+stops,stop_name,ja-Hrkt,みゆきこうえんまえ,,,御幸公園前
+stops,stop_name,ja,御幸小学校前,,,御幸小学校前
+stops,stop_name,en,Miyuki Shōgakkō Mae,,,御幸小学校前
+stops,stop_name,zh-CN,御幸小学前,,,御幸小学校前
+stops,stop_name,zh-TW,御幸小學前,,,御幸小学校前
+stops,stop_name,ko,미유키 초등학교 앞,,,御幸小学校前
+stops,stop_name,ja-Hrkt,みゆきしょうがっこうまえ,,,御幸小学校前
+stops,stop_name,ja,成就院前,,,成就院前
+stops,stop_name,en,Jōjuin Mae,,,成就院前
+stops,stop_name,zh-CN,成就院前,,,成就院前
+stops,stop_name,zh-TW,成就院前,,,成就院前
+stops,stop_name,ko,조주인 앞,,,成就院前
+stops,stop_name,ja-Hrkt,じょうじゅいんまえ,,,成就院前
+stops,stop_name,ja,戸手アパート前,,,戸手アパート前
+stops,stop_name,en,Tode Apart Mae,,,戸手アパート前
+stops,stop_name,zh-CN,户手公寓前,,,戸手アパート前
+stops,stop_name,zh-TW,戶手公寓前,,,戸手アパート前
+stops,stop_name,ko,도데 아파트 앞,,,戸手アパート前
+stops,stop_name,ja-Hrkt,とであぱーとまえ,,,戸手アパート前
+stops,stop_name,ja,戸手一丁目,,,戸手一丁目
+stops,stop_name,en,Tode 1-chōme,,,戸手一丁目
+stops,stop_name,zh-CN,户手一丁目,,,戸手一丁目
+stops,stop_name,zh-TW,戶手一丁目,,,戸手一丁目
+stops,stop_name,ko,도데 1초메,,,戸手一丁目
+stops,stop_name,ja-Hrkt,とでいっちょうめ,,,戸手一丁目
+stops,stop_name,ja,戸手小学校前,,,戸手小学校前
+stops,stop_name,en,Tode Shōgakkō Mae,,,戸手小学校前
+stops,stop_name,zh-CN,户手小学前,,,戸手小学校前
+stops,stop_name,zh-TW,戶手小學前,,,戸手小学校前
+stops,stop_name,ko,도데 초등학교 앞,,,戸手小学校前
+stops,stop_name,ja-Hrkt,とでしょうがっこうまえ,,,戸手小学校前
+stops,stop_name,ja,扇橋,,,扇橋
+stops,stop_name,en,Ōgibashi,,,扇橋
+stops,stop_name,zh-CN,扇桥,,,扇橋
+stops,stop_name,zh-TW,扇橋,,,扇橋
+stops,stop_name,ko,오기바시,,,扇橋
+stops,stop_name,ja-Hrkt,おうぎばし,,,扇橋
+stops,stop_name,ja,扇町,,,扇町
+stops,stop_name,en,Ōgimachi,,,扇町
+stops,stop_name,zh-CN,扇町,,,扇町
+stops,stop_name,zh-TW,扇町,,,扇町
+stops,stop_name,ko,오기마치,,,扇町
+stops,stop_name,ja-Hrkt,おうぎまち,,,扇町
+stops,stop_name,ja,新ゆりグリーンタウン,,,新ゆりグリーンタウン
+stops,stop_name,en,Shin-yuri Green Town,,,新ゆりグリーンタウン
+stops,stop_name,zh-CN,新百合绿城,,,新ゆりグリーンタウン
+stops,stop_name,zh-TW,新百合綠城,,,新ゆりグリーンタウン
+stops,stop_name,ko,신유리 그린타운,,,新ゆりグリーンタウン
+stops,stop_name,ja-Hrkt,しんゆりぐりーんたうん,,,新ゆりグリーンタウン
+stops,stop_name,ja,新丸子駅西口,,,新丸子駅西口
+stops,stop_name,en,Shin-maruko Sta.,,,新丸子駅西口
+stops,stop_name,zh-CN,新丸子站西口,,,新丸子駅西口
+stops,stop_name,zh-TW,新丸子站西口,,,新丸子駅西口
+stops,stop_name,ko,신마루코역 서쪽 출입구,,,新丸子駅西口
+stops,stop_name,ja-Hrkt,しんまるこえきにしぐち,,,新丸子駅西口
+stops,stop_name,ja,新作,,,新作
+stops,stop_name,en,Shinsaku,,,新作
+stops,stop_name,zh-CN,新作,,,新作
+stops,stop_name,zh-TW,新作,,,新作
+stops,stop_name,ko,신사쿠,,,新作
+stops,stop_name,ja-Hrkt,しんさく,,,新作
+stops,stop_name,ja,新作八幡下,,,新作八幡下
+stops,stop_name,en,Shinsaku Hachiman Shita,,,新作八幡下
+stops,stop_name,zh-CN,新作八幡下,,,新作八幡下
+stops,stop_name,zh-TW,新作八幡下,,,新作八幡下
+stops,stop_name,ko,신사쿠 하치만시타,,,新作八幡下
+stops,stop_name,ja-Hrkt,しんさくはちまんした,,,新作八幡下
+stops,stop_name,ja,新城,,,新城
+stops,stop_name,en,Shinjō,,,新城
+stops,stop_name,zh-CN,新城,,,新城
+stops,stop_name,zh-TW,新城,,,新城
+stops,stop_name,ko,신조,,,新城
+stops,stop_name,ja-Hrkt,しんじょう,,,新城
+stops,stop_name,ja,新城神社前,,,新城神社前
+stops,stop_name,en,Shinjō Jinja Mae,,,新城神社前
+stops,stop_name,zh-CN,新城神社前,,,新城神社前
+stops,stop_name,zh-TW,新城神社前,,,新城神社前
+stops,stop_name,ko,신조 신사 앞,,,新城神社前
+stops,stop_name,ja-Hrkt,しんじょうじんじゃまえ,,,新城神社前
+stops,stop_name,ja,新城駅前,,,新城駅前
+stops,stop_name,en,Shinjō Sta.,,,新城駅前
+stops,stop_name,zh-CN,新城站,,,新城駅前
+stops,stop_name,zh-TW,新城站,,,新城駅前
+stops,stop_name,ko,신조역,,,新城駅前
+stops,stop_name,ja-Hrkt,しんじょうえきまえ,,,新城駅前
+stops,stop_name,ja,新城駅前（北口）,,,新城駅前（北口）
+stops,stop_name,en,Shinjō Sta.,,,新城駅前（北口）
+stops,stop_name,zh-CN,新城站,,,新城駅前（北口）
+stops,stop_name,zh-TW,新城站,,,新城駅前（北口）
+stops,stop_name,ko,신조역,,,新城駅前（北口）
+stops,stop_name,ja-Hrkt,しんじょうえきまえ,,,新城駅前（北口）
+stops,stop_name,ja,新川崎交通広場,,,新川崎交通広場
+stops,stop_name,en,Shin-Kawasaki Kōtsū Hiroba,,,新川崎交通広場
+stops,stop_name,zh-CN,新川崎交通广场,,,新川崎交通広場
+stops,stop_name,zh-TW,新川崎交通廣場,,,新川崎交通広場
+stops,stop_name,ko,0,,,新川崎交通広場
+stops,stop_name,ja-Hrkt,しんかわさきこうつうひろば,,,新川崎交通広場
+stops,stop_name,ja,新川崎駅,,,新川崎駅
+stops,stop_name,en,Shin-Kawasaki Sta.,,,新川崎駅
+stops,stop_name,zh-CN,新川崎站,,,新川崎駅
+stops,stop_name,zh-TW,新川崎站,,,新川崎駅
+stops,stop_name,ko,신가와사키역,,,新川崎駅
+stops,stop_name,ja-Hrkt,しんかわさきえき,,,新川崎駅
+stops,stop_name,ja,新平瀬橋,,,新平瀬橋
+stops,stop_name,en,Shin-hirasebashi,,,新平瀬橋
+stops,stop_name,zh-CN,新平濑桥,,,新平瀬橋
+stops,stop_name,zh-TW,新平瀨橋,,,新平瀬橋
+stops,stop_name,ko,신히라세바시,,,新平瀬橋
+stops,stop_name,ja-Hrkt,しんひらせばし,,,新平瀬橋
+stops,stop_name,ja,新百合丘駅前,,,新百合丘駅前
+stops,stop_name,en,Shin-Yurigaoka Sta.,,,新百合丘駅前
+stops,stop_name,zh-CN,新百合丘站,,,新百合丘駅前
+stops,stop_name,zh-TW,新百合丘站,,,新百合丘駅前
+stops,stop_name,ko,신유리가오카역,,,新百合丘駅前
+stops,stop_name,ja-Hrkt,しんゆりがおかえきまえ,,,新百合丘駅前
+stops,stop_name,ja,新船島橋,,,新船島橋
+stops,stop_name,en,Shin-funeshimahashi,,,新船島橋
+stops,stop_name,zh-CN,新船岛桥,,,新船島橋
+stops,stop_name,zh-TW,新船島橋,,,新船島橋
+stops,stop_name,ko,신후네시마하시,,,新船島橋
+stops,stop_name,ja-Hrkt,しんふねしまはし,,,新船島橋
+stops,stop_name,ja,日光,,,日光
+stops,stop_name,en,Nikkō,,,日光
+stops,stop_name,zh-CN,日光,,,日光
+stops,stop_name,zh-TW,日光,,,日光
+stops,stop_name,ko,닛코,,,日光
+stops,stop_name,ja-Hrkt,にっこう,,,日光
+stops,stop_name,ja,日出町,,,日出町
+stops,stop_name,en,Hinodechō,,,日出町
+stops,stop_name,zh-CN,日出町,,,日出町
+stops,stop_name,zh-TW,日出町,,,日出町
+stops,stop_name,ko,히노데초,,,日出町
+stops,stop_name,ja-Hrkt,ひのでちょう,,,日出町
+stops,stop_name,ja,日吉,,,日吉
+stops,stop_name,en,Hiyoshi,,,日吉
+stops,stop_name,zh-CN,日吉,,,日吉
+stops,stop_name,zh-TW,日吉,,,日吉
+stops,stop_name,ko,히요시,,,日吉
+stops,stop_name,ja-Hrkt,ひよし,,,日吉
+stops,stop_name,ja,日吉ノ辻,,,日吉ノ辻
+stops,stop_name,en,Hiyoshinotsuji,,,日吉ノ辻
+stops,stop_name,zh-CN,日吉之辻,,,日吉ノ辻
+stops,stop_name,zh-TW,日吉之辻,,,日吉ノ辻
+stops,stop_name,ko,히요시노츠지,,,日吉ノ辻
+stops,stop_name,ja-Hrkt,ひよしのつじ,,,日吉ノ辻
+stops,stop_name,ja,日吉中学校前,,,日吉中学校前
+stops,stop_name,en,Hiyoshi Chūgakkō Mae,,,日吉中学校前
+stops,stop_name,zh-CN,日吉中学前,,,日吉中学校前
+stops,stop_name,zh-TW,日吉中學前,,,日吉中学校前
+stops,stop_name,ko,히요시 중학교 앞,,,日吉中学校前
+stops,stop_name,ja-Hrkt,ひよしちゅうがっこうまえ,,,日吉中学校前
+stops,stop_name,ja,日吉小学校前,,,日吉小学校前
+stops,stop_name,en,Hiyoshi Shōgakkō Mae,,,日吉小学校前
+stops,stop_name,zh-CN,日吉小学前,,,日吉小学校前
+stops,stop_name,zh-TW,日吉小學前,,,日吉小学校前
+stops,stop_name,ko,히요시 초등학교 앞,,,日吉小学校前
+stops,stop_name,ja-Hrkt,ひよししょうがっこうまえ,,,日吉小学校前
+stops,stop_name,ja,日本ユニカー前,,,日本ユニカー前
+stops,stop_name,en,Nippon Unicar Mae,,,日本ユニカー前
+stops,stop_name,zh-CN,日本优尼卡前,,,日本ユニカー前
+stops,stop_name,zh-TW,日本優尼卡前,,,日本ユニカー前
+stops,stop_name,ko,일본 유니카 앞,,,日本ユニカー前
+stops,stop_name,ja-Hrkt,にっぽんゆにかーまえ,,,日本ユニカー前
+stops,stop_name,ja,日本映画大学,,,日本映画大学
+stops,stop_name,en,Japan Institute of the Moving image,,,日本映画大学
+stops,stop_name,zh-CN,日本电影大学,,,日本映画大学
+stops,stop_name,zh-TW,日本電影大學,,,日本映画大学
+stops,stop_name,ko,일본영화대학,,,日本映画大学
+stops,stop_name,ja-Hrkt,にほんえいがだいがく,,,日本映画大学
+stops,stop_name,ja,日本触媒前,,,日本触媒前
+stops,stop_name,en,Nippon Shokubai Mae,,,日本触媒前
+stops,stop_name,zh-CN,日本触媒前,,,日本触媒前
+stops,stop_name,zh-TW,日本觸媒前,,,日本触媒前
+stops,stop_name,ko,일본촉매 앞,,,日本触媒前
+stops,stop_name,ja-Hrkt,にほんしょくばいまえ,,,日本触媒前
+stops,stop_name,ja,日本食肉流通センター,,,日本食肉流通センター
+stops,stop_name,en,Nihon Shokuniku Ryūtsū Center,,,日本食肉流通センター
+stops,stop_name,zh-CN,日本食用肉流通中心,,,日本食肉流通センター
+stops,stop_name,zh-TW,日本食用肉流通中心,,,日本食肉流通センター
+stops,stop_name,ko,일본 식육유통센타 ,,,日本食肉流通センター
+stops,stop_name,ja-Hrkt,にほんしょくにくりゅうつうせんたー,,,日本食肉流通センター
+stops,stop_name,ja,日生住宅,,,日生住宅
+stops,stop_name,en,Nissei Jūtaku,,,日生住宅
+stops,stop_name,zh-CN,日生住宅,,,日生住宅
+stops,stop_name,zh-TW,日生住宅,,,日生住宅
+stops,stop_name,ko,닛세 주택,,,日生住宅
+stops,stop_name,ja-Hrkt,にっせいじゅうたく,,,日生住宅
+stops,stop_name,ja,日立造船入口,,,日立造船入口
+stops,stop_name,en,Hitachi Zōsen Iriguchi,,,日立造船入口
+stops,stop_name,zh-CN,日立造船入口,,,日立造船入口
+stops,stop_name,zh-TW,日立造船入口,,,日立造船入口
+stops,stop_name,ko,히타치조선 입구,,,日立造船入口
+stops,stop_name,ja-Hrkt,ひたちぞうせんいりぐち,,,日立造船入口
+stops,stop_name,ja,明津,,,明津
+stops,stop_name,en,Akutsu,,,明津
+stops,stop_name,zh-CN,明津,,,明津
+stops,stop_name,zh-TW,明津,,,明津
+stops,stop_name,ko,아쿠츠,,,明津
+stops,stop_name,ja-Hrkt,あくつ,,,明津
+stops,stop_name,ja,明王,,,明王
+stops,stop_name,en,Myōō,,,明王
+stops,stop_name,zh-CN,明王,,,明王
+stops,stop_name,zh-TW,明王,,,明王
+stops,stop_name,ko,묘오,,,明王
+stops,stop_name,ja-Hrkt,みょうおう,,,明王
+stops,stop_name,ja,星が丘歩道橋,,,星が丘歩道橋
+stops,stop_name,en,Hoshigaoka Hodōkyō,,,星が丘歩道橋
+stops,stop_name,zh-CN,星之丘步道桥,,,星が丘歩道橋
+stops,stop_name,zh-TW,星之丘步道橋,,,星が丘歩道橋
+stops,stop_name,ko,호시가오카 육교,,,星が丘歩道橋
+stops,stop_name,ja-Hrkt,ほしがおかほどうきょう,,,星が丘歩道橋
+stops,stop_name,ja,春秋苑入口,,,春秋苑入口
+stops,stop_name,en,Shunjūen Iriguchi,,,春秋苑入口
+stops,stop_name,zh-CN,春秋苑入口,,,春秋苑入口
+stops,stop_name,zh-TW,春秋苑入口,,,春秋苑入口
+stops,stop_name,ko,슌주엔 입구,,,春秋苑入口
+stops,stop_name,ja-Hrkt,しゅんじゅうえんいりぐち,,,春秋苑入口
+stops,stop_name,ja,昭和二丁目,,,昭和二丁目
+stops,stop_name,en,Shōwa 2-chōme,,,昭和二丁目
+stops,stop_name,zh-CN,昭和二丁目,,,昭和二丁目
+stops,stop_name,zh-TW,昭和二丁目,,,昭和二丁目
+stops,stop_name,ko,쇼와 2초메,,,昭和二丁目
+stops,stop_name,ja-Hrkt,しょうわにちょうめ,,,昭和二丁目
+stops,stop_name,ja,昭和駅前,,,昭和駅前
+stops,stop_name,en,Shōwa Sta.,,,昭和駅前
+stops,stop_name,zh-CN,昭和站,,,昭和駅前
+stops,stop_name,zh-TW,昭和站,,,昭和駅前
+stops,stop_name,ko,쇼와역,,,昭和駅前
+stops,stop_name,ja-Hrkt,しょうわえきまえ,,,昭和駅前
+stops,stop_name,ja,有馬第二団地前,,,有馬第二団地前
+stops,stop_name,en,Arima Daini-danchi Mae,,,有馬第二団地前
+stops,stop_name,zh-CN,有马第二团地前,,,有馬第二団地前
+stops,stop_name,zh-TW,有馬第二團地前,,,有馬第二団地前
+stops,stop_name,ko,아리마 제2단지 앞  ,,,有馬第二団地前
+stops,stop_name,ja-Hrkt,ありまだいにだんちまえ,,,有馬第二団地前
+stops,stop_name,ja,木月一丁目,,,木月一丁目
+stops,stop_name,en,Kizuki 1-chōme,,,木月一丁目
+stops,stop_name,zh-CN,木月一丁目,,,木月一丁目
+stops,stop_name,zh-TW,木月一丁目,,,木月一丁目
+stops,stop_name,ko,기즈키 1초메 ,,,木月一丁目
+stops,stop_name,ja-Hrkt,きづき1ちょうめ,,,木月一丁目
+stops,stop_name,ja,木月三丁目,,,木月三丁目
+stops,stop_name,en,Kizuki 3-chōme,,,木月三丁目
+stops,stop_name,zh-CN,木月三丁目,,,木月三丁目
+stops,stop_name,zh-TW,木月三丁目,,,木月三丁目
+stops,stop_name,ko,기즈키 3초메 ,,,木月三丁目
+stops,stop_name,ja-Hrkt,きづきさんちょうめ,,,木月三丁目
+stops,stop_name,ja,木月上之町,,,木月上之町
+stops,stop_name,en,Kizuki-kaminochō,,,木月上之町
+stops,stop_name,zh-CN,木月上之町,,,木月上之町
+stops,stop_name,zh-TW,木月上之町,,,木月上之町
+stops,stop_name,ko,기즈키카미노초,,,木月上之町
+stops,stop_name,ja-Hrkt,きづきかみのちょう,,,木月上之町
+stops,stop_name,ja,木月住吉,,,木月住吉
+stops,stop_name,en,Kizuki-sumiyoshi,,,木月住吉
+stops,stop_name,zh-CN,木月住吉,,,木月住吉
+stops,stop_name,zh-TW,木月住吉,,,木月住吉
+stops,stop_name,ko,기즈키스미요시,,,木月住吉
+stops,stop_name,ja-Hrkt,きづきすみよし,,,木月住吉
+stops,stop_name,ja,木月四丁目,,,木月四丁目
+stops,stop_name,en,Kizuki 4-chōme,,,木月四丁目
+stops,stop_name,zh-CN,木月四丁目,,,木月四丁目
+stops,stop_name,zh-TW,木月四丁目,,,木月四丁目
+stops,stop_name,ko,기즈키 4초메 ,,,木月四丁目
+stops,stop_name,ja-Hrkt,きづきよんちょうめ,,,木月四丁目
+stops,stop_name,ja,木月天王森,,,木月天王森
+stops,stop_name,en,Kizuki-tennōmori,,,木月天王森
+stops,stop_name,zh-CN,木月天王森,,,木月天王森
+stops,stop_name,zh-TW,木月天王森,,,木月天王森
+stops,stop_name,ko,기즈키텐노모리,,,木月天王森
+stops,stop_name,ja-Hrkt,きづきてんのうもり,,,木月天王森
+stops,stop_name,ja,末長,,,末長
+stops,stop_name,en,Suenaga,,,末長
+stops,stop_name,zh-CN,末长,,,末長
+stops,stop_name,zh-TW,末長,,,末長
+stops,stop_name,ko,스에나가,,,末長
+stops,stop_name,ja-Hrkt,すえなが,,,末長
+stops,stop_name,ja,末長三丁目,,,末長三丁目
+stops,stop_name,en,Suenaga 3-chōme,,,末長三丁目
+stops,stop_name,zh-CN,末长三丁目,,,末長三丁目
+stops,stop_name,zh-TW,末長三丁目,,,末長三丁目
+stops,stop_name,ko,스에나가 3초메,,,末長三丁目
+stops,stop_name,ja-Hrkt,すえながさんちょうめ,,,末長三丁目
+stops,stop_name,ja,杉山神社入口,,,杉山神社入口
+stops,stop_name,en,Sugiyama Jinja Iriguchi,,,杉山神社入口
+stops,stop_name,zh-CN,杉山神社入口,,,杉山神社入口
+stops,stop_name,zh-TW,杉山神社入口,,,杉山神社入口
+stops,stop_name,ko,스기야마 신사 입구,,,杉山神社入口
+stops,stop_name,ja-Hrkt,すぎやまじんじゃいりぐち,,,杉山神社入口
+stops,stop_name,ja,東二子,,,東二子
+stops,stop_name,en,Higashi-futago,,,東二子
+stops,stop_name,zh-CN,东二子,,,東二子
+stops,stop_name,zh-TW,東二子,,,東二子
+stops,stop_name,ko,히가시후타고,,,東二子
+stops,stop_name,ja-Hrkt,ひがしふたご,,,東二子
+stops,stop_name,ja,東亜石油前,,,東亜石油前
+stops,stop_name,en,TOA Sekiyu Mae,,,東亜石油前
+stops,stop_name,zh-CN,东亚石油前,,,東亜石油前
+stops,stop_name,zh-TW,東亞石油前,,,東亜石油前
+stops,stop_name,ko,도아석유 앞,,,東亜石油前
+stops,stop_name,ja-Hrkt,とうあせきゆまえ,,,東亜石油前
+stops,stop_name,ja,東住吉小学校,,,東住吉小学校
+stops,stop_name,en,Higashi-sumiyoshi Shōgakkō,,,東住吉小学校
+stops,stop_name,zh-CN,东住吉小学,,,東住吉小学校
+stops,stop_name,zh-TW,東住吉小學,,,東住吉小学校
+stops,stop_name,ko,히가시스미요시 초등학교,,,東住吉小学校
+stops,stop_name,ja-Hrkt,ひがしすみよししょうがっこう,,,東住吉小学校
+stops,stop_name,ja,東古市場,,,東古市場
+stops,stop_name,en,Higashi-furuichiba,,,東古市場
+stops,stop_name,zh-CN,东古市场,,,東古市場
+stops,stop_name,zh-TW,東古市場,,,東古市場
+stops,stop_name,ko,히가시후루이치바,,,東古市場
+stops,stop_name,ja-Hrkt,ひがしふるいちば,,,東古市場
+stops,stop_name,ja,東名向丘入口,,,東名向丘入口
+stops,stop_name,en,Tōmei Mukaigaoka Iriguchi,,,東名向丘入口
+stops,stop_name,zh-CN,东名向丘入口,,,東名向丘入口
+stops,stop_name,zh-TW,東名向丘入口,,,東名向丘入口
+stops,stop_name,ko,도메무카이가오카 입구,,,東名向丘入口
+stops,stop_name,ja-Hrkt,とうめいむかいがおかいりぐち,,,東名向丘入口
+stops,stop_name,ja,東土渕,,,東土渕
+stops,stop_name,en,Higashi-tsuchibuchi,,,東土渕
+stops,stop_name,zh-CN,东土渊,,,東土渕
+stops,stop_name,zh-TW,東土淵,,,東土渕
+stops,stop_name,ko,히가시츠치부치,,,東土渕
+stops,stop_name,ja-Hrkt,ひがしつちぶち,,,東土渕
+stops,stop_name,ja,東大島郵便局前,,,東大島郵便局前
+stops,stop_name,en,Higashi-ōshima Yūbinkyoku Mae,,,東大島郵便局前
+stops,stop_name,zh-CN,东大岛邮局前,,,東大島郵便局前
+stops,stop_name,zh-TW,東大島郵局前,,,東大島郵便局前
+stops,stop_name,ko,히가시오오시마 우체국 앞,,,東大島郵便局前
+stops,stop_name,ja-Hrkt,ひがしおおしまゆうびんきょくまえ,,,東大島郵便局前
+stops,stop_name,ja,東小倉,,,東小倉
+stops,stop_name,en,Higashi-ogura,,,東小倉
+stops,stop_name,zh-CN,东小仓,,,東小倉
+stops,stop_name,zh-TW,東小倉,,,東小倉
+stops,stop_name,ko,히가시오구라,,,東小倉
+stops,stop_name,ja-Hrkt,ひがしおぐら,,,東小倉
+stops,stop_name,ja,東小倉小学校,,,東小倉小学校
+stops,stop_name,en,Higashi-ogura Shōgakkō,,,東小倉小学校
+stops,stop_name,zh-CN,东小仓小学,,,東小倉小学校
+stops,stop_name,zh-TW,東小倉小學,,,東小倉小学校
+stops,stop_name,ko,히가시오구라 초등학교,,,東小倉小学校
+stops,stop_name,ja-Hrkt,ひがしおぐらしょうがっこう,,,東小倉小学校
+stops,stop_name,ja,東山田営業所,,,東山田営業所
+stops,stop_name,ja-Hrkt,ひがしやまだえいぎょうしょ,,,東山田営業所
+stops,stop_name,ja,東山田駅入口,,,東山田駅入口
+stops,stop_name,ja-Hrkt,ひがしやまたえきいりぐち,,,東山田駅入口
+stops,stop_name,ja,東平台,,,東平台
+stops,stop_name,en,Higashi-hiradai,,,東平台
+stops,stop_name,zh-CN,东平台,,,東平台
+stops,stop_name,zh-TW,東平台,,,東平台
+stops,stop_name,ko,히가시히라다이,,,東平台
+stops,stop_name,ja-Hrkt,ひがしひらだい,,,東平台
+stops,stop_name,ja,東扇島二十三番地,,,東扇島二十三番地
+stops,stop_name,en,Higashi-ōgishima 23-banchi,,,東扇島二十三番地
+stops,stop_name,zh-CN,东扇岛二十三番地,,,東扇島二十三番地
+stops,stop_name,zh-TW,東扇島二十三番地,,,東扇島二十三番地
+stops,stop_name,ko,히가시오기시마 23번지,,,東扇島二十三番地
+stops,stop_name,ja-Hrkt,ひがしおおぎしまにじゅうさんばんち,,,東扇島二十三番地
+stops,stop_name,ja,東扇島二十番地,,,東扇島二十番地
+stops,stop_name,en,Higashi-ōgishima 20-banchi,,,東扇島二十番地
+stops,stop_name,zh-CN,东扇岛二十番地,,,東扇島二十番地
+stops,stop_name,zh-TW,東扇島二十番地,,,東扇島二十番地
+stops,stop_name,ko,히가시오기시마 20번지 ,,,東扇島二十番地
+stops,stop_name,ja-Hrkt,ひがしおおぎしま20ばんち,,,東扇島二十番地
+stops,stop_name,ja,東扇島北公園入口,,,東扇島北公園入口
+stops,stop_name,en,Higashi-ōgishima Kita-kōen Iriguchi ,,,東扇島北公園入口
+stops,stop_name,zh-CN,东扇岛北公园入口,,,東扇島北公園入口
+stops,stop_name,zh-TW,東扇島北公園入口,,,東扇島北公園入口
+stops,stop_name,ko,히가시오기시마 북공원 입구,,,東扇島北公園入口
+stops,stop_name,ja-Hrkt,ひがしおおぎしまきたこうえんいりぐち,,,東扇島北公園入口
+stops,stop_name,ja,東扇島十七番地,,,東扇島十七番地
+stops,stop_name,en,Higashi-ōgishima 17-banchi,,,東扇島十七番地
+stops,stop_name,zh-CN,东扇岛十七番地,,,東扇島十七番地
+stops,stop_name,zh-TW,東扇島十七番地,,,東扇島十七番地
+stops,stop_name,ko,히가시오기시마 17번지,,,東扇島十七番地
+stops,stop_name,ja-Hrkt,ひがしおおぎしまじゅうななばんち,,,東扇島十七番地
+stops,stop_name,ja,東扇島十八番地,,,東扇島十八番地
+stops,stop_name,en,Higashi-ōgishima 18-banchi,,,東扇島十八番地
+stops,stop_name,zh-CN,东扇岛十八番地,,,東扇島十八番地
+stops,stop_name,zh-TW,東扇島十八番地,,,東扇島十八番地
+stops,stop_name,ko,히가시오기시마 18번지,,,東扇島十八番地
+stops,stop_name,ja-Hrkt,ひがしおおぎしまじゅうはちばんち,,,東扇島十八番地
+stops,stop_name,ja,東扇島東公園前,,,東扇島東公園前
+stops,stop_name,en,Higashi-ōgishima Higashi-kōen Mae,,,東扇島東公園前
+stops,stop_name,zh-CN,东扇岛东公园前,,,東扇島東公園前
+stops,stop_name,zh-TW,東扇島東公園前,,,東扇島東公園前
+stops,stop_name,ko,히가시오기시마 동공원 앞,,,東扇島東公園前
+stops,stop_name,ja-Hrkt,ひがしおおぎしまひがしこうえんまえ,,,東扇島東公園前
+stops,stop_name,ja,東扇島福利厚生センター前,,,東扇島福利厚生センター前
+stops,stop_name,en,Higashi-ōgishima Fukurikōsei Center Mae,,,東扇島福利厚生センター前
+stops,stop_name,zh-CN,东扇岛福利厚生中心前,,,東扇島福利厚生センター前
+stops,stop_name,zh-TW,東扇島福利厚生中心前,,,東扇島福利厚生センター前
+stops,stop_name,ko,히가시오기시마 복리후생센터 앞,,,東扇島福利厚生センター前
+stops,stop_name,ja-Hrkt,ひがしおおぎしまふくりこうせいせんたーまえ,,,東扇島福利厚生センター前
+stops,stop_name,ja,東扇島西公園前,,,東扇島西公園前
+stops,stop_name,en,Higashi-ōgishima Nishi-kōen Mae,,,東扇島西公園前
+stops,stop_name,zh-CN,东扇岛西公园前,,,東扇島西公園前
+stops,stop_name,zh-TW,東扇島西公園前,,,東扇島西公園前
+stops,stop_name,ko,히가시오기시마 서공원 앞,,,東扇島西公園前
+stops,stop_name,ja-Hrkt,ひがしおおぎしまにしこうえんまえ,,,東扇島西公園前
+stops,stop_name,ja,東有馬第一団地前,,,東有馬第一団地前
+stops,stop_name,en,Higashi-arima Daiichi-danchi Mae,,,東有馬第一団地前
+stops,stop_name,zh-CN,东有马第一团地前,,,東有馬第一団地前
+stops,stop_name,zh-TW,東有馬第一團地前,,,東有馬第一団地前
+stops,stop_name,ko,히가시아리마 제1단지 앞,,,東有馬第一団地前
+stops,stop_name,ja-Hrkt,ひがしありまだいいちだんちまえ,,,東有馬第一団地前
+stops,stop_name,ja,東柿生小学校,,,東柿生小学校
+stops,stop_name,en,Higashi-kakio Shōgakkō,,,東柿生小学校
+stops,stop_name,zh-CN,东柿生小学,,,東柿生小学校
+stops,stop_name,zh-TW,東柿生小學,,,東柿生小学校
+stops,stop_name,ko,히가시카키오 초등학교,,,東柿生小学校
+stops,stop_name,ja-Hrkt,ひがしかきおしょうがっこう,,,東柿生小学校
+stops,stop_name,ja,東横線小杉駅,,,東横線小杉駅
+stops,stop_name,en,Tōyoko Line Kosugi Sta.,,,東横線小杉駅
+stops,stop_name,zh-CN,东横线小杉站,,,東横線小杉駅
+stops,stop_name,zh-TW,東橫線小杉站,,,東横線小杉駅
+stops,stop_name,ko,도요코선 고스기역 ,,,東横線小杉駅
+stops,stop_name,ja-Hrkt,とうよこせんこすぎえき,,,東横線小杉駅
+stops,stop_name,ja,東生田,,,東生田
+stops,stop_name,en,Higashi-ikuta,,,東生田
+stops,stop_name,zh-CN,东生田,,,東生田
+stops,stop_name,zh-TW,東生田,,,東生田
+stops,stop_name,ko,히가시이쿠타,,,東生田
+stops,stop_name,ja-Hrkt,ひがしいくた,,,東生田
+stops,stop_name,ja,東百合丘四丁目,,,東百合丘四丁目
+stops,stop_name,en,Higashi-Yurigaoka 4-chōme,,,東百合丘四丁目
+stops,stop_name,zh-CN,东百合丘四丁目,,,東百合丘四丁目
+stops,stop_name,zh-TW,東百合丘四丁目,,,東百合丘四丁目
+stops,stop_name,ko,히가시유리가오카 4초메,,,東百合丘四丁目
+stops,stop_name,ja-Hrkt,ひがしゆりがおかよんちょうめ,,,東百合丘四丁目
+stops,stop_name,ja,東芝浜川崎工場前,,,東芝浜川崎工場前
+stops,stop_name,en,TOSHIBA Hama-kawasaki Kōjō Mae,,,東芝浜川崎工場前
+stops,stop_name,zh-CN,东芝滨川崎工场前,,,東芝浜川崎工場前
+stops,stop_name,zh-TW,東芝濱川崎工場前,,,東芝浜川崎工場前
+stops,stop_name,ko,도시바 하마카와사키공장 앞,,,東芝浜川崎工場前
+stops,stop_name,ja-Hrkt,とうしばはまかわさきこうじょうまえ,,,東芝浜川崎工場前
+stops,stop_name,ja,東苅宿,,,東苅宿
+stops,stop_name,en,Higashi-kariyado,,,東苅宿
+stops,stop_name,zh-CN,东苅宿,,,東苅宿
+stops,stop_name,zh-TW,東苅宿,,,東苅宿
+stops,stop_name,ko,히가시카리야도,,,東苅宿
+stops,stop_name,ja-Hrkt,ひがしかりやど,,,東苅宿
+stops,stop_name,ja,東長沢,,,東長沢
+stops,stop_name,en,Higashi-nagasawa,,,東長沢
+stops,stop_name,zh-CN,东长泽,,,東長沢
+stops,stop_name,zh-TW,東長澤,,,東長沢
+stops,stop_name,ko,히가시나가사와,,,東長沢
+stops,stop_name,ja-Hrkt,ひがしながさわ,,,東長沢
+stops,stop_name,ja,柳町,,,柳町
+stops,stop_name,en,Yanagichō,,,柳町
+stops,stop_name,zh-CN,柳町,,,柳町
+stops,stop_name,zh-TW,柳町,,,柳町
+stops,stop_name,ko,야나기초,,,柳町
+stops,stop_name,ja-Hrkt,やなぎちょう,,,柳町
+stops,stop_name,ja,柿生中学校下,,,柿生中学校下
+stops,stop_name,en,Kakio Chūgakkō Shita,,,柿生中学校下
+stops,stop_name,zh-CN,柿生中学下,,,柿生中学校下
+stops,stop_name,zh-TW,柿生中學下,,,柿生中学校下
+stops,stop_name,ko,가키오 중학교 ,,,柿生中学校下
+stops,stop_name,ja-Hrkt,かきおちゅうがっこうした,,,柿生中学校下
+stops,stop_name,ja,柿生駅前,,,柿生駅前
+stops,stop_name,en,Kakio Sta.,,,柿生駅前
+stops,stop_name,zh-CN,柿生站,,,柿生駅前
+stops,stop_name,zh-TW,柿生站,,,柿生駅前
+stops,stop_name,ko,가키오역 ,,,柿生駅前
+stops,stop_name,ja-Hrkt,かきおえきまえ,,,柿生駅前
+stops,stop_name,ja,栗田病院前,,,栗田病院前
+stops,stop_name,en,Kurita Hospital,,,栗田病院前
+stops,stop_name,zh-CN,栗田病院前,,,栗田病院前
+stops,stop_name,zh-TW,栗田病院前,,,栗田病院前
+stops,stop_name,ko,구리타 병원 앞,,,栗田病院前
+stops,stop_name,ja-Hrkt,くりたびょういんまえ,,,栗田病院前
+stops,stop_name,ja,栗谷三丁目,,,栗谷三丁目
+stops,stop_name,en,Kuriya 3-chōme,,,栗谷三丁目
+stops,stop_name,zh-CN,栗谷三丁目,,,栗谷三丁目
+stops,stop_name,zh-TW,栗谷三丁目,,,栗谷三丁目
+stops,stop_name,ko,구리야 3초메 ,,,栗谷三丁目
+stops,stop_name,ja-Hrkt,くりや3ちょうめ,,,栗谷三丁目
+stops,stop_name,ja,栗谷二丁目,,,栗谷二丁目
+stops,stop_name,en,Kuriya 2-chōme,,,栗谷二丁目
+stops,stop_name,zh-CN,栗谷二丁目,,,栗谷二丁目
+stops,stop_name,zh-TW,栗谷二丁目,,,栗谷二丁目
+stops,stop_name,ko,구리야 2초메 ,,,栗谷二丁目
+stops,stop_name,ja-Hrkt,くりやにちょうめ,,,栗谷二丁目
+stops,stop_name,ja,栗谷四丁目,,,栗谷四丁目
+stops,stop_name,en,Kuriya 4-chōme,,,栗谷四丁目
+stops,stop_name,zh-CN,栗谷四丁目,,,栗谷四丁目
+stops,stop_name,zh-TW,栗谷四丁目,,,栗谷四丁目
+stops,stop_name,ko,구리야 4초메 ,,,栗谷四丁目
+stops,stop_name,ja-Hrkt,くりやよんちょうめ,,,栗谷四丁目
+stops,stop_name,ja,栗谷町会会館下,,,栗谷町会会館下
+stops,stop_name,en,Kuriya Chōkai Kaikan Shita,,,栗谷町会会館下
+stops,stop_name,zh-CN,栗谷町会会馆下,,,栗谷町会会館下
+stops,stop_name,zh-TW,栗谷町會會館下,,,栗谷町会会館下
+stops,stop_name,ko,구리야초 주민회관 아래,,,栗谷町会会館下
+stops,stop_name,ja-Hrkt,くりやちょうかいかいかんした,,,栗谷町会会館下
+stops,stop_name,ja,栗谷町会会館前,,,栗谷町会会館前
+stops,stop_name,en,Kuriya Chōkai Kaikan Mae,,,栗谷町会会館前
+stops,stop_name,zh-CN,栗谷町会会馆前,,,栗谷町会会館前
+stops,stop_name,zh-TW,栗谷町會會館前,,,栗谷町会会館前
+stops,stop_name,ko,구리야초 주민회관 앞 ,,,栗谷町会会館前
+stops,stop_name,ja-Hrkt,くりやちょうかいかいかんまえ,,,栗谷町会会館前
+stops,stop_name,ja,桜本,,,桜本
+stops,stop_name,en,Sakuramoto,,,桜本
+stops,stop_name,zh-CN,樱本,,,桜本
+stops,stop_name,zh-TW,櫻本,,,桜本
+stops,stop_name,ko,사쿠라모토,,,桜本
+stops,stop_name,ja-Hrkt,さくらもと,,,桜本
+stops,stop_name,ja,桜橋,,,桜橋
+stops,stop_name,en,Sakurabashi,,,桜橋
+stops,stop_name,zh-CN,樱桥,,,桜橋
+stops,stop_name,zh-TW,櫻橋,,,桜橋
+stops,stop_name,ko,사쿠라바시,,,桜橋
+stops,stop_name,ja-Hrkt,さくらばし,,,桜橋
+stops,stop_name,ja,梅林,,,梅林
+stops,stop_name,en,Bairin,,,梅林
+stops,stop_name,zh-CN,梅林,,,梅林
+stops,stop_name,zh-TW,梅林,,,梅林
+stops,stop_name,ko,바이린,,,梅林
+stops,stop_name,ja-Hrkt,ばいりん,,,梅林
+stops,stop_name,ja,梨木団地入口,,,梨木団地入口
+stops,stop_name,en,Nashinoki Danchi Iriguchi,,,梨木団地入口
+stops,stop_name,zh-CN,梨木团地入口,,,梨木団地入口
+stops,stop_name,zh-TW,梨木團地入口,,,梨木団地入口
+stops,stop_name,ko,나시노키 단지 입구,,,梨木団地入口
+stops,stop_name,ja-Hrkt,なしのきだんちいりぐち,,,梨木団地入口
+stops,stop_name,ja,梶ヶ谷二丁目,,,梶ヶ谷二丁目
+stops,stop_name,en,Kajigaya 2-chōme,,,梶ヶ谷二丁目
+stops,stop_name,zh-CN,楮之谷二丁目,,,梶ヶ谷二丁目
+stops,stop_name,zh-TW,楮之谷二丁目,,,梶ヶ谷二丁目
+stops,stop_name,ko,가지가야 2초메,,,梶ヶ谷二丁目
+stops,stop_name,ja-Hrkt,かじがやにちょうめ,,,梶ヶ谷二丁目
+stops,stop_name,ja,梶ヶ谷駅,,,梶ヶ谷駅
+stops,stop_name,en,Kajigaya Sta.,,,梶ヶ谷駅
+stops,stop_name,zh-CN,楮之谷站,,,梶ヶ谷駅
+stops,stop_name,zh-TW,楮之谷站,,,梶ヶ谷駅
+stops,stop_name,ko,가지가야역,,,梶ヶ谷駅
+stops,stop_name,ja-Hrkt,かじがやえき,,,梶ヶ谷駅
+stops,stop_name,ja,森ヶ丘団地入口,,,森ヶ丘団地入口
+stops,stop_name,en,Morigaoka Danchi Iriguchi,,,森ヶ丘団地入口
+stops,stop_name,zh-CN,森之丘团地入口,,,森ヶ丘団地入口
+stops,stop_name,zh-TW,森之丘團地入口,,,森ヶ丘団地入口
+stops,stop_name,ko,모리가오카 단지 입구,,,森ヶ丘団地入口
+stops,stop_name,ja-Hrkt,もりがおかだんちいりぐち,,,森ヶ丘団地入口
+stops,stop_name,ja,森林公園前,,,森林公園前
+stops,stop_name,en,Shinrin Kōen Mae,,,森林公園前
+stops,stop_name,zh-CN,森林公园前,,,森林公園前
+stops,stop_name,zh-TW,森林公園前,,,森林公園前
+stops,stop_name,ko,삼림 공원 앞 ,,,森林公園前
+stops,stop_name,ja-Hrkt,しんりんこうえんまえ,,,森林公園前
+stops,stop_name,ja,横須賀線小杉駅,,,横須賀線小杉駅
+stops,stop_name,en,Kosugi Sta.,,,横須賀線小杉駅
+stops,stop_name,zh-CN,小杉站,,,横須賀線小杉駅
+stops,stop_name,zh-TW,小杉站,,,横須賀線小杉駅
+stops,stop_name,ko,고스기역 ,,,横須賀線小杉駅
+stops,stop_name,ja-Hrkt,よこすかせんこすぎえき,,,横須賀線小杉駅
+stops,stop_name,ja,橋下,,,橋下
+stops,stop_name,en,Hashishita,,,橋下
+stops,stop_name,zh-CN,桥下,,,橋下
+stops,stop_name,zh-TW,橋下,,,橋下
+stops,stop_name,ko,하시시타,,,橋下
+stops,stop_name,ja-Hrkt,はしした,,,橋下
+stops,stop_name,ja,橘出張所前,,,橘出張所前
+stops,stop_name,en,Tachibana Shutchōjo Mae,,,橘出張所前
+stops,stop_name,zh-CN,橘办事处前,,,橘出張所前
+stops,stop_name,zh-TW,橘辦事處前,,,橘出張所前
+stops,stop_name,ko,다치바나 출장소 앞,,,橘出張所前
+stops,stop_name,ja-Hrkt,たちばなしゅっちょうじょまえ,,,橘出張所前
+stops,stop_name,ja,橘小学校,,,橘小学校
+stops,stop_name,en,Tachibana Shōgakkō,,,橘小学校
+stops,stop_name,zh-CN,橘小学,,,橘小学校
+stops,stop_name,zh-TW,橘小學,,,橘小学校
+stops,stop_name,ko,다치바나 초등학교,,,橘小学校
+stops,stop_name,ja-Hrkt,たちばなしょうがっこう,,,橘小学校
+stops,stop_name,ja,正教寺前,,,正教寺前
+stops,stop_name,en,Shōkyōji Mae,,,正教寺前
+stops,stop_name,zh-CN,正教寺前,,,正教寺前
+stops,stop_name,zh-TW,正教寺前,,,正教寺前
+stops,stop_name,ko,쇼쿄지 앞,,,正教寺前
+stops,stop_name,ja-Hrkt,しょうきょうじまえ,,,正教寺前
+stops,stop_name,ja,正福寺前,,,正福寺前
+stops,stop_name,en,Shōfukuji Mae,,,正福寺前
+stops,stop_name,zh-CN,正福寺前,,,正福寺前
+stops,stop_name,zh-TW,正福寺前,,,正福寺前
+stops,stop_name,ko,쇼후쿠지 앞,,,正福寺前
+stops,stop_name,ja-Hrkt,しょうふくじまえ,,,正福寺前
+stops,stop_name,ja,殿町一丁目,,,殿町一丁目
+stops,stop_name,en,Tonomachi 1-chōme,,,殿町一丁目
+stops,stop_name,zh-CN,殿町一丁目,,,殿町一丁目
+stops,stop_name,zh-TW,殿町一丁目,,,殿町一丁目
+stops,stop_name,ko,도노마치 1초메,,,殿町一丁目
+stops,stop_name,ja-Hrkt,とのまちいっちょうめ,,,殿町一丁目
+stops,stop_name,ja,殿町三丁目,,,殿町三丁目
+stops,stop_name,en,Tonomachi 3-chōme,,,殿町三丁目
+stops,stop_name,zh-CN,殿町三丁目,,,殿町三丁目
+stops,stop_name,zh-TW,殿町三丁目,,,殿町三丁目
+stops,stop_name,ko,도노마치 3초메,,,殿町三丁目
+stops,stop_name,ja-Hrkt,とのまちさんちょうめ,,,殿町三丁目
+stops,stop_name,ja,殿町二丁目,,,殿町二丁目
+stops,stop_name,en,Tonomachi 2-chōme,,,殿町二丁目
+stops,stop_name,zh-CN,殿町二丁目,,,殿町二丁目
+stops,stop_name,zh-TW,殿町二丁目,,,殿町二丁目
+stops,stop_name,ko,도노마치 2초메,,,殿町二丁目
+stops,stop_name,ja-Hrkt,とのまちにちょうめ,,,殿町二丁目
+stops,stop_name,ja,殿町小学校前,,,殿町小学校前
+stops,stop_name,en,Tonomachi Shōgakkō Mae,,,殿町小学校前
+stops,stop_name,zh-CN,殿町小学前,,,殿町小学校前
+stops,stop_name,zh-TW,殿町小學前,,,殿町小学校前
+stops,stop_name,ko,도노마치 초등학교 앞,,,殿町小学校前
+stops,stop_name,ja-Hrkt,とのまちしょうがっこうまえ,,,殿町小学校前
+stops,stop_name,ja,水江町,,,水江町
+stops,stop_name,en,Mizuechō,,,水江町
+stops,stop_name,zh-CN,水江町,,,水江町
+stops,stop_name,zh-TW,水江町,,,水江町
+stops,stop_name,ko,미즈에초,,,水江町
+stops,stop_name,ja-Hrkt,みずえちょう,,,水江町
+stops,stop_name,ja,水沢一丁目,,,水沢一丁目
+stops,stop_name,en,Mizusawa 1-chōme,,,水沢一丁目
+stops,stop_name,zh-CN,水泽一丁目,,,水沢一丁目
+stops,stop_name,zh-TW,水澤一丁目,,,水沢一丁目
+stops,stop_name,ko,미즈사와 1초메,,,水沢一丁目
+stops,stop_name,ja-Hrkt,みずさわいっちょうめ,,,水沢一丁目
+stops,stop_name,ja,江川一丁目,,,江川一丁目
+stops,stop_name,en,Egawa 1-chōme,,,江川一丁目
+stops,stop_name,zh-CN,江川一丁目,,,江川一丁目
+stops,stop_name,zh-TW,江川一丁目,,,江川一丁目
+stops,stop_name,ko,에가와 1초메,,,江川一丁目
+stops,stop_name,ja-Hrkt,えがわ1ちょうめ,,,江川一丁目
+stops,stop_name,ja,江川町,,,江川町
+stops,stop_name,en,Egawachō,,,江川町
+stops,stop_name,zh-CN,江川町,,,江川町
+stops,stop_name,zh-TW,江川町,,,江川町
+stops,stop_name,ko,에가와초,,,江川町
+stops,stop_name,ja-Hrkt,えがわちょう,,,江川町
+stops,stop_name,ja,池上町,,,池上町
+stops,stop_name,en,Ikegamichō,,,池上町
+stops,stop_name,zh-CN,池上町,,,池上町
+stops,stop_name,zh-TW,池上町,,,池上町
+stops,stop_name,ko,이케가미초,,,池上町
+stops,stop_name,ja-Hrkt,いけがみちょう,,,池上町
+stops,stop_name,ja,池藤橋,,,池藤橋
+stops,stop_name,en,Ikefujibashi,,,池藤橋
+stops,stop_name,zh-CN,池藤桥,,,池藤橋
+stops,stop_name,zh-TW,池藤橋,,,池藤橋
+stops,stop_name,ko,이케후지바시,,,池藤橋
+stops,stop_name,ja-Hrkt,いけふじばし,,,池藤橋
+stops,stop_name,ja,河原町,,,河原町
+stops,stop_name,en,Kawaramachi,,,河原町
+stops,stop_name,zh-CN,河原町,,,河原町
+stops,stop_name,zh-TW,河原町,,,河原町
+stops,stop_name,ko,가와라마치,,,河原町
+stops,stop_name,ja-Hrkt,かわらまち,,,河原町
+stops,stop_name,ja,河原町団地前,,,河原町団地前
+stops,stop_name,en,Kawaramachi Danchi Mae,,,河原町団地前
+stops,stop_name,zh-CN,河原町团地前,,,河原町団地前
+stops,stop_name,zh-TW,河原町團地前,,,河原町団地前
+stops,stop_name,ko,가와라마치 단지 앞 ,,,河原町団地前
+stops,stop_name,ja-Hrkt,かわらまちだんちまえ,,,河原町団地前
+stops,stop_name,ja,洗足学園前,,,洗足学園前
+stops,stop_name,en,Senzoku Gakuen Mae,,,洗足学園前
+stops,stop_name,zh-CN,洗足学园前,,,洗足学園前
+stops,stop_name,zh-TW,洗足學園前,,,洗足学園前
+stops,stop_name,ko,센조쿠가쿠엔 앞,,,洗足学園前
+stops,stop_name,ja-Hrkt,せんぞくがくえんまえ,,,洗足学園前
+stops,stop_name,ja,浜町三丁目,,,浜町三丁目
+stops,stop_name,en,Hamachō 3-chōme,,,浜町三丁目
+stops,stop_name,zh-CN,滨町三丁目,,,浜町三丁目
+stops,stop_name,zh-TW,濱町三丁目,,,浜町三丁目
+stops,stop_name,ko,하마초 3초메,,,浜町三丁目
+stops,stop_name,ja-Hrkt,はまちょうさんちょうめ,,,浜町三丁目
+stops,stop_name,ja,浜町二丁目,,,浜町二丁目
+stops,stop_name,en,Hamachō 2-chōme,,,浜町二丁目
+stops,stop_name,zh-CN,滨町二丁目,,,浜町二丁目
+stops,stop_name,zh-TW,濱町二丁目,,,浜町二丁目
+stops,stop_name,ko,하마초 2초메,,,浜町二丁目
+stops,stop_name,ja-Hrkt,はまちょうにちょうめ,,,浜町二丁目
+stops,stop_name,ja,浜町四丁目,,,浜町四丁目
+stops,stop_name,en,Hamachō 4-chōme,,,浜町四丁目
+stops,stop_name,zh-CN,滨町四丁目,,,浜町四丁目
+stops,stop_name,zh-TW,濱町四丁目,,,浜町四丁目
+stops,stop_name,ko,하마초 4초메,,,浜町四丁目
+stops,stop_name,ja-Hrkt,はまちょうよんちょうめ,,,浜町四丁目
+stops,stop_name,ja,浮島バスターミナル,,,浮島バスターミナル
+stops,stop_name,en,Ukishima Bus Terminal,,,浮島バスターミナル
+stops,stop_name,zh-CN,浮岛巴士总站,,,浮島バスターミナル
+stops,stop_name,zh-TW,浮島巴士總站,,,浮島バスターミナル
+stops,stop_name,ko,우키시마 버스터미널,,,浮島バスターミナル
+stops,stop_name,ja-Hrkt,うきしまばすたーみなる,,,浮島バスターミナル
+stops,stop_name,ja,浮島橋交番前,,,浮島橋交番前
+stops,stop_name,en,Ukishimabashi Kōban Mae,,,浮島橋交番前
+stops,stop_name,zh-CN,浮岛桥派出所前,,,浮島橋交番前
+stops,stop_name,zh-TW,浮島橋派出所前,,,浮島橋交番前
+stops,stop_name,ko,우키시마바시 파출소 앞 ,,,浮島橋交番前
+stops,stop_name,ja-Hrkt,うきしまはしこうばんまえ,,,浮島橋交番前
+stops,stop_name,ja,浮島町五番地,,,浮島町五番地
+stops,stop_name,en,Ukishimachō 5-banchi,,,浮島町五番地
+stops,stop_name,zh-CN,浮岛町五番地,,,浮島町五番地
+stops,stop_name,zh-TW,浮島町五番地,,,浮島町五番地
+stops,stop_name,ko,우키시마초 5번지  ,,,浮島町五番地
+stops,stop_name,ja-Hrkt,うきしまちょうごばんち,,,浮島町五番地
+stops,stop_name,ja,浮島町公園入口,,,浮島町公園入口
+stops,stop_name,en,Ukishimachō Kōen Iriguchi,,,浮島町公園入口
+stops,stop_name,zh-CN,浮岛町公园入口,,,浮島町公園入口
+stops,stop_name,zh-TW,浮島町公園入口,,,浮島町公園入口
+stops,stop_name,ko,우키시마초 공원 입구,,,浮島町公園入口
+stops,stop_name,ja-Hrkt,うきしまちょうこうえんいりぐち,,,浮島町公園入口
+stops,stop_name,ja,浮島町十番地,,,浮島町十番地
+stops,stop_name,en,Ukishimachō 10-banchi,,,浮島町十番地
+stops,stop_name,zh-CN,浮岛町十番地,,,浮島町十番地
+stops,stop_name,zh-TW,浮島町十番地,,,浮島町十番地
+stops,stop_name,ko,우키시마초 10번지  ,,,浮島町十番地
+stops,stop_name,ja-Hrkt,うきしまちょうじゅうばんち,,,浮島町十番地
+stops,stop_name,ja,清水台,,,清水台
+stops,stop_name,en,Shimizudai,,,清水台
+stops,stop_name,zh-CN,清水台,,,清水台
+stops,stop_name,zh-TW,清水台,,,清水台
+stops,stop_name,ko,시미즈다이,,,清水台
+stops,stop_name,ja-Hrkt,しみずだい,,,清水台
+stops,stop_name,ja,渡田三丁目,,,渡田三丁目
+stops,stop_name,en,Watarida 3-chōme,,,渡田三丁目
+stops,stop_name,zh-CN,渡田三丁目,,,渡田三丁目
+stops,stop_name,zh-TW,渡田三丁目,,,渡田三丁目
+stops,stop_name,ko,와타리다 3초메,,,渡田三丁目
+stops,stop_name,ja-Hrkt,わたりださんちょうめ,,,渡田三丁目
+stops,stop_name,ja,渡田向町,,,渡田向町
+stops,stop_name,en,Watarida-mukaichō,,,渡田向町
+stops,stop_name,zh-CN,渡田向町,,,渡田向町
+stops,stop_name,zh-TW,渡田向町,,,渡田向町
+stops,stop_name,ko,와타리다무카이초,,,渡田向町
+stops,stop_name,ja-Hrkt,わたりだむかいちょう,,,渡田向町
+stops,stop_name,ja,渡田小学校前,,,渡田小学校前
+stops,stop_name,en,Watarida Shōgakkō Mae,,,渡田小学校前
+stops,stop_name,zh-CN,渡田小学前,,,渡田小学校前
+stops,stop_name,zh-TW,渡田小學前,,,渡田小学校前
+stops,stop_name,ko,와타리다 초등학교 앞,,,渡田小学校前
+stops,stop_name,ja-Hrkt,わたりだしょうがっこうまえ,,,渡田小学校前
+stops,stop_name,ja,渡田新町,,,渡田新町
+stops,stop_name,en,Watarida-shinchō,,,渡田新町
+stops,stop_name,zh-CN,渡田新町,,,渡田新町
+stops,stop_name,zh-TW,渡田新町,,,渡田新町
+stops,stop_name,ko,와타리다신초,,,渡田新町
+stops,stop_name,ja-Hrkt,わたりだしんちょう,,,渡田新町
+stops,stop_name,ja,溝口,,,溝口
+stops,stop_name,en,Mizonokuchi,,,溝口
+stops,stop_name,zh-CN,沟口,,,溝口
+stops,stop_name,zh-TW,溝口,,,溝口
+stops,stop_name,ko,미조노쿠치,,,溝口
+stops,stop_name,ja-Hrkt,みぞのくち,,,溝口
+stops,stop_name,ja,溝口駅入口,,,溝口駅入口
+stops,stop_name,en,Mizonokuchi Eki Iriguchi,,,溝口駅入口
+stops,stop_name,zh-CN,沟口站入口,,,溝口駅入口
+stops,stop_name,zh-TW,溝口站入口,,,溝口駅入口
+stops,stop_name,ko,미조노쿠치역 입구,,,溝口駅入口
+stops,stop_name,ja-Hrkt,みぞのくちえきいりぐち,,,溝口駅入口
+stops,stop_name,ja,溝口駅前,,,溝口駅前
+stops,stop_name,en,Mizonokuchi Sta.,,,溝口駅前
+stops,stop_name,zh-CN,沟口站,,,溝口駅前
+stops,stop_name,zh-TW,溝口站,,,溝口駅前
+stops,stop_name,ko,미조노쿠치역 ,,,溝口駅前
+stops,stop_name,ja-Hrkt,みぞのくちえきまえ,,,溝口駅前
+stops,stop_name,ja,溝口駅南口,,,溝口駅南口
+stops,stop_name,en,Mizonokuchi Sta.,,,溝口駅南口
+stops,stop_name,zh-CN,沟口站,,,溝口駅南口
+stops,stop_name,zh-TW,溝口站,,,溝口駅南口
+stops,stop_name,ko,미조노쿠치역 ,,,溝口駅南口
+stops,stop_name,ja-Hrkt,みぞのくちえきみなみぐち,,,溝口駅南口
+stops,stop_name,ja,潮見台,,,潮見台
+stops,stop_name,en,Shiomidai,,,潮見台
+stops,stop_name,zh-CN,潮见台,,,潮見台
+stops,stop_name,zh-TW,潮見台,,,潮見台
+stops,stop_name,ko,시오미다이,,,潮見台
+stops,stop_name,ja-Hrkt,しおみだい,,,潮見台
+stops,stop_name,ja,潮見台浄水場前,,,潮見台浄水場前
+stops,stop_name,en,Shiomidai Jōsuijō Mae,,,潮見台浄水場前
+stops,stop_name,zh-CN,潮见台净水场前,,,潮見台浄水場前
+stops,stop_name,zh-TW,潮見台淨水場前,,,潮見台浄水場前
+stops,stop_name,ko,시오미다이 정수장 앞,,,潮見台浄水場前
+stops,stop_name,ja-Hrkt,しおみだいじょうすいじょうまえ,,,潮見台浄水場前
+stops,stop_name,ja,物流第２街区,,,物流第２街区
+stops,stop_name,en,Butsuryū Daini-gaiku,,,物流第２街区
+stops,stop_name,zh-CN,物流第2街区,,,物流第２街区
+stops,stop_name,zh-TW,物流第2街區,,,物流第２街区
+stops,stop_name,ko,물류 제2블록,,,物流第２街区
+stops,stop_name,ja-Hrkt,ぶつりゅうだい2がいく,,,物流第２街区
+stops,stop_name,ja,犬蔵,,,犬蔵
+stops,stop_name,en,Inukura,,,犬蔵
+stops,stop_name,zh-CN,犬藏,,,犬蔵
+stops,stop_name,zh-TW,犬藏,,,犬蔵
+stops,stop_name,ko,이누쿠라,,,犬蔵
+stops,stop_name,ja-Hrkt,いぬくら,,,犬蔵
+stops,stop_name,ja,犬蔵二丁目,,,犬蔵二丁目
+stops,stop_name,en,Inukura 2-chōme,,,犬蔵二丁目
+stops,stop_name,zh-CN,犬藏二丁目,,,犬蔵二丁目
+stops,stop_name,zh-TW,犬藏二丁目,,,犬蔵二丁目
+stops,stop_name,ko,이누쿠라 2초메,,,犬蔵二丁目
+stops,stop_name,ja-Hrkt,いぬくらにちょうめ,,,犬蔵二丁目
+stops,stop_name,ja,犬蔵公民館前,,,犬蔵公民館前
+stops,stop_name,en,Inukura Kōminkan Mae,,,犬蔵公民館前
+stops,stop_name,zh-CN,犬藏公民馆前,,,犬蔵公民館前
+stops,stop_name,zh-TW,犬藏公民館前,,,犬蔵公民館前
+stops,stop_name,ko,이누쿠라 주민회관 앞 ,,,犬蔵公民館前
+stops,stop_name,ja-Hrkt,いぬくらこうみんかんまえ,,,犬蔵公民館前
+stops,stop_name,ja,犬蔵小学校前,,,犬蔵小学校前
+stops,stop_name,en,Inukura Shōgakkō Mae,,,犬蔵小学校前
+stops,stop_name,zh-CN,犬藏小学前,,,犬蔵小学校前
+stops,stop_name,zh-TW,犬藏小學前,,,犬蔵小学校前
+stops,stop_name,ko,이누쿠라 초등학교 앞,,,犬蔵小学校前
+stops,stop_name,ja-Hrkt,いぬくらしょうがっこうまえ,,,犬蔵小学校前
+stops,stop_name,ja,玉川小学校前,,,玉川小学校前
+stops,stop_name,en,Gyokusen Shōgakkō Mae,,,玉川小学校前
+stops,stop_name,zh-CN,玉川小学前,,,玉川小学校前
+stops,stop_name,zh-TW,玉川小學前,,,玉川小学校前
+stops,stop_name,ko,교쿠센 초등학교 앞,,,玉川小学校前
+stops,stop_name,ja-Hrkt,ぎょくせんしょうがっこうまえ,,,玉川小学校前
+stops,stop_name,ja,王禅寺中央中学校前,,,王禅寺中央中学校前
+stops,stop_name,en,Ōzenji Chūō Chūgakkō Mae,,,王禅寺中央中学校前
+stops,stop_name,zh-CN,王禅寺中央中学前,,,王禅寺中央中学校前
+stops,stop_name,zh-TW,王禪寺中央中學前,,,王禅寺中央中学校前
+stops,stop_name,ko,오젠지추오 중학교 앞,,,王禅寺中央中学校前
+stops,stop_name,ja-Hrkt,おうぜんじちゅうおうちゅうがっこうまえ,,,王禅寺中央中学校前
+stops,stop_name,ja,王禅寺中央小学校前,,,王禅寺中央小学校前
+stops,stop_name,en,Ōzenji Chūō Shōgakkō Mae,,,王禅寺中央小学校前
+stops,stop_name,zh-CN,王禅寺中央小学前,,,王禅寺中央小学校前
+stops,stop_name,zh-TW,王禪寺中央小學前,,,王禅寺中央小学校前
+stops,stop_name,ko,오젠지추오 초등학교 앞,,,王禅寺中央小学校前
+stops,stop_name,ja-Hrkt,おうぜんじちゅうおうしょうがっこうまえ,,,王禅寺中央小学校前
+stops,stop_name,ja,王禅寺公園,,,王禅寺公園
+stops,stop_name,en,Ōzenji Kōen,,,王禅寺公園
+stops,stop_name,zh-CN,王禅寺公园,,,王禅寺公園
+stops,stop_name,zh-TW,王禪寺公園,,,王禅寺公園
+stops,stop_name,ko,오젠지 공원,,,王禅寺公園
+stops,stop_name,ja-Hrkt,おうぜんじこうえん,,,王禅寺公園
+stops,stop_name,ja,王禅寺口,,,王禅寺口
+stops,stop_name,en,Ōzenji Guchi,,,王禅寺口
+stops,stop_name,zh-CN,王禅寺口,,,王禅寺口
+stops,stop_name,zh-TW,王禪寺口,,,王禅寺口
+stops,stop_name,ko,오젠지 입구,,,王禅寺口
+stops,stop_name,ja-Hrkt,おうぜんじぐち,,,王禅寺口
+stops,stop_name,ja,王禅寺東三丁目,,,王禅寺東三丁目
+stops,stop_name,en,Ōzenji-higashi 3-chōme,,,王禅寺東三丁目
+stops,stop_name,zh-CN,王禅寺东三丁目,,,王禅寺東三丁目
+stops,stop_name,zh-TW,王禪寺東三丁目,,,王禅寺東三丁目
+stops,stop_name,ko,오젠지히가시 3초메,,,王禅寺東三丁目
+stops,stop_name,ja-Hrkt,おうぜんじひがしさんちょうめ,,,王禅寺東三丁目
+stops,stop_name,ja,琴平下,,,琴平下
+stops,stop_name,en,Kotohira Shita,,,琴平下
+stops,stop_name,zh-CN,琴平下,,,琴平下
+stops,stop_name,zh-TW,琴平下,,,琴平下
+stops,stop_name,ko,고토히라시타,,,琴平下
+stops,stop_name,ja-Hrkt,ことひらした,,,琴平下
+stops,stop_name,ja,生田宿,,,生田宿
+stops,stop_name,en,Ikutajuku,,,生田宿
+stops,stop_name,zh-CN,生田宿,,,生田宿
+stops,stop_name,zh-TW,生田宿,,,生田宿
+stops,stop_name,ko,이쿠타주쿠,,,生田宿
+stops,stop_name,ja-Hrkt,いくたじゅく,,,生田宿
+stops,stop_name,ja,生田緑地,,,生田緑地
+stops,stop_name,en,Ikuta Ryokuchi,,,生田緑地
+stops,stop_name,zh-CN,生田绿地,,,生田緑地
+stops,stop_name,zh-TW,生田綠地,,,生田緑地
+stops,stop_name,ko,이쿠타 녹지,,,生田緑地
+stops,stop_name,ja-Hrkt,いくたりょくち,,,生田緑地
+stops,stop_name,ja,生田緑地入口,,,生田緑地入口
+stops,stop_name,en,Ikuta Ryokuchi Iriguchi,,,生田緑地入口
+stops,stop_name,zh-CN,生田绿地入口,,,生田緑地入口
+stops,stop_name,zh-TW,生田綠地入口,,,生田緑地入口
+stops,stop_name,ko,이쿠타 녹지 입구,,,生田緑地入口
+stops,stop_name,ja-Hrkt,いくたりょくちいりぐち,,,生田緑地入口
+stops,stop_name,ja,生田駅,,,生田駅
+stops,stop_name,en,Ikuta Sta.,,,生田駅
+stops,stop_name,zh-CN,生田站,,,生田駅
+stops,stop_name,zh-TW,生田站,,,生田駅
+stops,stop_name,ko,이쿠타역 ,,,生田駅
+stops,stop_name,ja-Hrkt,いくたえき,,,生田駅
+stops,stop_name,ja,生田高校前,,,生田高校前
+stops,stop_name,en,Ikuta Kōkō Mae,,,生田高校前
+stops,stop_name,zh-CN,生田高中前,,,生田高校前
+stops,stop_name,zh-TW,生田高中前,,,生田高校前
+stops,stop_name,ko,이쿠타 고등학교 앞,,,生田高校前
+stops,stop_name,ja-Hrkt,いくたこうこうまえ,,,生田高校前
+stops,stop_name,ja,田園調布学園大学前,,,田園調布学園大学前
+stops,stop_name,en,Den-en Chōfu Gakuen Daigaku Mae,,,田園調布学園大学前
+stops,stop_name,zh-CN,田园调布学园大学前,,,田園調布学園大学前
+stops,stop_name,zh-TW,田園調布學園大學前,,,田園調布学園大学前
+stops,stop_name,ko,덴엔초후가쿠엔대학 앞,,,田園調布学園大学前
+stops,stop_name,ja-Hrkt,でんえんちょうふがくえんだいがくまえ,,,田園調布学園大学前
+stops,stop_name,ja,田尻町,,,田尻町
+stops,stop_name,en,Tajirichō,,,田尻町
+stops,stop_name,zh-CN,田尻町,,,田尻町
+stops,stop_name,zh-TW,田尻町,,,田尻町
+stops,stop_name,ko,다지리초,,,田尻町
+stops,stop_name,ja-Hrkt,たじりちょう,,,田尻町
+stops,stop_name,ja,田島町,,,田島町
+stops,stop_name,en,Tajimachō,,,田島町
+stops,stop_name,zh-CN,田岛町,,,田島町
+stops,stop_name,zh-TW,田島町,,,田島町
+stops,stop_name,ko,다지마초,,,田島町
+stops,stop_name,ja-Hrkt,たじまちょう,,,田島町
+stops,stop_name,ja,登戸新町,,,登戸新町
+stops,stop_name,en,Noborito-shimmachi,,,登戸新町
+stops,stop_name,zh-CN,登户新町,,,登戸新町
+stops,stop_name,zh-TW,登戶新町,,,登戸新町
+stops,stop_name,ko,노보리토신마치,,,登戸新町
+stops,stop_name,ja-Hrkt,のぼりとしんまち,,,登戸新町
+stops,stop_name,ja,登戸第１公園前,,,登戸第１公園前
+stops,stop_name,en,Noborito Dai1-Kōen Mae,,,登戸第１公園前
+stops,stop_name,zh-CN,登户第１公园前,,,登戸第１公園前
+stops,stop_name,zh-TW,登戶第１公園前,,,登戸第１公園前
+stops,stop_name,ko,노보리토 제1 공원 앞,,,登戸第１公園前
+stops,stop_name,ja-Hrkt,のぼりとだいいちこうえんまえ,,,登戸第１公園前
+stops,stop_name,ja,登戸駅多摩川口,,,登戸駅多摩川口
+stops,stop_name,en,Noborito Sta.,,,登戸駅多摩川口
+stops,stop_name,zh-CN,登户站,,,登戸駅多摩川口
+stops,stop_name,zh-TW,登戶站,,,登戸駅多摩川口
+stops,stop_name,ko,노보리토역 ,,,登戸駅多摩川口
+stops,stop_name,ja-Hrkt,のぼりとえきたまがわぐち,,,登戸駅多摩川口
+stops,stop_name,ja,登戸駅（溝０６、登１４系統）,,,登戸駅（溝０６、登１４系統）
+stops,stop_name,en,Noborito Sta.,,,登戸駅（溝０６、登１４系統）
+stops,stop_name,zh-CN,登户站,,,登戸駅（溝０６、登１４系統）
+stops,stop_name,zh-TW,登戶站,,,登戸駅（溝０６、登１４系統）
+stops,stop_name,ko,노보리토역,,,登戸駅（溝０６、登１４系統）
+stops,stop_name,ja-Hrkt,のぼりとえきみぞ０６、のぼり１４,,,登戸駅（溝０６、登１４系統）
+stops,stop_name,ja,登戸駅（生田緑地口）,,,登戸駅（生田緑地口）
+stops,stop_name,en,Noborito Sta.,,,登戸駅（生田緑地口）
+stops,stop_name,zh-CN,登户站,,,登戸駅（生田緑地口）
+stops,stop_name,zh-TW,登戶站,,,登戸駅（生田緑地口）
+stops,stop_name,ko,노보리토역 ,,,登戸駅（生田緑地口）
+stops,stop_name,ja-Hrkt,のぼりとえきいくたりょくちぐち,,,登戸駅（生田緑地口）
+stops,stop_name,ja,白井坂,,,白井坂
+stops,stop_name,en,Shiraizaka,,,白井坂
+stops,stop_name,zh-CN,白井坂,,,白井坂
+stops,stop_name,zh-TW,白井坂,,,白井坂
+stops,stop_name,ko,시라이자카,,,白井坂
+stops,stop_name,ja-Hrkt,しらいざか,,,白井坂
+stops,stop_name,ja,白山一丁目,,,白山一丁目
+stops,stop_name,en,Hakusan 1-chōme,,,白山一丁目
+stops,stop_name,zh-CN,白山一丁目,,,白山一丁目
+stops,stop_name,zh-TW,白山一丁目,,,白山一丁目
+stops,stop_name,ko,하쿠산 1초메,,,白山一丁目
+stops,stop_name,ja-Hrkt,はくさんいっちょうめ,,,白山一丁目
+stops,stop_name,ja,白山北緑地前,,,白山北緑地前
+stops,stop_name,en,Hakusan Kita-ryokuchi Mae,,,白山北緑地前
+stops,stop_name,zh-CN,白山北绿地前,,,白山北緑地前
+stops,stop_name,zh-TW,白山北綠地前,,,白山北緑地前
+stops,stop_name,ko,하쿠산 북쪽 녹지 앞,,,白山北緑地前
+stops,stop_name,ja-Hrkt,はくさんきたりょくちまえ,,,白山北緑地前
+stops,stop_name,ja,白山南緑地前,,,白山南緑地前
+stops,stop_name,en,Hakusan Minami-ryokuchi Mae,,,白山南緑地前
+stops,stop_name,zh-CN,白山南绿地前,,,白山南緑地前
+stops,stop_name,zh-TW,白山南綠地前,,,白山南緑地前
+stops,stop_name,ko,하쿠산 미나미녹지 앞,,,白山南緑地前
+stops,stop_name,ja-Hrkt,はくさんみなみりょくちまえ,,,白山南緑地前
+stops,stop_name,ja,白山神社,,,白山神社
+stops,stop_name,en,Hakusan Jinja,,,白山神社
+stops,stop_name,zh-CN,白山神社,,,白山神社
+stops,stop_name,zh-TW,白山神社,,,白山神社
+stops,stop_name,ko,하쿠산 신사,,,白山神社
+stops,stop_name,ja-Hrkt,はくさんじんじゃ,,,白山神社
+stops,stop_name,ja,白幡八幡前,,,白幡八幡前
+stops,stop_name,en,Shirahata Hachiman Mae,,,白幡八幡前
+stops,stop_name,zh-CN,白幡八幡前,,,白幡八幡前
+stops,stop_name,zh-TW,白幡八幡前,,,白幡八幡前
+stops,stop_name,ko,시라하타 하치만 앞,,,白幡八幡前
+stops,stop_name,ja-Hrkt,しらはたはちまんまえ,,,白幡八幡前
+stops,stop_name,ja,百合丘カントリー倶楽部前,,,百合丘カントリー倶楽部前
+stops,stop_name,en,Yurigaoka Country Club Mae,,,百合丘カントリー倶楽部前
+stops,stop_name,zh-CN,百合丘郊外俱乐部前,,,百合丘カントリー倶楽部前
+stops,stop_name,zh-TW,百合丘郊外俱樂部前,,,百合丘カントリー倶楽部前
+stops,stop_name,ko,유리가오카 컨트리 클럽 앞,,,百合丘カントリー倶楽部前
+stops,stop_name,ja-Hrkt,ゆりがおかかんとりーくらぶまえ,,,百合丘カントリー倶楽部前
+stops,stop_name,ja,百合丘ファミリーテニスクラブ前,,,百合丘ファミリーテニスクラブ前
+stops,stop_name,en,Yurigaoka Family Tennis Club Mae,,,百合丘ファミリーテニスクラブ前
+stops,stop_name,zh-CN,百合丘家庭网球俱乐部前,,,百合丘ファミリーテニスクラブ前
+stops,stop_name,zh-TW,百合丘家庭網球俱樂部前,,,百合丘ファミリーテニスクラブ前
+stops,stop_name,ko,유리가오카 패밀리 테니스클럽 앞,,,百合丘ファミリーテニスクラブ前
+stops,stop_name,ja-Hrkt,ゆりがおかふぁみりーてにすくらぶまえ,,,百合丘ファミリーテニスクラブ前
+stops,stop_name,ja,百合丘高校前,,,百合丘高校前
+stops,stop_name,en,Yurigaoka Kōkō Mae,,,百合丘高校前
+stops,stop_name,zh-CN,百合丘高中前,,,百合丘高校前
+stops,stop_name,zh-TW,百合丘高中前,,,百合丘高校前
+stops,stop_name,ko,유리가오카 고등학교 앞,,,百合丘高校前
+stops,stop_name,ja-Hrkt,ゆりがおかこうこうまえ,,,百合丘高校前
+stops,stop_name,ja,百合丘高校裏,,,百合丘高校裏
+stops,stop_name,en,Yurigaoka Kōkō Ura,,,百合丘高校裏
+stops,stop_name,zh-CN,百合丘高中后,,,百合丘高校裏
+stops,stop_name,zh-TW,百合丘高中後,,,百合丘高校裏
+stops,stop_name,ko,유리가오카 고등학교 뒤,,,百合丘高校裏
+stops,stop_name,ja-Hrkt,ゆりがおかこうこううら,,,百合丘高校裏
+stops,stop_name,ja,盛源寺,,,盛源寺
+stops,stop_name,en,Seigenji,,,盛源寺
+stops,stop_name,zh-CN,盛源寺,,,盛源寺
+stops,stop_name,zh-TW,盛源寺,,,盛源寺
+stops,stop_name,ko,세이겐지,,,盛源寺
+stops,stop_name,ja-Hrkt,せいげんじ,,,盛源寺
+stops,stop_name,ja,県営久末,,,県営久末
+stops,stop_name,en,Ken-ei Hisasue,,,県営久末
+stops,stop_name,zh-CN,县营久末,,,県営久末
+stops,stop_name,zh-TW,縣營久末,,,県営久末
+stops,stop_name,ko,공영 히사스에,,,県営久末
+stops,stop_name,ja-Hrkt,けんえいひさすえ,,,県営久末
+stops,stop_name,ja,県営埋立地入口,,,県営埋立地入口
+stops,stop_name,en,Ken-ei Umetatechi Iriguchi,,,県営埋立地入口
+stops,stop_name,zh-CN,县营填造地入口,,,県営埋立地入口
+stops,stop_name,zh-TW,縣營填造地入口,,,県営埋立地入口
+stops,stop_name,ko,공영 매립지 입구 ,,,県営埋立地入口
+stops,stop_name,ja-Hrkt,けんえいうめたてちいりぐち,,,県営埋立地入口
+stops,stop_name,ja,真福寺,,,真福寺
+stops,stop_name,en,Shimpukuji,,,真福寺
+stops,stop_name,zh-CN,真福寺,,,真福寺
+stops,stop_name,zh-TW,真福寺,,,真福寺
+stops,stop_name,ko,신푸쿠지,,,真福寺
+stops,stop_name,ja-Hrkt,しんぷくじ,,,真福寺
+stops,stop_name,ja,矢尻,,,矢尻
+stops,stop_name,en,Yajiri,,,矢尻
+stops,stop_name,zh-CN,矢尻,,,矢尻
+stops,stop_name,zh-TW,矢尻,,,矢尻
+stops,stop_name,ko,야지리,,,矢尻
+stops,stop_name,ja-Hrkt,やじり,,,矢尻
+stops,stop_name,ja,石神橋,,,石神橋
+stops,stop_name,en,Shakujibashi,,,石神橋
+stops,stop_name,zh-CN,石神桥,,,石神橋
+stops,stop_name,zh-TW,石神橋,,,石神橋
+stops,stop_name,ko,샤쿠지바시,,,石神橋
+stops,stop_name,ja-Hrkt,しゃくじばし,,,石神橋
+stops,stop_name,ja,砂子二丁目,,,砂子二丁目
+stops,stop_name,en,Isago 2-chōme,,,砂子二丁目
+stops,stop_name,zh-CN,砂子二丁目,,,砂子二丁目
+stops,stop_name,zh-TW,砂子二丁目,,,砂子二丁目
+stops,stop_name,ko,이사고 2초메,,,砂子二丁目
+stops,stop_name,ja-Hrkt,いさご2ちょうめ,,,砂子二丁目
+stops,stop_name,ja,神明町,,,神明町
+stops,stop_name,en,Shimmeichō,,,神明町
+stops,stop_name,zh-CN,神明町,,,神明町
+stops,stop_name,zh-TW,神明町,,,神明町
+stops,stop_name,ko,신메초,,,神明町
+stops,stop_name,ja-Hrkt,しんめいちょう,,,神明町
+stops,stop_name,ja,神明町平安会館さいわい前,,,神明町平安会館さいわい前
+stops,stop_name,en,Shimmeichō Heian Kaikan Saiwai Mae,,,神明町平安会館さいわい前
+stops,stop_name,zh-CN,神明町平安会馆幸前,,,神明町平安会館さいわい前
+stops,stop_name,zh-TW,神明町平安會館幸前,,,神明町平安会館さいわい前
+stops,stop_name,ko,신메초 헤이안회관 사이와이 앞,,,神明町平安会館さいわい前
+stops,stop_name,ja-Hrkt,しんめいちょうへいあんかいかんさいわいまえ,,,神明町平安会館さいわい前
+stops,stop_name,ja,神明社前,,,神明社前
+stops,stop_name,en,Shimmeisha Mae,,,神明社前
+stops,stop_name,zh-CN,神明社前,,,神明社前
+stops,stop_name,zh-TW,神明社前,,,神明社前
+stops,stop_name,ko,신메샤 앞,,,神明社前
+stops,stop_name,ja-Hrkt,しんめいしゃまえ,,,神明社前
+stops,stop_name,ja,神木不動,,,神木不動
+stops,stop_name,en,Shiboku Fudō,,,神木不動
+stops,stop_name,zh-CN,神木不动,,,神木不動
+stops,stop_name,zh-TW,神木不動,,,神木不動
+stops,stop_name,ko,시보쿠후도,,,神木不動
+stops,stop_name,ja-Hrkt,しぼくふどう,,,神木不動
+stops,stop_name,ja,神木本町,,,神木本町
+stops,stop_name,en,Shiboku-honchō,,,神木本町
+stops,stop_name,zh-CN,神木本町,,,神木本町
+stops,stop_name,zh-TW,神木本町,,,神木本町
+stops,stop_name,ko,시보쿠혼초,,,神木本町
+stops,stop_name,ja-Hrkt,しぼくほんちょう,,,神木本町
+stops,stop_name,ja,福岡運輸東京支店前,,,福岡運輸東京支店前
+stops,stop_name,en,Fukuokaunyu Tokyoshiten mae,,,福岡運輸東京支店前
+stops,stop_name,zh-CN,福冈交通东京分公司,,,福岡運輸東京支店前
+stops,stop_name,zh-TW,福岡交通東京分公司,,,福岡運輸東京支店前
+stops,stop_name,ko,후쿠오카 운수 도쿄 지점 앞,,,福岡運輸東京支店前
+stops,stop_name,ja-Hrkt,ふくおかうんゆとうきょうしてんまえ,,,福岡運輸東京支店前
+stops,stop_name,ja,稗原,,,稗原
+stops,stop_name,en,Hiebara,,,稗原
+stops,stop_name,zh-CN,稗原,,,稗原
+stops,stop_name,zh-TW,稗原,,,稗原
+stops,stop_name,ko,히에바라,,,稗原
+stops,stop_name,ja-Hrkt,ひえばら,,,稗原
+stops,stop_name,ja,稗原小学校前,,,稗原小学校前
+stops,stop_name,en,Hiebara Shōgakkō Mae,,,稗原小学校前
+stops,stop_name,zh-CN,稗原小学前,,,稗原小学校前
+stops,stop_name,zh-TW,稗原小學前,,,稗原小学校前
+stops,stop_name,ko,히에바라 초등학교 앞,,,稗原小学校前
+stops,stop_name,ja-Hrkt,ひえばらしょうがっこうまえ,,,稗原小学校前
+stops,stop_name,ja,稲田堤駅入口,,,稲田堤駅入口
+stops,stop_name,en,Inadazutsumi Eki Iriguchi,,,稲田堤駅入口
+stops,stop_name,zh-CN,稻田堤站入口,,,稲田堤駅入口
+stops,stop_name,zh-TW,稻田堤站入口,,,稲田堤駅入口
+stops,stop_name,ko,이나다즈츠미역 입구,,,稲田堤駅入口
+stops,stop_name,ja-Hrkt,いなだづつみえきいりぐち,,,稲田堤駅入口
+stops,stop_name,ja,稲荷坂,,,稲荷坂
+stops,stop_name,en,Inarizaka,,,稲荷坂
+stops,stop_name,zh-CN,稻荷坂,,,稲荷坂
+stops,stop_name,zh-TW,稻荷坂,,,稲荷坂
+stops,stop_name,ko,이나리자카,,,稲荷坂
+stops,stop_name,ja-Hrkt,いなりざか,,,稲荷坂
+stops,stop_name,ja,競輪場前,,,競輪場前
+stops,stop_name,en,Keirinjō Mae,,,競輪場前
+stops,stop_name,zh-CN,自行车赛场前,,,競輪場前
+stops,stop_name,zh-TW,自行車賽場前,,,競輪場前
+stops,stop_name,ko,경륜장 앞,,,競輪場前
+stops,stop_name,ja-Hrkt,けいりんじょうまえ,,,競輪場前
+stops,stop_name,ja,第三京浜入口,,,第三京浜入口
+stops,stop_name,en,Daisan Keihin Iriguchi,,,第三京浜入口
+stops,stop_name,zh-CN,第三京滨入口,,,第三京浜入口
+stops,stop_name,zh-TW,第三京濱入口,,,第三京浜入口
+stops,stop_name,ko,제3 게이힌 입구,,,第三京浜入口
+stops,stop_name,ja-Hrkt,だいさんけいひんいりぐち,,,第三京浜入口
+stops,stop_name,ja,緑地,,,緑地
+stops,stop_name,en,Ryokuchi,,,緑地
+stops,stop_name,zh-CN,绿地,,,緑地
+stops,stop_name,zh-TW,綠地,,,緑地
+stops,stop_name,ko,녹지,,,緑地
+stops,stop_name,ja-Hrkt,りょくち,,,緑地
+stops,stop_name,ja,美しの森中央,,,美しの森中央
+stops,stop_name,en,Utsukushinomori Chuō,,,美しの森中央
+stops,stop_name,zh-CN,美森中央,,,美しの森中央
+stops,stop_name,zh-TW,美森中央,,,美しの森中央
+stops,stop_name,ko,우츠쿠시노모리,,,美しの森中央
+stops,stop_name,ja-Hrkt,うつくしのもりちゅうおう,,,美しの森中央
+stops,stop_name,ja,美しの森入口,,,美しの森入口
+stops,stop_name,en,Utsukushinomori Iriguchi,,,美しの森入口
+stops,stop_name,zh-CN,美森入口,,,美しの森入口
+stops,stop_name,zh-TW,美森入口,,,美しの森入口
+stops,stop_name,ko,우츠쿠시노모리,,,美しの森入口
+stops,stop_name,ja-Hrkt,うつくしのもりいりぐち,,,美しの森入口
+stops,stop_name,ja,聖マリアンナ医大下,,,聖マリアンナ医大下
+stops,stop_name,en,Sei Marianna Idai Shita,,,聖マリアンナ医大下
+stops,stop_name,zh-CN,圣玛丽安娜医大下,,,聖マリアンナ医大下
+stops,stop_name,zh-TW,聖瑪麗安娜醫大下,,,聖マリアンナ医大下
+stops,stop_name,ko,성마리안나 의대 아래,,,聖マリアンナ医大下
+stops,stop_name,ja-Hrkt,せいまりあんないだいした,,,聖マリアンナ医大下
+stops,stop_name,ja,聖マリアンナ医大入口,,,聖マリアンナ医大入口
+stops,stop_name,en,St.Marianna Univ. School of Medicine Hospital Ent.,,,聖マリアンナ医大入口
+stops,stop_name,zh-CN,圣玛丽安娜医大入口,,,聖マリアンナ医大入口
+stops,stop_name,zh-TW,聖瑪麗安娜醫大入口,,,聖マリアンナ医大入口
+stops,stop_name,ko,성마리안나 의대 입구 ,,,聖マリアンナ医大入口
+stops,stop_name,ja-Hrkt,せいまりあんないだいいりぐち,,,聖マリアンナ医大入口
+stops,stop_name,ja,聖マリアンナ医科大学前,,,聖マリアンナ医科大学前
+stops,stop_name,en,St.Marianna Univ. School of Medicine Hospital,,,聖マリアンナ医科大学前
+stops,stop_name,zh-CN,圣玛丽安娜医科大学前,,,聖マリアンナ医科大学前
+stops,stop_name,zh-TW,聖瑪麗安娜醫科大學前,,,聖マリアンナ医科大学前
+stops,stop_name,ko,성마리안나 의과대학교 앞,,,聖マリアンナ医科大学前
+stops,stop_name,ja-Hrkt,せいまりあんないかだいがくまえ,,,聖マリアンナ医科大学前
+stops,stop_name,ja,能満寺,,,能満寺
+stops,stop_name,en,Nōmanji,,,能満寺
+stops,stop_name,zh-CN,能满寺,,,能満寺
+stops,stop_name,zh-TW,能滿寺,,,能満寺
+stops,stop_name,ko,노만지,,,能満寺
+stops,stop_name,ja-Hrkt,のうまんじ,,,能満寺
+stops,stop_name,ja,臨港　塩浜営業所,,,臨港　塩浜営業所
+stops,stop_name,ja-Hrkt,りんこうしおはまえいぎょうしょ,,,臨港　塩浜営業所
+stops,stop_name,ja,臨港病院前,,,臨港病院前
+stops,stop_name,en,Rinkō Hospital,,,臨港病院前
+stops,stop_name,zh-CN,临港病院前,,,臨港病院前
+stops,stop_name,zh-TW,臨港病院前,,,臨港病院前
+stops,stop_name,ko,임항 병원 앞,,,臨港病院前
+stops,stop_name,ja-Hrkt,りんこうびょういんまえ,,,臨港病院前
+stops,stop_name,ja,臨港警察署前,,,臨港警察署前
+stops,stop_name,en,Rinkō Keisatsusho Mae,,,臨港警察署前
+stops,stop_name,zh-CN,临港警察署前,,,臨港警察署前
+stops,stop_name,zh-TW,臨港警察署前,,,臨港警察署前
+stops,stop_name,ko,임항 경찰서 앞,,,臨港警察署前
+stops,stop_name,ja-Hrkt,りんこうけいさつしょまえ,,,臨港警察署前
+stops,stop_name,ja,花島,,,花島
+stops,stop_name,en,Hanajima,,,花島
+stops,stop_name,zh-CN,花岛,,,花島
+stops,stop_name,zh-TW,花島,,,花島
+stops,stop_name,ko,하나지마,,,花島
+stops,stop_name,ja-Hrkt,はなじま,,,花島
+stops,stop_name,ja,苅宿,,,苅宿
+stops,stop_name,en,Kariyado,,,苅宿
+stops,stop_name,zh-CN,苅宿,,,苅宿
+stops,stop_name,zh-TW,苅宿,,,苅宿
+stops,stop_name,ko,가리야도,,,苅宿
+stops,stop_name,ja-Hrkt,かりやど,,,苅宿
+stops,stop_name,ja,菅三丁目,,,菅三丁目
+stops,stop_name,en,Suge 3-chōme,,,菅三丁目
+stops,stop_name,zh-CN,菅三丁目,,,菅三丁目
+stops,stop_name,zh-TW,菅三丁目,,,菅三丁目
+stops,stop_name,ko,스게 3초메,,,菅三丁目
+stops,stop_name,ja-Hrkt,すげさんちょうめ,,,菅三丁目
+stops,stop_name,ja,菅仙谷公園前,,,菅仙谷公園前
+stops,stop_name,en,Suge-sengoku Kōen Mae,,,菅仙谷公園前
+stops,stop_name,zh-CN,菅仙谷公园前,,,菅仙谷公園前
+stops,stop_name,zh-TW,菅仙谷公園前,,,菅仙谷公園前
+stops,stop_name,ko,스게센고쿠 공원 앞,,,菅仙谷公園前
+stops,stop_name,ja-Hrkt,すげせんごくこうえんまえ,,,菅仙谷公園前
+stops,stop_name,ja,菅北浦三丁目,,,菅北浦三丁目
+stops,stop_name,en,Suge-kitaura 3-chōme,,,菅北浦三丁目
+stops,stop_name,zh-CN,菅北浦三丁目,,,菅北浦三丁目
+stops,stop_name,zh-TW,菅北浦三丁目,,,菅北浦三丁目
+stops,stop_name,ko,스게키타우라 3초메,,,菅北浦三丁目
+stops,stop_name,ja-Hrkt,すげきたうらさんちょうめ,,,菅北浦三丁目
+stops,stop_name,ja,菅四丁目,,,菅四丁目
+stops,stop_name,en,Suge 4-chōme,,,菅四丁目
+stops,stop_name,zh-CN,菅四丁目,,,菅四丁目
+stops,stop_name,zh-TW,菅四丁目,,,菅四丁目
+stops,stop_name,ko,스게 4초메,,,菅四丁目
+stops,stop_name,ja-Hrkt,すげよんちょうめ,,,菅四丁目
+stops,stop_name,ja,菅生,,,菅生
+stops,stop_name,en,Sugao,,,菅生
+stops,stop_name,zh-CN,菅生,,,菅生
+stops,stop_name,zh-TW,菅生,,,菅生
+stops,stop_name,ko,스가오,,,菅生
+stops,stop_name,ja-Hrkt,すがお,,,菅生
+stops,stop_name,ja,菅生三丁目,,,菅生三丁目
+stops,stop_name,en,Sugao 3-chōme,,,菅生三丁目
+stops,stop_name,zh-CN,菅生三丁目,,,菅生三丁目
+stops,stop_name,zh-TW,菅生三丁目,,,菅生三丁目
+stops,stop_name,ko,스가오 3초메,,,菅生三丁目
+stops,stop_name,ja-Hrkt,すがおさんちょうめ,,,菅生三丁目
+stops,stop_name,ja,菅生中学校,,,菅生中学校
+stops,stop_name,en,Sugao Chūgakkō,,,菅生中学校
+stops,stop_name,zh-CN,菅生中学,,,菅生中学校
+stops,stop_name,zh-TW,菅生中學,,,菅生中学校
+stops,stop_name,ko,스가오 중학교,,,菅生中学校
+stops,stop_name,ja-Hrkt,すがおちゅうがっこう,,,菅生中学校
+stops,stop_name,ja,菅生小学校入口,,,菅生小学校入口
+stops,stop_name,en,Sugao Shōgakkō Iriguchi,,,菅生小学校入口
+stops,stop_name,zh-CN,菅生小学入口,,,菅生小学校入口
+stops,stop_name,zh-TW,菅生小學入口,,,菅生小学校入口
+stops,stop_name,ko,스가오 초등학교 입구,,,菅生小学校入口
+stops,stop_name,ja-Hrkt,すがおしょうがっこういりぐち,,,菅生小学校入口
+stops,stop_name,ja,菅生車庫,,,菅生車庫
+stops,stop_name,en,Sugao Shako,,,菅生車庫
+stops,stop_name,zh-CN,菅生车库,,,菅生車庫
+stops,stop_name,zh-TW,菅生車庫,,,菅生車庫
+stops,stop_name,ko,스가오 차고,,,菅生車庫
+stops,stop_name,ja-Hrkt,すがおしゃこ,,,菅生車庫
+stops,stop_name,ja,蓮花寺前,,,蓮花寺前
+stops,stop_name,en,Rengeji Mae,,,蓮花寺前
+stops,stop_name,zh-CN,莲花寺前,,,蓮花寺前
+stops,stop_name,zh-TW,蓮花寺前,,,蓮花寺前
+stops,stop_name,ko,렌게지 앞,,,蓮花寺前
+stops,stop_name,ja-Hrkt,れんげじまえ,,,蓮花寺前
+stops,stop_name,ja,蔵前,,,蔵前
+stops,stop_name,en,Kuramae,,,蔵前
+stops,stop_name,zh-CN,藏前,,,蔵前
+stops,stop_name,zh-TW,藏前,,,蔵前
+stops,stop_name,ko,구라마에,,,蔵前
+stops,stop_name,ja-Hrkt,くらまえ,,,蔵前
+stops,stop_name,ja,蔵敷,,,蔵敷
+stops,stop_name,en,Zōshiki,,,蔵敷
+stops,stop_name,zh-CN,藏敷,,,蔵敷
+stops,stop_name,zh-TW,藏敷,,,蔵敷
+stops,stop_name,ko,조시키,,,蔵敷
+stops,stop_name,ja-Hrkt,ぞうしき,,,蔵敷
+stops,stop_name,ja,蔵敷団地,,,蔵敷団地
+stops,stop_name,en,Zōshiki Danchi,,,蔵敷団地
+stops,stop_name,zh-CN,藏敷团地,,,蔵敷団地
+stops,stop_name,zh-TW,藏敷團地,,,蔵敷団地
+stops,stop_name,ko,조시키 단지,,,蔵敷団地
+stops,stop_name,ja-Hrkt,ぞうしきだんち,,,蔵敷団地
+stops,stop_name,ja,薬師前,,,薬師前
+stops,stop_name,ja-Hrkt,やくしまえ,,,薬師前
+stops,stop_name,ja,藤子・Ｆ・不二雄ミュージアム,,,藤子・Ｆ・不二雄ミュージアム
+stops,stop_name,en,Fujiko・F・Fujio Museum,,,藤子・Ｆ・不二雄ミュージアム
+stops,stop_name,zh-CN,藤子・F・不二雄美术馆,,,藤子・Ｆ・不二雄ミュージアム
+stops,stop_name,zh-TW,藤子・F・不二雄美術館,,,藤子・Ｆ・不二雄ミュージアム
+stops,stop_name,ko,후지코ㆍFㆍ후지오 뮤지엄,,,藤子・Ｆ・不二雄ミュージアム
+stops,stop_name,ja-Hrkt,ふじこ･えふ･ふじおみゅーじあむ,,,藤子・Ｆ・不二雄ミュージアム
+stops,stop_name,ja,藤崎一丁目,,,藤崎一丁目
+stops,stop_name,en,Fujisaki 1-chōme,,,藤崎一丁目
+stops,stop_name,zh-CN,藤崎一丁目,,,藤崎一丁目
+stops,stop_name,zh-TW,藤崎一丁目,,,藤崎一丁目
+stops,stop_name,ko,후지사키 1초메,,,藤崎一丁目
+stops,stop_name,ja-Hrkt,ふじさきいっちょうめ,,,藤崎一丁目
+stops,stop_name,ja,藤崎四丁目,,,藤崎四丁目
+stops,stop_name,en,Fujisaki 4-chōme,,,藤崎四丁目
+stops,stop_name,zh-CN,藤崎四丁目,,,藤崎四丁目
+stops,stop_name,zh-TW,藤崎四丁目,,,藤崎四丁目
+stops,stop_name,ko,후지사키 4초메,,,藤崎四丁目
+stops,stop_name,ja-Hrkt,ふじさきよんちょうめ,,,藤崎四丁目
+stops,stop_name,ja,蟹ヶ谷,,,蟹ヶ谷
+stops,stop_name,en,Kanigaya,,,蟹ヶ谷
+stops,stop_name,zh-CN,蟹之谷,,,蟹ヶ谷
+stops,stop_name,zh-TW,蟹之谷,,,蟹ヶ谷
+stops,stop_name,ko,가니가야,,,蟹ヶ谷
+stops,stop_name,ja-Hrkt,かにがや,,,蟹ヶ谷
+stops,stop_name,ja,裏門坂,,,裏門坂
+stops,stop_name,en,Uramonzaka,,,裏門坂
+stops,stop_name,zh-CN,里门坂,,,裏門坂
+stops,stop_name,zh-TW,里門坂,,,裏門坂
+stops,stop_name,ko,우라몬자카,,,裏門坂
+stops,stop_name,ja-Hrkt,うらもんざか,,,裏門坂
+stops,stop_name,ja,西ヶ崎橋,,,西ヶ崎橋
+stops,stop_name,en,Nishigasakibashi,,,西ヶ崎橋
+stops,stop_name,zh-CN,西之崎桥,,,西ヶ崎橋
+stops,stop_name,zh-TW,西之崎橋,,,西ヶ崎橋
+stops,stop_name,ko,니시가사키바시,,,西ヶ崎橋
+stops,stop_name,ja-Hrkt,にしがさきばし,,,西ヶ崎橋
+stops,stop_name,ja,西下橋,,,西下橋
+stops,stop_name,en,Nishishitabashi,,,西下橋
+stops,stop_name,zh-CN,西下桥,,,西下橋
+stops,stop_name,zh-TW,西下橋,,,西下橋
+stops,stop_name,ko,니시시타바시,,,西下橋
+stops,stop_name,ja-Hrkt,にししたばし,,,西下橋
+stops,stop_name,ja,西加瀬,,,西加瀬
+stops,stop_name,en,Nishi-kase,,,西加瀬
+stops,stop_name,zh-CN,西加濑,,,西加瀬
+stops,stop_name,zh-TW,西加瀨,,,西加瀬
+stops,stop_name,ko,니시카세,,,西加瀬
+stops,stop_name,ja-Hrkt,にしかせ,,,西加瀬
+stops,stop_name,ja,西原,,,西原
+stops,stop_name,en,Nishihara,,,西原
+stops,stop_name,zh-CN,西原,,,西原
+stops,stop_name,zh-TW,西原,,,西原
+stops,stop_name,ko,니시하라,,,西原
+stops,stop_name,ja-Hrkt,にしはら,,,西原
+stops,stop_name,ja,西平台,,,西平台
+stops,stop_name,en,Nishi-hiradai,,,西平台
+stops,stop_name,zh-CN,西平台,,,西平台
+stops,stop_name,zh-TW,西平台,,,西平台
+stops,stop_name,ko,니시히라다이,,,西平台
+stops,stop_name,ja-Hrkt,にしひらだい,,,西平台
+stops,stop_name,ja,西明寺前,,,西明寺前
+stops,stop_name,en,Saimyōji Mae,,,西明寺前
+stops,stop_name,zh-CN,西明寺前,,,西明寺前
+stops,stop_name,zh-TW,西明寺前,,,西明寺前
+stops,stop_name,ko,사이묘지 앞,,,西明寺前
+stops,stop_name,ja-Hrkt,さいみょうじまえ,,,西明寺前
+stops,stop_name,ja,西水江,,,西水江
+stops,stop_name,en,Nishi-mizue,,,西水江
+stops,stop_name,zh-CN,西水江,,,西水江
+stops,stop_name,zh-TW,西水江,,,西水江
+stops,stop_name,ko,니시미즈에,,,西水江
+stops,stop_name,ja-Hrkt,にしみずえ,,,西水江
+stops,stop_name,ja,西福寺前,,,西福寺前
+stops,stop_name,en,Saifukuji Mae,,,西福寺前
+stops,stop_name,zh-CN,西福寺前,,,西福寺前
+stops,stop_name,zh-TW,西福寺前,,,西福寺前
+stops,stop_name,ko,사이후쿠지 앞,,,西福寺前
+stops,stop_name,ja-Hrkt,さいふくじまえ,,,西福寺前
+stops,stop_name,ja,西菅団地,,,西菅団地
+stops,stop_name,en,Nishi-suge Danchi,,,西菅団地
+stops,stop_name,zh-CN,西菅团地,,,西菅団地
+stops,stop_name,zh-TW,西菅團地,,,西菅団地
+stops,stop_name,ko,니시스게 단지,,,西菅団地
+stops,stop_name,ja-Hrkt,にしすげだんち,,,西菅団地
+stops,stop_name,ja,西長沢,,,西長沢
+stops,stop_name,en,Nishi-nagasawa,,,西長沢
+stops,stop_name,zh-CN,西长泽,,,西長沢
+stops,stop_name,zh-TW,西長澤,,,西長沢
+stops,stop_name,ko,니시나가사와,,,西長沢
+stops,stop_name,ja-Hrkt,にしながさわ,,,西長沢
+stops,stop_name,ja,観音一丁目,,,観音一丁目
+stops,stop_name,en,Kannon 1-chōme,,,観音一丁目
+stops,stop_name,zh-CN,观音一丁目,,,観音一丁目
+stops,stop_name,zh-TW,觀音一丁目,,,観音一丁目
+stops,stop_name,ko,간논 1초메,,,観音一丁目
+stops,stop_name,ja-Hrkt,かんのん1ちょうめ,,,観音一丁目
+stops,stop_name,ja,観音二丁目川崎大師口,,,観音二丁目川崎大師口
+stops,stop_name,en,Kannon 2-chōme Kawasaki Daishi Guchi,,,観音二丁目川崎大師口
+stops,stop_name,zh-CN,观音二丁目川崎大师口,,,観音二丁目川崎大師口
+stops,stop_name,zh-TW,觀音二丁目川崎大師口,,,観音二丁目川崎大師口
+stops,stop_name,ko,간논 2초메 가와사키다이시 입구,,,観音二丁目川崎大師口
+stops,stop_name,ja-Hrkt,かんのん2ちょうめかわさきだいしぐち,,,観音二丁目川崎大師口
+stops,stop_name,ja,谷中,,,谷中
+stops,stop_name,en,Yanaka,,,谷中
+stops,stop_name,zh-CN,谷中,,,谷中
+stops,stop_name,zh-TW,谷中,,,谷中
+stops,stop_name,ko,야나카,,,谷中
+stops,stop_name,ja-Hrkt,やなか,,,谷中
+stops,stop_name,ja,越路,,,越路
+stops,stop_name,en,Koshiji,,,越路
+stops,stop_name,zh-CN,越路,,,越路
+stops,stop_name,zh-TW,越路,,,越路
+stops,stop_name,ko,고시지,,,越路
+stops,stop_name,ja-Hrkt,こしじ,,,越路
+stops,stop_name,ja,追分,,,追分
+stops,stop_name,en,Oiwake,,,追分
+stops,stop_name,zh-CN,追分,,,追分
+stops,stop_name,zh-TW,追分,,,追分
+stops,stop_name,ko,오이와케,,,追分
+stops,stop_name,ja-Hrkt,おいわけ,,,追分
+stops,stop_name,ja,道中坂下,,,道中坂下
+stops,stop_name,ja-Hrkt,どうちゅうさかした,,,道中坂下
+stops,stop_name,ja,遠藤町,,,遠藤町
+stops,stop_name,en,Endōchō,,,遠藤町
+stops,stop_name,zh-CN,远藤町,,,遠藤町
+stops,stop_name,zh-TW,遠藤町,,,遠藤町
+stops,stop_name,ko,엔도초,,,遠藤町
+stops,stop_name,ja-Hrkt,えんどうちょう,,,遠藤町
+stops,stop_name,ja,都町,,,都町
+stops,stop_name,en,Miyakochō,,,都町
+stops,stop_name,zh-CN,都町,,,都町
+stops,stop_name,zh-TW,都町,,,都町
+stops,stop_name,ko,미야코초,,,都町
+stops,stop_name,ja-Hrkt,みやこちょう,,,都町
+stops,stop_name,ja,野川,,,野川
+stops,stop_name,en,Nogawa,,,野川
+stops,stop_name,zh-CN,野川,,,野川
+stops,stop_name,zh-TW,野川,,,野川
+stops,stop_name,ko,노가와,,,野川
+stops,stop_name,ja-Hrkt,のがわ,,,野川
+stops,stop_name,ja,野川くぬぎ坂,,,野川くぬぎ坂
+stops,stop_name,en,Nogawa Kunugizaka,,,野川くぬぎ坂
+stops,stop_name,zh-CN,野川橡坂,,,野川くぬぎ坂
+stops,stop_name,zh-TW,野川橡坂,,,野川くぬぎ坂
+stops,stop_name,ko,노가와 쿠누기자카,,,野川くぬぎ坂
+stops,stop_name,ja-Hrkt,のがわくぬぎさか,,,野川くぬぎ坂
+stops,stop_name,ja,野川中里,,,野川中里
+stops,stop_name,en,Nogawa Nakazato,,,野川中里
+stops,stop_name,zh-CN,野川中里,,,野川中里
+stops,stop_name,zh-TW,野川中裡,,,野川中里
+stops,stop_name,ko,노가와나카자토,,,野川中里
+stops,stop_name,ja-Hrkt,のがわなかざと,,,野川中里
+stops,stop_name,ja,野川小学校前,,,野川小学校前
+stops,stop_name,en,Nogawa Shōgakkō Mae,,,野川小学校前
+stops,stop_name,zh-CN,野川小学前,,,野川小学校前
+stops,stop_name,zh-TW,野川小學前,,,野川小学校前
+stops,stop_name,ko,노가와 초등학교 앞,,,野川小学校前
+stops,stop_name,ja-Hrkt,のがわしょうがっこうまえ,,,野川小学校前
+stops,stop_name,ja,野川郵便局前,,,野川郵便局前
+stops,stop_name,en,Nogawa Yūbinkyoku Mae,,,野川郵便局前
+stops,stop_name,zh-CN,野川邮局前,,,野川郵便局前
+stops,stop_name,zh-TW,野川郵局前,,,野川郵便局前
+stops,stop_name,ko,노가와 우체국 앞,,,野川郵便局前
+stops,stop_name,ja-Hrkt,のがわゆうびんきょくまえ,,,野川郵便局前
+stops,stop_name,ja,金山,,,金山
+stops,stop_name,en,Kanayama,,,金山
+stops,stop_name,zh-CN,金山,,,金山
+stops,stop_name,zh-TW,金山,,,金山
+stops,stop_name,ko,가나야마,,,金山
+stops,stop_name,ja-Hrkt,かなやま,,,金山
+stops,stop_name,ja,銀柳街入口,,,銀柳街入口
+stops,stop_name,en,Ginryūgai Iriguchi,,,銀柳街入口
+stops,stop_name,zh-CN,银柳街入口,,,銀柳街入口
+stops,stop_name,zh-TW,銀柳街入口,,,銀柳街入口
+stops,stop_name,ko,긴류가이 입구 ,,,銀柳街入口
+stops,stop_name,ja-Hrkt,ぎんりゅうがいいりぐち,,,銀柳街入口
+stops,stop_name,ja,鋼管通三丁目,,,鋼管通三丁目
+stops,stop_name,en,Kōkandōri 3-chōme,,,鋼管通三丁目
+stops,stop_name,zh-CN,钢管通三丁目,,,鋼管通三丁目
+stops,stop_name,zh-TW,鋼管通三丁目,,,鋼管通三丁目
+stops,stop_name,ko,고칸도리 3초메 ,,,鋼管通三丁目
+stops,stop_name,ja-Hrkt,こうかんどおりさんちょうめ,,,鋼管通三丁目
+stops,stop_name,ja,長尾,,,長尾
+stops,stop_name,en,Nagao,,,長尾
+stops,stop_name,zh-CN,长尾,,,長尾
+stops,stop_name,zh-TW,長尾,,,長尾
+stops,stop_name,ko,나가오,,,長尾
+stops,stop_name,ja-Hrkt,ながお,,,長尾
+stops,stop_name,ja,長尾橋,,,長尾橋
+stops,stop_name,en,Nagaobashi,,,長尾橋
+stops,stop_name,zh-CN,长尾桥,,,長尾橋
+stops,stop_name,zh-TW,長尾橋,,,長尾橋
+stops,stop_name,ko,나가오바시,,,長尾橋
+stops,stop_name,ja-Hrkt,ながおばし,,,長尾橋
+stops,stop_name,ja,長沢,,,長沢
+stops,stop_name,en,Nagasawa,,,長沢
+stops,stop_name,zh-CN,长泽,,,長沢
+stops,stop_name,zh-TW,長澤,,,長沢
+stops,stop_name,ko,나가사와,,,長沢
+stops,stop_name,ja-Hrkt,ながさわ,,,長沢
+stops,stop_name,ja,長沢中学校下,,,長沢中学校下
+stops,stop_name,en,Nagasawa Chūgakkō Shita,,,長沢中学校下
+stops,stop_name,zh-CN,长泽中学下,,,長沢中学校下
+stops,stop_name,zh-TW,長澤中學下,,,長沢中学校下
+stops,stop_name,ko,나가사와 중학교 ,,,長沢中学校下
+stops,stop_name,ja-Hrkt,ながさわちゅうがっこうした,,,長沢中学校下
+stops,stop_name,ja,長沢入口,,,長沢入口
+stops,stop_name,en,Nagasawa Iriguchi,,,長沢入口
+stops,stop_name,zh-CN,长泽入口,,,長沢入口
+stops,stop_name,zh-TW,長澤入口,,,長沢入口
+stops,stop_name,ko,나가사와 입구,,,長沢入口
+stops,stop_name,ja-Hrkt,ながさわいりぐち,,,長沢入口
+stops,stop_name,ja,長沢団地,,,長沢団地
+stops,stop_name,en,Nagasawa Danchi,,,長沢団地
+stops,stop_name,zh-CN,长泽团地,,,長沢団地
+stops,stop_name,zh-TW,長澤團地,,,長沢団地
+stops,stop_name,ko,나가사와 단지,,,長沢団地
+stops,stop_name,ja-Hrkt,ながさわだんち,,,長沢団地
+stops,stop_name,ja,長芝橋,,,長芝橋
+stops,stop_name,en,Nagashibabashi,,,長芝橋
+stops,stop_name,zh-CN,长芝桥,,,長芝橋
+stops,stop_name,zh-TW,長芝橋,,,長芝橋
+stops,stop_name,ko,나가시바바시,,,長芝橋
+stops,stop_name,ja-Hrkt,ながしばばし,,,長芝橋
+stops,stop_name,ja,陣屋町,,,陣屋町
+stops,stop_name,ja-Hrkt,じんやちょう,,,陣屋町
+stops,stop_name,ja,雪ヶ坂,,,雪ヶ坂
+stops,stop_name,en,Yukigasaka,,,雪ヶ坂
+stops,stop_name,zh-CN,雪之坂,,,雪ヶ坂
+stops,stop_name,zh-TW,雪之坂,,,雪ヶ坂
+stops,stop_name,ko,유키가사카,,,雪ヶ坂
+stops,stop_name,ja-Hrkt,ゆきがさか,,,雪ヶ坂
+stops,stop_name,ja,青葉幼稚園前,,,青葉幼稚園前
+stops,stop_name,en,Aoba Yōchien Mae,,,青葉幼稚園前
+stops,stop_name,zh-CN,青叶幼儿园前,,,青葉幼稚園前
+stops,stop_name,zh-TW,青葉幼兒園前,,,青葉幼稚園前
+stops,stop_name,ko,아오바 유치원 앞  ,,,青葉幼稚園前
+stops,stop_name,ja-Hrkt,あおばようちえんまえ,,,青葉幼稚園前
+stops,stop_name,ja,飯室,,,飯室
+stops,stop_name,en,Iimuro,,,飯室
+stops,stop_name,zh-CN,饭室,,,飯室
+stops,stop_name,zh-TW,飯室,,,飯室
+stops,stop_name,ko,이이무로,,,飯室
+stops,stop_name,ja-Hrkt,いいむろ,,,飯室
+stops,stop_name,ja,餅井坂,,,餅井坂
+stops,stop_name,en,Mochiizaka,,,餅井坂
+stops,stop_name,zh-CN,饼井坂,,,餅井坂
+stops,stop_name,zh-TW,餅井坂,,,餅井坂
+stops,stop_name,ko,모치이자카,,,餅井坂
+stops,stop_name,ja-Hrkt,もちいざか,,,餅井坂
+stops,stop_name,ja,養福寺,,,養福寺
+stops,stop_name,en,Yōfukuji,,,養福寺
+stops,stop_name,zh-CN,养福寺,,,養福寺
+stops,stop_name,zh-TW,養福寺,,,養福寺
+stops,stop_name,ko,요후쿠지,,,養福寺
+stops,stop_name,ja-Hrkt,ようふくじ,,,養福寺
+stops,stop_name,ja,馬絹,,,馬絹
+stops,stop_name,en,Maginu,,,馬絹
+stops,stop_name,zh-CN,马绢,,,馬絹
+stops,stop_name,zh-TW,馬絹,,,馬絹
+stops,stop_name,ko,마기누,,,馬絹
+stops,stop_name,ja-Hrkt,まぎぬ,,,馬絹
+stops,stop_name,ja,馬絹神社前,,,馬絹神社前
+stops,stop_name,en,Maginu Jinja Mae,,,馬絹神社前
+stops,stop_name,zh-CN,马绢神社前,,,馬絹神社前
+stops,stop_name,zh-TW,馬絹神社前,,,馬絹神社前
+stops,stop_name,ko,마기누 신사 앞,,,馬絹神社前
+stops,stop_name,ja-Hrkt,まぎぬじんじゃまえ,,,馬絹神社前
+stops,stop_name,ja,高津,,,高津
+stops,stop_name,en,Takatsu,,,高津
+stops,stop_name,zh-CN,高津,,,高津
+stops,stop_name,zh-TW,高津,,,高津
+stops,stop_name,ko,다카츠,,,高津
+stops,stop_name,ja-Hrkt,たかつ,,,高津
+stops,stop_name,ja,高津中学校入口,,,高津中学校入口
+stops,stop_name,en,Takatsu Chūgakkō Iriguchi,,,高津中学校入口
+stops,stop_name,zh-CN,高津中学入口,,,高津中学校入口
+stops,stop_name,zh-TW,高津中學入口,,,高津中学校入口
+stops,stop_name,ko,다카츠 중학교 입구,,,高津中学校入口
+stops,stop_name,ja-Hrkt,たかつちゅうがっこういりぐち,,,高津中学校入口
+stops,stop_name,ja,高津区役所前,,,高津区役所前
+stops,stop_name,en,Takatsu Kuyakusho Mae,,,高津区役所前
+stops,stop_name,zh-CN,高津区政府前,,,高津区役所前
+stops,stop_name,zh-TW,高津區政府前,,,高津区役所前
+stops,stop_name,ko,다카츠 구청 앞,,,高津区役所前
+stops,stop_name,ja-Hrkt,たかつくやくしょまえ,,,高津区役所前
+stops,stop_name,ja,高津駅前,,,高津駅前
+stops,stop_name,en,Takatsu Sta.,,,高津駅前
+stops,stop_name,zh-CN,高津站,,,高津駅前
+stops,stop_name,zh-TW,高津站,,,高津駅前
+stops,stop_name,ko,다카츠역 ,,,高津駅前
+stops,stop_name,ja-Hrkt,たかつえきまえ,,,高津駅前
+stops,stop_name,ja,高津高校前,,,高津高校前
+stops,stop_name,en,Takatsu Kōkō Mae,,,高津高校前
+stops,stop_name,zh-CN,高津高中前,,,高津高校前
+stops,stop_name,zh-TW,高津高中前,,,高津高校前
+stops,stop_name,ko,다카츠 고등학교 앞,,,高津高校前
+stops,stop_name,ja-Hrkt,たかつこうこうまえ,,,高津高校前
+stops,stop_name,ja,高田町,,,高田町
+stops,stop_name,en,Takatachō,,,高田町
+stops,stop_name,zh-CN,高田町,,,高田町
+stops,stop_name,zh-TW,高田町,,,高田町
+stops,stop_name,ko,다카타초,,,高田町
+stops,stop_name,ja-Hrkt,たかたちょう,,,高田町
+stops,stop_name,ja,鷲ヶ峰営業所前,,,鷲ヶ峰営業所前
+stops,stop_name,en,Washigamine Eigyōsho Mae,,,鷲ヶ峰営業所前
+stops,stop_name,zh-CN,鹫之峰营业所前,,,鷲ヶ峰営業所前
+stops,stop_name,zh-TW,鷲之峰營業所前,,,鷲ヶ峰営業所前
+stops,stop_name,ko,와시가미네 영업소 앞,,,鷲ヶ峰営業所前
+stops,stop_name,ja-Hrkt,わしがみねえいぎょうしょまえ,,,鷲ヶ峰営業所前
+stops,stop_name,ja,鷹巣橋,,,鷹巣橋
+stops,stop_name,en,Takanosubashi,,,鷹巣橋
+stops,stop_name,zh-CN,鹰巢桥,,,鷹巣橋
+stops,stop_name,zh-TW,鷹巢橋,,,鷹巣橋
+stops,stop_name,ko,다카노스바시,,,鷹巣橋
+stops,stop_name,ja-Hrkt,たかのすばし,,,鷹巣橋
+stops,stop_name,ja,鷺沼駅,,,鷺沼駅
+stops,stop_name,en,Saginuma Sta.,,,鷺沼駅
+stops,stop_name,zh-CN,鹭沼站,,,鷺沼駅
+stops,stop_name,zh-TW,鷺沼站,,,鷺沼駅
+stops,stop_name,ko,사기누마역 ,,,鷺沼駅
+stops,stop_name,ja-Hrkt,さぎぬまえき,,,鷺沼駅
+stops,stop_name,ja,麻生スポーツセンター入口,,,麻生スポーツセンター入口
+stops,stop_name,en,Asao Sports Center Iriguchi,,,麻生スポーツセンター入口
+stops,stop_name,zh-CN,麻生运动中心入口,,,麻生スポーツセンター入口
+stops,stop_name,zh-TW,麻生運動中心入口,,,麻生スポーツセンター入口
+stops,stop_name,ko,아사오 스포츠센터 입구 ,,,麻生スポーツセンター入口
+stops,stop_name,ja-Hrkt,あさおすぽーつせんたーいりぐち,,,麻生スポーツセンター入口
+stops,stop_name,ja,麻生不動入口,,,麻生不動入口
+stops,stop_name,en,Asao Fudō Iriguchi,,,麻生不動入口
+stops,stop_name,zh-CN,麻生不动入口,,,麻生不動入口
+stops,stop_name,zh-TW,麻生不動入口,,,麻生不動入口
+stops,stop_name,ko,아사오후도 입구 ,,,麻生不動入口
+stops,stop_name,ja-Hrkt,あさおふどういりぐち,,,麻生不動入口
+stops,stop_name,ja,黄金塚,,,黄金塚
+stops,stop_name,en,Koganezuka,,,黄金塚
+stops,stop_name,zh-CN,黄金冢,,,黄金塚
+stops,stop_name,zh-TW,黃金塚,,,黄金塚
+stops,stop_name,ko,고가네즈카,,,黄金塚
+stops,stop_name,ja-Hrkt,こがねづか,,,黄金塚
+stops,stop_name,ja,ＧＬＰ川崎前,,,ＧＬＰ川崎前
+stops,stop_name,en,GLP Kawasaki Mae,,,ＧＬＰ川崎前
+stops,stop_name,zh-CN,GLP川崎前,,,ＧＬＰ川崎前
+stops,stop_name,zh-TW,GLP川崎前,,,ＧＬＰ川崎前
+stops,stop_name,ko,GLP 가와사키 앞,,,ＧＬＰ川崎前
+stops,stop_name,ja-Hrkt,じーえるぴーかわさきまえ,,,ＧＬＰ川崎前
+stops,stop_name,ja,ＪＥＲＡ川崎火力発電所前,,,ＪＥＲＡ川崎火力発電所前
+stops,stop_name,en,JERA Kawasaki Karyoku Hatsudensho Mae,,,ＪＥＲＡ川崎火力発電所前
+stops,stop_name,zh-CN,JERA川崎在火力发电厂前,,,ＪＥＲＡ川崎火力発電所前
+stops,stop_name,zh-TW,JERA川崎在火力發電廠前,,,ＪＥＲＡ川崎火力発電所前
+stops,stop_name,ko,JERA 가와사키 화력 발전소  앞,,,ＪＥＲＡ川崎火力発電所前
+stops,stop_name,ja-Hrkt,じぇらかわさきかりょくはつでんしょまえ,,,ＪＥＲＡ川崎火力発電所前
+stops,stop_name,ja,ＪＦＥコンテイナー前,,,ＪＦＥコンテイナー前
+stops,stop_name,en,JFE Container Mae,,,ＪＦＥコンテイナー前
+stops,stop_name,zh-CN,JFE集装箱前,,,ＪＦＥコンテイナー前
+stops,stop_name,zh-TW,JFE集裝箱前,,,ＪＦＥコンテイナー前
+stops,stop_name,ko,JFE 콘테이너 앞,,,ＪＦＥコンテイナー前
+stops,stop_name,ja-Hrkt,じぇいえふいーこんていなーまえ,,,ＪＦＥコンテイナー前
+stops,stop_name,ja,ＪＦＥ前,,,ＪＦＥ前
+stops,stop_name,en,JFE Mae,,,ＪＦＥ前
+stops,stop_name,zh-CN,JFE前,,,ＪＦＥ前
+stops,stop_name,zh-TW,JFE前,,,ＪＦＥ前
+stops,stop_name,ko,JFE 앞,,,ＪＦＥ前
+stops,stop_name,ja-Hrkt,じぇいえふいーまえ,,,ＪＦＥ前
+stops,stop_name,ja,ＪＦＥ扇島正門前,,,ＪＦＥ扇島正門前
+stops,stop_name,en,JFE Ōgishima Seimon Mae,,,ＪＦＥ扇島正門前
+stops,stop_name,zh-CN,JFE扇岛正门前,,,ＪＦＥ扇島正門前
+stops,stop_name,zh-TW,JFE扇島正門前,,,ＪＦＥ扇島正門前
+stops,stop_name,ko,JFE 오기시마 정문 앞,,,ＪＦＥ扇島正門前
+stops,stop_name,ja-Hrkt,じぇいえふいーおおぎしませいもんまえ,,,ＪＦＥ扇島正門前
+stops,stop_name,ja,ＪＦＥ池上正門前,,,ＪＦＥ池上正門前
+stops,stop_name,en,JFE Ikegami Seimon Mae,,,ＪＦＥ池上正門前
+stops,stop_name,zh-CN,JFE池上正门前,,,ＪＦＥ池上正門前
+stops,stop_name,zh-TW,JFE池上正門前,,,ＪＦＥ池上正門前
+stops,stop_name,ko,JFE 이케가미 정문 앞 ,,,ＪＦＥ池上正門前
+stops,stop_name,ja-Hrkt,じぇいえふいーいけがみせいもんまえ,,,ＪＦＥ池上正門前
+routes,route_long_name,ja,おし沼→溝口駅南口　溝１９,,,おし沼→溝口駅南口　溝１９
+routes,route_long_name,ja,たまプラーザ駅→向丘遊園駅南口,,,たまプラーザ駅→向丘遊園駅南口
+routes,route_long_name,en,た８３,,,たまプラーザ駅→向丘遊園駅南口
+routes,route_long_name,zh-CN,た８３,,,たまプラーザ駅→向丘遊園駅南口
+routes,route_long_name,zh-TW,た８３,,,たまプラーザ駅→向丘遊園駅南口
+routes,route_long_name,ko,た８３,,,たまプラーザ駅→向丘遊園駅南口
+routes,route_long_name,ja,たまプラーザ駅→向丘遊園駅南口（東急）,,,たまプラーザ駅→向丘遊園駅南口（東急）
+routes,route_long_name,en,た８３,,,たまプラーザ駅→向丘遊園駅南口（東急）
+routes,route_long_name,zh-CN,た８３,,,たまプラーザ駅→向丘遊園駅南口（東急）
+routes,route_long_name,zh-TW,た８３,,,たまプラーザ駅→向丘遊園駅南口（東急）
+routes,route_long_name,ko,た８３,,,たまプラーザ駅→向丘遊園駅南口（東急）
+routes,route_long_name,ja,アイランド→川崎駅　ｗ　川４０,,,アイランド→川崎駅　ｗ　川４０
+routes,route_long_name,ja,カリタス学園→市場→鷲ヶ峰営業所　登０６,,,カリタス学園→市場→鷲ヶ峰営業所　登０６
+routes,route_long_name,en,登０６,,,カリタス学園→市場→鷲ヶ峰営業所　登０６
+routes,route_long_name,zh-CN,登０６,,,カリタス学園→市場→鷲ヶ峰営業所　登０６
+routes,route_long_name,zh-TW,登０６,,,カリタス学園→市場→鷲ヶ峰営業所　登０６
+routes,route_long_name,ko,登０６,,,カリタス学園→市場→鷲ヶ峰営業所　登０６
+routes,route_long_name,ja,カリタス学園→新船島橋　登２１,,,カリタス学園→新船島橋　登２１
+routes,route_long_name,en,登２１,,,カリタス学園→新船島橋　登２１
+routes,route_long_name,zh-CN,登２１,,,カリタス学園→新船島橋　登２１
+routes,route_long_name,zh-TW,登２１,,,カリタス学園→新船島橋　登２１
+routes,route_long_name,ko,登２１,,,カリタス学園→新船島橋　登２１
+routes,route_long_name,ja,ファズ→川崎駅　川０７,,,ファズ→川崎駅　川０７
+routes,route_long_name,ja,マリエン→ダイワ→川崎駅　川０５,,,マリエン→ダイワ→川崎駅　川０５
+routes,route_long_name,ja,上平間→三菱→江川町　Ｆ線　川８３,,,上平間→三菱→江川町　Ｆ線　川８３
+routes,route_long_name,ja,上平間→下→川崎駅ラゾーナ広場　川７１,,,上平間→下→川崎駅ラゾーナ広場　川７１
+routes,route_long_name,ja,上平間→下平→川崎駅西口　川８１,,,上平間→下平→川崎駅西口　川８１
+routes,route_long_name,ja,上平間→丸子橋→小杉駅　川７４,,,上平間→丸子橋→小杉駅　川７４
+routes,route_long_name,ja,上平間→井田病院　Ｂ　川６６,,,上平間→井田病院　Ｂ　川６６
+routes,route_long_name,ja,上平間→小杉駅　川７１,,,上平間→小杉駅　川７１
+routes,route_long_name,ja,上平間→川崎駅ラゾーナ広場　川７３,,,上平間→川崎駅ラゾーナ広場　川７３
+routes,route_long_name,ja,上平間→神明町→川崎駅ラゾーナ広場　川７,,,上平間→神明町→川崎駅ラゾーナ広場　川７
+routes,route_long_name,ja,中原駅→井田営業所　杉１０,,,中原駅→井田営業所　杉１０
+routes,route_long_name,ja,中原駅→小杉駅　杉４０,,,中原駅→小杉駅　杉４０
+routes,route_long_name,ja,中原駅→蟹ヶ谷　杉１０,,,中原駅→蟹ヶ谷　杉１０
+routes,route_long_name,ja,中原駅→高田町　原０１,,,中原駅→高田町　原０１
+routes,route_long_name,ja,中原駅→鷺沼駅　鷺０２　東急,,,中原駅→鷺沼駅　鷺０２　東急
+routes,route_long_name,en,鷺０２,,,中原駅→鷺沼駅　鷺０２　東急
+routes,route_long_name,zh-CN,鷺０２,,,中原駅→鷺沼駅　鷺０２　東急
+routes,route_long_name,zh-TW,鷺０２,,,中原駅→鷺沼駅　鷺０２　東急
+routes,route_long_name,ko,鷺０２,,,中原駅→鷺沼駅　鷺０２　東急
+routes,route_long_name,ja,中原駅前→鷺沼駅　鷺０２,,,中原駅前→鷺沼駅　鷺０２
+routes,route_long_name,en,鷺０２,,,中原駅前→鷺沼駅　鷺０２
+routes,route_long_name,zh-CN,鷺０２,,,中原駅前→鷺沼駅　鷺０２
+routes,route_long_name,zh-TW,鷺０２,,,中原駅前→鷺沼駅　鷺０２
+routes,route_long_name,ko,鷺０２,,,中原駅前→鷺沼駅　鷺０２
+routes,route_long_name,ja,中野島多摩川住宅→市場→鷲ヶ峰営業所　登０６,,,中野島多摩川住宅→市場→鷲ヶ峰営業所　登０６
+routes,route_long_name,en,登０６,,,中野島多摩川住宅→市場→鷲ヶ峰営業所　登０６
+routes,route_long_name,zh-CN,登０６,,,中野島多摩川住宅→市場→鷲ヶ峰営業所　登０６
+routes,route_long_name,zh-TW,登０６,,,中野島多摩川住宅→市場→鷲ヶ峰営業所　登０６
+routes,route_long_name,ko,登０６,,,中野島多摩川住宅→市場→鷲ヶ峰営業所　登０６
+routes,route_long_name,ja,中野島多摩川住宅→新船島橋　登２１,,,中野島多摩川住宅→新船島橋　登２１
+routes,route_long_name,en,登２１,,,中野島多摩川住宅→新船島橋　登２１
+routes,route_long_name,zh-CN,登２１,,,中野島多摩川住宅→新船島橋　登２１
+routes,route_long_name,zh-TW,登２１,,,中野島多摩川住宅→新船島橋　登２１
+routes,route_long_name,ko,登２１,,,中野島多摩川住宅→新船島橋　登２１
+routes,route_long_name,ja,久末→鷺沼駅　東急　鷺０２,,,久末→鷺沼駅　東急　鷺０２
+routes,route_long_name,en,鷺０２,,,久末→鷺沼駅　東急　鷺０２
+routes,route_long_name,zh-CN,鷺０２,,,久末→鷺沼駅　東急　鷺０２
+routes,route_long_name,zh-TW,鷺０２,,,久末→鷺沼駅　東急　鷺０２
+routes,route_long_name,ko,鷺０２,,,久末→鷺沼駅　東急　鷺０２
+routes,route_long_name,ja,井田営→新城駅　杉０４２０１６,,,井田営→新城駅　杉０４２０１６
+routes,route_long_name,en,杉０４,,,井田営→新城駅　杉０４２０１６
+routes,route_long_name,zh-CN,杉０４,,,井田営→新城駅　杉０４２０１６
+routes,route_long_name,zh-TW,杉０４,,,井田営→新城駅　杉０４２０１６
+routes,route_long_name,ko,杉０４,,,井田営→新城駅　杉０４２０１６
+routes,route_long_name,ja,井田営→木月四・小杉駅東口→横須賀線小杉,,,井田営→木月四・小杉駅東口→横須賀線小杉
+routes,route_long_name,ja,井田営業所→井田病院　２０１６　川６６,,,井田営業所→井田病院　２０１６　川６６
+routes,route_long_name,ja,井田営業所→全竜→小杉駅　杉１０,,,井田営業所→全竜→小杉駅　杉１０
+routes,route_long_name,ja,井田営業所→向丘遊園駅南口　溝０６,,,井田営業所→向丘遊園駅南口　溝０６
+routes,route_long_name,ja,井田営業所→宮前区役所　城１１,,,井田営業所→宮前区役所　城１１
+routes,route_long_name,en,城１１,,,井田営業所→宮前区役所　城１１
+routes,route_long_name,zh-CN,城１１,,,井田営業所→宮前区役所　城１１
+routes,route_long_name,zh-TW,城１１,,,井田営業所→宮前区役所　城１１
+routes,route_long_name,ko,城１１,,,井田営業所→宮前区役所　城１１
+routes,route_long_name,ja,井田営業所→宮前平駅　城１１,,,井田営業所→宮前平駅　城１１
+routes,route_long_name,ja,井田営業所→市民プラザ　溝２３,,,井田営業所→市民プラザ　溝２３
+routes,route_long_name,ja,井田営業所→有馬第二団地　溝２１,,,井田営業所→有馬第二団地　溝２１
+routes,route_long_name,ja,井田営業所→木月→川崎駅西口　川６６,,,井田営業所→木月→川崎駅西口　川６６
+routes,route_long_name,en,川６６,,,井田営業所→木月→川崎駅西口　川６６
+routes,route_long_name,zh-CN,川６６,,,井田営業所→木月→川崎駅西口　川６６
+routes,route_long_name,zh-TW,川６６,,,井田営業所→木月→川崎駅西口　川６６
+routes,route_long_name,ko,川６６,,,井田営業所→木月→川崎駅西口　川６６
+routes,route_long_name,ja,井田営業所→梶ヶ谷駅　プ　溝２３,,,井田営業所→梶ヶ谷駅　プ　溝２３
+routes,route_long_name,ja,井田営業所→溝口駅南口　溝２３,,,井田営業所→溝口駅南口　溝２３
+routes,route_long_name,ja,井田営業所→登戸駅　溝０６,,,井田営業所→登戸駅　溝０６
+routes,route_long_name,ja,井田営業所→蟹ヶ谷　杉０３,,,井田営業所→蟹ヶ谷　杉０３
+routes,route_long_name,en,杉０３,,,井田営業所→蟹ヶ谷　杉０３
+routes,route_long_name,zh-CN,杉０３,,,井田営業所→蟹ヶ谷　杉０３
+routes,route_long_name,zh-TW,杉０３,,,井田営業所→蟹ヶ谷　杉０３
+routes,route_long_name,ko,杉０３,,,井田営業所→蟹ヶ谷　杉０３
+routes,route_long_name,ja,井田営業所→高田町　溝２５,,,井田営業所→高田町　溝２５
+routes,route_long_name,ja,井田営業所→鷺沼駅　鷺０２,,,井田営業所→鷺沼駅　鷺０２
+routes,route_long_name,ja,井田営業所−直→梶ヶ谷駅　梶　溝２３,,,井田営業所−直→梶ヶ谷駅　梶　溝２３
+routes,route_long_name,ja,井田病院→リハ→井田営業所　杉０１,,,井田病院→リハ→井田営業所　杉０１
+routes,route_long_name,ja,井田病院→リハセン→元住吉→小杉駅東口　,,,井田病院→リハセン→元住吉→小杉駅東口　
+routes,route_long_name,ja,井田病院→井田営業所　２０１６　川６６,,,井田病院→井田営業所　２０１６　川６６
+routes,route_long_name,ja,井田病院→宮前平駅　城１１,,,井田病院→宮前平駅　城１１
+routes,route_long_name,ja,井田病院→新城駅　川６８,,,井田病院→新城駅　川６８
+routes,route_long_name,ja,井田病院→木月→上平間　Ｂ　川６６,,,井田病院→木月→上平間　Ｂ　川６６
+routes,route_long_name,ja,井田病院→木月→川崎駅西口　川６６,,,井田病院→木月→川崎駅西口　川６６
+routes,route_long_name,ja,井田病院→木月四・小杉駅東口→横須賀線小,,,井田病院→木月四・小杉駅東口→横須賀線小
+routes,route_long_name,ja,京セラ—近→川崎駅　川０４,,,京セラ—近→川崎駅　川０４
+routes,route_long_name,ja,北部市場ー犬蔵→溝口駅南口　犬　溝１６,,,北部市場ー犬蔵→溝口駅南口　犬　溝１６
+routes,route_long_name,ja,向丘遊園駅南口→たまプラーザ駅,,,向丘遊園駅南口→たまプラーザ駅
+routes,route_long_name,en,た８３,,,向丘遊園駅南口→たまプラーザ駅
+routes,route_long_name,zh-CN,た８３,,,向丘遊園駅南口→たまプラーザ駅
+routes,route_long_name,zh-TW,た８３,,,向丘遊園駅南口→たまプラーザ駅
+routes,route_long_name,ko,た８３,,,向丘遊園駅南口→たまプラーザ駅
+routes,route_long_name,ja,向丘遊園駅南口→たまプラーザ駅（東急）,,,向丘遊園駅南口→たまプラーザ駅（東急）
+routes,route_long_name,en,た８３,,,向丘遊園駅南口→たまプラーザ駅（東急）
+routes,route_long_name,zh-CN,た８３,,,向丘遊園駅南口→たまプラーザ駅（東急）
+routes,route_long_name,zh-TW,た８３,,,向丘遊園駅南口→たまプラーザ駅（東急）
+routes,route_long_name,ko,た８３,,,向丘遊園駅南口→たまプラーザ駅（東急）
+routes,route_long_name,ja,向丘遊園駅南口→井田営業所　溝０６,,,向丘遊園駅南口→井田営業所　溝０６
+routes,route_long_name,ja,向丘遊園駅南口→溝口駅　溝０６,,,向丘遊園駅南口→溝口駅　溝０６
+routes,route_long_name,ja,向丘遊園駅南口→溝口駅南口　溝１９,,,向丘遊園駅南口→溝口駅南口　溝１９
+routes,route_long_name,ja,向丘遊園駅南口→西菅団地　登１４,,,向丘遊園駅南口→西菅団地　登１４
+routes,route_long_name,ja,四丁目〜西菅団地　登１４,,,四丁目〜西菅団地　登１４
+routes,route_long_name,ja,城下→西菅団地　登１４,,,城下→西菅団地　登１４
+routes,route_long_name,ja,堰下→新百合丘駅前　溝１１,,,堰下→新百合丘駅前　溝１１
+routes,route_long_name,ja,堰下→登戸　登０５,,,堰下→登戸　登０５
+routes,route_long_name,ja,塩浜ー入江崎→川崎駅　川１０,,,塩浜ー入江崎→川崎駅　川１０
+routes,route_long_name,ja,塩浜ー斎苑→川崎駅　ｗ　川４０,,,塩浜ー斎苑→川崎駅　ｗ　川４０
+routes,route_long_name,ja,塩浜営業所→川崎駅　川０４,,,塩浜営業所→川崎駅　川０４
+routes,route_long_name,ja,塩浜営業所ー臨警→川崎駅　川１０,,,塩浜営業所ー臨警→川崎駅　川１０
+routes,route_long_name,ja,塩浜営業所ーＪＦＥ→川崎駅　ｗ　川４０,,,塩浜営業所ーＪＦＥ→川崎駅　ｗ　川４０
+routes,route_long_name,ja,多摩消防署前→西菅団地　登１４,,,多摩消防署前→西菅団地　登１４
+routes,route_long_name,ja,宮前区役所→市場→鷲ヶ峰営業所　宮０４,,,宮前区役所→市場→鷲ヶ峰営業所　宮０４
+routes,route_long_name,ja,宮前区役所→新城駅　城１１,,,宮前区役所→新城駅　城１１
+routes,route_long_name,ja,宮前区役所→溝口駅南口　溝１５,,,宮前区役所→溝口駅南口　溝１５
+routes,route_long_name,ja,宮前区役所→生田駅　生０１,,,宮前区役所→生田駅　生０１
+routes,route_long_name,ja,宮前区役所→聖マリアンナ　宮０５,,,宮前区役所→聖マリアンナ　宮０５
+routes,route_long_name,ja,宮前区役所→菅生車庫→登戸　登０５,,,宮前区役所→菅生車庫→登戸　登０５
+routes,route_long_name,ja,宮前平駅→井田営業所　城１１,,,宮前平駅→井田営業所　城１１
+routes,route_long_name,ja,宮前平駅→井田病院　城１１,,,宮前平駅→井田病院　城１１
+routes,route_long_name,ja,宮前平駅→市場→鷲ヶ峰営業所　宮０４,,,宮前平駅→市場→鷲ヶ峰営業所　宮０４
+routes,route_long_name,ja,宮前平駅→新城駅　城１１,,,宮前平駅→新城駅　城１１
+routes,route_long_name,ja,宮前平駅→溝南口→第三京浜　溝１５,,,宮前平駅→溝南口→第三京浜　溝１５
+routes,route_long_name,ja,宮前平駅→溝口駅南口　溝１５,,,宮前平駅→溝口駅南口　溝１５
+routes,route_long_name,ja,宮前平駅→生田駅　生０１,,,宮前平駅→生田駅　生０１
+routes,route_long_name,ja,宮前平駅→聖マリアンナ　宮０５,,,宮前平駅→聖マリアンナ　宮０５
+routes,route_long_name,ja,宮前平駅→高区→第三京浜　溝１５,,,宮前平駅→高区→第三京浜　溝１５
+routes,route_long_name,ja,小杉駅→上平間　川７１,,,小杉駅→上平間　川７１
+routes,route_long_name,ja,小杉駅→中原駅　杉４０,,,小杉駅→中原駅　杉４０
+routes,route_long_name,ja,小杉駅→久末　鷺０２　東急,,,小杉駅→久末　鷺０２　東急
+routes,route_long_name,en,鷺０２　東急,,,小杉駅→久末　鷺０２　東急
+routes,route_long_name,zh-CN,鷺０２　東急,,,小杉駅→久末　鷺０２　東急
+routes,route_long_name,zh-TW,鷺０２　東急,,,小杉駅→久末　鷺０２　東急
+routes,route_long_name,ko,鷺０２　東急,,,小杉駅→久末　鷺０２　東急
+routes,route_long_name,ja,小杉駅→全竜→井田営業所　杉１０,,,小杉駅→全竜→井田営業所　杉１０
+routes,route_long_name,ja,小杉駅→川崎駅ラゾーナ広場　川７１,,,小杉駅→川崎駅ラゾーナ広場　川７１
+routes,route_long_name,ja,小杉駅→市民ミュージアム　杉４０,,,小杉駅→市民ミュージアム　杉４０
+routes,route_long_name,ja,小杉駅→神明町→川崎駅ラゾーナ広場　川７,,,小杉駅→神明町→川崎駅ラゾーナ広場　川７
+routes,route_long_name,ja,小杉駅→蟹ヶ谷　杉１０,,,小杉駅→蟹ヶ谷　杉１０
+routes,route_long_name,ja,小杉駅→鷺沼駅　東急　鷺０２,,,小杉駅→鷺沼駅　東急　鷺０２
+routes,route_long_name,en,鷺０２,,,小杉駅→鷺沼駅　東急　鷺０２
+routes,route_long_name,zh-CN,鷺０２,,,小杉駅→鷺沼駅　東急　鷺０２
+routes,route_long_name,zh-TW,鷺０２,,,小杉駅→鷺沼駅　東急　鷺０２
+routes,route_long_name,ko,鷺０２,,,小杉駅→鷺沼駅　東急　鷺０２
+routes,route_long_name,ja,小杉駅→鷺沼駅　鷺０２,,,小杉駅→鷺沼駅　鷺０２
+routes,route_long_name,ja,小杉駅→黄金→新城駅→溝口駅　溝０５,,,小杉駅→黄金→新城駅→溝口駅　溝０５
+routes,route_long_name,ja,小杉駅−左→中原駅　杉４０,,,小杉駅−左→中原駅　杉４０
+routes,route_long_name,ja,小杉駅−Ｓ→溝口駅　溝０４,,,小杉駅−Ｓ→溝口駅　溝０４
+routes,route_long_name,ja,小杉駅東口→元住吉→井田病院　杉０１,,,小杉駅東口→元住吉→井田病院　杉０１
+routes,route_long_name,ja,川崎病院→川崎駅,,,川崎病院→川崎駅
+routes,route_long_name,ja,川崎病院→川崎駅　　臨,,,川崎病院→川崎駅　　臨
+routes,route_long_name,ja,川崎駅—→塩浜営業所　川０４,,,川崎駅—→塩浜営業所　川０４
+routes,route_long_name,ja,川崎駅—近→京セラ　川０４,,,川崎駅—近→京セラ　川０４
+routes,route_long_name,ja,川崎駅—近→市営埠頭　川０４,,,川崎駅—近→市営埠頭　川０４
+routes,route_long_name,ja,川崎駅—遠→市営埠頭　川０４,,,川崎駅—遠→市営埠頭　川０４
+routes,route_long_name,ja,川崎駅—遠→市営埠頭　急行　川０４,,,川崎駅—遠→市営埠頭　急行　川０４
+routes,route_long_name,ja,川崎駅—遠→市営埠頭　朝　川０４,,,川崎駅—遠→市営埠頭　朝　川０４
+routes,route_long_name,en,川０４,,,川崎駅—遠→市営埠頭　朝　川０４
+routes,route_long_name,zh-CN,川０４,,,川崎駅—遠→市営埠頭　朝　川０４
+routes,route_long_name,zh-TW,川０４,,,川崎駅—遠→市営埠頭　朝　川０４
+routes,route_long_name,ko,川０４,,,川崎駅—遠→市営埠頭　朝　川０４
+routes,route_long_name,ja,川崎駅→アイランド　ｗ　川４０,,,川崎駅→アイランド　ｗ　川４０
+routes,route_long_name,ja,川崎駅→ファズ　　川０７,,,川崎駅→ファズ　　川０７
+routes,route_long_name,ja,川崎駅→マリエン→ダイワ　川０５,,,川崎駅→マリエン→ダイワ　川０５
+routes,route_long_name,ja,川崎駅→マリエン→ダイワ　朝　川０５,,,川崎駅→マリエン→ダイワ　朝　川０５
+routes,route_long_name,ja,川崎駅→川崎病院,,,川崎駅→川崎病院
+routes,route_long_name,ja,川崎駅→川崎病院　　臨,,,川崎駅→川崎病院　　臨
+routes,route_long_name,ja,川崎駅→扇町　川１３,,,川崎駅→扇町　川１３
+routes,route_long_name,ja,川崎駅→直行→市立川崎高校,,,川崎駅→直行→市立川崎高校
+routes,route_long_name,ja,川崎駅→西公園　　川０７,,,川崎駅→西公園　　川０７
+routes,route_long_name,ja,川崎駅→西公園　区間急行　川０７,,,川崎駅→西公園　区間急行　川０７
+routes,route_long_name,en,川０７,,,川崎駅→西公園　区間急行　川０７
+routes,route_long_name,zh-CN,川０７,,,川崎駅→西公園　区間急行　川０７
+routes,route_long_name,zh-TW,川０７,,,川崎駅→西公園　区間急行　川０７
+routes,route_long_name,ko,川０７,,,川崎駅→西公園　区間急行　川０７
+routes,route_long_name,ja,川崎駅→西公園　朝　川０７,,,川崎駅→西公園　朝　川０７
+routes,route_long_name,ja,川崎駅→ＪＦＥ　ｗ　川４０,,,川崎駅→ＪＦＥ　ｗ　川４０
+routes,route_long_name,ja,川崎駅ラゾーナ広場→上平間　川７３,,,川崎駅ラゾーナ広場→上平間　川７３
+routes,route_long_name,ja,川崎駅ラゾーナ広場→下→上平間　川７１,,,川崎駅ラゾーナ広場→下→上平間　川７１
+routes,route_long_name,ja,川崎駅ラゾーナ広場→中幸→上平間　川７５,,,川崎駅ラゾーナ広場→中幸→上平間　川７５
+routes,route_long_name,ja,川崎駅ラゾーナ広場→小杉駅　川７１,,,川崎駅ラゾーナ広場→小杉駅　川７１
+routes,route_long_name,ja,川崎駅ラゾーナ広場→河原町循環→川崎駅ラ,,,川崎駅ラゾーナ広場→河原町循環→川崎駅ラ
+routes,route_long_name,ja,川崎駅ラゾーナ広場→神明町→上平間　川７,,,川崎駅ラゾーナ広場→神明町→上平間　川７
+routes,route_long_name,ja,川崎駅ラゾーナ広場→神明町→小杉駅　川７,,,川崎駅ラゾーナ広場→神明町→小杉駅　川７
+routes,route_long_name,ja,川崎駅ーマリ→ダイワ　急行　川０５,,,川崎駅ーマリ→ダイワ　急行　川０５
+routes,route_long_name,ja,川崎駅ー入江崎→塩浜　川１０,,,川崎駅ー入江崎→塩浜　川１０
+routes,route_long_name,ja,川崎駅ー労働会館→川崎駅　右　ｗ,,,川崎駅ー労働会館→川崎駅　右　ｗ
+routes,route_long_name,ja,川崎駅ー小田→川崎駅　左　ｗ　川１５,,,川崎駅ー小田→川崎駅　左　ｗ　川１５
+routes,route_long_name,ja,川崎駅ー市→水江町　川１０,,,川崎駅ー市→水江町　川１０
+routes,route_long_name,en,川１０,,,川崎駅ー市→水江町　川１０
+routes,route_long_name,zh-CN,川１０,,,川崎駅ー市→水江町　川１０
+routes,route_long_name,zh-TW,川１０,,,川崎駅ー市→水江町　川１０
+routes,route_long_name,ko,川１０,,,川崎駅ー市→水江町　川１０
+routes,route_long_name,ja,川崎駅ー斎苑→塩浜営業所　ｗ　川４０,,,川崎駅ー斎苑→塩浜営業所　ｗ　川４０
+routes,route_long_name,ja,川崎駅ー臨警→塩浜営業所　川１０,,,川崎駅ー臨警→塩浜営業所　川１０
+routes,route_long_name,ja,川崎駅ーＪＦＥ→塩浜営業所　ｗ川４０,,,川崎駅ーＪＦＥ→塩浜営業所　ｗ川４０
+routes,route_long_name,ja,川崎駅ーＪＦＥ→水江町　ｗ　川４０,,,川崎駅ーＪＦＥ→水江町　ｗ　川４０
+routes,route_long_name,ja,川崎駅西口→下平→上平間　川８１,,,川崎駅西口→下平→上平間　川８１
+routes,route_long_name,ja,川崎駅西口→井田営業所　川６６,,,川崎駅西口→井田営業所　川６６
+routes,route_long_name,en,川６６,,,川崎駅西口→井田営業所　川６６
+routes,route_long_name,zh-CN,川６６,,,川崎駅西口→井田営業所　川６６
+routes,route_long_name,zh-TW,川６６,,,川崎駅西口→井田営業所　川６６
+routes,route_long_name,ko,川６６,,,川崎駅西口→井田営業所　川６６
+routes,route_long_name,ja,川崎駅西口→井田病院　川６６,,,川崎駅西口→井田病院　川６６
+routes,route_long_name,ja,川崎駅西口→Ｆ線→江川町　川８３,,,川崎駅西口→Ｆ線→江川町　川８３
+routes,route_long_name,ja,川崎駅１５番→市役所前→ＪＦＥ前→川崎駅　川１７,,,川崎駅１５番→市役所前→ＪＦＥ前→川崎駅　川１７
+routes,route_long_name,ja,川崎駅６番→ＪＦＥ前→市役所前→川崎駅　川１７,,,川崎駅６番→ＪＦＥ前→市役所前→川崎駅　川１７
+routes,route_long_name,ja,市営埠頭—近→川崎駅　川０４,,,市営埠頭—近→川崎駅　川０４
+routes,route_long_name,ja,市営埠頭—遠→川崎駅　川０４,,,市営埠頭—遠→川崎駅　川０４
+routes,route_long_name,ja,市民プラザ→井田営業所　溝２３,,,市民プラザ→井田営業所　溝２３
+routes,route_long_name,ja,市民プラザ→溝口駅南口　溝２３,,,市民プラザ→溝口駅南口　溝２３
+routes,route_long_name,ja,市民ミュージアム→小杉駅　杉４０,,,市民ミュージアム→小杉駅　杉４０
+routes,route_long_name,ja,扇町→川崎駅　川１３,,,扇町→川崎駅　川１３
+routes,route_long_name,ja,新城駅→井田営　杉０４　２０１６,,,新城駅→井田営　杉０４　２０１６
+routes,route_long_name,en,杉０４,,,新城駅→井田営　杉０４　２０１６
+routes,route_long_name,zh-CN,杉０４,,,新城駅→井田営　杉０４　２０１６
+routes,route_long_name,zh-TW,杉０４,,,新城駅→井田営　杉０４　２０１６
+routes,route_long_name,ko,杉０４,,,新城駅→井田営　杉０４　２０１６
+routes,route_long_name,ja,新城駅→井田病院　川６８,,,新城駅→井田病院　川６８
+routes,route_long_name,ja,新城駅→元住吉→小杉東→横須賀線小杉駅　杉０４,,,新城駅→元住吉→小杉東→横須賀線小杉駅　杉０４
+routes,route_long_name,en,杉０４,,,新城駅→元住吉→小杉東→横須賀線小杉駅　杉０４
+routes,route_long_name,zh-CN,杉０４,,,新城駅→元住吉→小杉東→横須賀線小杉駅　杉０４
+routes,route_long_name,zh-TW,杉０４,,,新城駅→元住吉→小杉東→横須賀線小杉駅　杉０４
+routes,route_long_name,ko,杉０４,,,新城駅→元住吉→小杉東→横須賀線小杉駅　杉０４
+routes,route_long_name,ja,新城駅→宮前区役所　城１１,,,新城駅→宮前区役所　城１１
+routes,route_long_name,ja,新城駅→宮前平駅　城１１,,,新城駅→宮前平駅　城１１
+routes,route_long_name,ja,新百合丘駅→日生住宅→王禅寺口→新百合丘駅　新１３,,,新百合丘駅→日生住宅→王禅寺口→新百合丘駅　新１３
+routes,route_long_name,en,新１３,,,新百合丘駅→日生住宅→王禅寺口→新百合丘駅　新１３
+routes,route_long_name,zh-CN,新１３,,,新百合丘駅→日生住宅→王禅寺口→新百合丘駅　新１３
+routes,route_long_name,zh-TW,新１３,,,新百合丘駅→日生住宅→王禅寺口→新百合丘駅　新１３
+routes,route_long_name,ko,新１３,,,新百合丘駅→日生住宅→王禅寺口→新百合丘駅　新１３
+routes,route_long_name,ja,新百合丘駅→王禅寺口→鷲ヶ峰営業所　新１,,,新百合丘駅→王禅寺口→鷲ヶ峰営業所　新１
+routes,route_long_name,ja,新百合丘駅→白山神社→王禅寺口→新百合丘駅　新１３,,,新百合丘駅→白山神社→王禅寺口→新百合丘駅　新１３
+routes,route_long_name,en,新１３,,,新百合丘駅→白山神社→王禅寺口→新百合丘駅　新１３
+routes,route_long_name,zh-CN,新１３,,,新百合丘駅→白山神社→王禅寺口→新百合丘駅　新１３
+routes,route_long_name,zh-TW,新１３,,,新百合丘駅→白山神社→王禅寺口→新百合丘駅　新１３
+routes,route_long_name,ko,新１３,,,新百合丘駅→白山神社→王禅寺口→新百合丘駅　新１３
+routes,route_long_name,ja,新百合丘駅前→溝口駅南口　溝１１,,,新百合丘駅前→溝口駅南口　溝１１
+routes,route_long_name,ja,新船島橋→カリタス学園　登２１,,,新船島橋→カリタス学園　登２１
+routes,route_long_name,en,登２１,,,新船島橋→カリタス学園　登２１
+routes,route_long_name,zh-CN,登２１,,,新船島橋→カリタス学園　登２１
+routes,route_long_name,zh-TW,登２１,,,新船島橋→カリタス学園　登２１
+routes,route_long_name,ko,登２１,,,新船島橋→カリタス学園　登２１
+routes,route_long_name,ja,新船島橋→中野島多摩川住宅　登２１,,,新船島橋→中野島多摩川住宅　登２１
+routes,route_long_name,en,登２１,,,新船島橋→中野島多摩川住宅　登２１
+routes,route_long_name,zh-CN,登２１,,,新船島橋→中野島多摩川住宅　登２１
+routes,route_long_name,zh-TW,登２１,,,新船島橋→中野島多摩川住宅　登２１
+routes,route_long_name,ko,登２１,,,新船島橋→中野島多摩川住宅　登２１
+routes,route_long_name,ja,有馬第二団地→井田営業所　溝２１,,,有馬第二団地→井田営業所　溝２１
+routes,route_long_name,ja,有馬第二団地→溝口駅南口　溝２１,,,有馬第二団地→溝口駅南口　溝２１
+routes,route_long_name,ja,梶ヶ谷駅→井田営業所　プ　溝２３,,,梶ヶ谷駅→井田営業所　プ　溝２３
+routes,route_long_name,ja,梶ヶ谷駅→溝口駅南口　溝２３,,,梶ヶ谷駅→溝口駅南口　溝２３
+routes,route_long_name,ja,梶ヶ谷駅−直→井田営業所　梶　溝２３,,,梶ヶ谷駅−直→井田営業所　梶　溝２３
+routes,route_long_name,ja,梶ヶ谷駅−直→溝口駅南口,,,梶ヶ谷駅−直→溝口駅南口
+routes,route_long_name,ja,横須賀線小杉駅→小杉東→元住吉→新城駅　杉０４,,,横須賀線小杉駅→小杉東→元住吉→新城駅　杉０４
+routes,route_long_name,en,杉０４,,,横須賀線小杉駅→小杉東→元住吉→新城駅　杉０４
+routes,route_long_name,zh-CN,杉０４,,,横須賀線小杉駅→小杉東→元住吉→新城駅　杉０４
+routes,route_long_name,zh-TW,杉０４,,,横須賀線小杉駅→小杉東→元住吉→新城駅　杉０４
+routes,route_long_name,ko,杉０４,,,横須賀線小杉駅→小杉東→元住吉→新城駅　杉０４
+routes,route_long_name,ja,横須賀線小杉駅→小杉東→元住吉→蟹ヶ谷　,,,横須賀線小杉駅→小杉東→元住吉→蟹ヶ谷　
+routes,route_long_name,ja,横須賀線小杉駅→小杉駅東口→井田営　杉０,,,横須賀線小杉駅→小杉駅東口→井田営　杉０
+routes,route_long_name,ja,横須賀線小杉駅→小杉駅東口→井田病院　杉,,,横須賀線小杉駅→小杉駅東口→井田病院　杉
+routes,route_long_name,ja,水江町ー市→川崎駅　川１０,,,水江町ー市→川崎駅　川１０
+routes,route_long_name,en,川１０,,,水江町ー市→川崎駅　川１０
+routes,route_long_name,zh-CN,川１０,,,水江町ー市→川崎駅　川１０
+routes,route_long_name,zh-TW,川１０,,,水江町ー市→川崎駅　川１０
+routes,route_long_name,ko,川１０,,,水江町ー市→川崎駅　川１０
+routes,route_long_name,ja,水江町ーＪＦＥ→川崎駅　ｗ　川４０,,,水江町ーＪＦＥ→川崎駅　ｗ　川４０
+routes,route_long_name,ja,江川町→Ｆ線→交通広場→新川崎駅　川８３,,,江川町→Ｆ線→交通広場→新川崎駅　川８３
+routes,route_long_name,ja,江川町→Ｆ線→川崎駅西口　川８３,,,江川町→Ｆ線→川崎駅西口　川８３
+routes,route_long_name,ja,江川町→Ｆ線→新川崎駅　川８３,,,江川町→Ｆ線→新川崎駅　川８３
+routes,route_long_name,ja,浜町二丁目→川崎駅　川１３,,,浜町二丁目→川崎駅　川１３
+routes,route_long_name,ja,溝口駅→向丘遊園駅南口　溝０６,,,溝口駅→向丘遊園駅南口　溝０６
+routes,route_long_name,ja,溝口駅→新城駅→黄金→小杉駅　溝０５,,,溝口駅→新城駅→黄金→小杉駅　溝０５
+routes,route_long_name,ja,溝口駅→登戸駅　溝０６,,,溝口駅→登戸駅　溝０６
+routes,route_long_name,ja,溝口駅−Ｓ→小杉駅　溝０４,,,溝口駅−Ｓ→小杉駅　溝０４
+routes,route_long_name,ja,溝口駅南口→井田営業所　溝２３,,,溝口駅南口→井田営業所　溝２３
+routes,route_long_name,ja,溝口駅南口→向丘遊園駅南口　溝１９,,,溝口駅南口→向丘遊園駅南口　溝１９
+routes,route_long_name,ja,溝口駅南口→宮前区役所　溝１５,,,溝口駅南口→宮前区役所　溝１５
+routes,route_long_name,ja,溝口駅南口→宮前平駅　溝１５,,,溝口駅南口→宮前平駅　溝１５
+routes,route_long_name,ja,溝口駅南口→市民プラザ,,,溝口駅南口→市民プラザ
+routes,route_long_name,ja,溝口駅南口→新百合丘駅前　溝１１,,,溝口駅南口→新百合丘駅前　溝１１
+routes,route_long_name,ja,溝口駅南口→有馬第二団地　溝２１,,,溝口駅南口→有馬第二団地　溝２１
+routes,route_long_name,ja,溝口駅南口→梶ヶ谷駅　溝２３,,,溝口駅南口→梶ヶ谷駅　溝２３
+routes,route_long_name,ja,溝口駅南口→聖マリアンナ　溝１８,,,溝口駅南口→聖マリアンナ　溝１８
+routes,route_long_name,ja,溝口駅南口→聖マリアンナ　犬　溝１６,,,溝口駅南口→聖マリアンナ　犬　溝１６
+routes,route_long_name,ja,溝口駅南口→菅生車庫　溝１７,,,溝口駅南口→菅生車庫　溝１７
+routes,route_long_name,ja,溝口駅南口→高田町　溝２５,,,溝口駅南口→高田町　溝２５
+routes,route_long_name,ja,溝口駅南口→鷲ヶ峰営業所　溝１８,,,溝口駅南口→鷲ヶ峰営業所　溝１８
+routes,route_long_name,ja,溝口駅南口−直→梶ヶ谷駅,,,溝口駅南口−直→梶ヶ谷駅
+routes,route_long_name,ja,溝口駅南口ー市場→鷲ヶ峰営業所　犬　溝１,,,溝口駅南口ー市場→鷲ヶ峰営業所　犬　溝１
+routes,route_long_name,ja,生田緑地→藤子ミュージアム→登戸駅,,,生田緑地→藤子ミュージアム→登戸駅
+routes,route_long_name,ja,生田駅→保育→聖マリアンナ前　生０３,,,生田駅→保育→聖マリアンナ前　生０３
+routes,route_long_name,ja,生田駅→保育→鷲ヶ峰営業所 　生０３,,,生田駅→保育→鷲ヶ峰営業所 　生０３
+routes,route_long_name,en,生０３,,,生田駅→保育→鷲ヶ峰営業所 　生０３
+routes,route_long_name,zh-CN,生０３,,,生田駅→保育→鷲ヶ峰営業所 　生０３
+routes,route_long_name,zh-TW,生０３,,,生田駅→保育→鷲ヶ峰営業所 　生０３
+routes,route_long_name,ko,生０３,,,生田駅→保育→鷲ヶ峰営業所 　生０３
+routes,route_long_name,ja,生田駅→南生田→聖マリアンナ前　生０３,,,生田駅→南生田→聖マリアンナ前　生０３
+routes,route_long_name,ja,生田駅→南生田→鷲ヶ峰営業所　生０３,,,生田駅→南生田→鷲ヶ峰営業所　生０３
+routes,route_long_name,en,生０３,,,生田駅→南生田→鷲ヶ峰営業所　生０３
+routes,route_long_name,zh-CN,生０３,,,生田駅→南生田→鷲ヶ峰営業所　生０３
+routes,route_long_name,zh-TW,生０３,,,生田駅→南生田→鷲ヶ峰営業所　生０３
+routes,route_long_name,ko,生０３,,,生田駅→南生田→鷲ヶ峰営業所　生０３
+routes,route_long_name,ja,生田駅→宮前区役所　生０１,,,生田駅→宮前区役所　生０１
+routes,route_long_name,ja,生田駅→宮前平駅　生０１,,,生田駅→宮前平駅　生０１
+routes,route_long_name,ja,生田駅→春秋→鷲ヶ峰営業所,,,生田駅→春秋→鷲ヶ峰営業所
+routes,route_long_name,en,生０２,,,生田駅→春秋→鷲ヶ峰営業所
+routes,route_long_name,zh-CN,生０２,,,生田駅→春秋→鷲ヶ峰営業所
+routes,route_long_name,zh-TW,生０２,,,生田駅→春秋→鷲ヶ峰営業所
+routes,route_long_name,ko,生０２,,,生田駅→春秋→鷲ヶ峰営業所
+routes,route_long_name,ja,生田駅→聖マリアンナ前　生０２,,,生田駅→聖マリアンナ前　生０２
+routes,route_long_name,ja,生田駅→長沢入口→鷲ヶ峰営業所　生０１,,,生田駅→長沢入口→鷲ヶ峰営業所　生０１
+routes,route_long_name,en,生０１,,,生田駅→長沢入口→鷲ヶ峰営業所　生０１
+routes,route_long_name,zh-CN,生０１,,,生田駅→長沢入口→鷲ヶ峰営業所　生０１
+routes,route_long_name,zh-TW,生０１,,,生田駅→長沢入口→鷲ヶ峰営業所　生０１
+routes,route_long_name,ko,生０１,,,生田駅→長沢入口→鷲ヶ峰営業所　生０１
+routes,route_long_name,ja,田園調布学園→溝口駅南口　溝１１,,,田園調布学園→溝口駅南口　溝１１
+routes,route_long_name,en,溝１１,,,田園調布学園→溝口駅南口　溝１１
+routes,route_long_name,zh-CN,溝１１,,,田園調布学園→溝口駅南口　溝１１
+routes,route_long_name,zh-TW,溝１１,,,田園調布学園→溝口駅南口　溝１１
+routes,route_long_name,ko,溝１１,,,田園調布学園→溝口駅南口　溝１１
+routes,route_long_name,ja,登戸→向丘出張所　登０５,,,登戸→向丘出張所　登０５
+routes,route_long_name,ja,登戸→菅生車庫→宮前区役所　登０５,,,登戸→菅生車庫→宮前区役所　登０５
+routes,route_long_name,ja,登戸→菅生車庫　登０５,,,登戸→菅生車庫　登０５
+routes,route_long_name,ja,登戸→鷲ヶ峰営業所　登０５,,,登戸→鷲ヶ峰営業所　登０５
+routes,route_long_name,ja,登戸駅→井田営業所　溝０６,,,登戸駅→井田営業所　溝０６
+routes,route_long_name,ja,登戸駅→溝口駅　溝０６,,,登戸駅→溝口駅　溝０６
+routes,route_long_name,ja,登戸駅→藤子ミュージアム→生田緑地,,,登戸駅→藤子ミュージアム→生田緑地
+routes,route_long_name,ja,登戸駅→藤子・Ｆ・不二雄ミュージアム,,,登戸駅→藤子・Ｆ・不二雄ミュージアム
+routes,route_long_name,ja,登戸駅→西菅団地　登１４,,,登戸駅→西菅団地　登１４
+routes,route_long_name,ja,白幡八幡→宮前平駅　溝１５,,,白幡八幡→宮前平駅　溝１５
+routes,route_long_name,en,溝１５,,,白幡八幡→宮前平駅　溝１５
+routes,route_long_name,zh-CN,溝１５,,,白幡八幡→宮前平駅　溝１５
+routes,route_long_name,zh-TW,溝１５,,,白幡八幡→宮前平駅　溝１５
+routes,route_long_name,ko,溝１５,,,白幡八幡→宮前平駅　溝１５
+routes,route_long_name,ja,神木本町→溝口駅南口　溝１７,,,神木本町→溝口駅南口　溝１７
+routes,route_long_name,ja,第三京浜→溝南口→宮前平駅　溝１５,,,第三京浜→溝南口→宮前平駅　溝１５
+routes,route_long_name,ja,第三京浜→溝南口→鷲ヶ峰営業所　溝１８,,,第三京浜→溝南口→鷲ヶ峰営業所　溝１８
+routes,route_long_name,ja,第三京浜→高区→鷲ヶ峰営業所　溝１８,,,第三京浜→高区→鷲ヶ峰営業所　溝１８
+routes,route_long_name,ja,第三京浜ー高区→宮前平駅　溝１５,,,第三京浜ー高区→宮前平駅　溝１５
+routes,route_long_name,ja,聖マリアンナ→保育→生田駅　生０３,,,聖マリアンナ→保育→生田駅　生０３
+routes,route_long_name,ja,聖マリアンナ→南生田→生田駅　生０３,,,聖マリアンナ→南生田→生田駅　生０３
+routes,route_long_name,ja,聖マリアンナ→宮前区役所　宮０５,,,聖マリアンナ→宮前区役所　宮０５
+routes,route_long_name,ja,聖マリアンナ→宮前平駅　宮０５,,,聖マリアンナ→宮前平駅　宮０５
+routes,route_long_name,ja,聖マリアンナ→溝口駅南口　溝１８,,,聖マリアンナ→溝口駅南口　溝１８
+routes,route_long_name,ja,聖マリアンナ→溝口駅南口　犬　溝１６,,,聖マリアンナ→溝口駅南口　犬　溝１６
+routes,route_long_name,ja,聖マリアンナ→生田駅　生０２,,,聖マリアンナ→生田駅　生０２
+routes,route_long_name,ja,聖マリアンナ→鷲ヶ峰営業所　溝１８,,,聖マリアンナ→鷲ヶ峰営業所　溝１８
+routes,route_long_name,ja,聖マリアンナ→鷺沼駅　鷺３１,,,聖マリアンナ→鷺沼駅　鷺３１
+routes,route_long_name,ja,聖マリアンナ→鷺沼駅　鷺３１　小田急,,,聖マリアンナ→鷺沼駅　鷺３１　小田急
+routes,route_long_name,ja,聖マリアンナ→鷺沼駅　鷺３１　東急,,,聖マリアンナ→鷺沼駅　鷺３１　東急
+routes,route_long_name,ja,菅生車庫→溝口駅南口　溝１７,,,菅生車庫→溝口駅南口　溝１７
+routes,route_long_name,ja,菅生車庫→登戸　登０５,,,菅生車庫→登戸　登０５
+routes,route_long_name,ja,菅生車庫ー犬蔵→溝口駅南口　犬　溝１６,,,菅生車庫ー犬蔵→溝口駅南口　犬　溝１６
+routes,route_long_name,ja,蔵敷団地→溝口駅南口　溝１７,,,蔵敷団地→溝口駅南口　溝１７
+routes,route_long_name,en,溝１７,,,蔵敷団地→溝口駅南口　溝１７
+routes,route_long_name,zh-CN,溝１７,,,蔵敷団地→溝口駅南口　溝１７
+routes,route_long_name,zh-TW,溝１７,,,蔵敷団地→溝口駅南口　溝１７
+routes,route_long_name,ko,溝１７,,,蔵敷団地→溝口駅南口　溝１７
+routes,route_long_name,ja,藤子・Ｆ・不二雄ミュージアム→登戸駅,,,藤子・Ｆ・不二雄ミュージアム→登戸駅
+routes,route_long_name,ja,蟹ヶ谷→中原駅　杉１０,,,蟹ヶ谷→中原駅　杉１０
+routes,route_long_name,ja,蟹ヶ谷→井田営業所　杉０３,,,蟹ヶ谷→井田営業所　杉０３
+routes,route_long_name,en,杉０３,,,蟹ヶ谷→井田営業所　杉０３
+routes,route_long_name,zh-CN,杉０３,,,蟹ヶ谷→井田営業所　杉０３
+routes,route_long_name,zh-TW,杉０３,,,蟹ヶ谷→井田営業所　杉０３
+routes,route_long_name,ko,杉０３,,,蟹ヶ谷→井田営業所　杉０３
+routes,route_long_name,ja,蟹ヶ谷→元住吉→小杉東→横須賀線小杉駅　,,,蟹ヶ谷→元住吉→小杉東→横須賀線小杉駅　
+routes,route_long_name,ja,蟹ヶ谷→小杉駅　杉１０,,,蟹ヶ谷→小杉駅　杉１０
+routes,route_long_name,ja,西公園→川崎駅　　川０７,,,西公園→川崎駅　　川０７
+routes,route_long_name,ja,西公園→東扇島（ショート）→川崎駅　川０,,,西公園→東扇島（ショート）→川崎駅　川０
+routes,route_long_name,ja,西菅団地→向丘遊園駅入口　登１４,,,西菅団地→向丘遊園駅入口　登１４
+routes,route_long_name,ja,西菅団地→向丘遊園駅南口　登１４,,,西菅団地→向丘遊園駅南口　登１４
+routes,route_long_name,ja,西菅団地→城下　登１４,,,西菅団地→城下　登１４
+routes,route_long_name,ja,西菅団地→登戸駅　登１４,,,西菅団地→登戸駅　登１４
+routes,route_long_name,ja,西菅団地〜四丁目　登１４,,,西菅団地〜四丁目　登１４
+routes,route_long_name,ja,野川→小杉駅　鷺０２,,,野川→小杉駅　鷺０２
+routes,route_long_name,ja,野川→鷺沼駅　東急　鷺０２,,,野川→鷺沼駅　東急　鷺０２
+routes,route_long_name,en,鷺０２,,,野川→鷺沼駅　東急　鷺０２
+routes,route_long_name,zh-CN,鷺０２,,,野川→鷺沼駅　東急　鷺０２
+routes,route_long_name,zh-TW,鷺０２,,,野川→鷺沼駅　東急　鷺０２
+routes,route_long_name,ko,鷺０２,,,野川→鷺沼駅　東急　鷺０２
+routes,route_long_name,ja,高田町→中原駅　原０１,,,高田町→中原駅　原０１
+routes,route_long_name,ja,高田町→井田営業所　溝２５,,,高田町→井田営業所　溝２５
+routes,route_long_name,ja,高田町→溝口駅南口　溝２５,,,高田町→溝口駅南口　溝２５
+routes,route_long_name,ja,鷲ヶ峰営業所→保育→生田駅　生０３,,,鷲ヶ峰営業所→保育→生田駅　生０３
+routes,route_long_name,en,生０３,,,鷲ヶ峰営業所→保育→生田駅　生０３
+routes,route_long_name,zh-CN,生０３,,,鷲ヶ峰営業所→保育→生田駅　生０３
+routes,route_long_name,zh-TW,生０３,,,鷲ヶ峰営業所→保育→生田駅　生０３
+routes,route_long_name,ko,生０３,,,鷲ヶ峰営業所→保育→生田駅　生０３
+routes,route_long_name,ja,鷲ヶ峰営業所→南生田→生田駅　生０３,,,鷲ヶ峰営業所→南生田→生田駅　生０３
+routes,route_long_name,en,生０３,,,鷲ヶ峰営業所→南生田→生田駅　生０３
+routes,route_long_name,zh-CN,生０３,,,鷲ヶ峰営業所→南生田→生田駅　生０３
+routes,route_long_name,zh-TW,生０３,,,鷲ヶ峰営業所→南生田→生田駅　生０３
+routes,route_long_name,ko,生０３,,,鷲ヶ峰営業所→南生田→生田駅　生０３
+routes,route_long_name,ja,鷲ヶ峰営業所→市場→カリタス学園　登０６,,,鷲ヶ峰営業所→市場→カリタス学園　登０６
+routes,route_long_name,en,登０６,,,鷲ヶ峰営業所→市場→カリタス学園　登０６
+routes,route_long_name,zh-CN,登０６,,,鷲ヶ峰営業所→市場→カリタス学園　登０６
+routes,route_long_name,zh-TW,登０６,,,鷲ヶ峰営業所→市場→カリタス学園　登０６
+routes,route_long_name,ko,登０６,,,鷲ヶ峰営業所→市場→カリタス学園　登０６
+routes,route_long_name,ja,鷲ヶ峰営業所→市場→中野島多摩川住宅　登０６,,,鷲ヶ峰営業所→市場→中野島多摩川住宅　登０６
+routes,route_long_name,en,登０６,,,鷲ヶ峰営業所→市場→中野島多摩川住宅　登０６
+routes,route_long_name,zh-CN,登０６,,,鷲ヶ峰営業所→市場→中野島多摩川住宅　登０６
+routes,route_long_name,zh-TW,登０６,,,鷲ヶ峰営業所→市場→中野島多摩川住宅　登０６
+routes,route_long_name,ko,登０６,,,鷲ヶ峰営業所→市場→中野島多摩川住宅　登０６
+routes,route_long_name,ja,鷲ヶ峰営業所→市場→宮前区役所　宮０４,,,鷲ヶ峰営業所→市場→宮前区役所　宮０４
+routes,route_long_name,ja,鷲ヶ峰営業所→市場→宮前平駅　宮０４,,,鷲ヶ峰営業所→市場→宮前平駅　宮０４
+routes,route_long_name,ja,鷲ヶ峰営業所→春秋→生田駅,,,鷲ヶ峰営業所→春秋→生田駅
+routes,route_long_name,en,生０２,,,鷲ヶ峰営業所→春秋→生田駅
+routes,route_long_name,zh-CN,生０２,,,鷲ヶ峰営業所→春秋→生田駅
+routes,route_long_name,zh-TW,生０２,,,鷲ヶ峰営業所→春秋→生田駅
+routes,route_long_name,ko,生０２,,,鷲ヶ峰営業所→春秋→生田駅
+routes,route_long_name,ja,鷲ヶ峰営業所→溝南口→第三京浜　溝１８,,,鷲ヶ峰営業所→溝南口→第三京浜　溝１８
+routes,route_long_name,ja,鷲ヶ峰営業所→溝口駅南口　溝１８,,,鷲ヶ峰営業所→溝口駅南口　溝１８
+routes,route_long_name,ja,鷲ヶ峰営業所→王禅寺口→新百合丘駅　新１,,,鷲ヶ峰営業所→王禅寺口→新百合丘駅　新１
+routes,route_long_name,ja,鷲ヶ峰営業所→登戸　登０５,,,鷲ヶ峰営業所→登戸　登０５
+routes,route_long_name,ja,鷲ヶ峰営業所→聖マリアンナ　溝１８,,,鷲ヶ峰営業所→聖マリアンナ　溝１８
+routes,route_long_name,ja,鷲ヶ峰営業所→長沢入口→宮前平駅　生０１,,,鷲ヶ峰営業所→長沢入口→宮前平駅　生０１
+routes,route_long_name,ja,鷲ヶ峰営業所→長沢入口→生田駅　生０１,,,鷲ヶ峰営業所→長沢入口→生田駅　生０１
+routes,route_long_name,en,生０１,,,鷲ヶ峰営業所→長沢入口→生田駅　生０１
+routes,route_long_name,zh-CN,生０１,,,鷲ヶ峰営業所→長沢入口→生田駅　生０１
+routes,route_long_name,zh-TW,生０１,,,鷲ヶ峰営業所→長沢入口→生田駅　生０１
+routes,route_long_name,ko,生０１,,,鷲ヶ峰営業所→長沢入口→生田駅　生０１
+routes,route_long_name,ja,鷲ヶ峰営業所→高区→第三京浜　溝１８,,,鷲ヶ峰営業所→高区→第三京浜　溝１８
+routes,route_long_name,ja,鷲ヶ峰営業所→鷺沼駅　鷺３２,,,鷲ヶ峰営業所→鷺沼駅　鷺３２
+routes,route_long_name,ja,鷲ヶ峰営業所ー市場→溝口駅南口　犬　溝１,,,鷲ヶ峰営業所ー市場→溝口駅南口　犬　溝１
+routes,route_long_name,ja,鷺沼駅→中原駅　鷺０２,,,鷺沼駅→中原駅　鷺０２
+routes,route_long_name,en,鷺０２,,,鷺沼駅→中原駅　鷺０２
+routes,route_long_name,zh-CN,鷺０２,,,鷺沼駅→中原駅　鷺０２
+routes,route_long_name,zh-TW,鷺０２,,,鷺沼駅→中原駅　鷺０２
+routes,route_long_name,ko,鷺０２,,,鷺沼駅→中原駅　鷺０２
+routes,route_long_name,ja,鷺沼駅→中原駅　鷺０２　東急,,,鷺沼駅→中原駅　鷺０２　東急
+routes,route_long_name,en,鷺０２,,,鷺沼駅→中原駅　鷺０２　東急
+routes,route_long_name,zh-CN,鷺０２,,,鷺沼駅→中原駅　鷺０２　東急
+routes,route_long_name,zh-TW,鷺０２,,,鷺沼駅→中原駅　鷺０２　東急
+routes,route_long_name,ko,鷺０２,,,鷺沼駅→中原駅　鷺０２　東急
+routes,route_long_name,ja,鷺沼駅→久末　東急　鷺０２,,,鷺沼駅→久末　東急　鷺０２
+routes,route_long_name,en,鷺０２,,,鷺沼駅→久末　東急　鷺０２
+routes,route_long_name,zh-CN,鷺０２,,,鷺沼駅→久末　東急　鷺０２
+routes,route_long_name,zh-TW,鷺０２,,,鷺沼駅→久末　東急　鷺０２
+routes,route_long_name,ko,鷺０２,,,鷺沼駅→久末　東急　鷺０２
+routes,route_long_name,ja,鷺沼駅→井田営業所　鷺０２,,,鷺沼駅→井田営業所　鷺０２
+routes,route_long_name,ja,鷺沼駅→小杉駅　東急　鷺０２,,,鷺沼駅→小杉駅　東急　鷺０２
+routes,route_long_name,en,鷺０２,,,鷺沼駅→小杉駅　東急　鷺０２
+routes,route_long_name,zh-CN,鷺０２,,,鷺沼駅→小杉駅　東急　鷺０２
+routes,route_long_name,zh-TW,鷺０２,,,鷺沼駅→小杉駅　東急　鷺０２
+routes,route_long_name,ko,鷺０２,,,鷺沼駅→小杉駅　東急　鷺０２
+routes,route_long_name,ja,鷺沼駅→小杉駅　鷺０２,,,鷺沼駅→小杉駅　鷺０２
+routes,route_long_name,ja,鷺沼駅→聖マリアンナ　鷺３１,,,鷺沼駅→聖マリアンナ　鷺３１
+routes,route_long_name,ja,鷺沼駅→聖マリアンナ　鷺３１　小田急,,,鷺沼駅→聖マリアンナ　鷺３１　小田急
+routes,route_long_name,ja,鷺沼駅→聖マリアンナ　鷺３１　東急,,,鷺沼駅→聖マリアンナ　鷺３１　東急
+routes,route_long_name,ja,鷺沼駅→野川　東急　鷺０２,,,鷺沼駅→野川　東急　鷺０２
+routes,route_long_name,en,鷺０２,,,鷺沼駅→野川　東急　鷺０２
+routes,route_long_name,zh-CN,鷺０２,,,鷺沼駅→野川　東急　鷺０２
+routes,route_long_name,zh-TW,鷺０２,,,鷺沼駅→野川　東急　鷺０２
+routes,route_long_name,ko,鷺０２,,,鷺沼駅→野川　東急　鷺０２
+routes,route_long_name,ja,鷺沼駅→鷲ヶ峰営業所　鷺３２,,,鷺沼駅→鷲ヶ峰営業所　鷺３２
+routes,route_long_name,ja,ＪＦＥ→川崎駅　ｗ　川４０,,,ＪＦＥ→川崎駅　ｗ　川４０
+routes,route_long_name,ja,Ｋ　柿生駅→鷲ヶ峰営業所　柿０４,,,Ｋ　柿生駅→鷲ヶ峰営業所　柿０４
+routes,route_long_name,ja,Ｋ　鷲ヶ峰営業所→柿生駅　柿０４,,,Ｋ　鷲ヶ峰営業所→柿生駅　柿０４
+stop_times,stop_headsign,ja,川０７,,,川０７
+stop_times,stop_headsign,en,川０７,,,川０７
+stop_times,stop_headsign,zh-CN,川０７,,,川０７
+stop_times,stop_headsign,zh-TW,川０７,,,川０７
+stop_times,stop_headsign,ko,川０７,,,川０７
+stop_times,stop_headsign,ja,た８３,,,た８３
+stop_times,stop_headsign,en,た８３,,,た８３
+stop_times,stop_headsign,zh-CN,た８３,,,た８３
+stop_times,stop_headsign,zh-TW,た８３,,,た８３
+stop_times,stop_headsign,ko,た８３,,,た８３
+stop_times,stop_headsign,ja,たまプラーザ駅（東急バス）,,,たまプラーザ駅（東急バス）
+stop_times,stop_headsign,en,Tama-Plaza Sta.,,,たまプラーザ駅（東急バス）
+stop_times,stop_headsign,zh-CN,多摩廣場站,,,たまプラーザ駅（東急バス）
+stop_times,stop_headsign,zh-TW,多摩广场站,,,たまプラーザ駅（東急バス）
+stop_times,stop_headsign,ko,다마푸라자 역,,,たまプラーザ駅（東急バス）
+stop_times,stop_headsign,ja,登０６,,,登０６
+stop_times,stop_headsign,en,登０６,,,登０６
+stop_times,stop_headsign,zh-CN,登０６,,,登０６
+stop_times,stop_headsign,zh-TW,登06,,,登０６
+stop_times,stop_headsign,ko,登０６,,,登０６
+stop_times,stop_headsign,ja,登２１,,,登２１
+stop_times,stop_headsign,en,登２１,,,登２１
+stop_times,stop_headsign,zh-CN,登２１,,,登２１
+stop_times,stop_headsign,zh-TW,登２１,,,登２１
+stop_times,stop_headsign,ko,登２１,,,登２１
+stop_times,stop_headsign,ja,川４０,,,川４０
+stop_times,stop_headsign,en,川４０,,,川４０
+stop_times,stop_headsign,zh-CN,川４０,,,川４０
+stop_times,stop_headsign,zh-TW,川４０,,,川４０
+stop_times,stop_headsign,ko,川４０,,,川４０
+stop_times,stop_headsign,ja,川０５,,,川０５
+stop_times,stop_headsign,en,川０５,,,川０５
+stop_times,stop_headsign,zh-CN,川０５,,,川０５
+stop_times,stop_headsign,zh-TW,川０５,,,川０５
+stop_times,stop_headsign,ko,川０５,,,川０５
+stop_times,stop_headsign,ja,川６６,,,川６６
+stop_times,stop_headsign,en,川６６,,,川６６
+stop_times,stop_headsign,zh-CN,川６６,,,川６６
+stop_times,stop_headsign,zh-TW,川６６,,,川６６
+stop_times,stop_headsign,ko,川６６,,,川６６
+stop_times,stop_headsign,ja,川７１,,,川７１
+stop_times,stop_headsign,en,川７１,,,川７１
+stop_times,stop_headsign,zh-CN,川７１,,,川７１
+stop_times,stop_headsign,zh-TW,川７１,,,川７１
+stop_times,stop_headsign,ko,川７１,,,川７１
+stop_times,stop_headsign,ja,川７３,,,川７３
+stop_times,stop_headsign,en,川７３,,,川７３
+stop_times,stop_headsign,zh-CN,川７３,,,川７３
+stop_times,stop_headsign,zh-TW,川７３,,,川７３
+stop_times,stop_headsign,ko,川７３,,,川７３
+stop_times,stop_headsign,ja,川７４,,,川７４
+stop_times,stop_headsign,en,川７４,,,川７４
+stop_times,stop_headsign,zh-CN,川７４,,,川７４
+stop_times,stop_headsign,zh-TW,川７４,,,川７４
+stop_times,stop_headsign,ko,川７４,,,川７４
+stop_times,stop_headsign,ja,川７５,,,川７５
+stop_times,stop_headsign,en,川７５,,,川７５
+stop_times,stop_headsign,zh-CN,川７５,,,川７５
+stop_times,stop_headsign,zh-TW,川７５,,,川７５
+stop_times,stop_headsign,ko,川７５,,,川７５
+stop_times,stop_headsign,ja,幸警察署前・御幸公園前,,,幸警察署前・御幸公園前
+stop_times,stop_headsign,ja,川８１,,,川８１
+stop_times,stop_headsign,en,川８１,,,川８１
+stop_times,stop_headsign,zh-CN,川８１,,,川８１
+stop_times,stop_headsign,zh-TW,川８１,,,川８１
+stop_times,stop_headsign,ko,川８１,,,川８１
+stop_times,stop_headsign,ja,原０１,,,原０１
+stop_times,stop_headsign,en,原０１,,,原０１
+stop_times,stop_headsign,zh-CN,原０１,,,原０１
+stop_times,stop_headsign,zh-TW,原０１,,,原０１
+stop_times,stop_headsign,ko,原０１,,,原０１
+stop_times,stop_headsign,ja,杉１０,,,杉１０
+stop_times,stop_headsign,en,杉１０,,,杉１０
+stop_times,stop_headsign,zh-CN,杉１０,,,杉１０
+stop_times,stop_headsign,zh-TW,杉１０,,,杉１０
+stop_times,stop_headsign,ko,杉１０,,,杉１０
+stop_times,stop_headsign,ja,杉４０,,,杉４０
+stop_times,stop_headsign,en,杉４０,,,杉４０
+stop_times,stop_headsign,zh-CN,杉４０,,,杉４０
+stop_times,stop_headsign,zh-TW,杉４０,,,杉４０
+stop_times,stop_headsign,ko,杉４０,,,杉４０
+stop_times,stop_headsign,ja,鷺０２,,,鷺０２
+stop_times,stop_headsign,en,鷺０２,,,鷺０２
+stop_times,stop_headsign,zh-CN,鷺０２,,,鷺０２
+stop_times,stop_headsign,zh-TW,鷺０２,,,鷺０２
+stop_times,stop_headsign,ko,鷺０２,,,鷺０２
+stop_times,stop_headsign,ja,中原駅前（東急バス）,,,中原駅前（東急バス）
+stop_times,stop_headsign,en,Nakahara Sta.,,,中原駅前（東急バス）
+stop_times,stop_headsign,zh-CN,中原站,,,中原駅前（東急バス）
+stop_times,stop_headsign,zh-TW,中原站,,,中原駅前（東急バス）
+stop_times,stop_headsign,ko,나카하라역,,,中原駅前（東急バス）
+stop_times,stop_headsign,ja,杉０１,,,杉０１
+stop_times,stop_headsign,en,杉０１,,,杉０１
+stop_times,stop_headsign,zh-CN,杉０１,,,杉０１
+stop_times,stop_headsign,zh-TW,杉０１,,,杉０１
+stop_times,stop_headsign,ko,杉０１,,,杉０１
+stop_times,stop_headsign,ja,久末（東急バス）,,,久末（東急バス）
+stop_times,stop_headsign,en,Hisasue,,,久末（東急バス）
+stop_times,stop_headsign,zh-CN,久末,,,久末（東急バス）
+stop_times,stop_headsign,zh-TW,久末,,,久末（東急バス）
+stop_times,stop_headsign,ko,히사스에,,,久末（東急バス）
+stop_times,stop_headsign,ja,杉０３,,,杉０３
+stop_times,stop_headsign,en,杉０３,,,杉０３
+stop_times,stop_headsign,zh-CN,杉０３,,,杉０３
+stop_times,stop_headsign,zh-TW,杉０３,,,杉０３
+stop_times,stop_headsign,ko,杉０３,,,杉０３
+stop_times,stop_headsign,ja,井田営業所,,,井田営業所
+stop_times,stop_headsign,ja,溝０６,,,溝０６
+stop_times,stop_headsign,en,溝０６,,,溝０６
+stop_times,stop_headsign,zh-CN,溝０６,,,溝０６
+stop_times,stop_headsign,zh-TW,溝０６,,,溝０６
+stop_times,stop_headsign,ko,溝０６,,,溝０６
+stop_times,stop_headsign,ja,城１１,,,城１１
+stop_times,stop_headsign,en,城１１,,,城１１
+stop_times,stop_headsign,zh-CN,城１１,,,城１１
+stop_times,stop_headsign,zh-TW,城１１,,,城１１
+stop_times,stop_headsign,ko,城１１,,,城１１
+stop_times,stop_headsign,ja,杉０４,,,杉０４
+stop_times,stop_headsign,en,杉０４,,,杉０４
+stop_times,stop_headsign,zh-CN,杉０４,,,杉０４
+stop_times,stop_headsign,zh-TW,杉０４,,,杉０４
+stop_times,stop_headsign,ko,杉０４,,,杉０４
+stop_times,stop_headsign,ja,溝２１,,,溝２１
+stop_times,stop_headsign,en,溝２１,,,溝２１
+stop_times,stop_headsign,zh-CN,溝２１,,,溝２１
+stop_times,stop_headsign,zh-TW,溝２１,,,溝２１
+stop_times,stop_headsign,ko,溝２１,,,溝２１
+stop_times,stop_headsign,ja,溝２３,,,溝２３
+stop_times,stop_headsign,en,溝２３,,,溝２３
+stop_times,stop_headsign,zh-CN,溝２３,,,溝２３
+stop_times,stop_headsign,zh-TW,溝２３,,,溝２３
+stop_times,stop_headsign,ko,溝２３,,,溝２３
+stop_times,stop_headsign,ja,千年（市民プラザには、まいりません）,,,千年（市民プラザには、まいりません）
+stop_times,stop_headsign,en,Chitose,,,千年（市民プラザには、まいりません）
+stop_times,stop_headsign,zh-CN,千年,,,千年（市民プラザには、まいりません）
+stop_times,stop_headsign,zh-TW,千年,,,千年（市民プラザには、まいりません）
+stop_times,stop_headsign,ko,지토세,,,千年（市民プラザには、まいりません）
+stop_times,stop_headsign,ja,溝２５,,,溝２５
+stop_times,stop_headsign,en,溝２５,,,溝２５
+stop_times,stop_headsign,zh-CN,溝２５,,,溝２５
+stop_times,stop_headsign,zh-TW,溝２５,,,溝２５
+stop_times,stop_headsign,ko,溝２５,,,溝２５
+stop_times,stop_headsign,ja,川６８,,,川６８
+stop_times,stop_headsign,en,川６８,,,川６８
+stop_times,stop_headsign,zh-CN,川６８,,,川６８
+stop_times,stop_headsign,zh-TW,川６８,,,川６８
+stop_times,stop_headsign,ko,川６８,,,川６８
+stop_times,stop_headsign,ja,杉０２,,,杉０２
+stop_times,stop_headsign,en,杉０２,,,杉０２
+stop_times,stop_headsign,zh-CN,杉０２,,,杉０２
+stop_times,stop_headsign,zh-TW,杉０２,,,杉０２
+stop_times,stop_headsign,ko,杉０２,,,杉０２
+stop_times,stop_headsign,ja,川０４,,,川０４
+stop_times,stop_headsign,en,川０４,,,川０４
+stop_times,stop_headsign,zh-CN,川０４,,,川０４
+stop_times,stop_headsign,zh-TW,川０４,,,川０４
+stop_times,stop_headsign,ko,川０４,,,川０４
+stop_times,stop_headsign,ja,登０５,,,登０５
+stop_times,stop_headsign,en,登０５,,,登０５
+stop_times,stop_headsign,zh-CN,登０５,,,登０５
+stop_times,stop_headsign,zh-TW,登０５,,,登０５
+stop_times,stop_headsign,ko,登０５,,,登０５
+stop_times,stop_headsign,ja,登１４,,,登１４
+stop_times,stop_headsign,en,登１４,,,登１４
+stop_times,stop_headsign,zh-CN,登１４,,,登１４
+stop_times,stop_headsign,zh-TW,登１４,,,登１４
+stop_times,stop_headsign,ko,登１４,,,登１４
+stop_times,stop_headsign,ja,久地駅,,,久地駅
+stop_times,stop_headsign,ja,溝口駅・久地駅,,,溝口駅・久地駅
+stop_times,stop_headsign,ja,溝１９,,,溝１９
+stop_times,stop_headsign,en,溝１９,,,溝１９
+stop_times,stop_headsign,zh-CN,溝１９,,,溝１９
+stop_times,stop_headsign,zh-TW,溝１９,,,溝１９
+stop_times,stop_headsign,ko,溝１９,,,溝１９
+stop_times,stop_headsign,ja,向丘遊園駅南口（東急バス）,,,向丘遊園駅南口（東急バス）
+stop_times,stop_headsign,en,Mukōgaoka-Yūen Sta,,,向丘遊園駅南口（東急バス）
+stop_times,stop_headsign,zh-CN,向丘遊園站,,,向丘遊園駅南口（東急バス）
+stop_times,stop_headsign,zh-TW,向丘游园站,,,向丘遊園駅南口（東急バス）
+stop_times,stop_headsign,ko,무코가오카유엔역,,,向丘遊園駅南口（東急バス）
+stop_times,stop_headsign,ja,川１０,,,川１０
+stop_times,stop_headsign,en,川１０,,,川１０
+stop_times,stop_headsign,zh-CN,川１０,,,川１０
+stop_times,stop_headsign,zh-TW,川１０,,,川１０
+stop_times,stop_headsign,ko,川１０,,,川１０
+stop_times,stop_headsign,ja,臨港病院前・かわさき南部斎苑,,,臨港病院前・かわさき南部斎苑
+stop_times,stop_headsign,en,Rinkō Hospital,,,臨港病院前・かわさき南部斎苑
+stop_times,stop_headsign,zh-CN,临港病院前,,,臨港病院前・かわさき南部斎苑
+stop_times,stop_headsign,zh-TW,臨港病院前,,,臨港病院前・かわさき南部斎苑
+stop_times,stop_headsign,ko,임항 병원 앞,,,臨港病院前・かわさき南部斎苑
+stop_times,stop_headsign,ja,池藤橋・四谷,,,池藤橋・四谷
+stop_times,stop_headsign,ja,渡田新町・四谷,,,渡田新町・四谷
+stop_times,stop_headsign,en,Watarida-shinchō,,,渡田新町・四谷
+stop_times,stop_headsign,zh-CN,渡田新町,,,渡田新町・四谷
+stop_times,stop_headsign,zh-TW,渡田新町,,,渡田新町・四谷
+stop_times,stop_headsign,ko,와타리다신초,,,渡田新町・四谷
+stop_times,stop_headsign,ja,JFE前・かわさき南部斎苑,,,JFE前・かわさき南部斎苑
+stop_times,stop_headsign,en,JFE Mae・Kawasaki Nambu Saien,,,JFE前・かわさき南部斎苑
+stop_times,stop_headsign,zh-CN,JFE前・川崎南部齊苑,,,JFE前・かわさき南部斎苑
+stop_times,stop_headsign,zh-TW,JFE前・川崎南部齐苑,,,JFE前・かわさき南部斎苑
+stop_times,stop_headsign,ko,JFE 앞・가와사키 남부 장례식장,,,JFE前・かわさき南部斎苑
+stop_times,stop_headsign,ja,宮０４,,,宮０４
+stop_times,stop_headsign,en,宮０４,,,宮０４
+stop_times,stop_headsign,zh-CN,宮０４,,,宮０４
+stop_times,stop_headsign,zh-TW,宮０４,,,宮０４
+stop_times,stop_headsign,ko,宮０４,,,宮０４
+stop_times,stop_headsign,ja,宮０５,,,宮０５
+stop_times,stop_headsign,en,宮０５,,,宮０５
+stop_times,stop_headsign,zh-CN,宮０５,,,宮０５
+stop_times,stop_headsign,zh-TW,宮０５,,,宮０５
+stop_times,stop_headsign,ko,宮０５,,,宮０５
+stop_times,stop_headsign,ja,溝１５,,,溝１５
+stop_times,stop_headsign,en,溝１５,,,溝１５
+stop_times,stop_headsign,zh-CN,溝１５,,,溝１５
+stop_times,stop_headsign,zh-TW,溝１５,,,溝１５
+stop_times,stop_headsign,ko,溝１５,,,溝１５
+stop_times,stop_headsign,ja,生０１,,,生０１
+stop_times,stop_headsign,en,生０１,,,生０１
+stop_times,stop_headsign,zh-CN,生０１,,,生０１
+stop_times,stop_headsign,zh-TW,生０１,,,生０１
+stop_times,stop_headsign,ko,生０１,,,生０１
+stop_times,stop_headsign,ja,長沢入口・蔵敷,,,長沢入口・蔵敷
+stop_times,stop_headsign,ja,蔵敷・菅生車庫,,,蔵敷・菅生車庫
+stop_times,stop_headsign,ja,下平間住宅,,,下平間住宅
+stop_times,stop_headsign,ja,上平間・丸子橋,,,上平間・丸子橋
+stop_times,stop_headsign,ja,溝０４,,,溝０４
+stop_times,stop_headsign,en,溝０４,,,溝０４
+stop_times,stop_headsign,zh-CN,溝０４,,,溝０４
+stop_times,stop_headsign,zh-TW,溝０４,,,溝０４
+stop_times,stop_headsign,ko,溝０４,,,溝０４
+stop_times,stop_headsign,ja,溝０５,,,溝０５
+stop_times,stop_headsign,en,溝０５,,,溝０５
+stop_times,stop_headsign,zh-CN,溝０５,,,溝０５
+stop_times,stop_headsign,zh-TW,溝０５,,,溝０５
+stop_times,stop_headsign,ko,溝０５,,,溝０５
+stop_times,stop_headsign,ja,新城駅前・とどろきアリーナ前,,,新城駅前・とどろきアリーナ前
+stop_times,stop_headsign,en,Todoroki Arena Mae,,,新城駅前・とどろきアリーナ前
+stop_times,stop_headsign,zh-CN,等等力体育馆前,,,新城駅前・とどろきアリーナ前
+stop_times,stop_headsign,zh-TW,等等力體育館前,,,新城駅前・とどろきアリーナ前
+stop_times,stop_headsign,ko,도도로키 아레나 앞,,,新城駅前・とどろきアリーナ前
+stop_times,stop_headsign,ja,小杉駅前経由川崎駅ラゾーナ広場・川崎駅,,,小杉駅前経由川崎駅ラゾーナ広場・川崎駅
+stop_times,stop_headsign,en,Kawasaki Sta.,,,小杉駅前経由川崎駅ラゾーナ広場・川崎駅
+stop_times,stop_headsign,zh-CN,川崎站,,,小杉駅前経由川崎駅ラゾーナ広場・川崎駅
+stop_times,stop_headsign,zh-TW,川崎站,,,小杉駅前経由川崎駅ラゾーナ広場・川崎駅
+stop_times,stop_headsign,ko,가와사키역,,,小杉駅前経由川崎駅ラゾーナ広場・川崎駅
+stop_times,stop_headsign,ja,小杉駅前（東急バス）,,,小杉駅前（東急バス）
+stop_times,stop_headsign,en,Kosugi Sta.,,,小杉駅前（東急バス）
+stop_times,stop_headsign,zh-CN,小杉站,,,小杉駅前（東急バス）
+stop_times,stop_headsign,zh-TW,小杉站,,,小杉駅前（東急バス）
+stop_times,stop_headsign,ko,고스기역,,,小杉駅前（東急バス）
+stop_times,stop_headsign,ja,川１５,,,川１５
+stop_times,stop_headsign,en,川１５,,,川１５
+stop_times,stop_headsign,zh-CN,川１５,,,川１５
+stop_times,stop_headsign,zh-TW,川１５,,,川１５
+stop_times,stop_headsign,ko,川１５,,,川１５
+stop_times,stop_headsign,ja,小田栄循環,,,小田栄循環
+stop_times,stop_headsign,en,HiOdasakae Circulation,,,小田栄循環
+stop_times,stop_headsign,ja,追分・小田栄,,,追分・小田栄
+stop_times,stop_headsign,ja,労働会館前・小田栄,,,労働会館前・小田栄
+stop_times,stop_headsign,en,Odasakae,,,労働会館前・小田栄
+stop_times,stop_headsign,zh-CN,小田荣,,,労働会館前・小田栄
+stop_times,stop_headsign,zh-TW,小田榮,,,労働会館前・小田栄
+stop_times,stop_headsign,ko,오다사카에,,,労働会館前・小田栄
+stop_times,stop_headsign,ja,小田栄・労働会館前,,,小田栄・労働会館前
+stop_times,stop_headsign,en,Odasakae,,,小田栄・労働会館前
+stop_times,stop_headsign,zh-CN,小田荣,,,小田栄・労働会館前
+stop_times,stop_headsign,zh-TW,小田榮,,,小田栄・労働会館前
+stop_times,stop_headsign,ko,오다사카에,,,小田栄・労働会館前
+stop_times,stop_headsign,ja,追分・労働会館前,,,追分・労働会館前
+stop_times,stop_headsign,en,Oiwake,,,追分・労働会館前
+stop_times,stop_headsign,zh-CN,追分,,,追分・労働会館前
+stop_times,stop_headsign,zh-TW,追分,,,追分・労働会館前
+stop_times,stop_headsign,ko,오이와케,,,追分・労働会館前
+stop_times,stop_headsign,ja,直通,,,直通
+stop_times,stop_headsign,en,直通,,,直通
+stop_times,stop_headsign,zh-CN,直通,,,直通
+stop_times,stop_headsign,zh-TW,直通,,,直通
+stop_times,stop_headsign,ko,直通,,,直通
+stop_times,stop_headsign,ja,川崎病院（臨港バス）,,,川崎病院（臨港バス）
+stop_times,stop_headsign,en,Kawasaki Hospital,,,川崎病院（臨港バス）
+stop_times,stop_headsign,zh-CN,川崎病院,,,川崎病院（臨港バス）
+stop_times,stop_headsign,zh-TW,川崎病院,,,川崎病院（臨港バス）
+stop_times,stop_headsign,ko,가와사키 병원,,,川崎病院（臨港バス）
+stop_times,stop_headsign,ja,川１7,,,川１7
+stop_times,stop_headsign,en,川１７,,,川１7
+stop_times,stop_headsign,zh-CN,川１７,,,川１7
+stop_times,stop_headsign,zh-TW,川１７,,,川１7
+stop_times,stop_headsign,ko,川１７,,,川１7
+stop_times,stop_headsign,ja,川１３,,,川１３
+stop_times,stop_headsign,en,川１３,,,川１３
+stop_times,stop_headsign,zh-CN,川１３,,,川１３
+stop_times,stop_headsign,zh-TW,川１３,,,川１３
+stop_times,stop_headsign,ko,川１３,,,川１３
+stop_times,stop_headsign,ja,小田栄・渡田新町,,,小田栄・渡田新町
+stop_times,stop_headsign,ja,川１７,,,川１７
+stop_times,stop_headsign,en,川１７,,,川１７
+stop_times,stop_headsign,zh-CN,川１７,,,川１７
+stop_times,stop_headsign,zh-TW,川１７,,,川１７
+stop_times,stop_headsign,ko,川１７,,,川１７
+stop_times,stop_headsign,ja,JFE前,,,JFE前
+stop_times,stop_headsign,ja,桜本・JFE前,,,桜本・JFE前
+stop_times,stop_headsign,en,Sakuramoto・JFE Mae,,,桜本・JFE前
+stop_times,stop_headsign,zh-CN,樱本・JFE前,,,桜本・JFE前
+stop_times,stop_headsign,zh-TW,櫻本・JFE前,,,桜本・JFE前
+stop_times,stop_headsign,ko,사쿠라모토・JFE 앞,,,桜本・JFE前
+stop_times,stop_headsign,ja,川８３,,,川８３
+stop_times,stop_headsign,en,川８３,,,川８３
+stop_times,stop_headsign,zh-CN,川８３,,,川８３
+stop_times,stop_headsign,zh-TW,川８３,,,川８３
+stop_times,stop_headsign,ko,川８３,,,川８３
+stop_times,stop_headsign,ja,川崎駅（臨港バス）,,,川崎駅（臨港バス）
+stop_times,stop_headsign,en,Kawasaki Sta.,,,川崎駅（臨港バス）
+stop_times,stop_headsign,zh-CN,川崎站,,,川崎駅（臨港バス）
+stop_times,stop_headsign,zh-TW,川崎站,,,川崎駅（臨港バス）
+stop_times,stop_headsign,ko,가와사키역,,,川崎駅（臨港バス）
+stop_times,stop_headsign,ja,【急行】,,,【急行】
+stop_times,stop_headsign,ja,直行,,,直行
+stop_times,stop_headsign,en,直行,,,直行
+stop_times,stop_headsign,zh-CN,直行,,,直行
+stop_times,stop_headsign,zh-TW,直行,,,直行
+stop_times,stop_headsign,ko,直行,,,直行
+stop_times,stop_headsign,ja,元住吉・井田営業所前,,,元住吉・井田営業所前
+stop_times,stop_headsign,ja,新１２,,,新１２
+stop_times,stop_headsign,en,新１２,,,新１２
+stop_times,stop_headsign,zh-CN,新１２,,,新１２
+stop_times,stop_headsign,zh-TW,新１２,,,新１２
+stop_times,stop_headsign,ko,新１２,,,新１２
+stop_times,stop_headsign,ja,新１３,,,新１３
+stop_times,stop_headsign,en,新１３,,,新１３
+stop_times,stop_headsign,zh-CN,新１３,,,新１３
+stop_times,stop_headsign,zh-TW,新１３,,,新１３
+stop_times,stop_headsign,ko,新１３,,,新１３
+stop_times,stop_headsign,ja,溝１１,,,溝１１
+stop_times,stop_headsign,en,溝１１,,,溝１１
+stop_times,stop_headsign,zh-CN,溝１１,,,溝１１
+stop_times,stop_headsign,zh-TW,溝１１,,,溝１１
+stop_times,stop_headsign,ko,溝１１,,,溝１１
+stop_times,stop_headsign,ja,東扇島循環,,,東扇島循環
+stop_times,stop_headsign,en,Higashi-ōgishima Circulation,,,東扇島循環
+stop_times,stop_headsign,zh-CN,Higashi-ōgishima Circulation,,,東扇島循環
+stop_times,stop_headsign,zh-TW,Higashi-ōgishima Circulation,,,東扇島循環
+stop_times,stop_headsign,ko,Higashi-ōgishima Circulation,,,東扇島循環
+stop_times,stop_headsign,ja,【区間急行】,,,【区間急行】
+stop_times,stop_headsign,ja,柿０４,,,柿０４
+stop_times,stop_headsign,en,柿０４,,,柿０４
+stop_times,stop_headsign,zh-CN,柿０４,,,柿０４
+stop_times,stop_headsign,zh-TW,柿０４,,,柿０４
+stop_times,stop_headsign,ko,柿０４,,,柿０４
+stop_times,stop_headsign,ja,（市民プラザには、まいりません）,,,（市民プラザには、まいりません）
+stop_times,stop_headsign,ja,元住吉・小杉駅東口,,,元住吉・小杉駅東口
+stop_times,stop_headsign,ja,浜町・渡田循環,,,浜町・渡田循環
+stop_times,stop_headsign,en,Kawasaki Sta.,,,浜町・渡田循環
+stop_times,stop_headsign,zh-CN,川崎站,,,浜町・渡田循環
+stop_times,stop_headsign,zh-TW,川崎站,,,浜町・渡田循環
+stop_times,stop_headsign,ko,가와사키역,,,浜町・渡田循環
+stop_times,stop_headsign,ja,浜町・渡田,,,浜町・渡田
+stop_times,stop_headsign,ja,渡田・浜町循環,,,渡田・浜町循環
+stop_times,stop_headsign,en,Kawasaki Sta.,,,渡田・浜町循環
+stop_times,stop_headsign,zh-CN,川崎站,,,渡田・浜町循環
+stop_times,stop_headsign,zh-TW,川崎站,,,渡田・浜町循環
+stop_times,stop_headsign,ko,가와사키역,,,渡田・浜町循環
+stop_times,stop_headsign,ja,渡田・浜町,,,渡田・浜町
+stop_times,stop_headsign,ja,とどろきアリーナ前・新城駅前,,,とどろきアリーナ前・新城駅前
+stop_times,stop_headsign,en,Todoroki Arena Mae,,,とどろきアリーナ前・新城駅前
+stop_times,stop_headsign,zh-CN,等等力体育馆前,,,とどろきアリーナ前・新城駅前
+stop_times,stop_headsign,zh-TW,等等力體育館前,,,とどろきアリーナ前・新城駅前
+stop_times,stop_headsign,ko,도도로키 아레나 앞,,,とどろきアリーナ前・新城駅前
+stop_times,stop_headsign,ja,溝口駅前・井田営業所前,,,溝口駅前・井田営業所前
+stop_times,stop_headsign,en,Noborito Sta.,,,溝口駅前・井田営業所前
+stop_times,stop_headsign,zh-CN,登户站,,,溝口駅前・井田営業所前
+stop_times,stop_headsign,zh-TW,登戶站,,,溝口駅前・井田営業所前
+stop_times,stop_headsign,ko,노보리토역,,,溝口駅前・井田営業所前
+stop_times,stop_headsign,ja,溝１６,,,溝１６
+stop_times,stop_headsign,en,溝１６,,,溝１６
+stop_times,stop_headsign,zh-CN,溝１６,,,溝１６
+stop_times,stop_headsign,zh-TW,溝１６,,,溝１６
+stop_times,stop_headsign,ko,溝１６,,,溝１６
+stop_times,stop_headsign,ja,溝１７,,,溝１７
+stop_times,stop_headsign,en,溝１７,,,溝１７
+stop_times,stop_headsign,zh-CN,溝１７,,,溝１７
+stop_times,stop_headsign,zh-TW,溝１７,,,溝１７
+stop_times,stop_headsign,ko,溝１７,,,溝１７
+stop_times,stop_headsign,ja,溝１８,,,溝１８
+stop_times,stop_headsign,en,溝１８,,,溝１８
+stop_times,stop_headsign,zh-CN,溝１８,,,溝１８
+stop_times,stop_headsign,zh-TW,溝１８,,,溝１８
+stop_times,stop_headsign,ko,溝１８,,,溝１８
+stop_times,stop_headsign,ja,王禅寺口循環,,,王禅寺口循環
+stop_times,stop_headsign,en,Ōzenji Guchi Circulation,,,王禅寺口循環
+stop_times,stop_headsign,zh-CN,Ōzenji Guchi Circulation,,,王禅寺口循環
+stop_times,stop_headsign,zh-TW,Ōzenji Guchi Circulation,,,王禅寺口循環
+stop_times,stop_headsign,ko,Ōzenji Guchi Circulation,,,王禅寺口循環
+stop_times,stop_headsign,ja,日生住宅 先回り,,,日生住宅 先回り
+stop_times,stop_headsign,en,Nissei Jūtaku,,,日生住宅 先回り
+stop_times,stop_headsign,zh-CN,日生住宅,,,日生住宅 先回り
+stop_times,stop_headsign,zh-TW,日生住宅,,,日生住宅 先回り
+stop_times,stop_headsign,ko,닛세 주택,,,日生住宅 先回り
+stop_times,stop_headsign,ja,白山神社　先回り,,,白山神社　先回り
+stop_times,stop_headsign,en,Hakusan Jinja,,,白山神社　先回り
+stop_times,stop_headsign,zh-CN,白山神社,,,白山神社　先回り
+stop_times,stop_headsign,zh-TW,白山神社,,,白山神社　先回り
+stop_times,stop_headsign,ko,하쿠산 신사,,,白山神社　先回り
+stop_times,stop_headsign,ja,王禅寺口循環（新百合丘駅前）,,,王禅寺口循環（新百合丘駅前）
+stop_times,stop_headsign,en,Ōzenji Guchi Circulation（Shin-Yurigaoka Sta.）,,,王禅寺口循環（新百合丘駅前）
+stop_times,stop_headsign,zh-CN,Ōzenji Guchi Circulation（新百合丘站）,,,王禅寺口循環（新百合丘駅前）
+stop_times,stop_headsign,zh-TW,Ōzenji Guchi Circulation（新百合丘站）,,,王禅寺口循環（新百合丘駅前）
+stop_times,stop_headsign,ko,Ōzenji Guchi Circulation（신유리가오카역）,,,王禅寺口循環（新百合丘駅前）
+stop_times,stop_headsign,ja,急行,,,急行
+stop_times,stop_headsign,en,急行,,,急行
+stop_times,stop_headsign,zh-CN,急行,,,急行
+stop_times,stop_headsign,zh-TW,急行,,,急行
+stop_times,stop_headsign,ko,急行,,,急行
+stop_times,stop_headsign,ja,生０２,,,生０２
+stop_times,stop_headsign,en,生０２,,,生０２
+stop_times,stop_headsign,zh-CN,生０２,,,生０２
+stop_times,stop_headsign,zh-TW,生０２,,,生０２
+stop_times,stop_headsign,ko,生０２,,,生０２
+stop_times,stop_headsign,ja,生０３,,,生０３
+stop_times,stop_headsign,en,生０３,,,生０３
+stop_times,stop_headsign,zh-CN,生０３,,,生０３
+stop_times,stop_headsign,zh-TW,生０３,,,生０３
+stop_times,stop_headsign,ko,生０３,,,生０３
+stop_times,stop_headsign,ja,登戸駅,,,登戸駅
+stop_times,stop_headsign,en,Noborito Sta.,,,登戸駅
+stop_times,stop_headsign,zh-CN,登户站,,,登戸駅
+stop_times,stop_headsign,zh-TW,登戶站,,,登戸駅
+stop_times,stop_headsign,ko,노보리토역,,,登戸駅
+stop_times,stop_headsign,ja,聖ﾏﾘｱﾝﾅ医科大学,,,聖ﾏﾘｱﾝﾅ医科大学
+stop_times,stop_headsign,en,St.Marianna Univ. School of Medicine Hospital,,,聖ﾏﾘｱﾝﾅ医科大学
+stop_times,stop_headsign,zh-CN,聖瑪麗安娜醫科大學前,,,聖ﾏﾘｱﾝﾅ医科大学
+stop_times,stop_headsign,zh-TW,圣玛丽安娜医科大学前,,,聖ﾏﾘｱﾝﾅ医科大学
+stop_times,stop_headsign,ko,성마리안나 의과대학교 앞,,,聖ﾏﾘｱﾝﾅ医科大学
+stop_times,stop_headsign,ja,蔵敷・菅生中学校,,,蔵敷・菅生中学校
+stop_times,stop_headsign,ja,鷺３１,,,鷺３１
+stop_times,stop_headsign,en,鷺３１,,,鷺３１
+stop_times,stop_headsign,zh-CN,鷺３１,,,鷺３１
+stop_times,stop_headsign,zh-TW,鷺３１,,,鷺３１
+stop_times,stop_headsign,ko,鷺３１,,,鷺３１
+stop_times,stop_headsign,ja,聖ﾏﾘｱﾝﾅ医科大学前,,,聖ﾏﾘｱﾝﾅ医科大学前
+stop_times,stop_headsign,en,St.Marianna Univ. School of Medicine Hospital,,,聖ﾏﾘｱﾝﾅ医科大学前
+stop_times,stop_headsign,zh-CN,聖瑪麗安娜醫科大學前,,,聖ﾏﾘｱﾝﾅ医科大学前
+stop_times,stop_headsign,zh-TW,圣玛丽安娜医科大学前,,,聖ﾏﾘｱﾝﾅ医科大学前
+stop_times,stop_headsign,ko,성마리안나 의과대학교 앞,,,聖ﾏﾘｱﾝﾅ医科大学前
+stop_times,stop_headsign,ja,聖ﾏﾘｱﾝﾅ医科大学前（小田急バス）,,,聖ﾏﾘｱﾝﾅ医科大学前（小田急バス）
+stop_times,stop_headsign,en,St.Marianna Univ. School of Medicine Hospital,,,聖ﾏﾘｱﾝﾅ医科大学前（小田急バス）
+stop_times,stop_headsign,zh-CN,聖瑪麗安娜醫科大學前,,,聖ﾏﾘｱﾝﾅ医科大学前（小田急バス）
+stop_times,stop_headsign,zh-TW,圣玛丽安娜医科大学前,,,聖ﾏﾘｱﾝﾅ医科大学前（小田急バス）
+stop_times,stop_headsign,ko,성마리안나 의과대학교 앞,,,聖ﾏﾘｱﾝﾅ医科大学前（小田急バス）
+stop_times,stop_headsign,ja,聖ﾏﾘｱﾝﾅ医科大学前（東急バス）,,,聖ﾏﾘｱﾝﾅ医科大学前（東急バス）
+stop_times,stop_headsign,en,St.Marianna Univ. School of Medicine Hospital,,,聖ﾏﾘｱﾝﾅ医科大学前（東急バス）
+stop_times,stop_headsign,zh-CN,聖瑪麗安娜醫科大學前,,,聖ﾏﾘｱﾝﾅ医科大学前（東急バス）
+stop_times,stop_headsign,zh-TW,圣玛丽安娜医科大学前,,,聖ﾏﾘｱﾝﾅ医科大学前（東急バス）
+stop_times,stop_headsign,ko,성마리안나 의과대학교 앞,,,聖ﾏﾘｱﾝﾅ医科大学前（東急バス）
+stop_times,stop_headsign,ja,元住吉・井田営業所,,,元住吉・井田営業所
+stop_times,stop_headsign,ja,野川（東急バス）,,,野川（東急バス）
+stop_times,stop_headsign,en,Nogawa,,,野川（東急バス）
+stop_times,stop_headsign,zh-CN,野川,,,野川（東急バス）
+stop_times,stop_headsign,zh-TW,野川,,,野川（東急バス）
+stop_times,stop_headsign,ko,노가와,,,野川（東急バス）
+stop_times,stop_headsign,ja,鷺３２,,,鷺３２
+stop_times,stop_headsign,en,鷺３２,,,鷺３２
+stop_times,stop_headsign,zh-CN,鷺３２,,,鷺３２
+stop_times,stop_headsign,zh-TW,鷺３２,,,鷺３２
+stop_times,stop_headsign,ko,鷺３２,,,鷺３２
+stop_times,stop_headsign,ja,鷺沼駅（小田急バス）,,,鷺沼駅（小田急バス）
+stop_times,stop_headsign,en,Saginuma Sta.,,,鷺沼駅（小田急バス）
+stop_times,stop_headsign,zh-CN,鷺沼站,,,鷺沼駅（小田急バス）
+stop_times,stop_headsign,zh-TW,鹭沼站,,,鷺沼駅（小田急バス）
+stop_times,stop_headsign,ko,사기누마역,,,鷺沼駅（小田急バス）
+stop_times,stop_headsign,ja,鷺沼駅（東急バス）,,,鷺沼駅（東急バス）
+stop_times,stop_headsign,en,Saginuma Sta.,,,鷺沼駅（東急バス）
+stop_times,stop_headsign,zh-CN,鷺沼站,,,鷺沼駅（東急バス）
+stop_times,stop_headsign,zh-TW,鹭沼站,,,鷺沼駅（東急バス）
+stop_times,stop_headsign,ko,사기누마역,,,鷺沼駅（東急バス）
+agency,agency_name,ja,川崎市交通局,,,川崎市交通局
