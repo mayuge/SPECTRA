@@ -8,7 +8,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
 from fastapi_mcp import FastApiMCP
 
-
 from controller.chat.chat_controller import router as chat_router
 from controller.train.train_controller import router as train_router
 from controller.city.city_controller import router as city_router
@@ -17,6 +16,7 @@ from controller.osm.osm_controller import router as osm_router
 from controller.supermarket.supermarket_controller import router as supermarket_router
 from controller.geocoding.geocoding_controller import router as geocoding_router  
 from controller.landprice.landprice_controller import router as landprice_router 
+from controller.bus.bus_controller import router as bus_router
 
 app = FastAPI()
 
@@ -63,6 +63,7 @@ app.include_router(osm_router)
 app.include_router(supermarket_router)
 app.include_router(geocoding_router)
 app.include_router(landprice_router)
+app.include_router(bus_router)
 
 mcp = FastApiMCP(app)
 mcp.mount()
