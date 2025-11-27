@@ -4,13 +4,27 @@
       {{ text }}
     </div>
   </div>
+  <Button
+    class="flex justify-end w-full px-2"
+    variant="btn-text-gray"
+    icon-left="chat"
+    text="リトライ"
+    size="mini"
+    @button-clicked="retryClicked(text)"
+  />
 </template>
 <script setup lang="ts">
 import type { PropType } from "vue"
-
+import Button from "@/components/atoms/buttons/Button.vue"
 defineProps({
     text : {
         type: String as PropType<string>,
     }
 })
+
+const emit = defineEmits(['retry-clicked'])
+
+const retryClicked = (text:string) => {
+  emit("retry-clicked",text)
+}
 </script>

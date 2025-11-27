@@ -5,7 +5,7 @@
       variantClasses,
       shapeClasses,
       shadowClass,
-      'flex items-center gap-1 md:text-base text-xs leading-none'
+      'flex items-center gap-1 md:text-xs text-sm leading-none'
     ]"
     @click="buttonClicked"
   >
@@ -64,9 +64,9 @@ const shapeStyles: Record<ButtonShapeType, string> = {
 
 const paddingSize: Record<ButtonSizeType, string> = {
   mini: "p-0",
-  small: "md:p-3 p-2",
-  normal: "md:p-4 p-3",
-  large: "md:p-6 p-4",
+  small: "md:p-2 p-1",
+  normal: "md:p-3 p-2",
+  large: "md:p-4 p-3",
 }
 
 const variantClasses = computed(

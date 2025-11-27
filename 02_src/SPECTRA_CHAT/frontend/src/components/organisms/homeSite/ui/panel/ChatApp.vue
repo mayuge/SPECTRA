@@ -1,6 +1,6 @@
 <template>
   <div v-for="(obj, index) in chatMessages" :key="index">
-    <RequestChat v-if="obj.type === 'request'" :text="obj.message" />
+    <RequestChat v-if="obj.type === 'request'" :text="obj.message" @retry-clicked="retryClicked" />
     <ResponseChat
       v-else-if="obj.type === 'response'"
       :text="obj.message"
@@ -32,6 +32,12 @@ const {
   useChatStateStore() as IChatState,
   useMapLayer() as IMapLayer
 )
+
+const emit = defineEmits(['retry-clicked'])
+
+const retryClicked = (text:string) => {
+  emit("retry-clicked",text)
+}
 
 const chatMessages = computed(() => getChatMessageList())
 </script>

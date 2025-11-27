@@ -1,6 +1,5 @@
 import type { IDialogState } from "@/domain/interfaces/IDialogState"
 import type { IReqChatApi } from "@/domain/interfaces/IReqChatApi"
-import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
 import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
 import type { IChatState } from "@/domain/interfaces/IChatState"
 import type { IGeojsonState } from "@/domain/interfaces/IGeojsonState"
