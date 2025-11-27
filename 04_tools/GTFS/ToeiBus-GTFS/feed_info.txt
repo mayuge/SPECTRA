@@ -1,2 +1,0 @@
-feed_publisher_name,feed_publisher_url,feed_lang,feed_start_date,feed_end_date,feed_version
-東京都交通局,https://www.kotsu.metro.tokyo.jp/,ja,20251126,20281125,20251126_030827

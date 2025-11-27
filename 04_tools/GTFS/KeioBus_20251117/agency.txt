@@ -1,2 +1,0 @@
-agency_id,agency_name,agency_url,agency_timezone,agency_lang,agency_phone,agency_fare_url,agency_email
-9013401002381,京王電鉄バス株式会社,https://www.keio-bus.com/,Asia/Tokyo,ja,042-352-3713,,

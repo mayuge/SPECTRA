@@ -1,2 +1,0 @@
-agency_id,agency_official_name,agency_zip_number,agency_address,agency_president_pos,agency_president_name
-3000020141003,横浜市交通局,2310005,神奈川県横浜市中区本町６丁目50番地の10,横浜市交通事業者,三村　庄一
