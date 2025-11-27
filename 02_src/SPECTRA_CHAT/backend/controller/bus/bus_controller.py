@@ -10,7 +10,7 @@ def get_bus_line_tokyo(request: Request):
     """都営バスの路線情報を取得します。"""
     return bus_repository.get_bus_line_tokyo(request)
 
-@router.get("/bus/stop/tokyo")
-def get_bus_stop_tokyo(request: Request):
+@router.get("/bus/point/tokyo")
+def get_bus_point_tokyo(request: Request):
     """都営バスのバス停情報を取得します。"""
-    return bus_repository.get_bus_stop_tokyo(request)
+    return bus_repository.get_bus_point_tokyo(request)

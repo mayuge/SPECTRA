@@ -13,7 +13,7 @@ class BusRepository:
         with open(path, encoding="utf-8") as f:
             return json.load(f)
 
-    def get_bus_stop_tokyo(self, request):
+    def get_bus_point_tokyo(self, request):
         base_dir = os.path.dirname(__file__)
 
         path = os.path.normpath(os.path.join(
