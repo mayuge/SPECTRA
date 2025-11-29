@@ -37,10 +37,13 @@ const useCustomLayerApp = (
     addTrainLineLayer,
     addHelloCycleLayer,
     addDocomoBikeShareLayer,
+    addToeiBusLineLayer,
     toggleCycleLayer,
     toggleTrainLayer,
+    toggleBusLayer,
     getCycleLayerVisibility,
     getTrainLayerVisibility,
+    getBusLayerVisibility,
   } = mapCustomerLayer
 
   /**
@@ -132,7 +135,7 @@ const useCustomLayerApp = (
     const toeiBusLineGeojson = getCustomLayerGeojson(
       TOEI_BUS_LINE_LAYER as keyof CustomLayerNameType
     )
-    // addToeiBusLineLayer(toeiBusLineGeojson)
+    addToeiBusLineLayer(toeiBusLineGeojson)
   }
 
   /**
@@ -146,13 +149,22 @@ const useCustomLayerApp = (
     )
     // addToeiBusPointLayer(toeiBusPointGeojson)
   }
+  /**
+   * バスレイヤーのボタンのバリアントを取得
+   * @return バリアント文字列
+   */
+  const getBusLayerVarient = (): ButtonVariantType => {
+    return getBusLayerVisibility() ? BUTTON_LIGHT : BUTTON_DARK
+  }
 
   return {
     onMountedCallback,
     toggleTrainLayer,
     toggleCycleLayer,
+    toggleBusLayer,
     getTrainLayerVarient,
     getCycleLayerVarient,
+    getBusLayerVarient,
   }
 }
 

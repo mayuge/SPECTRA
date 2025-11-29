@@ -11,12 +11,12 @@
         @button-clicked="toggleTrainLayer"
       />
       <Button
-        :variant="'btn-light'"
+        :variant="getBusLayerVarient()"
         size="small"
         shape="square"
         iconLeft="directions_bus"
         text="バス"
-        @button-clicked=""
+        @button-clicked="toggleBusLayer"
       />
       <Button
         :variant="getCycleLayerVarient()"
@@ -54,5 +54,5 @@ onMounted(() => {
   onMountedCallback()
 })
 
-const { onMountedCallback, toggleTrainLayer, toggleCycleLayer, getTrainLayerVarient, getCycleLayerVarient } = useCustomLayerApp( useReqTrainApi() as IReqTrainApi, useReqCycleApi() as IReqCycleApi, useReqBusApi() as IReqBusApi, useCustomLayerStore() as ICustomLayerState, useMapCustomLayer() as IMapCustomLayer)
+const { onMountedCallback, toggleTrainLayer, toggleCycleLayer,toggleBusLayer, getTrainLayerVarient, getCycleLayerVarient, getBusLayerVarient } = useCustomLayerApp( useReqTrainApi() as IReqTrainApi, useReqCycleApi() as IReqCycleApi, useReqBusApi() as IReqBusApi, useCustomLayerStore() as ICustomLayerState, useMapCustomLayer() as IMapCustomLayer)
 </script>
