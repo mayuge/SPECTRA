@@ -22,7 +22,8 @@ const useMapCustomLayer = (): IMapCustomLayer => {
   const { addHelloCycleLayer, addDocomoBikeShareLayer, toggleCycleLayer, getCycleLayerVisibility } =
     mapCycleLayer
 
-  const { addToeiBusLineLayer, toggleBusLayer, getBusLayerVisibility } = mapBusLayer
+  const { addToeiBusPointLayer, addToeiBusLineLayer, toggleBusLayer, getBusLayerVisibility } =
+    mapBusLayer
 
   return {
     addTrainStationLayer,
@@ -30,6 +31,7 @@ const useMapCustomLayer = (): IMapCustomLayer => {
     addHelloCycleLayer,
     addDocomoBikeShareLayer,
     addToeiBusLineLayer,
+    addToeiBusPointLayer,
     toggleCycleLayer,
     toggleTrainLayer,
     toggleBusLayer,

@@ -1,5 +1,5 @@
 <template>
-  <div className="absolute top-19 right-16 z-10 bg-gray-30 px-4 py-3">
+  <div className="absolute top-19 right-16 z-10 bg-gray-30 px-4 py-3 select-none">
     <div className="pb-2 text-xs text-white">レイヤー切替</div>
     <div className="flex items-center gap-2">
       <Button
@@ -33,7 +33,7 @@
 <script setup lang="ts">
 
 import Button from '@/components/atoms/buttons/Button.vue'
-import useCustomLayerApp from '@/components/organisms/homeSite/core/panel/useCustomLayerApp'
+import useCustomLayerApp from '@/components/organisms/homeSite/core/islands/useCustomLayerApp'
 
 import type { IReqTrainApi } from '@/domain/interfaces/IReqTrainApi'
 import type { IReqCycleApi } from '@/domain/interfaces/IReqCycleApi'

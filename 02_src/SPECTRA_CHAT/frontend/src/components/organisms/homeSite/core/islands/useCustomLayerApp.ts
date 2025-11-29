@@ -38,6 +38,7 @@ const useCustomLayerApp = (
     addHelloCycleLayer,
     addDocomoBikeShareLayer,
     addToeiBusLineLayer,
+    addToeiBusPointLayer,
     toggleCycleLayer,
     toggleTrainLayer,
     toggleBusLayer,
@@ -56,8 +57,8 @@ const useCustomLayerApp = (
       await setTrainStationLayer()
       await setHelloCycleLayer()
       await setDocomoBikeShareLayer()
-      await setToeiBusPointLayer()
       await setToeiBusLineLayer()
+      await setToeiBusPointLayer()
     } catch (error) {
       console.error(error)
     }
@@ -147,7 +148,7 @@ const useCustomLayerApp = (
     const toeiBusPointGeojson = getCustomLayerGeojson(
       TOEI_BUS_POINT_LAYER as keyof CustomLayerNameType
     )
-    // addToeiBusPointLayer(toeiBusPointGeojson)
+    addToeiBusPointLayer(toeiBusPointGeojson)
   }
   /**
    * バスレイヤーのボタンのバリアントを取得

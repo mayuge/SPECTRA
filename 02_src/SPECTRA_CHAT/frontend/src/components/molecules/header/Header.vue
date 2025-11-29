@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed flex items-center w-full bg-primary z-100">
+  <header class="fixed flex items-center w-full bg-primary z-100 select-none">
     <ImageButton path="/image/app/logoBlack.svg" />
     <h1 class="text-2xl font-oswald">SPECTRA CHAT</h1>
   </header>

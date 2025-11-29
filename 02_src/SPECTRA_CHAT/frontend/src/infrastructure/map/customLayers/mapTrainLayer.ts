@@ -82,7 +82,7 @@ const useMapTrainLayer = (): IMapTrainLayer => {
         "icon-allow-overlap": true,
         "text-field": ["get", "駅名"],
         "text-font": ["Noto Sans CJK JP Bold"],
-        "text-size": 8,
+        "text-size": 10,
         "text-anchor": "top",
         "text-offset": [0, 1],
         "text-allow-overlap": false,
