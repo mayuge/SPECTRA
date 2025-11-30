@@ -21,7 +21,7 @@
       v-if="getMainPanelOpen()"
       class="bg-white justify-bottom w-full md:w-[400px] h-[50svh] md:h-screen shadow-lg flex flex-col"
     >
-      <div class="flex-1 md:pt-16 overflow-y-scroll">
+      <div class="flex-1 md:pt-16 overflow-y-scroll no-scrollbar">
         <ConceptDisplay v-if="isBlankChat()" />
         <ChatApp @retry-clicked="submitButtonClicked" />
       </div>

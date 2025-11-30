@@ -3,42 +3,49 @@
     :class="textareaClass"
     :placeholder="placeholder"
     :rows="rows"
-    :value="value ?? ''"
-    @input="onChangeInput"
+    :value="modelValue"
+    name="chat-input"
+    @input="onInput"
   />
 </template>
+
 <script setup lang="ts">
 import type { TextareaShapeType } from "@/domain/types/atomsType"
-import { computed } from "vue"
+import { computed, defineProps, defineEmits } from "vue"
 
 type Props = {
   placeholder?: string
   rows: number
   shape?: TextareaShapeType
-  value: string | null
+  modelValue: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
   shape: "round",
-  isShadow: false,
-  isBorder: false,
-  value: "",
 })
 
-const emit = defineEmits(['on-change-input'])
+const emit = defineEmits(["update:modelValue"])
 
+// 角丸スタイル
 const shapeStyles: Record<TextareaShapeType, string> = {
   square: "",
   round: "rounded-md",
 }
 
+// Tailwind クラス
 const textareaClass = computed(() => {
   const cornerShape = shapeStyles[props.shape] ?? shapeStyles.round
-  const fontSize = "text-base"
-  return `w-full text-black p-2 resize-none border border-gray-80 placeholder:text-sm placeholder:text-gray-70 ${cornerShape} ${fontSize}`
+  return `
+    w-full text-black p-2 resize-none
+    border border-gray-80
+    placeholder:text-sm placeholder:text-gray-70
+    focus:!border-secondary focus:!ring-4 focus:!ring-secondary
+    ${cornerShape} text-base
+  `
 })
 
-const onChangeInput = (e: Event) => {
-  emit("on-change-input", (e.target as HTMLTextAreaElement).value)
+// input で update:modelValue を emit
+const onInput = (e: Event) => {
+  emit("update:modelValue", (e.target as HTMLTextAreaElement).value)
 }
 </script>

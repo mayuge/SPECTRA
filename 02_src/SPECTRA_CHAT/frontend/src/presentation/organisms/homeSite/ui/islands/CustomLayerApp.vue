@@ -1,5 +1,7 @@
 <template>
-  <div className="absolute top-19 right-16 z-10 bg-gray-30 p-2 select-none max-w-[450px]">
+  <div
+    className="absolute top-19 right-16 z-10 bg-gray-30 p-2 select-none md:max-w-[450px] max-w-[60svw]"
+  >
     <div className="pb-2 text-xs text-white">レイヤー切替</div>
     <div className="flex flex-wrap gap-2">
       <Button
