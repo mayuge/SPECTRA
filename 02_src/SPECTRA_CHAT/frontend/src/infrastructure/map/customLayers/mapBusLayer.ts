@@ -61,6 +61,9 @@ const useMapBusLayer = (): IMapBusLayer => {
             new ArcLayer({
               id: TOEI_BUS_LINE_LAYER,
               data: arcData,
+              parameters: {
+                depthTest: false, // 奥に沈まないように
+              },
               getSourcePosition: (d) => d.source,
               getTargetPosition: (d) => d.target,
               getWidth: (d) => d.frequency / 200 + 1,

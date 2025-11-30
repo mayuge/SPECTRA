@@ -84,9 +84,9 @@ const useMapPlugin = (): IMapPlugin => {
   const setAllPlugins = () => {
     scalePlugin()
     fullscreenPlugin()
-    imgExportPlugin()
     terrainPlugin()
     locatePlugin()
+    imgExportPlugin()
     compassPlugin()
     pmtilesPlugin()
   }

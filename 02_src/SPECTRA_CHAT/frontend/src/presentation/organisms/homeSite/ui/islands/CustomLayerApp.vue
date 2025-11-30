@@ -1,7 +1,7 @@
 <template>
-  <div className="absolute top-19 right-16 z-10 bg-gray-30 px-4 py-3 select-none">
+  <div className="absolute top-19 right-16 z-10 bg-gray-30 p-2 select-none max-w-[450px]">
     <div className="pb-2 text-xs text-white">レイヤー切替</div>
-    <div className="flex items-center gap-2">
+    <div className="flex flex-wrap gap-2">
       <Button
         :variant="getTrainLayerVariant()"
         size="small"
@@ -31,7 +31,7 @@
         size="small"
         shape="square"
         iconLeft="border_all"
-        text="国勢調査メッシュ 2020"
+        text="国勢調査メッシュ2020"
         @button-clicked="togglePopulationMeshLayer"
       />
     </div>

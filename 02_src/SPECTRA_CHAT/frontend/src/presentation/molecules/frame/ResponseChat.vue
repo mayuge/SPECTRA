@@ -1,11 +1,11 @@
 <template>
   <div class="flex flex-col justify-start w-full p-2 text-xs">
-    <div class="bg-gray-80 flex justify-center text-black rounded-t-md px-2 py-4 w-[60%]">
+    <div class="bg-gray-90 flex justify-center text-black rounded-t-md px-2 py-4 w-[60%]">
       {{ text }}
     </div>
     <div
       class="flex items-center w-[60%] rounded-b-md px-2 gap-2"
-      :class="iconState ? 'bg-primary text-black' : 'bg-gray-20 text-white'"
+      :class="iconState ? 'bg-primary text-black border-t border-gray-50' : 'bg-gray-20 text-white'"
       @click="toggleClicked()"
     >
       <Button

@@ -22,6 +22,7 @@
       class="bg-white justify-bottom w-full md:w-[400px] h-[50svh] md:h-screen shadow-lg flex flex-col"
     >
       <div class="flex-1 md:pt-16 overflow-y-scroll">
+        <ConceptDisplay v-if="isBlankChat()" />
         <ChatApp @retry-clicked="submitButtonClicked" />
       </div>
       <ChatSuggestGroup :textList="CHAT_SUGGEST_LIST" @badge-clicked="submitButtonClicked" />
@@ -57,10 +58,11 @@ import DialogHeader from '@/presentation/molecules/header/DialogHeader.vue'
 import Submit from '@/presentation/molecules/input/Submit.vue'
 import ChatSuggestGroup from '@/presentation/molecules/group/ChatSuggestGroup.vue'
 import ChatApp from '@/presentation/organisms/homeSite/ui/panel/ChatApp.vue'
+import ConceptDisplay from '@/presentation/molecules/display/ConceptDisplay.vue'
 import { CHAT_SUGGEST_LIST } from '@/domain/params/chatSuggest'
 import useChatPanelApp from '@/presentation/organisms/homeSite/core/panel/useChatPanelApp'
 
-const { getMainPanelOpen, toggleMainPanel, getPullTabIcon, submitButtonClicked } =
+const { getMainPanelOpen, toggleMainPanel, getPullTabIcon, isBlankChat, submitButtonClicked } =
   useChatPanelApp(
     useDialogStateStore() as IDialogState,
     useReqChatApi() as IReqChatApi,

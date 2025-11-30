@@ -25,7 +25,7 @@ const useMapPopulationLayer = (): IMapPopulationMeshLayer => {
   const mapInstance = getMapInstance()
 
   /** レイヤーの表示状態（true = 表示 / false = 非表示） */
-  const populationMeshLayerVisibility = ref<boolean>(true)
+  const populationMeshLayerVisibility = ref<boolean>(false)
 
   /** Deck.gl Overlay インスタンス */
   let overlay: MapboxOverlay | null = null
@@ -75,13 +75,13 @@ const useMapPopulationLayer = (): IMapPopulationMeshLayer => {
            */
           getFillColor: (f) => {
             const population = parseInt(f.properties?.["人口（総数）"] || "0")
-            if (population > 30000) return [255, 0, 0, 150]
-            if (population > 15000) return [255, 69, 0, 150]
-            if (population > 8000) return [255, 140, 0, 150]
-            if (population > 5000) return [255, 165, 0, 150]
-            if (population > 3000) return [255, 191, 0, 150]
-            if (population > 2000) return [255, 215, 0, 150]
-            if (population > 1000) return [255, 255, 0, 150]
+            if (population > 30000) return [255, 0, 0, 80]
+            if (population > 15000) return [255, 69, 0, 80]
+            if (population > 8000) return [255, 140, 0, 80]
+            if (population > 5000) return [255, 165, 0, 80]
+            if (population > 3000) return [255, 191, 0, 80]
+            if (population > 2000) return [255, 215, 0, 80]
+            if (population > 1000) return [255, 255, 0, 80]
             return [100, 100, 100, 20]
           },
 
@@ -90,7 +90,7 @@ const useMapPopulationLayer = (): IMapPopulationMeshLayer => {
            */
           getElevation: (f) => {
             const population = parseInt(f.properties?.["人口（総数）"] || "0")
-            return Math.sqrt(population) * 50
+            return population
           },
 
           parameters: {

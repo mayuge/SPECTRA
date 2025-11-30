@@ -23,7 +23,7 @@ const useChatPanelApp = (
   const { getDialogState, setDialogState, toggleDialogState } = dialogState
   const { sendChatMessage } = reqChatApi
   const { addGeoJsonLayer } = mapLayer
-  const { addChatMessage } = chatState
+  const { addChatMessage, getChatMessageList } = chatState
   const { setGeojson, getLastGeojson } = geojsonState
 
   /**
@@ -53,6 +53,16 @@ const useChatPanelApp = (
    */
   const getPullTabIcon = () => {
     return getDialogState("mainPanel" as keyof DialogNameType) ? "arrow_left" : "arrow_right"
+  }
+
+  /**
+   * 何もチャットを送っていない状態ならconceptDisplayを表示
+   */
+  const isBlankChat = () => {
+    if (getChatMessageList().length === 0) {
+      return true
+    }
+    return false
   }
 
   /**
@@ -143,6 +153,7 @@ const useChatPanelApp = (
     toggleMainPanel,
     getPullTabIcon,
     submitButtonClicked,
+    isBlankChat,
   }
 }
 export default useChatPanelApp
