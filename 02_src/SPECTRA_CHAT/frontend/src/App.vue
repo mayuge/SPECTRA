@@ -2,5 +2,5 @@
   <HomeSite />
 </template>
 <script setup lang="ts">
-import HomeSite from "@/components/templates/HomeSite.vue"
+import HomeSite from "@/presentation/templates/HomeSite.vue"
 </script>

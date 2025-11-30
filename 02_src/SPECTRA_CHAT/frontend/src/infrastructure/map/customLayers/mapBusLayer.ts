@@ -20,11 +20,11 @@ const useMapBusLayer = (): IMapBusLayer => {
   const { getMapInstance } = useMapInstance() as IMapInstance
   const { toggleLayer } = useMapLayer() as IMapLayer
   const { generateHoverHtml, addHoverPopup } = useMapPopup() as IMapPopup
-  let updateOverlay: (() => void) | null = null
+
   let overlay: MapboxOverlay | null = null
   let popup: maplibregl.Popup | null = null
 
-  const mapInstance = getMapInstance()
+  const map = getMapInstance()
   const busLayerVisiblity = ref<boolean>(true)
 
   const toggleBusLayer = (): void => {
@@ -37,6 +37,7 @@ const useMapBusLayer = (): IMapBusLayer => {
     return busLayerVisiblity.value
   }
 
+  let updateOverlay: (() => void) | null = null
   const geojsonToArcData = (geojson) => {
     return geojson.features.map((f) => {
       const coords = f.geometry.coordinates
@@ -52,7 +53,7 @@ const useMapBusLayer = (): IMapBusLayer => {
     const arcData = geojsonToArcData(geojson)
 
     updateOverlay = () => {
-      const zoom = mapInstance.getZoom()
+      const zoom = map.getZoom()
       if (busLayerVisiblity.value && zoom >= 14 && !overlay) {
         overlay = new MapboxOverlay({
           interleaved: true,
@@ -87,19 +88,19 @@ const useMapBusLayer = (): IMapBusLayer => {
             }),
           ],
         })
-        mapInstance.addControl(overlay)
+        map.addControl(overlay)
       } else {
-        mapInstance.removeControl(overlay)
+        map.removeControl(overlay)
         overlay = null
       }
     }
 
-    mapInstance.on("zoom", updateOverlay)
+    map.on("zoom", updateOverlay)
     updateOverlay() // 初期表示チェック
   }
 
   const addToeiBusPointLayer = (geojson: FeatureCollection): void => {
-    mapInstance.addSource(TOEI_BUS_POINT_LAYER, {
+    map.addSource(TOEI_BUS_POINT_LAYER, {
       type: "geojson",
       data: geojson,
     })
@@ -124,7 +125,7 @@ const useMapBusLayer = (): IMapBusLayer => {
       },
     }
 
-    mapInstance.addLayer(symbolLayer)
+    map.addLayer(symbolLayer)
     addHoverPopup(TOEI_BUS_POINT_LAYER)
   }
 
