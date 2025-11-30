@@ -3,7 +3,7 @@
     <div className="pb-2 text-xs text-white">レイヤー切替</div>
     <div className="flex items-center gap-2">
       <Button
-        :variant="getTrainLayerVarient()"
+        :variant="getTrainLayerVariant()"
         size="small"
         shape="square"
         iconLeft="train"
@@ -11,7 +11,7 @@
         @button-clicked="toggleTrainLayer"
       />
       <Button
-        :variant="getBusLayerVarient()"
+        :variant="getBusLayerVariant()"
         size="small"
         shape="square"
         iconLeft="directions_bus"
@@ -19,12 +19,20 @@
         @button-clicked="toggleBusLayer"
       />
       <Button
-        :variant="getCycleLayerVarient()"
+        :variant="getCycleLayerVariant()"
         size="small"
         shape="square"
         iconLeft="directions_bike"
         text="サイクル"
         @button-clicked="toggleCycleLayer"
+      />
+      <Button
+        :variant="getPopulationMeshLayerVariant()"
+        size="small"
+        shape="square"
+        iconLeft="border_all"
+        text="国勢調査メッシュ 2020"
+        @button-clicked="togglePopulationMeshLayer"
       />
     </div>
   </div>
@@ -54,5 +62,21 @@ onMounted(() => {
   onMountedCallback()
 })
 
-const { onMountedCallback, toggleTrainLayer, toggleCycleLayer,toggleBusLayer, getTrainLayerVarient, getCycleLayerVarient, getBusLayerVarient } = useCustomLayerApp( useReqTrainApi() as IReqTrainApi, useReqCycleApi() as IReqCycleApi, useReqBusApi() as IReqBusApi, useCustomLayerStore() as ICustomLayerState, useMapCustomLayer() as IMapCustomLayer)
+const {
+  onMountedCallback,
+  toggleTrainLayer,
+  toggleCycleLayer,
+  toggleBusLayer,
+  togglePopulationMeshLayer,
+  getTrainLayerVariant,
+  getCycleLayerVariant,
+  getBusLayerVariant,
+  getPopulationMeshLayerVariant
+} = useCustomLayerApp(
+    useReqTrainApi() as IReqTrainApi,
+    useReqCycleApi() as IReqCycleApi,
+    useReqBusApi() as IReqBusApi,
+    useCustomLayerStore() as ICustomLayerState,
+    useMapCustomLayer() as IMapCustomLayer
+)
 </script>

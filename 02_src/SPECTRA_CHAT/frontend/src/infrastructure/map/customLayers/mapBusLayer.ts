@@ -20,11 +20,11 @@ const useMapBusLayer = (): IMapBusLayer => {
   const { getMapInstance } = useMapInstance() as IMapInstance
   const { toggleLayer } = useMapLayer() as IMapLayer
   const { generateHoverHtml, addHoverPopup } = useMapPopup() as IMapPopup
-
+  let updateOverlay: (() => void) | null = null
   let overlay: MapboxOverlay | null = null
   let popup: maplibregl.Popup | null = null
 
-  const map = getMapInstance()
+  const mapInstance = getMapInstance()
   const busLayerVisiblity = ref<boolean>(true)
 
   const toggleBusLayer = (): void => {
@@ -37,7 +37,6 @@ const useMapBusLayer = (): IMapBusLayer => {
     return busLayerVisiblity.value
   }
 
-  let updateOverlay: (() => void) | null = null
   const geojsonToArcData = (geojson) => {
     return geojson.features.map((f) => {
       const coords = f.geometry.coordinates
@@ -53,8 +52,8 @@ const useMapBusLayer = (): IMapBusLayer => {
     const arcData = geojsonToArcData(geojson)
 
     updateOverlay = () => {
-      const zoom = map.getZoom()
-      if (busLayerVisiblity.value && zoom >= 13 && !overlay) {
+      const zoom = mapInstance.getZoom()
+      if (busLayerVisiblity.value && zoom >= 14 && !overlay) {
         overlay = new MapboxOverlay({
           interleaved: true,
           layers: [
@@ -63,7 +62,7 @@ const useMapBusLayer = (): IMapBusLayer => {
               data: arcData,
               getSourcePosition: (d) => d.source,
               getTargetPosition: (d) => d.target,
-              getWidth: (d) => d.frequency / 200,
+              getWidth: (d) => d.frequency / 200 + 1,
               getSourceColor: () => [178, 210, 53, 150],
               getTargetColor: () => [178, 210, 53, 150],
               getHeight: () => 0.5,
@@ -88,19 +87,19 @@ const useMapBusLayer = (): IMapBusLayer => {
             }),
           ],
         })
-        map.addControl(overlay)
-      } else if ((!busLayerVisiblity.value || zoom < 13) && overlay) {
-        map.removeControl(overlay)
+        mapInstance.addControl(overlay)
+      } else {
+        mapInstance.removeControl(overlay)
         overlay = null
       }
     }
 
-    map.on("zoom", updateOverlay)
+    mapInstance.on("zoom", updateOverlay)
     updateOverlay() // 初期表示チェック
   }
 
   const addToeiBusPointLayer = (geojson: FeatureCollection): void => {
-    map.addSource(TOEI_BUS_POINT_LAYER, {
+    mapInstance.addSource(TOEI_BUS_POINT_LAYER, {
       type: "geojson",
       data: geojson,
     })
@@ -125,7 +124,7 @@ const useMapBusLayer = (): IMapBusLayer => {
       },
     }
 
-    map.addLayer(symbolLayer)
+    mapInstance.addLayer(symbolLayer)
     addHoverPopup(TOEI_BUS_POINT_LAYER)
   }
 

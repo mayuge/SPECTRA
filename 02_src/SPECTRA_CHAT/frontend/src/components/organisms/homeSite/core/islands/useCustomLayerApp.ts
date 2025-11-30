@@ -39,12 +39,15 @@ const useCustomLayerApp = (
     addDocomoBikeShareLayer,
     addToeiBusLineLayer,
     addToeiBusPointLayer,
+    addPopulationMeshLayer,
     toggleCycleLayer,
     toggleTrainLayer,
     toggleBusLayer,
+    togglePopulationMeshLayer,
     getCycleLayerVisibility,
     getTrainLayerVisibility,
     getBusLayerVisibility,
+    getPopulationMeshLayerVisibility,
   } = mapCustomerLayer
 
   /**
@@ -59,9 +62,42 @@ const useCustomLayerApp = (
       await setDocomoBikeShareLayer()
       await setToeiBusLineLayer()
       await setToeiBusPointLayer()
+      setPopulationMeshLayer()
     } catch (error) {
       console.error(error)
     }
+  }
+
+  /**
+   * cycleレイヤーのボタンのバリアントを取得
+   * @return バリアント文字列
+   */
+  const getCycleLayerVariant = (): ButtonVariantType => {
+    return getCycleLayerVisibility() ? BUTTON_LIGHT : BUTTON_DARK
+  }
+
+  /**
+   * 鉄道路線レイヤーのボタンのバリアントを取得
+   * @return バリアント文字列
+   */
+  const getTrainLayerVariant = (): ButtonVariantType => {
+    return getTrainLayerVisibility() ? BUTTON_LIGHT : BUTTON_DARK
+  }
+
+  /**
+   * バスレイヤーのボタンのバリアントを取得
+   * @return バリアント文字列
+   */
+  const getBusLayerVariant = (): ButtonVariantType => {
+    return getBusLayerVisibility() ? BUTTON_LIGHT : BUTTON_DARK
+  }
+
+  /**
+   * 国勢調査メッシュレイヤーのバリアントを取得
+   * @returns バリアント文字列
+   */
+  const getPopulationMeshLayerVariant = (): ButtonVariantType => {
+    return getPopulationMeshLayerVisibility() ? BUTTON_LIGHT : BUTTON_DARK
   }
 
   /**
@@ -90,14 +126,6 @@ const useCustomLayerApp = (
   }
 
   /**
-   * cycleレイヤーのボタンのバリアントを取得
-   * @return バリアント文字列
-   */
-  const getCycleLayerVarient = (): ButtonVariantType => {
-    return getCycleLayerVisibility() ? BUTTON_LIGHT : BUTTON_DARK
-  }
-
-  /**
    * 鉄道路線レイヤーをセット
    */
   const setTrainLineLayer = async () => {
@@ -105,14 +133,6 @@ const useCustomLayerApp = (
     setCustomLayerGeojson(TRAIN_LINE_LAYER as keyof CustomLayerNameType, allTrainLine)
     const trainLineGeojson = getCustomLayerGeojson(TRAIN_LINE_LAYER as keyof CustomLayerNameType)
     addTrainLineLayer(trainLineGeojson)
-  }
-
-  /**
-   * 鉄道路線レイヤーのボタンのバリアントを取得
-   * @return バリアント文字列
-   */
-  const getTrainLayerVarient = (): ButtonVariantType => {
-    return getTrainLayerVisibility() ? BUTTON_LIGHT : BUTTON_DARK
   }
 
   /**
@@ -150,12 +170,12 @@ const useCustomLayerApp = (
     )
     addToeiBusPointLayer(toeiBusPointGeojson)
   }
+
   /**
-   * バスレイヤーのボタンのバリアントを取得
-   * @return バリアント文字列
+   * 国勢調査メッシュレイヤーをセット
    */
-  const getBusLayerVarient = (): ButtonVariantType => {
-    return getBusLayerVisibility() ? BUTTON_LIGHT : BUTTON_DARK
+  const setPopulationMeshLayer = () => {
+    addPopulationMeshLayer()
   }
 
   return {
@@ -163,9 +183,11 @@ const useCustomLayerApp = (
     toggleTrainLayer,
     toggleCycleLayer,
     toggleBusLayer,
-    getTrainLayerVarient,
-    getCycleLayerVarient,
-    getBusLayerVarient,
+    togglePopulationMeshLayer,
+    getTrainLayerVariant,
+    getCycleLayerVariant,
+    getBusLayerVariant,
+    getPopulationMeshLayerVariant,
   }
 }
 
