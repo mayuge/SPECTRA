@@ -1,6 +1,8 @@
 <template>
   <div class="flex flex-col justify-start w-full p-2 text-xs">
-    <div class="bg-gray-90 flex justify-center text-black rounded-t-md px-2 py-4 w-[80%]">
+    <div
+      class="bg-gray-90 flex justify-center text-black rounded-t-md px-2 py-4 w-[80%] wrap-break-word whitespace-normal"
+    >
       {{ text }}
     </div>
     <div
@@ -17,26 +19,26 @@
     </div>
   </div>
 </template>
+
 <script setup lang="ts">
-import  { ref, type PropType } from "vue"
+import { ref, type PropType } from "vue"
 import Button from "@/presentation/atoms/buttons/Button.vue"
 
 const iconState = ref(true)
-
 const emit = defineEmits(["toggle-clicked"])
+
+const props = defineProps({
+    text: {
+        type: String as PropType<string>,
+    },
+    responseId: {
+        type: Number as PropType<number>,
+        required: true
+    },
+})
 
 const toggleClicked = () => {
     iconState.value = !iconState.value
     emit("toggle-clicked", props.responseId)
 }
-
-const props = defineProps({
-    text : {
-        type: String as PropType<string>,
-    },
-    responseId : {
-        type:Number as PropType<number>,
-        required:true
-    },
-})
 </script>

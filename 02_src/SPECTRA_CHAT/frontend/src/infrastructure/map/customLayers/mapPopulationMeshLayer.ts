@@ -90,7 +90,8 @@ const useMapPopulationLayer = (): IMapPopulationMeshLayer => {
            */
           getElevation: (f) => {
             const population = parseInt(f.properties?.["人口（総数）"] || "0")
-            return population
+            //高すぎるので2で割る
+            return population / 2
           },
 
           parameters: {
