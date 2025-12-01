@@ -40,14 +40,17 @@ const useCustomLayerApp = (
     addToeiBusLineLayer,
     addToeiBusPointLayer,
     addPopulationMeshLayer,
+    addSatelliteLayer,
     toggleCycleLayer,
     toggleTrainLayer,
     toggleBusLayer,
     togglePopulationMeshLayer,
+    toggleSatelliteLayer,
     getCycleLayerVisibility,
     getTrainLayerVisibility,
     getBusLayerVisibility,
     getPopulationMeshLayerVisibility,
+    getSatelliteLayerVisiblity,
   } = mapCustomerLayer
 
   /**
@@ -62,7 +65,8 @@ const useCustomLayerApp = (
       await setDocomoBikeShareLayer()
       await setToeiBusLineLayer()
       await setToeiBusPointLayer()
-      setPopulationMeshLayer()
+      addPopulationMeshLayer()
+      addSatelliteLayer()
     } catch (error) {
       console.error(error)
     }
@@ -98,6 +102,11 @@ const useCustomLayerApp = (
    */
   const getPopulationMeshLayerVariant = (): ButtonVariantType => {
     return getPopulationMeshLayerVisibility() ? BUTTON_LIGHT : BUTTON_DARK
+  }
+
+  /**衛星写真レイヤーのバリアント */
+  const getSatelliteLayerVariant = (): ButtonVariantType => {
+    return getSatelliteLayerVisiblity() ? BUTTON_LIGHT : BUTTON_DARK
   }
 
   /**
@@ -171,23 +180,18 @@ const useCustomLayerApp = (
     addToeiBusPointLayer(toeiBusPointGeojson)
   }
 
-  /**
-   * 国勢調査メッシュレイヤーをセット
-   */
-  const setPopulationMeshLayer = () => {
-    addPopulationMeshLayer()
-  }
-
   return {
     onMountedCallback,
     toggleTrainLayer,
     toggleCycleLayer,
     toggleBusLayer,
     togglePopulationMeshLayer,
+    toggleSatelliteLayer,
     getTrainLayerVariant,
     getCycleLayerVariant,
     getBusLayerVariant,
     getPopulationMeshLayerVariant,
+    getSatelliteLayerVariant,
   }
 }
 

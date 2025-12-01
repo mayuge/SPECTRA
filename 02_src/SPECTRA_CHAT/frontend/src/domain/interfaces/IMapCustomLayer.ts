@@ -15,4 +15,7 @@ export interface IMapCustomLayer {
   getTrainLayerVisibility: () => boolean
   getBusLayerVisibility: () => boolean
   getPopulationMeshLayerVisibility: () => boolean
+  addSatelliteLayer: () => void
+  toggleSatelliteLayer: () => void
+  getSatelliteLayerVisiblity: () => boolean
 }

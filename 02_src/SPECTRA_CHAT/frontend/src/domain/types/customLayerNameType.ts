@@ -6,6 +6,7 @@ import {
   TOEI_BUS_POINT_LAYER,
   TOEI_BUS_LINE_LAYER,
   POPULATION_MESH_LAYER,
+  SATELLITE_LAYER,
 } from "@/domain/params/customLayerName"
 export type CustomLayerNameType =
   | typeof TRAIN_STATION_LAYER
@@ -15,3 +16,4 @@ export type CustomLayerNameType =
   | typeof TOEI_BUS_POINT_LAYER
   | typeof TOEI_BUS_LINE_LAYER
   | typeof POPULATION_MESH_LAYER
+  | typeof SATELLITE_LAYER

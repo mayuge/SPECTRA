@@ -29,6 +29,14 @@
         @button-clicked="toggleCycleLayer"
       />
       <Button
+        :variant="getSatelliteLayerVariant()"
+        size="small"
+        shape="square"
+        iconLeft="satellite"
+        text="国土地理院 シームレス画像"
+        @button-clicked="toggleSatelliteLayer"
+      />
+      <Button
         :variant="getPopulationMeshLayerVariant()"
         size="small"
         shape="square"
@@ -70,10 +78,12 @@ const {
   toggleCycleLayer,
   toggleBusLayer,
   togglePopulationMeshLayer,
+  toggleSatelliteLayer,
   getTrainLayerVariant,
   getCycleLayerVariant,
   getBusLayerVariant,
-  getPopulationMeshLayerVariant
+  getPopulationMeshLayerVariant,
+  getSatelliteLayerVariant
 } = useCustomLayerApp(
     useReqTrainApi() as IReqTrainApi,
     useReqCycleApi() as IReqCycleApi,
