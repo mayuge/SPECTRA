@@ -5,6 +5,7 @@ import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
 import type { IMapPopup } from "@/domain/interfaces/IMapPopup"
 
 import trainParams from "@/domain/params/trainParams.json"
+import popupKeyParams from "@/domain/params/popupKeyParams.json"
 
 /**
  * 地図上のポップアップを管理するカスタムフック
@@ -30,6 +31,11 @@ const useMapPopup = (): IMapPopup => {
    */
   const getLineColor = (companyName: string, lineName: string): string => {
     return trainParams[companyName]?.[lineName] ?? "#808080"
+  }
+
+  /** キーだけ変換する関数 */
+  const convertKey = (key: string): string => {
+    return popupKeyParams[key] ?? key
   }
 
   /**
@@ -70,7 +76,7 @@ const useMapPopup = (): IMapPopup => {
       .map(
         ([key, value]) =>
           `<tr>
-          <th style="border:1px solid #ccc; padding:2px 4px; background:#f5f5f5;">${key}</th>
+          <th style="border:1px solid #ccc; padding:2px 4px; background:#f5f5f5;">${convertKey(key)}</th>
           <td style="border:1px solid #ccc; padding:2px 4px;">${value}</td>
         </tr>`
       )
