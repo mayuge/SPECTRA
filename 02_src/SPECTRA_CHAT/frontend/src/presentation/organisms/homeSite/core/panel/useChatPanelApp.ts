@@ -1,11 +1,13 @@
 import type { IDialogState } from "@/domain/interfaces/IDialogState"
 import type { IReqChatApi } from "@/domain/interfaces/IReqChatApi"
+import type { IReqSuggestApi } from "@/domain/interfaces/IReqSuggestApi"
 import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
 import type { IChatState } from "@/domain/interfaces/IChatState"
 import type { IGeojsonState } from "@/domain/interfaces/IGeojsonState"
 
 import type { DialogNameType } from "@/domain/types/dialogNameType"
 import type { ChatType } from "@/domain/types/chatType"
+import type { SuggestType } from "@/domain/types/suggestType"
 import type { Feature, FeatureCollection } from "geojson"
 
 /**
@@ -16,12 +18,14 @@ import type { Feature, FeatureCollection } from "geojson"
 const useChatPanelApp = (
   dialogState: IDialogState,
   reqChatApi: IReqChatApi,
+  reqSuggestApi: IReqSuggestApi,
   mapLayer: IMapLayer,
   chatState: IChatState,
   geojsonState: IGeojsonState
 ) => {
   const { getDialogState, setDialogState, toggleDialogState } = dialogState
   const { sendChatMessage } = reqChatApi
+  const { getSuggestData } = reqSuggestApi
   const { addGeoJsonLayer } = mapLayer
   const { addChatMessage, getChatMessageList } = chatState
   const { setGeojson, getLastGeojson } = geojsonState
@@ -65,6 +69,48 @@ const useChatPanelApp = (
     return false
   }
 
+  const suggestButtonClicked = async (suggest: SuggestType) => {
+    const url = suggest.url
+    const message = suggest.text
+    // メッセージ送信後にメインパネルを開く
+    openMainPanel()
+    const suggestMessage: ChatType = {
+      type: "request",
+      message: message,
+      isdata: false,
+    }
+    addChatMessage(suggestMessage)
+    try {
+      console.log(url)
+      const suggestGeojson: Feature | FeatureCollection | null = await getSuggestData(url)
+      // すべてのgeojsonをFeatureCollectionとみなし、データ型を定義
+      let geojson: FeatureCollection
+      if (suggestGeojson.type === "FeatureCollection") {
+        geojson = suggestGeojson as FeatureCollection
+      } else {
+        geojson = { type: "FeatureCollection", features: [suggestGeojson as Feature] }
+      }
+
+      //結果をgeojsonStoreに格納
+      setGeojson(geojson)
+
+      addGeoJsonLayer(getLastGeojson())
+
+      const responseMessage: ChatType = {
+        type: "response",
+        message: `【表示結果】${message}`,
+        isdata: true,
+      }
+
+      //responseタイプのチャットをストアに追加
+      addChatMessage(responseMessage)
+    } catch (error) {
+      const errorMessage: ChatType = { type: "error", message: error, isdata: false }
+
+      //エラー発生時、errorタイプのチャットをストアに追加
+      addChatMessage(errorMessage)
+    }
+  }
   /**
    * 送信ボタン押下
    * @param inputValue string
@@ -77,12 +123,6 @@ const useChatPanelApp = (
     const invalidCharPattern = /[\u0000-\u001F\u007F\uFEFF'"<>!\/\\;|&`$%^@]/u
 
     if (invalidCharPattern.test(inputValue)) {
-      const chatMessage: ChatType = {
-        type: "request",
-        message: inputValue,
-        isdata: false,
-      }
-      addChatMessage(chatMessage)
       const errorMessage: ChatType = {
         type: "error",
         message: "使用できない記号（BOM・クォーテーション・< > ! / など）が含まれています。",
@@ -153,6 +193,7 @@ const useChatPanelApp = (
     toggleMainPanel,
     getPullTabIcon,
     submitButtonClicked,
+    suggestButtonClicked,
     isBlankChat,
   }
 }

@@ -12,7 +12,7 @@
       />
       <ChatSuggestGroup
         v-if="!getMainPanelOpen()"
-        :textList="CHAT_SUGGEST_LIST"
+        :suggestList="CHAT_SUGGEST_LIST"
         @badge-clicked="submitButtonClicked"
       />
       <Submit v-if="!getMainPanelOpen()" @submit-button-clicked="submitButtonClicked" />
@@ -25,7 +25,7 @@
         <ConceptDisplay v-if="isBlankChat()" />
         <ChatApp @retry-clicked="submitButtonClicked" />
       </div>
-      <ChatSuggestGroup :textList="CHAT_SUGGEST_LIST" @badge-clicked="submitButtonClicked" />
+      <ChatSuggestGroup :suggestList="CHAT_SUGGEST_LIST" @badge-clicked="suggestButtonClicked" />
       <Submit @submit-button-clicked="submitButtonClicked" />
     </div>
     <div class="hidden md:flex items-center">
@@ -43,12 +43,14 @@
 <script setup lang="ts">
 import type { IDialogState } from '@/domain/interfaces/IDialogState'
 import type { IReqChatApi } from '@/domain/interfaces/IReqChatApi'
+import type { IReqSuggestApi } from '@/domain/interfaces/IReqSuggestApi'
 import type { IMapLayer } from '@/domain/interfaces/IMapLayer'
 import type { IChatState } from '@/domain/interfaces/IChatState'
 import type { IGeojsonState } from '@/domain/interfaces/IGeojsonState'
 
 import { useDialogStateStore } from '@/infrastructure/stores/dialogStateStore'
 import useReqChatApi from '@/infrastructure/http/chat/reqChatApi'
+import useReqSuggestApi from '@/infrastructure/http/suggest/reqSuggestApi'
 import useMapLayer from '@/infrastructure/map/mapLayer'
 import { useChatStateStore } from '@/infrastructure/stores/chatStateStore'
 import { useGeojsonStateStore } from '@/infrastructure/stores/geojsonStateStore'
@@ -62,10 +64,11 @@ import ConceptDisplay from '@/presentation/molecules/display/ConceptDisplay.vue'
 import { CHAT_SUGGEST_LIST } from '@/domain/params/chatSuggest'
 import useChatPanelApp from '@/presentation/organisms/homeSite/core/panel/useChatPanelApp'
 
-const { getMainPanelOpen, toggleMainPanel, getPullTabIcon, isBlankChat, submitButtonClicked } =
+const { getMainPanelOpen, toggleMainPanel, getPullTabIcon, isBlankChat, submitButtonClicked, suggestButtonClicked } =
   useChatPanelApp(
     useDialogStateStore() as IDialogState,
     useReqChatApi() as IReqChatApi,
+    useReqSuggestApi() as IReqSuggestApi,
     useMapLayer() as IMapLayer,
     useChatStateStore() as IChatState,
     useGeojsonStateStore() as IGeojsonState
