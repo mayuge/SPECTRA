@@ -183,7 +183,47 @@ const useMapLayer = (): IMapLayer => {
     map.setLayoutProperty(layerId, "visibility", newVisibility)
   }
 
-  return { addGeoJsonLayer, toggleLayer }
+  const backToLayer = (layerId: string) => {
+    const { getMapInstance } = useMapInstance() as IMapInstance
+    const map = getMapInstance()
+    if (!map) return
+
+    const layers = map.getStyle().layers
+    if (!layers) return
+
+    const index = layers.findIndex((l) => l.id === layerId)
+    if (index <= 0) return // これ以上下に行けない
+
+    const prevLayerId = layers[index - 1].id
+    map.moveLayer(layerId, prevLayerId)
+  }
+
+  /**
+   * １つ前面（上）に移動
+   * @param layerId
+   */
+  const frontToLayer = (layerId: string) => {
+    const { getMapInstance } = useMapInstance() as IMapInstance
+    const map = getMapInstance()
+    if (!map) return
+
+    const layers = map.getStyle().layers
+    if (!layers) return
+
+    const index = layers.findIndex((l) => l.id === layerId)
+    if (index < 0 || index >= layers.length - 1) return // これ以上上に行けない
+
+    // 今より1つ上のレイヤー
+    const nextLayerId = layers[index + 1].id
+
+    // さらに1つ上があるならそこへ移動、なければ最前面へ
+    const beforeId = layers[index + 2]?.id ?? undefined
+
+    // 「beforeId の直前」に移動するので、結果1つ上へ行く
+    map.moveLayer(layerId, beforeId)
+  }
+
+  return { addGeoJsonLayer, toggleLayer, backToLayer, frontToLayer }
 }
 
 export default useMapLayer

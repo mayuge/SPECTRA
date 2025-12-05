@@ -6,6 +6,8 @@
       :text="obj.message"
       :responseId="getResponseIndex(index)"
       @toggle-clicked="toggleResponseLayer(getResponseIndex(index))"
+      @front-to-clicked="frontToResponseLayer(getResponseIndex(index))"
+      @back-to-clicked="backToResponseLayer(getResponseIndex(index))"
     />
     <ErrorChat v-else-if="obj.type === 'error'" :text="obj.message" />
   </div>
@@ -28,6 +30,8 @@ const {
   getChatMessageList,
   getResponseIndex,
   toggleResponseLayer,
+  frontToResponseLayer,
+  backToResponseLayer,
 } = useChatApp(
   useChatStateStore() as IChatState,
   useMapLayer() as IMapLayer

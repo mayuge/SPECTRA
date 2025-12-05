@@ -7,7 +7,7 @@ import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
  */
 const useChatApp = (chatState: IChatState, mapLayer: IMapLayer) => {
   const { getChatMessageList } = chatState
-  const { toggleLayer } = mapLayer
+  const { toggleLayer, frontToLayer, backToLayer } = mapLayer
 
   /**
    * 連番のidからgeojsonレイヤーを特定し、トグルする
@@ -16,6 +16,24 @@ const useChatApp = (chatState: IChatState, mapLayer: IMapLayer) => {
   const toggleResponseLayer = (index: number) => {
     const layerId = `geojson-layer-${index}`
     toggleLayer(layerId)
+  }
+
+  /**
+   * 連番のidからgeojsonレイヤーを特定し、前面に移動
+   * @param index number
+   */
+  const frontToResponseLayer = (index: number) => {
+    const layerId = `geojson-layer-${index}`
+    console.log(layerId)
+    frontToLayer(layerId)
+  }
+  /**
+   * 連番のidからgeojsonレイヤーを特定し、背面に移動
+   * @param index number
+   */
+  const backToResponseLayer = (index: number) => {
+    const layerId = `geojson-layer-${index}`
+    backToLayer(layerId)
   }
 
   /**
@@ -38,6 +56,8 @@ const useChatApp = (chatState: IChatState, mapLayer: IMapLayer) => {
     getChatMessageList,
     getResponseIndex,
     toggleResponseLayer,
+    frontToResponseLayer,
+    backToResponseLayer,
   }
 }
 

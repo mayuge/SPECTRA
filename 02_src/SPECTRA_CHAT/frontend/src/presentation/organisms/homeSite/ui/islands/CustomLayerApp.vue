@@ -79,13 +79,13 @@ import { onMounted, ref } from 'vue'
 
 const pageOpenedTime = ref("")
 
-onMounted(() => {
+onMounted(async () => {
+  await onMountedCallback()
   const now = new Date()
   const hh = String(now.getHours()).padStart(2, "0")
   const mm = String(now.getMinutes()).padStart(2, "0")
 
   pageOpenedTime.value = `${hh}:${mm}`
-  onMountedCallback()
 })
 
 const {
