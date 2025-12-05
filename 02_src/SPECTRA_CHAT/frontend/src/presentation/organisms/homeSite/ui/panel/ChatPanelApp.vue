@@ -30,6 +30,7 @@
     </div>
     <div class="hidden md:flex items-center">
       <PullTab
+        title="パネルを開閉できます。"
         variant="pullTab-dark"
         :icon="getPullTabIcon()"
         position="left"

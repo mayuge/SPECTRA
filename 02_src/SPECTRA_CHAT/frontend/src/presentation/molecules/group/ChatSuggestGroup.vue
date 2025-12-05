@@ -1,8 +1,8 @@
-// ...existing code...
 <template>
-  <div class="flex items-center flex-wrap bg-gray-90 gap-1 p-2">
+  <div class="flex items-center flex-wrap bg-gray-80 gap-1 p-2">
     <Badge
       v-for="(suggest, index) in suggestList"
+      title="押すとチャットできます。"
       :key="index"
       :text="suggest.text"
       variant="badge-secondary"

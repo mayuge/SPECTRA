@@ -1,10 +1,15 @@
 <template>
   <div
-    className="absolute top-19 right-16 z-10 bg-gray-30 p-2 select-none md:max-w-[450px] max-w-[60svw]"
+    class="absolute top-19 right-16 z-10 bg-gray-30 p-2 select-none md:max-w-[450px] max-w-[60svw]"
   >
-    <div className="pb-2 text-xs text-white">レイヤー切替</div>
-    <div className="flex flex-wrap gap-2">
+    <div class="flex items-center justify-between pb-2 text-xs text-white">
+      <div>レイヤー切替</div>
+      <div>取得時刻 {{ pageOpenedTime }}</div>
+    </div>
+
+    <div class="flex flex-wrap gap-2">
       <Button
+        title="クリックで鉄道レイヤーを表示切替できます。"
         :variant="getTrainLayerVariant()"
         size="small"
         shape="square"
@@ -13,6 +18,7 @@
         @button-clicked="toggleTrainLayer"
       />
       <Button
+        title="クリックでバスレイヤーを表示切替できます。"
         :variant="getBusLayerVariant()"
         size="small"
         shape="square"
@@ -21,6 +27,7 @@
         @button-clicked="toggleBusLayer"
       />
       <Button
+        title="クリックでサイクルレイヤーを表示切替できます。"
         :variant="getCycleLayerVariant()"
         size="small"
         shape="square"
@@ -29,6 +36,7 @@
         @button-clicked="toggleCycleLayer"
       />
       <Button
+        title="クリックで国土地理院 シームレス画像レイヤーを表示切替できます。"
         :variant="getSatelliteLayerVariant()"
         size="small"
         shape="square"
@@ -37,6 +45,7 @@
         @button-clicked="toggleSatelliteLayer"
       />
       <Button
+        title="クリックで国勢調査メッシュ2020レイヤーを表示切替できます。"
         :variant="getPopulationMeshLayerVariant()"
         size="small"
         shape="square"
@@ -66,9 +75,16 @@ import useReqBusApi from '@/infrastructure/http/bus/reqBusApi'
 import { useCustomLayerStore } from '@/infrastructure/stores/customLayerStateStore'
 import useMapCustomLayer from '@/infrastructure/map/mapCustomLayer'
 
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
+
+const pageOpenedTime = ref("")
 
 onMounted(() => {
+  const now = new Date()
+  const hh = String(now.getHours()).padStart(2, "0")
+  const mm = String(now.getMinutes()).padStart(2, "0")
+
+  pageOpenedTime.value = `${hh}:${mm}`
   onMountedCallback()
 })
 

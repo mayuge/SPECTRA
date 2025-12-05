@@ -3,11 +3,13 @@
     <Textarea
       :modelValue="inputValue"
       @update:modelValue="inputValue = $event"
+      @keydown.enter.prevent="submitClicked"
       :rows="2"
       placeholder="都道府県、市区町村、住所、駅、鉄道路線"
     />
     <Button
       @button-clicked="submitClicked"
+      title="テキストを入力してボタンを押してください。"
       variant="btn-primary"
       size="large"
       icon-left="send"

@@ -8,7 +8,7 @@ import useMapInstance from "@/infrastructure/map/mapInstance"
 
 import { bbox } from "@turf/turf"
 import useMapPopup from "./mapPopup"
-
+import { TRAIN_LINE_LAYER, TRAIN_STATION_LAYER } from "@/domain/params/customLayerName"
 /**
  * 地図レイヤー管理のインフラストラクチャ
  * @returns レイヤー管理関数
@@ -74,30 +74,36 @@ const useMapLayer = (): IMapLayer => {
         })
         break
       case "LineString":
-        mapInstance.addLayer({
-          id: layerId,
-          type: "line",
-          source: layerId,
-          paint: {
-            "line-color": color,
-            "line-width": 3,
-            "line-gap-width": 5,
+        mapInstance.addLayer(
+          {
+            id: layerId,
+            type: "line",
+            source: layerId,
+            paint: {
+              "line-color": color,
+              "line-width": 3,
+              "line-gap-width": 5,
+            },
+            layout: { visibility: "visible" },
           },
-          layout: { visibility: "visible" },
-        })
+          TRAIN_STATION_LAYER
+        )
         break
       case "Polygon":
-        mapInstance.addLayer({
-          id: layerId,
-          type: "fill",
-          source: layerId,
-          paint: {
-            "fill-color": color,
-            "fill-opacity": 0.4,
-            "fill-outline-color": color,
+        mapInstance.addLayer(
+          {
+            id: layerId,
+            type: "fill",
+            source: layerId,
+            paint: {
+              "fill-color": color,
+              "fill-opacity": 0.4,
+              "fill-outline-color": color,
+            },
+            layout: { visibility: "visible" },
           },
-          layout: { visibility: "visible" },
-        })
+          TRAIN_LINE_LAYER
+        )
         break
     }
     addHoverPopup(layerId)

@@ -7,6 +7,7 @@
     </div>
     <div
       class="flex items-center w-[80%] rounded-b-md px-2 gap-2"
+      title="対象のレイヤーを表示切り替えできます。"
       :class="iconState ? 'bg-primary text-black border-t border-gray-50' : 'bg-gray-20 text-white'"
       @click="toggleClicked()"
     >

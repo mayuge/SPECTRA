@@ -81,7 +81,6 @@ const useChatPanelApp = (
     }
     addChatMessage(suggestMessage)
     try {
-      console.log(url)
       const suggestGeojson: Feature | FeatureCollection | null = await getSuggestData(url)
       // すべてのgeojsonをFeatureCollectionとみなし、データ型を定義
       let geojson: FeatureCollection
