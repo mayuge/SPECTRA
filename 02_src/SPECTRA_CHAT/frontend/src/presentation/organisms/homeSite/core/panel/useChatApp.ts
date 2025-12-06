@@ -1,14 +1,14 @@
 import type { IChatState } from "@/domain/interfaces/IChatState"
 import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
-
+import type { IGeojsonState } from "@/domain/interfaces/IGeojsonState"
 /**
  * チャットアプリ全体を管理するコアロジック
  * @source
  */
-const useChatApp = (chatState: IChatState, mapLayer: IMapLayer) => {
+const useChatApp = (chatState: IChatState, mapLayer: IMapLayer, geojsonState: IGeojsonState) => {
   const { getChatMessageList } = chatState
-  const { toggleLayer, frontToLayer, backToLayer } = mapLayer
-
+  const { toggleLayer, frontToLayer, backToLayer, setLayerOpacity, setLayerColor } = mapLayer
+  const { getGeojsonColorbyIndex } = geojsonState
   /**
    * 連番のidからgeojsonレイヤーを特定し、トグルする
    * @param index number
@@ -33,7 +33,27 @@ const useChatApp = (chatState: IChatState, mapLayer: IMapLayer) => {
    */
   const backToResponseLayer = (index: number) => {
     const layerId = `geojson-layer-${index}`
+    console.log(layerId)
     backToLayer(layerId)
+  }
+
+  /**
+   * 透明度をレイヤーidで指定
+   * @param index
+   */
+  const setOpacityByIndex = (index: number, opacity: number) => {
+    const layerId = `geojson-layer-${index}`
+    setLayerOpacity(layerId, opacity)
+  }
+
+  /**
+   * レイヤー色をレイヤーidで指定
+   * @params index
+   */
+  const setColorByIndex = (index: number, color: string) => {
+    const layerId = `geojson-layer-${index}`
+    console.log(layerId, color)
+    setLayerColor(layerId, color)
   }
 
   /**
@@ -58,6 +78,9 @@ const useChatApp = (chatState: IChatState, mapLayer: IMapLayer) => {
     toggleResponseLayer,
     frontToResponseLayer,
     backToResponseLayer,
+    setOpacityByIndex,
+    setColorByIndex,
+    getGeojsonColorbyIndex,
   }
 }
 

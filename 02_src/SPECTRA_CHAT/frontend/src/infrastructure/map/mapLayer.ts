@@ -2,12 +2,15 @@ import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
 import type { FeatureCollection, Feature, Geometry } from "geojson"
 import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
 import type { IMapPopup } from "@/domain/interfaces/IMapPopup"
+import type { IGeojsonState } from "@/domain/interfaces/IGeojsonState"
 
 import maplibregl from "maplibre-gl"
-import useMapInstance from "@/infrastructure/map/mapInstance"
-
 import { bbox } from "@turf/turf"
-import useMapPopup from "./mapPopup"
+
+import useMapInstance from "@/infrastructure/map/mapInstance"
+import useMapPopup from "@/infrastructure/map/mapPopup"
+import { useGeojsonStateStore } from "@/infrastructure/stores/geojsonStateStore"
+
 import { TRAIN_LINE_LAYER, TRAIN_STATION_LAYER } from "@/domain/params/customLayerName"
 /**
  * 地図レイヤー管理のインフラストラクチャ
@@ -47,8 +50,11 @@ const useMapLayer = (): IMapLayer => {
   ) => {
     const { getMapInstance } = useMapInstance() as IMapInstance
     const { addHoverPopup } = useMapPopup() as IMapPopup
+    const { setColor } = useGeojsonStateStore() as IGeojsonState
     const mapInstance = getMapInstance()
+
     const color = getLayerColor(layerId, sharedColor)
+    setColor(color)
 
     if (mapInstance.getSource(layerId)) {
       ;(mapInstance.getSource(layerId) as any).setData(featureCollection)
@@ -213,9 +219,6 @@ const useMapLayer = (): IMapLayer => {
     const index = layers.findIndex((l) => l.id === layerId)
     if (index < 0 || index >= layers.length - 1) return // これ以上上に行けない
 
-    // 今より1つ上のレイヤー
-    const nextLayerId = layers[index + 1].id
-
     // さらに1つ上があるならそこへ移動、なければ最前面へ
     const beforeId = layers[index + 2]?.id ?? undefined
 
@@ -223,7 +226,64 @@ const useMapLayer = (): IMapLayer => {
     map.moveLayer(layerId, beforeId)
   }
 
-  return { addGeoJsonLayer, toggleLayer, backToLayer, frontToLayer }
+  /**
+   * 透明度を指定
+   * @param layerId
+   * @param opacity
+   */
+  const setLayerOpacity = (layerId: string, opacity: number) => {
+    const { getMapInstance } = useMapInstance() as IMapInstance
+    const map = getMapInstance()
+    if (!map) return
+
+    const layer = map.getLayer(layerId)
+    if (!layer) return
+
+    const type = layer.type
+    switch (type) {
+      case "circle":
+        map.setPaintProperty(layerId, "circle-opacity", opacity)
+        map.setPaintProperty(layerId, "circle-stroke-opacity", opacity)
+        break
+      case "line":
+        map.setPaintProperty(layerId, "line-opacity", opacity)
+        break
+      case "fill":
+        map.setPaintProperty(layerId, "fill-opacity", opacity)
+        break
+    }
+  }
+
+  /**
+   * 色を指定
+   * @param layerId
+   * @param color
+   */
+  const setLayerColor = (layerId: string, color: string) => {
+    const { getMapInstance } = useMapInstance() as IMapInstance
+    const map = getMapInstance()
+    if (!map) return
+
+    const layer = map.getLayer(layerId)
+    if (!layer) return
+
+    const type = layer.type
+    switch (type) {
+      case "circle":
+        map.setPaintProperty(layerId, "circle-color", color)
+        map.setPaintProperty(layerId, "circle-stroke-color", color)
+        break
+      case "line":
+        map.setPaintProperty(layerId, "line-color", color)
+        break
+      case "fill":
+        map.setPaintProperty(layerId, "fill-color", color)
+        map.setPaintProperty(layerId, "fill-outline-color", color)
+        break
+    }
+  }
+
+  return { addGeoJsonLayer, toggleLayer, backToLayer, frontToLayer, setLayerOpacity, setLayerColor }
 }
 
 export default useMapLayer

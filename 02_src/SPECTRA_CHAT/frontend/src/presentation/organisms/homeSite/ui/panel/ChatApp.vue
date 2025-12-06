@@ -5,9 +5,12 @@
       v-else-if="obj.type === 'response'"
       :text="obj.message"
       :responseId="getResponseIndex(index)"
+      :layerColor="getGeojsonColorbyIndex(getResponseIndex(index))"
       @toggle-clicked="toggleResponseLayer(getResponseIndex(index))"
       @front-to-clicked="frontToResponseLayer(getResponseIndex(index))"
       @back-to-clicked="backToResponseLayer(getResponseIndex(index))"
+      @on-color-input="setColorByIndex(getResponseIndex(index), $event)"
+      @on-slider-input="setOpacityByIndex(getResponseIndex(index), $event)"
     />
     <ErrorChat v-else-if="obj.type === 'error'" :text="obj.message" />
   </div>
@@ -17,9 +20,11 @@
 import { computed  } from "vue"
 import type { IChatState } from "@/domain/interfaces/IChatState"
 import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
+import type { IGeojsonState } from "@/domain/interfaces/IGeojsonState"
 
 import { useChatStateStore } from "@/infrastructure/stores/chatStateStore"
 import useMapLayer from "@/infrastructure/map/mapLayer"
+import { useGeojsonStateStore } from "@/infrastructure/stores/geojsonStateStore"
 import useChatApp from "@/presentation/organisms/homeSite/core/panel/useChatApp"
 
 import RequestChat from "@/presentation/molecules/frame/RequestChat.vue"
@@ -32,9 +37,13 @@ const {
   toggleResponseLayer,
   frontToResponseLayer,
   backToResponseLayer,
+  setOpacityByIndex,
+  setColorByIndex,
+  getGeojsonColorbyIndex
 } = useChatApp(
   useChatStateStore() as IChatState,
-  useMapLayer() as IMapLayer
+  useMapLayer() as IMapLayer,
+  useGeojsonStateStore() as IGeojsonState
 )
 
 const emit = defineEmits(['retry-clicked'])

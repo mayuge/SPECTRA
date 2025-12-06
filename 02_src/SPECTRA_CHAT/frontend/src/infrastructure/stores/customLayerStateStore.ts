@@ -25,6 +25,14 @@ export const useCustomLayerStore = defineStore<"customLayerStateStore", ICustomL
         type: "FeatureCollection",
         features: [],
       },
+      "toei-bus-point-layer": {
+        type: "FeatureCollection",
+        features: [],
+      },
+      "toei-bus-line-layer": {
+        type: "FeatureCollection",
+        features: [],
+      },
     })
 
     const setCustomLayerGeojson = (

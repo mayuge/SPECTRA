@@ -235,6 +235,18 @@ flowchart TD
 uv run ruff format
 ```
 
+# postgres に入るコマンド
+
+```
+docker exec -it postgis_container psql -U docker -d postgres
+```
+
+## テーブル名一覧取得
+
+```
+\dt
+```
+
 ```mermaid
 flowchart TD
 
@@ -273,3 +285,7 @@ flowchart TD
 - TSDoc 形式で書かれた ts ファイルのコメントが反映される
 - [TSDoc 形式とは](https://dev.classmethod.jp/articles/jsdoc-cheatsheet/)
 - 自動でドキュメントを生成する
+
+```
+
+```
