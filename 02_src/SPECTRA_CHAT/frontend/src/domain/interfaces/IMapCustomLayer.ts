@@ -17,5 +17,8 @@ export interface IMapCustomLayer {
   getPopulationMeshLayerVisibility: () => boolean
   addSatelliteLayer: () => void
   toggleSatelliteLayer: () => void
-  getSatelliteLayerVisiblity: () => boolean
+  getSatelliteLayerVisibility: () => boolean
+  getFloodHazardLayerVisiblility: () => boolean
+  toggleFloodHazardLayer: () => void
+  addFloodHazardLayer: () => void
 }

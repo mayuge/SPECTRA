@@ -25,16 +25,16 @@ const useMapBusLayer = (): IMapBusLayer => {
   let popup: maplibregl.Popup | null = null
 
   const map = getMapInstance()
-  const busLayerVisiblity = ref<boolean>(true)
+  const busLayerVisibility = ref<boolean>(true)
 
   const toggleBusLayer = (): void => {
     toggleLayer(TOEI_BUS_POINT_LAYER)
-    busLayerVisiblity.value = !busLayerVisiblity.value
+    busLayerVisibility.value = !busLayerVisibility.value
     if (updateOverlay) updateOverlay() // ← 即時反映
   }
 
   const getBusLayerVisibility = (): boolean => {
-    return busLayerVisiblity.value
+    return busLayerVisibility.value
   }
 
   let updateOverlay: (() => void) | null = null
@@ -54,7 +54,7 @@ const useMapBusLayer = (): IMapBusLayer => {
 
     updateOverlay = () => {
       const zoom = map.getZoom()
-      if (busLayerVisiblity.value && zoom >= 14 && !overlay) {
+      if (busLayerVisibility.value && zoom >= 14 && !overlay) {
         overlay = new MapboxOverlay({
           interleaved: true,
           layers: [

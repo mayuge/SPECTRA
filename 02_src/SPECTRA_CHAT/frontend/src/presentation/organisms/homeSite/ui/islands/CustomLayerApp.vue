@@ -53,6 +53,15 @@
         text="国勢調査メッシュ2020"
         @button-clicked="togglePopulationMeshLayer"
       />
+      <Button
+        title="クリックで洪水浸水想定区域（想定最大規模）レイヤーを表示切替できます。"
+        :variant="getFloodHazardLayerVariant()"
+        size="small"
+        shape="square"
+        iconLeft="flood"
+        text="洪水浸水想定区域（想定最大規模）"
+        @button-clicked="toggleFloodHazardLayer"
+      />
     </div>
   </div>
 </template>
@@ -95,11 +104,13 @@ const {
   toggleBusLayer,
   togglePopulationMeshLayer,
   toggleSatelliteLayer,
+  toggleFloodHazardLayer,
   getTrainLayerVariant,
   getCycleLayerVariant,
   getBusLayerVariant,
   getPopulationMeshLayerVariant,
-  getSatelliteLayerVariant
+  getSatelliteLayerVariant,
+  getFloodHazardLayerVariant,
 } = useCustomLayerApp(
     useReqTrainApi() as IReqTrainApi,
     useReqCycleApi() as IReqCycleApi,

@@ -1,5 +1,8 @@
 export interface IMapRasterLayer {
   addSatelliteLayer: () => void
   toggleSatelliteLayer: () => void
-  getSatelliteLayerVisiblity: () => boolean
+  getSatelliteLayerVisibility: () => boolean
+  getFloodHazardLayerVisiblility: () => boolean
+  toggleFloodHazardLayer: () => void
+  addFloodHazardLayer: () => void
 }

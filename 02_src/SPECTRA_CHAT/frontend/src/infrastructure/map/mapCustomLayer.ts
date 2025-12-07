@@ -34,7 +34,14 @@ const useMapCustomLayer = (): IMapCustomLayer => {
   const { addPopulationMeshLayer, togglePopulationMeshLayer, getPopulationMeshLayerVisibility } =
     mapPopulationMeshLayer
 
-  const { addSatelliteLayer, toggleSatelliteLayer, getSatelliteLayerVisiblity } = mapRasterLayer
+  const {
+    addSatelliteLayer,
+    toggleSatelliteLayer,
+    getSatelliteLayerVisibility,
+    getFloodHazardLayerVisiblility,
+    toggleFloodHazardLayer,
+    addFloodHazardLayer,
+  } = mapRasterLayer
 
   return {
     addTrainStationLayer,
@@ -54,7 +61,10 @@ const useMapCustomLayer = (): IMapCustomLayer => {
     getPopulationMeshLayerVisibility,
     addSatelliteLayer,
     toggleSatelliteLayer,
-    getSatelliteLayerVisiblity,
+    getSatelliteLayerVisibility,
+    getFloodHazardLayerVisiblility,
+    toggleFloodHazardLayer,
+    addFloodHazardLayer,
   }
 }
 

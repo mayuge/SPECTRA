@@ -7,14 +7,16 @@ import useMapLayer from "@/infrastructure/map/mapLayer"
 
 import { ref } from "vue"
 
-import { SATELLITE_LAYER } from "@/domain/params/customLayerName"
+import { SATELLITE_LAYER, FLOOD_HAZARD_LAYER } from "@/domain/params/customLayerName"
 
 const useMapRasterLayer = (): IMapRasterLayer => {
   const { toggleLayer } = useMapLayer() as IMapLayer
 
-  const satelliteLayerVisiblity = ref<boolean>(false)
+  const satelliteLayerVisibility = ref<boolean>(false)
+  const floodHazardLayerVisibility = ref<boolean>(false)
 
-  const getSatelliteLayerVisiblity = () => satelliteLayerVisiblity.value
+  const getSatelliteLayerVisibility = () => satelliteLayerVisibility.value
+  const getFloodHazardLayerVisiblility = () => floodHazardLayerVisibility.value
 
   /**
    * 汎用 Raster Layer 追加
@@ -27,7 +29,8 @@ const useMapRasterLayer = (): IMapRasterLayer => {
       maxzoom?: number
       opacity?: number
       visibility?: "visible" | "none"
-      beforeId?: string // ← ★ 追加
+      beforeId?: string
+      attribution?: string
     }
   ) => {
     const { getMapInstance } = useMapInstance() as IMapInstance
@@ -45,6 +48,7 @@ const useMapRasterLayer = (): IMapRasterLayer => {
         tileSize: 512,
         minzoom: options?.minzoom ?? 0,
         maxzoom: options?.maxzoom ?? 18,
+        attribution: options?.attribution,
       })
     }
 
@@ -77,22 +81,49 @@ const useMapRasterLayer = (): IMapRasterLayer => {
         opacity: 1,
         visibility: "none",
         beforeId: "island-takeshima-poi",
+        attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院</a>',
       }
     )
   }
-
+  /**
+   * 洪水浸水想定区域（想定最大規模）レイヤー
+   */
+  const addFloodHazardLayer = () => {
+    addRasterLayer(
+      FLOOD_HAZARD_LAYER,
+      "https://disaportaldata.gsi.go.jp/raster/01_flood_l2_shinsuishin_data/{z}/{x}/{y}.png",
+      {
+        maxzoom: 17,
+        opacity: 1,
+        visibility: "none",
+        beforeId: "island-takeshima-poi",
+        attribution:
+          '<a href="https://disaportal.gsi.go.jp/hazardmap/copyright/opendata.html#l2shinsuishin">ハザードマップポータルサイト</a>',
+      }
+    )
+  }
   /**
    * 衛星画像レイヤーの表示切替
    */
   const toggleSatelliteLayer = () => {
     toggleLayer(SATELLITE_LAYER)
-    satelliteLayerVisiblity.value = !satelliteLayerVisiblity.value
+    satelliteLayerVisibility.value = !satelliteLayerVisibility.value
+  }
+  /**
+   * 洪水浸水想定区域（想定最大規模）レイヤーの表示切替
+   */
+  const toggleFloodHazardLayer = () => {
+    toggleLayer(FLOOD_HAZARD_LAYER)
+    floodHazardLayerVisibility.value = !floodHazardLayerVisibility.value
   }
 
   return {
-    getSatelliteLayerVisiblity,
+    getSatelliteLayerVisibility,
+    getFloodHazardLayerVisiblility,
     addSatelliteLayer,
+    addFloodHazardLayer,
     toggleSatelliteLayer,
+    toggleFloodHazardLayer,
   }
 }
 

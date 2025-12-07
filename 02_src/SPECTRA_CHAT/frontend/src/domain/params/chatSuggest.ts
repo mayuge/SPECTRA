@@ -9,6 +9,10 @@ export const CHAT_SUGGEST_LIST: SuggestType[] = [
   },
   { text: "渋谷駅", url: `${import.meta.env.VITE_TRAIN_STATION_DETAIL_URL}渋谷` },
   { text: "すべての駅", url: `${import.meta.env.VITE_TRAIN_STATION_URL}` },
+  {
+    text: "さいたま市にある駅",
+    url: `${import.meta.env.VITE_CITY_URL}さいたま市/overlaps/unkohonsu2024_rosen_eki`,
+  },
   { text: "駅から徒歩10分圏内", url: `${import.meta.env.VITE_TRAIN_STATION_BUFFER}800` },
   { text: "山手線", url: `${import.meta.env.VITE_TRAIN_LINE_DETAIL_URL}山手線` },
   { text: "すべての鉄道路線", url: `${import.meta.env.VITE_TRAIN_LINE_URL}` },

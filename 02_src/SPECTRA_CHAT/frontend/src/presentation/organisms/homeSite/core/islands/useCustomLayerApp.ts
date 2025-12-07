@@ -50,7 +50,10 @@ const useCustomLayerApp = (
     getTrainLayerVisibility,
     getBusLayerVisibility,
     getPopulationMeshLayerVisibility,
-    getSatelliteLayerVisiblity,
+    getSatelliteLayerVisibility,
+    getFloodHazardLayerVisiblility,
+    toggleFloodHazardLayer,
+    addFloodHazardLayer,
   } = mapCustomerLayer
 
   /**
@@ -67,6 +70,7 @@ const useCustomLayerApp = (
       await setToeiBusPointLayer()
       addPopulationMeshLayer()
       addSatelliteLayer()
+      addFloodHazardLayer()
     } catch (error) {
       console.error(error)
     }
@@ -106,7 +110,12 @@ const useCustomLayerApp = (
 
   /**衛星写真レイヤーのバリアント */
   const getSatelliteLayerVariant = (): ButtonVariantType => {
-    return getSatelliteLayerVisiblity() ? BUTTON_LIGHT : BUTTON_DARK
+    return getSatelliteLayerVisibility() ? BUTTON_LIGHT : BUTTON_DARK
+  }
+
+  /**洪水浸水想定区域（想定最大規模）レイヤーのバリアント */
+  const getFloodHazardLayerVariant = (): ButtonVariantType => {
+    return getFloodHazardLayerVisiblility() ? BUTTON_LIGHT : BUTTON_DARK
   }
 
   /**
@@ -187,11 +196,13 @@ const useCustomLayerApp = (
     toggleBusLayer,
     togglePopulationMeshLayer,
     toggleSatelliteLayer,
+    toggleFloodHazardLayer,
     getTrainLayerVariant,
     getCycleLayerVariant,
     getBusLayerVariant,
     getPopulationMeshLayerVariant,
     getSatelliteLayerVariant,
+    getFloodHazardLayerVariant,
   }
 }
 
