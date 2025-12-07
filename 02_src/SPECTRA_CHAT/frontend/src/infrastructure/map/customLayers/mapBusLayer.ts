@@ -80,8 +80,8 @@ const useMapBusLayer = (): IMapBusLayer => {
                 if (info.object) {
                   const hoverHtml = generateHoverHtml(info.object)
                   popup = new maplibregl.Popup({
-                    closeButton: false,
-                    closeOnClick: false,
+                    closeButton: true,
+                    closeOnClick: true,
                     maxWidth: "1000px",
                   })
                   //@ts-ignore
