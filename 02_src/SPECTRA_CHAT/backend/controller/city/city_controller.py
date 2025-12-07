@@ -16,6 +16,28 @@ async def get_city_by_name(city_name: str, request: Request):
     print(f"Received city_name: {decoded_name}")
     return await city_repository.get_city_by_name(decoded_name, request)
 
+#市区町村名を基準に他のデータを取得したい場合
+@router.get("/city/{city_name}/overlaps/{table_name}",
+                operation_id="getCityOverlapsByTable",
+    tags=["city"])
+async def get_city_overlaps_by_table(city_name: str, table_name: str, request: Request):
+    """
+    市区町村を基準にして、地理的に重なっているデータを選んで取得する
+    チャットの例:'横浜市にある駅を取得'
+
+    地価データのテーブル名は、l02_25
+    スーパーマーケットのテーブル名は、supermarkets_japan
+    駅のテーブル名は、unkohonsu2024_rosen_eki
+    鉄道路線のテーブル名は、unkohonsu2024_rosen_kukan 
+    """
+    city_name = unquote(city_name)
+    table_name = unquote(table_name)
+    return await city_repository.get_overlaps_by_table(
+        city_name,
+        table_name,
+        request
+    )
+
 #　都道府県名で取得
 @router.get("/prefecture/{prefecture_name}")
 async def get_prefecture_by_name(prefecture_name: str, request: Request):

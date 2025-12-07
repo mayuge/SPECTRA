@@ -94,8 +94,8 @@ const useMapPopup = (): IMapPopup => {
     if (!map) return
 
     const popup = new maplibregl.Popup({
-      closeButton: false,
-      closeOnClick: false,
+      closeButton: true,
+      closeOnClick: true,
       maxWidth: "1000px",
     })
 
