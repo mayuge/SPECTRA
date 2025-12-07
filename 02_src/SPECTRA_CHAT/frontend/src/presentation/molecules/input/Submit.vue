@@ -1,0 +1,34 @@
+<template>
+  <div class="flex items-center gap-2 p-2 w-full bg-white border-t border-gray-80">
+    <Textarea
+      :modelValue="inputValue"
+      @update:modelValue="inputValue = $event"
+      @keydown.enter.prevent="submitClicked"
+      :rows="2"
+      placeholder="都道府県、市区町村、住所、駅、鉄道路線"
+    />
+    <Button
+      @button-clicked="submitClicked"
+      title="テキストを入力してボタンを押してください。"
+      variant="btn-primary"
+      size="large"
+      icon-left="send"
+      shape="circle"
+      :isBorder="true"
+    />
+  </div>
+</template>
+
+<script setup lang="ts">
+import Button from "@/presentation/atoms/buttons/Button.vue"
+import Textarea from "@/presentation/atoms/inputs/Textarea.vue"
+import { ref } from "vue"
+
+const inputValue = ref("")
+const emit = defineEmits(["submit-button-clicked"])
+
+const submitClicked = () => {
+  emit("submit-button-clicked", inputValue.value)
+  inputValue.value = ""
+}
+</script>

@@ -100,7 +100,7 @@
 │   └── SPECTRA_CHAT //アプリケーションディレクトリ
 │       ├── frontend
 │       │   ├── src
-│       │   │   ├── components
+│       │   │   ├── presentation
 │       │   │   │   ├── atoms //最小単位のUIコンポーネント　htmlのタグと対応　どのページでも使い回す
 │       │   │   │   ├── molecules //atomsを組み合わせたもの　どのページでも使い回す
 │       │   │   │   ├── organisms　// ページ単位でに管理するUIコンポーネント
@@ -231,6 +231,22 @@ flowchart TD
 - 基本的にはフロントエンドと同じ。
 - ruff コマンドを使ってインデントを修正できる
 
+```
+uv run ruff format
+```
+
+# postgres に入るコマンド
+
+```
+docker exec -it postgis_container psql -U docker -d postgres
+```
+
+## テーブル名一覧取得
+
+```
+\dt
+```
+
 ```mermaid
 flowchart TD
 
@@ -269,3 +285,7 @@ flowchart TD
 - TSDoc 形式で書かれた ts ファイルのコメントが反映される
 - [TSDoc 形式とは](https://dev.classmethod.jp/articles/jsdoc-cheatsheet/)
 - 自動でドキュメントを生成する
+
+```
+
+```

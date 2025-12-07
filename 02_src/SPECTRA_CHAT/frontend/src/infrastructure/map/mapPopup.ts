@@ -5,6 +5,7 @@ import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
 import type { IMapPopup } from "@/domain/interfaces/IMapPopup"
 
 import trainParams from "@/domain/params/trainParams.json"
+import popupKeyParams from "@/domain/params/popupKeyParams.json"
 
 /**
  * 地図上のポップアップを管理するカスタムフック
@@ -32,6 +33,11 @@ const useMapPopup = (): IMapPopup => {
     return trainParams[companyName]?.[lineName] ?? "#808080"
   }
 
+  /** キーだけ変換する関数 */
+  const convertKey = (key: string): string => {
+    return popupKeyParams[key] ?? key
+  }
+
   /**
    * 汎用ポップアップを追加
    * @param layerId MapLibre GL のレイヤーID
@@ -51,26 +57,32 @@ const useMapPopup = (): IMapPopup => {
       if (!feature) return
 
       const featureProperties = feature.properties ?? {}
+      const hoverHtml = generateHoverHtml(featureProperties)
 
-      const htmlRows = Object.entries(featureProperties)
-        .map(
-          ([key, value]) =>
-            `<tr>
-              <th style="border:1px solid #ccc; padding:2px 4px; background:#f5f5f5;">${key}</th>
-              <td style="border:1px solid #ccc; padding:2px 4px;">${value}</td>
-            </tr>`
-        )
-        .join("")
-
-      popup
-        .setLngLat(event.lngLat)
-        .setHTML(
-          `<table style="font-size:12px; border-collapse:collapse; background:white;">${htmlRows}</table>`
-        )
-        .addTo(map)
+      popup.setLngLat(event.lngLat).setHTML(hoverHtml).addTo(map)
     })
 
     map.on("mouseleave", layerId, () => popup.remove())
+  }
+
+  /**
+   * feature から汎用 HTML を作る関数（table タグ付き）
+   * Deck.gl でも MapLibre GL でも使える
+   */
+  const generateHoverHtml = (featureProperties: Record<string, any>): string => {
+    if (!featureProperties) return ""
+
+    const rows = Object.entries(featureProperties)
+      .map(
+        ([key, value]) =>
+          `<tr>
+          <th style="border:1px solid #ccc; padding:2px 4px; background:#f5f5f5;">${convertKey(key)}</th>
+          <td style="border:1px solid #ccc; padding:2px 4px;">${value}</td>
+        </tr>`
+      )
+      .join("")
+
+    return `<table style="font-size:12px; border-collapse:collapse; background:white;">${rows}</table>`
   }
 
   /**
@@ -194,6 +206,7 @@ const useMapPopup = (): IMapPopup => {
     addHoverPopup,
     addTrainStationHoverPopup,
     addTrainLineHoverPopup,
+    generateHoverHtml,
   }
 }
 
