@@ -100,7 +100,7 @@
 │   └── SPECTRA_CHAT //アプリケーションディレクトリ
 │       ├── frontend
 │       │   ├── src
-│       │   │   ├── components
+│       │   │   ├── presentation
 │       │   │   │   ├── atoms //最小単位のUIコンポーネント　htmlのタグと対応　どのページでも使い回す
 │       │   │   │   ├── molecules //atomsを組み合わせたもの　どのページでも使い回す
 │       │   │   │   ├── organisms　// ページ単位でに管理するUIコンポーネント
