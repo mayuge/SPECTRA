@@ -1,6 +1,7 @@
 import type { IChatState } from "@/domain/interfaces/IChatState"
 import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
 import type { IGeojsonState } from "@/domain/interfaces/IGeojsonState"
+
 /**
  * チャットアプリ全体を管理するコアロジック
  * @source

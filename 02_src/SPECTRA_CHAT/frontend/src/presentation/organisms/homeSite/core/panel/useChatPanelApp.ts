@@ -4,6 +4,7 @@ import type { IReqSuggestApi } from "@/domain/interfaces/IReqSuggestApi"
 import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
 import type { IChatState } from "@/domain/interfaces/IChatState"
 import type { IGeojsonState } from "@/domain/interfaces/IGeojsonState"
+import type { ILoadingState } from "@/domain/interfaces/ILoadingState"
 
 import type { DialogNameType } from "@/domain/types/dialogNameType"
 import type { ChatType } from "@/domain/types/chatType"
@@ -21,7 +22,8 @@ const useChatPanelApp = (
   reqSuggestApi: IReqSuggestApi,
   mapLayer: IMapLayer,
   chatState: IChatState,
-  geojsonState: IGeojsonState
+  geojsonState: IGeojsonState,
+  loadingState: ILoadingState
 ) => {
   const { getDialogState, setDialogState, toggleDialogState } = dialogState
   const { sendChatMessage } = reqChatApi
@@ -29,7 +31,7 @@ const useChatPanelApp = (
   const { addGeoJsonLayer } = mapLayer
   const { addChatMessage, getChatMessageList } = chatState
   const { setGeojson, getLastGeojson } = geojsonState
-
+  const { startLoading, stopLoading, getIsLoading } = loadingState
   /**
    * メインパネルの開閉状態取得
    */
@@ -70,6 +72,7 @@ const useChatPanelApp = (
   }
 
   const suggestButtonClicked = async (suggest: SuggestType) => {
+    startLoading()
     const url = suggest.url
     const message = suggest.text
     // メッセージ送信後にメインパネルを開く
@@ -103,11 +106,13 @@ const useChatPanelApp = (
 
       //responseタイプのチャットをストアに追加
       addChatMessage(responseMessage)
+      stopLoading()
     } catch (error) {
       const errorMessage: ChatType = { type: "error", message: error, isdata: false }
 
       //エラー発生時、errorタイプのチャットをストアに追加
       addChatMessage(errorMessage)
+      stopLoading()
     }
   }
   /**
@@ -142,6 +147,7 @@ const useChatPanelApp = (
       return
     }
 
+    startLoading()
     // メッセージ送信後にメインパネルを開く
     openMainPanel()
 
@@ -179,11 +185,13 @@ const useChatPanelApp = (
 
       //responseタイプのチャットをストアに追加
       addChatMessage(responseMessage)
+      stopLoading()
     } catch (error) {
       const errorMessage: ChatType = { type: "error", message: error, isdata: false }
 
       //エラー発生時、errorタイプのチャットをストアに追加
       addChatMessage(errorMessage)
+      stopLoading()
     }
   }
 
@@ -194,6 +202,7 @@ const useChatPanelApp = (
     submitButtonClicked,
     suggestButtonClicked,
     isBlankChat,
+    getIsLoading,
   }
 }
 export default useChatPanelApp

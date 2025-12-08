@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
 import type { TextareaShapeType } from "@/domain/types/atomsType"
-import { computed, defineProps, defineEmits } from "vue"
+import { computed } from "vue"
 
 type Props = {
   placeholder?: string

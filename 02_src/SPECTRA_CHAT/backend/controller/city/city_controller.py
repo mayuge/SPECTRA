@@ -17,9 +17,7 @@ async def get_city_by_name(city_name: str, request: Request):
     return await city_repository.get_city_by_name(decoded_name, request)
 
 #市区町村名を基準に他のデータを取得したい場合
-@router.get("/city/{city_name}/overlaps/{table_name}",
-                operation_id="getCityOverlapsByTable",
-    tags=["city"])
+@router.get("/city/{city_name}/overlaps/{table_name}",operation_id="getCityOverlapsByTable",tags=["city"])
 async def get_city_overlaps_by_table(city_name: str, table_name: str, request: Request):
     """
     市区町村を基準にして、地理的に重なっているデータを選んで取得する

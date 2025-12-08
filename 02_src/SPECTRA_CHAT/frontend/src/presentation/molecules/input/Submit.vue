@@ -15,6 +15,16 @@
       icon-left="send"
       shape="circle"
       :isBorder="true"
+      v-if="!isLoading"
+    />
+    <Button
+      title="チャットの返答のためにサーバーにアクセスしています。お待ちください。"
+      variant="btn-dark"
+      size="large"
+      icon-left="stop"
+      shape="circle"
+      :isBorder="true"
+      v-if="isLoading"
     />
   </div>
 </template>
@@ -22,7 +32,14 @@
 <script setup lang="ts">
 import Button from "@/presentation/atoms/buttons/Button.vue"
 import Textarea from "@/presentation/atoms/inputs/Textarea.vue"
+import type { PropType } from "vue"
 import { ref } from "vue"
+defineProps({
+  isLoading:{
+    type:Boolean as PropType<boolean>,
+    required:true
+  }
+})
 
 const inputValue = ref("")
 const emit = defineEmits(["submit-button-clicked"])

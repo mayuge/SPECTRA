@@ -27,6 +27,7 @@ import useMapLayer from "@/infrastructure/map/mapLayer"
 import { useGeojsonStateStore } from "@/infrastructure/stores/geojsonStateStore"
 import useChatApp from "@/presentation/organisms/homeSite/core/panel/useChatApp"
 
+
 import RequestChat from "@/presentation/molecules/frame/RequestChat.vue"
 import ResponseChat from "@/presentation/molecules/frame/ResponseChat.vue"
 import ErrorChat from "@/presentation/molecules/frame/ErrorChat.vue"
@@ -43,7 +44,7 @@ const {
 } = useChatApp(
   useChatStateStore() as IChatState,
   useMapLayer() as IMapLayer,
-  useGeojsonStateStore() as IGeojsonState
+  useGeojsonStateStore() as IGeojsonState,
 )
 
 const emit = defineEmits(['retry-clicked'])
