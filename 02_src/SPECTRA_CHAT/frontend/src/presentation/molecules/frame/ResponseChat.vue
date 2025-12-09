@@ -2,7 +2,7 @@
   <div class="flex justify-start w-full p-2 text-xs gap-1">
     <div class="flex flex-col w-[80%]">
       <div
-        class="relative bg-gray-90 flex justify-center text-black rounded-t-md px-2 py-9 whitespace-normal"
+        class="relative bg-gray-90 flex justify-center text-black rounded-t-md px-4 py-9 whitespace-normal"
       >
         <div class="absolute top-2 left-2">
           <Color :value="layerColor" @on-change-input="onColorInput" />
