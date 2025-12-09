@@ -31,36 +31,38 @@ class OsmRepository:
         return self._convert_osm_to_geojson(osm_json)
 
     # ------------------------------------------------------------
-    # 市区町村で取得（admin_level を自動判定）
+    # 市区町村で取得
     # ------------------------------------------------------------
     async def get_osm_tag_by_city(self, tag: str, city: str, request: Request):
         key, value = self._parse_tag(tag)
 
-        # name / name:ja の両方、かつ admin_level を限定しない（検索漏れ防止）
         overpass_query = f"""
         [out:json][timeout:50];
 
         (
-          rel["name"="{city}"]["boundary"="administrative"];
-          rel["name:ja"="{city}"]["boundary"="administrative"];
+        rel["name"="{city}"]["boundary"="administrative"];
+        rel["name:ja"="{city}"]["boundary"="administrative"];
         )->.adminRel;
 
-        (.adminRel; map_to_area;)->.searchArea;
+        .adminRel map_to_area -> .searchArea;
 
         (
-          node["{key}"="{value}"](area.searchArea);
-          way["{key}"="{value}"](area.searchArea);
-          relation["{key}"="{value}"](area.searchArea);
-        );
+        node["{key}"="{value}"](area.searchArea);
+        way["{key}"="{value}"](area.searchArea);
+        relation["{key}"="{value}"](area.searchArea);
+        )->.targetData;
+
+        way(r.adminRel)->.adminWays;
+
+        (.targetData; .adminWays;);
 
         out geom qt;
         """
 
         osm_json = await self._run_overpass(overpass_query)
         return self._convert_osm_to_geojson(osm_json)
-
     # ------------------------------------------------------------
-    # 共通: key=value 形式パース
+    # key=value パース
     # ------------------------------------------------------------
     def _parse_tag(self, tag: str):
         if "=" not in tag:
@@ -71,7 +73,7 @@ class OsmRepository:
         return tag.split("=", 1)
 
     # ------------------------------------------------------------
-    # Overpass 実行（リトライ付き）
+    # Overpass API 実行（リトライ付き）
     # ------------------------------------------------------------
     async def _run_overpass(self, query: str):
         for attempt in range(3):
@@ -97,44 +99,89 @@ class OsmRepository:
         raise HTTPException(500, "Overpass API が混雑しています")
 
     # ------------------------------------------------------------
-    # OSM → GeoJSON 変換
+    # OSM → GeoJSON 変換（優先順位フィルタ入り）
     # ------------------------------------------------------------
     def _convert_osm_to_geojson(self, osm_json: dict):
-        features = []
+        polygons = []
+        lines = []
+        points = []
 
         for elem in osm_json.get("elements", []):
             elem_type = elem["type"]
 
+            # --------------------------------
             # Node → Point
+            # --------------------------------
             if elem_type == "node":
-                geometry = {
+                geom = {
                     "type": "Point",
                     "coordinates": [elem["lon"], elem["lat"]],
                 }
-
-            # Way → Polygon or LineString
-            elif elem_type == "way":
-                coords = [[p["lon"], p["lat"]] for p in elem.get("geometry", [])]
-                if len(coords) >= 4 and coords[0] == coords[-1]:
-                    geometry = {"type": "Polygon", "coordinates": [coords]}
-                else:
-                    geometry = {"type": "LineString", "coordinates": coords}
-
-            # Relation → Polygon
-            elif elem_type == "relation":
-                coords = [[p["lon"], p["lat"]] for p in elem.get("geometry", [])]
-                if len(coords) >= 4 and coords[0] == coords[-1]:
-                    geometry = {"type": "Polygon", "coordinates": [coords]}
-                else:
-                    geometry = {"type": "LineString", "coordinates": coords}
-            else:
+                points.append(self._build_feature(elem, geom))
                 continue
 
-            features.append({
-                "type": "Feature",
-                "geometry": geometry,
-                "properties": elem.get("tags", {}),
-                "id": elem.get("id"),
-            })
+            # --------------------------------
+            # Way → Polygon or LineString
+            # --------------------------------
+            if elem_type == "way":
+                coords = [[p["lon"], p["lat"]] for p in elem.get("geometry", [])]
 
-        return {"type": "FeatureCollection", "features": features}
+                if len(coords) >= 4 and coords[0] == coords[-1]:
+                    geom = {"type": "Polygon", "coordinates": [coords]}
+                    polygons.append(self._build_feature(elem, geom))
+                else:
+                    geom = {"type": "LineString", "coordinates": coords}
+                    lines.append(self._build_feature(elem, geom))
+                continue
+
+            # --------------------------------
+            # Relation → Polygon / MultiPolygon / LineString
+            # --------------------------------
+            if elem_type == "relation":
+                members = elem.get("members", [])
+                rings = []
+
+                # way の geometry を ring として使用
+                for mem in members:
+                    if mem["type"] == "way" and "geometry" in mem:
+                        coords = [[p["lon"], p["lat"]] for p in mem["geometry"]]
+                        if len(coords) >= 4 and coords[0] == coords[-1]:
+                            rings.append(coords)
+
+                if len(rings) == 1:
+                    geom = {"type": "Polygon", "coordinates": [rings[0]]}
+                    polygons.append(self._build_feature(elem, geom))
+                elif len(rings) > 1:
+                    geom = {"type": "MultiPolygon", "coordinates": [[r] for r in rings]}
+                    polygons.append(self._build_feature(elem, geom))
+                else:
+                    # 閉じていない場合は LineString として扱う
+                    coords = [[p["lon"], p["lat"]] for p in elem.get("geometry", [])]
+                    geom = {"type": "LineString", "coordinates": coords}
+                    lines.append(self._build_feature(elem, geom))
+
+        # ------------------------------------------------------------
+        # 優先順位フィルタ：Polygon ＞ Line ＞ Point
+        # ------------------------------------------------------------
+        if len(polygons) > 0:
+            selected = polygons
+        elif len(lines) > 0:
+            selected = lines
+        else:
+            selected = points
+
+        return {
+            "type": "FeatureCollection",
+            "features": selected
+        }
+
+    # ------------------------------------------------------------
+    # 共通 Feature 生成
+    # ------------------------------------------------------------
+    def _build_feature(self, elem, geometry):
+        return {
+            "type": "Feature",
+            "geometry": geometry,
+            "properties": elem.get("tags", {}),
+            "id": elem.get("id")
+        }
