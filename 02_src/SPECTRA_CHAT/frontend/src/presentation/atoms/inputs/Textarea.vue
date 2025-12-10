@@ -11,17 +11,27 @@
 
 <script setup lang="ts">
 import type { TextareaShapeType } from "@/domain/types/atomsType"
+import type { PropType } from "vue"
 import { computed } from "vue"
 
-type Props = {
-  placeholder?: string
-  rows: number
-  shape?: TextareaShapeType
-  modelValue: string
-}
 
-const props = withDefaults(defineProps<Props>(), {
-  shape: "round",
+const props = defineProps({
+  placeholder:{
+    type:String as PropType<string>,
+    default:"",
+    required:false
+  },
+  rows:{
+    type:Number as PropType<number>,
+    required:true
+  },
+  shape:{
+    type: String as PropType<TextareaShapeType>,
+    default: "round"
+  },
+  modelValue:{
+    type:String as PropType<string>
+  }
 })
 
 const emit = defineEmits(["update:modelValue"])

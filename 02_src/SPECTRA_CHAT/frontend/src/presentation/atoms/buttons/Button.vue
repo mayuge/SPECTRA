@@ -17,23 +17,36 @@
 
 <script lang="ts" setup>
 import { computed } from "vue"
+import type { PropType } from "vue"
 import type { ButtonVariantType, ButtonSizeType, ButtonShapeType } from "@/domain/types/atomsType"
 
-interface Props {
-  text?: string
-  iconLeft?: string
-  iconRight?: string
-  isShadow?: boolean
-  shape?: ButtonShapeType
-  size: ButtonSizeType
-  variant: ButtonVariantType
-}
-
-const props = withDefaults(defineProps<Props>(), {
-  shape: "round",
-  size: "normal",
-  variant: "btn-primary",
-  isShadow: false,
+const props = defineProps({
+  variant:{
+    type:String as PropType<ButtonVariantType>,
+    required:true,
+    default:"btn-primary"
+  },
+  size:{
+    type:String as PropType<ButtonSizeType>,
+    required:true,
+    default:"normal"
+  },
+  shape:{
+    type:String as PropType<ButtonShapeType>
+  },
+  text:{
+    type:String as PropType<string>,
+    default:""
+  },
+  iconLeft:{
+    type:String as PropType<string>
+  },
+  iconRight:{
+    type:String as PropType<string>
+  },
+  isShadow:{
+    type:Boolean as PropType<boolean>
+  }
 })
 
 const emit = defineEmits(['button-clicked'])
@@ -74,5 +87,5 @@ const variantClasses = computed(
 )
 const shapeClasses = computed(() => shapeStyles[props.shape ?? "round"])
 const paddingClasses = computed(() => paddingSize[props.size ?? "normal"])
-const shadowClass = computed(() => (props.isShadow ? "shadow-md shadow-black" : ""))
+const shadowClass = computed(() => (props.isShadow ? "shadow-md shadow-black/50" : ""))
 </script>

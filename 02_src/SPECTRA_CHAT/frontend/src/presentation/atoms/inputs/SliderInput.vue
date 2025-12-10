@@ -14,14 +14,15 @@
 </template>
 
 <script setup lang="ts">
+import type { PropType } from 'vue'
 const props = defineProps({
-  value: Number,
+  value: Number as PropType<number>,
 });
-const emit = defineEmits(["on-change-input"]);
+const emit = defineEmits(["on-change-input"])
 
 const onChange = (e: Event) => {
-  emit("on-change-input", Number((e.target as HTMLInputElement).value));
-};
+  emit("on-change-input", Number((e.target as HTMLInputElement).value))
+}
 </script>
 
 <style scoped>
