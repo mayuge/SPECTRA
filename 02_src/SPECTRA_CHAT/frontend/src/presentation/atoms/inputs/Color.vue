@@ -10,10 +10,14 @@
 </template>
 
 <script setup lang="ts">
+import type { PropType } from "vue"
 import { ref, watch } from "vue"
 
 const props = defineProps({
-  value: { type: String, default: "#ffffff" },
+  value: {
+     type: String as PropType<string>,
+     default: "#ffffff"
+    },
 })
 const emit = defineEmits(["on-change-input"])
 
@@ -21,8 +25,8 @@ const emit = defineEmits(["on-change-input"])
 const color = ref(props.value)
 
 // 親から value が変わったら color も更新
-watch(() => props.value, (v) => {
-  color.value = v
+watch(() => props.value, (value) => {
+  color.value = value
 })
 
 // 色ボックスを押すと input[type=color] を開く

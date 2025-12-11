@@ -15,37 +15,44 @@
 
 <script lang="ts" setup>
 import { computed } from "vue"
+import type { PropType } from "vue"
+import type {
+  PullTabPositionType,
+  PullTabSizeType,
+  PullTabVariantType,
+} from "@/domain/types/atomsType"
 
-type PullTabPositionType = "left" | "right" | "top" | "bottom"
-type PullTabSizeType = "mini" | "small" | "normal" | "large"
-type PullTabVariantType =
-  | "pullTab-primary"
-  | "pullTab-secondary"
-  | "pullTab-danger"
-  | "pullTab-warning"
-  | "pullTab-success"
-  | "pullTab-dark"
-  | "pullTab-light"
+const props = defineProps({
+  position: {
+    type: String as PropType<PullTabPositionType>,
+    required: true,
+  },
+  icon: {
+    type: String as PropType<string>,
+    default: "",
+  },
+  isShadow: {
+    type: Boolean as PropType<boolean>,
+    default: false,
+  },
+  size: {
+    type: String as PropType<PullTabSizeType>,
+    default: "normal",
+  },
+  variant: {
+    type: String as PropType<PullTabVariantType>,
+    default: "pullTab-primary",
+  },
+})
 
-interface Props {
-  position: PullTabPositionType
-  icon?: string
-  isShadow?: boolean
-  size?: PullTabSizeType
-  variant?: PullTabVariantType
-}
-
-const props = defineProps<Props>()
-
-const emit = defineEmits(['button-clicked'])
-
+const emit = defineEmits(["button-clicked"])
 const buttonClicked = () => {
-  emit('button-clicked')
+  emit("button-clicked")
 }
 
 const variantStyles: Record<PullTabVariantType, string> = {
   "pullTab-primary": "bg-primary text-white hover:bg-primaryDark",
-  "pullTab-secondary":"bg-secondary text-white",
+  "pullTab-secondary": "bg-secondary text-white",
   "pullTab-danger": "bg-danger text-white",
   "pullTab-warning": "bg-warning text-white",
   "pullTab-success": "bg-success text-white",

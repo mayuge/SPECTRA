@@ -1,9 +1,7 @@
 //@ts-ignore
 import type { Meta, StoryObj } from "@storybook/vue3"
 import Button from "./Button.vue"
-import type { ButtonVariantType } from "@/domain/types/atomsType"
-import type { ButtonSizeType } from "@/domain/types/atomsType"
-import type { ButtonShapeType } from "@/domain/types/atomsType"
+import type { ButtonVariantType, ButtonSizeType, ButtonShapeType } from "@/domain/types/atomsType"
 
 const buttonVariants: ButtonVariantType[] = [
   "btn-primary",

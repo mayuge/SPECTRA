@@ -1,8 +1,8 @@
 <template>
   <div
     :class="[
-      variantStyles[variant] ?? variantStyles['badge-primary'],
-      shapeStyles[shape] ?? shapeStyles['square'],
+      variantClasses,
+      shapeClasses,
       'inline-flex items-center gap-1 text-[9px] p-1',
     ]"
     @click="badgeClicked"
@@ -11,21 +11,30 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
+import { computed } from "vue"
+import type { PropType } from "vue"
 import type { BadgeVariantType, BadgeShapeType } from "@/domain/types/atomsType"
 
-type Props = {
-  text?: string
-  shape?: BadgeShapeType
-  variant?: BadgeVariantType
-}
-
-const props = defineProps<Props>()
+const props = defineProps({
+  text: {
+    type: String as PropType<string>,
+    default: "",
+  },
+  shape: {
+    type: String as PropType<BadgeShapeType>,
+    default: "square",
+  },
+  variant: {
+    type: String as PropType<BadgeVariantType>,
+    default: "badge-primary",
+  },
+})
 
 const emit = defineEmits(["badge-clicked"])
 
 const badgeClicked = () => {
-    emit("badge-clicked", props.text)
+  emit("badge-clicked", props.text)
 }
 
 const variantStyles: Record<BadgeVariantType, string> = {
@@ -43,7 +52,6 @@ const shapeStyles: Record<BadgeShapeType, string> = {
   circle: "rounded-full",
 }
 
-const text = props.text ?? ""
-const shape = props.shape ?? "square"
-const variant = props.variant ?? "badge-primary"
+const variantClasses = computed(() => variantStyles[props.variant ?? "badge-primary"])
+const shapeClasses = computed(() => shapeStyles[props.shape ?? "square"])
 </script>
