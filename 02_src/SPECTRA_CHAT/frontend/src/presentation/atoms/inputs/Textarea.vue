@@ -4,7 +4,7 @@
     :placeholder="placeholder"
     :rows="rows"
     :value="modelValue"
-    name="chat-input"
+    name="text-input"
     @input="onInput"
   />
 </template>
