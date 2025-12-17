@@ -25,7 +25,6 @@ const useChatApp = (chatState: IChatState, mapLayer: IMapLayer, geojsonState: IG
    */
   const frontToResponseLayer = (index: number) => {
     const layerId = `geojson-layer-${index}`
-    console.log(layerId)
     frontToLayer(layerId)
   }
   /**
@@ -34,7 +33,6 @@ const useChatApp = (chatState: IChatState, mapLayer: IMapLayer, geojsonState: IG
    */
   const backToResponseLayer = (index: number) => {
     const layerId = `geojson-layer-${index}`
-    console.log(layerId)
     backToLayer(layerId)
   }
 
@@ -53,7 +51,6 @@ const useChatApp = (chatState: IChatState, mapLayer: IMapLayer, geojsonState: IG
    */
   const setColorByIndex = (index: number, color: string) => {
     const layerId = `geojson-layer-${index}`
-    console.log(layerId, color)
     setLayerColor(layerId, color)
   }
 
