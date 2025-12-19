@@ -8,7 +8,7 @@
       icon-left="commute"
       class="[&_span.material-icons]:text-[150px]!"
     />
-    <div class="mt-1\ text-sm">
+    <div class="p-2 text-sm">
       SPECTRA CHATは、チャットでデータを可視化できます。<br />画面下部の入力欄を使って、チャットを開始できます。
     </div>
   </div>

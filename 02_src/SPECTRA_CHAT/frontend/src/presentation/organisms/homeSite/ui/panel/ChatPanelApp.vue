@@ -1,8 +1,9 @@
 <template>
-  <div
-    class="fixed bottom-0 md:left-0 z-50 w-full md:w-auto md:h-screen bg-transparent flex flex-col md:flex-row select-none"
-  >
-    <div class="md:hidden sticky top-0">
+  <!-- =========================
+       Mobile
+  ========================== -->
+  <div class="fixed bottom-0 z-50 w-full bg-transparent flex flex-col select-none md:hidden">
+    <div class="sticky top-0">
       <DialogHeader
         text="SPECTRA CHAT"
         variant="header-dark"
@@ -10,29 +11,57 @@
         size="large"
         @header-clicked="toggleMainPanel()"
       />
+
       <ChatSuggestGroup
         v-if="!getMainPanelOpen()"
         :suggestList="CHAT_SUGGEST_LIST"
         @badge-clicked="submitButtonClicked"
       />
+
       <Submit
-        :isLoading="true"
         v-if="!getMainPanelOpen()"
+        :isLoading="true"
         @submit-button-clicked="submitButtonClicked"
       />
     </div>
-    <div
-      v-if="getMainPanelOpen()"
-      class="bg-white justify-bottom w-full md:w-[400px] h-[50svh] md:h-screen shadow-lg flex flex-col"
-    >
-      <div class="flex-1 md:pt-16 overflow-y-scroll no-scrollbar">
+
+    <div v-if="getMainPanelOpen()" class="bg-white h-[50svh] shadow-lg flex flex-col">
+      <div class="flex-1 overflow-y-scroll no-scrollbar">
         <ConceptDisplay v-if="isBlankChat()" />
         <ChatApp @retry-clicked="submitButtonClicked" />
       </div>
+
       <ChatSuggestGroup :suggestList="CHAT_SUGGEST_LIST" @badge-clicked="suggestButtonClicked" />
       <Submit :isLoading="getIsLoading()" @submit-button-clicked="submitButtonClicked" />
     </div>
-    <div class="hidden md:flex items-center">
+  </div>
+
+  <!-- =========================
+       PC
+  ========================== -->
+  <div class="fixed left-0 z-50 h-screen bg-transparent hidden md:flex select-none">
+    <div
+      v-if="getMainPanelOpen()"
+      class="relative bg-white h-full shadow-lg flex flex-col"
+      :style="{ width: panelWidth + 'px' }"
+    >
+      <div class="flex-1 pt-16 overflow-y-scroll no-scrollbar">
+        <ConceptDisplay v-if="isBlankChat()" />
+        <ChatApp @retry-clicked="submitButtonClicked" />
+      </div>
+
+      <ChatSuggestGroup :suggestList="CHAT_SUGGEST_LIST" @badge-clicked="suggestButtonClicked" />
+      <Submit :isLoading="getIsLoading()" @submit-button-clicked="submitButtonClicked" />
+
+      <!-- resize handle -->
+      <div
+        class="absolute top-0 right-0 h-full w-2 cursor-col-resize
+               hover:bg-primary transition-colors"
+        @mousedown="startResize"
+      />
+    </div>
+
+    <div class="flex items-center">
       <PullTab
         title="パネルを開閉できます。"
         variant="pullTab-dark"
@@ -46,6 +75,8 @@
 </template>
 
 <script setup lang="ts">
+import { ref, onBeforeUnmount } from 'vue'
+
 import type { IDialogState } from '@/domain/interfaces/IDialogState'
 import type { IReqChatApi } from '@/domain/interfaces/IReqChatApi'
 import type { IReqSuggestApi } from '@/domain/interfaces/IReqSuggestApi'
@@ -71,14 +102,46 @@ import ConceptDisplay from '@/presentation/molecules/display/ConceptDisplay.vue'
 import { CHAT_SUGGEST_LIST } from '@/domain/params/chatSuggest'
 import useChatPanelApp from '@/presentation/organisms/homeSite/core/panel/useChatPanelApp'
 
-const { getMainPanelOpen, toggleMainPanel, getPullTabIcon, isBlankChat, submitButtonClicked, suggestButtonClicked, getIsLoading } =
-  useChatPanelApp(
-    useDialogStateStore() as IDialogState,
-    useReqChatApi() as IReqChatApi,
-    useReqSuggestApi() as IReqSuggestApi,
-    useMapLayer() as IMapLayer,
-    useChatStateStore() as IChatState,
-    useGeojsonStateStore() as IGeojsonState,
-    useLoadingStateStore() as ILoadingState
-  )
+/* =========================
+   local panel width (PC only)
+========================= */
+const panelWidth = ref(400)
+const isResizing = ref(false)
+
+const startResize = () => {
+  isResizing.value = true
+  document.addEventListener('mousemove', resize)
+  document.addEventListener('mouseup', stopResize)
+}
+
+const resize = (e: MouseEvent) => {
+  if (!isResizing.value) return
+  panelWidth.value = Math.min(600, Math.max(280, e.clientX))
+}
+
+const stopResize = () => {
+  isResizing.value = false
+  document.removeEventListener('mousemove', resize)
+  document.removeEventListener('mouseup', stopResize)
+}
+
+onBeforeUnmount(stopResize)
+
+const {
+  getMainPanelOpen,
+  toggleMainPanel,
+  getPullTabIcon,
+  isBlankChat,
+  submitButtonClicked,
+  suggestButtonClicked,
+  getIsLoading,
+} = useChatPanelApp(
+  useDialogStateStore() as IDialogState,
+  useReqChatApi() as IReqChatApi,
+  useReqSuggestApi() as IReqSuggestApi,
+  useMapLayer() as IMapLayer,
+  useChatStateStore() as IChatState,
+  useGeojsonStateStore() as IGeojsonState,
+  useLoadingStateStore() as ILoadingState
+)
 </script>
