@@ -29,7 +29,7 @@ const useChatPanelApp = (
   const { sendChatMessage } = reqChatApi
   const { getSuggestData } = reqSuggestApi
   const { addGeoJsonLayer } = mapLayer
-  const { addChatMessage, getChatMessageList } = chatState
+  const { addChatMessage, getChatMessageList, getChatHistory } = chatState
   const { setGeojson, getLastGeojson } = geojsonState
   const { startLoading, stopLoading, getIsLoading } = loadingState
   /**
@@ -203,6 +203,7 @@ const useChatPanelApp = (
     suggestButtonClicked,
     isBlankChat,
     getIsLoading,
+    getChatHistory,
   }
 }
 export default useChatPanelApp

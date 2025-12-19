@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center flex-wrap bg-gray-80 gap-1 p-2">
+  <div class="flex items-center flex-wrap bg-gray-80 gap-1 px-2 pt-1">
     <Badge
       v-for="(suggest, index) in suggestList"
       title="押すとチャットできます。"

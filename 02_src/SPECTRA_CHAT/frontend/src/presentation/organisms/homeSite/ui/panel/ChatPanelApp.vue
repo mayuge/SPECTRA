@@ -32,6 +32,7 @@
       </div>
 
       <ChatSuggestGroup :suggestList="CHAT_SUGGEST_LIST" @badge-clicked="suggestButtonClicked" />
+      <ChatHistoryGroup :historyList="getChatHistory()" @badge-clicked="submitButtonClicked" />
       <Submit :isLoading="getIsLoading()" @submit-button-clicked="submitButtonClicked" />
     </div>
   </div>
@@ -51,6 +52,7 @@
       </div>
 
       <ChatSuggestGroup :suggestList="CHAT_SUGGEST_LIST" @badge-clicked="suggestButtonClicked" />
+      <ChatHistoryGroup :historyList="getChatHistory()" @badge-clicked="submitButtonClicked" />
       <Submit :isLoading="getIsLoading()" @submit-button-clicked="submitButtonClicked" />
 
       <!-- resize handle -->
@@ -97,6 +99,7 @@ import PullTab from '@/presentation/atoms/buttons/PullTab.vue'
 import DialogHeader from '@/presentation/molecules/header/DialogHeader.vue'
 import Submit from '@/presentation/molecules/input/Submit.vue'
 import ChatSuggestGroup from '@/presentation/molecules/group/ChatSuggestGroup.vue'
+import ChatHistoryGroup from '@/presentation/molecules/group/ChatHistoryGroup.vue'
 import ChatApp from '@/presentation/organisms/homeSite/ui/panel/ChatApp.vue'
 import ConceptDisplay from '@/presentation/molecules/display/ConceptDisplay.vue'
 import { CHAT_SUGGEST_LIST } from '@/domain/params/chatSuggest'
@@ -135,6 +138,7 @@ const {
   submitButtonClicked,
   suggestButtonClicked,
   getIsLoading,
+  getChatHistory
 } = useChatPanelApp(
   useDialogStateStore() as IDialogState,
   useReqChatApi() as IReqChatApi,
