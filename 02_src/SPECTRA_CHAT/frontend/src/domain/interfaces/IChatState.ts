@@ -7,4 +7,5 @@ export interface IChatState {
   addChatMessage: (message: ChatType) => void
   // isDataがtrueのメッセージをフィルタリングし、lengthを取得する
   getDataMessageLength: () => number
+  getChatHistory: () => string[]
 }

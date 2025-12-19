@@ -94,7 +94,7 @@ const useMapRasterLayer = (): IMapRasterLayer => {
       "https://disaportaldata.gsi.go.jp/raster/01_flood_l2_shinsuishin_data/{z}/{x}/{y}.png",
       {
         maxzoom: 17,
-        opacity: 1,
+        opacity: 0.7,
         visibility: "none",
         beforeId: "island-takeshima-poi",
         attribution:
