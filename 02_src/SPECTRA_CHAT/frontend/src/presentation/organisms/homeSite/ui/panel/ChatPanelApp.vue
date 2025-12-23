@@ -20,7 +20,7 @@
 
       <Submit
         v-if="!getMainPanelOpen()"
-        :isLoading="true"
+        :isLoading="getIsLoading()"
         @submit-button-clicked="submitButtonClicked"
       />
     </div>

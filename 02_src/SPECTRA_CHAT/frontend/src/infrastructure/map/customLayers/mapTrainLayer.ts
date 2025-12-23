@@ -59,7 +59,12 @@ const useMapTrainLayer = (): IMapTrainLayer => {
     const sourceId = TRAIN_STATION_LAYER
     const layerId = TRAIN_STATION_LAYER
 
-    const geojsonSource: GeoJSONSourceSpecification = { type: "geojson", data: geojson }
+    const geojsonSource: GeoJSONSourceSpecification = {
+      type: "geojson",
+      data: geojson,
+      attribution:
+        '<a href="https://gtfs-gis.jp/railway_honsu/index.html">全国鉄道運行本数データ公開ページ 事業者別・駅別発着本数データ2024</a>',
+    }
 
     if (!map.getSource(sourceId)) {
       map.addSource(sourceId, geojsonSource)
@@ -104,8 +109,12 @@ const useMapTrainLayer = (): IMapTrainLayer => {
 
     const sourceId = TRAIN_LINE_LAYER
     const layerId = TRAIN_LINE_LAYER
-
-    const geojsonSource: GeoJSONSourceSpecification = { type: "geojson", data: geojson }
+    const geojsonSource: GeoJSONSourceSpecification = {
+      type: "geojson",
+      data: geojson,
+      attribution:
+        '<a href="https://gtfs-gis.jp/railway_honsu/index.html">全国鉄道運行本数データ公開ページ 路線別・区間別運行本数データ2024</a>',
+    }
 
     if (!map.getSource(sourceId)) {
       map.addSource(sourceId, geojsonSource)

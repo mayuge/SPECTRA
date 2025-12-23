@@ -72,6 +72,10 @@ const useChatPanelApp = (
   }
 
   const suggestButtonClicked = async (suggest: SuggestType) => {
+    // ローディング中は追加で質問できないようにする
+    if (getIsLoading()) {
+      return
+    }
     startLoading()
     const url = suggest.url
     const message = suggest.text
@@ -120,10 +124,16 @@ const useChatPanelApp = (
    * @param inputValue string
    */
   const submitButtonClicked = async (inputValue: string) => {
-    // ✅ 空文字の時は何もしない
-    if (!inputValue.trim()) return
+    // ローディング中は追加で質問できないようにする
+    if (getIsLoading()) {
+      return
+    }
+    // 空文字の時は何もしない
+    if (!inputValue.trim()) {
+      return
+    }
 
-    // ✅ 特定の危険文字のみ禁止
+    //特定の危険文字のみ禁止
     const invalidCharPattern = /[\u0000-\u001F\u007F\uFEFF'"<>!\/\\;|&`$%^@]/u
 
     if (invalidCharPattern.test(inputValue)) {

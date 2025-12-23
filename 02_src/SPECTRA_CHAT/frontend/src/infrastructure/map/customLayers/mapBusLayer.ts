@@ -21,49 +21,61 @@ const useMapBusLayer = (): IMapBusLayer => {
   const { toggleLayer } = useMapLayer() as IMapLayer
   const { generateHoverHtml, addHoverPopup } = useMapPopup() as IMapPopup
 
+  const map = getMapInstance()
+
+  /** 表示意図（UI状態） */
+  const busLayerVisibility = ref<boolean>(true)
+
+  /** Deck.gl overlay 実体 */
   let overlay: MapboxOverlay | null = null
+
+  /** Popup */
   let popup: maplibregl.Popup | null = null
 
-  const map = getMapInstance()
-  const busLayerVisibility = ref<boolean>(true)
+  /** zoom / toggle で呼ばれる更新関数 */
+  let updateOverlay: (() => void) | null = null
 
   const toggleBusLayer = (): void => {
     toggleLayer(TOEI_BUS_POINT_LAYER)
     busLayerVisibility.value = !busLayerVisibility.value
-    if (updateOverlay) updateOverlay() // ← 即時反映
+    updateOverlay?.()
   }
 
   const getBusLayerVisibility = (): boolean => {
     return busLayerVisibility.value
   }
 
-  let updateOverlay: (() => void) | null = null
-  const geojsonToArcData = (geojson) => {
+  const geojsonToArcData = (geojson: FeatureCollection) => {
     return geojson.features.map((f) => {
+      // @ts-ignore
       const coords = f.geometry.coordinates
-
       return {
-        source: coords[0], // 始点
-        target: coords[1], // 終点
-        ...f.properties, // frequency など全部保持
+        source: coords[0],
+        target: coords[1],
+        ...f.properties,
       }
     })
   }
+
+  /**
+   * 都営バス路線（ArcLayer）
+   */
   const addToeiBusLineLayer = (geojson: FeatureCollection): void => {
     const arcData = geojsonToArcData(geojson)
 
     updateOverlay = () => {
       const zoom = map.getZoom()
-      if (busLayerVisibility.value && zoom >= 14 && !overlay) {
+      const shouldShow = busLayerVisibility.value && zoom >= 14
+
+      // ▶ 表示すべき & まだ無い → add
+      if (shouldShow && !overlay) {
         overlay = new MapboxOverlay({
           interleaved: true,
           layers: [
             new ArcLayer({
               id: TOEI_BUS_LINE_LAYER,
               data: arcData,
-              parameters: {
-                depthTest: false, // 奥に沈まないように
-              },
+              parameters: { depthTest: false },
               getSourcePosition: (d) => d.source,
               getTargetPosition: (d) => d.target,
               getWidth: (d) => d.frequency / 200 + 1,
@@ -73,40 +85,49 @@ const useMapBusLayer = (): IMapBusLayer => {
               pickable: true,
               autoHighlight: true,
               onHover: (info) => {
-                if (popup) {
-                  popup.remove()
-                  popup = null
-                }
+                popup?.remove()
+                popup = null
+
                 if (info.object) {
-                  const hoverHtml = generateHoverHtml(info.object)
+                  const html = generateHoverHtml(info.object)
                   popup = new maplibregl.Popup({
                     closeButton: true,
                     closeOnClick: true,
                     maxWidth: "1000px",
                   })
-                  //@ts-ignore
-                  popup.setLngLat(info.coordinate).setHTML(hoverHtml).addTo(map)
+                  // @ts-ignore
+                  popup.setLngLat(info.coordinate).setHTML(html).addTo(map)
                 }
               },
             }),
           ],
         })
+
         map.addControl(overlay)
-      } else {
+        return
+      }
+
+      // ▶ 非表示にすべき & 今ある → remove
+      if (!shouldShow && overlay) {
         map.removeControl(overlay)
         overlay = null
       }
     }
 
+    // ※ zoom 中に消えないようにしたいなら "zoomend" 推奨
     map.on("zoom", updateOverlay)
-    updateOverlay() // 初期表示チェック
+    updateOverlay()
   }
 
+  /**
+   * 都営バス停（SymbolLayer）
+   */
   const addToeiBusPointLayer = (geojson: FeatureCollection): void => {
     map.addSource(TOEI_BUS_POINT_LAYER, {
       type: "geojson",
       data: geojson,
     })
+
     const symbolLayer: SymbolLayerSpecification = {
       id: TOEI_BUS_POINT_LAYER,
       type: "symbol",
@@ -139,4 +160,5 @@ const useMapBusLayer = (): IMapBusLayer => {
     getBusLayerVisibility,
   }
 }
+
 export default useMapBusLayer
