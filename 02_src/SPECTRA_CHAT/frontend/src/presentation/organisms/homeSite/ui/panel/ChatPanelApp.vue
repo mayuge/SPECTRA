@@ -44,7 +44,7 @@
     <div
       v-if="getMainPanelOpen()"
       class="relative bg-white h-full shadow-lg flex flex-col"
-      :style="{ width: panelWidth + 'px' }"
+      :style="{ width: getPanelWidth() + 'px' }"
     >
       <div class="flex-1 pt-16 overflow-y-scroll no-scrollbar">
         <ConceptDisplay v-if="isBlankChat()" />
@@ -77,7 +77,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onBeforeUnmount } from 'vue'
+import { onBeforeUnmount } from 'vue'
 
 import type { IDialogState } from '@/domain/interfaces/IDialogState'
 import type { IReqChatApi } from '@/domain/interfaces/IReqChatApi'
@@ -105,31 +105,6 @@ import ConceptDisplay from '@/presentation/molecules/display/ConceptDisplay.vue'
 import { CHAT_SUGGEST_LIST } from '@/domain/params/chatSuggest'
 import useChatPanelApp from '@/presentation/organisms/homeSite/core/panel/useChatPanelApp'
 
-/* =========================
-   local panel width (PC only)
-========================= */
-const panelWidth = ref(400)
-const isResizing = ref(false)
-
-const startResize = () => {
-  isResizing.value = true
-  document.addEventListener('mousemove', resize)
-  document.addEventListener('mouseup', stopResize)
-}
-
-const resize = (e: MouseEvent) => {
-  if (!isResizing.value) return
-  panelWidth.value = Math.min(600, Math.max(280, e.clientX))
-}
-
-const stopResize = () => {
-  isResizing.value = false
-  document.removeEventListener('mousemove', resize)
-  document.removeEventListener('mouseup', stopResize)
-}
-
-onBeforeUnmount(stopResize)
-
 const {
   getMainPanelOpen,
   toggleMainPanel,
@@ -138,7 +113,10 @@ const {
   submitButtonClicked,
   suggestButtonClicked,
   getIsLoading,
-  getChatHistory
+  getChatHistory,
+  getPanelWidth,
+  startResize,
+  stopResize,
 } = useChatPanelApp(
   useDialogStateStore() as IDialogState,
   useReqChatApi() as IReqChatApi,
@@ -148,4 +126,5 @@ const {
   useGeojsonStateStore() as IGeojsonState,
   useLoadingStateStore() as ILoadingState
 )
+onBeforeUnmount(stopResize)
 </script>

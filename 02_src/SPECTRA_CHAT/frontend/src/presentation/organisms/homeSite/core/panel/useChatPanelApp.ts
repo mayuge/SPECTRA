@@ -25,7 +25,14 @@ const useChatPanelApp = (
   geojsonState: IGeojsonState,
   loadingState: ILoadingState
 ) => {
-  const { getDialogState, setDialogState, toggleDialogState } = dialogState
+  const {
+    getDialogState,
+    setDialogState,
+    toggleDialogState,
+    getPanelWidth,
+    startResize,
+    stopResize,
+  } = dialogState
   const { sendChatMessage } = reqChatApi
   const { getSuggestData } = reqSuggestApi
   const { addGeoJsonLayer } = mapLayer
@@ -214,6 +221,9 @@ const useChatPanelApp = (
     isBlankChat,
     getIsLoading,
     getChatHistory,
+    getPanelWidth,
+    startResize,
+    stopResize,
   }
 }
 export default useChatPanelApp
