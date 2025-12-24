@@ -47,9 +47,14 @@
         />
         <div>{{ iconState ? '表示中' : '非表示中' }}</div>
       </div>
+      <Button
+        size="small"
+        variant="btn-text-gray"
+        icon-left="join_inner"
+        text="条件を加えて絞り込む"
+      />
     </div>
-
-    <div class="flex items-end text-gray-40">
+    <div class="flex items-end text-gray-40 pb-10">
       {{ responseTime }}
     </div>
   </div>

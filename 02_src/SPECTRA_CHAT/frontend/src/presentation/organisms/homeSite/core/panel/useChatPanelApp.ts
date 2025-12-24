@@ -126,6 +126,10 @@ const useChatPanelApp = (
       stopLoading()
     }
   }
+  //TODO:チャットを再帰的にできるように選択機能を追加予定　選択した状態で質問すると組み合わさった回答を返す
+
+
+  
   /**
    * 送信ボタン押下
    * @param inputValue string
