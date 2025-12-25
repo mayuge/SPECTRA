@@ -21,12 +21,13 @@
     <img src="https://img.shields.io/badge/-Google Gemini-8E75B2.svg?logo=googlegemini&style=flat">
 </p>
 
-### その他プラグイン
+### その他プラグイン/開発支援ツール
 
 <p>
     <img src="https://img.shields.io/badge/-pnpm-F69220.svg?logo=pnpm&style=flat">
     <img src="https://img.shields.io/badge/-prettier-F7B93E.svg?logo=prettier&style=flat">
     <img src="https://img.shields.io/badge/-uv-DE5FE9.svg?logo=uv&style=flat">
+    <img src="https://img.shields.io/badge/-ruff-D7FF64.svg?logo=ruff&style=flat">
 </p>
 
 ## 環境構築
@@ -38,7 +39,7 @@
   - node のバージョン管理は [volta](https://docs.volta.sh/guide/getting-started) がおすすめ。指定バージョンの node 環境、パッケージマネージャーを用意してください
 
   ```
-  node v22.21.0
+  node v24.12.0
   ```
 
   ```
@@ -286,6 +287,55 @@ flowchart TD
 - [TSDoc 形式とは](https://dev.classmethod.jp/articles/jsdoc-cheatsheet/)
 - 自動でドキュメントを生成する
 
-```
+## デザインガイドライン/デザインシステム
 
-```
+- UX を担保するために良いデザインの客観的基準を決める必要がある。
+- デザインにセマンティックな効果（機能）をもたせる。→ デザインの意味をいちいち考える
+
+  - ### カラー
+
+    - [デジタル庁デザインガイドライン　カラーパレット](https://design.digital.go.jp/dads/foundations/color/color-palette/)
+
+    - [BootStrap5 ユーティリティカラー](https://getbootstrap.com/docs/5.3/utilities/colors/)
+
+    - グレースケールに関しては明度を 10 段階に分けたものを使用する。
+    - グレーの代表的な色を`#808080`とする。
+
+    ```
+      color-gray-10: #1a1a1a;
+      color-gray-20: #333333;
+      color-gray-30: #4d4d4d;
+      color-gray-40: #666666;
+      color-gray-50: #808080;
+      color-gray-60: #999999;
+      color-gray-70: #b3b3b3;
+      color-gray-80: #cccccc;
+      color-gray-90: #e6e6e6;
+    ```
+
+    - 基本的に文字は白・グレー・黒のどれかにする。→ 文字に彩度はなるべく入れない
+    - 本文テキストは 背景とのコントラスト比 4.5:1 以上
+
+    ### セマンティックカラー
+
+    - 色に役割（機能）をもたせる仕組み(装飾目的で使わない)
+      - primary テーマカラー → そのアプリのブランドカラーとしての役割を持つ
+      - secondary サブカラー → テーマカラーを補助する役割を持つ、primary と似た色は控える
+      - success→ 正常状態を表す色　基本グリーン系、処理が正常/良好に行われていることを示し、安心感を与える。「電車は予定通り運行中」
+      - warning→ 中立的なイメージかつ注目状態を示す。オレンジ系? 「黄色い線の内側にお並びください」
+      - danger→ 危険な状態/取り返しがつかない状態/絶対に気づかないといけない状態「データを削除しますか。この動作は取り消しできません」
+
+  - フォント
+
+    - NotoSansJP を使用する
+    - 4px の倍数で作成する → 実際には無理
+
+  - 余白
+    - 4px の倍数で作成する
+    - まずはボックスレイアウト配置(左右上下余白を揃えるかつ等間隔)を心がける
+
+- ### 判断に迷った場合は以下を優先する：
+  1. 誤操作を防げるか
+  2. 初見ユーザーが理解できるか
+  3. 一貫性が保たれているか
+  4. 実装が単純か
