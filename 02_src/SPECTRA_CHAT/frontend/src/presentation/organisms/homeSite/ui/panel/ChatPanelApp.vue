@@ -53,10 +53,6 @@
 
       <ChatSuggestGroup :suggestList="CHAT_SUGGEST_LIST" @badge-clicked="suggestButtonClicked" />
       <ChatHistoryGroup :historyList="getChatHistory()" @badge-clicked="submitButtonClicked" />
-      <div class="flex items-center justify-between w-full py-1 px-2 text-xs text-white bg-warning">
-        絞り込み対象レイヤー：○○○○
-        <Button variant="btn-text-white" size="mini" icon-left="close" />
-      </div>
       <Submit :isLoading="getIsLoading()" @submit-button-clicked="submitButtonClicked" />
 
       <!-- resize handle -->
@@ -108,7 +104,6 @@ import ChatApp from '@/presentation/organisms/homeSite/ui/panel/ChatApp.vue'
 import ConceptDisplay from '@/presentation/molecules/display/ConceptDisplay.vue'
 import { CHAT_SUGGEST_LIST } from '@/domain/params/chatSuggest'
 import useChatPanelApp from '@/presentation/organisms/homeSite/core/panel/useChatPanelApp'
-import Button from '@/presentation/atoms/buttons/Button.vue'
 
 const {
   getMainPanelOpen,

@@ -9,6 +9,7 @@ osm_repository = OsmRepository()
 async def get_osm_tag_by_prefecture(tag: str, prefecture: str, request: Request):
     """
     都道府県を基準に、コンビニエンスストア、駐車場、公衆トイレ、駐車などを取得します。その他にも最も近いOSMのタグを組み合わせることでいろいろなものを取得できます。
+    場所が指定されていないがOSMのタグをもとにデータ取得したいと思われる場合には東京都を指定してください。
 
     ## 🔍 tag に指定する値（OSM キー＝値）
     - コンビニエンスストア: `shop=convenience`
