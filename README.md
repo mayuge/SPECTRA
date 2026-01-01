@@ -292,6 +292,13 @@ flowchart TD
 - UX を担保するために良いデザインの客観的基準を決める必要がある。
 - デザインにセマンティックな効果（機能）をもたせる。→ デザインの意味をいちいち考える
 
+- ### デザインシステムとは？ 組織での事例
+
+  - [デジタル庁デザインシステム](https://www.digital.go.jp/policies/servicedesign/designsystem)
+    - デジタル庁のデザインシステムの内容は入札案件の評価基準となりうるため要件を確認すること
+  - [freee 株式会社 vibes](https://vibes.freee.co.jp/?path=/docs/doc-readme--docs)
+  - [SmartHR Design System](https://smarthr.design/)
+
   - ### カラー
 
     - [デジタル庁デザインガイドライン　カラーパレット](https://design.digital.go.jp/dads/foundations/color/color-palette/)
@@ -315,6 +322,7 @@ flowchart TD
 
     - 基本的に文字は白・グレー・黒のどれかにする。→ 文字に彩度はなるべく入れない
     - 本文テキストは 背景とのコントラスト比 4.5:1 以上
+    - リンクと間違えるので、文字は青くしないこと（紫もダメ）
 
     ### セマンティックカラー
 
@@ -330,9 +338,18 @@ flowchart TD
     - NotoSansJP を使用する
     - 4px の倍数で作成する → 実際には無理
 
+  - アイコン
+
+    - サービスごとに制作するのが望ましい
+    - googleMaterialIcon の CDN サービスはテスト利用で便利
+
   - 余白
+
     - 4px の倍数で作成する
     - まずはボックスレイアウト配置(左右上下余白を揃えるかつ等間隔)を心がける
+
+  - ボタン
+    - 誤タップを防ぐために 24px × 24px 以上大きくする
 
 - ### 判断に迷った場合は以下を優先する：
   1. 誤操作を防げるか

@@ -12,7 +12,7 @@
         </div>
 
         {{ text }}
-
+  
         <div class="absolute top-7 right-1 flex flex-col gap-1">
           <Button
             title="レイヤーを前面へ移動"
@@ -66,8 +66,11 @@ import { onMounted, ref } from "vue"
 import Button from "@/presentation/atoms/buttons/Button.vue"
 import Color from "@/presentation/atoms/inputs/Color.vue"
 import SliderInput from "@/presentation/atoms/inputs/SliderInput.vue"
+
 const iconState = ref(true)
 const responseTime = ref("")
+const feedbackState = ref(false)
+
 const emit = defineEmits(["toggle-clicked", "back-to-clicked", "front-to-clicked", "on-slider-input", "on-color-input"])
 
 const props = defineProps({
