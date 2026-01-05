@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center gap-2 p-2 w-full bg-white border-t border-gray-80">
+  <div class="flex items-center gap-2 p-2 w-full">
     <Textarea
       :modelValue="inputValue"
       @update:modelValue="inputValue = $event"
