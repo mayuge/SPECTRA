@@ -63,9 +63,9 @@
       </div>
 
       <Button
-        class="my-2 p-1"
+        class="my-2 p-0.5 w-[80%]"
         size="mini"
-        :variant="feedbackState ? 'btn-dark' : 'btn-text-gray'"
+        :variant="feedbackState ? 'btn-light' : 'btn-text-gray'"
         :icon-left="feedbackState ? 'close' : 'join_inner'"
         :text="feedbackState ? '絞り込みをやめる' : '条件を加えて絞り込む'"
         @button-clicked="feedbackClicked"
