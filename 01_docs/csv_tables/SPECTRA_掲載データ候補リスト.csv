@@ -1,0 +1,39 @@
+データ名称,データ出典,重要度,表示タイプ,ライセンス,データURL,備考
+海岸線データ,国土数値情報ダウンロードサイト,☆,Line,非商用,https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-C23.html,
+河川データ,国土数値情報ダウンロードサイト,☆☆,Line,非商用,https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-W05.html,
+地価公示データ,国土数値情報ダウンロードサイト,☆,Point,CC_BY_4.0,https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-L01-2025.html,
+行政区域データ,国土数値情報ダウンロードサイト,☆☆☆,Polygon,CC_BY_4.0,https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03-2025.html,
+人口集中地区データ,国土数値情報ダウンロードサイト,☆,Polygon,商用可,https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A16-2020.html,
+都市計画決定情報データ,国土数値情報ダウンロードサイト,☆☆,Polygon,CC_BY_4.0,https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A55-2022.html,用途地域、都市計画区域は欲しい
+洪水浸水想定区域データ（河川単位）,国土数値情報ダウンロードサイト,☆☆,Polygon,CC_BY_4.0,https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A31a-2024.html,結構加工が必要かも
+津波浸水想定データ,国土数値情報ダウンロードサイト,☆☆,Polygon,CC_BY_4.0（一部制限）,https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A40-2024.html,
+土砂災害警戒区域データ,国土数値情報ダウンロードサイト,☆☆,Polygon,CC_BY_4.0（一部制限）,https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-A33-2024.html,
+国・都道府県の機関データ,国土数値情報ダウンロードサイト,☆,Point,非商用,https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P28-2022.html,
+市区町村役場データ,国土数値情報ダウンロードサイト,☆,Point,非商用,https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P34.html,
+鉄道データ,国土数値情報ダウンロードサイト,☆☆☆,"Point, Line",CC_BY_4.0,https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N02-2024.html,駅はポイント、路線はライン
+空港データ,国土数値情報ダウンロードサイト,☆,Point,商用可,https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-C28-2021.html,
+国勢調査（行政区域別集計）,e-Stat,☆☆,Polygon,商用可,https://www.e-stat.go.jp/stat-search?page=1&toukei=00200521,行政区域データにマージ？
+経済センサス（市区町村別）,e-Stat,☆,Polygon,商用可,https://www.e-stat.go.jp/stat-search?page=1&layout=normal&toukei=00200553&survey=%E7%B5%8C%E6%B8%88%E3%82%BB%E3%83%B3%E3%82%B5%E3%82%B9,行政区域データにマージ？
+住民基本台帳人口移動報告（市区町村別）,e-Stat,☆,Polygon,商用可,https://www.e-stat.go.jp/stat-search/files?page=1&stat_infid=000040271506,行政区域データにマージ？
+住宅・土地統計調査（市区町村別）,e-Stat,☆,Polygon,商用可,https://www.e-stat.go.jp/stat-search?page=1&layout=normal&toukei=00200522&survey=%E4%BD%8F%E5%AE%85%E3%83%BB%E5%9C%9F%E5%9C%B0%E7%B5%B1%E8%A8%88%E8%AA%BF%E6%9F%BB,行政区域データにマージ？
+3D都市モデル(Project PLATEAU),G空間情報センター,☆☆,Polygon,商用可,https://front.geospatial.jp/plateau_portal_site/,
+バス停留所データ,国土数値情報ダウンロードサイト,☆,Point,CC_BY_4.0,https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P11-2022.html,
+バスルートデータ,国土数値情報ダウンロードサイト,☆,Line,CC_BY_4.0,https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N07-2022.html,
+ドコモ・バイクシェア関連情報,公共交通オープンデータセンター,☆,Point,CC_BY_4.0,https://ckan.odpt.org/dataset/c_bikeshare_gbfs-d-bikeshare,
+OpenStreet（ハローサイクリング） 関連情報,公共交通オープンデータセンター,☆,Point,CC_BY_4.0,https://ckan.odpt.org/dataset/c_bikeshare_gbfs-openstreet,
+OSM Overpass API,OpenStreetMap,☆☆,"Point, Line, Polygon",Open Database License,,どこまで表示させるか検討
+東京都防災マップ 避難所・避難場所一覧データ ,東京都オープンデータカタログサイト,☆,Point,CC_BY_4.0,https://catalog.data.metro.tokyo.lg.jp/dataset/t000003d0000000093,
+過去の気象データ・ダウンロード,気象庁,☆,Polygon,商用可,https://www.data.jma.go.jp/risk/obsdl/,
+国勢調査メッシュ,経済産業省,,Mesh,,,
+国土地理院標高タイル,国土地理院,,"Polygon, Mesh",,https://maps.gsi.go.jp/development/demtile.html,
+OSMのデータ（道路等）,,,Line,,Geofabrik Download Server,経路検索エンジンともに調査中
+OSMのタグごとの検索（コンビニ・スーパー等）,,☆☆☆,"Point, Line, Polygon",,,
+大規模盛土造成地データ,国土数値情報,,Polygon,,国土数値情報 | 大規模盛土造成地データ,
+不動産取引価格情報,国土交通省,☆☆,Point,,https://www.reinfolib.mlit.go.jp/,
+自然災害伝承碑,国土地理院,,Point,,自然災害伝承碑 | 国土地理院,
+公立小中学校学区,国土数値情報,☆,Polygon,,,
+mapillary,mapillary,☆☆,Point,,https://www.mapillary.com/?locale=ja_JP,googlestreetviewのオープンソース版のようなもの
+全国鉄道運行本数データ公開ページ,西澤明（東京大学）,☆☆☆,"Point, Line",CC_BY_4.0,https://gtfs-gis.jp/railway_honsu/,運行本数、終点始点駅のポイントデータ等もある。国土数値情報のものより使いやすい。
+国土地理院ジオコーディングAPI,国土地理院,,Point,,,https://msearch.gsi.go.jp/address-search/AddressSearch?q=検索したい地名・施設
+公園データ,国土数値情報,,Polygon,,国土数値情報 | 都市公園データ,
+医療情報ネットのオープンデータ,厚生労働省,,,,医療情報ネットのオープンデータ｜厚生労働省,
