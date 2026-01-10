@@ -1,15 +1,22 @@
 import type { IChatState } from "@/domain/interfaces/IChatState"
 import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
 import type { IGeojsonState } from "@/domain/interfaces/IGeojsonState"
+import type { ILoadingState } from "@/domain/interfaces/ILoadingState"
 
 /**
  * チャットアプリ全体を管理するコアロジック
  * @source
  */
-const useChatApp = (chatState: IChatState, mapLayer: IMapLayer, geojsonState: IGeojsonState) => {
+const useChatApp = (
+  chatState: IChatState,
+  mapLayer: IMapLayer,
+  geojsonState: IGeojsonState,
+  loadingState: ILoadingState
+) => {
   const { getChatMessageList } = chatState
   const { toggleLayer, frontToLayer, backToLayer, setLayerOpacity, setLayerColor } = mapLayer
   const { getGeojsonColorbyIndex } = geojsonState
+  const { getIsLoading } = loadingState
   /**
    * 連番のidからgeojsonレイヤーを特定し、トグルする
    * @param index number
@@ -60,6 +67,7 @@ const useChatApp = (chatState: IChatState, mapLayer: IMapLayer, geojsonState: IG
    */
   const getResponseIndex = (index: number): number => {
     const messages = getChatMessageList()
+    //条件に合うメッセージをカウント
     let counter = 0
     for (let i = 0; i <= index; i++) {
       const msg = messages[i]
@@ -67,6 +75,7 @@ const useChatApp = (chatState: IChatState, mapLayer: IMapLayer, geojsonState: IG
         counter++
       }
     }
+    //配列は0始まりなので-1して返す
     return counter - 1
   }
 
@@ -79,6 +88,7 @@ const useChatApp = (chatState: IChatState, mapLayer: IMapLayer, geojsonState: IG
     setOpacityByIndex,
     setColorByIndex,
     getGeojsonColorbyIndex,
+    getIsLoading,
   }
 }
 

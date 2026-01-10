@@ -73,7 +73,7 @@
 
       <div v-if="feedbackState" class="border-t border-gray-80">
         <div class="px-2 pt-2 text-white">【絞り込み条件を入力】</div>
-        <Submit :is-loading="false" />
+        <Submit :is-loading="isLoading" @submit-button-clicked="feedbackButtonClicked" />
       </div>
     </div>
   </div>
@@ -98,6 +98,7 @@ const emit = defineEmits([
   "front-to-clicked",
   "on-slider-input",
   "on-color-input",
+  "feedback-button-clicked",
 ])
 
 const props = defineProps({
@@ -112,6 +113,10 @@ const props = defineProps({
     type: String as PropType<string>,
     default: "#808080",
   },
+  isLoading:{
+    type: Boolean as PropType<boolean>,
+    default: false,
+  }
 })
 
 const toggleClicked = () => {
@@ -121,6 +126,10 @@ const toggleClicked = () => {
 
 const feedbackClicked = () => {
   feedbackState.value = !feedbackState.value
+}
+
+const feedbackButtonClicked = (message: string) => {
+  emit("feedback-button-clicked", message, props.responseId)
 }
 
 const frontToClicked = () => {

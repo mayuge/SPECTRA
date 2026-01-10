@@ -28,7 +28,7 @@
     <div v-if="getMainPanelOpen()" class="bg-white h-[50svh] shadow-lg flex flex-col">
       <div class="flex-1 overflow-y-scroll no-scrollbar">
         <ConceptDisplay v-if="isBlankChat()" />
-        <ChatApp @retry-clicked="submitButtonClicked" />
+        <ChatApp @retry-clicked="submitButtonClicked" @feedback-button-clicked="feedbackButtonClicked" />
       </div>
 
       <ChatSuggestGroup :suggestList="CHAT_SUGGEST_LIST" @badge-clicked="suggestButtonClicked" />
@@ -48,14 +48,16 @@
     >
       <div class="flex-1 pt-16 overflow-y-scroll no-scrollbar">
         <ConceptDisplay v-if="isBlankChat()" />
-        <ChatApp @retry-clicked="submitButtonClicked" />
+        <ChatApp
+          @retry-clicked="submitButtonClicked"
+          @feedback-button-clicked="feedbackButtonClicked"
+        />
       </div>
 
       <ChatSuggestGroup :suggestList="CHAT_SUGGEST_LIST" @badge-clicked="suggestButtonClicked" />
       <ChatHistoryGroup :historyList="getChatHistory()" @badge-clicked="submitButtonClicked" />
       <Submit :isLoading="getIsLoading()" @submit-button-clicked="submitButtonClicked" />
 
-      <!-- resize handle -->
       <div
         class="absolute top-0 right-0 h-full w-2 cursor-col-resize
                hover:bg-primary transition-colors"
@@ -112,6 +114,7 @@ const {
   isBlankChat,
   submitButtonClicked,
   suggestButtonClicked,
+  feedbackButtonClicked,
   getIsLoading,
   getChatHistory,
   getPanelWidth,

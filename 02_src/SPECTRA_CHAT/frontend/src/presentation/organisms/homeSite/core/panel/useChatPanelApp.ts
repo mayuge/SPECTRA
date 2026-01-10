@@ -129,22 +129,22 @@ const useChatPanelApp = (
 
   /**
    * 送信ボタン押下
-   * @param inputValue string
+   * @param message string
    */
-  const submitButtonClicked = async (inputValue: string) => {
+  const submitButtonClicked = async (messageText: string) => {
     // ローディング中は追加で質問できないようにする
     if (getIsLoading()) {
       return
     }
     // 空文字の時は何もしない
-    if (!inputValue.trim()) {
+    if (!messageText.trim()) {
       return
     }
 
     //特定の危険文字のみ禁止
     const invalidCharPattern = /[\u0000-\u001F\u007F\uFEFF'"<>!\/\\;|&`$%^@]/u
 
-    if (invalidCharPattern.test(inputValue)) {
+    if (invalidCharPattern.test(messageText)) {
       const errorMessage: ChatType = {
         type: "error",
         message: "使用できない記号（BOM・クォーテーション・< > ! / など）が含まれています。",
@@ -155,7 +155,7 @@ const useChatPanelApp = (
     }
 
     // ✅ 文字数制限（例：最大255文字）
-    if (inputValue.length > 255) {
+    if (messageText.length > 255) {
       const errorMessage: ChatType = {
         type: "error",
         message: "メッセージが長すぎます。255文字以内で入力してください。",
@@ -171,7 +171,7 @@ const useChatPanelApp = (
 
     const requestMessage: ChatType = {
       type: "request",
-      message: inputValue,
+      message: messageText,
       isdata: false,
     }
 
@@ -180,7 +180,7 @@ const useChatPanelApp = (
 
     try {
       //メッセージをchatのapiへ送信
-      const chatGeojson: Feature | FeatureCollection | null = await sendChatMessage(inputValue)
+      const chatGeojson: Feature | FeatureCollection | null = await sendChatMessage(messageText)
 
       // すべてのgeojsonをFeatureCollectionとみなし、データ型を定義
       let geojson: FeatureCollection
@@ -197,7 +197,7 @@ const useChatPanelApp = (
 
       const responseMessage: ChatType = {
         type: "response",
-        message: `【表示結果】${inputValue}`,
+        message: `【表示結果】${messageText}`,
         isdata: true,
       }
 
@@ -213,12 +213,29 @@ const useChatPanelApp = (
     }
   }
 
+  const feedbackButtonClicked = async (messageText: string, index: number) => {
+    // ローディング中は追加で質問できないようにする
+    if (getIsLoading()) {
+      return
+    }
+    // 空文字の時は何もしない
+    if (!messageText.trim()) {
+      return
+    }
+    startLoading()
+    // メッセージ送信後にメインパネルを開く
+    openMainPanel()
+    console.log("フィードバックボタンがクリックされました:", messageText, index)
+    stopLoading()
+  }
+
   return {
     getMainPanelOpen,
     toggleMainPanel,
     getPullTabIcon,
     submitButtonClicked,
     suggestButtonClicked,
+    feedbackButtonClicked,
     isBlankChat,
     getIsLoading,
     getChatHistory,
