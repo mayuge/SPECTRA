@@ -1,5 +1,11 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=SPECTRA%20CHAT&fontSize=90&animation=fadeIn&fontAlignY=38&descAlignY=51&descAlign=62"/>
 
+![20260121](01_docs\image\SPECTRA_CHAT\SPECTRA_CHAT_20260121.png)
+
+## リポジトリ
+
+https://github.com/mayuge/SPECTRA
+
 ## 主な使用技術/プラグイン
 
 ### フロントエンド
@@ -11,6 +17,7 @@
     <img src="https://img.shields.io/badge/-Maplibre-396CB2.svg?logo=maplibre&style=flat">
     <img src="https://img.shields.io/badge/-axios-5A29E4.svg?logo=axios&style=flat">
     <img src="https://img.shields.io/badge/-pinia-FFD859.svg?logo=pinia&style=flat">
+    <img src="https://img.shields.io/badge/-turf.js-FF0000.svg?logo=turfjs&style=flat">
 </p>
 
 ### バックエンド
@@ -25,6 +32,7 @@
 
 <p>
     <img src="https://img.shields.io/badge/-pnpm-F69220.svg?logo=pnpm&style=flat">
+    <img src="https://img.shields.io/badge/-vite-5A11CD.svg?logo=vite&style=flat">
     <img src="https://img.shields.io/badge/-prettier-F7B93E.svg?logo=prettier&style=flat">
     <img src="https://img.shields.io/badge/-uv-DE5FE9.svg?logo=uv&style=flat">
     <img src="https://img.shields.io/badge/-ruff-D7FF64.svg?logo=ruff&style=flat">
@@ -35,7 +43,6 @@
 - ### docker 環境を準備
   [docker 公式スタートガイドページ](https://www.docker.com/get-started/)
 - ### node 環境を準備
-
   - node のバージョン管理は [volta](https://docs.volta.sh/guide/getting-started) がおすすめ。指定バージョンの node 環境、パッケージマネージャーを用意してください
 
   ```
@@ -53,7 +60,6 @@
   [こちら](https://drive.google.com/drive/folders/1ASBWmogy64pGH4hvqwTM9xYL0mg-w1hO)から取得したものを`02_src\SPECTRA_CHAT\migration`に配置
 
 - ### env ファイル追加
-
   - 02_src\SPECTRA_CHAT\backend 直下に`.env`ファイルを追加。このとき、.env ファイルの形式は、`env.txt`を参考にすること。
 
   ```
@@ -62,7 +68,6 @@
   ```
 
 - ### アプリケーションを立ち上げる方法
-
   - 02_src\SPECTRA_CHAT に移動
 
   ```
@@ -293,14 +298,12 @@ flowchart TD
 - デザインにセマンティックな効果（機能）をもたせる。→ デザインの意味をいちいち考える
 
 - ### デザインシステムとは？ 組織での事例
-
   - [デジタル庁デザインシステム](https://www.digital.go.jp/policies/servicedesign/designsystem)
     - デジタル庁のデザインシステムの内容は入札案件の評価基準となりうるため要件を確認すること
   - [freee 株式会社 vibes](https://vibes.freee.co.jp/?path=/docs/doc-readme--docs)
   - [SmartHR Design System](https://smarthr.design/)
 
   - ### カラー
-
     - [デジタル庁デザインガイドライン　カラーパレット](https://design.digital.go.jp/dads/foundations/color/color-palette/)
 
     - [BootStrap5 ユーティリティカラー](https://getbootstrap.com/docs/5.3/utilities/colors/)
@@ -325,7 +328,6 @@ flowchart TD
     - リンクと間違えるので、文字は青くしないこと（紫もダメ）
 
     ### セマンティックカラー
-
     - 色に役割（機能）をもたせる仕組み(装飾目的で使わない)
       - primary テーマカラー → そのアプリのブランドカラーとしての役割を持つ
       - secondary サブカラー → テーマカラーを補助する役割を持つ、primary と似た色は控える
@@ -334,17 +336,14 @@ flowchart TD
       - danger→ 危険な状態/取り返しがつかない状態/絶対に気づかないといけない状態「データを削除しますか。この動作は取り消しできません」
 
   - フォント
-
     - NotoSansJP を使用する
     - 4px の倍数で作成する → 実際には無理
 
   - アイコン
-
     - サービスごとに制作するのが望ましい
     - googleMaterialIcon の CDN サービスはテスト利用で便利
 
   - 余白
-
     - 4px の倍数で作成する
     - まずはボックスレイアウト配置(左右上下余白を揃えるかつ等間隔)を心がける
 
