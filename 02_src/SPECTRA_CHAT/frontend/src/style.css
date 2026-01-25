@@ -49,6 +49,7 @@
   white-space: nowrap;
   direction: ltr;
   -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
 }
 
@@ -57,7 +58,7 @@
 }
 
 .maplibregl-ctrl-top-right {
-  top: 64px !important;
+  top: 44px !important;
   width: 200px;
   height: 64px;
 }

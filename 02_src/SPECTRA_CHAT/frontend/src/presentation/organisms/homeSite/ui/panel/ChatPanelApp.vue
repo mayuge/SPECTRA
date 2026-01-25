@@ -28,7 +28,10 @@
     <div v-if="getMainPanelOpen()" class="bg-white h-[50svh] shadow-lg flex flex-col">
       <div class="flex-1 overflow-y-scroll no-scrollbar">
         <ConceptDisplay v-if="isBlankChat()" />
-        <ChatApp @retry-clicked="submitButtonClicked" />
+        <ChatApp
+          @retry-clicked="submitButtonClicked"
+          @feedback-button-clicked="feedbackButtonClicked"
+        />
       </div>
 
       <ChatSuggestGroup :suggestList="CHAT_SUGGEST_LIST" @badge-clicked="suggestButtonClicked" />
@@ -46,20 +49,18 @@
       class="relative bg-white h-full shadow-lg flex flex-col"
       :style="{ width: getPanelWidth() + 'px' }"
     >
-      <div class="flex-1 pt-16 overflow-y-scroll no-scrollbar">
+      <div class="flex-1 pt-12 overflow-y-scroll no-scrollbar">
         <ConceptDisplay v-if="isBlankChat()" />
-        <ChatApp @retry-clicked="submitButtonClicked" />
+        <ChatApp
+          @retry-clicked="submitButtonClicked"
+          @feedback-button-clicked="feedbackButtonClicked"
+        />
       </div>
 
       <ChatSuggestGroup :suggestList="CHAT_SUGGEST_LIST" @badge-clicked="suggestButtonClicked" />
       <ChatHistoryGroup :historyList="getChatHistory()" @badge-clicked="submitButtonClicked" />
-      <div class="flex items-center justify-between w-full py-1 px-2 text-xs text-white bg-warning">
-        絞り込み対象レイヤー：○○○○
-        <Button variant="btn-text-white" size="mini" icon-left="close" />
-      </div>
       <Submit :isLoading="getIsLoading()" @submit-button-clicked="submitButtonClicked" />
 
-      <!-- resize handle -->
       <div
         class="absolute top-0 right-0 h-full w-2 cursor-col-resize
                hover:bg-primary transition-colors"
@@ -90,6 +91,7 @@ import type { IMapLayer } from '@/domain/interfaces/IMapLayer'
 import type { IChatState } from '@/domain/interfaces/IChatState'
 import type { IGeojsonState } from '@/domain/interfaces/IGeojsonState'
 import type { ILoadingState } from '@/domain/interfaces/ILoadingState'
+import type { IGeoProcessing } from '@/domain/interfaces/IGeoprocessing'
 
 import { useDialogStateStore } from '@/infrastructure/stores/dialogStateStore'
 import useReqChatApi from '@/infrastructure/http/chat/reqChatApi'
@@ -98,6 +100,7 @@ import useMapLayer from '@/infrastructure/map/mapLayer'
 import { useChatStateStore } from '@/infrastructure/stores/chatStateStore'
 import { useGeojsonStateStore } from '@/infrastructure/stores/geojsonStateStore'
 import { useLoadingStateStore } from '@/infrastructure/stores/loadingStateStore'
+import useGeoProcessing from '@/infrastructure/geoProcessing/geoProcessing'
 
 import PullTab from '@/presentation/atoms/buttons/PullTab.vue'
 import DialogHeader from '@/presentation/molecules/header/DialogHeader.vue'
@@ -108,7 +111,6 @@ import ChatApp from '@/presentation/organisms/homeSite/ui/panel/ChatApp.vue'
 import ConceptDisplay from '@/presentation/molecules/display/ConceptDisplay.vue'
 import { CHAT_SUGGEST_LIST } from '@/domain/params/chatSuggest'
 import useChatPanelApp from '@/presentation/organisms/homeSite/core/panel/useChatPanelApp'
-import Button from '@/presentation/atoms/buttons/Button.vue'
 
 const {
   getMainPanelOpen,
@@ -117,6 +119,7 @@ const {
   isBlankChat,
   submitButtonClicked,
   suggestButtonClicked,
+  feedbackButtonClicked,
   getIsLoading,
   getChatHistory,
   getPanelWidth,
@@ -129,7 +132,8 @@ const {
   useMapLayer() as IMapLayer,
   useChatStateStore() as IChatState,
   useGeojsonStateStore() as IGeojsonState,
-  useLoadingStateStore() as ILoadingState
+  useLoadingStateStore() as ILoadingState,
+  useGeoProcessing() as IGeoProcessing
 )
 onBeforeUnmount(stopResize)
 </script>

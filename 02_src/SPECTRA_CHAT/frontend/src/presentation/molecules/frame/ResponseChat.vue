@@ -1,12 +1,16 @@
 <template>
-  <div class="flex justify-start w-full p-2 text-xs gap-1">
-    <div class="flex flex-col w-[80%]">
+  <div
+    class="flex justify-start w-full p-2 text-xs gap-1"
+    :class="feedbackState ? 'bg-warning rounded' : ''"
+  >
+    <div class="flex flex-col w-full">
       <div
-        class="relative bg-gray-90 flex justify-center text-black rounded-t-md px-4 py-9 whitespace-normal"
+        class="relative bg-gray-90 flex justify-center text-black rounded-t-md px-4 py-9 whitespace-normal w-[80%]"
       >
         <div class="absolute top-2 left-2">
           <Color :value="layerColor" @on-change-input="onColorInput" />
         </div>
+
         <div class="absolute top-3 right-2">
           <SliderInput :value="0.3" @on-change-input="onSliderInput" />
         </div>
@@ -22,7 +26,6 @@
             size="mini"
             @button-clicked="frontToClicked"
           />
-
           <Button
             title="レイヤーを背面へ移動"
             class="text-gray-70"
@@ -34,28 +37,44 @@
         </div>
       </div>
 
-      <div
-        class="flex items-center rounded-b-md px-2 gap-2"
-        title="対象のレイヤーを表示切り替え"
-        :class="iconState ? 'bg-primary text-black border-t border-gray-50' : 'bg-gray-20 text-white'"
-        @click="toggleClicked()"
-      >
-        <Button
-          size="mini"
-          :icon-left="iconState ? 'visibility': 'visibility_off'"
-          :variant="iconState ? 'btn-text-black' : 'btn-text-white'"
-        />
-        <div>{{ iconState ? '表示中' : '非表示中' }}</div>
+      <div class="flex items-center w-full gap-1">
+        <div
+          class="flex items-center rounded-b-md px-2 gap-2 w-[80%] cursor-pointer"
+          title="対象のレイヤーを表示切り替え"
+          :class="iconState
+            ? 'bg-primary text-black border-t border-gray-50'
+            : 'bg-gray-20 text-white'"
+          @click="toggleClicked"
+        >
+          <Button
+            size="mini"
+            :icon-left="iconState ? 'visibility' : 'visibility_off'"
+            :variant="iconState ? 'btn-text-black' : 'btn-text-white'"
+          />
+          <div>{{ iconState ? '表示中' : '非表示中' }}</div>
+        </div>
+
+        <div
+          class="text-gray-40 text-xs whitespace-nowrap"
+          :class="feedbackState ? 'text-white' : ''"
+        >
+          {{ responseTime }}
+        </div>
       </div>
+
       <Button
-        size="small"
-        variant="btn-text-gray"
-        icon-left="join_inner"
-        text="条件を加えて絞り込む"
+        class="my-2 p-0.5 w-[80%]"
+        size="mini"
+        :variant="feedbackState ? 'btn-light' : 'btn-text-gray'"
+        :icon-left="feedbackState ? 'close' : 'join_inner'"
+        :text="feedbackState ? '絞り込みをやめる' : '条件を加えて絞り込む'"
+        @button-clicked="feedbackClicked"
       />
-    </div>
-    <div class="flex items-end text-gray-40 pb-10">
-      {{ responseTime }}
+
+      <div v-if="feedbackState" class="border-t border-gray-80">
+        <div class="px-2 pt-2 text-white">【絞り込み条件を入力】</div>
+        <Submit :is-loading="isLoading" @submit-button-clicked="feedbackButtonClicked" />
+      </div>
     </div>
   </div>
 </template>
@@ -63,50 +82,73 @@
 <script setup lang="ts">
 import type { PropType } from "vue"
 import { onMounted, ref } from "vue"
+
 import Button from "@/presentation/atoms/buttons/Button.vue"
 import Color from "@/presentation/atoms/inputs/Color.vue"
 import SliderInput from "@/presentation/atoms/inputs/SliderInput.vue"
+import Submit from "@/presentation/molecules/input/Submit.vue"
+
 const iconState = ref(true)
 const responseTime = ref("")
-const emit = defineEmits(["toggle-clicked", "back-to-clicked", "front-to-clicked", "on-slider-input", "on-color-input"])
+const feedbackState = ref(false)
+
+const emit = defineEmits([
+  "toggle-clicked",
+  "back-to-clicked",
+  "front-to-clicked",
+  "on-slider-input",
+  "on-color-input",
+  "feedback-button-clicked",
+])
 
 const props = defineProps({
-    text: {
-        type: String as PropType<string>,
-    },
-    responseId: {
-        type: Number as PropType<number>,
-        required: true
-    },
-    layerColor:{
-      type: String as PropType<string>,
-      default:"#808080"
-    }
+  text: {
+    type: String as PropType<string>,
+  },
+  responseId: {
+    type: Number as PropType<number>,
+    required: true,
+  },
+  layerColor: {
+    type: String as PropType<string>,
+    default: "#808080",
+  },
+  isLoading:{
+    type: Boolean as PropType<boolean>,
+    default: false,
+  }
 })
 
 const toggleClicked = () => {
-    iconState.value = !iconState.value
-    emit("toggle-clicked", props.responseId)
+  iconState.value = !iconState.value
+  emit("toggle-clicked", props.responseId)
 }
 
-const frontToClicked = () =>{
+const feedbackClicked = () => {
+  feedbackState.value = !feedbackState.value
+}
+
+const feedbackButtonClicked = (message: string) => {
+  emit("feedback-button-clicked", message, props.responseId)
+}
+
+const frontToClicked = () => {
   emit("front-to-clicked")
 }
 
-const backToClicked = () =>{
+const backToClicked = () => {
   emit("back-to-clicked")
 }
 
-const onColorInput =(color:string)=>{
-  emit("on-color-input",color)
+const onColorInput = (color: string) => {
+  emit("on-color-input", color)
 }
 
-const onSliderInput = (opacity:number) => {
+const onSliderInput = (opacity: number) => {
   emit("on-slider-input", opacity)
 }
 
-
-onMounted( () => {
+onMounted(() => {
   const now = new Date()
   const hh = String(now.getHours()).padStart(2, "0")
   const mm = String(now.getMinutes()).padStart(2, "0")

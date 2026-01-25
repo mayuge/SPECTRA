@@ -1,6 +1,6 @@
 <template>
   <div
-    class="absolute top-19 right-16 z-10 bg-gray-30 p-2 select-none md:max-w-[450px] max-w-[60svw]"
+    class="absolute top-13 right-16 z-10 bg-gray-30 p-2 select-none md:max-w-[450px] max-w-[60svw]"
   >
     <div class="flex items-center justify-between pb-2 text-xs text-white">
       <div>レイヤー切替</div>

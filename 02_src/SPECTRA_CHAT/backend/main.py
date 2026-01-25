@@ -17,6 +17,7 @@ from controller.supermarket.supermarket_controller import router as supermarket_
 from controller.geocoding.geocoding_controller import router as geocoding_router  
 from controller.landprice.landprice_controller import router as landprice_router 
 from controller.bus.bus_controller import router as bus_router
+from controller.school.school_controller import router as school_router
 
 app = FastAPI()
 
@@ -64,6 +65,7 @@ app.include_router(supermarket_router)
 app.include_router(geocoding_router)
 app.include_router(landprice_router)
 app.include_router(bus_router)
+app.include_router(school_router)
 
 mcp = FastApiMCP(app)
 mcp.mount()

@@ -5,6 +5,7 @@ import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
 import type { IChatState } from "@/domain/interfaces/IChatState"
 import type { IGeojsonState } from "@/domain/interfaces/IGeojsonState"
 import type { ILoadingState } from "@/domain/interfaces/ILoadingState"
+import type { IGeoProcessing } from "@/domain/interfaces/IGeoprocessing"
 
 import type { DialogNameType } from "@/domain/types/dialogNameType"
 import type { ChatType } from "@/domain/types/chatType"
@@ -23,7 +24,8 @@ const useChatPanelApp = (
   mapLayer: IMapLayer,
   chatState: IChatState,
   geojsonState: IGeojsonState,
-  loadingState: ILoadingState
+  loadingState: ILoadingState,
+  geoProcessing: IGeoProcessing
 ) => {
   const {
     getDialogState,
@@ -37,8 +39,9 @@ const useChatPanelApp = (
   const { getSuggestData } = reqSuggestApi
   const { addGeoJsonLayer } = mapLayer
   const { addChatMessage, getChatMessageList, getChatHistory } = chatState
-  const { setGeojson, getLastGeojson } = geojsonState
+  const { setGeojson, getLastGeojson, getGeojsonByIndex } = geojsonState
   const { startLoading, stopLoading, getIsLoading } = loadingState
+  const { intersectGeojson } = geoProcessing
   /**
    * メインパネルの開閉状態取得
    */
@@ -126,28 +129,25 @@ const useChatPanelApp = (
       stopLoading()
     }
   }
-  //TODO:チャットを再帰的にできるように選択機能を追加予定　選択した状態で質問すると組み合わさった回答を返す
 
-
-  
   /**
    * 送信ボタン押下
-   * @param inputValue string
+   * @param message string
    */
-  const submitButtonClicked = async (inputValue: string) => {
+  const submitButtonClicked = async (messageText: string) => {
     // ローディング中は追加で質問できないようにする
     if (getIsLoading()) {
       return
     }
     // 空文字の時は何もしない
-    if (!inputValue.trim()) {
+    if (!messageText.trim()) {
       return
     }
 
     //特定の危険文字のみ禁止
     const invalidCharPattern = /[\u0000-\u001F\u007F\uFEFF'"<>!\/\\;|&`$%^@]/u
 
-    if (invalidCharPattern.test(inputValue)) {
+    if (invalidCharPattern.test(messageText)) {
       const errorMessage: ChatType = {
         type: "error",
         message: "使用できない記号（BOM・クォーテーション・< > ! / など）が含まれています。",
@@ -158,7 +158,7 @@ const useChatPanelApp = (
     }
 
     // ✅ 文字数制限（例：最大255文字）
-    if (inputValue.length > 255) {
+    if (messageText.length > 255) {
       const errorMessage: ChatType = {
         type: "error",
         message: "メッセージが長すぎます。255文字以内で入力してください。",
@@ -174,7 +174,7 @@ const useChatPanelApp = (
 
     const requestMessage: ChatType = {
       type: "request",
-      message: inputValue,
+      message: messageText,
       isdata: false,
     }
 
@@ -183,7 +183,7 @@ const useChatPanelApp = (
 
     try {
       //メッセージをchatのapiへ送信
-      const chatGeojson: Feature | FeatureCollection | null = await sendChatMessage(inputValue)
+      const chatGeojson: Feature | FeatureCollection | null = await sendChatMessage(messageText)
 
       // すべてのgeojsonをFeatureCollectionとみなし、データ型を定義
       let geojson: FeatureCollection
@@ -200,7 +200,7 @@ const useChatPanelApp = (
 
       const responseMessage: ChatType = {
         type: "response",
-        message: `【表示結果】${inputValue}`,
+        message: `【表示結果】${messageText}`,
         isdata: true,
       }
 
@@ -216,12 +216,65 @@ const useChatPanelApp = (
     }
   }
 
+  /**
+   * @param messageText
+   * @param index
+   * @returns
+   */
+  const feedbackButtonClicked = async (messageText: string, index: number) => {
+    // ローディング中は追加で質問できないようにする
+    if (getIsLoading()) {
+      return
+    }
+    // 空文字の時は何もしない
+    if (!messageText.trim()) {
+      return
+    }
+    startLoading()
+    // メッセージ送信後にメインパネルを開く
+    openMainPanel()
+
+    console.log("フィードバックボタンがクリックされました:", messageText, index)
+
+    //既存のgeojsonを取得
+    const mainGeojson = getGeojsonByIndex(index)
+
+    //チャットメッセージに基づき新たなgeojsonを取得
+    try {
+      const chatGeojson: Feature | FeatureCollection | null = await sendChatMessage(messageText)
+      // 共通部分を抽出
+      const resultGeojson = intersectGeojson(
+        mainGeojson as FeatureCollection,
+        chatGeojson as FeatureCollection
+      )
+      //結果をgeojsonStoreに格納
+      setGeojson(resultGeojson)
+      addGeoJsonLayer(getLastGeojson())
+
+      const responseMessage: ChatType = {
+        type: "response",
+        message: `【共通部分】${messageText}`,
+        isdata: true,
+      }
+      //responseタイプのチャットをストアに追加
+      addChatMessage(responseMessage)
+    } catch (error) {
+      const errorMessage: ChatType = { type: "error", message: error, isdata: false }
+      //エラー発生時、errorタイプのチャットをストアに追加
+      addChatMessage(errorMessage)
+      stopLoading()
+      return
+    }
+    stopLoading()
+  }
+
   return {
     getMainPanelOpen,
     toggleMainPanel,
     getPullTabIcon,
     submitButtonClicked,
     suggestButtonClicked,
+    feedbackButtonClicked,
     isBlankChat,
     getIsLoading,
     getChatHistory,

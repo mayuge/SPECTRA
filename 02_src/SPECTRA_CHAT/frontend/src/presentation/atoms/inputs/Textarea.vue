@@ -46,7 +46,7 @@ const shapeStyles: Record<TextareaShapeType, string> = {
 const textareaClass = computed(() => {
   const cornerShape = shapeStyles[props.shape] ?? shapeStyles.round
   return `
-    w-full text-black p-2 resize-none
+    w-full text-black p-2 resize-none bg-white
     border border-gray-80
     placeholder:text-sm placeholder:text-gray-70
     focus:!border-secondary focus:!ring-4 focus:!ring-secondary

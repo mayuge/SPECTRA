@@ -37,7 +37,7 @@
   - node のバージョン管理は [volta](https://docs.volta.sh/guide/getting-started) がおすすめ。指定バージョンの node 環境、パッケージマネージャーを用意してください
 
   ```
-  node v22.21.0
+  node v24.12.0
   ```
 
   ```
@@ -135,19 +135,7 @@
 - 要素間は port 番号を指定して通信する
 - backend は、[`http://localhost:4000/docs`](http://localhost:4000/docs)にてアクセスを swagger で検証できる
 
-```mermaid
-flowchart TD
-compose[エントリーポイント <br>compose.yaml]
-frontend[frontendコンテナ Vue <br>port3000]
-backend[backendコンテナ FastAPI <br>port4000]
-postgis[postGISコンテナ（DB） PostGIS <br>port5432]
-pipeline[pipeline.py <br>postGISにmigrationフォルダ内データを一括投入するスクリプト]
-
-compose --> frontend
-compose --> backend
-compose --> postgis
-pipeline --> postgis
-```
+![](https://kroki.io/mermaid/svg/eNpLy8kvT85ILCpRCHHhSs7PLcgvTo1-3LTicfPmx80dj5tXPW7e87h57uOmJRARBZukIjuoOr3KxNycWK60ovy8ktS8lGgY43HTZrDitsfNXQphpalgPQX5RSXGBgYGsVxJicnZIOVQGkW1W2JxiWOAJ1yHCVgH0LKS9MziaBDt7hmMrOP9ng4Xp_d7OhUCIHJwnaYmxkZAnZkFqTmZeanRMIZeQSVUCcSoxtW5melFiSWZ-XmPm6c-blr5uHn14-aGp22tj5vbQX5v2v-4adKTHQ3Putc865r6tHXp48aZj5u6HzftfNy0Hhw-04HBEssFCzwFXV07BVhIoAhC_YsiBvUZ3J3IggAQ2Lue)
 
 ## フロントエンドのアーキテクチャ
 
@@ -157,103 +145,21 @@ pipeline --> postgis
 - テストコードには vitest を用いる
 - インデントには prettier を、ビルドチェックに eslint を用いる
 
-```mermaid
-flowchart TD
-
-    %% --- 層の定義 ---
-    subgraph UI層["UI（プレゼンテーション層）"]
-        UI["コンポーネント / ページ"]
-    end
-
-    subgraph Usecase層["Usecase（アプリケーション層）"]
-        Usecase["ビジネスロジック / ユースケース"]
-    end
-
-    subgraph Domain層["Domain（ドメイン層 / interface定義）"]
-        Domain["IMapInstance / IDialogStateStore など"]
-    end
-
-    subgraph Infrastructure層["Infrastructure（インフラ層）"]
-        Infrastructure["地図ライブラリ / HTTP通信 / 状態管理（Pinia）など"]
-    end
-
-    %% --- 関係性の定義 ---
-    UI -->|引数にインターフェースをいれて、DIを行う| Usecase
-    Usecase -->|インターフェースに依存| Domain
-    Infrastructure -->|インターフェースを実装| Domain
-    UI ---|ユースケースの結果を描画| Usecase
-```
+![](https://kroki.io/mermaid/svg/eNp9Us1O20AQvvspLEscI96AUw7soRISySnqYes6YAkcZDvqJYd4t0TQgkBAAIU_hUZECSUFIdpGtcjDTGzDiVfoeJwgQgh7mp2d72dnJr9U-KIvcttVM2lFUfFMTampVEoNbhrgdYJOLbpvxQl6c4qfFmy-sqhmGb7ntCx78tdAHoD8CcIHeQuyAtIH8QdkE69Y9OSvax8JHJ8sy2kgbqnyJK6UmxSvqdMqyBph_w7qDeuz8krVMXTuGIl0Esf64pwstEHcvC-eQNCB3EWZWFt0QV5RLEH8IhMXxNEdknUnukkXlrlpkZkkpF6sg6yDaCT6SGharmHnuW4krRx1lOByGvvAV5jluNzSDcSwtMmXCgvzLneNebdgGyp4bfBaE60wK29zx7WLulu0k_6MpqhNDWp1FWRrrDWj1TktOL4OjrC4Raj9OJBtdDabycw9lmv9Xh0v0bff4er3qFOPtisoMGdaJkfat70O1upx_7zfE2G5Ob5cWYbhTCnwq2H1GrzLgWHRoz2pgmgOJ7MD3lcQG-BdQNlLM0w81PFWKQ1HrLwYN5FO5PIu-_cnwdVhaTALZbwb7xOInaBz9vBjdYSAvpIqjS8T_jq62w5PjxEXbm1Fe_-ePf8Hkjm6kw==)
 
 ## AtomicDesign による UI コンポーネントマネジメント
 
 - コンポーネントを階層的に管理することで、UI の拡張性を高める
 - コンポーネントは storybook で管理する
 
-```mermaid
-flowchart TD
-
-  %% --- Atomic Design レイヤー構造 ---
-  subgraph AtomicDesign["Atomic Design によるUIコンポーネント構造"]
-
-    A[Atom<br>（UI部品の最小単位<br>例: Button, Input, Icon）]
-    B[Molecule<br>（Atomの組み合わせ<br>例: Form, Card, ModalHeader）]
-    C[Organism<br>（Atoms/Moleculesを配置し<br>ロジックを持つ単位<br>ページ相当の構成要素）]
-    D[Template<br>（状況に応じてOrganismを切り替える<br>例: デバイス別・テーマ別表示）]
-    E[Page<br>実際に表示される画面（ルーティングに対応し<br>特定のTemplateを表示する）]
-  end
-
-  %% --- 関係性 ---
-  A --> B
-  B --> C
-  C --> D
-  D --> E
-
-  %% --- ロジック・ユースケース層との関係 ---
-  subgraph Logic["ロジック層 / クリーンアーキテクチャとの接続"]
-    Usecase[UseCase<br>（ビジネスロジック / アプリケーション層）]
-    Domain[Domain<br>（インターフェース / エンティティ定義）]
-    Infra[Infrastructure<br>（HTTP / Map / DB / Store）]
-  end
-
-  %% --- 依存関係の流れ ---
-  C -->|UIイベントで呼び出し| Usecase
-  Usecase -->|インターフェースに依存| Domain
-  Infra -->|インターフェースを実装| Domain
-  C ---|UI更新| Usecase
-
-```
+- ![](https://kroki.io/mermaid/svg/eNp9VN1P2lAUf-evaEh8k-x9WUwEXCSZmcnwqfGhQkUSaEkp2YsP3t6pKDLd3PwAnU5R2Jyo8WM6Ef6YQ1t58l_YubctMrMtae490Ht-H-ec28mU-jY2JWm6EA37fILQ1ycEAgFhUFfTyZgQlrPJhCIA_QFGBSg-Data6MzsskN4OpubSGhSZso97xwX_U-yyREYeTAKYxEwzoHis41AQIs8zjuI_nFGLwiDIst-MaENPDTyY5EOrZmrBEjd2poxT5fN4kb7rsjetpuF50Iwp-uq0i9ElExOxy2mKg-NhXEOFBRH1JQcy6VkF4zhIpB9-Q5Iy1xBRctAyl2sl6qW7hdCkhbvF0bUuJQalqW4rHXxQuJrLSEpyWy6By_7zCPJgvGxM1u07-pA1tkJoMdgXAOlYJzgO2sJXVQe9QMtsSIY13b52rxbZQ6rBSu_cn9I7IvdLmtYjMrpTErSPRf24pV1jlBHZmsLyAaQQ08Wkpj5eTAWrXILCCt41xvQeaArrIfGjZk_AHoLdI734Av-vP9asyu_upRD4qiU4HRmfadTKiOXcwLIZzCWENf-dNvZ3kMxQI84yhwY-6yZxikTdtLk2ngV7IUbs15Cd54NVOmhbSKUyyor8Z7p66zttVuGNVN1x2wQ9wEhiFGQRyGMQjwKYxTm0VBP_h-lZ14PealvwDhzAvOsAqSGqhymp9P8Sk0kY6K_FwYzhGcCx_vOLaPZPQ52zO3j_wTovoNqvT-wr0p-p5xjWTkmZWUR9xDubhuBrnLsIpPVw8NJEHid8bhyfwKtIiFKeBwLNS0lFdHZPEh2RVFWi-vDVlUdsxyyxu-a0ye2YlPs5rcuXkSZ1CSRr1ldy8X0nOYpHY5GRxFiRMrgGg7i8kZXNfmvjWs3t83jDaeorA6XBAfGrS5v2DT7BqDMTefqA6maHxpAzs15nIf1aa9Yvm7ZeNK_nOGwOYzTbkF8rpP_Z-E9qe_c78_2ZDFxARRnlS-stdNHHb8BJW2axA==)
 
 ## 　バックエンドのアーキテクチャ
 
 - 基本的にはフロントエンドと同じ。
 - ruff コマンドを使ってインデントを修正できる
 
-```mermaid
-flowchart TD
-
-    %% --- 層の定義 ---
-
-    ENTRY["エントリーポイント main.py"]
-
-
-    subgraph Usecase層["Controller（アプリケーション層）"]
-        Usecase["リクエストコントローラー"]
-    end
-
-    subgraph Domain層["Domain（ドメイン層 / 抽象基底クラス）"]
-        Domain["共通する抽象基底クラスを継承"]
-    end
-
-    subgraph Infrastructure層["Infrastructure（インフラ層）"]
-        Infrastructure["外部ロジック用リポジトリ"]
-    end
-
-    %% --- 関係性の定義 ---
-    ENTRY -->|呼び出し| Usecase
-    Usecase -->|呼び出し| Infrastructure
-    Usecase -->|継承元| Domain
-    Infrastructure -->|継承元| Domain
-```
+![](https://kroki.io/mermaid/svg/eNp1kUFLAkEYhu_7K4YFj9Y_6JIdunQIO4R02GzNwHZldiUCD-4MktapSEVBwhDUIGMRKmXLH_M1mif_QjM7a7Rqc1h2vvm-d55531TGvEimNWyjeExREF-RCIpGo4i5bXD6rN-YfvZEQR7u7MX3DxMqkC7QAdAS0CegHtAmkLasoHPtzNjIXqpHihyxcsenWMum0YGlJzVL58IJdds0bGxmMjqeeyUgj0BrQoq4Qo28Ae1wNd4598pcCAUrUOD3i94XQUGGgoIMFjjPPk6Pf4M53ThZ4oiZAtHHkL8CgZaBtuQj-AnaRJPrj2-3xR5GbFQRd3FNMgzjyOmEyorurNAApw7kZu0YkLvpa31SHv_LtGuksGbZOJe0c1haFC75NkmLK1x0xZpwN2dqV2e0K_wg70ApR5ned_20mn5FJLdMEyQ_qz5-jcmk0Ann_xs_323l2a0HzoBdjcCp5RfBKH9CWtMVZlxplhaxIs0HziqrD1vf-APYLE8o)
 
 ## 開発支援ツール
 

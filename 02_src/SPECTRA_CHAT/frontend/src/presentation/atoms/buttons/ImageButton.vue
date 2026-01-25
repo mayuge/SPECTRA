@@ -82,9 +82,9 @@ const shapeStyles: Record<ButtonShapeType, string> = {
 
 const paddingSize: Record<ButtonSizeType, string> = {
   mini: "p-0",
-  small: "md:p-3 p-2",
-  normal: "md:p-4 p-3",
-  large: "md:p-6 p-4",
+  small: "p-1",
+  normal: "p-2",
+  large: "p-3",
 }
 
 const variantClasses = computed(() => variantStyles[props.variant ?? "btn-primary"])
