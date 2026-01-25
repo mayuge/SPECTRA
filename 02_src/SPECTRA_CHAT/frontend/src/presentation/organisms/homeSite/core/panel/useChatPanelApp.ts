@@ -5,6 +5,7 @@ import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
 import type { IChatState } from "@/domain/interfaces/IChatState"
 import type { IGeojsonState } from "@/domain/interfaces/IGeojsonState"
 import type { ILoadingState } from "@/domain/interfaces/ILoadingState"
+import type { IGeoProcessing } from "@/domain/interfaces/IGeoprocessing"
 
 import type { DialogNameType } from "@/domain/types/dialogNameType"
 import type { ChatType } from "@/domain/types/chatType"
@@ -23,7 +24,8 @@ const useChatPanelApp = (
   mapLayer: IMapLayer,
   chatState: IChatState,
   geojsonState: IGeojsonState,
-  loadingState: ILoadingState
+  loadingState: ILoadingState,
+  geoProcessing: IGeoProcessing
 ) => {
   const {
     getDialogState,
@@ -37,8 +39,9 @@ const useChatPanelApp = (
   const { getSuggestData } = reqSuggestApi
   const { addGeoJsonLayer } = mapLayer
   const { addChatMessage, getChatMessageList, getChatHistory } = chatState
-  const { setGeojson, getLastGeojson } = geojsonState
+  const { setGeojson, getLastGeojson, getGeojsonByIndex } = geojsonState
   const { startLoading, stopLoading, getIsLoading } = loadingState
+  const { intersectGeojson } = geoProcessing
   /**
    * メインパネルの開閉状態取得
    */
@@ -213,6 +216,11 @@ const useChatPanelApp = (
     }
   }
 
+  /**
+   * @param messageText
+   * @param index
+   * @returns
+   */
   const feedbackButtonClicked = async (messageText: string, index: number) => {
     // ローディング中は追加で質問できないようにする
     if (getIsLoading()) {
@@ -225,7 +233,38 @@ const useChatPanelApp = (
     startLoading()
     // メッセージ送信後にメインパネルを開く
     openMainPanel()
+
     console.log("フィードバックボタンがクリックされました:", messageText, index)
+
+    //既存のgeojsonを取得
+    const mainGeojson = getGeojsonByIndex(index)
+
+    //チャットメッセージに基づき新たなgeojsonを取得
+    try {
+      const chatGeojson: Feature | FeatureCollection | null = await sendChatMessage(messageText)
+      // 共通部分を抽出
+      const resultGeojson = intersectGeojson(
+        mainGeojson as FeatureCollection,
+        chatGeojson as FeatureCollection
+      )
+      //結果をgeojsonStoreに格納
+      setGeojson(resultGeojson)
+      addGeoJsonLayer(getLastGeojson())
+
+      const responseMessage: ChatType = {
+        type: "response",
+        message: `【共通部分】${messageText}`,
+        isdata: true,
+      }
+      //responseタイプのチャットをストアに追加
+      addChatMessage(responseMessage)
+    } catch (error) {
+      const errorMessage: ChatType = { type: "error", message: error, isdata: false }
+      //エラー発生時、errorタイプのチャットをストアに追加
+      addChatMessage(errorMessage)
+      stopLoading()
+      return
+    }
     stopLoading()
   }
 

@@ -45,11 +45,21 @@ export const useGeojsonStateStore = defineStore<"geojsonStateStore", IGeojsonSta
       return geojsonColorList.value[index] ?? "#808080"
     }
 
+    /**
+     * 指定されたindexのGeoJSONを取得
+     * @param index 取得したいGeoJSONのインデックス
+     * @return FeatureCollection | null
+     */
+    const getGeojsonByIndex = (index: number) => {
+      return geojsonList.value[index] ?? null
+    }
+
     return {
       setGeojson,
       getLastGeojson,
       setColor,
       getGeojsonColorbyIndex,
+      getGeojsonByIndex,
     }
   }
 )

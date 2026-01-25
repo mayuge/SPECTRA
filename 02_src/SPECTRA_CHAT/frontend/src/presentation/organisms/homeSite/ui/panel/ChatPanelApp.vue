@@ -91,6 +91,7 @@ import type { IMapLayer } from '@/domain/interfaces/IMapLayer'
 import type { IChatState } from '@/domain/interfaces/IChatState'
 import type { IGeojsonState } from '@/domain/interfaces/IGeojsonState'
 import type { ILoadingState } from '@/domain/interfaces/ILoadingState'
+import type { IGeoProcessing } from '@/domain/interfaces/IGeoprocessing'
 
 import { useDialogStateStore } from '@/infrastructure/stores/dialogStateStore'
 import useReqChatApi from '@/infrastructure/http/chat/reqChatApi'
@@ -99,6 +100,7 @@ import useMapLayer from '@/infrastructure/map/mapLayer'
 import { useChatStateStore } from '@/infrastructure/stores/chatStateStore'
 import { useGeojsonStateStore } from '@/infrastructure/stores/geojsonStateStore'
 import { useLoadingStateStore } from '@/infrastructure/stores/loadingStateStore'
+import useGeoProcessing from '@/infrastructure/geoProcessing/geoProcessing'
 
 import PullTab from '@/presentation/atoms/buttons/PullTab.vue'
 import DialogHeader from '@/presentation/molecules/header/DialogHeader.vue'
@@ -130,7 +132,8 @@ const {
   useMapLayer() as IMapLayer,
   useChatStateStore() as IChatState,
   useGeojsonStateStore() as IGeojsonState,
-  useLoadingStateStore() as ILoadingState
+  useLoadingStateStore() as ILoadingState,
+  useGeoProcessing() as IGeoProcessing
 )
 onBeforeUnmount(stopResize)
 </script>
