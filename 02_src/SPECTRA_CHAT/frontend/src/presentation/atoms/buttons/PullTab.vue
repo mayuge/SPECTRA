@@ -5,7 +5,7 @@
       variantClasses,
       shapeClasses,
       shadowClass,
-      'flex items-center justify-center'
+      'flex items-center justify-center hover:brightness-90 cursor-pointer'
     ]"
     @click="buttonClicked"
   >

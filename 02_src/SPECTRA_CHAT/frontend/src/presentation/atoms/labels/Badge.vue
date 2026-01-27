@@ -3,7 +3,7 @@
     :class="[
       variantClasses,
       shapeClasses,
-      'inline-flex items-center gap-1 text-[9px] p-1',
+      'inline-flex items-center gap-1 text-[9px] p-1 hover:brightness-90 cursor-pointer',
     ]"
     @click="badgeClicked"
   >

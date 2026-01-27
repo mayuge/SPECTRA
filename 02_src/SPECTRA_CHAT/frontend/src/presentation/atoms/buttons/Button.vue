@@ -5,7 +5,7 @@
       variantClasses,
       shapeClasses,
       shadowClass,
-      'flex items-center gap-1 md:text-sm text-xs leading-none'
+      'flex items-center gap-1 md:text-sm text-xs leading-none hover:brightness-90 cursor-pointer'
     ]"
     @click="buttonClicked"
   >
