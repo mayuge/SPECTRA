@@ -12,6 +12,9 @@ import type { ChatType } from "@/domain/types/chatType"
 import type { SuggestType } from "@/domain/types/suggestType"
 import type { Feature, FeatureCollection } from "geojson"
 
+import { MAIN_PANEL } from "@/domain/params/dialogName"
+import { PULLTAB_LEFT_ICON, PULLTAB_RIGHT_ICON } from "@/domain/params/iconText"
+
 /**
  * チャットパネル内を管理するコアロジック
  * @source
@@ -46,21 +49,21 @@ const useChatPanelApp = (
    * メインパネルの開閉状態取得
    */
   const getMainPanelOpen = () => {
-    return getDialogState("mainPanel" as keyof DialogNameType)
+    return getDialogState(MAIN_PANEL as keyof DialogNameType)
   }
 
   /**
    * メインパネルを開く
    */
   const openMainPanel = () => {
-    setDialogState("mainPanel" as keyof DialogNameType, true)
+    setDialogState(MAIN_PANEL as keyof DialogNameType, true)
   }
 
   /**
    * メインパネル切替
    */
   const toggleMainPanel = () => {
-    toggleDialogState("mainPanel" as keyof DialogNameType)
+    toggleDialogState(MAIN_PANEL as keyof DialogNameType)
   }
 
   /**
@@ -68,7 +71,7 @@ const useChatPanelApp = (
    * @returns "arrow_left" | "arrow_right"
    */
   const getPullTabIcon = () => {
-    return getDialogState("mainPanel" as keyof DialogNameType) ? "arrow_left" : "arrow_right"
+    return getDialogState(MAIN_PANEL as keyof DialogNameType) ? PULLTAB_LEFT_ICON : PULLTAB_RIGHT_ICON
   }
 
   /**
