@@ -3,6 +3,7 @@ import type { IReqCycleApi } from "@/domain/interfaces/IReqCycleApi"
 import type { IReqBusApi } from "@/domain/interfaces/IReqBusApi"
 import type { ICustomLayerState } from "@/domain/interfaces/ICustomLayerState"
 import type { IMapCustomLayer } from "@/domain/interfaces/IMapCustomLayer"
+import type { ILoadingState } from "@/domain/interfaces/ILoadingState"
 
 import type { CustomLayerNameType } from "@/domain/types/customLayerNameType"
 import type { ButtonVariantType } from "@/domain/types/atomsType"
@@ -26,12 +27,17 @@ const useCustomLayerApp = (
   reqCycleApi: IReqCycleApi,
   reqBusApi: IReqBusApi,
   customLayerState: ICustomLayerState,
-  mapCustomerLayer: IMapCustomLayer
+  mapCustomerLayer: IMapCustomLayer,
+  loadingState: ILoadingState
 ) => {
   const { getAllTrainStation, getAllTrainLine } = reqTrainApi
+
   const { getHelloCycleStation, getDocomoBikeShareStation } = reqCycleApi
+
   const { getToeiBusPoint, getToeiBusLine } = reqBusApi
+
   const { setCustomLayerGeojson, getCustomLayerGeojson } = customLayerState
+
   const {
     addTrainStationLayer,
     addTrainLineLayer,
@@ -56,12 +62,15 @@ const useCustomLayerApp = (
     addFloodHazardLayer,
   } = mapCustomerLayer
 
+  const { startLoading, stopLoading } = loadingState
+
   /**
    * マウント時のコールバック
    */
   const onMountedCallback = async () => {
     // 初期データを呼び出し、カスタムレイヤーとして地図上に反映
     try {
+      startLoading()
       await setTrainLineLayer()
       await setTrainStationLayer()
       await setHelloCycleLayer()
@@ -71,8 +80,10 @@ const useCustomLayerApp = (
       addPopulationMeshLayer()
       addSatelliteLayer()
       addFloodHazardLayer()
+      stopLoading()
     } catch (error) {
       console.error(error)
+      stopLoading()
     }
   }
 
@@ -203,6 +214,7 @@ const useCustomLayerApp = (
     getPopulationMeshLayerVariant,
     getSatelliteLayerVariant,
     getFloodHazardLayerVariant,
+    getFloodHazardLayerVisiblility,
   }
 }
 

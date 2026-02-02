@@ -1,15 +1,18 @@
 import type { IMapRasterLayer } from "@/domain/interfaces/IMapRasterLayer"
 import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
-import { IMapLayer } from "@/domain/interfaces/IMapLayer"
+import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
+import type { ILoadingState } from "@/domain/interfaces/ILoadingState"
 
 import useMapInstance from "@/infrastructure/map/mapInstance"
 import useMapLayer from "@/infrastructure/map/mapLayer"
+import { useLoadingStateStore } from "@/infrastructure/stores/loadingStateStore"
 
 import { ref } from "vue"
 
 import { SATELLITE_LAYER, FLOOD_HAZARD_LAYER } from "@/domain/params/customLayerName"
 
 const useMapRasterLayer = (): IMapRasterLayer => {
+  const { getIsLoading } = useLoadingStateStore() as ILoadingState
   const { toggleLayer } = useMapLayer() as IMapLayer
 
   const satelliteLayerVisibility = ref<boolean>(false)
@@ -106,6 +109,9 @@ const useMapRasterLayer = (): IMapRasterLayer => {
    * 衛星画像レイヤーの表示切替
    */
   const toggleSatelliteLayer = () => {
+    if (getIsLoading()) {
+      return
+    }
     toggleLayer(SATELLITE_LAYER)
     satelliteLayerVisibility.value = !satelliteLayerVisibility.value
   }
@@ -113,6 +119,9 @@ const useMapRasterLayer = (): IMapRasterLayer => {
    * 洪水浸水想定区域（想定最大規模）レイヤーの表示切替
    */
   const toggleFloodHazardLayer = () => {
+    if (getIsLoading()) {
+      return
+    }
     toggleLayer(FLOOD_HAZARD_LAYER)
     floodHazardLayerVisibility.value = !floodHazardLayerVisibility.value
   }

@@ -63,6 +63,14 @@
         @button-clicked="toggleFloodHazardLayer"
       />
     </div>
+    <div class="p-2" v-if="getFloodHazardLayerVisiblility()">
+      <div class="text-sm text-white pb-2">洪水浸水想定区域（想定最大規模）</div>
+      <img
+        class="bg-white"
+        src="/image/legend/shinsui_legend.png"
+        alt="洪水浸水想定区域（想定最大規模）の凡例"
+      />
+    </div>
   </div>
 </template>
 
@@ -76,6 +84,7 @@ import type { IReqCycleApi } from '@/domain/interfaces/IReqCycleApi'
 import type { IReqBusApi } from '@/domain/interfaces/IReqBusApi'
 import type { ICustomLayerState } from '@/domain/interfaces/ICustomLayerState'
 import type { IMapCustomLayer } from '@/domain/interfaces/IMapCustomLayer'
+import type { ILoadingState } from '@/domain/interfaces/ILoadingState'
 
 import useReqTrainApi from '@/infrastructure/http/train/reqTrainApi'
 import useReqCycleApi from '@/infrastructure/http/cycle/reqCycleApi'
@@ -83,6 +92,7 @@ import useReqBusApi from '@/infrastructure/http/bus/reqBusApi'
 
 import { useCustomLayerStore } from '@/infrastructure/stores/customLayerStateStore'
 import useMapCustomLayer from '@/infrastructure/map/mapCustomLayer'
+import { useLoadingStateStore } from '@/infrastructure/stores/loadingStateStore'
 
 import { onMounted, ref } from 'vue'
 
@@ -111,11 +121,13 @@ const {
   getPopulationMeshLayerVariant,
   getSatelliteLayerVariant,
   getFloodHazardLayerVariant,
+  getFloodHazardLayerVisiblility
 } = useCustomLayerApp(
     useReqTrainApi() as IReqTrainApi,
     useReqCycleApi() as IReqCycleApi,
     useReqBusApi() as IReqBusApi,
     useCustomLayerStore() as ICustomLayerState,
-    useMapCustomLayer() as IMapCustomLayer
+    useMapCustomLayer() as IMapCustomLayer,
+    useLoadingStateStore() as ILoadingState
 )
 </script>

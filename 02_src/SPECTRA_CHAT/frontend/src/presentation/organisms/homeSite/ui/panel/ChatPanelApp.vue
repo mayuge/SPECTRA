@@ -34,7 +34,11 @@
         />
       </div>
 
-      <ChatSuggestGroup :suggestList="CHAT_SUGGEST_LIST" @badge-clicked="suggestButtonClicked" />
+      <ChatSuggestGroup
+        :suggestList="CHAT_SUGGEST_LIST"
+        @badge-clicked="suggestButtonClicked"
+        class="bg-gray-80"
+      />
       <ChatHistoryGroup :historyList="getChatHistory()" @badge-clicked="submitButtonClicked" />
       <Submit :isLoading="getIsLoading()" @submit-button-clicked="submitButtonClicked" />
     </div>
@@ -57,7 +61,11 @@
         />
       </div>
 
-      <ChatSuggestGroup :suggestList="CHAT_SUGGEST_LIST" @badge-clicked="suggestButtonClicked" />
+      <ChatSuggestGroup
+        :suggestList="CHAT_SUGGEST_LIST"
+        @badge-clicked="suggestButtonClicked"
+        class="bg-gray-80"
+      />
       <ChatHistoryGroup :historyList="getChatHistory()" @badge-clicked="submitButtonClicked" />
       <Submit :isLoading="getIsLoading()" @submit-button-clicked="submitButtonClicked" />
 

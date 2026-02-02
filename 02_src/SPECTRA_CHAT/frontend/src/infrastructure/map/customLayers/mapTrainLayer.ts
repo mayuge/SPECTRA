@@ -7,11 +7,13 @@ import maplibregl, {
 import useMapInstance from "@/infrastructure/map/mapInstance"
 import useMapPopup from "@/infrastructure/map/mapPopup"
 import useMapLayer from "@/infrastructure/map/mapLayer"
+import { useLoadingStateStore } from "@/infrastructure/stores/loadingStateStore"
 
 import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
 import type { IMapPopup } from "@/domain/interfaces/IMapPopup"
 import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
 import type { IMapTrainLayer } from "@/domain/interfaces/IMapTrainLayer.ts"
+import type { ILoadingState } from "@/domain/interfaces/ILoadingState"
 import type { FeatureCollection } from "geojson"
 
 import trainParams from "@/domain/params/trainParams.json"
@@ -29,6 +31,7 @@ const useMapTrainLayer = (): IMapTrainLayer => {
   const mapInstance = useMapInstance() as IMapInstance
   const mapPopup = useMapPopup() as IMapPopup
   const mapLayer = useMapLayer() as IMapLayer
+  const { getIsLoading } = useLoadingStateStore() as ILoadingState
 
   const loadCompanyIcons = async (map: maplibregl.Map) => {
     const promises = Object.entries(trainParams).map(async ([companyName, companyData]) => {
@@ -152,6 +155,9 @@ const useMapTrainLayer = (): IMapTrainLayer => {
    * 駅・鉄道路線レイヤーをトグルする
    */
   const toggleTrainLayer = () => {
+    if (getIsLoading()) {
+      return
+    }
     const { toggleLayer } = mapLayer
     toggleLayer(TRAIN_STATION_LAYER)
     toggleLayer(TRAIN_LINE_LAYER)

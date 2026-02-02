@@ -72,7 +72,7 @@
       />
 
       <div v-if="feedbackState" class="border-t border-gray-80">
-        <div class="px-2 pt-2 text-white">【絞り込み条件を入力】</div>
+        <ChatSuggestGroup :suggest-list="CHAT_SUGGEST_LIST" />
         <Submit :is-loading="isLoading" @submit-button-clicked="feedbackButtonClicked" />
       </div>
     </div>
@@ -87,6 +87,9 @@ import Button from "@/presentation/atoms/buttons/Button.vue"
 import Color from "@/presentation/atoms/inputs/Color.vue"
 import SliderInput from "@/presentation/atoms/inputs/SliderInput.vue"
 import Submit from "@/presentation/molecules/input/Submit.vue"
+import ChatSuggestGroup from "@/presentation/molecules/group/ChatSuggestGroup.vue"
+
+import { CHAT_SUGGEST_LIST } from "@/domain/params/chatSuggest"
 
 const iconState = ref(true)
 const responseTime = ref("")

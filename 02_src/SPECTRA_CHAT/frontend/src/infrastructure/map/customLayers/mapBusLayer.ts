@@ -2,11 +2,13 @@ import type { IMapBusLayer } from "@/domain/interfaces/IMapBusLayer"
 import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
 import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
 import type { IMapPopup } from "@/domain/interfaces/IMapPopup"
+import type { ILoadingState } from "@/domain/interfaces/ILoadingState"
 import type { FeatureCollection } from "geojson"
 
 import useMapInstance from "@/infrastructure/map/mapInstance"
 import useMapLayer from "@/infrastructure/map/mapLayer"
 import useMapPopup from "@/infrastructure/map/mapPopup"
+import { useLoadingStateStore } from "@/infrastructure/stores/loadingStateStore"
 
 import maplibregl, { SymbolLayerSpecification } from "maplibre-gl"
 import { MapboxOverlay } from "@deck.gl/mapbox"
@@ -20,6 +22,7 @@ const useMapBusLayer = (): IMapBusLayer => {
   const { getMapInstance } = useMapInstance() as IMapInstance
   const { toggleLayer } = useMapLayer() as IMapLayer
   const { generateHoverHtml, addHoverPopup } = useMapPopup() as IMapPopup
+  const { getIsLoading } = useLoadingStateStore() as ILoadingState
 
   const map = getMapInstance()
 
@@ -36,6 +39,9 @@ const useMapBusLayer = (): IMapBusLayer => {
   let updateOverlay: (() => void) | null = null
 
   const toggleBusLayer = (): void => {
+    if (getIsLoading()) {
+      return
+    }
     toggleLayer(TOEI_BUS_POINT_LAYER)
     busLayerVisibility.value = !busLayerVisibility.value
     updateOverlay?.()

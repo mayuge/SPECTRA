@@ -2,10 +2,13 @@ import maplibregl from "maplibre-gl"
 
 import useMapInstance from "@/infrastructure/map/mapInstance"
 import useMapPopup from "@/infrastructure/map/mapPopup"
+import { useLoadingStateStore } from "@/infrastructure/stores/loadingStateStore"
 
 import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
 import type { IMapPopup } from "@/domain/interfaces/IMapPopup"
 import type { IMapCycleLayer } from "@/domain/interfaces/IMapCycleLayer.ts"
+import type { ILoadingState } from "@/domain/interfaces/ILoadingState"
+
 import type { FeatureCollection } from "geojson"
 
 import { ref } from "vue"
@@ -20,6 +23,7 @@ const useMapCycleLayer = (): IMapCycleLayer => {
   const cycleLayerVisibility = ref<boolean>(true)
   const mapInstance = useMapInstance() as IMapInstance
   const mapPopup = useMapPopup() as IMapPopup
+  const { getIsLoading } = useLoadingStateStore() as ILoadingState
 
   const createCycleCanvasLayer = (
     layerId: string,
@@ -281,6 +285,9 @@ const useMapCycleLayer = (): IMapCycleLayer => {
   }
 
   const toggleCycleLayer = () => {
+    if (getIsLoading()) {
+      return
+    }
     const map = mapInstance.getMapInstance()
     if (!map) return
     ;[HELLO_CYCLE_LAYER, DOCOMO_BIKE_SHARE_LAYER].forEach((layerId) => {

@@ -1,10 +1,11 @@
 import type { IMapPopulationMeshLayer } from "@/domain/interfaces/IMapPopulationMeshLayer"
 import type { IMapInstance } from "@/domain/interfaces/IMapInstance"
+import type { ILoadingState } from "@/domain/interfaces/ILoadingState"
 
 import useMapInstance from "@/infrastructure/map/mapInstance"
+import { useLoadingStateStore } from "@/infrastructure/stores/loadingStateStore"
 import { ref } from "vue"
 
-import maplibregl from "maplibre-gl"
 import { MapboxOverlay } from "@deck.gl/mapbox"
 import { MVTLayer } from "deck.gl"
 
@@ -22,6 +23,8 @@ import { POPULATION_MESH_LAYER } from "@/domain/params/customLayerName"
 const useMapPopulationLayer = (): IMapPopulationMeshLayer => {
   /** MapLibre インスタンス */
   const { getMapInstance } = useMapInstance() as IMapInstance
+  const { getIsLoading } = useLoadingStateStore() as ILoadingState
+
   const mapInstance = getMapInstance()
 
   /** レイヤーの表示状態（true = 表示 / false = 非表示） */
@@ -41,6 +44,9 @@ const useMapPopulationLayer = (): IMapPopulationMeshLayer => {
    * - updateOverlay() を呼び出し即時反映
    */
   const togglePopulationMeshLayer = (): void => {
+    if (getIsLoading()) {
+      return
+    }
     populationMeshLayerVisibility.value = !populationMeshLayerVisibility.value
     if (updateOverlay) updateOverlay()
   }
