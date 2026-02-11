@@ -2,7 +2,8 @@
   "devDependencies": {
     "@storybook/vue3": "^10.0.8",
     "@storybook/vue3-vite": "^10.0.8",
-    "storybook": "10.0.8"
+    "storybook": "10.0.8",
+    "vitepress": "2.0.0-alpha.16"
   },
   "scripts": {
     "storybook": "storybook dev -p 6006",
