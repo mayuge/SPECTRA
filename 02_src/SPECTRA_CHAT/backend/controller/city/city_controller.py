@@ -26,7 +26,8 @@ async def get_city_overlaps_by_table(city_name: str, table_name: str, request: R
     地価データのテーブル名は、l02_25
     スーパーマーケットのテーブル名は、supermarkets_japan
     駅のテーブル名は、unkohonsu2024_rosen_eki
-    鉄道路線のテーブル名は、unkohonsu2024_rosen_kukan 
+    鉄道路線のテーブル名は、unkohonsu2024_rosen_kukan
+    学校のテーブル名は、p29_23 
     """
     city_name = unquote(city_name)
     table_name = unquote(table_name)

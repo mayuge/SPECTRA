@@ -9,6 +9,7 @@ class CityRepository:
         "supermarkets_japan",
         "unkohonsu2024_rosen_eki",
         "unkohonsu2024_rosen_kukan"
+        "p29_23"
     }
 
     async def get_overlaps_by_table(
