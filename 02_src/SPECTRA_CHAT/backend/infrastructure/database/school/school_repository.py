@@ -35,7 +35,7 @@ class SchoolRepository:
             'properties', to_jsonb(row) - 'geometry'
         ) AS geojson
         FROM p29_23 row
-        WHERE "p29_003" = 16001
+        WHERE "p29_003" = '16001'
         """
         async with request.app.state.pool.acquire() as conn:
             rows = await conn.fetch(query)
@@ -59,7 +59,7 @@ class SchoolRepository:
             'properties', to_jsonb(row) - 'geometry'
         ) AS geojson
         FROM p29_23 row
-        WHERE "p29_003" IN (16002, 16003)
+        WHERE "p29_003" IN ('16002', '16003')
         """
         async with request.app.state.pool.acquire() as conn:
             rows = await conn.fetch(query)
@@ -83,7 +83,7 @@ class SchoolRepository:
             'properties', to_jsonb(row) - 'geometry'
         ) AS geojson
         FROM p29_23 row
-        WHERE "p29_003" IN (16004, 16005)
+        WHERE "p29_003" IN ('16004', '16005')
         """
         async with request.app.state.pool.acquire() as conn:
             rows = await conn.fetch(query)
@@ -107,7 +107,7 @@ class SchoolRepository:
             'properties', to_jsonb(row) - 'geometry'
         ) AS geojson
         FROM p29_23 row
-        WHERE "p29_003" IN (16006, 16007)
+        WHERE "p29_003" IN ('16006', '16007')
         """
         async with request.app.state.pool.acquire() as conn:
             rows = await conn.fetch(query)
