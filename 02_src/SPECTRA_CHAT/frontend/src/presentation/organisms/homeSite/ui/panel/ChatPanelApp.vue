@@ -2,7 +2,7 @@
   <!-- =========================
        Mobile
   ========================== -->
-  <div class="fixed bottom-0 z-50 w-full bg-transparent flex flex-col select-none md:hidden">
+  <aside class="fixed bottom-0 z-50 w-full bg-transparent flex flex-col select-none md:hidden">
     <div class="sticky top-0">
       <DialogHeader
         text="SPECTRA CHAT"
@@ -42,12 +42,12 @@
       <ChatHistoryGroup :historyList="getChatHistory()" @badge-clicked="submitButtonClicked" />
       <Submit :isLoading="getIsLoading()" @submit-button-clicked="submitButtonClicked" />
     </div>
-  </div>
+  </aside>
 
   <!-- =========================
        PC
   ========================== -->
-  <div class="fixed left-0 z-50 h-screen bg-transparent hidden md:flex select-none">
+  <aside class="fixed left-0 z-50 h-screen bg-transparent hidden md:flex select-none">
     <div
       v-if="getMainPanelOpen()"
       class="relative bg-white h-full shadow-lg flex flex-col"
@@ -86,7 +86,7 @@
         @button-clicked="toggleMainPanel()"
       />
     </div>
-  </div>
+  </aside>
 </template>
 
 <script setup lang="ts">
