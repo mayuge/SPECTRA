@@ -31,6 +31,7 @@
         <ChatApp
           @retry-clicked="submitButtonClicked"
           @feedback-button-clicked="feedbackButtonClicked"
+          @feedback-badge-clicked="feedbackBadgeClicked"
         />
       </div>
 
@@ -58,6 +59,7 @@
         <ChatApp
           @retry-clicked="submitButtonClicked"
           @feedback-button-clicked="feedbackButtonClicked"
+          @feedback-badge-clicked="feedbackBadgeClicked"
         />
       </div>
 
@@ -128,6 +130,7 @@ const {
   submitButtonClicked,
   suggestButtonClicked,
   feedbackButtonClicked,
+  feedbackBadgeClicked,
   getIsLoading,
   getChatHistory,
   getPanelWidth,

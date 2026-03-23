@@ -13,6 +13,7 @@
       @on-color-input="setColorByIndex(getResponseIndex(index), $event)"
       @on-slider-input="setOpacityByIndex(getResponseIndex(index), $event)"
       @feedback-button-clicked="feedbackButtonClicked"
+      @feedback-badge-clicked="feedbackBadgeClicked"
     />
     <ErrorChat v-else-if="obj.type === 'error'" :text="obj.message" />
   </div>
@@ -24,6 +25,7 @@ import type { IChatState } from "@/domain/interfaces/IChatState"
 import type { IMapLayer } from "@/domain/interfaces/IMapLayer"
 import type { IGeojsonState } from "@/domain/interfaces/IGeojsonState"
 import type { ILoadingState } from "@/domain/interfaces/ILoadingState"
+import type { SuggestType } from "@/domain/types/suggestType"
 
 import { useChatStateStore } from "@/infrastructure/stores/chatStateStore"
 import useMapLayer from "@/infrastructure/map/mapLayer"
@@ -52,7 +54,7 @@ const {
   useLoadingStateStore() as ILoadingState
 )
 
-const emit = defineEmits(['retry-clicked', 'feedback-button-clicked'])
+const emit = defineEmits(['retry-clicked', 'feedback-button-clicked', 'feedback-badge-clicked'])
 
 const retryClicked = (text:string) => {
   emit("retry-clicked",text)
@@ -60,7 +62,10 @@ const retryClicked = (text:string) => {
 
 const feedbackButtonClicked = (text: string, responseId: number) => {
   emit("feedback-button-clicked", text, responseId)
-  console.log("ChatAppフィードバックボタンがクリックされました:", text, responseId)
+}
+
+const feedbackBadgeClicked = (suggest: SuggestType) => {
+  emit("feedback-badge-clicked", suggest)
 }
 
 const chatMessages = computed(() => getChatMessageList())

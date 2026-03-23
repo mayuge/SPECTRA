@@ -14,7 +14,7 @@
 <script setup lang="ts">
 import Badge from "@/presentation/atoms/labels/Badge.vue"
 import type { PropType } from "vue"
-import type { SuggestType } from "@/domain/types/suggestType";
+import type { SuggestType } from "@/domain/types/suggestType"
 
 defineProps({
   suggestList: {

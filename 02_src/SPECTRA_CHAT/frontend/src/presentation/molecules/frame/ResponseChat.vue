@@ -72,7 +72,7 @@
       />
 
       <div v-if="feedbackState" class="border-t border-gray-80">
-        <ChatSuggestGroup :suggest-list="CHAT_SUGGEST_LIST" />
+        <ChatSuggestGroup @badge-clicked="feedbackBadgeClicked" :suggest-list="CHAT_SUGGEST_LIST" />
         <Submit :is-loading="isLoading" @submit-button-clicked="feedbackButtonClicked" />
       </div>
     </div>
@@ -82,6 +82,8 @@
 <script setup lang="ts">
 import type { PropType } from "vue"
 import { onMounted, ref } from "vue"
+
+import type { SuggestType } from "@/domain/types/suggestType"
 
 import Button from "@/presentation/atoms/buttons/Button.vue"
 import Color from "@/presentation/atoms/inputs/Color.vue"
@@ -102,6 +104,7 @@ const emit = defineEmits([
   "on-slider-input",
   "on-color-input",
   "feedback-button-clicked",
+  "feedback-badge-clicked",
 ])
 
 const props = defineProps({
@@ -133,6 +136,10 @@ const feedbackClicked = () => {
 
 const feedbackButtonClicked = (message: string) => {
   emit("feedback-button-clicked", message, props.responseId)
+}
+
+const feedbackBadgeClicked = (suggest: SuggestType) => {
+  emit("feedback-badge-clicked", suggest)
 }
 
 const frontToClicked = () => {

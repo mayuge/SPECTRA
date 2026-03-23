@@ -71,7 +71,9 @@ const useChatPanelApp = (
    * @returns "arrow_left" | "arrow_right"
    */
   const getPullTabIcon = () => {
-    return getDialogState(MAIN_PANEL as keyof DialogNameType) ? PULLTAB_LEFT_ICON : PULLTAB_RIGHT_ICON
+    return getDialogState(MAIN_PANEL as keyof DialogNameType)
+      ? PULLTAB_LEFT_ICON
+      : PULLTAB_RIGHT_ICON
   }
 
   /**
@@ -219,6 +221,46 @@ const useChatPanelApp = (
     }
   }
 
+  const feedbackBadgeClicked = async (suggest: SuggestType) => {
+    // ローディング中は追加で質問できないようにする
+    if (getIsLoading()) {
+      return
+    }
+    startLoading()
+    openMainPanel()
+    const feedbackMessage: ChatType = {
+      type: "request",
+      message: `【共通部分】${suggest.text}`,
+      isdata: false,
+    }
+    addChatMessage(feedbackMessage)
+    try {
+      const suggestGeojson: Feature | FeatureCollection | null = await getSuggestData(suggest.url)
+      // 共通部分を抽出
+      const mainGeojson = getLastGeojson()
+      const resultGeojson = intersectGeojson(
+        mainGeojson as FeatureCollection,
+        suggestGeojson as FeatureCollection
+      )
+      //結果をgeojsonStoreに格納
+      setGeojson(resultGeojson)
+      addGeoJsonLayer(getLastGeojson())
+      const responseMessage: ChatType = {
+        type: "response",
+        message: `【共通部分】${suggest.text}`,
+        isdata: true,
+      }
+      //responseタイプのチャットをストアに追加
+      addChatMessage(responseMessage)
+      stopLoading()
+    } catch (error) {
+      const errorMessage: ChatType = { type: "error", message: error, isdata: false }
+      //エラー発生時、errorタイプのチャットをストアに追加
+      addChatMessage(errorMessage)
+    }
+    stopLoading()
+  }
+
   /**
    * @param messageText
    * @param index
@@ -265,8 +307,6 @@ const useChatPanelApp = (
       const errorMessage: ChatType = { type: "error", message: error, isdata: false }
       //エラー発生時、errorタイプのチャットをストアに追加
       addChatMessage(errorMessage)
-      stopLoading()
-      return
     }
     stopLoading()
   }
@@ -278,6 +318,7 @@ const useChatPanelApp = (
     submitButtonClicked,
     suggestButtonClicked,
     feedbackButtonClicked,
+    feedbackBadgeClicked,
     isBlankChat,
     getIsLoading,
     getChatHistory,
