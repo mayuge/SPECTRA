@@ -1,6 +1,8 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=SPECTRA%20CHAT&fontSize=90&animation=fadeIn&fontAlignY=38&descAlignY=51&descAlign=62"/>
 
-![20260121](01_docs\image\SPECTRA_CHAT\SPECTRA_CHAT_20260121.png)
+![20260121](01_docs\image\SPECTRA_CHAT\SPECTRA_CHAT_feedback.png)
+
+https://spectra-chat.com/
 
 ## リポジトリ
 
