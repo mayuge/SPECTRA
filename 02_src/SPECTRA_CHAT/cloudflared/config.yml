@@ -1,0 +1,6 @@
+ingress:
+  - hostname: spectra-chat.com
+    service: http://frontend:80
+  - hostname: api.spectra-chat.com
+    service: http://backend:4000
+  - service: http_status:404
