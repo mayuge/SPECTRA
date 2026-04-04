@@ -8,6 +8,9 @@ https://spectra-chat.com/
 
 https://api.spectra-chat.com/docs#/default
 
+## typedocから自動生成されたソースコードのマニュアル
+https://mayuge.github.io/SPECTRA_CHAT_TYPEDOC/
+
 ## 主な使用技術/プラグイン
 
 ### フロントエンド
