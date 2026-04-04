@@ -18,7 +18,7 @@ class TrainRepository:
         ) AS geojson
         FROM (
           SELECT *
-          FROM unkohonsu2024_rosen_eki
+          FROM unkohonsu2025_rosen_eki
           WHERE COALESCE("発数1",0) + COALESCE("発数2",0) + COALESCE("着数1",0) + COALESCE("着数2",0) >= $1
         ) row
         """
@@ -41,7 +41,7 @@ class TrainRepository:
             )
           )
         ) AS geojson
-        FROM (SELECT * FROM unkohonsu2024_rosen_eki) row
+        FROM (SELECT * FROM unkohonsu2025_rosen_eki) row
         """
         async with request.app.state.pool.acquire() as conn:
             result = await conn.fetchrow(query)
@@ -58,7 +58,7 @@ class TrainRepository:
           'geometry', ST_AsGeoJSON(ST_Buffer(geometry::geography, $1)::geometry)::jsonb,
           'properties', to_jsonb(row) - 'geometry'
       ) AS geojson
-      FROM unkohonsu2024_rosen_eki row
+      FROM unkohonsu2025_rosen_eki row
       """
       
       async with request.app.state.pool.acquire() as conn:
@@ -81,7 +81,7 @@ class TrainRepository:
           'geometry', ST_AsGeoJSON(geometry)::jsonb,
           'properties', to_jsonb(row) - 'geometry'
         ) AS geojson
-        FROM unkohonsu2024_rosen_eki row
+        FROM unkohonsu2025_rosen_eki row
         WHERE "駅名" = $1
         LIMIT 10
         """
@@ -104,7 +104,7 @@ class TrainRepository:
             )
           )
         ) AS geojson
-        FROM (SELECT * FROM unkohonsu2024_rosen_kukan) row
+        FROM (SELECT * FROM unkohonsu2025_rosen_kukan) row
         """
         async with request.app.state.pool.acquire() as conn:
             result = await conn.fetchrow(query)
@@ -120,7 +120,7 @@ class TrainRepository:
           'geometry', ST_AsGeoJSON(geometry)::jsonb,
           'properties', to_jsonb(row) - 'geometry'
         ) AS geojson
-        FROM unkohonsu2024_rosen_kukan row
+        FROM unkohonsu2025_rosen_kukan row
         WHERE "路線名" = $1
         """
         async with request.app.state.pool.acquire() as conn:
@@ -147,7 +147,7 @@ class TrainRepository:
         ) AS geojson
         FROM (
           SELECT *
-          FROM unkohonsu2024_rosen_kukan
+          FROM unkohonsu2025_rosen_kukan
           WHERE COALESCE("逆方向運行本数2024",0) + COALESCE("順方向運行本数2024",0) >= $1
         ) row
         """
