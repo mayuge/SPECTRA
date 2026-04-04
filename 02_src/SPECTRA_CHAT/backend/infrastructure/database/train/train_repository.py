@@ -148,7 +148,7 @@ class TrainRepository:
         FROM (
           SELECT *
           FROM unkohonsu2025_rosen_kukan
-          WHERE COALESCE("逆方向運行本数2024",0) + COALESCE("順方向運行本数2024",0) >= $1
+          WHERE COALESCE("逆方向運行本数2025",0) + COALESCE("順方向運行本数2025",0) >= $1
         ) row
         """
         async with request.app.state.pool.acquire() as conn:
