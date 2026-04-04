@@ -50,6 +50,15 @@ services:
         condition: service_healthy
     restart: unless-stopped
 
+  frontend:
+    image: nginx:alpine
+    container_name: frontend_container
+    ports:
+      - "3000:80"
+    volumes:
+      - ./frontend/dist:/usr/share/nginx/html
+    restart: unless-stopped
+
 volumes:
   postgis-data:
     driver: local
