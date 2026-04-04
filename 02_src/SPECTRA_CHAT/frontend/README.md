@@ -1,6 +1,12 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=SPECTRA%20CHAT&fontSize=90&animation=fadeIn&fontAlignY=38&descAlignY=51&descAlign=62"/>
 
+## アプリケーション公開URL
+
 https://spectra-chat.com/
+
+## API公開URL
+
+https://api.spectra-chat.com/docs#/default
 
 ## 主な使用技術/プラグイン
 

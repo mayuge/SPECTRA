@@ -2,7 +2,13 @@
 
 ![20260121](01_docs\image\SPECTRA_CHAT\SPECTRA_CHAT_feedback.png)
 
+## アプリケーション公開URL
+
 https://spectra-chat.com/
+
+## API公開URL
+
+https://api.spectra-chat.com/docs#/default
 
 ## リポジトリ
 
