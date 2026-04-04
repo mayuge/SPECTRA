@@ -13,7 +13,7 @@ import type { IMapRasterLayer } from "@/domain/interfaces/IMapRasterLayer.ts"
 
 /**
  * カスタムレイヤー管理のインフラストラクチャ
- * @returns
+ * @source
  */
 const useMapCustomLayer = (): IMapCustomLayer => {
   const mapTrainLayer = useMapTrainLayer() as IMapTrainLayer

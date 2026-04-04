@@ -8,7 +8,7 @@ const mapInstance = ref<Map | null>(null)
 
 /**
  * 地図インスタンス管理のインフラストラクチャ
- * @returns
+ * @source
  */
 const useMapInstance = (): IMapInstance => {
   const getMapInstance = () => {

@@ -7,15 +7,28 @@ export const useLoadingStateStore = defineStore<"loadingStateStore", ILoadingSta
   () => {
     const isLoading = ref<boolean>(false)
 
+    /**
+     * ローディンク開始
+     */
     const startLoading = () => {
       isLoading.value = true
     }
+
+    /**
+     * ローディング終了
+     */
     const stopLoading = () => {
       isLoading.value = false
     }
+
+    /**
+     * ローディング状態を取得
+     * @returns boolean ローディング状態
+     */
     const getIsLoading = () => {
       return isLoading.value
     }
+
     return {
       startLoading,
       stopLoading,

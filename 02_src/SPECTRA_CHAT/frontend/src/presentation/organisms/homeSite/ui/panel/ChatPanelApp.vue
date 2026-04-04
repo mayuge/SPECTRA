@@ -2,7 +2,7 @@
   <!-- =========================
        Mobile
   ========================== -->
-  <aside class="fixed bottom-0 z-50 w-full bg-transparent flex flex-col select-none md:hidden">
+  <aside class="fixed bottom-0 z-50 w-full flex flex-col select-none md:hidden bg-white">
     <div class="sticky top-0">
       <DialogHeader
         text="SPECTRA CHAT"

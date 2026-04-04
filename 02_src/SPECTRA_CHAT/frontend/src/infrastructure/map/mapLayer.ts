@@ -15,6 +15,7 @@ import { TRAIN_LINE_LAYER, TRAIN_STATION_LAYER } from "@/domain/params/customLay
 /**
  * 地図レイヤー管理のインフラストラクチャ
  * @returns レイヤー管理関数
+ * @source
  */
 const useMapLayer = (): IMapLayer => {
   let layerCounter = 0

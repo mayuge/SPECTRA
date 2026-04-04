@@ -10,6 +10,7 @@ import popupKeyParams from "@/domain/params/popupKeyParams.json"
 /**
  * 地図上のポップアップを管理するカスタムフック
  * @returns 鉄道駅・路線・任意レイヤーのホバーポップアップ追加関数
+ * @source
  */
 const useMapPopup = (): IMapPopup => {
   const { getMapInstance } = useMapInstance() as IMapInstance

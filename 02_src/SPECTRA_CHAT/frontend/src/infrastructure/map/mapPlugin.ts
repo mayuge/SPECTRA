@@ -16,6 +16,7 @@ import useMapInstance from "@/infrastructure/map/mapInstance"
 /**
  * 地図プラグインを管理するインフラストラクチャ
  * @returns 各種プラグイン追加関数
+ * @source
  */
 const useMapPlugin = (): IMapPlugin => {
   const { getMapInstance } = useMapInstance() as IMapInstance

@@ -1,3 +1,5 @@
+import { hash } from "crypto"
+
 export const INITIAL_VIEW_STATE = {
   container: "map",
   center: [139.6917, 35.6] as [number, number],
@@ -9,4 +11,5 @@ export const INITIAL_VIEW_STATE = {
   maxZoom: 20,
   minZoom: 5,
   localIdeographFontFamily: "sans-serif",
+  hash: true,
 }

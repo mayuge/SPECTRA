@@ -33,4 +33,5 @@ export const CHAT_SUGGEST_LIST: SuggestType[] = [
   { text: "ドコモバイクシェア", url: `${import.meta.env.VITE_DOCOMO_BIKE_SHARE_STATION_URL}` },
   { text: "都営バス バス停", url: `${import.meta.env.VITE_BUS_POINT_TOKYO_URL}` },
   { text: "都営バス 路線", url: `${import.meta.env.VITE_BUS_LINE_TOKYO_URL}` },
+  { text: "すべての高等学校", url: `${import.meta.env.VITE_HIGH_SCHOOL_URL}` },
 ]
