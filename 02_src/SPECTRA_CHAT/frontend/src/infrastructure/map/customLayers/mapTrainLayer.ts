@@ -65,8 +65,6 @@ const useMapTrainLayer = (): IMapTrainLayer => {
     const geojsonSource: GeoJSONSourceSpecification = {
       type: "geojson",
       data: geojson,
-      attribution:
-        '<a href="https://gtfs-gis.jp/railway_honsu/index.html">全国鉄道運行本数データ公開ページ 事業者別・駅別発着本数データ2024</a>',
     }
 
     if (!map.getSource(sourceId)) {
@@ -115,8 +113,6 @@ const useMapTrainLayer = (): IMapTrainLayer => {
     const geojsonSource: GeoJSONSourceSpecification = {
       type: "geojson",
       data: geojson,
-      attribution:
-        '<a href="https://gtfs-gis.jp/railway_honsu/index.html">全国鉄道運行本数データ公開ページ 路線別・区間別運行本数データ2024</a>',
     }
 
     if (!map.getSource(sourceId)) {

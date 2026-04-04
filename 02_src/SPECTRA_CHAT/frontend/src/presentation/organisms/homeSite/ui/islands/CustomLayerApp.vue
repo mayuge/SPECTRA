@@ -63,8 +63,45 @@
         @button-clicked="toggleFloodHazardLayer"
       />
     </div>
-    <div class="p-2" v-if="getFloodHazardLayerVisiblility()">
-      <div class="text-sm text-white pb-2">洪水浸水想定区域（想定最大規模）</div>
+    <a
+      class="p-1 text-[8px] text-blue-500 underline cursor-pointer inline-block"
+      href="https://ckan.odpt.org/dataset"
+    >
+      odpt
+    </a>
+    <a
+      class="p-1 text-[8px] text-blue-500 underline cursor-pointer inline-block"
+      href="https://gtfs-gis.jp/railway_honsu/"
+    >
+      全国鉄道運行本数データ公開ページ
+    </a>
+    <a
+      class="p-1 text-[8px] text-blue-500 underline cursor-pointer inline-block"
+      href="http://www.appli-cation.com/ill/?s=%E9%89%84%E9%81%93&submit=%E6%A4%9C%E7%B4%A2"
+    >
+      鉄道アイコン素材
+    </a>
+    <a
+      class="p-1 text-[8px] text-blue-500 underline cursor-pointer inline-block"
+      href="https://maps.gsi.go.jp/development/ichiran.html"
+    >
+      国土地理院 シームレス画像
+    </a>
+    <a
+      class="p-1 text-[8px] text-blue-500 underline cursor-pointer inline-block"
+      href="https://tiles.kmproj.com/datasets/jp_estat_mesh_2020#map=5/36.2/138.25"
+    >
+      e-Stat メッシュ 2020年調査
+    </a>
+    <div class="px-2" v-if="getFloodHazardLayerVisiblility()">
+      <a
+        class="text-[8px] text-blue-500 underline cursor-pointer inline-block"
+        href="https://disaportal.gsi.go.jp/hazardmap/copyright/opendata.html"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        洪水浸水想定区域（想定最大規模）
+      </a>
       <img
         class="bg-white"
         src="/image/legend/shinsui_legend.png"
