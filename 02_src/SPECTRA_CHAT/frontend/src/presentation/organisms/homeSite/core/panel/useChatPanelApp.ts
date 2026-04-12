@@ -228,9 +228,15 @@ const useChatPanelApp = (
     }
     startLoading()
     openMainPanel()
+    const chatMessageList = getChatMessageList()
+    // メインGeoJSONに対応する最後のデータを持つチャットメッセージを取得
+    const mainChatMessage = chatMessageList
+      .slice()
+      .reverse()
+      .find((msg) => msg.isdata)
     const feedbackMessage: ChatType = {
       type: "request",
-      message: `【共通部分】${suggest.text}`,
+      message: `"${suggest.text}" と "${mainChatMessage?.message || "なし"}" の共通部分`,
       isdata: false,
     }
     addChatMessage(feedbackMessage)
@@ -247,7 +253,7 @@ const useChatPanelApp = (
       addGeoJsonLayer(getLastGeojson())
       const responseMessage: ChatType = {
         type: "response",
-        message: `【共通部分】${suggest.text}`,
+        message: `"${suggest.text}" と"${mainChatMessage?.message || "なし"}" の共通部分`,
         isdata: true,
       }
       //responseタイプのチャットをストアに追加
@@ -281,6 +287,9 @@ const useChatPanelApp = (
 
     console.log("フィードバックボタンがクリックされました:", messageText, index)
 
+    const chatMessageList = getChatMessageList()
+    const targetChatMessage = chatMessageList[index]
+
     //既存のgeojsonを取得
     const mainGeojson = getGeojsonByIndex(index)
 
@@ -298,7 +307,7 @@ const useChatPanelApp = (
 
       const responseMessage: ChatType = {
         type: "response",
-        message: `【共通部分】${messageText}`,
+        message: `"${messageText}" と チャット: "${targetChatMessage?.message || "なし"}" の共通部分`,
         isdata: true,
       }
       //responseタイプのチャットをストアに追加
