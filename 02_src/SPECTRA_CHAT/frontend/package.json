@@ -16,9 +16,9 @@
     "@tailwindcss/vite": "^4.1.18",
     "@turf/turf": "^7.3.2",
     "@watergis/maplibre-gl-export": "^4.1.0",
-    "axios": "^1.13.1",
+    "axios": "^1.15.0",
     "deck.gl": "^9.2.5",
-    "maplibre-gl": "5.16.0",
+    "maplibre-gl": "5.23.0",
     "pinia": "^3.0.4",
     "pmtiles": "^4.3.0",
     "vue": "^3.5.22"
