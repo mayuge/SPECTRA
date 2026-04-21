@@ -119,7 +119,7 @@ const useChatPanelApp = (
 
       const responseMessage: ChatType = {
         type: "response",
-        message: `【表示結果】${message}`,
+        message: `${message}`,
         isdata: true,
       }
 
@@ -127,12 +127,53 @@ const useChatPanelApp = (
       addChatMessage(responseMessage)
       stopLoading()
     } catch (error) {
-      const errorMessage: ChatType = { type: "error", message: error, isdata: false }
+      const errorMessage: ChatType = { type: "error", message: String(error), isdata: false }
 
       //エラー発生時、errorタイプのチャットをストアに追加
       addChatMessage(errorMessage)
       stopLoading()
     }
+  }
+
+  /**
+   * 危険文字のバリデーション
+   * @param messageText string
+   * @return boolean
+   * 使用できない記号（BOM・クォーテーション・< > ! / など）が含まれている場合はtrue、そうでない場合はfalseを返す
+   * */
+  const isCharError = (messageText: string) => {
+    //特定の危険文字のみ禁止
+    const invalidCharPattern = /[\u0000-\u001F\u007F\uFEFF'"<>!\/\\;|&`$%^@]/u
+
+    if (invalidCharPattern.test(messageText)) {
+      const errorMessage: ChatType = {
+        type: "error",
+        message: "使用できない記号（BOM・クォーテーション・< > ! / など）が含まれています。",
+        isdata: false,
+      }
+      addChatMessage(errorMessage)
+      return true
+    }
+    return false
+  }
+
+    /**
+     * 文字数制限のバリデーション
+     * @param messageText 
+     * @returns 
+     */
+    const isTextLengthError = (messageText: string) => {
+    // 文字数制限（例：最大255文字）
+    if (messageText.length > 255) {
+      const errorMessage: ChatType = {
+        type: "error",
+        message: "メッセージが長すぎます。255文字以内で入力してください。",
+        isdata: false,
+      }
+      addChatMessage(errorMessage)
+      return true
+    }
+    return false
   }
 
   /**
@@ -149,27 +190,13 @@ const useChatPanelApp = (
       return
     }
 
-    //特定の危険文字のみ禁止
-    const invalidCharPattern = /[\u0000-\u001F\u007F\uFEFF'"<>!\/\\;|&`$%^@]/u
-
-    if (invalidCharPattern.test(messageText)) {
-      const errorMessage: ChatType = {
-        type: "error",
-        message: "使用できない記号（BOM・クォーテーション・< > ! / など）が含まれています。",
-        isdata: false,
-      }
-      addChatMessage(errorMessage)
+    // 危険文字のバリデーション
+    if (isCharError(messageText)) {
       return
     }
 
-    // ✅ 文字数制限（例：最大255文字）
-    if (messageText.length > 255) {
-      const errorMessage: ChatType = {
-        type: "error",
-        message: "メッセージが長すぎます。255文字以内で入力してください。",
-        isdata: false,
-      }
-      addChatMessage(errorMessage)
+    // 文字数制限のバリデーション
+    if (isTextLengthError(messageText)) {
       return
     }
 
@@ -190,8 +217,14 @@ const useChatPanelApp = (
       //メッセージをchatのapiへ送信
       const chatGeojson: Feature | FeatureCollection | null = await sendChatMessage(messageText)
 
+      //chatGeojsonがnullのときはエラーを投げる
+      if (!chatGeojson) {
+        throw new Error("有効なGeoJSONが返されませんでした。")
+      }
+
       // すべてのgeojsonをFeatureCollectionとみなし、データ型を定義
       let geojson: FeatureCollection
+
       if (chatGeojson.type === "FeatureCollection") {
         geojson = chatGeojson as FeatureCollection
       } else {
@@ -205,7 +238,7 @@ const useChatPanelApp = (
 
       const responseMessage: ChatType = {
         type: "response",
-        message: `【表示結果】${messageText}`,
+        message: `${messageText}`,
         isdata: true,
       }
 
@@ -213,7 +246,7 @@ const useChatPanelApp = (
       addChatMessage(responseMessage)
       stopLoading()
     } catch (error) {
-      const errorMessage: ChatType = { type: "error", message: error, isdata: false }
+      const errorMessage: ChatType = { type: "error", message: String(error), isdata: false }
 
       //エラー発生時、errorタイプのチャットをストアに追加
       addChatMessage(errorMessage)
@@ -236,7 +269,7 @@ const useChatPanelApp = (
       .find((msg) => msg.isdata)
     const feedbackMessage: ChatType = {
       type: "request",
-      message: `"${suggest.text}" と "${mainChatMessage?.message || "なし"}" の共通部分`,
+      message: `${suggest.text} と ${mainChatMessage?.message || "なし"} の共通部分`,
       isdata: false,
     }
     addChatMessage(feedbackMessage)
@@ -253,14 +286,14 @@ const useChatPanelApp = (
       addGeoJsonLayer(getLastGeojson())
       const responseMessage: ChatType = {
         type: "response",
-        message: `"${suggest.text}" と"${mainChatMessage?.message || "なし"}" の共通部分`,
+        message: `${suggest.text} と ${mainChatMessage?.message || "なし"} の共通部分`,
         isdata: true,
       }
       //responseタイプのチャットをストアに追加
       addChatMessage(responseMessage)
       stopLoading()
     } catch (error) {
-      const errorMessage: ChatType = { type: "error", message: error, isdata: false }
+      const errorMessage: ChatType = { type: "error", message: String(error), isdata: false }
       //エラー発生時、errorタイプのチャットをストアに追加
       addChatMessage(errorMessage)
     }
@@ -281,11 +314,18 @@ const useChatPanelApp = (
     if (!messageText.trim()) {
       return
     }
+    // 危険文字のバリデーション
+    if (isCharError(messageText)) {
+      return
+    }
+    // 文字数制限のバリデーション
+    if (isTextLengthError(messageText)) {
+      return
+    }
+
     startLoading()
     // メッセージ送信後にメインパネルを開く
     openMainPanel()
-
-    console.log("フィードバックボタンがクリックされました:", messageText, index)
 
     const chatMessageList = getChatMessageList()
     const targetChatMessage = chatMessageList[index]
@@ -307,13 +347,13 @@ const useChatPanelApp = (
 
       const responseMessage: ChatType = {
         type: "response",
-        message: `"${messageText}" と チャット: "${targetChatMessage?.message || "なし"}" の共通部分`,
+        message: `${messageText} と チャット: ${targetChatMessage?.message || "なし"} の共通部分`,
         isdata: true,
       }
       //responseタイプのチャットをストアに追加
       addChatMessage(responseMessage)
     } catch (error) {
-      const errorMessage: ChatType = { type: "error", message: error, isdata: false }
+      const errorMessage: ChatType = { type: "error", message: String(error), isdata: false }
       //エラー発生時、errorタイプのチャットをストアに追加
       addChatMessage(errorMessage)
     }
@@ -336,4 +376,5 @@ const useChatPanelApp = (
     stopResize,
   }
 }
+
 export default useChatPanelApp
