@@ -15,7 +15,7 @@
           <SliderInput :value="0.3" @on-change-input="onSliderInput" />
         </div>
 
-        {{ text }}
+        【表示結果】{{ text }}
 
         <div class="absolute top-7 right-1 flex flex-col gap-1">
           <Button
