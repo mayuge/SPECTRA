@@ -9,6 +9,7 @@ services:
     depends_on:
       - frontend
       - backend
+    restart: unless-stopped
   postgis:
     image: postgis/postgis:18-3.6
     container_name: postgis_container
