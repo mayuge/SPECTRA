@@ -15,11 +15,11 @@
     "@deck.gl/mapbox": "^9.2.6",
     "@tailwindcss/vite": "^4.1.18",
     "@turf/turf": "^7.3.2",
-    "@watergis/maplibre-gl-export": "^5.0.0",
+    "@watergis/maplibre-gl-export": "^4.1.0",
     "axios": "^1.15.0",
     "deck.gl": "^9.2.5",
-    "maplibre-gl": "6.2.0",
-    "pinia": "^4.0.2",
+    "maplibre-gl": "5.23.0",
+    "pinia": "^3.0.4",
     "vue": "^3.5.22"
   },
   "devDependencies": {
@@ -34,7 +34,7 @@
     "@vitejs/plugin-vue": "^6.0.1",
     "@vitest/browser-playwright": "^4.0.10",
     "@vitest/coverage-v8": "^4.0.10",
-    "@vue/tsconfig": "^0.9.1",
+    "@vue/tsconfig": "^0.8.1",
     "playwright": "^1.56.1",
     "prettier": "^3.6.2",
     "storybook": "10.0.8",
